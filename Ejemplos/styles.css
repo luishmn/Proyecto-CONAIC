@@ -1,0 +1,63 @@
+body {
+    background-color: #D4E1E3;
+  }
+
+#logoFondo{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  flex-shrink: 0;
+  
+}
+
+#imgLogoFondo{
+  position: absolute; 
+  bottom: 0; 
+  right: 0;
+  width: 30%;
+  height: 60%;
+}
+
+.barra-superior {
+  background-color: #145070; /* Color de fondo azul */
+  height: 10%;
+  border-radius: 30px; /* Bordes redondeados */
+  padding: 40px; /* Espacio interno para el contenido */
+  color: white; /* Color del texto en la barra */
+  position: fixed; /* Fija la barra en la parte superior de la ventana */
+  top: -10%; /* Coloca la barra a la mitad de la pantalla verticalmente */
+  left: 0; /* Ajusta el inicio de la barra en la parte izquierda */
+  right: 0; /* Ajusta el final de la barra en la parte derecha */
+}
+
+.tituloPag{
+  background-color: #ffffff;
+  height: 4%;
+  width: 15%;
+  border-radius: 30px; /* Bordes redondeados */
+  padding: 10px; /* Espacio interno para el contenido */
+  color: rgb(0, 0, 0); /* Color del texto en la barra */
+  position: fixed; /* Fija la barra en la parte superior de la ventana */
+  top: 3%; /* Coloca la barra a la mitad de la pantalla verticalmente */
+  left: 0; /* Ajusta el inicio de la barra en la parte izquierda */
+  right: 0; /* Ajusta el final de la barra en la parte derecha */
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+#textoTituloPag{
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 160%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+  
