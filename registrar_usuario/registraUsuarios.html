@@ -10,28 +10,48 @@
 
     
     <form  class="from-login">
-        <div class="form_group">
-            <label>Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+        
 
-            <label>Apellido Paterno:</label>
-            <input type="text" id="aleppidoP" name="apellidoP" required>
+            <h1 class="centrar">Agregar Usuarios</h1>
+            <br>
 
-            <label>Apellido Materno:</label>
-            <input type="text" id="aleppidoM" name="apellidoM" required>
+            <label for="nada" class="form_label"></label>
 
-            <label>Cargo a desempeñado:</label>
-            <input type="text" id="cargo" name="cargo" required>
+            <div class="form_group">
+            <input type="text" id="nombre" class="form_input" placeholder=" " name="nombre" required>
+            <label for="nombre" class="form_label">Nombre:</label>
+            </div>
 
-            <label>Correo:</label>
-            <input type="email" id="corre" name="correo" required>
+            <div class="form_group">
+            <input type="text" id="apellidoP" class="form_input" placeholder=" " name="apellidoP" required>
+            <label for="apellidoP" class="form_label">Apellido Paterno:</label>
+            </div>
 
-            <label>Contraseña:</label>
-            <input type="text" id="contrasena" name="contrasena" required>
 
-            <label>Ingresa Nuevamente Contraseña:</label>
-            <input type="text" id="contrasenaV" name="contrasenaV" required>
-        </div>
+            <div class="form_group">
+            <input type="text" id="apellidoM" class="form_input" placeholder=" " name="apellidoM" required>
+            <label for="apellidoM" class="form_label">Apellido Materno:</label>
+
+            <div class="form_group">
+            <input type="text" id="cargo" class="form_input" placeholder=" " name="cargo" required>
+            <label for="cargo" class="form_label">Cargo a desempeñar:</label>
+            </div>
+
+
+            <div class="form_group">
+            <input type="email" id="correo" class="form_input" placeholder=" " name="correo" required>
+            <label for="correo" class="form_label">Correo:</label>
+            </div>
+
+            <div class="form_group">
+            <input type="text" id="contrasena" class="form_input" placeholder=" " name="contrasena" required>
+            <label for="contrasena" class="form_label">Contraseña:</label>
+            </div>
+
+            <div class="form_group">
+            <input type="text" id="contrasenaV" class="form_input" placeholder=" " name="contrasenaV" required>
+            <label for="contrasenaV" class="form_label">Ingresa Nuevamente Contraseña:</label>
+            </div>
 
         <div class="buttons">
             <a href="#" class="btn btn-1">Subir</a>

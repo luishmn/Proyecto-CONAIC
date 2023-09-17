@@ -21,6 +21,10 @@ h2 {
     text-align: center;
 }
 
+.centrar {
+    text-align: center;
+}
+
 label {
     display: block;
     margin-bottom: 10px;
@@ -68,7 +72,7 @@ input[type="submit"]:hover {
 .form_label{
     color: var(--color);
     cursor: pointer;
-    position: absolute;
+    position:absolute;
     top:0;
     left: 5px;
     transform: translateY(10px);
@@ -79,7 +83,7 @@ input[type="submit"]:hover {
 .form_input:not(:placeholder-shown)+ .form_label{
     transform:translateY(-12px) scale(.7);
     transform-origin: top left;
-    --color:#3866f2;
+    --color:#000000;
 }
 
 
