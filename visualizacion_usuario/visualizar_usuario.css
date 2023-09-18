@@ -1,0 +1,175 @@
+body{
+    background:  #D4E1E3;;
+}
+#logoFondo{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    flex-shrink: 0;
+    
+  }
+  
+  #imgLogoFondo{
+    position: absolute; 
+    bottom: 0; 
+    right: 0;
+    width: 30%;
+    height: 60%;
+  }
+  
+  .barra-superior {
+    background-color: #145070; /* Color de fondo azul */
+    height: 10%;
+    border-radius: 30px; /* Bordes redondeados */
+    padding: 40px; /* Espacio interno para el contenido */
+    color: white; /* Color del texto en la barra */
+    position: fixed; /* Fija la barra en la parte superior de la ventana */
+    top: -10%; /* Coloca la barra a la mitad de la pantalla verticalmente */
+    left: 0; /* Ajusta el inicio de la barra en la parte izquierda */
+    right: 0; /* Ajusta el final de la barra en la parte derecha */
+  }
+  
+  .tituloPag{
+    background-color: #ffffff;
+    height: 4%;
+    width: 15%;
+    border-radius: 30px; /* Bordes redondeados */
+    padding: 10px; /* Espacio interno para el contenido */
+    color: rgb(0, 0, 0); /* Color del texto en la barra */
+    position: fixed; /* Fija la barra en la parte superior de la ventana */
+    top: 3%; /* Coloca la barra a la mitad de la pantalla verticalmente */
+    left: 0; /* Ajusta el inicio de la barra en la parte izquierda */
+    right: 0; /* Ajusta el final de la barra en la parte derecha */
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+  
+  #textoTituloPag{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 160%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  
+  }
+  .buscar_icono {
+    width: 41px;
+    height: 33px;
+    flex-shrink: 0;
+    background: url(../imagenes/imagen_buscar.png) no-repeat center/contain, transparent;
+    border: none;
+}
+
+.buscar_icono_fondo {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #197B9A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto; /* Empuja el elemento hacia la derecha */
+    
+}
+
+
+.rectangulo_busqueda{
+    width: 384px;
+    height: 48px;
+    flex-shrink: 0;
+
+    border-radius: 40px;
+    background: linear-gradient(0deg, #FEFFFF 0%, #FEFFFF 100%), #FEFFFF;
+
+    display: flex;
+
+    justify-content: space-between; 
+    align-items: center; /* Centra verticalmente en el medio */
+    
+
+
+}
+
+.input_busqueda{
+    margin-left: 20px;
+    border: none;
+    outline: none;
+}
+
+.buscar_usuario{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    
+}
+
+.rectangulo_azul{
+    width: 1168px;
+height: 62px;
+flex-shrink: 0;
+background: #89C7D0;
+margin: 0 auto ;
+width: 90%;
+}
+
+.rectangulo_azul_secundario{
+    width: 1168px;
+height: 483px;
+flex-shrink: 0;
+background: #F3FAFA;
+margin: 0 auto;
+width: 90%;
+}
+
+
+.botones{
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+    margin-right: 10%; /* Establece un margen derecho del 10% */
+}
+.boton_eliminar{
+    width: 144px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #197B9A;
+    border: none;
+
+    color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-right: 10px; /* Ajusta el valor del margen según tu preferencia */
+
+}
+
+.boton_guardar{
+    width: 144px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #197B9A;
+    border: none;
+
+    color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 10px; /* Ajusta el valor del margen según tu preferencia */
+
+}   
