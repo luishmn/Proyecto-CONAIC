@@ -30,7 +30,7 @@ claveCategoria varchar(10) NOT NULL
 );
 
 CREATE TABLE Criterio(
-nombre varchar(50) NOT NULL,
+nombre text NOT NULL,
 claveCriterio varchar(10) NOT NULL
 );
 
@@ -80,7 +80,7 @@ clavePDF varchar(10) NOT NULL
 );
 
 CREATE TABLE SubCriterio(
-nombre varchar(50) NOT NULL,
+nombre text NOT NULL,
 claveSubCriterio varchar(10) NOT NULL
 );
 
