@@ -7,12 +7,13 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #D4E1E3;
-
     background-image: url("../imagenes/logo_CONAIC_letras.png"), url("../imagenes/logo_Fondo.png");
     background-repeat: no-repeat, no-repeat;
     background-position: left top, right bottom;
     background-attachment: fixed, fixed;
     max-width: 100%,100%;
+
+    display: flex;
 
 
 
@@ -41,7 +42,9 @@ body {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    
 }
+
 
 
 .centrar {
@@ -50,15 +53,30 @@ body {
 
 label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 1%;
 }
 
 input[type="text"],
-input[type="number"],
+input[type="number"] {
+    width: 80%;
+    padding: 1.5%;
+    margin-bottom: 5%;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+
 input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 6%;
+    width: 80%;
+    padding: 1.5%;
+    margin-bottom: 5%;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+
+input[type="password"] {
+    width: 80%;
+    padding: 1.5%;
+    margin-bottom: 5%;
     border: 1px solid #ccc;
     border-radius: 30px;
 }
@@ -79,6 +97,7 @@ input[type="submit"]:hover {
 .form_group{
     position: relative;
     --color:#5757577e;
+    
 }
 
 .form_input{
@@ -106,7 +125,7 @@ input[type="submit"]:hover {
 .form_input:not(:placeholder-shown)+ .form_label{
     transform:translateY(-18px) scale(.7);
     transform-origin: top left;
-    font-size: 25px;
+    font-size: 150%;
     --color:#000000;
 }
 
@@ -115,8 +134,9 @@ input[type="submit"]:hover {
 
 
 .from-login{
-    width: 681px;
-    height: 700.4px;
+    position: relative;
+    width: 45%;
+    height: 40%;
     x: 334.3px;
     y: 194.7px;
     background-color:#89C7D0 ;
@@ -129,20 +149,18 @@ input[type="submit"]:hover {
 
 
 
-
-.button{
+.button {
+    position: absolute;
     display: flex;
-    flex-direction: column;
-
 }
 
 .btn{
     text-decoration: none;
     padding: 10px 30px;
     font-size: 1.5rem;
-    position:relative ;
+    position:relative;
     margin: 32px;
-    left: 70%;
+    left: 10%;
 }
 
 .btn-1{
