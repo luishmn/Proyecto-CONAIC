@@ -14,15 +14,6 @@ correo varchar(50) NOT NULL,
 tipo int NOT NULL
 );
 
-CREATE TABLE RecuperarContrasena(
-codigoRecuperacion varchar(6) NOT NULL,
-idCodigo int NOT NULL
-);
-
-CREATE TABLE UsuarioRecuperacion(
-correo varchar(50) NOT NULL,
-idCodigo int NOT NULL
-);
 
 CREATE TABLE Categoria(
 nombre varchar(50) NOT NULL,
@@ -63,10 +54,7 @@ numPregunta int NOT NULL,
 claveRespuesta varchar(10) NOT NULL
 );
 
-CREATE TABLE CriterioRespuesta(
-claveCriterio varchar(10) NOT NULL,
-claveRespuesta varchar(10) NOT NULL
-);
+
 
 CREATE TABLE PDF(
 referencia varchar(100) NOT NULL,
@@ -74,10 +62,6 @@ nombre varchar(20),
 clavePDF varchar(10) NOT NULL
 );
 
-CREATE TABLE CriteriosPDF(
-claveCriterio varchar(10) NOT NULL,
-clavePDF varchar(10) NOT NULL
-);
 
 CREATE TABLE SubCriterio(
 nombre text NOT NULL,
@@ -105,13 +89,7 @@ claveRecomendacion varchar(10) NOT NULL
 );
 
 
-ALTER TABLE UsuarioRecuperacion
-ADD CONSTRAINT PK_coid_usurec
-PRIMARY KEY (correo, idCodigo);
 
-ALTER TABLE RecuperarContrasena
-ADD CONSTRAINT PK_idc_reccon
-PRIMARY KEY (idCodigo);
 
 ALTER TABLE Usuario
 ADD CONSTRAINT PK_cor_usu
@@ -145,17 +123,13 @@ ALTER TABLE Respuestas
 ADD CONSTRAINT PK_cla_resp
 PRIMARY KEY (claveRespuesta);
 
-ALTER TABLE CriterioRespuesta
-ADD CONSTRAINT PK_cla_crires
-PRIMARY KEY (claveCriterio, claveRespuesta);
+
 
 ALTER TABLE PDF
 ADD CONSTRAINT PK_cla_pdf
 PRIMARY KEY (clavePDF);
 
-ALTER TABLE CriteriosPDF
-ADD CONSTRAINT PK_cla_cripdf
-PRIMARY KEY (claveCriterio, clavePDF);
+
 
 
 ALTER TABLE SubCriterio
@@ -180,15 +154,7 @@ PRIMARY KEY (claveSubCriterio, claveRecomendacion);
 
 
 
-ALTER TABLE UsuarioRecuperacion
-ADD CONSTRAINT FK_usRec_Usuario
-FOREIGN KEY(correo)
-REFERENCES Usuario(correo);
 
-ALTER TABLE UsuarioRecuperacion
-ADD CONSTRAINT FK_usRec_RecuperarContrasena
-FOREIGN KEY(idCodigo)
-REFERENCES RecuperarContrasena(idCodigo);
 
 
 
@@ -228,27 +194,10 @@ REFERENCES Criterio(claveCriterio);
 
 
 
-ALTER TABLE CriterioRespuesta
-ADD CONSTRAINT FK_criRes_Respuestas
-FOREIGN KEY(claveRespuesta)
-REFERENCES Respuestas(claveRespuesta);
-
-ALTER TABLE CriterioRespuesta
-ADD CONSTRAINT FK_criRes_Criterio
-FOREIGN KEY(claveCriterio)
-REFERENCES Criterio(claveCriterio);
 
 
 
-ALTER TABLE CriteriosPDF
-ADD CONSTRAINT FK_cripdf_PDF
-FOREIGN KEY(clavePDF)
-REFERENCES PDF(clavePDF);
 
-ALTER TABLE CriteriosPDF
-ADD CONSTRAINT FK_cripdf_Criterio
-FOREIGN KEY(claveCriterio)
-REFERENCES Criterio(claveCriterio);
 
 
 ALTER TABLE CriteriosSubCriterio
