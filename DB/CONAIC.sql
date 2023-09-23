@@ -11,7 +11,8 @@ apellidoMat varchar(20),
 cargo varchar(40),
 contrasena varchar(20) NOT NULL,
 correo varchar(50) NOT NULL,
-tipo int NOT NULL
+tipo int NOT NULL,
+confirmacion varchar(5) NOT NULL
 );
 
 
