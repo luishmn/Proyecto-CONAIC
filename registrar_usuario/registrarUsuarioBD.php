@@ -6,7 +6,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $cargo = $_POST["cargo"];
     $correo = $_POST["correo"];
     $contrasena = $_POST["contrasena"];
-    $tipo = 1;
+    $tipo =$_POST["tipoUsuario"];
+
+    if ($tipo=="normal"){
+        $tipo=0;
+    }
+    else{
+        $tipo=1;
+    }
 
     // Conexión a la base de datos MySQL
     $servername = "localhost";
