@@ -21,13 +21,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     // Inserción de datos en la tabla 
     $sql = "INSERT INTO usuario (nombre,apellidoPat, apellidoMat, cargo, contrasena,correo,tipo,confirmacion)
-            VALUES ('$nombre', '$apellido_paterno', '$apellido_materno', '$cargo','$contrasena','$correo','$tipo',FALSE)";
+            VALUES ('$nombre', '$apellido_paterno', '$apellido_materno', '$cargo','$contrasena','$correo','$tipo',0)";
 
     if ($conn->query($sql) === TRUE) {
-        //echo "Registro exitoso.";
+        echo "Registro exitoso.";
         header('Location: registraUsuarios.html');
-exit;
-    } else {
+        exit;
+    }  
+    else {
         echo "Error al registrar datos: " . $conn->error;
     }
 
