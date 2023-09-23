@@ -5,73 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONAIC</title>
     <link rel="stylesheet" href="registraUsuariosD.css">
-
-
 </head>
 <body>
- 
-
-    <form  class="from-login" action="registrarUsuarioBD.php" method="post">
+    
+    <div id="logoFondo"> 
         
+        <form class="from-login" action="registrarUsuarioBD.php" method="post">
 
-            <h1 class="centrar">Agregar Usuarios</h1>
+            <h1 class="centrar">Registrar Usuarios</h1>
             <br>
 
-
-            <div class="form_c1">
-                <div class="form_group">
-                <input type="text" id="nombre" class="form_input" placeholder=" " name="nombre" required>
-                <label for="nombre" class="form_label">Nombre:</label>
+            <div class="contenedor">
+                <div class="form_c1">
+                    <div class="form_group">
+                        <input type="text" id="nombre" class="form_input" placeholder=" " name="nombre" required>
+                        <label for="nombre" class="form_label">Nombre:</label>
+                    </div>
                 </div>
-            </div>
-
-            <div class="form_c2">
-                <div class="form_group">
-                <input type="text" id="apellidoP" class="form_input" placeholder=" " name="apellidoP" required>
-                <label for="apellidoP" class="form_label">Apellido Paterno:</label>
+                <div class="form_c2">
+                    <div class="form_group">
+                        <input type="text" id="apellidoP" class="form_input" placeholder=" " name="apellidoP" required>
+                        <label for="apellidoP" class="form_label">Apellido Paterno:</label>
+                    </div>
                 </div>
-            </div>
-
-
-            <div class="form_c3">
-                <div class="form_group">
-                <input type="text" id="apellidoM" class="form_input" placeholder=" " name="apellidoM" required>
-                <label for="apellidoM" class="form_label">Apellido Materno:</label>
-                </div>
+                <div class="form_c3">           
+                    <div class="form_group">
+                        <input type="text" id="apellidoM" class="form_input" placeholder=" " name="apellidoM" required>
+                        <label for="apellidoM" class="form_label">Apellido Materno:</label>
+                    </div>
+                </div> 
             </div>
             
+            <br><br><br><br>
+            
+            <div class="contenedor">
+                <div class="form_c4">
+                    <div class="form_group">
+                        <input type="text" id="cargo" class="form_input" placeholder=" " name="cargo" required>
+                        <label for="cargo" class="form_label">Cargo Desempeñado:</label>
+                    </div>
+                </div>
 
-            <div class="form_group">
-            <input type="text" id="cargo" class="form_input" placeholder=" " name="cargo" required>
-            <label for="cargo" class="form_label">Cargo a desempeñar:</label>
+                <div class="form_c9">   
+                    <select name="tipoUsuario" id="tipoUsuario" class="form_input" required>
+                        <option value="normal">Usuario Normal</option>
+                        <option value="admin">Usuario Administrador</option>
+                    </select>
+                    
+                </div>
             </div>
-
-
-            <div class="form_group">
-            <input type="email" id="correo" class="form_input" placeholder=" " name="correo" required>
-            <label for="correo" class="form_label">Correo:</label>
-            </div>
-
-            <div class="form_c4">
-            <div class="form_group">
-            <input type="password" id="contrasena" class="form_input" placeholder=" " name="contrasena" required>
-            <label for="contrasena" class="form_label">Contraseña:</label>
-            </div>
-            </div>
-
-            <div class="form_c5">
-            <div class="form_group">
-            <input type="password" id="contrasenaV" class="form_input" placeholder=" " name="contrasenaV" required>
-            <label for="contrasenaV" class="form_label">Ingresa Nuevamente Contraseña:</label>
-            </div>
-            </div>
-
-            <button type="submit">Enviar</button>
-
-    </form>
-
-
-
     
+            <br><br><br><br>
+            
+            <div class="form_c5">
+                <div class="form_group">
+                    <input type="email" id="correo" class="form_input" placeholder=" " name="correo" required>
+                    <label for="correo" class="form_label">Correo Electronico:</label>
+                </div>
+            </div>
+
+            <br><br><br><br>
+
+            <div class="contenedor">
+                <div class="form_c6">
+                    <div class="form_group">
+                        <input type="password" id="contrasena" class="form_input" placeholder=" " name="contrasena" required>
+                        <label for="contrasena" class="form_label">Contraseña:</label>
+                    </div>
+                </div>
+                
+                <div class="form_c7">
+                    <div class="form_group">
+                        <input type="password" id="contrasenaV" class="form_input" placeholder=" " name="contrasenaV" required>
+                        <label for="contrasenaV" class="form_label">Confirmar Contraseña:</label>
+                    </div>
+                </div>
+
+                <div class="form_c8">
+                    <button id="verpassword" disabled><img src="../imagenes/verPassword.png" alt="" id="ojo"></button>
+                    <script src="verpassword.js"></script>
+                </div>
+            </div>
+
+            <br><br><br><br>
+            
+            <div  class="form_c10">
+            <button type="submit" id="registrar">Registar Usuario</button>
+            </div>
+
+        </form>
+        
+        <img src="../imagenes/logo_Fondo.png" id="imgLogoFondo">
+        <img src="../imagenes/logo_CONAIC_letras.png" id="imgLogoLetrasFondo">
+
+
+    </div>
+
 </body>
 </html>
