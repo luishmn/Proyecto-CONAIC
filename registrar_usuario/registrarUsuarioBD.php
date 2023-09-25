@@ -31,16 +31,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             VALUES ('$nombre', '$apellido_paterno', '$apellido_materno', '$cargo','$contrasena','$correo','$tipo',0)";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Registro exitoso.";
-        header('Location: registraUsuarios.html');
-        exit;
+
+        echo "<script>";
+        echo "alert('Usuario Resgistrado. Correo enviado');";
+        echo "window.location.href = 'registraUsuarios.html';";
+        echo "</script>";
+        #header('Location: registraUsuarios.html');
+        //exit;
     }  
     else {
-        echo "Error al registrar datos: " . $conn->error;
+        
+        echo "<script>";
+        echo "<script>alert('El usuario fue registrado. Espera la confirmacion.' . $conn->error);</script>";
+        echo "window.location.href = 'registraUsuarios.html';";
+        echo "</script>";
+        #echo "Error al registrar datos: " . $conn->error;
     }
 
     $conn->close();
 } else {
-    echo "El formulario no ha sido enviado.";
+    echo "<script>";
+    echo "<script>alert('El Usuario no fue enviado');</script>";
+    echo "window.location.href = 'registraUsuarios.html';";
+    echo "</script>";
+
+    
 }
 ?>
