@@ -1,0 +1,196 @@
+body {
+    background-color: #D4E1E3;
+    
+}
+
+.correoC{
+    position: absolute;
+    top: 13%;
+    left: 15%;
+    width:71%;
+    height: 30%;
+    border: none;
+    font-size: 65%;
+    border-radius:70px 70px 70px 70px;
+    align-items: center;
+    margin: 0%;
+    text-indent:1.5cm;
+  }
+
+.corrC{
+    position: absolute;
+    top: 9%;;
+    left: 11%;
+    width: 35%;
+    height: 55%;
+}
+
+.imgLogoFondo{
+    position: absolute;
+    bottom:0;
+    left: 65%;
+    width: 35%;
+    height: 65%;
+}
+  
+  
+  
+.imgLogoLetras{
+    position: absolute; 
+    top: 0%;
+    bottom: 0;
+    left: 2%;
+    width: 20%;
+    height: 20%;
+}
+  
+  
+.cuadro{
+    position:absolute;
+    top: -23%;
+    left: 26%;
+    background-color:#89C7D0 ;
+    margin: auto;
+    margin-top: 180px;
+    box-shadow: 7px 13px 20px #C2C2C2;
+    border-radius:70px 70px 70px 70px;
+    width:45%;
+    height: 85%;
+    font-size: 300%;
+}
+
+.from_label_Tit{
+    position: absolute;
+    top: 5%;
+    left:25%;
+    font-size: 55%;
+    font-weight: bold;
+    font-family: 'Arial';
+}
+
+.from_ingreC1{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    left: 23%;
+    font-size: 40%;
+    font-family: 'Arial';
+    text-align: center;
+  
+  }
+
+
+.from_c1{
+    position: absolute;
+    top: 35%;
+    left: 23%;
+    width:22%;
+    height: 35%;
+    border: none;
+    font-size: 65%;
+    border-radius:70px 70px 70px 70px;
+    align-items: center;
+    margin: 0%;
+  }
+
+.from_c2{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    width:22%;
+    height: 35%;
+    border: none;
+    font-size: 65%;
+    border-radius:70px 70px 70px 70px;
+    align-items: center;
+   
+}
+
+
+.from_c3{
+    position: absolute;
+    top: 35%;
+    left: 37%;
+    width:22%;
+    height: 35%;
+    border: none;
+    font-size: 65%;
+    border-radius:70px 70px 70px 70px;
+    
+}
+
+
+
+.from_c4{
+    position: absolute;
+    top: 35%;
+    left: 44%;
+    width:22%;
+    height: 35%;
+    border: none;
+    font-size: 65%;
+    border-radius:70px 70px 70px 70px;
+}
+
+
+.from_c5{
+    position: absolute;
+    top:35%;
+    left: 51%;
+    width:22%;
+    height: 35%;
+    border: none;
+    font-size: 65%;
+    border-radius:70px 70px 70px 70px;
+}
+
+
+.from_c6{
+    position: absolute;
+    top: 35%;
+    left: 58%;
+    width:22%;
+    height: 35%;
+    border: none;
+    font-size: 65%;
+    border-radius:70px 70px 70px 70px;
+}
+
+
+.from_boton1{
+    position:absolute;
+    top: 85%;
+    left: 20%;
+    border: 1px solid #197B9A; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #197B9A; /*color botón*/
+    color: #000; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    font-family: 'Arial', sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+    font-size: 35%;
+    width:40%;
+    height: 3%;
+    text-align: center;
+  
+  }
+
+
+.from_boton2{
+    position:absolute;
+    top: 85%;
+    left: 70%;
+    border: 1px solid #197B9A; /*anchura, estilo y color borde*/
+    padding: 10px; /*espacio alrededor texto*/
+    background-color: #197B9A; /*color botón*/
+    color: #000; /*color texto*/
+    text-decoration: none; /*decoración texto*/
+    font-family: 'Arial', sans-serif; /*tipografía texto*/
+    border-radius: 50px; /*bordes redondos*/
+    font-size: 35%;
+    width:10%;
+    height: 3%;
+    text-align: center;
+  
+  }

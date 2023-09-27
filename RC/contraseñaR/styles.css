@@ -1,0 +1,128 @@
+body {
+  background-color: #D4E1E3;
+  
+}
+
+
+
+.imgLogoFondo{
+  position: absolute;
+  bottom:0;
+  left: 70%;
+  width: 35%;
+  height: 65%;
+}
+
+
+
+.imgLogoLetras{
+  position: absolute; 
+  top: 0%;
+  bottom: 0;
+  left: 2%;
+  width: 20%;
+  height: 20%;
+}
+
+
+.correo{
+  position: absolute; 
+  top: 18%;
+  bottom: 0;
+  left: 22%;
+  width: 26%;
+  height: 30%;
+}
+
+
+.cuadro{
+  position:absolute;
+  top: 2%;
+  right: 20%;
+  background-color:#89C7D0 ;
+  margin: auto;
+  margin-top: 180px;
+  box-shadow: 7px 13px 20px #C2C2C2;
+  border-radius:70px 70px 70px 70px;
+  width:60%;
+  height: 80%;
+  font-size: 300%;
+
+}
+
+
+
+.from_label_Tit{
+  position: absolute;
+  top: 5%;
+  left:29%;
+  font-size: 140%;
+  font-weight: bold;
+  font-family: 'Arial';
+
+
+}
+
+
+.from_label1{
+  color: var(--color);
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  left: 29%;
+  font-size: 80%;
+  font-family: 'Arial';
+
+}
+
+.from_contras1{
+  position: absolute;
+  top: 45%;
+  left: 29%;
+  width:40%;
+  height: 7%;
+  border: none;
+  font-size: 65%;
+  border-radius:70px 70px 70px 70px;
+}
+
+
+.from_label2{
+  color: var(--color);
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  left: 29%;
+  font-size: 80%;
+  font-family: 'Arial';
+
+}
+
+.from_contras2{
+  position: absolute;
+  top: 60%;
+  left: 29%;
+  width:40%;
+  height: 7%;
+  border: none;
+  font-size: 65%;
+  border-radius:70px 70px 70px 70px;
+}
+
+.from_boton{
+  position:absolute;
+  top: 85%;
+  right: 42%;
+  border: 1px solid #197B9A; /*anchura, estilo y color borde*/
+  padding: 10px; /*espacio alrededor texto*/
+  background-color: #197B9A; /*color botón*/
+  color: #000; /*color texto*/
+  text-decoration: none; /*decoración texto*/
+  text-transform: uppercase; /*capitalización texto*/
+  font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+  border-radius: 50px; /*bordes redondos*/
+  font-size: 60%;
+
+}
+
+
