@@ -47,7 +47,6 @@ body{
   
   #textoTituloPag{
     display: flex;
-    
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
@@ -58,7 +57,7 @@ body{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-  
+    
   }
   .buscar_icono {
     width: 41px;
@@ -112,7 +111,7 @@ body{
     
 }
 
-.rectangulo_azul{
+.nombres_columnas{
     width: 1168px;
 height: 62px;
 flex-shrink: 0;
@@ -121,7 +120,55 @@ margin: 0 auto ;
 width: 90%;
 }
 
-.rectangulo_azul_secundario{
+
+
+
+.nombres_columnas table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+ 
+}
+
+.nombres_columnas th {
+    padding: 10px; /* Ajusta el espacio entre encabezados y contenido */
+    background-color: #89C7D0;
+    color: black;
+    padding: 18px;
+}
+
+
+.nombres_columnas td {
+    padding: 10px; /* Ajusta el espacio entre celdas de datos */
+    border: 1px solid #89C7D0; /* Agrega un borde a las celdas */
+}
+
+.nombres_columnas tr:first-child {
+    background-color: #89C7D0;
+    color: black;
+}
+
+
+
+.fila-tabla.resaltado {
+    background-color: black; /* Cambia el fondo de color al seleccionar */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contenido{
     width: 1168px;
 height: 483px;
 flex-shrink: 0;
@@ -129,6 +176,35 @@ background: #F3FAFA;
 margin: 0 auto;
 width: 90%;
 }
+
+.contenido table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.contenido th {
+    padding: 10px; /* Ajusta el espacio entre encabezados y contenido */
+    background-color: white;
+    color: black;
+    padding: 18px;
+}
+
+
+.contenido td {
+    padding: 10px; /* Ajusta el espacio entre celdas de datos */
+    border: 1px solid white; /* Agrega un borde a las celdas */
+}
+
+.contenido tr:first-child {
+    background-color: white;
+    color: black;
+}
+
+
 
 
 .botones{
@@ -155,7 +231,7 @@ margin-right: 10px; /* Ajusta el valor del margen según tu preferencia */
 
 }
 
-.boton_guardar{
+.boton_registrar{
     width: 144px;
     height: 48px;
     flex-shrink: 0;
@@ -173,3 +249,31 @@ line-height: normal;
 margin-left: 10px; /* Ajusta el valor del margen según tu preferencia */
 
 }   
+
+#logoFondo{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    flex-shrink: 0;
+  }
+
+  
+  
+  #imgLogoFondo{
+    position: absolute; 
+    bottom: 0; 
+    right: 0;
+    width: 30%;
+    height: 60%;
+    z-index: -1;
+  }
+  
+  #imgLogoLetrasFondo{
+    position: absolute; 
+    top: -20%;
+    left: 0%;
+    width: 25%;
+    height: 30%;
+    z-index: -1;
+  }
+  
