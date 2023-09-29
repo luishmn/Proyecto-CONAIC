@@ -43,20 +43,19 @@
     <br><br><br>
 
     <?php
-    // Conexión a la base de datos
-    $servername = "localhost"; // Cambia esto con la dirección de tu servidor de base de datos
-    $username = "root"; // Cambia esto con tu nombre de usuario de la base de datos
-    $password = ""; // Cambia esto con tu contraseña de la base de datos
+  
+    $servername = "localhost"; 
+    $username = "root"; 
+    $password = ""; 
     $dbname = "conaic";
     
     $conn = new mysqli($servername, $username, $password, $dbname);
     
-    // Verificar la conexión
+
     if ($conn->connect_error) {
         die("Conexión fallida: " . $conn->connect_error);
     }
-    
-    // Consulta SQL para obtener los datos de la tabla 'usuario' excluyendo la columna 'confirmacion'
+   
     $sql = "SELECT nombre, apellidoPat, apellidoMat, cargo, contrasena, correo, tipo FROM usuario";
     $result = $conn->query($sql);
     ?>
