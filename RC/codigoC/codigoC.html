@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código de Recuperación</title>
+    <link rel="stylesheet" href="estiloCodigoC.css">
+</head>
+<body>
+    <div class="logoFondo"> <!-- ESTE ES EL DIV QUE TIENE EL LOGO QUE APARECE AL FONDO, CUBRE TODA LA PANTALLA ASI QUE POR ESO DENTRO DE EL SE PONEN OTROS ELEMENTOS -->
+        <img src="logo_Fondo.png" class="imgLogoFondo">
+    </div>
+
+    <div class="logoLetras"> <!--este es el logo con las letres coinaic itszas-->
+        <img src="logo_CONAIC_letras.png" class="imgLogoLetras">
+    </div>
+
+    
+
+    <div class="cuadro">
+
+        <div class="correoC">
+            <input type="text" name="correoCodigo" id="c1" maxlength="20"  class="correoC" required>
+            <div class="corrC"> <!--imagen donde aparece el correo-->
+                <img src="correo_Codig-removebg-preview (1).png" class="corrC">
+            </div>
+        </div>
+
+        
+        
+
+        <div class="from_tit">
+            <label for="tit" class="from_label_Tit">¿Olvidaste tu Contaseña?</label>
+        </div> 
+
+        <div class="from_ingresaC1">
+            <label for="ingresaC1" class="from_ingreC1">Ingresa el código que se envio a tu correo <br>electrónico</label>
+        </div>  
+         
+
+        <!-- espcios para ingresar el codigo-->
+        <div class="from_c1">
+            <input type="text" name="c1" id="c1" maxlength="1" onkeyup="saltarInput(event, 'from_c2')" class="from_c1" required>
+        </div>
+
+        <div class="from_c2">
+            <input type="text" name="c2" id="c2" maxlength="1" class="from_c2" required>
+        </div>
+
+        <div class="from_c3">
+            <input type="text" name="c3" id="c3" maxlength="1" class="from_c3" required>
+        </div>
+
+        <div class="from_c4">
+            <input type="text" name="c4" id="c4" maxlength="1" class="from_c4" required>
+        </div>
+
+        <div class="from_c5">
+            <input type="text" name="c5" id="c5" maxlength="1" class="from_c5" required>
+        </div>
+
+        <div class="from_c6">
+            <input type="text" name="c6" id="c6" maxlength="1" class="from_c6" required>
+        </div>
+
+
+        <div class="boton1">
+            <a href=" " class="from_boton1">Eviar código nuevamente</a>
+        </div>
+
+        <div class="boton2">
+            <a href=" " class="from_boton2">Enviar</a>
+        </div>
+
+
+    </div>
+   
+
+</body>
+</html>
+
+    
