@@ -7,6 +7,7 @@
     <script src="visualizar_usuarios.js"></script>
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
 
 </head>
 <body>
@@ -47,29 +48,29 @@
     <div id="formularioContainer" class="oculto">
 
             <!-- Contenido de tu formulario aquí -->
-            <form class="from-login" action="registrarUsuarioBD.php" method="post">
+            <form class="from-login" action="registrarUsuarioBD.php" id="formularioRegistro" method="post">
 
-                <h1 class="centrar">Registrar Usuarios</h1>
+                <h1 class="centrar">Registrar usuario</h1>
                 <br>
 
                 <div class="contenedor">
                     <div class="form_c1">
                         <div class="form_group">
-                            <input type="text" id="nombre" class="form_input" placeholder=" " name="nombre" required>
+                            <input type="text" id="nombre" class="form_input" placeholder=" " name="nombre" >
                             <label for="nombre" class="form_label">Nombre:</label>
                         </div>
                     </div>
                     <div class="form_c2">
                         <div class="form_group">
                             <input type="text" id="apellidoP" class="form_input" placeholder=" " name="apellidoP"
-                                required>
+                                >
                             <label for="apellidoP" class="form_label">Apellido Paterno:</label>
                         </div>
                     </div>
                     <div class="form_c3">
                         <div class="form_group">
                             <input type="text" id="apellidoM" class="form_input" placeholder=" " name="apellidoM"
-                                required>
+                                >
                             <label for="apellidoM" class="form_label">Apellido Materno:</label>
                         </div>
                     </div>
@@ -80,13 +81,13 @@
                 <div class="contenedor">
                     <div class="form_c4">
                         <div class="form_group">
-                            <input type="text" id="cargo" class="form_input" placeholder=" " name="cargo" required>
+                            <input type="text" id="cargo" class="form_input" placeholder=" " name="cargo" >
                             <label for="cargo" class="form_label">Cargo Desempeñado:</label>
                         </div>
                     </div>
 
                     <div class="form_c9">
-                        <select name="tipoUsuario" id="tipoUsuario" class="form_input" required>
+                        <select name="tipoUsuario" id="tipoUsuario" class="form_input" >
                             <option value="normal">Usuario Normal</option>
                             <option value="admin">Usuario Administrador</option>
                         </select>
@@ -98,7 +99,7 @@
 
                 <div class="form_c5">
                     <div class="form_group">
-                        <input type="email" id="correo" class="form_input" placeholder=" " name="correo" required>
+                        <input type="email" id="correo" class="form_input" placeholder=" " name="correo" >
                         <label for="correo" class="form_label">Correo Electronico:</label>
                     </div>
                 </div>
@@ -109,7 +110,7 @@
                     <div class="form_c6">
                         <div class="form_group">
                             <input type="password" id="contrasena" class="form_input" placeholder=" " name="contrasena"
-                                required>
+                                >
                             <label for="contrasena" class="form_label">Contraseña:</label>
                         </div>
                     </div>
@@ -117,7 +118,7 @@
                     <div class="form_c7">
                         <div class="form_group">
                             <input type="password" id="contrasenaV" class="form_input" placeholder=" "
-                                name="contrasenaV" required>
+                                name="contrasenaV" >
                             <label for="contrasenaV" class="form_label">Confirmar Contraseña:</label>
                         </div>
                     </div>
@@ -133,6 +134,15 @@
 
                 <div class="form_c10">
                     <button type="submit" id="registrar">Registar Usuario</button>
+                </div>
+
+                <div id="cuadroDialogo" class="oculto">
+                    <span id="cerrarDialogo" class="cerrar" onclick="cerrarDialogo()">&times;</span>
+                    <br><br>
+                    <h2 id="tituloError">Error</h2>
+                    <p id="descripcionError">Existe algun error en algo</p>
+                    <br>
+                    <button id="botonError" type="button" onclick="cerrarDialogo()">Cerrar</button>                
                 </div>
 
             
@@ -218,18 +228,114 @@
 
 </html>
 
+<script> //SCRIPT PARA VALIDAR EL FORMULARIO DE REGISTRO
+    function mostrarDialogo() {
+    document.getElementById("cuadroDialogo").style.display = "block";
+    }
+
+    function cerrarDialogo() {
+    document.getElementById("cuadroDialogo").style.display = "none";
+    }
+
+    var alerta = document.getElementById("cuadroDialogo"); //CERRAR ALERTA AL HACER CLIC EN CUALQUIER LUGAR DE LA PANTALLA
+    document.addEventListener("click", function (event) {
+
+    if (event.target !== alerta && !alerta.contains(event.target)) {
+        alerta.style.display = "none";
+    }
+    });
+
+    var mayusculas = /[A-Z]/;
+    var minusculas = /[a-z]/;
+    var numeros = /\d/;
+    var especiales = /[\W_]/;
+
+    var tituloAlerta = document.getElementById ("tituloError")
+    var descripcionAlerta = document.getElementById ("descripcionError")
+    var nombre = document.getElementById ("nombre")
+    var email = document.getElementById ("correo")
+    var cargo = document.getElementById ("cargo")
+    var apellidoM = document.getElementById ("apellidoM")
+    var apellidoP = document.getElementById ("apellidoP")
+    
+
+    document.addEventListener("DOMContentLoaded", function() {
+    const formulario = document.getElementById("formularioRegistro");
+  
+    formulario.addEventListener("submit", function(event) {
+      // Evita que el formulario se envíe automáticamente
+      event.preventDefault();
+  
+      // Realiza la validación de los campos aquí
+      const contrasena = document.getElementById("contrasena").value;
+      const contrasenaV = document.getElementById("contrasenaV").value;
+
+      
+    
+      if (nombre === "" || apellidoM === "" || apellidoP ==="" || cargo ==="" || email === "" || contrasena === "" || contrasenaV ===""){
+        tituloAlerta.textContent = "Llena todos los campos";
+        descripcionAlerta.textContent = "Asegurate de llenar todos los campos";
+        mostrarDialogo();
+      }
+      else if (contrasena != contrasenaV) {
+        tituloAlerta.textContent = "Contraseñas diferentes";
+        descripcionAlerta.textContent = "Las contraseñas no coinciden";
+        mostrarDialogo();
+      } 
+      else if (contrasena.length < 8){
+        tituloAlerta.textContent = "Contraseña muy corta";
+        descripcionAlerta.textContent = "La contraseña debe tener al menos 8 caracteres";
+        mostrarDialogo();
+      }
+      else if (contrasena.length > 20){
+        tituloAlerta.textContent = "Contraseña muy larga";
+        descripcionAlerta.textContent = "La contraseña debe tener menos de 20 caracteres";
+        mostrarDialogo();
+      }
+
+      else if (!contrasena.match(mayusculas)){
+        tituloAlerta.textContent = "Faltan mayusculas";
+        descripcionAlerta.textContent = "La contraseña debe tener al menos una letra mayuscula";
+        mostrarDialogo();
+      }
+      else if (!contrasena.match(minusculas)){
+        tituloAlerta.textContent = "Faltan minusculas";
+        descripcionAlerta.textContent = "La contraseña debe tener al menos una letra minuscula";
+        mostrarDialogo();
+      }
+
+      else if (!contrasena.match(numeros)){
+        tituloAlerta.textContent = "Faltan números";
+        descripcionAlerta.textContent = "La contraseña debe tener al menos un número";
+        mostrarDialogo();
+      }
+      
+
+      else {
+        // Si los campos son válidos, envía el formulario
+        formulario.submit();
+
+        
+      }
+    });
+  });
+  
+</script>
+
+
+
 <script> // Script para aparecer y desaparecer el formulario de registro
     document.getElementById("Registrar").addEventListener("click", function() {
     // Mostrar el fondo oscuro y el formulario
     document.getElementById("fondoOscuro").style.display = "block";
     document.getElementById("formularioContainer").style.display = "block";
-});
+    });
 
-document.getElementById("fondoOscuro").addEventListener("click", function() {
-    // Ocultar el fondo oscuro y el formulario cuando se hace clic fuera del formulario
-    document.getElementById("fondoOscuro").style.display = "none";
-    document.getElementById("formularioContainer").style.display = "none";
-});
+    document.getElementById("fondoOscuro").addEventListener("click", function() {
+        // Ocultar el fondo oscuro y el formulario cuando se hace clic fuera del formulario
+        document.getElementById("fondoOscuro").style.display = "none";
+        document.getElementById("formularioContainer").style.display = "none";
+    });
 </script>
 
 <script>
