@@ -280,6 +280,7 @@ margin-left: 10px; /* Ajusta el valor del margen según tu preferencia */
 
 
 
+  /* EMPIEZA EL CSS PARA EL FORMULARIO DE REGISTRO */
   .oculto {
     display: none;
 }
@@ -303,10 +304,10 @@ margin-left: 10px; /* Ajusta el valor del margen según tu preferencia */
     transform: translate(-50%, -50%);
     padding: 20px;
     z-index: 1000; /* Asegura que esté encima del fondo oscuro */
-    background-color:#89C7D0 ;
+   
     margin: auto;
     
-    box-shadow: 7px 13px 20px #646363;
+    
     border-radius:40px;
 }
 
@@ -354,7 +355,7 @@ label {
   margin: auto;
   margin-top: -3%;
   margin-left: -3%;
-  box-shadow: 7px 13px 20px #C2C2C2;
+  box-shadow: 7px 13px 20px #3b3939;
   padding: 20px 30px;
   border-radius:40px;
   z-index: 2;
@@ -396,55 +397,55 @@ label {
 
 .form_c1{
   position:absolute;
-  width: 28%;
-  left:1%; 
+  width: 26%;
+  left:3%; 
 }
 
 .form_c2{
   position:absolute;
-  width: 28%;
-  left:34%; 
+  width: 26%;
+  left:35%; 
 }
 .form_c3{
   position:absolute;
-  width: 28%;
+  width: 26%;
   left:67%; 
 }
 
 .form_c4{
   position:absolute;
   width: 60%;
-  left:1%; 
+  left:3%; 
 }
 
 .form_c5{
   position:absolute;
   width: 50%;
-  left:1%; 
+  left:3%; 
 }
 
 
 .form_c6{
   position:absolute;
-  width: 40%;
-  left:1%; 
+  width: 38%;
+  left:3%; 
 }
 .form_c7{
   position:absolute;
-  width: 40%;
+  width: 38%;
   left:47%; 
 }
 
 .form_c8{
   position:absolute;
-  left:92%; 
+  left:90%; 
   
 }
 
 .form_c9{
   position:absolute;
-  left:66.5%; 
-  width: 32%;
+  left:67.3%; 
+  width: 29%;
   
 }
 
@@ -485,7 +486,7 @@ label {
 }
 
 #verpassword{
-  width: 70%;
+  width: 60%;
   border: none;
   background: none;
   cursor: pointer;
