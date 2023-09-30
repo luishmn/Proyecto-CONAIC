@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         echo "<script>";
         echo "alert('Usuario Resgistrado. Correo enviado');";
-        echo "window.location.href = 'index_visual_usu.php;";
+        echo "window.location.href = 'index_visual_usu.php';";
         echo "</script>";
         #header('Location: registraUsuarios.html');
         //exit;
