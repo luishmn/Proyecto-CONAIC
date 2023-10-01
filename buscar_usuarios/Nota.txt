@@ -1,0 +1,7 @@
+Nota: Para que funcione este apartado:
+
+1. Se debe crear una base de datos llamada "conaic" en mysql
+2. Se debe de crear una tabla llamada "usuarios"
+3. La tabla debe de contener 8 columnas, las cuales son: id, nombre, 
+apellidoPat, apellidoMat, cargo, contrasena, correo, tipo
+4. Se debe llenar la tabla 
