@@ -27,14 +27,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Conexión a la base de datos fallida: " . $conn->connect_error);
     }
     // Inserción de datos en la tabla 
-    $sql = "INSERT INTO usuario (nombre,apellidoPat, apellidoMat, cargo, contrasena,correo,tipo,confirmacion)
-            VALUES ('$nombre', '$apellido_paterno', '$apellido_materno', '$cargo','$contrasena','$correo','$tipo',0)";
+    $sql = "UPDATE usuario
+    SET nombre = '$nombre',
+        apellidoPat = '$apellido_paterno',
+        apellidoMat = '$apellido_materno',
+        cargo = '$cargo',
+        contrasena = '$contrasena',
+        tipo = '$tipo'
+    WHERE correo = '$correo'";
 
     if ($conn->query($sql) === TRUE) {
 
         echo "<script>";
         echo "alert('Usuario Resgistrado. Correo enviado');";
-        echo "window.location.href = 'registraUsuarios.html';";
+        echo "window.location.href = 'editar_usuarios.php';";
         echo "</script>";
         #header('Location: registraUsuarios.html');
         //exit;
@@ -43,18 +49,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         echo "<script>";
         echo "<script>alert('El usuario fue registrado. Espera la confirmacion.' . $conn->error);</script>";
-        echo "window.location.href = 'registraUsuarios.html';";
+        //echo "window.location.href = 'editar_usuarios.php';";
         echo "</script>";
-        #echo "Error al registrar datos: " . $conn->error;
+        echo "Error al registrar datos: " . $conn->error;
     }
 
     $conn->close();
-} else {
-        echo "<script>";
-        echo "<script>alert('El usuario fue registrado. Espera la confirmacion.' . $conn->error);</script>";
-        echo "window.location.href = 'registraUsuarios.html';";
-        echo "</script>";
-
-    echo "<script>alert('El Usuario no fue enviado');</script>";
-}
+} 
 ?>

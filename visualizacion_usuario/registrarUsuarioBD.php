@@ -14,6 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     else{
         $tipo=1;
     }
+    
 
     // Conexión a la base de datos MySQL
     $servername = "localhost";
@@ -34,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         echo "<script>";
         echo "alert('Usuario Resgistrado. Correo enviado');";
-        echo "window.location.href = 'registraUsuarios.html';";
+        echo "window.location.href = 'index_visual_usu.php';";
         echo "</script>";
         #header('Location: registraUsuarios.html');
         //exit;
@@ -43,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         echo "<script>";
         echo "<script>alert('El usuario fue registrado. Espera la confirmacion.' . $conn->error);</script>";
-        echo "window.location.href = 'registraUsuarios.html';";
+        echo "window.location.href = 'index_visual_usu.php';";
         echo "</script>";
         #echo "Error al registrar datos: " . $conn->error;
     }
@@ -52,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
         echo "<script>";
         echo "<script>alert('El usuario fue registrado. Espera la confirmacion.' . $conn->error);</script>";
-        echo "window.location.href = 'registraUsuarios.html';";
+        echo "window.location.href = 'index_visual_usu.php';";
         echo "</script>";
 
     echo "<script>alert('El Usuario no fue enviado');</script>";
