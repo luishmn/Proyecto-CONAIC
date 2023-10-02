@@ -349,13 +349,7 @@
 
 <script>
 
-     // Selecciona el botón por su ID
-     // var botonGuardar = document.getElementById("Registrar");
 
-    // Agrega un manejador de eventos al botón
-    // botonGuardar.addEventListener("click", function() {
-        // Redirecciona al archivo "nuevo.html"
-        window.location.href = "../registrar_usuario/registraUsuarios.html";
     
 
 
