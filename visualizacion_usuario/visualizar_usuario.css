@@ -42,6 +42,7 @@ body{
     right: 0; /* Ajusta el final de la barra en la parte derecha */
     margin-left: auto;
     margin-right: auto;
+    font-family: Arial, sans-serif;
    
   }
   
@@ -57,6 +58,7 @@ body{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    font-family: Arial, sans-serif;
     
   }
   .buscar_icono {
@@ -102,12 +104,15 @@ body{
     margin-left: 20px;
     border: none;
     outline: none;
+    font-family: Arial, sans-serif;
 }
 
 .buscar_usuario{
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
+    font-family: Arial, sans-serif;
+
     
 }
 
@@ -118,6 +123,7 @@ flex-shrink: 0;
 background: #89C7D0;
 margin: 0 auto ;
 width: 90%;
+font-family: Arial, sans-serif;
 }
 
 
@@ -129,6 +135,7 @@ width: 90%;
     border-collapse: collapse;
     text-align: center;
     margin: 0 auto;
+    font-family: Arial, sans-serif;
  
 }
 
@@ -137,23 +144,20 @@ width: 90%;
     background-color: #89C7D0;
     color: black;
     padding: 18px;
+    font-family: Arial, sans-serif;
 }
 
 
 .nombres_columnas td {
     padding: 10px; /* Ajusta el espacio entre celdas de datos */
     border: 1px solid #89C7D0; /* Agrega un borde a las celdas */
+    font-family: Arial, sans-serif;
 }
 
 .nombres_columnas tr:first-child {
     background-color: #89C7D0;
     color: black;
-}
-
-
-
-.fila-tabla.resaltado {
-    background-color: black; /* Cambia el fondo de color al seleccionar */
+    font-family: Arial, sans-serif;
 }
 
 
@@ -164,45 +168,51 @@ width: 90%;
 
 
 
-
-
-
-
-.contenido{
-    width: 1168px;
-height: 483px;
-flex-shrink: 0;
-background: #F3FAFA;
-margin: 0 auto;
-width: 90%;
-}
-
-.contenido table {
-    width: 100%;
-    table-layout: fixed;
-    border-collapse: collapse;
-    text-align: center;
+.contenido {
+   
+    flex-shrink: 0;
+    background: #F3FAFA;
     margin: 0 auto;
-    
+    width: 90%;
+    font-family: Arial, sans-serif;
 }
 
-.contenido th {
-    padding: 10px; /* Ajusta el espacio entre encabezados y contenido */
+.tabla {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+}
+
+.fila {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.fila:hover {
+    background-color: #D4E1E3;
+    .celda{
+        border: 1px solid #D4E1E3;
+    }
+}
+
+.encabezado {
+    display: flex;
     background-color: white;
     color: black;
     padding: 18px;
+    font-family: Arial, sans-serif;
 }
 
-
-.contenido td {
-    padding: 10px; /* Ajusta el espacio entre celdas de datos */
-    border: 1px solid white; /* Agrega un borde a las celdas */
+.celda {
+    flex: 1; /* Que las celdas ocupen todo el espacio disponible */
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center; /* Centra el texto horizontalmente */
+    font-family: Arial, sans-serif;
 }
 
-.contenido tr:first-child {
-    background-color: white;
-    color: black;
-}
 
 
 
@@ -248,8 +258,29 @@ font-weight: 400;
 line-height: normal;
 margin-left: 10px; /* Ajusta el valor del margen según tu preferencia */
 
-}   
 
+
+}   
+.boton_editar{
+    width: 144px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #197B9A;
+    border: none;
+
+    color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 10px; /* Ajusta el valor del margen según tu preferencia */
+
+
+
+}   
 #logoFondo{
     position: relative;
     width: 100%;
@@ -258,15 +289,15 @@ margin-left: 10px; /* Ajusta el valor del margen según tu preferencia */
   }
 
   
-  
-  #imgLogoFondo{
-    position: absolute; 
-    bottom: 0; 
+  #imgLogoFondo {
+    position: fixed; /* Cambia "absolute" a "fixed" */
+    bottom: 0;
     right: 0;
     width: 30%;
     height: 60%;
     z-index: -1;
-  }
+}
+
   
   #imgLogoLetrasFondo{
     position: absolute; 

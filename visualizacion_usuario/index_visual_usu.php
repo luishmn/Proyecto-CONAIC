@@ -31,14 +31,14 @@
 
     <!--barra de busqueda-->
     <section class="buscar_usuario">
-        <form action="">
+        
             <div class="rectangulo_busqueda">
-                <input type="text" id="miInput" class="input_busqueda" value="Correo de usuario" onfocus="borrarTexto(this)">             
+                <input type="text" id="busqueda" class="input_busqueda"  placeholder="Buscar por correo">             
                 <div class="buscar_icono_fondo">
-                    <button type="submit" class="buscar_icono">
+                    <button class="buscar_icono">
                     </button></div>
             </div>
-        </form>
+        
     </section>
     <br><br><br>
 
@@ -73,27 +73,35 @@
         </tr>
     </table>
 </div>
-
 <div class="contenido">
-    <table>
+    <div class="tabla">
         <?php
         if ($result->num_rows > 0) {
+           
+
             while ($row = $result->fetch_assoc()) {
-                echo "<tr class='fila-tabla' data-correo='" . $row["correo"] . "'>";
-                echo "<td>" . $row["nombre"] . "</td>";
-                echo "<td>" . $row["apellidoPat"] . "</td>";
-                echo "<td>" . $row["apellidoMat"] . "</td>";
-                echo "<td>" . $row["cargo"] . "</td>";
-                echo "<td>" . $row["contrasena"] . "</td>";
-                echo "<td>" . $row["correo"] . "</td>";
-                echo "<td>" . $row["tipo"] . "</td>";
-                echo "</tr>";
+                echo "<div class='fila' data-correo='" . $row["correo"] . "'>";
+                echo "<div class='celda'>" . $row["nombre"] . "</div>";
+                echo "<div class='celda'>" . $row["apellidoPat"] . "</div>";
+                echo "<div class='celda'>" . $row["apellidoMat"] . "</div>";
+                echo "<div class='celda'>" . $row["cargo"] . "</div>";
+                echo "<div class='celda'>" . $row["contrasena"] . "</div>";
+                echo "<div class='celda'>" . $row["correo"] . "</div>";
+                
+                
+                if ($row["tipo"] == 1) {
+                    echo "<div class='celda'>Administrador</div>";
+                } else {
+                    echo "<div class='celda'>Usuario</div>";
+                }
+            
+                echo "</div>";
             }
-        } else {
-            echo "No se encontraron registros.";
-        }
+            }
+        
         ?>
-    </table>
+    </div>
+</div>
 
 
     </div>
@@ -102,6 +110,7 @@
     <section class="botones">
         <button id="Eliminar" class="boton_eliminar">Eliminar</button> 
         <button id="Registrar" class="boton_registrar">Registrar</button>
+        <button id="Editar" class="boton_editar">Editar</button>
     </section>
 
     
@@ -115,27 +124,6 @@
 
 <script>
 
-    function borrarTexto(input) {
-        if (input.value === "Clave de usuario") {
-            input.value = "";
-        }
-    }
-
-    function restaurarTexto(input) {
-        if (input.value === "") {
-            input.value = "Clave de usuario";
-        }
-    }
-
-    document.getElementById("miInput").addEventListener("focus", function () {
-        borrarTexto(this);
-    });
-
-    document.getElementById("miInput").addEventListener("blur", function () {
-        restaurarTexto(this);
-    });
-
-
      // Selecciona el botón por su ID
      var botonGuardar = document.getElementById("Registrar");
 
@@ -143,6 +131,19 @@
     botonGuardar.addEventListener("click", function() {
         // Redirecciona al archivo "nuevo.html"
         window.location.href = "../registrar_usuario/registraUsuarios.html";
+
+
+
+        function seleccionarFila(fila) {
+        // Remueve la clase de selección de todas las filas
+        var filas = document.querySelectorAll(".fila-tabla");
+        filas.forEach(function (fila) {
+            fila.classList.remove("fila-seleccionada");
+        });
+
+        // Agrega la clase de selección a la fila clicada
+        fila.classList.add("fila-seleccionada");
+    }
     });
 
 
