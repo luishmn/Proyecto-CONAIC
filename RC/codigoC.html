@@ -15,12 +15,12 @@
         <img src="logo_CONAIC_letras.png" class="imgLogoLetras">
     </div>
 
-    
 
     <div class="cuadro">
 
         <div class="correoC">
-            <input type="text" name="correoCodigo" id="c1" maxlength="20"  class="correoC" required>
+            <input type="text" name="correoCodigo" id="correoEspacio" maxlength="30"  class="correoC" required>
+            <!--<label for="correo" class="correoC" id="correoEspacio"></label>-->
             <div class="corrC"> <!--imagen donde aparece el correo-->
                 <img src="correo_Codig-removebg-preview (1).png" class="corrC">
             </div>
@@ -39,29 +39,31 @@
          
 
         <!-- espcios para ingresar el codigo-->
+        <form action="comprobarCodigo.php" method="post">
         <div class="from_c1">
-            <input type="text" name="c1" id="c1" maxlength="1" onkeyup="saltarInput(event, 'from_c2')" class="from_c1" required>
+            <input type="text" name="c1" id="c1" maxlength="1" class="from_c1" required oninput="moverEnfoque(this, 'c2')">
         </div>
 
         <div class="from_c2">
-            <input type="text" name="c2" id="c2" maxlength="1" class="from_c2" required>
+            <input type="text" name="c2" id="c2" maxlength="1" class="from_c2" required oninput="moverEnfoque(this, 'c3')">
         </div>
 
         <div class="from_c3">
-            <input type="text" name="c3" id="c3" maxlength="1" class="from_c3" required>
+            <input type="text" name="c3" id="c3" maxlength="1" class="from_c3" required oninput="moverEnfoque(this, 'c4')">
         </div>
 
         <div class="from_c4">
-            <input type="text" name="c4" id="c4" maxlength="1" class="from_c4" required>
+            <input type="text" name="c4" id="c4" maxlength="1" class="from_c4" required oninput="moverEnfoque(this, 'c5')">
         </div>
 
         <div class="from_c5">
-            <input type="text" name="c5" id="c5" maxlength="1" class="from_c5" required>
+            <input type="text" name="c5" id="c5" maxlength="1" class="from_c5" required oninput="moverEnfoque(this, 'c6')">
         </div>
 
         <div class="from_c6">
             <input type="text" name="c6" id="c6" maxlength="1" class="from_c6" required>
         </div>
+        
 
 
         <div class="boton1">
@@ -69,14 +71,15 @@
         </div>
 
         <div class="boton2">
-            <a href=" " class="from_boton2">Enviar</a>
+            <a onclick="obtenerCodigo()" class="from_boton2">Enviar</a>
         </div>
-
+        </form>
 
     </div>
-   
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="mandarCorreo.js"></script>
 
 </body>
 </html>
 
-    
