@@ -1,3 +1,17 @@
+<?php
+    session_start();
+    //$_SESSION['loggedin']= false;
+    // Verifica si el usuario ha iniciado sesión
+    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+        // Accede al nombre de usuario almacenado en la sesión
+        $nombreUsuario = $_SESSION['username'];
+    } else {
+        // Si no ha iniciado sesión, redirige al usuario a la página de inicio de sesión
+        header('Location: ../login.php');
+        exit;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +39,7 @@
             <div class="menu_usuario">
                 <button class="menu_estilo_usuario">
                     <img src="imagenes/boton_usuario.png" alt="Usuario"> 
-                    <div class="texto"> Diego </div>
+                    <div class="texto"> <?php echo $nombreUsuario; ?> </div>
                 </button>
                 <div class="contenido_del_menu_usuarios">
                     <a href="pagina_emergente.html">Configuración</a>

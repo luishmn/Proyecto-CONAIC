@@ -1,3 +1,9 @@
+<?php
+    session_set_cookie_params(0); // Vida útil de la sesión indefinida
+    session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -139,16 +145,18 @@
                         if (mysqli_num_rows($resultado) >= 1) {
                             $fila = mysqli_fetch_assoc($resultado);
                             $contraseña_bd = $fila['contrasena'];
-                            $nombreUsuario_bd = $fila['nombre']." ".$fila['apellidoPat'];
+                            $nombreUsuario_bd = $fila['nombre'];
                             $tipo_bd = $fila['tipo'];
 
                             if($contra != $contraseña_bd){
                                 echo "<script>showErrorModal('La contraseña es incorrecta. Vuelva a intentarlo.');</script>";
                             } else {
+                                
+                                $_SESSION['loggedin'] = true; // Variable de sesión para indicar que el usuario ha iniciado sesión
+                                $_SESSION['username'] = $nombreUsuario_bd; // Almacena el nombre de usuario en la sesión para mandarlo a los principales
                                 //princpial de jefe o admin
-                                //echo "<script>showErrorModal('Inicio de sesión exitoso!. Bienvenido \"$nombreUsuario_bd\"');</script>";
-                                if($tipo_bd == 1){
-                                    echo '<script>window.location.href = "/Principal Administrador/index.html";</script>';
+                                if($tipo_bd == 1) {
+                                    echo '<script>window.location.href = "/Principal Administrador/index.php";</script>';
                                     exit;
                                 } else{}
 
