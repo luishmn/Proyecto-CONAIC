@@ -176,13 +176,17 @@ font-family: Arial, sans-serif;
     background: #F3FAFA;
     margin: 0 auto;
     width: 90%;
+    height: 50%;
     font-family: Arial, sans-serif;
+    margin-bottom: 20px; /* Ajusta el valor según sea necesario */
 }
 
 .tabla {
     display: flex;
     flex-direction: column;
     border: 1px solid #ccc;
+    margin-bottom: 20px; /* Ajusta el valor según sea necesario */
+
 }
 
 .fila {
@@ -190,6 +194,8 @@ font-family: Arial, sans-serif;
     align-items: center;
     border-bottom: 1px solid #ccc;
     cursor: pointer;
+    margin-bottom: 10px; /* Ajusta el valor según sea necesario */
+    min-height: 50px; /* Por ejemplo */
 }
 
 .fila:hover {
@@ -198,7 +204,10 @@ font-family: Arial, sans-serif;
         border: 1px solid #D4E1E3;
     }
 }
-
+.tabla-container {
+  height: 100%; /* Ajusta la altura máxima según sea necesario */
+  overflow-y: auto; /* Agrega una barra de desplazamiento vertical cuando sea necesario */
+}
 .encabezado {
     display: flex;
     background-color: white;
@@ -223,6 +232,7 @@ font-family: Arial, sans-serif;
     display: flex;
     justify-content: flex-end; /* Alinea el contenido a la derecha */
     margin-right: 10%; /* Establece un margen derecho del 10% */
+    margin-top: -130px; 
 }
 .boton_eliminar{
     width: 144px;

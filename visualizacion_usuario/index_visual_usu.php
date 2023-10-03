@@ -187,6 +187,7 @@
     </table>
 </div>
 <div class="contenido">
+    <div class="tabla-container">
     <div class="tabla">
         <?php
         if ($result->num_rows > 0) {
@@ -213,24 +214,23 @@
             }
         
         ?>
+          </div>
     </div>
 </div>
 
 
     </div>
     
-    <br><br><br>
-    <section class="botones">
+    
+    <div class="botones">
         <button id="Eliminar" class="boton_eliminar">Eliminar</button> 
         <button id="Registrar" class="boton_registrar">Registrar</button>
         <button id="Editar" class="boton_editar">Editar</button>
-    </section>
+        </div>
 
     
     <img src="../imagenes/logo_Fondo.png" id="imgLogoFondo">
-    
-    </div>
-    
+  
     
 
 </body>
