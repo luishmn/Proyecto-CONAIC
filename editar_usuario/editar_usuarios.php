@@ -87,7 +87,7 @@ if ($result_usuario->num_rows > 0) {
             
             <div class="form_c5">
                 <div class="form_group">
-                    <input type="email" id="correo" class="form_input" placeholder=" " name="correo" required value="<?php echo $row["correo"]; ?>">
+                    <input type="email" id="correo" class="form_input" placeholder=" " name="correo" required value="<?php echo $row["correo"]; ?>" readonly>
                     <label for="correo" class="form_label">Correo Electronico:</label>
                 </div>
             </div>

@@ -27,8 +27,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Conexión a la base de datos fallida: " . $conn->connect_error);
     }
     // Inserción de datos en la tabla 
-    $sql = "INSERT INTO usuario (nombre,apellidoPat, apellidoMat, cargo, contrasena,correo,tipo)
-            VALUES ('$nombre', '$apellido_paterno', '$apellido_materno', '$cargo','$contrasena','$correo','$tipo')";
+    $sql = "UPDATE usuario
+    SET nombre = '$nombre',
+        apellidoPat = '$apellido_paterno',
+        apellidoMat = '$apellido_materno',
+        cargo = '$cargo',
+        contrasena = '$contrasena',
+        tipo = '$tipo'
+    WHERE correo = '$correo'";
 
     if ($conn->query($sql) === TRUE) {
 

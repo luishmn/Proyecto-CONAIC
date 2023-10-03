@@ -1,43 +1,26 @@
+window.addEventListener("load", function () {
+    // Obtener referencia al campo de búsqueda
+    var inputBusqueda = document.getElementById("busqueda");
 
+    // Obtener todas las filas de la tabla
+    var filas = document.querySelectorAll(".tabla .fila");
 
-function borrarTexto(input) {
-    if (input.value === "Clave de usuario") {
-        input.value = "";
-    }
-}
+    // Agregar un evento de escucha para el evento "input"
+    inputBusqueda.addEventListener("input", function () {
+        // Obtener el texto de búsqueda
+        var textoBusqueda = inputBusqueda.value.trim().toLowerCase();
 
-
-function restaurarTexto(input) {
-    if (input.value === "") {
-        input.value = "Clave de usuario";
-    }
-}
-
-
-document.getElementById("miInput").addEventListener("focus", function () {
-    borrarTexto(this);
+        // Recorrer todas las filas y mostrar u ocultar según la coincidencia de texto
+        filas.forEach(function (fila) {
+            var correo = fila.getAttribute("data-correo").toLowerCase();
+            if (correo.includes(textoBusqueda)) {
+                fila.style.display = ""; // Mostrar la fila
+                console.log("Correo coincidente: " + correo); // Imprimir en la consola
+            } else {
+                fila.style.display = "none"; // Ocultar la fila
+            }
+        });
+    });
 });
 
-document.getElementById("miInput").addEventListener("blur", function () {
-    restaurarTexto(this);
-});
-
-$(function(){
-    // Selecciona las filas de la tabla con la clase "fila-tabla"
-    $('.fila-tabla').click(function(e){
-      if($(this).hasClass('row-selected')){
-        $(this).addClass('other-clic')
-      }else{
-        cleanTr()
-        $(this).addClass('row-selected')
-      }
-    })
-    
-    // Función para limpiar las filas seleccionadas
-    function cleanTr(){
-      $('.row-selected').each(function(index, element){
-        $(element).removeClass('row-selected')
-        $(element).removeClass('other-clic')
-      })
-    }
-  })
+  

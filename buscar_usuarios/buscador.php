@@ -17,6 +17,7 @@
         
         <div class="barra-de-busqueda">
             <input type="text" id="buscador" placeholder="Buscar usuario">
+            <img src="imagenes/icono_buscar.png" alt="Buscar">
         </div>
             
 
@@ -51,8 +52,8 @@
                                     <td>${usuario.nombre}</td>
                                     <td>${usuario.correo}</td>
                                     <td>
-                                        <button onclick="modificarUsuario(${usuario.id})">Modificar</button>
-                                        <button onclick="eliminarUsuario(${usuario.id})">Eliminar</button>
+                                        <button onclick="modificarUsuario('${usuario.id}')">Modificar</button>
+                                        <button onclick="eliminarUsuario('${usuario.id}')">Eliminar</button>
                                     </td>
                                 </tr>
                             `;
@@ -62,6 +63,14 @@
                 document.getElementById('resultados').querySelector('tbody').innerHTML = '';
             }
         });
+
+        function modificarUsuario(id) {
+            window.location.href = "modificar_usuario.php?userId=" + id;
+        }
+
+        function eliminarUsuario(id) {
+            window.location.href = "modificar_usuario.php?userId=" + id;
+        }
 
 
         </script>
