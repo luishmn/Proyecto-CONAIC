@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var correo="almarazsofia29@gmail.com" //correo extraido de la base de datos
+    var correo="ejemplo@gmail.com" //correo extraido de la base de datos
     document.getElementById('correoEspacio').value=correo;
     console.log(correo);
 });
