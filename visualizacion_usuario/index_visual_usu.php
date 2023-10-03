@@ -259,13 +259,9 @@
     var numeros = /\d/;
     var especiales = /[\W_]/;
 
-    var tituloAlerta = document.getElementById ("tituloError")
-    var descripcionAlerta = document.getElementById ("descripcionError")
-    var nombre = document.getElementById ("nombre")
-    var email = document.getElementById ("correo")
-    var cargo = document.getElementById ("cargo")
-    var apellidoM = document.getElementById ("apellidoM")
-    var apellidoP = document.getElementById ("apellidoP")
+    var tituloAlerta = document.getElementById ("tituloError");
+    var descripcionAlerta = document.getElementById ("descripcionError");
+    
     
 
     document.addEventListener("DOMContentLoaded", function() {
@@ -276,12 +272,17 @@
       event.preventDefault();
   
       // Realiza la validación de los campos aquí
-      const contrasena = document.getElementById("contrasena").value;
-      const contrasenaV = document.getElementById("contrasenaV").value;
+        const contrasena = document.getElementById("contrasena").value;
+        const contrasenaV = document.getElementById("contrasenaV").value;
+        var nombre = document.getElementById ("nombre").value;
+        var email = document.getElementById ("correo").value;
+        var cargo = document.getElementById ("cargo").value;
+        var apellidoM = document.getElementById ("apellidoM").value;
+        var apellidoP = document.getElementById ("apellidoP").value;
 
       
     
-      if (nombre === "" || apellidoM === "" || apellidoP ==="" || cargo ==="" || email === "" || contrasena === "" || contrasenaV ===""){
+      if (nombre.trim() === "" || apellidoM.trim() === "" || apellidoP.trim() ==="" || cargo.trim() ==="" || email.trim() === "" || contrasena.trim() === "" || contrasenaV.trim() ===""){
         tituloAlerta.textContent = "Llena todos los campos";
         descripcionAlerta.textContent = "Asegurate de llenar todos los campos";
         mostrarDialogo();
