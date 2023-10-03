@@ -17,7 +17,7 @@
         <div class="barra-superior"><!-- ESTE ES EL DIV DE LA BARRA SUPERIOR -->
             
             <div class ="tituloPag">
-                <p id="textoTituloPag">Visualizar Usuarios</p>
+                <p id="textoTituloPag">Usuarios</p>
             </div>
         </div>
 
