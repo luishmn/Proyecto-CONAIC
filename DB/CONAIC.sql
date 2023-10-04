@@ -26,8 +26,8 @@ nombre text NOT NULL,
 claveCriterio varchar(10) NOT NULL
 );
 
-CREATE TABLE AsignacionCriterio(
-claveCriterio varchar(10) NOT NULL,
+CREATE TABLE AsignacionSubCriterio(
+claveSubCriterio varchar(10) NOT NULL,
 correo varchar(50) NOT NULL
 );
 
@@ -96,9 +96,9 @@ ALTER TABLE Usuario
 ADD CONSTRAINT PK_cor_usu
 PRIMARY KEY (correo);
 
-ALTER TABLE AsignacionCriterio
+ALTER TABLE AsignacionSubCriterio
 ADD CONSTRAINT PK_claco_ascr
-PRIMARY KEY (claveCriterio, correo);
+PRIMARY KEY (claveSubCriterio, correo);
 
 ALTER TABLE CriteriosCategoria
 ADD CONSTRAINT PK_cricat_crica
@@ -159,15 +159,15 @@ PRIMARY KEY (claveSubCriterio, claveRecomendacion);
 
 
 
-ALTER TABLE AsignacionCriterio
+ALTER TABLE AsignacionSubCriterio
 ADD CONSTRAINT FK_asCri_Usuario
 FOREIGN KEY(correo)
 REFERENCES Usuario(correo);
 
-ALTER TABLE AsignacionCriterio
+ALTER TABLE AsignacionSubCriterio
 ADD CONSTRAINT FK_asCri_Criterio
-FOREIGN KEY(claveCriterio)
-REFERENCES Criterio(claveCriterio);
+FOREIGN KEY(claveSubCriterio)
+REFERENCES SubCriterio(claveSubCriterio);
 
 
 
