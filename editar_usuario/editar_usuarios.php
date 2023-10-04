@@ -3,7 +3,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "conaic";
-$correo = "ramongonzalez@gmail.com";
+$correo = "luis55@hotmail.com";
 
 // Conectar nuevamente a la base de datos
 $conn = new mysqli($servername, $username, $password, $dbname);

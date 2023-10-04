@@ -14,7 +14,7 @@
 </head>
 
 <body bgcolor="#D4E1E3">
-    <img class="logo_Arriba" src="/imagenes/img_login/logo_CONAIC 1.png" alt="logo CONAIC">
+    <img class="logo_Arriba" src="/imagenes/img_login/logo_CONAIC 1.png" alt="logo CONAIC"> 
     
     
     <div class="cajaLogin">

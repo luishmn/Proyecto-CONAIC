@@ -12,6 +12,13 @@ body{
     left: center;
 }
 
+.logo_Arriba{
+    min-width: 250px;
+    position: absolute;
+    top: 10%;
+    width: 25%;
+    height: auto;
+}
 
 .barra-superior{
    
