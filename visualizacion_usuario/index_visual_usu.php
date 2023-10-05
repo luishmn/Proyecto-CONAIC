@@ -219,8 +219,6 @@
 </div>
 
 
-    </div>
-    
     
     <div class="botones">
         <button id="Eliminar" class="boton_eliminar">Eliminar</button> 
