@@ -1,5 +1,5 @@
 body{
-    background:  #D4E1E3;;
+    background:  #D4E1E3;
 }
 #logoFondo{
     position: relative;
@@ -86,17 +86,16 @@ body{
 
 
 .rectangulo_busqueda{
-    width: 384px;
-    height: 48px;
-    flex-shrink: 0;
+  width: 320px;
+  height: 48px;
+  flex-shrink: 0;
 
-    border-radius: 40px;
-    background: linear-gradient(0deg, #FEFFFF 0%, #FEFFFF 100%), #FEFFFF;
+  border-radius: 40px;
+  background: linear-gradient(0deg, #FEFFFF 0%, #FEFFFF 100%), #FEFFFF;
 
-    display: flex;
-
-    justify-content: space-between; 
-    align-items: center; /* Centra verticalmente en el medio */
+  display: flex;
+  justify-content: space-between; 
+  align-items: space; /* Centra verticalmente en el medio */
     
 
 
@@ -110,10 +109,12 @@ body{
 }
 
 .buscar_usuario{
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-between; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  font-family: Arial, sans-serif;
+  margin-left: 65px;
+  width: 95%;
 
     
 }
@@ -176,7 +177,7 @@ font-family: Arial, sans-serif;
     background: #F3FAFA;
     margin: 0 auto;
     width: 90%;
-    height: 50%;
+    height: 45%;
     font-family: Arial, sans-serif;
     margin-bottom: 20px; /* Ajusta el valor según sea necesario */
 }
@@ -226,13 +227,11 @@ font-family: Arial, sans-serif;
 
 
 
-
-
 .botones{
     display: flex;
     justify-content: flex-end; /* Alinea el contenido a la derecha */
     margin-right: 10%; /* Establece un margen derecho del 10% */
-    margin-top: -130px; 
+    
 }
 .boton_eliminar{
     width: 144px;
@@ -646,3 +645,159 @@ label {
   color: red;
   font-size: 300%;
 }
+
+
+/* EMPIEZA EL CSS PARA EL FORMULARIO DE EDITAR USUARIO */
+#formularioContainerEditar {
+  width: 50%;
+  height: 70%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  z-index: 1000; /* Asegura que esté encima del fondo oscuro */
+ 
+  margin: auto;
+  
+  
+  border-radius:40px;
+}
+
+
+
+
+#nombreEdit, #apellidoPEdit, #apellidoMEdit, #cargoEdit{
+padding-left: 10%;
+border: 1px solid #ccc;
+border-radius: 30px;
+font-family: Arial;
+}
+
+#correoEdit {
+padding-left: 3%;
+border: 1px solid #ccc;
+border-radius: 30px;
+font-family: Arial;
+}
+#cargoEdit{
+padding-left: 3%;
+border: 1px solid #ccc;
+border-radius: 30px;
+font-family: Arial;
+}
+
+#contrasenaEdit, #contrasenaVEdit{
+padding-left: 7%;
+border: 1px solid #ccc;
+border-radius: 30px;
+font-family: Arial;
+}
+
+
+
+
+
+#tipoUsuarioEdit{
+border-radius: 30px;
+
+}
+
+
+
+#verpasswordEdit{
+width: 60%;
+border: none;
+background: none;
+cursor: pointer;
+outline: none; /* Elimina el contorno gris al quitar el foco del botón */
+
+transition: opacity 0.9s; /* Agrega una transición suave de opacidad */
+}
+
+/* Cambia la opacidad al pasar el ratón por encima */
+#verpasswordEdit img:hover {
+opacity: 0.8; /* Cambia la opacidad al 70% cuando el cursor está sobre la imagen */
+}
+
+#ojoEdit{
+width: 100%;
+height: 100%;
+opacity: 0.2;
+
+}
+
+/* Animación para el formulario emergente */
+@keyframes aparecer {
+  from {
+      transform: translate(-50%, -60%);
+      opacity: 0;
+  }
+  to {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+  }
+}
+
+/* Estilos para el formulario emergente */
+#formularioContainerEditar {
+  /* Tus estilos existentes aquí */
+
+  /* Aplicar la animación */
+  animation: aparecer 0.3s ease-in-out;
+}
+
+/* Estilos para el cuadro de diálogo personalizado */
+#cuadroDialogoEdit {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+border-radius: 30px;
+display: none;
+
+
+width: 50%;
+height: 50%;
+background-color: #F3FAFA;
+z-index: 1010;
+justify-content: center; /* Centra horizontalmente */
+align-items: center; /* Centra verticalmente */
+border: 1px solid rgb(199, 77, 77); /* Agrega un borde rojo */
+
+}
+
+#tituloErrorEdit{
+text-align: center;
+font-family: Arial;
+
+}
+
+#descripcionErrorEdit{
+text-align: center;
+font-family: Arial;
+font-size: medium;
+
+}
+
+#botonErrorEdit{
+text-align: center;
+font-family: Arial;
+font-size: medium;
+
+display: block; /* Convierte el botón en un elemento de bloque */
+margin: 0 auto; /* Centra horizontalmente */
+padding: 10px 20px; /* Espaciado interior del botón */
+border-radius: 10px; /* Bordes redondeados */
+background-color: #0097B2; /* Cambia el color de fondo */
+color: #fff; /* Cambia el color del texto */
+border: none; /* Elimina el borde */
+cursor: pointer;
+}
+
+#botonErrorEdit:hover {
+background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+}
+
+

@@ -1,12 +1,12 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nombre = $_POST["nombreEdit"];
-    $apellido_paterno = $_POST["apellidoPEdit"];
-    $apellido_materno = $_POST["apellidoMEdit"];
-    $cargo = $_POST["cargoEdit"];
-    $correo = $_POST["correoEdit"];
-    $contrasena = $_POST["contrasenaEdit"];
-    $tipo =$_POST["tipoUsuarioEdit"];
+    $nombre = $_POST["nombre"];
+    $apellido_paterno = $_POST["apellidoP"];
+    $apellido_materno = $_POST["apellidoM"];
+    $cargo = $_POST["cargo"];
+    $correo = $_POST["correo"];
+    $contrasena = $_POST["contrasena"];
+    $tipo =$_POST["tipoUsuario"];
 
     if ($tipo=="normal"){
         $tipo=0;

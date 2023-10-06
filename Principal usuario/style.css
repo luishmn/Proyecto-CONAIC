@@ -1,29 +1,39 @@
+
+body .img2{
+    position: absolute;
+    bottom: 60%;
+    right: 35%;
+    width: 60vh;
+    height:auto;
+    z-index: -1;
+    transform: scale(0.80);
+    object-fit: cover;
+    translate(-50%, -50%);
+    object-fit: cover;
+    
+}
+
+
+
 body{
     background-color: #D4E1E3;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
     margin: 0;
     padding: 0;
     position: absolute;
     top: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     left: center;
 }
 
-.logo_Arriba{
-    min-width: 250px;
-    position: absolute;
-    top: 10%;
-    width: 25%;
-    height: auto;
-}
 
 .barra-superior{
    
     background-color: #145070; 
-    height: 10%;
+    height: 08%;
     border-radius: 30px; 
     padding: 40px; 
     color: white; 
@@ -34,7 +44,6 @@ body{
 
 }
 
-/*=========================================*/
 
 .barra-superior .menu_arte{
     border: none;
@@ -57,14 +66,11 @@ body{
     display: block;
 }
 
-
-/*Estilo para el contenedor del menu */
 .barra-superior .menu_desplegable {
     position: relative;
     display: inline-block;
 }
 
-/*Estilo para el contenido desplegable */
 .barra-superior .contenido_del_menu{
     display: none;
     background-color: #f9f9f9;
@@ -76,7 +82,6 @@ body{
     left: 50px;
 }
 
-/*Estilo para las opciones del contenido desplegable*/
 .barra-superior .contenido_del_menu a {
     font-family: Arial;
     font-size: 12;
@@ -86,19 +91,15 @@ body{
     display: block;
 }
 
-/*Mostrar el menu desplegable*/
 .barra-superior .menu_desplegable:hover .contenido_del_menu {
     display: block;
 }
 
-/*Color de las opciones del menu desplegable*/
 .barra-superior .contenido_del_menu a:hover {
     background-color: lightblue;
 }
 
-/*-==========================*/
 
-/*Dar formato a la imagen del menu desplegable*/
 .barra-superior .menu_estilo_usuario{
     border: none;
     background-color: transparent;
@@ -122,73 +123,42 @@ body{
 }
 
 
-/*Estilo para el contenedor del menu */
-.barra-superior .menu_usuario {
-    position: relative;
-    display: inline-block;
-}
 
-/*Estilo para el contenido desplegable */
-.barra-superior .contenido_del_menu_usuarios{
-    display: none;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    position: fixed;
-    top: 9%;
-    right: 7.5%;
-}
-
-
-/*Estilo para las opciones del contenido desplegable*/
-.barra-superior .contenido_del_menu_usuarios a {
-    font-family: Arial;
-    font-size: 12;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/*Mostrar el menu desplegable*/
 .barra-superior .menu_usuario:hover .contenido_del_menu_usuarios {
     display: block;
 }
 
-/*Color de las opciones del menu desplegable*/
 .barra-superior .contenido_del_menu_usuarios a:hover {
     background-color: lightblue;
 }
 
 .texto{
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
     font-size: 14px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     text-align: center;
     width: 90%;
+    position: absolute;
+    top: 47%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: black;
+    
 }
 
 
-/*=============================================*/
-
-
 .contenedor-botones{
-    width: 500px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
     height: 400px;
     padding-left: 50px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin: 20px;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
     
 }
 
@@ -238,9 +208,10 @@ body .img1{
     width: 60vh;
     height:auto;
     z-index: -1;
+
+
     
 }
-
 
 
 
