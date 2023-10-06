@@ -337,6 +337,10 @@
 
     
     <img src="../imagenes/logo_Fondo.png" id="imgLogoFondo">
+
+    <footer>
+        <br><br>
+    </footer>
   
     
 
@@ -451,6 +455,12 @@
         descripcionAlerta.textContent = "La contraseña debe tener al menos un número";
         mostrarDialogo();
       }
+
+      else if (/\s/.test(contrasena)) {
+        tituloAlerta.textContent = "Espacios en contraseña";
+        descripcionAlerta.textContent = "La contraseña no debe tener espacios";
+        mostrarDialogo();
+        }
       
 
       else {
@@ -589,6 +599,11 @@
         descripcionAlerta1.textContent = "La contraseña debe tener al menos un número";
         mostrarDialogo1();
       }
+      else if (/\s/.test(contrasena1)) {
+        tituloAlerta1.textContent = "Espacios en contraseña";
+        descripcionAlerta1.textContent = "La contraseña no debe tener espacios";
+        mostrarDialogo1();
+        }
       
 
       else {
