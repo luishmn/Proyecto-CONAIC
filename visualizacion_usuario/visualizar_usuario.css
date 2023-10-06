@@ -86,17 +86,16 @@ body{
 
 
 .rectangulo_busqueda{
-    width: 384px;
-    height: 48px;
-    flex-shrink: 0;
+  width: 320px;
+  height: 48px;
+  flex-shrink: 0;
 
-    border-radius: 40px;
-    background: linear-gradient(0deg, #FEFFFF 0%, #FEFFFF 100%), #FEFFFF;
+  border-radius: 40px;
+  background: linear-gradient(0deg, #FEFFFF 0%, #FEFFFF 100%), #FEFFFF;
 
-    display: flex;
-
-    justify-content: space-between; 
-    align-items: center; /* Centra verticalmente en el medio */
+  display: flex;
+  justify-content: space-between; 
+  align-items: space; /* Centra verticalmente en el medio */
     
 
 
@@ -110,10 +109,12 @@ body{
 }
 
 .buscar_usuario{
-    display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-between; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  font-family: Arial, sans-serif;
+  margin-left: 55px;
+  width: 100%;
 
     
 }
@@ -223,8 +224,6 @@ font-family: Arial, sans-serif;
     text-align: center; /* Centra el texto horizontalmente */
     font-family: Arial, sans-serif;
 }
-
-
 
 
 

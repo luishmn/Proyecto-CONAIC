@@ -34,10 +34,18 @@
     <section class="buscar_usuario">
         
             <div class="rectangulo_busqueda">
-                <input type="text" id="busqueda" class="input_busqueda"  placeholder="Buscar por correo">             
+                <input type="text" id="busqueda" class="input_busqueda"  placeholder="Buscar usuarios">             
                 <div class="buscar_icono_fondo">
-                    <button class="buscar_icono">
-                    </button></div>
+                    <button class="buscar_icono"></button>
+                    
+                    
+                </div>  
+
+            </div>
+
+            <div class="botones">
+                <button id="Eliminar" class="boton_eliminar">Eliminar</button> 
+                <button id="Registrar" class="boton_registrar">Registrar</button>
             </div>
         
     </section>
@@ -64,14 +72,14 @@
                         <div class="form_group">
                             <input type="text" id="apellidoP" class="form_input" placeholder=" " name="apellidoP"
                                 >
-                            <label for="apellidoP" class="form_label">Apellido Paterno:</label>
+                            <label for="apellidoP" class="form_label">Apellido paterno:</label>
                         </div>
                     </div>
                     <div class="form_c3">
                         <div class="form_group">
                             <input type="text" id="apellidoM" class="form_input" placeholder=" " name="apellidoM"
                                 >
-                            <label for="apellidoM" class="form_label">Apellido Materno:</label>
+                            <label for="apellidoM" class="form_label">Apellido materno:</label>
                         </div>
                     </div>
                 </div>
@@ -82,14 +90,14 @@
                     <div class="form_c4">
                         <div class="form_group">
                             <input type="text" id="cargo" class="form_input" placeholder=" " name="cargo" >
-                            <label for="cargo" class="form_label">Cargo Desempeñado:</label>
+                            <label for="cargo" class="form_label">Cargo desempeñado:</label>
                         </div>
                     </div>
 
                     <div class="form_c9">
                         <select name="tipoUsuario" id="tipoUsuario" class="form_input" >
-                            <option value="normal">Usuario Normal</option>
-                            <option value="admin">Usuario Administrador</option>
+                            <option value="normal">Usuario normal</option>
+                            <option value="admin">Usuario administrador</option>
                         </select>
 
                     </div>
@@ -100,7 +108,7 @@
                 <div class="form_c5">
                     <div class="form_group">
                         <input type="email" id="correo" class="form_input" placeholder=" " name="correo" >
-                        <label for="correo" class="form_label">Correo Electronico:</label>
+                        <label for="correo" class="form_label">Correo electrónico:</label>
                     </div>
                 </div>
 
@@ -119,7 +127,7 @@
                         <div class="form_group">
                             <input type="password" id="contrasenaV" class="form_input" placeholder=" "
                                 name="contrasenaV" >
-                            <label for="contrasenaV" class="form_label">Confirmar Contraseña:</label>
+                            <label for="contrasenaV" class="form_label">Confirmar contraseña:</label>
                         </div>
                     </div>
 
@@ -133,14 +141,14 @@
                 <br><br><br><br>
 
                 <div class="form_c10">
-                    <button type="submit" id="registrar">Registar Usuario</button>
+                    <button type="submit" id="registrar">Registar usuario</button>
                 </div>
 
                 <div id="cuadroDialogo" class="oculto">
                     <span id="cerrarDialogo" class="cerrar" onclick="cerrarDialogo()">&times;</span>
                     <br><br>
                     <h2 id="tituloError">Error</h2>
-                    <p id="descripcionError">Existe algun error en algo</p>
+                    <p id="descripcionError">Existe algún error en uno de los apartados</p>
                     <br>
                     <button id="botonError" type="button" onclick="cerrarDialogo()">Cerrar</button>                
                 </div>
@@ -169,14 +177,14 @@
                         <div class="form_group">
                             <input type="text" id="apellidoPEdit" class="form_input" placeholder=" " name="apellidoP"
                                 >
-                            <label for="apellidoP" class="form_label">Apellido Paterno:</label>
+                            <label for="apellidoP" class="form_label">Apellido paterno:</label>
                         </div>
                     </div>
                     <div class="form_c3">
                         <div class="form_group">
                             <input type="text" id="apellidoMEdit" class="form_input" placeholder=" " name="apellidoM"
                                 >
-                            <label for="apellidoM" class="form_label">Apellido Materno:</label>
+                            <label for="apellidoM" class="form_label">Apellido materno:</label>
                         </div>
                     </div>
                 </div>
@@ -187,14 +195,14 @@
                     <div class="form_c4">
                         <div class="form_group">
                             <input type="text" id="cargoEdit" class="form_input" placeholder=" " name="cargo" >
-                            <label for="cargo" class="form_label">Cargo Desempeñado:</label>
+                            <label for="cargo" class="form_label">Cargo desempeñado:</label>
                         </div>
                     </div>
 
                     <div class="form_c9">
                         <select name="tipoUsuario" id="tipoUsuarioEdit" class="form_input" >
-                            <option value="normal">Usuario Normal</option>
-                            <option value="admin">Usuario Administrador</option>
+                            <option value="normal">Usuario normal</option>
+                            <option value="admin">Usuario administrador</option>
                         </select>
 
                     </div>
@@ -205,7 +213,7 @@
                 <div class="form_c5">
                     <div class="form_group">
                         <input type="email" id="correoEdit" class="form_input" placeholder=" " name="correo" readonly >
-                        <label for="correo" class="form_label">Correo Electronico:</label>
+                        <label for="correo" class="form_label">Correo electrónico:</label>
                     </div>
                 </div>
 
@@ -224,7 +232,7 @@
                         <div class="form_group">
                             <input type="password" id="contrasenaVEdit" class="form_input" placeholder=" "
                                 name="contrasenaV" >
-                            <label for="contrasenaV" class="form_label">Confirmar Contraseña:</label>
+                            <label for="contrasenaV" class="form_label">Confirmar contraseña:</label>
                         </div>
                     </div>
 
@@ -245,7 +253,7 @@
                     <span id="cerrarDialogo" class="cerrar" onclick="cerrarDialogo1()">&times;</span>
                     <br><br>
                     <h2 id="tituloErrorEdit">Error</h2>
-                    <p id="descripcionErrorEdit">Existe algun error en algo</p>
+                    <p id="descripcionErrorEdit">Existe algún error en uno de los apartados</p>
                     <br>
                     <button id="botonErrorEdit" type="button" onclick="cerrarDialogo1()">Cerrar</button>                
                 </div>
@@ -299,15 +307,14 @@
            
 
             while ($row = $result->fetch_assoc()) {
-                echo "<div class='fila' data-correo='" . $row["correo"] . "'>";
+                echo "<div class='fila' data-busqueda='" . $row["nombre"] . " " . $row["apellidoPat"] . " " . $row["apellidoMat"] . " " . $row["correo"] . " " . $row["cargo"] . "'>";
                 echo "<div class='celda'>" . $row["nombre"] . "</div>";
                 echo "<div class='celda'>" . $row["apellidoPat"] . "</div>";
                 echo "<div class='celda'>" . $row["apellidoMat"] . "</div>";
                 echo "<div class='celda'>" . $row["cargo"] . "</div>";
                 echo "<div class='celda'>" . $row["contrasena"] . "</div>";
                 echo "<div class='celda'>" . $row["correo"] . "</div>";
-                
-                
+            
                 if ($row["tipo"] == 1) {
                     echo "<div class='celda'>Administrador</div>";
                 } else {
@@ -316,7 +323,8 @@
             
                 echo "</div>";
             }
-            }
+        }
+            
         
         ?>
           </div>
@@ -325,11 +333,7 @@
 
 
     
-    <div class="botones">
-        <button id="Eliminar" class="boton_eliminar">Eliminar</button> 
-        <button id="Registrar" class="boton_registrar">Registrar</button>
-        <button id="Editar" class="boton_editar">Editar</button>
-        </div>
+    
 
     
     <img src="../imagenes/logo_Fondo.png" id="imgLogoFondo">
