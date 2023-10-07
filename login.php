@@ -30,7 +30,7 @@
             </form>
             <div class="incognitas">
                 <link><a href="recuperar"></a>¿Olvidaste tu contraseña?</link><br>
-                <link>Puedes cambiar tu contraseña <a href="/RecuperarContra/codigoC.html">aquí</a></link>
+                <link>Puedes cambiar tu contraseña <a href="/RecuperarContra/recuperarContra.html">aquí</a></link>
             </div>
         </div>
     </div>
