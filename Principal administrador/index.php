@@ -31,7 +31,7 @@
                     <img src="imagenes/menu_desplegable.png" alt="Menu desplegable"> 
                 </button>
                 <div class="contenido_del_menu">
-                    <a href="pagina_emergente.html">Usuarios</a>
+                    <a href="../visualizacion_usuario/index_visual_usu.php">Usuarios</a>
                     <a href="pagina_emergente.html">Asignar criterios</a>
                 </div>
             </div>
