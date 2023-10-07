@@ -138,6 +138,12 @@
                                 id="ojo"></button>
                         <script src="verpassword.js"></script>
                     </div>
+
+                    <div class="form_c81">
+                        <button id="instrucciones" class="instrucciones-button" disabled>¡</button>
+                        <div id="instruccionesContainer" class="instrucciones-container">CONTRASEÑA  
+                              Nesesita de 8 a 20 caracteres, mínimo una letra minúscula, una mayúscula y número y no debe tener espacios</div>
+                    </div>
                 </div>
 
                 <br><br><br><br>
@@ -242,6 +248,12 @@
                         <button id="verpasswordEdit" disabled><img src="../imagenes/verPassword.png" alt=""
                                 id="ojoEdit"></button>
                         <script src = "verpassEdit.js"></script>
+                    </div>
+                    <div class="form_c81">
+                        <button id="instrucciones" class="instrucciones-button" disabled>¡</button>
+                        <div id="instruccionesContainer" class="instrucciones-container">CONTRASEÑA  
+                              Nesesita de 8 a 20 caracteres, mínimo una letra minúscula, una mayúscula y número y no debe tener espacios
+                        </div>
                     </div>
                 </div>
 
@@ -695,3 +707,16 @@
     });
   }
 </script>
+
+<script>
+        const botonInstrucciones = document.getElementById('instrucciones');
+        const instruccionesContainer = document.getElementById('instruccionesContainer');
+
+        botonInstrucciones.addEventListener('mouseenter', function() {
+            instruccionesContainer.style.display = 'block';
+        });
+
+        botonInstrucciones.addEventListener('mouseleave', function() {
+            instruccionesContainer.style.display = 'none';
+        });
+    </script>
