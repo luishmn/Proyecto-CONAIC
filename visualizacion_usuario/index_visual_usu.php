@@ -146,7 +146,7 @@
                     <button type="submit" id="registrar">Registar usuario</button>
                 </div>
 
-                <div id="cuadroDialogo" class="oculto">
+                <div id="cuadroDialogo" class="oculto" >
                     <span id="cerrarDialogo" class="cerrar" onclick="cerrarDialogo()">&times;</span>
                     <br><br>
                     <h2 id="tituloError">Error</h2>

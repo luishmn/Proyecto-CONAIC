@@ -118,9 +118,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     else{
 
     if (comprobar($correo, $conn)==1){
+        
         echo "<script>";
-        echo "alert('Este correo Ya fue utilizado');";
-        echo "window.location.href = 'index_visual_usu.php';";
+        echo "window.location.href = 'error.html';";
         echo "</script>";
     }
     else{
@@ -131,13 +131,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 if ($conn->query($sql) === TRUE) {
 if (mail($para, $asunto, $mensaje, $headers)) {
     echo "<script>";
-    echo "alert('Usuario Resgistrado. Correo enviado');";
-    echo "window.location.href = 'index_visual_usu.php';";
+    echo "window.location.href = 'exito.html';";
     echo "</script>";
 } else {
     echo "<script>";
-    echo "alert('Usuario No Fue Registrado');";
-    echo "window.location.href = 'index_visual_usu.php';";
+    echo "window.location.href = 'error.html';";
     echo "</script>";
 }
 }  
