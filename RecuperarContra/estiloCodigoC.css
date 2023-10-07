@@ -161,7 +161,7 @@ body {
 .from_boton1{
     position:absolute;
     top: 85%;
-    left: 20%;
+    left: 15%;
     border: 1px solid #197B9A; /*anchura, estilo y color borde*/
     padding: 10px; /*espacio alrededor texto*/
     background-color: #197B9A; /*color botón*/
@@ -170,7 +170,7 @@ body {
     font-family: 'Arial', sans-serif; /*tipografía texto*/
     border-radius: 50px; /*bordes redondos*/
     font-size: 35%;
-    width:40%;
+    width:30%;
     height: 3%;
     text-align: center;
   
@@ -180,7 +180,7 @@ body {
 .from_boton2{
     position:absolute;
     top: 85%;
-    left: 70%;
+    left: 55%;
     border: 1px solid #197B9A; /*anchura, estilo y color borde*/
     padding: 10px; /*espacio alrededor texto*/
     background-color: #197B9A; /*color botón*/
@@ -189,7 +189,7 @@ body {
     font-family: 'Arial', sans-serif; /*tipografía texto*/
     border-radius: 50px; /*bordes redondos*/
     font-size: 35%;
-    width:10%;
+    width:30%;
     height: 3%;
     text-align: center;
   

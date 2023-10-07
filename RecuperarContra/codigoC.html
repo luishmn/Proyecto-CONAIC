@@ -19,7 +19,7 @@
     <div class="cuadro">
 
         <div class="correoC">
-            <input type="text" name="correoCodigo" id="correoEspacio" maxlength="30"  class="correoC" required>
+            <input type="text" name="correoCodigo" id="correoEspacio"   class="correoC" required>
             <!--<label for="correo" class="correoC" id="correoEspacio"></label>-->
             <div class="corrC"> <!--imagen donde aparece el correo-->
                 <img src="correo_Codig-removebg-preview (1).png" class="corrC">
@@ -40,6 +40,7 @@
 
         <!-- espcios para ingresar el codigo-->
         <form action="comprobarCodigo.php" method="post">
+
         <div class="from_c1">
             <input type="text" name="c1" id="c1" maxlength="1" class="from_c1" required oninput="moverEnfoque(this, 'c2')">
         </div>
@@ -67,11 +68,11 @@
 
 
         <div class="boton1">
-            <a href=" " class="from_boton1">Eviar código nuevamente</a>
+            <a id="obtenerCodigo" class="from_boton1">Eviar código</a>
         </div>
 
         <div class="boton2">
-            <a onclick="obtenerCodigo()" class="from_boton2">Enviar</a>
+            <a id="compararCodigo" class="from_boton2">Comprobar</a>
         </div>
         </form>
 
