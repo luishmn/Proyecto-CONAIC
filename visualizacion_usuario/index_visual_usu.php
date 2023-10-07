@@ -250,8 +250,8 @@
                         <script src = "verpassEdit.js"></script>
                     </div>
                     <div class="form_c81">
-                        <button id="instrucciones" class="instrucciones-button" disabled>¡</button>
-                        <div id="instruccionesContainer" class="instrucciones-container">CONTRASEÑA  
+                        <button id="instrucciones1" class="instrucciones1-button" disabled>!</button>
+                        <div id="instruccionesContainer1" class="instrucciones-container1">CONTRASEÑA  
                               Nesesita de 8 a 20 caracteres, mínimo una letra minúscula, una mayúscula y número y no debe tener espacios
                         </div>
                     </div>
@@ -711,6 +711,8 @@
 <script>
         const botonInstrucciones = document.getElementById('instrucciones');
         const instruccionesContainer = document.getElementById('instruccionesContainer');
+        const botonInstrucciones1 = document.getElementById('instrucciones1');
+        const instruccionesContainer1 = document.getElementById('instruccionesContainer1');
 
         botonInstrucciones.addEventListener('mouseenter', function() {
             instruccionesContainer.style.display = 'block';
@@ -718,5 +720,12 @@
 
         botonInstrucciones.addEventListener('mouseleave', function() {
             instruccionesContainer.style.display = 'none';
+        });
+        botonInstrucciones1.addEventListener('mouseenter', function() {
+            instruccionesContainer1.style.display = 'block';
+        });
+
+        botonInstrucciones1.addEventListener('mouseleave', function() {
+            instruccionesContainer1.style.display = 'none';
         });
     </script>
