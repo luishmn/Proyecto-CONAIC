@@ -164,12 +164,13 @@ body{
 .texto{
     position: absolute;
     top: 47%;
-    left: 50%;
+    left: 80%;
     transform: translate(-50%, -50%);
     color: black;
     font-size: 14px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-    text-align: center;
+    text-align: left;
+    font-family: Arial;
     width: 90%;
 }
 

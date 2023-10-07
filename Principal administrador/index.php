@@ -10,6 +10,9 @@
         header('Location: ../login.php');
         exit;
     }
+
+    $nombre = substr($nombreUsuario, 0, 10);
+
 ?>
 
 <!DOCTYPE html>
@@ -40,7 +43,7 @@
             <div class="menu_usuario">
                 <button class="menu_estilo_usuario">
                     <img src="imagenes/boton_usuario.png" alt="Usuario"> 
-                    <div class="texto"> <?php echo $nombreUsuario; ?> </div>
+                    <div class="texto"> <?php echo $nombre; ?> </div>
                 </button>
                 <div class="contenido_del_menu_usuarios">
                     <a href="pagina_emergente.html">Configuración</a>
