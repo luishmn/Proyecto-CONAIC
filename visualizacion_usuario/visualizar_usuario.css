@@ -480,13 +480,13 @@ label {
 
 .form_c6{
   position:absolute;
-  width: 38%;
-  left:3%; 
+  width: 37%;
+  left:7%; 
 }
 .form_c7{
   position:absolute;
-  width: 38%;
-  left:47%; 
+  width: 37%;
+  left:49%; 
 }
 
 .form_c8{
@@ -496,7 +496,9 @@ label {
 }
 .form_c81{
   position:absolute;
-  left:95%; 
+  left:4%; 
+  bottom: 23%;
+  
   
 }
 
@@ -812,9 +814,9 @@ background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
   color: #fff;
   border: none;
   border-radius: 50%; /* Hace el botón circular */
-  width: 2%; /* Ancho del botón */
+  width: 29%; /* Ancho del botón */
   height: 10%; /* Alto del botón */
-  font-size: 24px; /* Tamaño del texto del botón */
+  font-size: 12px; /* Tamaño del texto del botón */
   line-height: 1; /* Centra verticalmente el contenido */
   display: flex; /* Permite alinear el contenido horizontalmente */
   align-items: center; /* Centra el contenido verticalmente */

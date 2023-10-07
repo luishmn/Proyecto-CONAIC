@@ -140,7 +140,7 @@
                     </div>
 
                     <div class="form_c81">
-                        <button id="instrucciones" class="instrucciones-button" disabled>¡</button>
+                        <button id="instrucciones" class="instrucciones-button" disabled>!</button>
                         <div id="instruccionesContainer" class="instrucciones-container">CONTRASEÑA  
                               Nesesita de 8 a 20 caracteres, mínimo una letra minúscula, una mayúscula y número y no debe tener espacios</div>
                     </div>
