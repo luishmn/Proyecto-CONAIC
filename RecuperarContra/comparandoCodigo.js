@@ -1,6 +1,6 @@
 //saca de la informacion de la interfaz
 const boton_obtener = document.getElementById("obtenerCodigo");
-const boton_codigo=document.getElementById("compararCodigo");
+const boton_codigo = document.getElementById("compararCodigo");
 const correo = document.getElementById("correoEspacio");
 
 //mover el cursor de caja de texto
@@ -17,7 +17,7 @@ window.onload = () => {
     //ejecuta al cliquear el boton de mandar codigo
     boton_obtener.addEventListener("click", (e) =>{
         //codigo generado
-         codigoRec= Math.floor(100000 + Math.random() * 900000);
+         codigoRec = Math.floor(100000 + Math.random() * 900000);
 
         //variable del correo
         let valor_correo = correo.value;
@@ -37,7 +37,7 @@ window.onload = () => {
         //manejo de errores
         .then((Response) => Response.json())
         .then((json) =>  respuesta(json))
-        .catch((error) => alert(error))
+        .catch((error) => console.error(error))
     });
 
     //ejecuta cuando se cliquea el botonde comprobar
@@ -56,7 +56,8 @@ window.onload = () => {
 
         //compara para verificar que son iguales
         if (codigoRec == codigo) {
-            window.location.href = 'cambiaContra.html';
+            //valor_correo="a"
+            window.location.href = 'cambiaContra.html?correo_traslado=' + correo.value;
         }
         else {
             Swal.fire({
