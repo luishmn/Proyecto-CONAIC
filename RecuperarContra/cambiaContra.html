@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recupera Contraseña</title>
+    <title>Recupera contraseña</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
     <div class="logoFondo"> <!-- ESTE ES EL DIV QUE TIENE EL LOGO QUE APARECE AL FONDO, CUBRE TODA LA PANTALLA ASI QUE POR ESO DENTRO DE EL SE PONEN OTROS ELEMENTOS -->
-        <img src="logo_Fondo.png" class="imgLogoFondo">
+        <img src="..\imagenes\logo_Fondo.png" class="imgLogoFondo">
     </div>
 
     <div class="logoLetras"> <!--este es el logo con las letres coinaic itszas-->
-        <img src="logo_CONAIC_letras.png" class="imgLogoLetras">
+        <img src="..\imagenes\logo_CONAIC_letras.png" class="imgLogoLetras">
     </div>
 
     
 
     <div class="cuadro">
         <div class="correo"> <!--simbolito del correo-->
-            <img src="correo_Codig-removebg-preview (1).png" class="correo">
+            <img src="..\imagenes\correo_Codigo.png" class="correo">
         </div>
 
         <div class="from_tit">
-            <label for="tit" class="from_label_Tit">Recuperar Contaseña</label>
+            <label for="tit" class="from_label_Tit">Recuperar contraseña</label>
         </div> 
         
         <div class="from_rec1">
@@ -38,13 +38,13 @@
         </div> 
 
         <div class="boton">
-            <a onclick="comprobarContraseña()" class="from_boton">Siguiente</a>
+            <a id="cambiarContra" class="from_boton">Cambiar</a>
         </div>
 
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="recuperaContraseña.js"></script>
+    <script src="comparandoContra.js"></script>
     
 </body>
 </html>

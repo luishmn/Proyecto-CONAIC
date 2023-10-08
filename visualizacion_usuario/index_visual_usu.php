@@ -27,7 +27,9 @@
     <br><br><br>
     <!--logo superior-->
     <nav class="nav">
-        <img src="../imagenes/logo_CONAIC_letras.png" alt="Conaic ITSZaS" class="logo_letras" width="336" height="198">
+        <a href="../Principal%20Administrador/index.php">
+        <img src="../imagenes/logo_CONAIC_letras.png" alt="Conaic ITSZaS" class="logo_letras" width="336" height="198" >
+        </a>
     </nav>
 
     <!--barra de busqueda-->
@@ -136,6 +138,12 @@
                                 id="ojo"></button>
                         <script src="verpassword.js"></script>
                     </div>
+
+                    <div class="form_c81">
+                        <button id="instrucciones" class="instrucciones-button" disabled>!</button>
+                        <div id="instruccionesContainer" class="instrucciones-container">CONTRASEÑA  
+                              Nesesita de 8 a 20 caracteres, mínimo una letra minúscula, una mayúscula y número y no debe tener espacios</div>
+                    </div>
                 </div>
 
                 <br><br><br><br>
@@ -144,7 +152,7 @@
                     <button type="submit" id="registrar">Registar usuario</button>
                 </div>
 
-                <div id="cuadroDialogo" class="oculto">
+                <div id="cuadroDialogo" class="oculto" >
                     <span id="cerrarDialogo" class="cerrar" onclick="cerrarDialogo()">&times;</span>
                     <br><br>
                     <h2 id="tituloError">Error</h2>
@@ -240,6 +248,12 @@
                         <button id="verpasswordEdit" disabled><img src="../imagenes/verPassword.png" alt=""
                                 id="ojoEdit"></button>
                         <script src = "verpassEdit.js"></script>
+                    </div>
+                    <div class="form_c81">
+                        <button id="instrucciones1" class="instrucciones1-button" disabled>!</button>
+                        <div id="instruccionesContainer1" class="instrucciones-container1">CONTRASEÑA  
+                              Nesesita de 8 a 20 caracteres, mínimo una letra minúscula, una mayúscula y número y no debe tener espacios
+                        </div>
                     </div>
                 </div>
 
@@ -693,3 +707,25 @@
     });
   }
 </script>
+
+<script>
+        const botonInstrucciones = document.getElementById('instrucciones');
+        const instruccionesContainer = document.getElementById('instruccionesContainer');
+        const botonInstrucciones1 = document.getElementById('instrucciones1');
+        const instruccionesContainer1 = document.getElementById('instruccionesContainer1');
+
+        botonInstrucciones.addEventListener('mouseenter', function() {
+            instruccionesContainer.style.display = 'block';
+        });
+
+        botonInstrucciones.addEventListener('mouseleave', function() {
+            instruccionesContainer.style.display = 'none';
+        });
+        botonInstrucciones1.addEventListener('mouseenter', function() {
+            instruccionesContainer1.style.display = 'block';
+        });
+
+        botonInstrucciones1.addEventListener('mouseleave', function() {
+            instruccionesContainer1.style.display = 'none';
+        });
+    </script>
