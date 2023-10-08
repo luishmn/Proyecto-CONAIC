@@ -35,7 +35,7 @@ window.onload = () => {
             .catch((error) => console.error(error))
 
         Swal.fire({
-            title:'Contraseña cambiada con exito',
+            title:'Contraseña cambiada con éxito',
             icon:'success'
         })
 

@@ -120,7 +120,7 @@ body{
 }
 
 .nombres_columnas{
-    width: 1168px;
+width: 1168px;
 height: 62px;
 flex-shrink: 0;
 background: #89C7D0;
@@ -480,25 +480,18 @@ label {
 
 .form_c6{
   position:absolute;
-  width: 37%;
-  left:7%; 
+  width: 38%;
+  left:3%; 
 }
 .form_c7{
   position:absolute;
-  width: 37%;
-  left:49%; 
+  width: 38%;
+  left:47%; 
 }
 
 .form_c8{
   position:absolute;
   left:90%; 
-  
-}
-.form_c81{
-  position:absolute;
-  left:4%; 
-  bottom: 23%;
-  
   
 }
 
@@ -808,49 +801,3 @@ background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
 }
 
 
-
-.instrucciones-button {
-  background-color: #ffd900; /* Color naranja */
-  color: #fff;
-  border: none;
-  border-radius: 50%; /* Hace el botón circular */
-  width: 29%; /* Ancho del botón */
-  height: 10%; /* Alto del botón */
-  font-size: 12px; /* Tamaño del texto del botón */
-  line-height: 1; /* Centra verticalmente el contenido */
-  display: flex; /* Permite alinear el contenido horizontalmente */
-  align-items: center; /* Centra el contenido verticalmente */
-  justify-content: center; /* Centra el contenido horizontalmente */
-  cursor: pointer;
-}
-.instrucciones1-button {
-  background-color: #ffd900; /* Color naranja */
-  color: #fff;
-  border: none;
-  border-radius: 50%; /* Hace el botón circular */
-  width: 29%; /* Ancho del botón */
-  height: 10%; /* Alto del botón */
-  font-size: 12px; /* Tamaño del texto del botón */
-  line-height: 1; /* Centra verticalmente el contenido */
-  display: flex; /* Permite alinear el contenido horizontalmente */
-  align-items: center; /* Centra el contenido verticalmente */
-  justify-content: center; /* Centra el contenido horizontalmente */
-  cursor: pointer;
-}
-
-.instrucciones-container {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 10px;
-  z-index: 1;
-}
-.instrucciones-container1 {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 10px;
-  z-index: 10000;
-}
