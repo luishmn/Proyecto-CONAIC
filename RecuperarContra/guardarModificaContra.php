@@ -11,25 +11,25 @@
     }
     // Inserción de datos en la tabla 
     $sql = "UPDATE usuario
-    SET contrasena = '$contrasena',
+    SET contrasena = '$contrasena'
     WHERE correo = '$correo'";
 
     if ($conn->query($sql) === TRUE) {
 
-        echo "<script>";
-        echo "alert('Usuario modificado correctamente. ');";
-        echo "window.location.href = 'index_visual_usu.php';";
-        echo "</script>";
+        echo json_encode("<script>");
+        echo json_encode("alert('Usuario modificado correctamente. ');");
+        echo json_encode("window.location.href = 'index_visual_usu.php';");
+        echo json_encode("</script>");
         #header('Location: registraUsuarios.html');
         //exit;
     }  
     else {
         
-        echo "<script>";
-        echo "<script>alert('El usuario fue modificado correctamente.' . $conn->error);</script>";
+        echo json_encode("<script>");
+        echo json_encode("<script>alert('El usuario fue modificado correctamente.' . $conn->error);</script>");
         //echo "window.location.href = 'editar_usuarios.php';";
-        echo "</script>";
-        echo "Error al registrar datos: " . $conn->error;
+        echo json_encode("</script>");
+        echo json_encode("Error al registrar datos: " . $conn->error);
     }
 
     $conn->close();
