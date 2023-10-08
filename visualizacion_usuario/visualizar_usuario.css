@@ -480,19 +480,25 @@ label {
 
 .form_c6{
   position:absolute;
-  width: 38%;
-  left:3%; 
+  width: 37%;
+  left:7%; 
 }
 .form_c7{
   position:absolute;
-  width: 38%;
-  left:47%; 
+  width: 37%;
+  left:49%; 
 }
 
 .form_c8{
   position:absolute;
   left:90%; 
   
+}
+
+.form_c81{
+  position:absolute;
+  left:4%; 
+  bottom: 23%;
 }
 
 .form_c9{
@@ -800,4 +806,48 @@ cursor: pointer;
 background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
 }
 
+
+.instrucciones-button {
+  background-color: #ffd900; /* Color naranja */
+  color: #fff;
+  border: none;
+  border-radius: 100%; /* Hace el botón circular */
+  
+  font-size: 12px; /* Tamaño del texto del botón */
+  line-height: 1; /* Centra verticalmente el contenido */
+  display: flex; /* Permite alinear el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  cursor: pointer;
+}
+.instrucciones-container {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  z-index: 1;
+}
+
+.instrucciones1-button {
+  background-color: #ffd900; /* Color naranja */
+  color: #fff;
+  border: none;
+  border-radius: 100%; /* Hace el botón circular */
+  
+  font-size: 12px; /* Tamaño del texto del botón */
+  line-height: 1; /* Centra verticalmente el contenido */
+  display: flex; /* Permite alinear el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  cursor: pointer;
+}
+.instrucciones-container1 {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  z-index: 1;
+}
 
