@@ -8,7 +8,7 @@ function comprobarContraseña(){
     if(contraseña1==contraseña2){
         //window.location.href-'';
         Swal.fire({
-            title:'Contraseña cambiada con exito',
+            title:'Contraseña cambiada con éxito',
             icon:'success'
         })
         console.log("aaaa");
