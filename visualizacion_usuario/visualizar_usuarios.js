@@ -12,15 +12,13 @@ window.addEventListener("load", function () {
 
         // Recorrer todas las filas y mostrar u ocultar según la coincidencia de texto
         filas.forEach(function (fila) {
-            var correo = fila.getAttribute("data-correo").toLowerCase();
-            if (correo.includes(textoBusqueda)) {
+            var datosBusqueda = fila.getAttribute("data-busqueda").toLowerCase();
+            if (datosBusqueda.includes(textoBusqueda)) {
                 fila.style.display = ""; // Mostrar la fila
-                console.log("Correo coincidente: " + correo); // Imprimir en la consola
+                console.log("Coincidencia encontrada: " + datosBusqueda); // Imprimir en la consola
             } else {
                 fila.style.display = "none"; // Ocultar la fila
             }
         });
     });
 });
-
-  

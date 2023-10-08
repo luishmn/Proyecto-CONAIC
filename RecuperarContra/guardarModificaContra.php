@@ -1,19 +1,11 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nombre = $_POST["nombreEdit"];
-    $apellido_paterno = $_POST["apellidoPEdit"];
-    $apellido_materno = $_POST["apellidoMEdit"];
-    $cargo = $_POST["cargoEdit"];
-    $correo = $_POST["correoEdit"];
-    $contrasena = $_POST["contrasenaEdit"];
-    $tipo =$_POST["tipoUsuarioEdit"];
+    $correo = $_POST["contra3"];
+    $contrasena = $_POST["contrasena1"];
 
-    if ($tipo=="normal"){
-        $tipo=0;
-    }
-    else{
-        $tipo=1;
-    }
+
+
+   
 
     // Conexión a la base de datos MySQL
     $servername = "localhost";
@@ -28,19 +20,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     // Inserción de datos en la tabla 
     $sql = "UPDATE usuario
-    SET nombre = '$nombre',
-        apellidoPat = '$apellido_paterno',
-        apellidoMat = '$apellido_materno',
-        cargo = '$cargo',
-        contrasena = '$contrasena',
-        tipo = '$tipo'
+    SET contrasena = '$contrasena'
     WHERE correo = '$correo'";
 
     if ($conn->query($sql) === TRUE) {
 
         echo "<script>";
-        echo "alert('Usuario modificado correctamente. ');";
-        echo "window.location.href = 'index_visual_usu.php';";
+        echo "window.location.href = 'exito.html';";
         echo "</script>";
         #header('Location: registraUsuarios.html');
         //exit;
