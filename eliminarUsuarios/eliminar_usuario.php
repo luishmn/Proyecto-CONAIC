@@ -1,10 +1,17 @@
 <?php
+if (isset($_GET['correo_traslado'])) {
+    $valor = $_GET['correo_traslado'];
+    $correo = $valor;
+} else {
+    echo "No se proporcionó ningún valor a través de la URL.";
+}
+
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "conaic";
 
-$correo = $_POST['correo'];
+
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -28,7 +35,9 @@ if ($result_check->num_rows == 0) {
     if ($conn->query($sql_delete) === TRUE) {
         $sql_delete = "DELETE FROM usuario WHERE correo = '$correo'"; 
         if ($conn->query($sql_delete) === TRUE) {
-            echo "Usuario con el correo $correo eliminado exitosamente.";
+            header("Location: ../visualizacion_usuario/index_visual_usu.php");
+            exit;
+            echo "Usuario Eliminado correctamente";
         }
     } else {
         echo "Error al eliminar al usuario: " . $conn->error;
