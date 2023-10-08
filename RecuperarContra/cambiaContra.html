@@ -19,9 +19,19 @@
     
 
     <div class="cuadro">
+        <form action="guardarModificaContra.php" method="POST" id="cambioContrasenas">
         <div class="correo"> <!--simbolito del correo-->
             <img src="..\imagenes\correo_Codigo.png" class="correo">
         </div>
+        <div class="from_rec3">
+            <input type="email" id="contra4" class="from_contras3" disabled>
+        </div>
+        <div class="from_rec3">
+            
+            <input type="hidden" name="contra3" id="contra3" class="from_contras3" >
+        </div> 
+
+
 
         <div class="from_tit">
             <label for="tit" class="from_label_Tit">Recuperar contraseña</label>
@@ -29,17 +39,28 @@
         
         <div class="from_rec1">
             <label for="recu1" class="from_label1">Nueva contraseña</label>
-            <input type="text" name="contraseña1" id="contra1" class="from_contras1" required>
+            <input type="text" name="contrasena1" id="contra1" class="from_contras1" >
         </div>   
 
         <div class="from_rec2">
             <label for="recu2" class="from_label2">Vuelve a escribir la contraseña</label>
-            <input type="text" name="contraseña2" id="contra2" class="from_contras2" required>
+            <input type="text" name="contraseña2" id="contra2" class="from_contras2" >
         </div> 
 
+        
         <div class="boton">
-            <a id="cambiarContra" class="from_boton">Cambiar</a>
+            <button type="submit" id="cambiarContra" class="from_boton">Cambiar</button>
         </div>
+
+        <div id="cuadroDialogo" class="oculto">
+            <span id="cerrarDialogo" class="cerrar" onclick="cerrarDialogo()">&times;</span>
+            <br>
+            <h2 id="tituloError">Error</h2>
+            <p id="descripcionError">Existe algún error en uno de los apartados</p>
+            <br>
+            <button id="botonError" type="button" onclick="cerrarDialogo()">Cerrar</button>                
+        </div>
+    </form>
 
     </div>
 
@@ -47,4 +68,39 @@
     <script src="comparandoContra.js"></script>
     
 </body>
+
+
+<script>
+    // Función para obtener el valor del parámetro de la URL
+    function obtenerCorreoDeURL() {
+        // Obtener la cadena de consulta de la URL
+        var queryString = window.location.search;
+
+        // Crear un objeto URLSearchParams para analizar la cadena de consulta
+        var parametrosURL = new URLSearchParams(queryString);
+
+        // Obtener el valor del parámetro "correo_traslado"
+        var correoTraslado = parametrosURL.get('correo_traslado');
+        
+
+        // Verificar si se encontró el parámetro y mostrarlo en la consola
+        if (correoTraslado !== null) {
+            var correoInsert = document.getElementById('contra3');
+            var correoInsert1 = document.getElementById('contra4');
+
+            // Asignar el texto al valor del elemento de entrada
+            correoInsert.value = correoTraslado;
+            correoInsert1.value = correoTraslado;
+
+         
+            
+        }
+    }
+
+    // Llamar a la función al cargar la página
+    window.onload = obtenerCorreoDeURL;
+</script>
+
+
+
 </html>

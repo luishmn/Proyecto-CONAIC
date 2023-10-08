@@ -32,6 +32,7 @@ body {
   left: 22%;
   width: 26%;
   height: 30%;
+  z-index: 4;
 }
 
 
@@ -109,6 +110,19 @@ body {
   border-radius:70px 70px 70px 70px;
 }
 
+.from_contras3{
+  padding-left: 6%;
+  position: absolute;
+  top: 24.3%;
+  left: 29%;
+  width:35%;
+  height: 7%;
+  border: none;
+  font-size: 40%;
+  border-radius:70px 70px 70px 70px;
+  font-family: Arial;
+}
+
 .from_boton{
   position:absolute;
   top: 85%;
@@ -119,8 +133,81 @@ body {
   color: #000; /*color texto*/
   text-decoration: none; /*decoración texto*/
   text-transform: uppercase; /*capitalización texto*/
-  font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+  font-family: Arial; /*tipografía texto*/
   border-radius: 50px; /*bordes redondos*/
-  font-size: 30%;
+  font-size: 40%;
 
 }
+
+#cambiarContra:hover{
+  transform: scale(0.95);
+}
+
+
+#cuadroDialogo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  border-radius: 30px;
+  display: none;
+  
+  
+  width: 30%;
+  height: 50%;
+  background-color: #F3FAFA;
+  z-index: 8;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  border: 1px solid rgb(199, 77, 77); /* Agrega un borde rojo */
+
+}
+
+#tituloError{
+  text-align: center;
+  font-family: Arial;
+  font-size: xx-large;
+  
+}
+
+#descripcionError{
+  text-align: center;
+  font-family: Arial;
+  font-size: medium;
+
+}
+
+#botonError{
+  text-align: center;
+  font-family: Arial;
+  font-size: medium;
+
+  display: block; /* Convierte el botón en un elemento de bloque */
+  margin: 0 auto; /* Centra horizontalmente */
+  padding: 10px 20px; /* Espaciado interior del botón */
+  border-radius: 10px; /* Bordes redondeados */
+  background-color: #0097B2; /* Cambia el color de fondo */
+  color: #fff; /* Cambia el color del texto */
+  border: none; /* Elimina el borde */
+  cursor: pointer;
+}
+
+#botonError:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
+}
+
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  color: red;
+  font-size: 100%;
+}
+  /* EMPIEZA EL CSS PARA EL FORMULARIO DE REGISTRO */
+  .oculto {
+    display: none;
+}
+

@@ -171,7 +171,7 @@ body {
     border-radius: 50px; /*bordes redondos*/
     font-size: 35%;
     width:30%;
-    height: 3%;
+    height: 8%;
     text-align: center;
   
   }
@@ -190,7 +190,19 @@ body {
     border-radius: 50px; /*bordes redondos*/
     font-size: 35%;
     width:30%;
-    height: 3%;
+    height: 8%;
     text-align: center;
   
   }
+
+
+  
+  #compararCodigo:hover{
+    transform: scale(0.95);
+  }
+
+  #obtenerCodigo:hover{
+    transform: scale(0.95);
+  }
+
+ 

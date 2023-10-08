@@ -1,4 +1,13 @@
 <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $correo = $_POST["contra3"];
+    $contrasena = $_POST["contrasena1"];
+
+
+
+   
+
+    // Conexión a la base de datos MySQL
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -16,22 +25,21 @@
 
     if ($conn->query($sql) === TRUE) {
 
-        echo json_encode("<script>");
-        echo json_encode("alert('Usuario modificado correctamente. ');");
-        echo json_encode("window.location.href = 'index_visual_usu.php';");
-        echo json_encode("</script>");
+        echo "<script>";
+        echo "window.location.href = 'exito.html';";
+        echo "</script>";
         #header('Location: registraUsuarios.html');
         //exit;
     }  
     else {
         
-        echo json_encode("<script>");
-        echo json_encode("<script>alert('El usuario fue modificado correctamente.' . $conn->error);</script>");
+        echo "<script>";
+        echo "<script>alert('El usuario fue modificado correctamente.' . $conn->error);</script>";
         //echo "window.location.href = 'editar_usuarios.php';";
-        echo json_encode("</script>");
-        echo json_encode("Error al registrar datos: " . $conn->error);
+        echo "</script>";
+        echo "Error al registrar datos: " . $conn->error;
     }
 
     $conn->close();
-
+} 
 ?>
