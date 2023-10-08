@@ -104,7 +104,7 @@
 
     </script>
     
-    <!-- Código PHP para manejar la verificación -->
+    
 <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $usuario = trim($_POST["usuario"]);
@@ -158,7 +158,9 @@
                                 if($tipo_bd == 1) {
                                     echo '<script>window.location.href = "/Principal Administrador/index.php";</script>';
                                     exit;
-                                } else{}
+                                } else{
+                                    echo '<script>window.location.href = "/Principal usuario/index.php";</script>';
+                                }
 
                             }
                             /*si el usuario no está verificado no entrar al sistema*/
