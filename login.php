@@ -114,8 +114,8 @@
             echo '<script>showErrorModal("Por favor, complete todos los campos.");</script>';
         } elseif (strpos($usuario, ' ') !== false || strpos($contra, ' ') !== false) {
             echo '<script>showErrorModal("Formato incorrecto. El nombre de usuario y la contraseña no deben contener espacios en blanco.");</script>';
-        } elseif (strpos($usuario, '@') == false){
-            echo '<script>showErrorModal("La dirección de correo introducida no es válida (@)");</script>';
+        } elseif (strpos($usuario, '@') == false || strpos($usuario, '.com') == false){
+            echo '<script>showErrorModal("La dirección de correo introducida no es válida (@) / .com");</script>';
         } else {
         
                 global $conexion;
