@@ -140,8 +140,8 @@
 
                     <div class="form_c81">
                         <button id="instrucciones" class="instrucciones-button" disabled>!</button>
-                        <div id="instruccionesContainer" class="instrucciones-container">CONTRASEÑA  
-                              Nesesita de 8 a 20 caracteres, mínimo una letra minúscula, una mayúscula y número y no debe tener espacios</div>
+                        <div id="instruccionesContainer" class="instrucciones-container">Contraseña:  
+                              Necesita de 8 a 20 caracteres, una letra minúscula, una mayúscula, un número y no debe contener espacios</div>
                     </div>
                 </div>
 
@@ -250,8 +250,8 @@
                     </div>
                     <div class="form_c81">
                         <button id="instrucciones1" class="instrucciones1-button" disabled>!</button>
-                        <div id="instruccionesContainer1" class="instrucciones-container1">CONTRASEÑA  
-                              Nesesita de 8 a 20 caracteres, mínimo una letra minúscula, una mayúscula y número y no debe tener espacios
+                        <div id="instruccionesContainer1" class="instrucciones-container1">Contraseña:  
+                              Necesita de 8 a 20 caracteres, una letra minúscula, una mayúscula, un número y no debe contener espacios
                         </div>
                     </div>
                 </div>
@@ -267,7 +267,7 @@
                 <br>
                 <br>
                 <div>
-                <button id="Eliminar" type="button" class="boton_eliminar" >Eliminar</button> 
+                <button id="Eliminar" type="button" class="boton_eliminar" >   Eliminar   </button> 
                 </div>
 
 

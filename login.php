@@ -23,8 +23,8 @@
             
             <form method="post" action="">
                 <div>
-                    <input class="usuario-input" name="usuario" type="text"><br>
-                    <input class="pass-input" name="pass" type="password"><br>
+                    <input class="usuario-input" name="usuario" type="text" placeholder="Correo"><br>
+                    <input class="pass-input" name="pass" type="password" placeholder="Contraseña"><br>
                     <button type="submit">Iniciar sesión</button>
                 </div>
             </form>
