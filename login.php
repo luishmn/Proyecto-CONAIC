@@ -23,8 +23,8 @@
             
             <form method="post" action="">
                 <div>
-                    <input class="usuario-input" name="usuario" type="text"><br>
-                    <input class="pass-input" name="pass" type="password"><br>
+                    <input class="usuario-input" name="usuario" type="text" placeholder="Correo"><br>
+                    <input class="pass-input" name="pass" type="password" placeholder="Contraseña"><br>
                     <button type="submit">Iniciar sesión</button>
                 </div>
             </form>
@@ -104,7 +104,7 @@
 
     </script>
     
-    <!-- Código PHP para manejar la verificación -->
+    
 <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $usuario = trim($_POST["usuario"]);
@@ -114,8 +114,8 @@
             echo '<script>showErrorModal("Por favor, complete todos los campos.");</script>';
         } elseif (strpos($usuario, ' ') !== false || strpos($contra, ' ') !== false) {
             echo '<script>showErrorModal("Formato incorrecto. El nombre de usuario y la contraseña no deben contener espacios en blanco.");</script>';
-        } elseif (strpos($usuario, '@') == false){
-            echo '<script>showErrorModal("La dirección de correo introducida no es válida (@)");</script>';
+        } elseif (strpos($usuario, '@') == false || strpos($usuario, '.com') == false){
+            echo '<script>showErrorModal("La dirección de correo introducida no es válida (@) / .com");</script>';
         } else {
         
                 global $conexion;
@@ -158,7 +158,9 @@
                                 if($tipo_bd == 1) {
                                     echo '<script>window.location.href = "/Principal Administrador/index.php";</script>';
                                     exit;
-                                } else{}
+                                } else{
+                                    echo '<script>window.location.href = "/Principal usuario/index.php";</script>';
+                                }
 
                             }
                             /*si el usuario no está verificado no entrar al sistema*/

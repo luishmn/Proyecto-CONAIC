@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="visualizar_usuario.css">
     <script src="visualizar_usuarios.js"></script>
-    <title>Document</title>
+    <title>Usuarios</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
 
@@ -46,7 +46,6 @@
             </div>
 
             <div class="botones">
-                <button id="Eliminar" class="boton_eliminar">Eliminar</button> 
                 <button id="Registrar" class="boton_registrar">Registrar</button>
             </div>
         
@@ -148,7 +147,7 @@
 
                 <br><br><br><br>
 
-                <div class="form_c10">
+                <div class="form_c10_1">
                     <button type="submit" id="registrar">Registar usuario</button>
                 </div>
 
@@ -259,9 +258,18 @@
 
                 <br><br><br><br>
 
+                
                 <div class="form_c10">
                     <button type="submit" id="editar">    Guardar    </button>
                 </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div>
+                <button id="Eliminar" type="button" class="boton_eliminar" >Eliminar</button> 
+                </div>
+
 
                 <div id="cuadroDialogoEdit" class="oculto">
                     <span id="cerrarDialogo" class="cerrar" onclick="cerrarDialogo1()">&times;</span>
@@ -361,6 +369,24 @@
 </body>
 
 </html>
+
+<script>
+    // Obtener el botón por su ID
+    var botonElim = document.getElementById('Eliminar');
+
+    botonElim.addEventListener('click', function(event) {
+        // Aquí puedes realizar alguna acción cuando se hace clic en el botón
+        var correoEliminar = document.getElementById("correoEdit");
+        var correoElim = correoEliminar.value;
+        alert(correoElim);
+    
+        window.location.href = '../eliminarUsuarios/eliminar_usuario.php?correo_traslado=' + correoElim;
+        
+        
+        
+    });
+        
+</script>
 
 <script> //SCRIPT PARA VALIDAR EL FORMULARIO DE REGISTRO
     function mostrarDialogo() {
@@ -487,8 +513,6 @@
   });
   
 </script>
-
-
 
 <script> // Script para aparecer y desaparecer el formulario de registro
     document.getElementById("Registrar").addEventListener("click", function() {
@@ -728,4 +752,5 @@
         botonInstrucciones1.addEventListener('mouseleave', function() {
             instruccionesContainer1.style.display = 'none';
         });
-    </script>
+</script>
+

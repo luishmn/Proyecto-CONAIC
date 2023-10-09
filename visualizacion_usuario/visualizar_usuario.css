@@ -234,21 +234,25 @@ font-family: Arial, sans-serif;
     
 }
 .boton_eliminar{
-    width: 144px;
-    height: 48px;
-    flex-shrink: 0;
-    border-radius: 40px;
-    background: #197B9A;
-    border: none;
+    display: flex;
+    position:absolute;
+    left: 44.5%;
+    text-align: center;
 
-    color: #000;
-text-align: center;
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-right: 10px; /* Ajusta el valor del margen según tu preferencia */
+    width: 10%;
+    height: 5%;
+    border-radius: 40px;
+    background: #f70000;
+    border: none;
+    padding-left: 1.1%;
+    padding-top: 0.4%;
+
+    color: #fcfcfc;
+    text-align: center;
+    font-family: Arial;
+    font-size: 100%;
+    
+   
 
 }
 .boton_eliminar:hover{
@@ -402,7 +406,7 @@ label {
 .from-login{
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 110%;
   
   background-color:#89C7D0 ;
   margin: auto;
@@ -480,18 +484,24 @@ label {
 
 .form_c6{
   position:absolute;
-  width: 38%;
-  left:3%; 
+  width: 37%;
+  left:7%; 
 }
 .form_c7{
   position:absolute;
-  width: 38%;
-  left:47%; 
+  width: 37%;
+  left:49%; 
 }
 
 .form_c8{
   position:absolute;
   left:90%; 
+  
+}
+
+.form_c81{
+  position:relative;
+  left:-1%; 
   
 }
 
@@ -504,8 +514,10 @@ label {
 }
 
 .form_c10{
+  display: flex;
   position:absolute;
- left: 43%;
+ left: 35%;
+ text-align: center;
 
   
 }
@@ -515,7 +527,7 @@ label {
   outline: none;
   font-size: 100%;
   text-align: center;
-  width: 120%;
+  width: 300%;
   height: 45px;
   border-radius: 40px;
   background: #197B7A;
@@ -527,6 +539,35 @@ label {
 }
 
 .form_c10 button:hover{
+  transform: scale(0.95);
+}
+
+.form_c10_1{
+  display: flex;
+  position:absolute;
+ left: 36.5%;
+ text-align: center;
+
+  
+}
+
+.form_c10_1 button{
+  border: none;
+  outline: none;
+  font-size: 100%;
+  text-align: center;
+  width: 150%;
+  height: 45px;
+  border-radius: 40px;
+  background: #197B7A;
+  flex-shrink: 0;
+  color: white;
+  box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.19);
+  transition: trasform 0.2s;
+  font-family: Arial;
+}
+
+.form_c10_1 button:hover{
   transform: scale(0.95);
 }
 
@@ -800,4 +841,48 @@ cursor: pointer;
 background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
 }
 
+
+.instrucciones-button {
+  background-color: #ffd900; /* Color naranja */
+  color: #fff;
+  border: none;
+  border-radius: 100%; /* Hace el botón circular */
+  
+  font-size: 12px; /* Tamaño del texto del botón */
+  line-height: 1; /* Centra verticalmente el contenido */
+  display: flex; /* Permite alinear el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  cursor: pointer;
+}
+.instrucciones-container {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  z-index: 1;
+}
+
+.instrucciones1-button {
+  background-color: #ffd900; /* Color naranja */
+  color: #fff;
+  border: none;
+  border-radius: 100%; /* Hace el botón circular */
+  
+  font-size: 12px; /* Tamaño del texto del botón */
+  line-height: 1; /* Centra verticalmente el contenido */
+  display: flex; /* Permite alinear el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  cursor: pointer;
+}
+.instrucciones-container1 {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  z-index: 1;
+}
 
