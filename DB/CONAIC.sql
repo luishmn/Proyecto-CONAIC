@@ -77,7 +77,7 @@ claveRespuesta varchar(10) NOT NULL
 
 CREATE TABLE SubCriteriosPDF(
 claveSubCriterio varchar(10) NOT NULL,
-clavePDF varchar(10) NOT NULL
+clavePDF text NOT NULL
 );
 
 CREATE TABLE SubCriteriosRecomendaciones(
