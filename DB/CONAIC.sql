@@ -77,7 +77,8 @@ claveRespuesta varchar(10) NOT NULL
 
 CREATE TABLE SubCriteriosPDF(
 claveSubCriterio varchar(10) NOT NULL,
-clavePDF text NOT NULL
+clavePDF text NOT NULL,
+id integer AUTO_INCREMENT PRIMARY KEY
 );
 
 CREATE TABLE SubCriteriosRecomendaciones(
@@ -132,9 +133,7 @@ ALTER TABLE SubCriterioRespuesta
 ADD CONSTRAINT PK_clasr_subcrires
 PRIMARY KEY (claveSubCriterio, claveRespuesta);
 
-ALTER TABLE SubCriteriosPDF
-ADD CONSTRAINT PK_clas_cripdf
-PRIMARY KEY (claveSubCriterio, clavePDF);
+
 
 ALTER TABLE SubCriteriosRecomendaciones
 ADD CONSTRAINT PK_clas_subcrire
