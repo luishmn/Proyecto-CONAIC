@@ -57,11 +57,7 @@ claveRespuesta varchar(10) NOT NULL
 
 
 
-CREATE TABLE PDF(
-referencia varchar(100) NOT NULL,
-nombre varchar(20),
-clavePDF varchar(10) NOT NULL
-);
+
 
 
 CREATE TABLE SubCriterio(
@@ -123,15 +119,6 @@ PRIMARY KEY (claveCriterio, claveRecomendacion);
 ALTER TABLE Respuestas
 ADD CONSTRAINT PK_cla_resp
 PRIMARY KEY (claveRespuesta);
-
-
-
-ALTER TABLE PDF
-ADD CONSTRAINT PK_cla_pdf
-PRIMARY KEY (clavePDF);
-
-
-
 
 ALTER TABLE SubCriterio
 ADD CONSTRAINT PK_cla_subcri
@@ -211,19 +198,10 @@ ADD CONSTRAINT FK_subcriCat_SubCriterio
 FOREIGN KEY(claveSubCriterio)
 REFERENCES SubCriterio(claveSubCriterio);
 
-
-
-ALTER TABLE SubCriteriosPDF
-ADD CONSTRAINT FK_subcripdf_PDF
-FOREIGN KEY(clavePDF)
-REFERENCES PDF(clavePDF);
-
 ALTER TABLE SubCriteriosPDF
 ADD CONSTRAINT FK_subcripdf_SubCriterio
 FOREIGN KEY(claveSubCriterio)
 REFERENCES SubCriterio(claveSubCriterio);
-
-
 
 ALTER TABLE SubCriterioRespuesta
 ADD CONSTRAINT FK_scriRes_Respuestas
