@@ -1,49 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
 <?php
-    // Incluye la librería PHPMailer
-    use PHPMailer\PHPMailer\PHPMailer;
-    use PHPMailer\PHPMailer\Exception;
+// Incluye la librería PHPMailer
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-    require '../PHPMailer-master/src/Exception.php';
-    require '../PHPMailer-master/src/PHPMailer.php';
-    require '../PHPMailer-master/src/SMTP.php';
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nombre = $_POST["nombre"];
-    $apellido_paterno = $_POST["apellidoP"];
-    $apellido_materno = $_POST["apellidoM"];
-    $cargo = $_POST["cargo"];
-    $correo = $_POST["correo"];
-    $contrasena = $_POST["contrasena"];
-    $tipo =$_POST["tipoUsuario"];
-
-    $nombrecompleto=$nombre . " " . $apellido_paterno . " " . $apellido_materno;
-
-    if ($tipo=="normal"){
-        $tipo=0;
-    }
-    else{
-        $tipo=1;
-    }
-
-    // Conexión a la base de datos MySQL
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "conaic";
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-
-
-
-
-    $para = $correo;
-    $asunto = 'CONAIC: BIENVENIDO'; // Asunto del correo
-    $imagen = "https://i.postimg.cc/R0fc2zym/logo-CONAIC-letras.png";
-    
-
-
-
-
+require '../../PHPMailer-master/src/Exception.php';
+require '../../PHPMailer-master/src/PHPMailer.php';
+require '../../PHPMailer-master/src/SMTP.php';
 
 // Crea una instancia de PHPMailer
 $mail = new PHPMailer;
@@ -59,11 +29,15 @@ $mail->Port = 587;
 
 // Configura el remitente y el destinatario
 $mail->setFrom('oscar23w@gmail.com', 'Tu Nombre');
-$mail->addAddress($para, 'Destinatario');
+$mail->addAddress('oscar92623@gmail.com', 'Destinatario');
 
-$mail->Subject = $asunto;
+$mail->Subject = 'Asunto del Correo';
 $mail->isHTML(true);
 
+$imagen = "https://i.postimg.cc/R0fc2zym/logo-CONAIC-letras.png";
+$nombrecompleto ="Oscar Abel";
+$correo ="correo@mail.com";
+$contrasena="mskcscon";
 
 
 // Aquí incrusta el código HTML en el cuerpo del correo
@@ -139,59 +113,17 @@ $mail->Body = '<html>
     </table>
 </body>
 </html>';
-    
 
-    
-
-    if ($conn->connect_error) {
-        die("Conexión a la base de datos fallida: " . $conn->connect_error);
-    }
-
-    else{
-
-    if (comprobar($correo, $conn)==1){
-        
-        echo "<script>";
-        echo "window.location.href = 'error.html';";
-        echo "</script>";
-    }
-    else{
-        // Inserción de datos en la tabla 
-    $sql = "INSERT INTO usuario (nombre,apellidoPat, apellidoMat, cargo, contrasena,correo,tipo,confirmacion)
-    VALUES ('$nombre', '$apellido_paterno', '$apellido_materno', '$cargo','$contrasena','$correo','$tipo',0)";
-
-if ($conn->query($sql) === TRUE) {
-    if ($mail->send()) {
-        echo "<script>";
-    echo "window.location.href = 'exito.html';";
-    echo "</script>";
+// Envía el correo
+if ($mail->send()) {
+    echo 'Correo enviado correctamente';
 } else {
-    echo "<script>";
-    echo "window.location.href = 'error.html';";
-    echo "</script>";
-}
-}  
-
-$conn->close();
-    }
-    
-}}
-else {
-        echo "<script>";
-        echo "<script>alert('El usuario fue registrado. Espera la confirmacion.' . $conn->error);</script>";
-        echo "window.location.href = 'index_visual_usu.php';";
-        echo "</script>";
-
-    echo "<script>alert('El Usuario no fue enviado');</script>";
+    echo 'Error al enviar el correo: ' . $mail->ErrorInfo;
 }
 
-function comprobar($usu,$conec){
-    $sql="SELECT * FROM usuario
-    WHERE correo='$usu'";
-    $result=mysqli_query($conec, $sql);
-    if (mysqli_num_rows($result)>0){
-        return 1;
-    }
-    else{return 0;}
-}
+
+
 ?>
+
+</body>
+</html>
