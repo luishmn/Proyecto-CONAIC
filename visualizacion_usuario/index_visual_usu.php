@@ -292,20 +292,15 @@
 
     <?php
   
-    $servername = "localhost"; 
-    $username = "root"; 
-    $password = ""; 
-    $dbname = "conaic";
-    
-    $conn = new mysqli($servername, $username, $password, $dbname);
-    
+    include "../conexionDB/conexion.php";
+    conecta();
 
-    if ($conn->connect_error) {
-        die("Conexión fallida: " . $conn->connect_error);
+    if ($conexion->connect_error) {
+        die("Conexión fallida: " . $conexion->connect_error);
     }
    
     $sql = "SELECT nombre, apellidoPat, apellidoMat, cargo, contrasena, correo, tipo FROM usuario";
-    $result = $conn->query($sql);
+    $result = $conexion->query($sql);
     ?>
     
     <div class="nombres_columnas">
