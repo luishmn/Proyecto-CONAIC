@@ -18,63 +18,47 @@
 
     <div class="cuadro">
 
-        <div class="correoC">
-            <input type="text" name="correoCodigo" id="correoEspacio"   class="correoC" required>
-            <!--<label for="correo" class="correoC" id="correoEspacio"></label>-->
-            <div class="corrC"> <!--imagen donde aparece el correo-->
-                <img src="..\imagenes\correo_Codigo.png" class="corrC">
+
+
+        
+        <div class="cuadro">
+            <div>
+                <p class="P1">¿Olvidaste tu contraseña?</p>
             </div>
-        </div>
-
-        
-        
-
-        <div class="from_tit">
-            <label for="tit" class="from_label_Tit">¿Olvidaste tu contraseña?</label>
-        </div> 
-
-        <div class="from_ingresaC1">
-            <label for="ingresaC1" class="from_ingreC1">Ingresa el código que se envió a tu correo <br>electrónico</label>
-        </div>  
+    
+            <div>
+                <input class="correoInput" type="email" >
+            </div>
+    
+            <div class="correoI">
+                <img src="..\imagenes\correo_Codigo.png" alt="logo de correo">
+            </div>
+    
+            <div>
+                <p class="P2">Ingresa el código que se envió a tu correo electrónico</p>
+            </div>
+    
          
 
-        <!-- espcios para ingresar el codigo-->
-        <form action="comprobarCodigo.php" method="post">
+            <!-- espcios para ingresar el codigo-->
+            <div>
+                <form action="comparandoCodigo.js" method="post">
+                <input class="from_1" type="text" id="c1" maxlength="1" required oninput="moverEnfoque(this, 'c2')">
+                <input class="from_2" type="text" id="c2" maxlength="1" required oninput="moverEnfoque(this, 'c3')">
+                <input class="from_3" type="text" id="c3" maxlength="1" required oninput="moverEnfoque(this, 'c4')">
+                <input class="from_4" type="text" id="c4" maxlength="1" required oninput="moverEnfoque(this, 'c5')">
+                <input class="from_5" type="text" id="c5" maxlength="1" required oninput="moverEnfoque(this, 'c6')">
+                <input class="from_6" type="text" id="c6" maxlength="1" required>        
+                </form>
+            </div>
+            <div class="boton1">
+                <button type="button" id="obtenerCodigo" class="from_boton1">Enviar código</button>
+            </div>
 
-        <div class="from_c1">
-            <input type="text" name="c1" id="c1" maxlength="1" class="from_c1" required oninput="moverEnfoque(this, 'c2')">
-        </div>
+            <div class="boton2">
+                <button type="button" id="compararCodigo" class="from_boton2">Comprobar</button>
+            </div>
 
-        <div class="from_c2">
-            <input type="text" name="c2" id="c2" maxlength="1" class="from_c2" required oninput="moverEnfoque(this, 'c3')">
-        </div>
-
-        <div class="from_c3">
-            <input type="text" name="c3" id="c3" maxlength="1" class="from_c3" required oninput="moverEnfoque(this, 'c4')">
-        </div>
-
-        <div class="from_c4">
-            <input type="text" name="c4" id="c4" maxlength="1" class="from_c4" required oninput="moverEnfoque(this, 'c5')">
-        </div>
-
-        <div class="from_c5">
-            <input type="text" name="c5" id="c5" maxlength="1" class="from_c5" required oninput="moverEnfoque(this, 'c6')">
-        </div>
-
-        <div class="from_c6">
-            <input type="text" name="c6" id="c6" maxlength="1" class="from_c6" required>
-        </div>
-        
-
-
-        <div class="boton1">
-            <button type="button" id="obtenerCodigo" class="from_boton1">Enviar código</button>
-        </div>
-
-        <div class="boton2">
-            <button type="button" id="compararCodigo" class="from_boton2">Comprobar</button>
-        </div>
-        </form>
 
     </div>
     

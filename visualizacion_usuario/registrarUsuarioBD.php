@@ -26,11 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Conexión a la base de datos MySQL
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "conaic";
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    include "../conexionDB/conexion.php";
+    conecta();
 
 
 
@@ -143,13 +140,13 @@ $mail->Body = '<html>
 
     
 
-    if ($conn->connect_error) {
-        die("Conexión a la base de datos fallida: " . $conn->connect_error);
+    if ($conexion->connect_error) {
+        die("Conexión a la base de datos fallida: " . $conexion->connect_error);
     }
 
     else{
 
-    if (comprobar($correo, $conn)==1){
+    if (comprobar($correo, $conexion)==1){
         
         echo "<script>";
         echo "window.location.href = 'error.html';";
@@ -160,7 +157,7 @@ $mail->Body = '<html>
     $sql = "INSERT INTO usuario (nombre,apellidoPat, apellidoMat, cargo, contrasena,correo,tipo,confirmacion)
     VALUES ('$nombre', '$apellido_paterno', '$apellido_materno', '$cargo','$contrasena','$correo','$tipo',0)";
 
-if ($conn->query($sql) === TRUE) {
+if ($conexion->query($sql) === TRUE) {
     if ($mail->send()) {
         echo "<script>";
     echo "window.location.href = 'exito.html';";
@@ -172,13 +169,13 @@ if ($conn->query($sql) === TRUE) {
 }
 }  
 
-$conn->close();
+$conexion->close();
     }
     
 }}
 else {
         echo "<script>";
-        echo "<script>alert('El usuario fue registrado. Espera la confirmacion.' . $conn->error);</script>";
+        echo "<script>alert('El usuario fue registrado. Espera la confirmacion.' . $conexion->error);</script>";
         echo "window.location.href = 'index_visual_usu.php';";
         echo "</script>";
 
