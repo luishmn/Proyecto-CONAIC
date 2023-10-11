@@ -1,3 +1,6 @@
+<meta charset="UTF-8">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -378,13 +381,28 @@
         // Aquí puedes realizar alguna acción cuando se hace clic en el botón
         var correoEliminar = document.getElementById("correoEdit");
         var correoElim = correoEliminar.value;
-        alert(correoElim);
+        Swal.fire({
+        title: '¿Estás seguro?',
+        text: '¿Quieres eliminar al usuario con el correo ' + correoElim + '?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Cancelar',
+        cancelButtonText: 'Aceptar'
+      }).then((result) => {
+        if (!result.isConfirmed) {
+            window.location.href = '../eliminarUsuarios/eliminar_usuario.php?correo_traslado=' + correoElim;
+        
+        }
+      });
+  
+      // Evita que el formulario se envíe automáticamente
+      return false;
+    }
     
-        window.location.href = '../eliminarUsuarios/eliminar_usuario.php?correo_traslado=' + correoElim;
         
         
         
-    });
+    );
         
 </script>
 
