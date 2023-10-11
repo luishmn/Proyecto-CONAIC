@@ -120,13 +120,14 @@ body{
 }
 
 .nombres_columnas{
-width: 1168px;
+
 height: 62px;
 flex-shrink: 0;
 background: #89C7D0;
 margin: 0 auto ;
 width: 90%;
 font-family: Arial, sans-serif;
+
 }
 
 
