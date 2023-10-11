@@ -292,20 +292,17 @@
 
     <?php
   
-    $servername = "localhost"; 
-    $username = "root"; 
-    $password = ""; 
-    $dbname = "conaic";
-    
-    $conn = new mysqli($servername, $username, $password, $dbname);
+   
+    include "../conexionDB/conexion.php";
+    conecta();
     
 
-    if ($conn->connect_error) {
-        die("Conexión fallida: " . $conn->connect_error);
+    if ($conexion->connect_error) {
+        die("Conexión fallida: " . $conexion->connect_error);
     }
    
     $sql = "SELECT nombre, apellidoPat, apellidoMat, cargo, contrasena, correo, tipo FROM usuario";
-    $result = $conn->query($sql);
+    $result = $conexion->query($sql);
     ?>
     
     <div class="nombres_columnas">
@@ -369,6 +366,7 @@
 </body>
 
 </html>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
     // Obtener el botón por su ID
@@ -576,14 +574,16 @@
     
       if (nombre1.trim() === "" || apellidoM1.trim() === "" || apellidoP1.trim() ==="" || cargo1.trim() ==="" || email1.trim() === "" || contrasena1.trim() === "" || contrasenaV1.trim() ===""){
         
-        tituloAlerta1.textContent = "Llena todos los campos";
-        descripcionAlerta1.textContent = "Asegurate de llenar todos los campos";
-        mostrarDialogo1();
+        Swal.fire({
+            title: 'Llena todos los campos',
+            icon: 'error'
+            })
       }
       else if (nombre1.length > 20){
-        tituloAlerta1.textContent = "Nombre muy largo";
-        descripcionAlerta1.textContent = "El nombre debe tener maximo 20 caracteres";
-        mostrarDialogo1();
+        Swal.fire({
+        title: 'Nombre muy largo',
+        icon: 'error'
+        })
       }
       else if (apellidoM1.length > 20){
         tituloAlerta1.textContent = "Apellido muy largo";
@@ -654,6 +654,7 @@
   });
   
 </script>
+
 
 <script> // Script para aparecer y desaparecer el formulario de registro
     document.getElementById("Registrar").addEventListener("click", function() {
