@@ -1,3 +1,6 @@
+<meta charset="UTF-8">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -376,13 +379,28 @@
         // Aquí puedes realizar alguna acción cuando se hace clic en el botón
         var correoEliminar = document.getElementById("correoEdit");
         var correoElim = correoEliminar.value;
-        alert(correoElim);
+        Swal.fire({
+        title: '¿Estás seguro?',
+        text: '¿Quieres eliminar al usuario con el correo ' + correoElim + '?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonText: 'Cancelar',
+        cancelButtonText: 'Aceptar'
+      }).then((result) => {
+        if (!result.isConfirmed) {
+            window.location.href = '../eliminarUsuarios/eliminar_usuario.php?correo_traslado=' + correoElim;
+        
+        }
+      });
+  
+      // Evita que el formulario se envíe automáticamente
+      return false;
+    }
     
-        window.location.href = '../eliminarUsuarios/eliminar_usuario.php?correo_traslado=' + correoElim;
         
         
         
-    });
+    );
         
 </script>
 
@@ -432,72 +450,118 @@
       
     
       if (nombre.trim() === "" || apellidoM.trim() === "" || apellidoP.trim() ==="" || cargo.trim() ==="" || email.trim() === "" || contrasena.trim() === "" || contrasenaV.trim() ===""){
-        tituloAlerta.textContent = "Llena todos los campos";
-        descripcionAlerta.textContent = "Asegurate de llenar todos los campos";
-        mostrarDialogo();
+            Swal.fire({
+                title: 'Llena todos los campos',
+                text: 'Asegúrate de llenar todos los campos',
+                icon: 'warning',
+                confirmButtonText: 'Cerrar',
+                confirmButtonColor: '#197B7A' 
+            });
       }
+
+
       else if (nombre.length > 20){
-        tituloAlerta.textContent = "Nombre muy largo";
-        descripcionAlerta.textContent = "El nombre debe tener maximo 20 caracteres";
-        mostrarDialogo();
+        Swal.fire({
+                title: "Nombre muy largo",
+                text: "El nombre debe tener máximo 20 caracteres",
+                icon: 'warning',
+                confirmButtonText: 'Cerrar',
+                confirmButtonColor: '#197B7A' 
+            });
       }
       else if (apellidoM.length > 20){
-        tituloAlerta.textContent = "Apellido muy largo";
-        descripcionAlerta.textContent = "El apellido Materno debe tener maximo 20 caracteres";
-        mostrarDialogo();
+        Swal.fire({
+                title: "Apellido muy largo",
+                text: "El apellido Materno debe tener máximo 20 caracteres",
+                icon: 'warning',
+                confirmButtonText: 'Cerrar',
+                confirmButtonColor: '#197B7A' 
+            });
       }
       else if (apellidoP.length > 20){
-        tituloAlerta.textContent = "Apellido muy largo";
-        descripcionAlerta.textContent = "El apellido Paterno debe tener maximo 20 caracteres";
-        mostrarDialogo();
+        Swal.fire({
+                title: "Apellido muy largo",
+                text: "El apellido Paterno debe tener máximo 20 caracteres",
+                icon: 'warning',
+                confirmButtonText: 'Cerrar',
+                confirmButtonColor: '#197B7A' 
+            });
       }
+
       else if (cargo.length > 40){
-        tituloAlerta.textContent = "Nombre de cargo";
-        descripcionAlerta.textContent = "El cargo debe tener maximo 40 caracteres";
-        mostrarDialogo();
-      }
-      else if (cargo.length > 40){
-        tituloAlerta.textContent = "Nombre de cargo";
-        descripcionAlerta.textContent = "El cargo debe tener maximo 40 caracteres";
-        mostrarDialogo();
+        Swal.fire({
+                title: "Cargo muy largo",
+                text: "El cargo debe tener máximo 40 caracteres",
+                icon: 'warning',
+                confirmButtonText: 'Cerrar',
+                confirmButtonColor: '#197B7A' 
+            });
       }
       else if (contrasena != contrasenaV) {
-        tituloAlerta.textContent = "Contraseñas diferentes";
-        descripcionAlerta.textContent = "Las contraseñas no coinciden";
-        mostrarDialogo();
+        Swal.fire({
+                title: "Contraseñas diferentes",
+                text: "Las contraseñas no coinciden",
+                icon: 'warning',
+                confirmButtonText: 'Cerrar',
+                confirmButtonColor: '#197B7A' 
+            });
       } 
       else if (contrasena.length < 8){
-        tituloAlerta.textContent = "Contraseña muy corta";
-        descripcionAlerta.textContent = "La contraseña debe tener al menos 8 caracteres";
-        mostrarDialogo();
+        Swal.fire({
+                title: "Contraseña muy corta",
+                text: "La contraseña debe tener al menos 8 caracteres",
+                icon: 'warning',
+                confirmButtonText: 'Cerrar',
+                confirmButtonColor: '#197B7A' 
+            });
       }
       else if (contrasena.length > 20){
-        tituloAlerta.textContent = "Contraseña muy larga";
-        descripcionAlerta.textContent = "La contraseña debe tener menos de 20 caracteres";
-        mostrarDialogo();
+        Swal.fire({
+                title: "Contraseña muy larga",
+                text: "La contraseña debe tener máximo 20 caracteres",
+                icon: 'warning',
+                confirmButtonText: 'Cerrar',
+                confirmButtonColor: '#197B7A' 
+            });
       }
 
       else if (!contrasena.match(mayusculas)){
-        tituloAlerta.textContent = "Faltan mayusculas";
-        descripcionAlerta.textContent = "La contraseña debe tener al menos una letra mayuscula";
-        mostrarDialogo();
+        Swal.fire({
+                title:"Faltan mayusculas",
+                text: "La contraseña debe tener al menos una letra mayuscula",
+                icon: 'warning',
+                confirmButtonText: 'Cerrar',
+                confirmButtonColor: '#197B7A' 
+            });
       }
       else if (!contrasena.match(minusculas)){
-        tituloAlerta.textContent = "Faltan minusculas";
-        descripcionAlerta.textContent = "La contraseña debe tener al menos una letra minuscula";
-        mostrarDialogo();
+        Swal.fire({
+                title:"Faltan minusculas",
+                text: "La contraseña debe tener al menos una letra minuscula",
+                icon: 'warning',
+                confirmButtonText: 'Cerrar',
+                confirmButtonColor: '#197B7A' 
+            });
       }
 
       else if (!contrasena.match(numeros)){
-        tituloAlerta.textContent = "Faltan números";
-        descripcionAlerta.textContent = "La contraseña debe tener al menos un número";
-        mostrarDialogo();
+        Swal.fire({
+                title:"Faltan números",
+                text: "La contraseña debe tener al menos un número",
+                icon: 'warning',
+                confirmButtonText: 'Cerrar',
+                confirmButtonColor: '#197B7A' 
+            });
       }
 
       else if (/\s/.test(contrasena)) {
-        tituloAlerta.textContent = "Espacios en contraseña";
-        descripcionAlerta.textContent = "La contraseña no debe tener espacios";
-        mostrarDialogo();
+        Swal.fire({
+                title:"Espacios en contraseña",
+                text: "La contraseña no debe tener espacios",
+                icon: 'warning',
+                confirmButtonText: 'Cerrar',
+                confirmButtonColor: '#197B7A' 
+            });
         }
       
 
@@ -575,72 +639,112 @@
       if (nombre1.trim() === "" || apellidoM1.trim() === "" || apellidoP1.trim() ==="" || cargo1.trim() ==="" || email1.trim() === "" || contrasena1.trim() === "" || contrasenaV1.trim() ===""){
         
         Swal.fire({
-            title: 'Llena todos los campos',
-            icon: 'error'
+            title: 'Campos vacíos',
+            text: 'Por favor llena todos los campos',
+            icon: 'error',
+            confirmButtonColor: '#197B7A'
             })
       }
       else if (nombre1.length > 20){
         Swal.fire({
         title: 'Nombre muy largo',
-        icon: 'error'
+        text: 'El Nombre debe tener máximo 20 caracteres',
+        icon: 'error',
+        confirmButtonColor: '#197B7A'
         })
       }
       else if (apellidoM1.length > 20){
-        tituloAlerta1.textContent = "Apellido muy largo";
-        descripcionAlerta1.textContent = "El apellido Materno debe tener maximo 20 caracteres";
-        mostrarDialogo1();
+        Swal.fire({
+        title: 'Apellido muy largo',
+        text: 'El Apellido Materno debe tener máximo 20 caracteres',
+        icon: 'error',
+        confirmButtonColor: '#197B7A'
+        })
       }
       else if (apellidoP1.length > 20){
-        tituloAlerta1.textContent = "Apellido muy largo";
-        descripcionAlerta1.textContent = "El apellido Paterno debe tener maximo 20 caracteres";
-        mostrarDialogo1();
+        Swal.fire({
+        title: 'Apellido muy largo',
+        text: 'El Apellido Paterno debe tener máximo 20 caracteres',
+        icon: 'error',
+        confirmButtonColor: '#197B7A'
+        })
       }
       else if (cargo1.length > 40){
-        tituloAlerta1.textContent = "Nombre de cargo";
-        descripcionAlerta1.textContent = "El cargo debe tener maximo 40 caracteres";
-        mostrarDialogo1();
+        Swal.fire({
+        title: 'Cargo muy largo',
+        text: 'El Cargo debe tener máximo 40 caracteres',
+        icon: 'error',
+        confirmButtonColor: '#197B7A'
+        })
       }
-      else if (cargo1.length > 40){
-        tituloAlerta1.textContent = "Nombre de cargo";
-        descripcionAlerta1.textContent = "El cargo debe tener maximo 40 caracteres";
-        mostrarDialogo1();
-      }
+    //   else if (cargo1.length > 40){
+    //     tituloAlerta1.textContent = "Nombre de cargo";
+    //     descripcionAlerta1.textContent = "El cargo debe tener maximo 40 caracteres";
+    //     mostrarDialogo1();
+    //     Swal.fire({
+    //     title: 'Apellido muy largo',
+    //     text: 'El Apellido Paterno debe tener maximo 20 caracteres',
+    //     icon: 'error',
+    //     confirmButtonColor: '#197B7A'
+    //     })
+    //   }
       else if (contrasena1 != contrasenaV1) {
-        tituloAlerta1.textContent = "Contraseñas diferentes";
-        descripcionAlerta1.textContent = "Las contraseñas no coinciden";
-        mostrarDialogo1();
+        Swal.fire({
+        title: 'Contraseñas diferentes',
+        text: 'Las Contraseñas no coinciden',
+        icon: 'error',
+        confirmButtonColor: '#197B7A'
+        })
       } 
       else if (contrasena1.length < 8){
-        tituloAlerta1.textContent = "Contraseña muy corta";
-        descripcionAlerta1.textContent = "La contraseña debe tener al menos 8 caracteres";
-        mostrarDialogo1();
+        Swal.fire({
+        title: 'Contraseña muy corta',
+        text: 'La Contraseña debe tener al menos 8 caracteres',
+        icon: 'error',
+        confirmButtonColor: '#197B7A'
+        })
       }
       else if (contrasena1.length > 20){
-        tituloAlerta1.textContent = "Contraseña muy larga";
-        descripcionAlerta1.textContent = "La contraseña debe tener menos de 20 caracteres";
-        mostrarDialogo1();
+        Swal.fire({
+        title: 'Contraseña muy larga',
+        text: 'La Contraseña debe tener máximo 20 caracteres',
+        icon: 'error',
+        confirmButtonColor: '#197B7A'
+        })
       }
 
       else if (!contrasena1.match(mayusculas1)){
-        tituloAlerta1.textContent = "Faltan mayusculas";
-        descripcionAlerta1.textContent = "La contraseña debe tener al menos una letra mayuscula";
-        mostrarDialogo1();
+        Swal.fire({
+        title: 'Faltan mayusculas',
+        text: 'La Contraseña debe tener al menos una letra mayuscula',
+        icon: 'error',
+        confirmButtonColor: '#197B7A'
+        })
       }
       else if (!contrasena1.match(minusculas1)){
-        tituloAlerta1.textContent = "Faltan minusculas";
-        descripcionAlerta1.textContent = "La contraseña debe tener al menos una letra minuscula";
-        mostrarDialogo1();
+        Swal.fire({
+        title: 'Faltan minúsculas',
+        text: 'La Contraseña debe tener al menos una letra minúscula',
+        icon: 'error',
+        confirmButtonColor: '#197B7A'
+        })
       }
 
       else if (!contrasena1.match(numeros1)){
-        tituloAlerta1.textContent = "Faltan números";
-        descripcionAlerta1.textContent = "La contraseña debe tener al menos un número";
-        mostrarDialogo1();
+        Swal.fire({
+        title: 'Faltan números',
+        text: 'La Contraseña debe tener al menos un número',
+        icon: 'error',
+        confirmButtonColor: '#197B7A'
+        })
       }
       else if (/\s/.test(contrasena1)) {
-        tituloAlerta1.textContent = "Espacios en contraseña";
-        descripcionAlerta1.textContent = "La contraseña no debe tener espacios";
-        mostrarDialogo1();
+        Swal.fire({
+        title: 'Espacios en Contraseña',
+        text: 'La Contraseña no debe tener espacios',
+        icon: 'error',
+        confirmButtonColor: '#197B7A'
+        })
         }
       
 

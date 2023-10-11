@@ -1,217 +1,227 @@
-
-body .img2{
-    position: absolute;
-    bottom: 60%;
-    right: 35%;
-    width: 60vh;
-    height:auto;
-    z-index: -1;
-    transform: scale(0.80);
-    object-fit: cover;
-    translate(-50%, -50%);
-    object-fit: cover;
-    
-}
-
-
-
-body{
+body {
     background-color: #D4E1E3;
+    font-family: Arial, sans-serif;
     display: flex;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: center;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    left: center;
-}
-
-
-.barra-superior{
-   
-    background-color: #145070; 
-    height: 08%;
-    border-radius: 30px; 
-    padding: 40px; 
-    color: white; 
-    position: fixed; 
-    top: -10%; 
-    left: 0; 
-    right: 0; 
-
-}
-
-
-.barra-superior .menu_arte{
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    padding: 10px;
-    transition: transform 0.2s;
-    position: fixed;
-    top: 10px;
-    left: 20px;
-}
-
-.barra-superior .menu_arte:hover{
-    transform: scale(0.90);
-}
-
-.barra-superior .menu_arte img{
-    width: 70px;
-    height: auto;
-    display: block;
-}
-
-.barra-superior .menu_desplegable {
-    position: relative;
-    display: inline-block;
-}
-
-.barra-superior .contenido_del_menu{
-    display: none;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    position: fixed;
-    top: 60px;
-    left: 50px;
-}
-
-.barra-superior .contenido_del_menu a {
-    font-family: Arial;
-    font-size: 12;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.barra-superior .menu_desplegable:hover .contenido_del_menu {
-    display: block;
-}
-
-.barra-superior .contenido_del_menu a:hover {
-    background-color: lightblue;
-}
-
-
-.barra-superior .menu_estilo_usuario{
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    padding: 10px;
-    transition: transform 0.2s;
-    position: fixed;
-    top: 1%;
-    right: 10%;
+    justify-content: center; /* Alinea al centro verticalmente */
+    height: 100vh;
+    margin: 0;
     
-}
-
-.barra-superior .menu_estilo_usuario:hover{
-    transform: scale(0.90);
-}
-
-.barra-superior .menu_estilo_usuario img{
+  }
+  
+  
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .logo {
+    margin-top: -2cm; /* Ajusta la posición vertical del logo */
+    display: flex;
+    justify-content: center; /* Alinea al centro horizontalmente */
+    max-width: 60%; /* Ajusta el tamaño máximo del logo */
+  }
+  
+  .logo img {
+    width: 100%; /* Ajusta el tamaño del logo al 100% */
+    height: auto;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; /* Ajusta la separación entre el logo y los botones */
+  }
+  
+  .buttons button {
+    padding: 0; /* Ajusta el padding a 0 para que no afecte a la imagen */
+    margin: 0 10px; /* Ajusta el espacio entre los botones */
+    background: none; /* Ajusta el fondo a ninguno */
+    border: none; /* Sin borde */
+  }
+  
+  .button-image {
+    max-width: 100%; /* Hace que la imagen sea completamente responsive */
+    height: auto; /* Permite que la altura se ajuste proporcionalmente */
+  }
+  
+  .small {
+    max-width: 70%; /* Tamaño pequeño */
+  }
+  
+  .large {
+    max-width: 70%; /* Tamaño grande */
+  }
+  
+  /* Estilos para hacer responsive */
+  @media (max-width: 768px) {
+    .buttons button {
+      margin-top: 5px; /* Reduce el espacio en dispositivos móviles */
+    }
+    .logo {
+      flex-direction: column; /* Cambia la dirección de la flexbox en dispositivos móviles */
+      align-items: center; /* Alinea al centro en dispositivos móviles */
+    }
+    .logo img {
+      max-width: 80%; /* Ajusta el tamaño del logo en dispositivos móviles */
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .barra-superior{
+     
+      background-color: #145070; 
+      height: 08%;
+      border-radius: 30px; 
+      padding: 40px; 
+      color: white; 
+      position: fixed; 
+      top: -10%; 
+      left: 0; 
+      right: 0; 
+  
+  }
+  
+  
+  .barra-superior .menu_arte{
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      padding: 10px;
+      transition: transform 0.2s;
+      position: fixed;
+      top: 10px;
+      left: 20px;
+  }
+  
+  .barra-superior .menu_arte:hover{
+      transform: scale(0.90);
+  }
+  
+  .barra-superior .menu_arte img{
+      width: 70px;
+      height: auto;
+      display: block;
+  }
+  
+  .barra-superior .menu_desplegable {
+      position: relative;
+      display: inline-block;
+  }
+  
+  .barra-superior .contenido_del_menu{
+      display: none;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      position: fixed;
+      top: 60px;
+      left: 50px;
+  }
+  
+  .barra-superior .contenido_del_menu a {
+      font-family: Arial;
+      font-size: 12;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+  
+  .barra-superior .menu_desplegable:hover .contenido_del_menu {
+      display: block;
+  }
+  
+  .barra-superior .contenido_del_menu a:hover {
+      background-color: lightblue;
+  }
+  
+  
+  .barra-superior .menu_estilo_usuario{
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      padding: 10px;
+      transition: transform 0.2s;
+      position: fixed;
+      top: 1%;
+      right: 10%;
+      
+  }
+  .barra-superior .menu_estilo_usuario img{
     width: 120px;
     height: auto;
     display: block;
-}
-
-
-
-.barra-superior .menu_usuario:hover .contenido_del_menu_usuarios {
-    display: block;
-}
-
-.barra-superior .contenido_del_menu_usuarios a:hover {
-    background-color: lightblue;
-}
-
-.texto{
-    font-size: 14px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-    text-align: center;
-    width: 90%;
-    position: absolute;
-    top: 47%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-    color: black;
+  }
+  
+  .barra-superior .menu_estilo_usuario:hover{
+      transform: scale(0.90);
+  }
+  
+  .barra-superior .menu_estilo_usuario img{
+      width: 120px;
+      height: auto;
+      display: block;
+  }
+  
+  
+  
+  .barra-superior .menu_usuario:hover .contenido_del_menu_usuarios {
+      display: block;
+  }
+  
+  .barra-superior .contenido_del_menu_usuarios a:hover {
+      background-color: lightblue;
+  }
+  
+  .texto{
+      font-size: 14px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+      text-align: center;
+      width: 90%;
+      position: absolute;
+      top: 47%;
+      left: 55%;
+      transform: translate(-50%, -50%);
+      color: black;
+      
+  }
     
-}
-
-
-.contenedor-botones{
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 600px;
-    height: 400px;
-    padding-left: 50px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 20px;
-    
-    
-}
-
-
-.contenedor-botones .btn1{
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    padding: 10px;
-    transition: transform 0.2s; 
-    
-}
-
-.contenedor-botones .btn1:hover{
-    transform: scale(0.90);
-}
-
-.contenedor-botones .btn1 img{
-    width: 80%;
-    height: 80%;
-    display: block;
-} 
-
-.contenedor-botones .btn2{
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    padding: 10px;
-    transition: transform 0.2s;   
-}
-
-.contenedor-botones .btn2:hover{
-    transform: scale(0.90);
-}
-
-.contenedor-botones .btn2 img{
-    width: 80%;
-    height: 80%;
-    display: block;
-} 
-
-
-body .img1{
+  
+  body .img1{
     position: absolute;
     bottom: 0%;
     right: 0%;
     width: 60vh;
     height:auto;
     z-index: -1;
-
-
+  
+     
+  }
     
-}
-
-
-
+    
