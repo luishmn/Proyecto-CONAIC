@@ -16,15 +16,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Conexión a la base de datos MySQL
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "conaic";
+    include "../conexionDB/conexion.php";
+    conecta();
 
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-    if ($conn->connect_error) {
-        die("Conexión a la base de datos fallida: " . $conn->connect_error);
+    if ($conexion->connect_error) {
+        die("Conexión a la base de datos fallida: " . $conexion->connect_error);
     }
     // Inserción de datos en la tabla 
     $sql = "UPDATE usuario
@@ -36,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         tipo = '$tipo'
     WHERE correo = '$correo'";
 
-    if ($conn->query($sql) === TRUE) {
+    if ($conexion->query($sql) === TRUE) {
 
         echo "<script>";
         echo "alert('Usuario modificado correctamente. ');";
@@ -51,9 +47,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<script>alert('El usuario fue modificado correctamente.' . $conn->error);</script>";
         //echo "window.location.href = 'editar_usuarios.php';";
         echo "</script>";
-        echo "Error al registrar datos: " . $conn->error;
+        echo "Error al registrar datos: " . $conexion->error;
     }
 
-    $conn->close();
+    $conexion->close();
 } 
 ?>

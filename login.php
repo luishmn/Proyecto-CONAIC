@@ -120,13 +120,8 @@
         
                 global $conexion;
 
-                $servername = "localhost";
-                $username = "root";
-                $password = "";
-                $dbname = "conaic";
-
-                $conexion = new mysqli($servername, $username, $password, $dbname);
-                
+                include "conexionDB/conexion.php";
+                conecta();
                 if(!$conexion){
                     echo "<script>alert('Ocurrió un error al conectar con la Base de Datos. Vuelva a iniciar sesión.');</script>";
                 } 
