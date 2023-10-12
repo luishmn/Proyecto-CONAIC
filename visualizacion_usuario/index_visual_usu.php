@@ -453,7 +453,7 @@
             Swal.fire({
                 title: 'Llena todos los campos',
                 text: 'Asegúrate de llenar todos los campos',
-                icon: 'warning',
+                icon: 'error',
                 confirmButtonText: 'Cerrar',
                 confirmButtonColor: '#197B7A' 
             });
@@ -464,7 +464,7 @@
         Swal.fire({
                 title: "Nombre muy largo",
                 text: "El nombre debe tener máximo 20 caracteres",
-                icon: 'warning',
+                icon: 'error',
                 confirmButtonText: 'Cerrar',
                 confirmButtonColor: '#197B7A' 
             });
@@ -473,7 +473,7 @@
         Swal.fire({
                 title: "Apellido muy largo",
                 text: "El apellido Materno debe tener máximo 20 caracteres",
-                icon: 'warning',
+                icon: 'error',
                 confirmButtonText: 'Cerrar',
                 confirmButtonColor: '#197B7A' 
             });
@@ -482,7 +482,7 @@
         Swal.fire({
                 title: "Apellido muy largo",
                 text: "El apellido Paterno debe tener máximo 20 caracteres",
-                icon: 'warning',
+                icon: 'error',
                 confirmButtonText: 'Cerrar',
                 confirmButtonColor: '#197B7A' 
             });
@@ -492,7 +492,7 @@
         Swal.fire({
                 title: "Cargo muy largo",
                 text: "El cargo debe tener máximo 40 caracteres",
-                icon: 'warning',
+                icon: 'error',
                 confirmButtonText: 'Cerrar',
                 confirmButtonColor: '#197B7A' 
             });
@@ -501,7 +501,7 @@
         Swal.fire({
                 title: "Contraseñas diferentes",
                 text: "Las contraseñas no coinciden",
-                icon: 'warning',
+                icon: 'error',
                 confirmButtonText: 'Cerrar',
                 confirmButtonColor: '#197B7A' 
             });
@@ -510,7 +510,7 @@
         Swal.fire({
                 title: "Contraseña muy corta",
                 text: "La contraseña debe tener al menos 8 caracteres",
-                icon: 'warning',
+                icon: 'error',
                 confirmButtonText: 'Cerrar',
                 confirmButtonColor: '#197B7A' 
             });
@@ -519,7 +519,7 @@
         Swal.fire({
                 title: "Contraseña muy larga",
                 text: "La contraseña debe tener máximo 20 caracteres",
-                icon: 'warning',
+                icon: 'error',
                 confirmButtonText: 'Cerrar',
                 confirmButtonColor: '#197B7A' 
             });
@@ -529,7 +529,7 @@
         Swal.fire({
                 title:"Faltan mayusculas",
                 text: "La contraseña debe tener al menos una letra mayuscula",
-                icon: 'warning',
+                icon: 'error',
                 confirmButtonText: 'Cerrar',
                 confirmButtonColor: '#197B7A' 
             });
@@ -538,7 +538,7 @@
         Swal.fire({
                 title:"Faltan minusculas",
                 text: "La contraseña debe tener al menos una letra minuscula",
-                icon: 'warning',
+                icon: 'error',
                 confirmButtonText: 'Cerrar',
                 confirmButtonColor: '#197B7A' 
             });
@@ -548,7 +548,7 @@
         Swal.fire({
                 title:"Faltan números",
                 text: "La contraseña debe tener al menos un número",
-                icon: 'warning',
+                icon: 'error',
                 confirmButtonText: 'Cerrar',
                 confirmButtonColor: '#197B7A' 
             });
@@ -558,7 +558,7 @@
         Swal.fire({
                 title:"Espacios en contraseña",
                 text: "La contraseña no debe tener espacios",
-                icon: 'warning',
+                icon: 'error',
                 confirmButtonText: 'Cerrar',
                 confirmButtonColor: '#197B7A' 
             });
