@@ -4,21 +4,17 @@
 
     $codigoRec = $POST['codigoRec'];
 
-    //se abre la bd
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "conaic";
+    include "../conexionDB/conexion.php";
+    conecta();
 
-    // Conectar nuevamente a la base de datos
-    $conn = new mysqli($servername, $username, $password, $dbname);
+ 
 
-    if ($conn->connect_error) {
-            die("Conexión fallida: " . $conn->connect_error);
+    if ($conexion->connect_error) {
+            die("Conexión fallida: " . $conexion->connect_error);
     }
     // Obtener los datos del registro seleccionado
     $sql_usuario = "SELECT * FROM usuario WHERE correo = '$correo'";
-    $result_usuario = $conn->query($sql_usuario);
+    $result_usuario = $conexion->query($sql_usuario);
 
     if ($result_usuario->num_rows > 0) {
         $row = $result_usuario->fetch_assoc();
@@ -31,14 +27,18 @@
         $headers = "From: tu_direccion_de_correo@example.com"; // Cambia esto por tu dirección de correo
 
         if (mail($para, $asunto, $mensaje, $headers)) {
-            echo  json_encode("El mensaje se ha enviado correctamente.");
+            $response = array("message" => "El mensaje se ha enviado correctamente");
+            echo json_encode($response);
         } else {
-            echo json_encode("Error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.");
+            $response = array("message" => "Error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.");
+            echo json_encode($response);
         }
+        
     } 
     else {
-        echo json_encode("No se encontraron registros para el correo seleccionado.");
+        $response = array("message" => "No existe el correo");
+            echo json_encode($response);
     }
     
-    $conn->close();
+    $conexion->close();
 ?>

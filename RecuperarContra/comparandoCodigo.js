@@ -16,6 +16,10 @@ window.onload = () => {
     
     //ejecuta al cliquear el boton de mandar codigo
     boton_obtener.addEventListener("click", (e) =>{
+
+        
+
+        
         
         //codigo generado
          codigoRec = Math.floor(100000 + Math.random() * 900000);
@@ -23,7 +27,6 @@ window.onload = () => {
         //variable del correo
         let valor_correo = correo.value;
 
-        alert ("hjacn")
         
         
         //archivo al que se dirige
