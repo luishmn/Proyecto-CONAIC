@@ -131,6 +131,8 @@ body{
     height: 3.5vw;
     border-radius: 5cm;
     border: none;
+    font-size: 2vw;
+    text-align: center;
 }
 
 @media (max-width: 884px) {
@@ -147,6 +149,8 @@ body{
     height: 3.5vw;
     border-radius: 5cm;
     border: none;
+    font-size: 2vw;
+    text-align: center;
 }
 @media (max-width: 884px) {
     .from_2 {
@@ -161,6 +165,8 @@ body{
     height: 3.5vw;
     border-radius: 5cm;
     border: none;
+    font-size: 2vw;
+    text-align: center;
 }
 @media (max-width: 884px) {
     .from_3 {
@@ -175,6 +181,8 @@ body{
     height: 3.5vw;
     border-radius: 5cm;
     border: none;
+    font-size: 2vw;
+    text-align: center;
 }
 @media (max-width: 884px) {
     .from_4 {
@@ -190,6 +198,8 @@ body{
     height: 3.5vw;
     border-radius: 5cm;
     border: none;
+    font-size: 2vw;
+    text-align: center;
 }
 @media (max-width: 884px) {
     .from_5 {
@@ -205,6 +215,8 @@ body{
     height: 3.5vw;
     border-radius: 5cm;
     border: none;
+    font-size: 2vw;
+    text-align: center;
 }
 @media (max-width: 884px) {
     .from_6 {
