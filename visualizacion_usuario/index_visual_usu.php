@@ -448,7 +448,7 @@
         var apellidoM = document.getElementById ("apellidoM").value;
         var apellidoP = document.getElementById ("apellidoP").value;
         
-        const allowedDomains = ['gmail.com', 'hotmail.com', 'yahoo.com', 'outlook.com', 'edu'];
+        const allowedDomains = ['gmail.com', 'hotmail.com', 'yahoo.com', 'outlook.com', 'edu'," zacatecssur.tecnm.mx"];
         let validDomain = false;
         const [textoAntesArroba, dominio] = email.split('@');
         
