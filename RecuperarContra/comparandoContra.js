@@ -1,4 +1,7 @@
+
 //SCRIPT PARA VALIDAR EL FORMULARIO DE REGISTRO
+
+
 function mostrarDialogo() {
 document.getElementById("cuadroDialogo").style.display = "block";
 }
@@ -43,45 +46,84 @@ formulario.addEventListener("submit", function(event) {
     tituloAlerta.textContent = "Llena todos los campos";
     descripcionAlerta.textContent = "Asegurate de llenar todos los campos";
     mostrarDialogo();
+
+
     }
     
     else if (contrasena != contrasenaV) {
-    tituloAlerta.textContent = "Contraseñas diferentes";
-    descripcionAlerta.textContent = "Las contraseñas no coinciden";
-    mostrarDialogo();
+    Swal.fire({
+        title:"Contraseñas diferentes",
+        text: "Las contraseñas no coinciden",
+        icon: "error",
+        confirmButtonText: 'Cerrar',
+        confirmButtonColor: '#197B7A'
+    });
+    return;
+
     } 
     else if (contrasena.length < 8){
-    tituloAlerta.textContent = "Contraseña muy corta";
-    descripcionAlerta.textContent = "La contraseña debe tener al menos 8 caracteres";
-    mostrarDialogo();
+    Swal.fire({
+        title:"Contraseña muy corta",
+        text: "La contraseña debe tener al menos 8 caracteres",
+        icon: "error",
+        confirmButtonText: 'Cerrar',
+        confirmButtonColor: '#197B7A'
+    });
+    return;
     }
     else if (contrasena.length > 20){
-    tituloAlerta.textContent = "Contraseña muy larga";
-    descripcionAlerta.textContent = "La contraseña debe tener menos de 20 caracteres";
-    mostrarDialogo();
+    Swal.fire({
+        title:"Contraseña muy larga",
+        text: "La contraseña debe tener menos de 20 caracteres",
+        icon: "error",
+        confirmButtonText: 'Cerrar',
+        confirmButtonColor: '#197B7A'
+    });
+    return;
     }
 
     else if (!contrasena.match(mayusculas)){
-    tituloAlerta.textContent = "Faltan mayusculas";
-    descripcionAlerta.textContent = "La contraseña debe tener al menos una letra mayuscula";
-    mostrarDialogo();
+    Swal.fire({
+        title:"Faltan mayusculas",
+        text: "La contraseña debe tener al menos una letra mayuscula",
+        icon: "error",
+        confirmButtonText: 'Cerrar',
+        confirmButtonColor: '#197B7A'
+    });
+    return;
+
     }
     else if (!contrasena.match(minusculas)){
-    tituloAlerta.textContent = "Faltan minusculas";
-    descripcionAlerta.textContent = "La contraseña debe tener al menos una letra minuscula";
-    mostrarDialogo();
+    Swal.fire({
+        title:"Faltan minusculas",
+        text: "La contraseña debe tener al menos una letra minuscula",
+        icon: "error",
+        confirmButtonText: 'Cerrar',
+        confirmButtonColor: '#197B7A'
+    });
+    return;
     }
 
     else if (!contrasena.match(numeros)){
-    tituloAlerta.textContent = "Faltan números";
-    descripcionAlerta.textContent = "La contraseña debe tener al menos un número";
-    mostrarDialogo();
+    Swal.fire({
+        title:"Faltan números",
+        text: "La contraseña debe tener al menos un número",
+        icon: "error",
+        confirmButtonText: 'Cerrar',
+        confirmButtonColor: '#197B7A'
+    });
+    return;
     }
 
     else if (/\s/.test(contrasena)) {
-    tituloAlerta.textContent = "Espacios en contraseña";
-    descripcionAlerta.textContent = "La contraseña no debe tener espacios";
-    mostrarDialogo();
+    Swal.fire({
+        title:"Espacios en contraseña",
+        text: "La contraseña no debe tener espacios",
+        icon: "error",
+        confirmButtonText: 'Cerrar',
+        confirmButtonColor: '#197B7A'
+    });
+    return;
     }
     
 
