@@ -111,7 +111,7 @@
 
                 <div class="form_c5">
                     <div class="form_group">
-                        <input type="email" id="correo" class="form_input" placeholder=" " name="correo" >
+                        <input type="text" id="correo" class="form_input" placeholder=" " name="correo" >
                         <label for="correo" class="form_label">Correo electrónico:</label>
                     </div>
                 </div>
@@ -385,7 +385,8 @@
         icon: 'warning',
         showCancelButton: true,
         confirmButtonText: 'Cancelar',
-        cancelButtonText: 'Aceptar'
+        cancelButtonText: 'Aceptar',
+        confirmButtonColor: '#197B7A'
       }).then((result) => {
         if (!result.isConfirmed) {
             window.location.href = '../eliminarUsuarios/eliminar_usuario.php?correo_traslado=' + correoElim;
@@ -426,8 +427,8 @@
     var numeros = /\d/;
     var especiales = /[\W_]/;
 
-    var tituloAlerta = document.getElementById ("tituloError");
-    var descripcionAlerta = document.getElementById ("descripcionError");
+    //var tituloAlerta = document.getElementById ("tituloError");
+    //var descripcionAlerta = document.getElementById ("descripcionError");
     
     
 
@@ -446,9 +447,19 @@
         var cargo = document.getElementById ("cargo").value;
         var apellidoM = document.getElementById ("apellidoM").value;
         var apellidoP = document.getElementById ("apellidoP").value;
-
-      
+        
+        const allowedDomains = ['gmail.com', 'hotmail.com', 'yahoo.com', 'outlook.com', 'edu'];
+        let validDomain = false;
+        const [textoAntesArroba, dominio] = email.split('@');
+        
     
+        for (let i = 0; i < allowedDomains.length; i++) {
+            if (email.includes(allowedDomains[i])) {
+                validDomain = true;
+                break;
+            }
+        }
+      
       if (nombre.trim() === "" || apellidoM.trim() === "" || apellidoP.trim() ==="" || cargo.trim() ==="" || email.trim() === "" || contrasena.trim() === "" || contrasenaV.trim() ===""){
             Swal.fire({
                 title: 'Llena todos los campos',
@@ -459,6 +470,86 @@
             });
       }
 
+      else if(textoAntesArroba.trim() === "") {
+        Swal.fire({
+            title: "Correo electrónico no válido",
+            text: "Debe haber texto antes del '@' en el correo electrónico.",
+            icon: "error",
+            confirmButtonText: 'Cerrar',
+            confirmButtonColor: '#197B7A' 
+        });
+        return;
+    }
+
+
+        else if(!validDomain) {
+        Swal.fire({
+            title: "Correo electrónico no válido",
+            text: "El correo electrónico debe ser de un dominio permitido (ej@gmail.com).",
+            icon: "error",
+            confirmButtonText: 'Cerrar',
+            confirmButtonColor: '#197B7A' 
+        });
+        return;
+      }
+       else if (email.includes(' ')) {
+        Swal.fire({
+            title: "Correo electrónico no válido",
+            text: "El correo electrónico no debe contener espacios intermedios.",
+            icon: "error",
+            confirmButtonText: 'Cerrar',
+            confirmButtonColor: '#197B7A'
+        });
+        return;
+    }
+
+        else if(!email.includes('@')) {
+            Swal.fire({
+                title: "Correo electrónico no válido",
+                text: "El correo electrónico debe contener '@'.",
+                icon: "error",
+                confirmButtonText: 'Cerrar',
+                confirmButtonColor: '#197B7A' 
+            });
+            return;
+        }
+        
+    
+
+        else if (textoAntesArroba.trim() === "") {
+        Swal.fire({
+            title: "Correo electrónico no válido",
+            text: "Debe haber texto antes del '@' en el correo electrónico.",
+            icon: "error",
+            confirmButtonText: 'Cerrar',
+            confirmButtonColor: '#197B7A' 
+        });
+        return;
+    }
+
+        else if  (!email.includes('.com')) {
+            Swal.fire({
+                title: "Correo electrónico no válido",
+                text: "El correo electrónico debe contener '.com'.",
+                icon: "error",
+                confirmButtonText: 'Cerrar',
+                confirmButtonColor: '#197B7A'
+            });
+            return;
+        }
+
+        else if (!email.endsWith(`@${dominio}`)) {
+        Swal.fire({
+            title: "Correo electrónico no válido",
+            text: "El correo electrónico debe mantener el orden: texto, '@', dominio.",
+            icon: "error",
+            confirmButtonText: 'Cerrar',
+            confirmButtonColor: '#197B7A' 
+        });
+        return;
+    }
+
+        
 
       else if (nombre.length > 20){
         Swal.fire({
