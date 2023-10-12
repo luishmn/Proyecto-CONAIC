@@ -17,17 +17,13 @@
 
 
     <div class="cuadro">
-
-
-
-        
         <div class="cuadro">
             <div>
                 <p class="P1">¿Olvidaste tu contraseña?</p>
             </div>
     
             <div>
-                <input class="correoInput" type="email" >
+                <input class="correoInput" type="email" id="correo" >
             </div>
     
             <div class="correoI">
@@ -66,5 +62,29 @@
     <script src="comparandoCodigo.js"></script>
 
 </body>
+
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $correo = $_POST["correo"];
+    echo "<script>";
+    echo "document.getElementById(\"correo\").value = \"$correo\";";
+    echo "</script>";
+
+
+}
+
+?>
+
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Obtener el botón por su ID
+            var boton = document.getElementById("obtenerCodigo");
+
+            // Simular un clic en el botón
+            boton.click();
+        });
+    </script>
+
 </html>
 
