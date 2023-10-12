@@ -30,7 +30,7 @@
             </form>
             <div class="incognitas">
                 <link><a href="recuperar"></a>¿Olvidaste tu contraseña?</link><br>
-                <link>Puedes cambiar tu contraseña <a href="/RecuperarContra/recuperarContra.html">aquí</a></link>
+                <link>Puedes cambiar tu contraseña <a id="recuperar" >aquí</a></link>
             </div>
         </div>
     </div>
@@ -61,6 +61,31 @@
         </div>
     </div>
 
+
+    <div id="formularioContainer" class="oculto">
+
+            <!-- Contenido de tu formulario aquí -->
+            <form class="from-login" action="recuperarcontra/recuperarcontra.php" id="formularioEditar" method="post">
+
+                <h1 class="centrar">Recuperar contraseña</h1>
+                <br>
+
+                <div class="form_c5">
+                    <div class="form_group">
+                        <input type="email" id="correo" class="form_input" placeholder=" " name="correo"  >
+                        <label for="correo" class="form_label">Correo electrónico:</label>
+                    </div>
+
+                
+                <div class="form_c10">
+                    <button type="submit" id="editar">    Recuperar    </button>
+                </div>
+
+
+            
+        </form>
+    </div>
+    <div id="fondoOscuro" class="oculto"></div>
     
 
     <script src="/js/login.js"></script>
@@ -171,4 +196,17 @@
     ?>
     
 </body>
+<script> // Script para aparecer y desaparecer el formulario de registro
+    document.getElementById("recuperar").addEventListener("click", function() {
+    // Mostrar el fondo oscuro y el formulario
+    document.getElementById("fondoOscuro").style.display = "block";
+    document.getElementById("formularioContainer").style.display = "block";
+    });
+
+    document.getElementById("fondoOscuro").addEventListener("click", function() {
+        // Ocultar el fondo oscuro y el formulario cuando se hace clic fuera del formulario
+        document.getElementById("fondoOscuro").style.display = "none";
+        document.getElementById("formularioContainer").style.display = "none";
+    });
+</script>
 </html>
