@@ -43,30 +43,16 @@
         </div>
     </header>
 
-    <div class="contenedor-botones">
-
-        <button class="btn1">
-            <a href="xxxxxx.html">
-                <img src="autoevaluacion.png" alt="Autoevaluación">
-            </a>
-        </button>
-    
-        <button class="btn2">
-            <a href="xxxxxx.html">
-                <img src="seguimiento.png" alt="Seguimiento">
-            </a>
-        </button>
+    <div class="container">
+    <div class="logo">
+      <img src="logo_CONAIC_letras.png" alt="Logo">
     </div>
-
-    <img class="img2" src="logo_CONAIC_letras.png" alt="">
-
-    <img class="img1" src="logo_Fondo.png" alt="logo">
-
-
-
-    
- 
-
-    
+  </div>
+  <div class="buttons">
+    <button><img class="button-image small" src="seguimiento.png" alt="Botón 1"></button>
+    <button><img class="button-image large" src="autoevaluacion.png" alt="Botón 2"></button>
+  </div>
+  </div>
+  <img class="img1" src="logo_Fondo.png" alt="logo">
 </body>
 </html>
