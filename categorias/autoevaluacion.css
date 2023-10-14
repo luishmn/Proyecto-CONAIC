@@ -182,7 +182,13 @@ lablCat{
     font-size: 14px;
     border-radius: 15px;
     padding: 5px;
+    transition: transform 0.2s;
 }
+
+.preguntasCategoria button:hover{
+    transform: scale(0.95);
+}
+
 
 .Listo {
     display: flex;
@@ -206,6 +212,11 @@ lablCat{
     font-size: 14px;
     border-radius: 15px;
     padding: 5px;
+    transition: transform 0.2s;
+}
+
+.Listo button:hover{
+    transform: scale(0.95);
 }
 
 .btnListo{
@@ -221,4 +232,9 @@ lablCat{
     font-size: 18px;
     border-radius: 15px;
     padding: 5px;
+    transition: transform 0.2s;
+}
+
+.btnListo button:hover{
+    transform: scale(0.95);
 }
