@@ -72,7 +72,7 @@
 
                 <div class="form_c5">
                     <div class="form_group">
-                        <input type="email" id="correo" class="form_input" placeholder=" " name="correo"  >
+                        <input type="email" id="correo" class="form_input" placeholder=" " name="correo" required >
                         <label for="correo" class="form_label">Correo electrónico:</label>
                     </div>
 
