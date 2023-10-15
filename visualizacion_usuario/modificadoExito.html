@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contraseña cambiada</title>
+    <title>Usuario registrado</title>
 
     <style>
         body {
@@ -25,7 +25,7 @@
             /* Centra horizontalmente */
             align-items: center;
             /* Centra verticalmente */
-            border: 1px solid rgb(26, 202, 79);
+            border: 1px solid rgb(28, 155, 16);
             /* Agrega un borde rojo */
         }
 
@@ -130,8 +130,7 @@
 
         <img src="../imagenes/logo_Fondo.png" id="imgLogoFondo">
 
-        
-
+       
 
 
 
@@ -141,25 +140,20 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script type="text/javascript">
     Swal.fire({
-        title: 'Contraseña modificada',
-        text: 'Tu contraseña se modifico correctamente',
         icon: 'success',
+        title: 'Usuario modificado correctamente',
+        text: 'El usuario fue modificado de forma correcta',
         confirmButtonColor: '#197B7A'
     }).then((result) =>{
         if (result.isConfirmed){
-            window.location.href = "../index.php";
+            window.location.href = "index_visual_usu.php";
         }
         else{
-            window.location.href = "../index.php";
+            window.location.href = "index_visual_usu.php";
         }
     })
-    </script>
-
-
-<script>
-    function regresar() {
-        
-    }
 </script>
+
+
 
 </html>

@@ -7,7 +7,7 @@
         $nombreUsuario = $_SESSION['username'];
     } else {
         // Si no ha iniciado sesión, redirige al usuario a la página de inicio de sesión
-        header('Location: ../login.php');
+        header('Location: ../index.php');
         exit;
     }
 

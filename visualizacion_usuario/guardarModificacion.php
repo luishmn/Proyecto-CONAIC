@@ -35,8 +35,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($conexion->query($sql) === TRUE) {
 
         echo "<script>";
-        echo "alert('Usuario modificado correctamente. ');";
-        echo "window.location.href = 'index_visual_usu.php';";
+        
+        echo "window.location.href = 'modificadoExito.html';";
         echo "</script>";
         #header('Location: registraUsuarios.html');
         //exit;

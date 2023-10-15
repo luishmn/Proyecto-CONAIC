@@ -94,9 +94,9 @@ include "../conexionDB/conexion.php";
                 $script = <<<SCRIPT
                 <script type="text/javascript">
                 Swal.fire({
-                    title: 'Éxito',
-                    text: 'Código enviado a tu correo electrónico',
-                    icon: 'sucess',
+                    title: 'Código enviado',
+                    text: 'Acabamos de enviar un código de recuperación a tu correo electrónico',
+                    icon: 'success',
                     confirmButtonColor: '#197B7A'
                 });
                 </script>

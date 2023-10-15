@@ -10,7 +10,8 @@
     <script src="visualizar_usuarios.js"></script>
     <title>Usuarios</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
 
 </head>
 <body>
@@ -259,7 +260,7 @@
                     </div>
                 </div>
 
-                <br><br><br><br>
+                <br><br><br>
 
                 
                 <div class="form_c10">
@@ -270,7 +271,9 @@
                 <br>
                 <br>
                 <div>
-                <button id="Eliminar" type="button" class="boton_eliminar" >   Eliminar   </button> 
+                <button id="Eliminar" type="button" class="boton_eliminar" > 
+                    <i class="fas fa-trash"></i>Eliminar   
+                </button> 
                 </div>
 
 
@@ -933,7 +936,7 @@
         const instruccionesContainer = document.getElementById('instruccionesContainer');
         const botonInstrucciones1 = document.getElementById('instrucciones1');
         const instruccionesContainer1 = document.getElementById('instruccionesContainer1');
-
+        
         botonInstrucciones.addEventListener('mouseenter', function() {
             instruccionesContainer.style.display = 'block';
         });
@@ -950,3 +953,23 @@
         });
 </script>
 
+<script>
+
+        const elementos = document.querySelectorAll('.tabla');
+
+// Agrega un manejador de eventos "mouseenter" a cada elemento
+elementos.forEach(elemento => {
+    elemento.addEventListener('mouseenter', () => {
+        // El mouse está sobre este elemento
+        Swal.fire({
+                backdrop: false,
+                text: 'Para editar un usuario haga doble clic.',
+                confirmButtonColor: '#197B7A',
+                timer: 5000,
+                timerProgressBar: true,
+                position: "bottom-end",
+                showConfirmButton: false
+            });
+    });
+});
+</script>
