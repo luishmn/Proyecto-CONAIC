@@ -145,14 +145,14 @@
                     <div class="form_c81">
                         <button id="instrucciones" class="instrucciones-button" disabled>!</button>
                         <div id="instruccionesContainer" class="instrucciones-container">Contraseña:  
-                              Necesita de 8 a 20 caracteres, una letra minúscula, una mayúscula, un número y no debe contener espacios</div>
+                        necesita de 8 a 20 caracteres, una letra minúscula, una mayúscula, un número y no debe de contener espacios.</div>
                     </div>
                 </div>
 
                 <br><br><br><br>
 
                 <div class="form_c10_1">
-                    <button type="submit" id="registrar">Registar usuario</button>
+                    <button type="submit" id="registrar">Registrar usuario</button>
                 </div>
 
                 <div id="cuadroDialogo" class="oculto" >
@@ -255,7 +255,7 @@
                     <div class="form_c81">
                         <button id="instrucciones1" class="instrucciones1-button" disabled>!</button>
                         <div id="instruccionesContainer1" class="instrucciones-container1">Contraseña:  
-                              Necesita de 8 a 20 caracteres, una letra minúscula, una mayúscula, un número y no debe contener espacios
+                        necesita de 8 a 20 caracteres, una letra minúscula, una mayúscula, un número y no debe de contener espacios.
                         </div>
                     </div>
                 </div>
@@ -315,8 +315,8 @@
     <table>
         <tr>
             <th>Nombre</th>
-            <th>Apellido Paterno</th>
-            <th>Apellido Materno</th>
+            <th>Apellido paterno</th>
+            <th>Apellido materno</th>
             <th>Cargo</th>
             <th>Contraseña</th>
             <th>Correo</th>

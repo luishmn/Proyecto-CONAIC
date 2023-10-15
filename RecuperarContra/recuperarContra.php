@@ -95,7 +95,7 @@ include "../conexionDB/conexion.php";
                 <script type="text/javascript">
                 Swal.fire({
                     title: 'Código enviado',
-                    text: 'Acabamos de enviar un código de recuperación a tu correo electrónico',
+                    text: 'Acabamos de enviar un código de recuperación a tu correo electrónico.',
                     icon: 'success',
                     confirmButtonColor: '#197B7A'
                 });

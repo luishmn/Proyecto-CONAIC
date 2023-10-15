@@ -22,8 +22,8 @@
         
 
         $para = $correo; // Dirección de correo electrónico especificada en el formulario
-        $asunto = "Código de Recuperación"; // Asunto del correo
-        $mensaje = "Tu Codigo de Confirmación es:".$codigo; // Cuerpo del correo
+        $asunto = "Código de recuperación"; // Asunto del correo
+        $mensaje = "Tu código de confirmación es:".$codigo; // Cuerpo del correo
         $headers = "From: tu_direccion_de_correo@example.com"; // Cambia esto por tu dirección de correo
 
         if (mail($para, $asunto, $mensaje, $headers)) {
