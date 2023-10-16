@@ -115,7 +115,7 @@ $mail->Body = '<html>
                              <br><br><br> <br>
                             <h2 align="left">Bienvenido '.$nombrecompleto .'</h2>
                             <br>
-                            <p align="left" class="mensaje">Por medio de este correo le hacemos llegar las credenciales de acceso a la pagina web, cualquier duda no dude en contactar al equipo de soporte.</p>
+                            <p align="left" class="mensaje">Por medio de este correo le hacemos llegar las credenciales de acceso a la página web, contacte al equipo de soporte ante cualquier duda o aclaración.</p>
                             <p align="left" class="mensaje">Correo: '.$correo.'</p>
                             <p align="left" class="mensaje">Contraseña: '.$contrasena.'</p>
                             <br>

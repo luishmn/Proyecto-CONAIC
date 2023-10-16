@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/login.css">
-    <title>Iniciar Sesión</title>
+    <title>Iniciar sesión</title>
 </head>
 
 <body bgcolor="#D4E1E3">
@@ -72,7 +72,7 @@
 
                 <div class="form_c5">
                     <div class="form_group">
-                        <input type="email" id="correo" class="form_input" placeholder=" " name="correo"  >
+                        <input type="email" id="correo" class="form_input" placeholder=" " name="correo" required >
                         <label for="correo" class="form_label">Correo electrónico:</label>
                     </div>
 

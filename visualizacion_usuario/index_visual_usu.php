@@ -10,7 +10,8 @@
     <script src="visualizar_usuarios.js"></script>
     <title>Usuarios</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
 
 </head>
 <body>
@@ -111,7 +112,7 @@
 
                 <div class="form_c5">
                     <div class="form_group">
-                        <input type="email" id="correo" class="form_input" placeholder=" " name="correo" >
+                        <input type="text" id="correo" class="form_input" placeholder=" " name="correo" >
                         <label for="correo" class="form_label">Correo electrónico:</label>
                     </div>
                 </div>
@@ -144,14 +145,14 @@
                     <div class="form_c81">
                         <button id="instrucciones" class="instrucciones-button" disabled>!</button>
                         <div id="instruccionesContainer" class="instrucciones-container">Contraseña:  
-                              Necesita de 8 a 20 caracteres, una letra minúscula, una mayúscula, un número y no debe contener espacios</div>
+                        necesita de 8 a 20 caracteres, una letra minúscula, una mayúscula, un número y no debe de contener espacios.</div>
                     </div>
                 </div>
 
                 <br><br><br><br>
 
                 <div class="form_c10_1">
-                    <button type="submit" id="registrar">Registar usuario</button>
+                    <button type="submit" id="registrar">Registrar usuario</button>
                 </div>
 
                 <div id="cuadroDialogo" class="oculto" >
@@ -254,12 +255,12 @@
                     <div class="form_c81">
                         <button id="instrucciones1" class="instrucciones1-button" disabled>!</button>
                         <div id="instruccionesContainer1" class="instrucciones-container1">Contraseña:  
-                              Necesita de 8 a 20 caracteres, una letra minúscula, una mayúscula, un número y no debe contener espacios
+                        necesita de 8 a 20 caracteres, una letra minúscula, una mayúscula, un número y no debe de contener espacios.
                         </div>
                     </div>
                 </div>
 
-                <br><br><br><br>
+                <br><br><br>
 
                 
                 <div class="form_c10">
@@ -270,7 +271,9 @@
                 <br>
                 <br>
                 <div>
-                <button id="Eliminar" type="button" class="boton_eliminar" >   Eliminar   </button> 
+                <button id="Eliminar" type="button" class="boton_eliminar" > 
+                    <i class="fas fa-trash"></i>Eliminar   
+                </button> 
                 </div>
 
 
@@ -312,8 +315,8 @@
     <table>
         <tr>
             <th>Nombre</th>
-            <th>Apellido Paterno</th>
-            <th>Apellido Materno</th>
+            <th>Apellido paterno</th>
+            <th>Apellido materno</th>
             <th>Cargo</th>
             <th>Contraseña</th>
             <th>Correo</th>
@@ -385,7 +388,8 @@
         icon: 'warning',
         showCancelButton: true,
         confirmButtonText: 'Cancelar',
-        cancelButtonText: 'Aceptar'
+        cancelButtonText: 'Aceptar',
+        confirmButtonColor: '#197B7A'
       }).then((result) => {
         if (!result.isConfirmed) {
             window.location.href = '../eliminarUsuarios/eliminar_usuario.php?correo_traslado=' + correoElim;
@@ -426,8 +430,8 @@
     var numeros = /\d/;
     var especiales = /[\W_]/;
 
-    var tituloAlerta = document.getElementById ("tituloError");
-    var descripcionAlerta = document.getElementById ("descripcionError");
+    //var tituloAlerta = document.getElementById ("tituloError");
+    //var descripcionAlerta = document.getElementById ("descripcionError");
     
     
 
@@ -446,9 +450,19 @@
         var cargo = document.getElementById ("cargo").value;
         var apellidoM = document.getElementById ("apellidoM").value;
         var apellidoP = document.getElementById ("apellidoP").value;
-
-      
+        
+        const allowedDomains = ['gmail.com', 'hotmail.com', 'yahoo.com', 'outlook.com', 'edu'," zacatecssur.tecnm.mx"];
+        let validDomain = false;
+        const [textoAntesArroba, dominio] = email.split('@');
+        
     
+        for (let i = 0; i < allowedDomains.length; i++) {
+            if (email.includes(allowedDomains[i])) {
+                validDomain = true;
+                break;
+            }
+        }
+      
       if (nombre.trim() === "" || apellidoM.trim() === "" || apellidoP.trim() ==="" || cargo.trim() ==="" || email.trim() === "" || contrasena.trim() === "" || contrasenaV.trim() ===""){
             Swal.fire({
                 title: 'Llena todos los campos',
@@ -459,6 +473,86 @@
             });
       }
 
+      else if(textoAntesArroba.trim() === "") {
+        Swal.fire({
+            title: "Correo electrónico no válido",
+            text: "Debe haber texto antes del '@' en el correo electrónico.",
+            icon: "error",
+            confirmButtonText: 'Cerrar',
+            confirmButtonColor: '#197B7A' 
+        });
+        return;
+    }
+
+
+        else if(!validDomain) {
+        Swal.fire({
+            title: "Correo electrónico no válido",
+            text: "El correo electrónico debe ser de un dominio permitido (ej@gmail.com).",
+            icon: "error",
+            confirmButtonText: 'Cerrar',
+            confirmButtonColor: '#197B7A' 
+        });
+        return;
+      }
+       else if (email.includes(' ')) {
+        Swal.fire({
+            title: "Correo electrónico no válido",
+            text: "El correo electrónico no debe contener espacios intermedios.",
+            icon: "error",
+            confirmButtonText: 'Cerrar',
+            confirmButtonColor: '#197B7A'
+        });
+        return;
+    }
+
+        else if(!email.includes('@')) {
+            Swal.fire({
+                title: "Correo electrónico no válido",
+                text: "El correo electrónico debe contener '@'.",
+                icon: "error",
+                confirmButtonText: 'Cerrar',
+                confirmButtonColor: '#197B7A' 
+            });
+            return;
+        }
+        
+    
+
+        else if (textoAntesArroba.trim() === "") {
+        Swal.fire({
+            title: "Correo electrónico no válido",
+            text: "Debe haber texto antes del '@' en el correo electrónico.",
+            icon: "error",
+            confirmButtonText: 'Cerrar',
+            confirmButtonColor: '#197B7A' 
+        });
+        return;
+    }
+
+        else if  (!email.includes('.com')) {
+            Swal.fire({
+                title: "Correo electrónico no válido",
+                text: "El correo electrónico debe contener '.com'.",
+                icon: "error",
+                confirmButtonText: 'Cerrar',
+                confirmButtonColor: '#197B7A'
+            });
+            return;
+        }
+
+        else if (!email.endsWith(`@${dominio}`)) {
+        Swal.fire({
+            title: "Correo electrónico no válido",
+            text: "El correo electrónico debe mantener el orden: texto, '@', dominio.",
+            icon: "error",
+            confirmButtonText: 'Cerrar',
+            confirmButtonColor: '#197B7A' 
+        });
+        return;
+    }
+
+        
 
       else if (nombre.length > 20){
         Swal.fire({
@@ -842,7 +936,7 @@
         const instruccionesContainer = document.getElementById('instruccionesContainer');
         const botonInstrucciones1 = document.getElementById('instrucciones1');
         const instruccionesContainer1 = document.getElementById('instruccionesContainer1');
-
+        
         botonInstrucciones.addEventListener('mouseenter', function() {
             instruccionesContainer.style.display = 'block';
         });
@@ -859,3 +953,23 @@
         });
 </script>
 
+<script>
+
+        const elementos = document.querySelectorAll('.tabla');
+
+// Agrega un manejador de eventos "mouseenter" a cada elemento
+elementos.forEach(elemento => {
+    elemento.addEventListener('mouseenter', () => {
+        // El mouse está sobre este elemento
+        Swal.fire({
+                backdrop: false,
+                text: 'Para editar un usuario haga doble clic.',
+                confirmButtonColor: '#197B7A',
+                timer: 5000,
+                timerProgressBar: true,
+                position: "bottom-end",
+                showConfirmButton: false
+            });
+    });
+});
+</script>

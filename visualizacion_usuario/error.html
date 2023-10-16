@@ -130,19 +130,7 @@
 
         <img src="../imagenes/logo_Fondo.png" id="imgLogoFondo">
 
-        <div id="cuadroDialogo">
-            <br>
-            <img src="../imagenes/incorrecto.png" alt="" id="imagenCuadroDialogo">
-            <br>
-            <span id="cerrarDialogo" class="cerrar" onclick="regresar()">&times;</span>
-            <br><br>
-            <h2 id="tituloError">El correo ya existe</h2>
-            <p id="descripcionError">La dirección de correo electronico que proporcionaste ya se encuentra registrada
-                dentro del sistema, te recomendamos intentar con una dirección de correo diferente</p>
-            <br>
-            <button id="botonError" type="button" onclick="regresar()">Cerrar</button>
-        </div>
-
+        
 
 
 
@@ -150,10 +138,20 @@
 
 </body>
 
-<script>
-    function regresar() {
-        window.location.href = "index_visual_usu.php";
-    }
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript">
+    Swal.fire({
+        title: 'El correo ya existe',
+        text: 'La dirección de correo electrónico que proporcionaste ya se encuentra registrada dentro del sistema, te recomendamos intentar con una dirección de correo diferente.',
+        icon: 'error',
+        confirmButtonColor: '#197B7A'
+    }).then((result) =>{
+        if (result.isConfirmed){
+            window.location.href = "index_visual_usu.php";
+        }
+        else{
+            window.location.href = "index_visual_usu.php";
+        }
+    })
 </script>
-
 </html>

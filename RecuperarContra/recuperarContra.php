@@ -23,7 +23,9 @@
             </div>
     
             <div>
+                <form action="" method="POST">
                 <input class="correoInput" type="email" id="correo" >
+                </form>
             </div>
     
             <div class="correoI">
@@ -48,7 +50,7 @@
                 </form>
             </div>
             <div class="boton1">
-                <button type="button" id="obtenerCodigo" class="from_boton1">Enviar código</button>
+                <button type="button" id="obtenerCodigo" class="from_boton1" >Reenviar código</button>
             </div>
 
             <div class="boton2">
@@ -63,26 +65,79 @@
 
 </body>
 
+
 <?php
+
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $correo = $_POST["correo"];
     echo "<script>";
     echo "document.getElementById(\"correo\").value = \"$correo\";";
-    echo "</script>";
-
-
+    echo "</script>"; 
+      
 }
+
+include "../conexionDB/conexion.php";
+            conecta();
+        
+            if ($conexion->connect_error) {
+                    die("Conexión fallida: " . $conexion->connect_error);
+            }
+            // Obtener los datos del registro seleccionado
+            $sql_usuario = "SELECT * FROM usuario WHERE correo = '$correo'";
+            $result_usuario = $conexion->query($sql_usuario);
+        
+            if ($result_usuario->num_rows > 0) {
+                $row = $result_usuario->fetch_assoc();
+        
+                $script = <<<SCRIPT
+                <script type="text/javascript">
+                Swal.fire({
+                    title: 'Código enviado',
+                    text: 'Acabamos de enviar un código de recuperación a tu correo electrónico.',
+                    icon: 'success',
+                    confirmButtonColor: '#197B7A'
+                });
+                </script>
+                SCRIPT;
+
+                // Imprime el código JavaScript en la página
+                echo $script;
+                }
+
+            else{
+                $script = <<<SCRIPT
+                <script type="text/javascript">
+                Swal.fire({
+                    title: 'Error',
+                    text: 'Tu correo no esta registrado',
+                    icon: 'error',
+                    confirmButtonColor: '#197B7A'
+                });
+                </script>
+                SCRIPT;
+
+                // Imprime el código JavaScript en la página
+                echo $script;
+            }
+
 
 ?>
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
 <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // Obtener el botón por su ID
-            var boton = document.getElementById("obtenerCodigo");
+            setTimeout(function() {
+                // Obtener el botón por su ID
+                var boton = document.getElementById("obtenerCodigo");
 
-            // Simular un clic en el botón
-            boton.click();
+                // Simular un clic en el botón
+                boton.click();
+            }, 1000); // Espera 1 segundo (puedes ajustar el tiempo en milisegundos según tus necesidades)
         });
     </script>
 

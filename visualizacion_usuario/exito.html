@@ -130,29 +130,30 @@
 
         <img src="../imagenes/logo_Fondo.png" id="imgLogoFondo">
 
-        <div id="cuadroDialogo">
-            <br>
-            <img src="../imagenes/correcto.png" alt="" id="imagenCuadroDialogo">
-            <br>
-            <span id="cerrarDialogo" class="cerrar" onclick="regresar()">&times;</span>
-            <br><br>
-            <h2 id="tituloError">Usuario registrado correctamente</h2>
-            <p id="descripcionError">El usuario fue registrado de forma correcta, acabamos de enviar un correo electronico para informale de su registro dentro de CONAIC ITSZaS</p>
-            <br>
-            <button id="botonError" type="button" onclick="regresar()">Cerrar</button>
-        </div>
-
+       
 
 
 
 
 
 </body>
-
-<script>
-    function regresar() {
-        window.location.href = "index_visual_usu.php";
-    }
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript">
+    Swal.fire({
+        icon: 'success',
+        title: 'Usuario registrado correctamente',
+        text: 'El usuario fue registrado de forma correcta, acabamos de enviar un correo electrónico para informarle de su registro dentro de CONAIC ITSZaS',
+        confirmButtonColor: '#197B7A'
+    }).then((result) =>{
+        if (result.isConfirmed){
+            window.location.href = "index_visual_usu.php";
+        }
+        else{
+            window.location.href = "index_visual_usu.php";
+        }
+    })
 </script>
+
+
 
 </html>
