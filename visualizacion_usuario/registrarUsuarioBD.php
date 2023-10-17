@@ -110,7 +110,7 @@ $mail->Body = '<html>
                            <div class="mensaje_central">
                             <img src='.$imagen.'  id="logo" alt="solid" height="150px" align="left">
                             <br><br>
-                            <p>Consejo Nacional de Aceditación en Informática y Computación.</p>
+                            <p>Consejo Nacional de Acreditación en Informática y Computación.</p>
                              </div>
                              <br><br><br> <br>
                             <h2 align="left">Bienvenido '.$nombrecompleto .'</h2>
