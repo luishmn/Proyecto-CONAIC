@@ -113,7 +113,7 @@ $mail->Body = '<html>
                             <p>Consejo Nacional de Acreditación en Informática y Computación.</p>
                              </div>
                              <br><br><br> <br>
-                            <h2 align="left">Bienvenido '.$nombrecompleto .'</h2>
+                            <h2 align="left">Bienvenido(a) '.$nombrecompleto .'</h2>
                             <br>
                             <p align="left" class="mensaje">Por medio de este correo le hacemos llegar las credenciales de acceso a la página web, contacte al equipo de soporte ante cualquier duda o aclaración.</p>
                             <p align="left" class="mensaje">Correo: '.$correo.'</p>
