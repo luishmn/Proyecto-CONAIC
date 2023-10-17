@@ -19,6 +19,15 @@ body{
   height: 60%;
 }
 
+#imgLogoFondo {
+  position: fixed; /* Cambia "absolute" a "fixed" */
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  height: 60%;
+  z-index: -1;
+}
+
 .barra-superior {
   background-color: #145070; /* Color de fondo azul */
   height: 10%;
@@ -39,28 +48,31 @@ body{
   padding: 10px; /* Espacio interno para el contenido */
   color: rgb(0, 0, 0); /* Color del texto en la barra */
   position: fixed; /* Fija la barra en la parte superior de la ventana */
-  top: 1%; /* Coloca la barra a la mitad de la pantalla verticalmente */
+  top: 2%; /* Coloca la barra a la mitad de la pantalla verticalmente */
   left: 0; /* Ajusta el inicio de la barra en la parte izquierda */
   right: 0; /* Ajusta el final de la barra en la parte derecha */
   margin-left: auto;
   margin-right: auto;
- 
+  font-family: Arial, sans-serif;
+
 }
 
 #textoTituloPag{
-  display: flex;
-  
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
-  color: #000;
-  text-align: center;
-  font-family: Inter;
-  font-size: 160%;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-
+  position: relative;
+    top: -85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Arial;
+    font-size: 140%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: Arial, sans-serif;
+    
 }
   
 
@@ -68,15 +80,61 @@ body{
     background-color: #73b1c1;
 }
 
+
 .rectangulo_principal{
     width:90%;
     height: 62px;
     flex-shrink: 0;
-
-    border: 1px solid #000;
+    font-family: Arial, sans-serif;
+    /* border: 1px solid #000; */
     background: #73B1C1;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin: 0 auto;
+    
+}
+
+.selected-option {
+  height: 40px;
+  flex-shrink: 0;
+  display: block;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 140%;
+  background: #73B1C1;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+}
+
+.options {
+  display: none;
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  overflow-y: auto;
+}
+
+.options li {
+  padding: 10px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+
+}
+
+.options li:hover {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+
+}
+
+.selected-value {
+  font-family: Arial, sans-serif;
 }
 
 .categoria{
@@ -85,25 +143,28 @@ body{
     width: 90%;
     height: 40px;
     flex-shrink: 0;
-    border: 1px solid #9BD6E6;
-    background: #9BD6E6;
+    border: 1px solid #73B1C1;
+    background: #ffffff;
     margin: 0 auto;
-  
-    
-
+    font-family: Arial, sans-serif;
 }
 
 
 .usuario_seleccionado{
-    width: 90%;
-    height: 62px;
-    flex-shrink: 0;
-
-    background: #FEFFFF;
     margin: 0 auto;
+    width: 90%;
+    height: 42px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    flex-shrink: 0;
+    font-family: Arial, sans-serif;
+    font-size: 120%;
+    background: #FEFFFF;
+    border-radius: 10px;
 }
 
 .criterios{
+    font-family: Arial, sans-serif;
     width: 90%;
     background: #FEFFFF ;
     margin: 0 auto;
@@ -115,6 +176,7 @@ details .criterios {
     margin: 0; 
     width: 90%;
     margin: 0 auto;
+    
 }
 
 details {
@@ -131,3 +193,100 @@ details[open] .criterios {
     max-height: 0;
     overflow: hidden;
 }
+summary::-webkit-details-marker {
+  color: #160f79; /* Cambia el color a rojo (#ff0000) */
+}
+
+summary::marker {
+  color: #160f79; /* Cambia el color a rojo (#ff0000) */
+}
+
+.check_criterios input,
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.check_criterios input{
+	visibility: hidden;
+	position: absolute;
+	right: 0;
+}
+
+.check_criterios{
+	position: relative;
+	padding:1px 0 5px 47px; /* Damos un padding de 60px para posicionar 
+        el elemento <i> en este espacio*/
+	display: block;
+}
+
+/* Estas reglas se aplicarán a todos las elementos i 
+después de cualquier input*/
+.check_criterios input + i{
+       background: #f0f0f0;
+       border:2px solid rgba(0,0,0,0.2);
+       position: absolute; 
+       left: 5px;
+       top: 1px;
+}
+
+/* Estas reglas se aplicarán a todos los i despues 
+de un input de tipo checkbox*/
+.check_criterios input[type=checkbox ] + i{
+	width: 37px;
+	height: 15px;
+  border-radius: 15px;
+}
+
+/*
+Creamos el círculo que aparece encima de los checkbox
+con la etqieta before. Importante aunque no haya contenido
+debemos poner definir este valor.
+*/
+.check_criterios input[type=checkbox] + i:before{
+	content: ''; /* No hay contenido */
+	width: 15px;
+	height: 15px;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 1;
+	left: 0px;
+	top: 0px;
+	-webkit-box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+	box-shadow: 3px 0 3px 0 rgba(0,0,0,0.2);
+}
+
+.check_criterios input[type=checkbox]:checked + i:before{
+	left: 22px;
+	-webkit-box-shadow: -3px 0 3px 0 rgba(0,0,0,0.2);
+	box-shadow: 3px 0 -3px 0 rgba(0,0,0,0.2);
+}
+
+.check_criterios input[type=checkbox]:checked + i{
+ background: #73B1C1;
+}
+
+
+.boton_asignar{
+  width: 144px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: #197B9A;
+  border: none;
+
+  color: #000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 1200px; /* Ajusta el valor del margen según tu preferencia */
+
+}   
+.boton_asignar:hover{
+    transform: scale(0.95);
+  } 
