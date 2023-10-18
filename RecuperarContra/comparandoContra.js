@@ -84,8 +84,8 @@ formulario.addEventListener("submit", function(event) {
 
     else if (!contrasena.match(mayusculas)){
     Swal.fire({
-        title:"Faltan mayusculas",
-        text: "La contraseña debe tener al menos una letra mayuscula",
+        title:"Faltan mayúsculas",
+        text: "La contraseña debe tener al menos una letra mayúscula",
         icon: "error",
         confirmButtonText: 'Cerrar',
         confirmButtonColor: '#197B7A'
@@ -95,8 +95,8 @@ formulario.addEventListener("submit", function(event) {
     }
     else if (!contrasena.match(minusculas)){
     Swal.fire({
-        title:"Faltan minusculas",
-        text: "La contraseña debe tener al menos una letra minuscula",
+        title:"Faltan minúsculas",
+        text: "La contraseña debe tener al menos una letra minúscula",
         icon: "error",
         confirmButtonText: 'Cerrar',
         confirmButtonColor: '#197B7A'
