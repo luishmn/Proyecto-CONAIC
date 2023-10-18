@@ -163,6 +163,22 @@ body{
     border-radius: 10px;
 }
 
+
+
+.criterios_categoria{
+
+  width: 90%;
+  height: 40px;
+  flex-shrink: 0;
+  border: 1px solid #73B1C1;
+  background: #ffffff;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+
+}
+
+
+
 .criterios{
     font-family: Arial, sans-serif;
     width: 90%;
