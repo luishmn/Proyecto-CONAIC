@@ -56,7 +56,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Verificar si se han seleccionado subcriterios
             if (clavesSubCriterios.length === 0) {
-                alert('Debes seleccionar al menos un subcriterio.');
+                Swal.fire({
+                    title: 'Debes seleccionar al menos un subcriterio',
+                    // text: 'Debes seleccionar al menos un subcriterio',
+                    icon: 'error',
+                    confirmButtonText: 'Cerrar',
+                    confirmButtonColor: '#197B7A' 
+                });
+                // alert('Debes seleccionar al menos un subcriterio.');
                 return;
             }
       
@@ -81,12 +88,24 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.log(data);
                 // Hacer algo con la respuesta del servidor si es necesario
             })
+            Swal.fire({
+                title: 'Guardado correctamente',
+                icon: 'success',
+                confirmButtonText: 'Cerrar',
+                confirmButtonColor: '#197B7A' 
+            })
             .catch(error => {
                 console.error("Error al guardar los datos: " + error);
             });
         } else {
             // Manejar el caso en el que no se ha seleccionado un usuario
-            alert('Debes seleccionar un usuario.');
+            Swal.fire({
+                title: 'Debes seleccionar un usuario',
+                icon: 'error',
+                confirmButtonText: 'Cerrar',
+                confirmButtonColor: '#197B7A' 
+            });
+            // alert('Debes seleccionar un usuario.');
         }
     });
 
