@@ -155,10 +155,10 @@ while ($row = $result->fetch_assoc()) {
 
     </section>
 
-
-
-    <button class="boton_asignar"  id="guardar">Guardar</button>
-    <img src="../imagenes/logo_Fondo.png" id="imgLogoFondo" alt="Conaic ITSZaS" class="logo" width="336" height="198">
+    <div class="container">
+        <button class="boton_asignar"  id="guardar">Guardar</button>
+    </div>
+        <img src="../imagenes/logo_Fondo.png" id="imgLogoFondo" alt="Conaic ITSZaS" class="logo" width="336" height="198">
     <footer class="footer">
         <br><br>
 
