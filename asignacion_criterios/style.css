@@ -29,6 +29,7 @@ body{
 }
 
 .barra-superior {
+  z-index: 100000000000;
   background-color: #145070; /* Color de fondo azul */
   height: 10%;
   border-radius: 30px; /* Bordes redondeados */
@@ -41,39 +42,25 @@ body{
 }
 
 .tituloPag{
-  background-color: #ffffff;
-  height: 4%;
+  position: fixed; /* Fija la barra en la parte superior de la ventana */
+  top: 2%; /* Coloca la barra a la mitad de la pantalla verticalmente */
+  left: 50%; /* Ajusta el inicio de la barra en la parte izquierda */
+  transform: translateX(-50%);
   width: 15%;
+  height: 3%;
+  background-color: #ffffff;
   border-radius: 30px; /* Bordes redondeados */
   padding: 10px; /* Espacio interno para el contenido */
   color: rgb(0, 0, 0); /* Color del texto en la barra */
-  position: fixed; /* Fija la barra en la parte superior de la ventana */
-  top: 2%; /* Coloca la barra a la mitad de la pantalla verticalmente */
-  left: 0; /* Ajusta el inicio de la barra en la parte izquierda */
-  right: 0; /* Ajusta el final de la barra en la parte derecha */
-  margin-left: auto;
-  margin-right: auto;
   font-family: Arial, sans-serif;
+  text-align: center;
 
 }
 
 #textoTituloPag{
-  position: relative;
-    top: -85%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #000;
-    text-align: center;
-    font-family: Arial;
-    font-size: 140%;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    font-family: Arial, sans-serif;
-    
-}
+  margin: 0;
+  font-size: 100%;
+} 
   
 
 .seccion{
@@ -86,11 +73,11 @@ body{
     height: 62px;
     flex-shrink: 0;
     font-family: Arial, sans-serif;
-    /* border: 1px solid #000; */
+    border: 1px solid #000;
     background: #73B1C1;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin: 0 auto;
-    
+    padding: 1px;
 }
 
 .selected-option {
@@ -138,8 +125,6 @@ body{
 }
 
 .categoria{
-    
-
     width: 90%;
     height: 40px;
     flex-shrink: 0;
@@ -149,41 +134,26 @@ body{
     font-family: Arial, sans-serif;
 }
 
-
 .usuario_seleccionado{
     margin: 0 auto;
     width: 90%;
-    height: 42px;
-    margin-top: 10px;
+    height: 30%;
     border: 1px solid #ccc;
-    flex-shrink: 0;
     font-family: Arial, sans-serif;
-    font-size: 120%;
+    /* font-size: 100%; */
     background: #FEFFFF;
-    border-radius: 10px;
+    border-radius: 10px;;
 }
-
-
-
-.criterios_categoria{
-
-  width: 90%;
-  height: 40px;
-  flex-shrink: 0;
-  border: 1px solid #73B1C1;
-  background: #ffffff;
-  margin: 0 auto;
-  font-family: Arial, sans-serif;
-
-}
-
-
 
 .criterios{
     font-family: Arial, sans-serif;
     width: 90%;
-    background: #FEFFFF ;
+    background: #feffff92 ;
     margin: 0 auto;
+}
+
+details .criterio {
+    padding:2px 0 2px 45px;
 }
 
 details .criterios {
@@ -192,9 +162,9 @@ details .criterios {
     margin: 0; 
     width: 90%;
     margin: 0 auto;
-    
+    position: relative;
 }
-
+	  
 details {
     cursor: pointer;
 }
@@ -232,19 +202,16 @@ summary::marker {
 
 .check_criterios{
 	position: relative;
-	padding:1px 0 5px 47px; /* Damos un padding de 60px para posicionar 
-        el elemento <i> en este espacio*/
+	padding:5px 0 5px 60px; 
 	display: block;
 }
 
-/* Estas reglas se aplicarán a todos las elementos i 
-después de cualquier input*/
 .check_criterios input + i{
        background: #f0f0f0;
        border:2px solid rgba(0,0,0,0.2);
        position: absolute; 
        left: 5px;
-       top: 1px;
+       top: 5px;
 }
 
 /* Estas reglas se aplicarán a todos los i despues 
@@ -300,9 +267,13 @@ debemos poner definir este valor.
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-left: 1200px; /* Ajusta el valor del margen según tu preferencia */
 
 }   
 .boton_asignar:hover{
     transform: scale(0.95);
   } 
+
+.container {
+  padding: 20px;
+  float: right;
+}

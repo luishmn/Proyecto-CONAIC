@@ -1,62 +1,53 @@
 <?php
-if ($_FILES["archivo"]["error"] == UPLOAD_ERR_OK) {
-    $nombre_temporal = $_FILES["archivo"]["tmp_name"];
-    $nombre_archivo = $_FILES["archivo"]["name"];
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $carpeta_destino = "pdfs/";
-    $id = $_POST["id"]; 
+    $id = $_POST["id"];
+    $archivos = $_FILES["archivo"];
 
-    if (pathinfo($nombre_archivo, PATHINFO_EXTENSION) === "pdf") {
-        $nuevo_nombre = "pdf" . $id . ".pdf"; 
-        echo $nuevo_nombre;
-        move_uploaded_file($nombre_temporal, $carpeta_destino . $nuevo_nombre);
-        echo "Archivo PDF cargado exitosamente como '$nuevo_nombre'.";
-
-
-
-
-
-                // Datos de conexión a la base de datos
-        $host = "localhost"; // Cambia esto por el nombre del servidor de la base de datos
-        $usuario = "root"; // Cambia esto por tu nombre de usuario de la base de datos
-        $contrasena = ""; // Cambia esto por tu contraseña de la base de datos
-        $base_de_datos = "CONAIC"; // Cambia esto por el nombre de la base de datos
-
-        // Conexión a la base de datos
-        $conexion = new mysqli($host, $usuario, $contrasena, $base_de_datos);
-
-        // Verificar la conexión
-        if ($conexion->connect_error) {
-            die("Error de conexión a la base de datos: " . $conexion->connect_error);
-        }
-
-        // Obtener el valor de id y el nombre del PDF
-        $id = $_POST["id"];
-        $nombre_pdf = "pdf" . $id . ".pdf"; // Nombre del PDF modificado
-
-        // Consulta SQL para insertar datos en la tabla "subcriteriospdf"
-        $sql = "INSERT INTO subcriteriospdf (claveSubCriterio, clavePDF) VALUES ('$id', '$nombre_pdf')";
-
-        if ($conexion->query($sql) === TRUE) {
-            echo "Datos insertados en la tabla subcriteriospdf correctamente.";
-        } else {
-            echo "Error al insertar datos: " . $conexion->error;
-        }
-
-        // Cerrar la conexión a la base de datos
-        $conexion->close();
-
-
-
-
-
-
-
-    } else {
-        echo "Error: El archivo debe ser un PDF.";
+   
+    include "../conexionDB/conexion.php";
+    conecta();
+    if(!$conexion){
+        echo "<script>alert('Ocurrió un error al conectar con la Base de Datos. Vuelva a iniciar sesión.');</script>";
     }
-} else {
-    echo "Error al cargar el archivo.";
+
+    foreach ($archivos["error"] as $key => $error) {
+        if ($error == UPLOAD_ERR_OK) {
+            $nombre_temporal = $archivos["tmp_name"][$key];
+            $nombre_archivo = $archivos["name"][$key];
+            $extension = pathinfo($nombre_archivo, PATHINFO_EXTENSION);
+
+            if ($extension === "pdf") {
+                $nuevo_nombre = "pdf" . $id . "-" . $key . ".pdf"; // Utiliza un identificador único para cada archivo
+                $ruta_destino = $carpeta_destino . $nuevo_nombre;
+
+                if (move_uploaded_file($nombre_temporal, $ruta_destino)) {
+                    // Realiza la inserción en la base de datos
+                    $claveSubCriterio = $id; // Utiliza el valor de $id como claveSubCriterio
+                    $clavePDF = $nuevo_nombre; // Utiliza el nombre del archivo como clavePDF
+
+                    // Consulta SQL para insertar datos en la tabla "subcriteriospdf"
+                    $sql = "INSERT INTO subcriteriospdf (claveSubCriterio, clavePDF) VALUES ('$claveSubCriterio', '$clavePDF')";
+
+                    if ($conexion->query($sql) === TRUE) {
+                        echo "Datos insertados en la tabla subcriteriospdf correctamente para el archivo '$clavePDF'.<br>";
+                    } else {
+                        echo "Error al insertar datos para el archivo '$clavePDF': " . $conexion->error . "<br>";
+                    }
+                } else {
+                    echo "Error al mover el archivo a la carpeta de destino.<br>";
+                }
+            } else {
+                echo "Error: El archivo '$nombre_archivo' debe ser un PDF.<br>";
+            }
+        } elseif ($error == UPLOAD_ERR_NO_FILE) {
+            // No se seleccionó ningún archivo para cargar
+        } else {
+            echo "Error al cargar el archivo.<br>";
+        }
+    }
+
+    // Cerrar la conexión a la base de datos
+    $conexion->close();
 }
-
 ?>
-

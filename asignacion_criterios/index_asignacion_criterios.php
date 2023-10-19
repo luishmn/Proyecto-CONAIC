@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asiganción de Criterios</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="style.js"></script>
 </head>
 <body>
@@ -155,10 +156,10 @@ while ($row = $result->fetch_assoc()) {
 
     </section>
 
-
-
-    <button class="boton_asignar"  id="guardar">Guardar</button>
-    <img src="../imagenes/logo_Fondo.png" id="imgLogoFondo" alt="Conaic ITSZaS" class="logo" width="336" height="198">
+    <div class="container">
+        <button class="boton_asignar"  id="guardar">Guardar</button>
+    </div>
+        <img src="../imagenes/logo_Fondo.png" id="imgLogoFondo" alt="Conaic ITSZaS" class="logo" width="336" height="198">
     <footer class="footer">
         <br><br>
 
