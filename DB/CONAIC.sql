@@ -18,7 +18,7 @@ confirmacion int NOT NULL
 
 CREATE TABLE Categoria(
 nombre varchar(50) NOT NULL,
-claveCategoria varchar(10) NOT NULL
+claveCategoria integer NOT NULL
 );
 
 CREATE TABLE Criterio(
@@ -33,7 +33,7 @@ correo varchar(50) NOT NULL
 
 CREATE TABLE CriteriosCategoria(
 claveCriterio varchar(10) NOT NULL,
-claveCategoria varchar(10) NOT NULL
+claveCategoria integer NOT NULL
 );
 
 CREATE TABLE Recomendaciones(
