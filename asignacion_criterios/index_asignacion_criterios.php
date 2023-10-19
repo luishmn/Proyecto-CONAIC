@@ -33,6 +33,44 @@ function obtenerClaveSubCriterioDesdeBD($subcriterio,$conexion) {
     // Cierra la conexión a la base de datos
     $conexion->close();
 }
+function obtenerClaveCategoriaDesdeBD($categoria, $conexion) {
+    $categoria = $conexion->real_escape_string($categoria);
+    $query = "SELECT claveCategoria FROM Categoria WHERE nombre = '$categoria'";
+    $result = $conexion->query($query);
+
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        return $row['claveCategoria'];
+    } else {
+        return "Clave no encontrada";
+    }
+}
+
+function obtenerClaveCriterioDesdeBD($criterio, $conexion) {
+    $criterio = $conexion->real_escape_string($criterio);
+    $query = "SELECT claveCriterio FROM Criterio WHERE nombre = '$criterio'";
+    $result = $conexion->query($query);
+
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        return $row['claveCriterio'];
+    } else {
+        return "Clave no encontrada";
+    }
+}
+
+function claveCategoriaComparator($a, $b) {
+    // Obtener las claves como números
+    $a = intval($a);
+    $b = intval($b);
+
+    if ($a == $b) {
+        return 0;
+    }
+
+    return ($a < $b) ? -1 : 1;
+}
+
 
 include "../conexionDB/conexion.php";
 conecta();
@@ -71,6 +109,8 @@ while ($row = $result->fetch_assoc()) {
         $categorias[$categoria][$criterio][] = $subcriterio;
     }
 }
+
+
 
 
 ?>
@@ -131,19 +171,21 @@ while ($row = $result->fetch_assoc()) {
 
         <?php
         foreach ($categorias as $categoria => $criterios) {
+            $claveCategoria = obtenerClaveCategoriaDesdeBD($categoria, $conexion);
             echo '<details class="details">';
-            echo '<summary class="categoria">' . $categoria . '</summary>';
+            echo '<summary class="categoria">' .$claveCategoria. '. ' .$categoria . '</summary>';
             
             foreach ($criterios as $criterio => $subcriterios) {
+                $claveCriterio = obtenerClaveCriterioDesdeBD($criterio, $conexion);
                 echo '<details class="criterios">';
-                echo '<summary class="criterio">' . $criterio . '</summary>';
+                echo '<summary class="criterio">' . $claveCriterio . ' - ' . $criterio . '</summary>';
                 echo '<ul class="criterios">';
                 foreach ($subcriterios as $subcriterio) {
                     $claveSubCriterio = obtenerClaveSubCriterioDesdeBD($subcriterio,$conexion);
                     echo '<li><label class="check_criterios"><input type="checkbox" data-clave="' . $claveSubCriterio . '"><i></i> ' . $claveSubCriterio . ' - ' . $subcriterio . '</label></li>';
 
                 }
-                
+
 
                 echo '</ul>';
                 echo '</details>';
