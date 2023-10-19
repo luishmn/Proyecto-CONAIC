@@ -59,17 +59,7 @@ function obtenerClaveCriterioDesdeBD($criterio, $conexion) {
     }
 }
 
-function claveCategoriaComparator($a, $b) {
-    // Obtener las claves como números
-    $a = intval($a);
-    $b = intval($b);
 
-    if ($a == $b) {
-        return 0;
-    }
-
-    return ($a < $b) ? -1 : 1;
-}
 
 
 include "../conexionDB/conexion.php";
