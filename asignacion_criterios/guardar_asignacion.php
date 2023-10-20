@@ -35,7 +35,7 @@ try {
 
 
 
-        $sql = "SELECT claveSubCriterio FROM asignacionsubcriterio WHERE correo = '$correoUsuario'";
+        $sql = "SELECT claveSubCriterio FROM AsignacionSubCriterio WHERE correo = '$correoUsuario'";
         $result = $conexion->query($sql);
 
         if ($result->num_rows > 0) {
@@ -49,7 +49,7 @@ try {
 
        
             foreach ($criteriosAEliminar as $claveAEliminar) {
-                $sql = "DELETE FROM asignacionsubcriterio WHERE correo = '$correoUsuario' AND claveSubCriterio = '$claveAEliminar'";
+                $sql = "DELETE FROM AsignacionSubCriterio WHERE correo = '$correoUsuario' AND claveSubCriterio = '$claveAEliminar'";
                 $conexion->query($sql);
             }
         }
@@ -60,14 +60,14 @@ try {
             $correoUsuario = mysqli_real_escape_string($conexion, $correoUsuario);
         
 
-            $checkSql = "SELECT COUNT(*) AS count FROM asignacionsubcriterio WHERE claveSubCriterio = '$claveSubcriterio' AND correo = '$correoUsuario'";
+            $checkSql = "SELECT COUNT(*) AS count FROM AsignacionSubCriterio WHERE claveSubCriterio = '$claveSubcriterio' AND correo = '$correoUsuario'";
             $checkResult = $conexion->query($checkSql);
             $checkRow = $checkResult->fetch_assoc();
             $count = $checkRow['count'];
         
         
             if ($count == 0) {
-                $sql = "INSERT INTO asignacionsubcriterio (claveSubCriterio, correo) VALUES ('$claveSubcriterio', '$correoUsuario')";
+                $sql = "INSERT INTO AsignacionSubCriterio (claveSubCriterio, correo) VALUES ('$claveSubcriterio', '$correoUsuario')";
                 if (!$conexion->query($sql)) {
                     error_log("Error al insertar la relación: " . $conexion->error);
                     continue;

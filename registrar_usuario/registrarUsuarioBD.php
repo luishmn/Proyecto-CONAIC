@@ -17,16 +17,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $tipo=1;
     }
 
-    // Conexión a la base de datos MySQL
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "conaic";
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-
-
-
 
     $para = $correo;
     $asunto = 'CONAIC: BIENVENIDO'; // Asunto del correo
@@ -109,14 +99,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
     
+    include "../conexionDB/conexion.php";
+    conecta();
+    
 
-    if ($conn->connect_error) {
-        die("Conexión a la base de datos fallida: " . $conn->connect_error);
+    if ($conexion->connect_error) {
+        die("Conexión fallida: " . $conexion->connect_error);
     }
+
 
     else{
 
-    if (comprobar($correo, $conn)==1){
+    if (comprobar($correo, $conexion)==1){
         echo "<script>";
         echo "alert('Este correo Ya fue utilizado');";
         echo "window.location.href = 'registraUsuarios.html';";
@@ -127,7 +121,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO usuario (nombre,apellidoPat, apellidoMat, cargo, contrasena,correo,tipo,confirmacion)
     VALUES ('$nombre', '$apellido_paterno', '$apellido_materno', '$cargo','$contrasena','$correo','$tipo',0)";
 
-if ($conn->query($sql) === TRUE) {
+if ($conexion->query($sql) === TRUE) {
 if (mail($para, $asunto, $mensaje, $headers)) {
     echo "<script>";
     echo "alert('Usuario Resgistrado. Correo enviado');";
@@ -141,7 +135,7 @@ if (mail($para, $asunto, $mensaje, $headers)) {
 }
 }  
 
-$conn->close();
+$conexion->close();
     }
     
 }}
