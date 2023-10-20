@@ -13,7 +13,7 @@
             die("Conexión fallida: " . $conexion->connect_error);
     }
     // Obtener los datos del registro seleccionado
-    $sql_usuario = "SELECT * FROM usuario WHERE correo = '$correo'";
+    $sql_usuario = "SELECT * FROM Usuario WHERE correo = '$correo'";
     $result_usuario = $conexion->query($sql_usuario);
 
     if ($result_usuario->num_rows > 0) {

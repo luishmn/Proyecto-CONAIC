@@ -307,7 +307,7 @@
         die("Conexión fallida: " . $conexion->connect_error);
     }
    
-    $sql = "SELECT nombre, apellidoPat, apellidoMat, cargo, contrasena, correo, tipo FROM usuario";
+    $sql = "SELECT nombre, apellidoPat, apellidoMat, cargo, contrasena, correo, tipo FROM Usuario";
     $result = $conexion->query($sql);
     ?>
     

@@ -22,7 +22,7 @@ try {
     }
 
  
-    $sql = "SELECT claveSubCriterio FROM asignacionsubcriterio WHERE correo IN (
+    $sql = "SELECT claveSubCriterio FROM AsignacionSubCriterio WHERE correo IN (
         SELECT correo FROM Usuario WHERE nombre = '$nombreUsuario' AND apellidoPat = '$apellidoPatUsuario' AND cargo = '$cargoUsuario'
     )";
 
