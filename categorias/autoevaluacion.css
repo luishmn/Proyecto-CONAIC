@@ -126,6 +126,7 @@ lablCat{
     max-height: 80%; /* Define la altura máxima que deseas antes de que aparezca la barra de desplazamiento */
     overflow-y: auto; /* Habilita la barra de desplazamiento vertical cuando sea necesario */
     left: 35%;
+    top: 20%;
     margin-left: 50%;
     position: absolute;
     margin: 0 auto;
@@ -149,7 +150,7 @@ lablCat{
 }
 
 .titulo_categoria{
-    padding: 3px;
+    padding: 5px;
     font-size: 24px;
     border-radius: 10px;
     text-align: center;
