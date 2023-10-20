@@ -6,22 +6,16 @@ if (isset($_GET['correo_traslado'])) {
     echo "No se proporcionó ningún valor a través de la URL.";
 }
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "conaic";
+include "../conexionDB/conexion.php";
+            conecta();
+        
+            if ($conexion->connect_error) {
+                    die("Conexión fallida: " . $conexion->connect_error);
+            }
 
-
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
-}
-
-$correo = $conn->real_escape_string($correo);
-$sql_check = "SELECT correo FROM usuario WHERE correo = '$correo'"; 
-$result_check = $conn->query($sql_check);
+$correo = $conexion->real_escape_string($correo);
+$sql_check = "SELECT correo FROM Usuario WHERE correo = '$correo'"; 
+$result_check = $conexion->query($sql_check);
 
 
 
@@ -30,19 +24,19 @@ if ($result_check->num_rows == 0) {
 
 
 } else {
-    $sql_delete = "DELETE FROM asignacionsubcriterio WHERE correo = '$correo'"; 
+    $sql_delete = "DELETE FROM AsignacionSubCriterio WHERE correo = '$correo'"; 
     
-    if ($conn->query($sql_delete) === TRUE) {
-        $sql_delete = "DELETE FROM usuario WHERE correo = '$correo'"; 
-        if ($conn->query($sql_delete) === TRUE) {
+    if ($conexion->query($sql_delete) === TRUE) {
+        $sql_delete = "DELETE FROM Usuario WHERE correo = '$correo'"; 
+        if ($conexion->query($sql_delete) === TRUE) {
             header("Location: ../visualizacion_usuario/index_visual_usu.php");
             exit;
             echo "Usuario Eliminado correctamente";
         }
     } else {
-        echo "Error al eliminar al usuario: " . $conn->error;
+        echo "Error al eliminar al usuario: " . $conexion->error;
     }
 }
 
-$conn->close();
+$conexion->close();
 ?>

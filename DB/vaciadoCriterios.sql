@@ -122,11 +122,11 @@ INSERT INTO `SubCriterio` (`nombre`, `claveSubCriterio`) VALUES ('¿Tiene establ
 INSERT INTO `CriteriosSubCriterio` (`claveCriterio`, `claveSubCriterio`) VALUES ('10.1', '10.1.1'), ('10.1', '10.1.2'), ('10.1', '10.1.3'), ('10.1', '10.1.4'), ('10.2', '10.2.1'), ('10.2', '10.2.2'), ('10.3', '10.3.1'), ('10.3', '10.3.2'), ('10.3', '10.3.3'), ('10.3', '10.3.4');
 
 
-INSERT INTO `Categoria` (`nombre`, `claveCategoria`) VALUES ('Anexos', 'Anexos');
+INSERT INTO `Categoria` (`nombre`, `claveCategoria`) VALUES ('Anexos', '11');
 
 INSERT INTO `Criterio` (`nombre`, `claveCriterio`) VALUES ('Anexo 1', 'anexo1'), ('Anexo 2', 'anexo2'), ('Anexo 3', 'anexo3');
 
-INSERT INTO `CriteriosCategoria` (`claveCriterio`, `claveCategoria`) VALUES ('anexo1', 'Anexos'), ('anexo2', 'Anexos'), ('anexo3', 'Anexos');
+INSERT INTO `CriteriosCategoria` (`claveCriterio`, `claveCategoria`) VALUES ('anexo1', '11'), ('anexo2', '11'), ('anexo3', '11');
 
 INSERT INTO `SubCriterio` (`nombre`, `claveSubCriterio`) VALUES ('Completar anexo 1', 'subanexo1'), ('Completar anexo 2', 'subanexo2'), ('Completar anexo 3', 'subanexo3');
 
@@ -142,3 +142,6 @@ INSERT INTO `SubCriterio` (`nombre`, `claveSubCriterio`) VALUES ('¿Cuenta el pr
 INSERT INTO `SubCriterio` (`nombre`, `claveSubCriterio`) VALUES ('Para poder comparar el contenido curricular de distintos programas, se hace referencia a Unidades de cada curso. Para efectos de equivalencia, una Unidad  equivale a 1 hora de Teoría frente a grupo, o bien a 3 horas de Práctica frente a grupo para Licenciatura y para el caso de Técnico Superior Universitario, la equivalencia es 2 horas de práctica frente a grupo.  El Comité reconoce que existen nuevos modelos pedagógicos donde los estudiantes realizan actividades de auto-estudio; en estos casos, la institución que busca la acreditación deberá de justificar la equivalencia utilizada para el número de Unidades.', '3.4.1');
 
 INSERT INTO `CriteriosSubCriterio` (`claveCriterio`, `claveSubCriterio`) VALUES ('1.8', '1.8.1'), ('2.4', '2.4.1'), ('2.6', '2.6.1'), ('3.4', '3.4.1');
+
+INSERT INTO `subcriterio` (`nombre`, `claveSubCriterio`) VALUES ('¿Existe un servicio médico o material para primeros auxilios?     ', '5.6.1');
+INSERT INTO `criteriossubcriterio` (`claveCriterio`, `claveSubCriterio`) VALUES ('5.6', '5.6.1');
