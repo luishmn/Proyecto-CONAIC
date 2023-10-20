@@ -5,21 +5,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-   
+    include "../conexionDB/conexion.php";
+    conecta();
+    
 
-    // Conexión a la base de datos MySQL
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "conaic";
-
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-    if ($conn->connect_error) {
-        die("Conexión a la base de datos fallida: " . $conn->connect_error);
+    if ($conexion->connect_error) {
+        die("Conexión fallida: " . $conexion->connect_error);
     }
+
+
+  
     // Inserción de datos en la tabla 
-    $sql = "UPDATE usuario
+    $sql = "UPDATE Usuario
     SET contrasena = '$contrasena'
     WHERE correo = '$correo'";
 

@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $clavePDF = $nuevo_nombre; // Utiliza el nombre del archivo como clavePDF
 
                     // Consulta SQL para insertar datos en la tabla "subcriteriospdf"
-                    $sql = "INSERT INTO subcriteriospdf (claveSubCriterio, clavePDF) VALUES ('$claveSubCriterio', '$clavePDF')";
+                    $sql = "INSERT INTO SubCriteriosPDF (claveSubCriterio, clavePDF) VALUES ('$claveSubCriterio', '$clavePDF')";
 
                     if ($conexion->query($sql) === TRUE) {
                         echo "Datos insertados en la tabla subcriteriospdf correctamente para el archivo '$clavePDF'.<br>";

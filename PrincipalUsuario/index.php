@@ -5,6 +5,7 @@
     if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
         // Accede al nombre de usuario almacenado en la sesión
         $nombreUsuario = $_SESSION['username'];
+        $correoUsuario = $_SESSION['email'];
     } else {
         // Si no ha iniciado sesión, redirige al usuario a la página de inicio de sesión
         header('Location: ../index.php');

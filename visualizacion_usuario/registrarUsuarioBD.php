@@ -154,7 +154,7 @@ $mail->Body = '<html>
     }
     else{
         // Inserción de datos en la tabla 
-    $sql = "INSERT INTO usuario (nombre,apellidoPat, apellidoMat, cargo, contrasena,correo,tipo,confirmacion)
+    $sql = "INSERT INTO Usuario (nombre,apellidoPat, apellidoMat, cargo, contrasena,correo,tipo,confirmacion)
     VALUES ('$nombre', '$apellido_paterno', '$apellido_materno', '$cargo','$contrasena','$correo','$tipo',0)";
 
 if ($conexion->query($sql) === TRUE) {
@@ -183,7 +183,7 @@ else {
 }
 
 function comprobar($usu,$conec){
-    $sql="SELECT * FROM usuario
+    $sql="SELECT * FROM Usuario
     WHERE correo='$usu'";
     $result=mysqli_query($conec, $sql);
     if (mysqli_num_rows($result)>0){
