@@ -156,7 +156,7 @@
                     $usuario = mysqli_real_escape_string($conexion, $usuario);
                     $contra = mysqli_real_escape_string($conexion, $contra);
 
-                    $consulta = "SELECT nombre, correo, apellidoPat, contrasena, tipo from usuario where correo = '$usuario'";
+                    $consulta = "SELECT nombre, correo, apellidoPat, contrasena, tipo from Usuario where correo = '$usuario'";
                     $resultado = mysqli_query($conexion, $consulta);
 
                     if(!$resultado){
@@ -178,10 +178,10 @@
                                 $_SESSION['email'] = $correo_bd;
                                 //princpial de jefe o admin
                                 if($tipo_bd == 1) {
-                                    echo '<script>window.location.href = "/Principal Administrador/index.php";</script>';
+                                    echo '<script>window.location.href = "/PrincipalAdministrador/index.php";</script>';
                                     exit;
                                 } else{
-                                    echo '<script>window.location.href = "/Principal usuario/index.php";</script>';
+                                    echo '<script>window.location.href = "/PrincipalUsuario/index.php";</script>';
                                 }
 
                             }
