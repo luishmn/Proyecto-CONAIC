@@ -24,9 +24,11 @@
         /* Estilo para el botón de cierre */
         .close {
             position: absolute;
-            top: 10px;
-            right: 10px;
+            top: 1px;
+            right: 1px;
             cursor: pointer;
+            font-size: 60px; /* Tamaño de fuente más grande */
+            padding: 5px; /* Espaciado alrededor del botón */
         }
         /* Estilo para la miniatura de PDF */
         .pdf-thumbnail {
