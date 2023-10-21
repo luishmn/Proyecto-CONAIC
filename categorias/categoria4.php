@@ -1,14 +1,37 @@
+<?php
+    session_start();
+    //$_SESSION['loggedin']= false;
+    // Verifica si el usuario ha iniciado sesión
+    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+        // Accede al nombre de usuario almacenado en la sesión
+        $nombreUsuario = $_SESSION['username'];
+        $correoUsuario = $_SESSION['email'];
+    } else {
+        // Si no ha iniciado sesión, redirige al usuario a la página de inicio de sesión
+        header('Location: ../index.php');
+        exit;
+    }
+
+    $nombre = substr($nombreUsuario, 0, 10);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <script>var correoUsuario = "<?php echo $correoUsuario; ?>";</script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categoria 4</title>
     <link rel="stylesheet" href="autoevaluacion.css">
+    <script src="enviarConsulta.js"></script>
 </head>
 
 <body>
+    
 
     <header>
         <div class="barra-superior"><!-- ESTE ES EL DIV DE LA BARRA SUPERIOR -->
@@ -26,37 +49,60 @@
                 <label class="catE">Categorías</label><br>
             </div>
             <div>
-                <p class="parrafo">Categoría 1</p>
-                <hr>
-                <p class="parrafo">Categoría 2</p>
-                <hr>
-                <p class="parrafo">Categoría 3</p>
-                <hr>
-                <p class="parrafo">Categoría 4</p>
-                <hr>
-                <p class="parrafo">Categoría 5</p>
-                <hr>
-                <p class="parrafo">Categoría 6</p>
-                <hr>
-                <p class="parrafo">Categoría 7</p>
-                <hr>
-                <p class="parrafo">Categoría 8</p>
-                <hr>
-                <p class="parrafo">Categoría 9</p>
-                <hr>
-                <p class="parrafo">Categoría 10</p>
-                <hr>
-                <p class="parrafo">Categoría 11</p>
-                <hr>
-                <p class="parrafo">Categoría 12</p>
+                <div class="elemetosMenuLateral" id="1">
+                    <p class="parrafo1">Categoría 1</p>
+                </div>
+                <div class="elemetosMenuLateral" id="2">
+                    <hr>
+                    <p class="parrafo1">Categoría 2</p>
+                </div>
+                <div class="elemetosMenuLateral" id="3">
+                    <hr>
+                    <p class="parrafo1">Categoría 3</p>
+                </div>
+                <div class="elemetosMenuLateral" id="4">
+                    <hr>
+                    <p class="parrafo1">Categoría 4</p>
+                </div>
+                <div class="elemetosMenuLateral" id="5">
+                    <hr>
+                    <p class="parrafo1">Categoría 5</p>
+                </div>
+                <div class="elemetosMenuLateral" id="6">
+                    <hr>
+                    <p class="parrafo1">Categoría 6</p>
+                </div>
+                <div class="elemetosMenuLateral" id="7">
+                    <hr>
+                    <p class="parrafo1">Categoría 7</p>
+                </div>
+                <div class="elemetosMenuLateral" id="8">
+                    <hr>
+                    <p class="parrafo1">Categoría 8</p>
+                </div>
+                <div class="elemetosMenuLateral" id="9">
+                    <hr>
+                    <p class="parrafo1">Categoría 9</p>
+                </div>
+                <div class="elemetosMenuLateral" id="10">
+                    <hr>
+                    <p class="parrafo1">Categoría 10</p>
+                </div>
+                <div class="elemetosMenuLateral" id="11">
+                    <hr>
+                    <p class="parrafo1">Categoría 11</p>
+                </div>
+                <br>
             </div>
         </div>
 
         <div class="cuadroCate">
             <div class="titulo_categoria">Categoría 4: Ealuación del aprendizaje</div>
 
+            
+
             <div>
-                <div class="parrafo">
+                <div class="parrafo" id="4.1">
                     <p>
                         4.1 Metodología de Evaluación continua. En este criterio debe evaluarse la pertinencia del
                         método de
@@ -75,7 +121,8 @@
                         al finalizar su trayectoria escolar de acuerdo a su perfil de egreso.
                     </p>
                 </div>
-                <div class="preguntasCategoria">
+
+                <div class="preguntasCategoria" id="4.1.1">
                     <p>4.1.1 Debe incluirse el uso de la computadora durante el proceso de enseñanza aprendizaje, en los
                         cursos que por su naturaleza así lo requieran. </p>
                     <p>¿El programa cuenta con estadísticas del uso de las herramientas de cómputo por parte de los
@@ -103,8 +150,7 @@
                     <div class="btnListo"><button>Guardar</button></div>
                 </div>
 
-
-                <div class="preguntasCategoria">
+                <div class="preguntasCategoria" id="4.1.2">
                     <p>4.1.2 Debe cubrirse al menos el 90% de los programas de las asignaturas del plan de estudio.</p>
 
                     <p>¿Se cuenta con datos estadísticos que muestren el porcentaje que se cubre de cada asignatura con
@@ -128,8 +174,7 @@
                     <div class="btnListo"><button>Guardar</button></div>
                 </div>
 
-
-                <div class="preguntasCategoria">
+                <div class="preguntasCategoria" id="4.1.3">
                     <p>4.1.3 Todo programa debe establecer que en varios cursos se incluyan, en parte o en la totalidad
                         de su desarrollo, métodos de enseñanza diferentes a los tradicionales de exposición oral del
                         profesor, tales como el uso de audiovisuales, multimedios, aulas interactivas, desarrollo de
@@ -157,7 +202,8 @@
                     </div>
                     <div class="btnListo"><button>Guardar</button></div>
                 </div>
-                <div class="preguntasCategoria">
+
+                <div class="preguntasCategoria" id="4.1.4">
                     <p>4.1.4 La calidad en el desempeño del estudiante durante su permanencia en el programa debe
                         evaluarse mediante la combinación de varios mecanismos, tales como exámenes, tareas, problemas
                         para resolver, prácticas de laboratorio, trabajos e informes, y debe considerar sus habilidades
@@ -206,7 +252,8 @@
                     </div>
                     <div class="btnListo"><button>Guardar</button></div>
                 </div>
-                <div class="preguntasCategoria">
+
+                <div class="preguntasCategoria" id="4.1.5">
                     <p>4.1.5 Se debe contar con mecanismos de retroalimentación que permitan, a partir de las
                         evaluaciones de los estudiantes, llevar a cabo acciones encaminadas a mejorar el proceso
                         enseñanza-aprendizaje. Certificación de competencias bajo normas nacionales o internacionales
@@ -234,7 +281,8 @@
                     </div>
                     <div class="btnListo"><button>Guardar</button></div>
                 </div>
-                <div class="preguntasCategoria">
+
+                <div class="preguntasCategoria" id="4.1.6">
                     <p>4.1.6 Debe contarse con una estrategia de enseñanza y práctica de un idioma extranjero.</p>
                     <p>¿El plan de estudios marca como un requisito, que los estudiantes tengan o adquieran un cierto
                         grado de dominio de un idioma extranjero?</p>
@@ -264,7 +312,7 @@
                     <div class="btnListo"><button>Guardar</button></div>
                 </div>
 
-                <div class="preguntasCategoria">
+                <div class="preguntasCategoria" id="4.1.7">
                     <p>4.1.7 ¿Existe un mecanismo de medición sobre las competencias desarrolladas por los estudiantes
                         al finalizar su trayectoria académica de acuerdo a su perfil de egreso? Certificación de
                         competencias bajo normas nacionales o internacionales según el perfil de TIC a evaluar para
@@ -293,7 +341,7 @@
             </div>
 
             <div>
-                <div class="parrafo">
+                <div class="parrafo" id="4.2">
                     <p>
                         4.2 Estímulos al rendimiento académico. Con el objeto de mejorar el desempeño de los
                         estudiantes, todo programa deberá considerar un programa de becas de apoyo económico a los
@@ -303,7 +351,8 @@
                         mecanismos deben ser efectivos y conocidos por la comunidad académica.
                     </p>
                 </div>
-                <div class="preguntasCategoria">
+
+                <div class="preguntasCategoria" id="4.2.1">
                     <p>4.2.1 ¿Hay programa de becas para estudiantes?</p>
                     <div class="opcMult" °>
                         <select name="select" id="seleccion">
@@ -332,7 +381,8 @@
                     </div>
                     <div class="btnListo"><button>Guardar</button></div>
                 </div>
-                <div class="preguntasCategoria">
+
+                <div class="preguntasCategoria" id="4.2.2">
                     <p>4.2.2 ¿Se otorgan estímulos y/o reconocimiento al buen desempeño académico de los estudiantes?
                     </p>
 
@@ -361,13 +411,13 @@
             </div>
 
             <div>
-                <div class="parrafo">
+                <div class="parrafo" id="4.3">
                     <p>
                         4.3 Evaluación de atributos de egreso. Describir el método de evaluación de los atributos de
                         egreso con la evidencia correspondiente, para asegurar el logro de los mismos.
                     </p>
                 </div>
-                <div class="preguntasCategoria">
+                <div class="preguntasCategoria" id="4.3.1">
                     <p>4.3.1 ¿El Programa Educativo cuenta con un método o conjunción de métodos que le permita asegurar
                         la evaluación de atributos de egreso, que garanticen el logro de éstos en los egresados?</p>
 
@@ -401,5 +451,7 @@
         </div>
     </div>
 </body>
+
+
 
 </html>
