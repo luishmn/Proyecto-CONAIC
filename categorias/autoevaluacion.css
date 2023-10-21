@@ -260,3 +260,12 @@ lablCat{
     border-radius: 20px;
     border-color: #145070;
 }
+
+.checkB {
+    margin: 7px;
+}
+
+.checkB input{
+    margin: 5px;
+    width: 10%;
+}
