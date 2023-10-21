@@ -126,7 +126,7 @@ while ($row = $result->fetch_assoc()) {
         </a>
     </nav>
 
-    <div class="rectangulo_principal">
+    <div class="rectangulo_usuario">
     <span class="selected-option">Selecciona un Usuario</span>
     <ul class="options">
         <?php
@@ -149,13 +149,13 @@ while ($row = $result->fetch_assoc()) {
 
 
 
-    <div class="usuario_seleccionado">
+    <!-- <div class="usuario_seleccionado">
         <p>Ningun usuario ha sido seleccionado</p>
-    </div>  
+    </div>   -->
 
     </br>
     <section class="article">
-        <div class="rectangulo_principal">
+        <div class="rectangulo_categorias">
             <h2>Categorías y Criterios</h2>
         </div>
 
