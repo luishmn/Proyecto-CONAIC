@@ -122,12 +122,16 @@
 
                 <div class="preguntasCategoria">
                     <p >9.1.5 El diseño, equipamiento y operación de los servicios de cómputo debe tomar en cuenta la opinión de los profesores que  participan en el programa.</p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
 
-                    <br><br>
 
                     <p >¿Se toma en cuenta la opinión de los profesores que participan en el programa para el diseño, equipamiento y operación de los servicios de cómputo?</p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <div class="opcMult" °>
+                        <select name="select" id="seleccion">
+                            <option disabled selected>Selecciona una opción</option>
+                            <option value="si">Sí</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
 
                     <br><br>
 
@@ -147,9 +151,6 @@
                 <div class="preguntasCategoria">
                     <p>9.1.6 Las aulas deben ser funcionales, disponer de espacio suficiente para cada estudiante y tener las condiciones adecuadas de higiene, seguridad, iluminación, ventilación, temperatura, aislamiento del ruido y mobiliario.
                         </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-
-                    <br><br>
 
                     <p >Información sobre aulas según dimensiones y capacidades.</p>
                 <input type="text" placeholder="Escribe tu respuesta aquí...">
@@ -182,10 +183,6 @@
                 <div class="preguntasCategoria">
                     <p >9.1.8 El programa debe disponer de al menos una aula con equipo de cómputo y audiovisual permanentemente instalado que podrá ser utilizada para cursos normales y especializados.
                         </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-
-
-                    <br><br>
 
                     <p >Número de aulas con equipo de cómputo
                     </p>
@@ -210,9 +207,7 @@
                 <div class="preguntasCategoria">
                     <p >9.1.9 Los profesores de tiempo completo, tres cuartos y medio tiempo deben contar con cubículos. El resto de los profesores deben contar con lugares adecuados para su trabajo.
                         </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
 
-                    <br><br>
 
                     <p >¿Qué tipo de profesores cuenta con cubículos?
                     </p>
@@ -237,8 +232,6 @@
                 <div class="preguntasCategoria">
                     <p >9.1.10 Deben existir espacios para asesorías a estudiantes.
                         </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-                    <br><br>
 
                     <p >¿Existen espacios para asesorías a estudiantes? En caso afirmativo, descríbalos:
                     </p>
@@ -272,9 +265,7 @@
                 <div class="preguntasCategoria">
                     <p >9.1.12 En los espacios mencionados en el criterio anterior, se debe tener un lugar cómodo por cada diez estudiantes inscritos en el programa, ofreciendo las condiciones adecuadas de higiene y seguridad.
                         </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
 
-                    <br><br>
 
                     <p >De los espacios mencionados anteriormente mencionar:
                     </p>
@@ -291,14 +282,25 @@
 
                     <p >Ofrece condiciones adecuadas de higiene.
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-
+                    <div class="opcMult" °>
+                        <select name="select" id="seleccion">
+                            <option disabled selected>Selecciona una opción</option>
+                            <option value="si">Sí</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
                     
                     <br><br>
 
                     <p >Ofrece condiciones adecuadas de seguridad.
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <div class="opcMult" °>
+                        <select name="select" id="seleccion">
+                            <option disabled selected>Selecciona una opción</option>
+                            <option value="si">Sí</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
@@ -311,25 +313,28 @@
                 </div>
 
                 <div class="preguntasCategoria">
-                    <p >9.1.13  Las facilidades sanitarias para los estudiantes y profesores del programa deben ser adecuadas.
-                        </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-
+                    <p>9.1.13 Las facilidades sanitarias para los estudiantes y profesores del programa deben ser adecuadas.</p>
                     <br><br>
-
-                    <p >¿Considera las facilidades sanitarias adecuadas?
-                    </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-
-                    <!-- <img src="" alt=""><button>Guardar</button> -->
+                    <p>¿Considera las facilidades sanitarias adecuadas?</p>
+                    <div class="opcMult">
+                        <select name="select" id="seleccion" onchange="mostrarInput(this)">
+                            <option disabled selected>Selecciona una opción</option>
+                            <option value="si">Sí</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <div id="inputContainer" style="display: none;">
+                        <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    </div>
                     <br><br>
                     <div class="Listo">
                         <img src="/imagenes/pdf.png" alt="">
                         <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
                     </div>
                     <div class="btnListo"><button>Guardar</button></div>
                 </div>
+            
+                
 
                 
                 <div class="parrafo">
@@ -355,8 +360,6 @@
                 <div class="preguntasCategoria">
                     <p >9.2.2 Todo programa debe contar como mínimo con el siguiente software: Lenguajes de programación, herramientas CASE, manejadores de base de datos y paquetería en general.
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-                    <br><br>
 
                     <p >Describir los siguientes elementos de la infraestructura de software, incluyendo versiones y número de licencias:
                     </p>
@@ -375,8 +378,6 @@
                 <div class="preguntasCategoria">
                     <p >9.2.3 El programa debe tener a su disposición dentro de la institución, el equipo de cómputo indispensable para las prácticas de las materias que lo requieran.
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-                    <br><br>
 
                     <p >Número de estudiantes inscritos en el programa
                     </p>
@@ -398,8 +399,6 @@
                 <div class="preguntasCategoria">
                     <p >9.2.4 Se  debe contar con un número suficiente de computadoras que estén disponibles y accesibles para los estudiantes del programa en función el número de horas de infraestructura de cómputo requeridas por el Plan de Estudios.
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-                    <br><br>
 
                     <p >Proporcionar la siguiente información
                     </p>
@@ -424,8 +423,6 @@
                 <div class="preguntasCategoria">
                     <p >9.2.5 Se debe contar con al menos tres plataformas de cómputo diferentes que estén disponibles y accesibles para los estudiantes y el personal docente del programa.
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-                    <br><br>
 
                     <p >Describir los tipos de plataformas de cómputo disponibles para los estudiantes y  el personal docente del programa:
                     </p>
@@ -444,8 +441,6 @@
                 <div class="preguntasCategoria">
                     <p >9.2.6 Se debe contar con capacidades de impresión adecuadas para los estudiantes y profesores del programa.
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-                    <br><br>
 
                     <p >El programa académico debe garantizar el servicio de impresión en aquellos espacios físicos que la institución haya dispuesto para apoyo al estudiante.
                     </p>
@@ -464,42 +459,60 @@
                 <div class="preguntasCategoria">
                     <p >9.2.7 Debe contarse con al menos una red de área local y una amplia, con  software adecuado para las aplicaciones más comunes del programa.
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-                    <br><br>
 
                     <p >El programa académico debe garantizar el servicio de red en aquellos espacios físicos que la institución haya dispuesto para apoyo al estudiante.
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-
-                    <br><br>
 
                     <p >El equipo de cómputo de la Institución ¿está conectado en red? .
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-
+                    <div class="opcMult">
+                        <select name="select" id="seleccion" onchange="mostrarInput(this)">
+                            <option disabled selected>Selecciona una opción</option>
+                            <option value="si">Sí</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                        <p>En caso afirmativo, diga:</p>
+                        <p >a) Qué equipo de cómputo (servidores y clientes) soporta la red y cuáles son sus características?
+                        </p>
+                        <input type="text" placeholder="Escribe tu respuesta aquí...">
                     <br><br>
 
-                    <p >a) Qué equipo de cómputo (servidores y clientes) soporta la red y cuáles son sus características?
-                    </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
 
-                    <br><br>
 
                     <p >b)¿Hay acceso a Internet a través de la red?
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <div class="opcMult">
+                        <select name="select" id="seleccion" onchange="mostrarInput(this)">
+                            <option disabled selected>Selecciona una opción</option>
+                            <option value="si">Sí</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
 
                     <br><br>
 
                     <p >Para profesores
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <div class="opcMult">
+                        <select name="select" id="seleccion" onchange="mostrarInput(this)">
+                            <option disabled selected>Selecciona una opción</option>
+                            <option value="si">Sí</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
 
                     <br><br>
 
                     <p >Para estudiantes
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <div class="opcMult">
+                        <select name="select" id="seleccion" onchange="mostrarInput(this)">
+                            <option disabled selected>Selecciona una opción</option>
+                            <option value="si">Sí</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
 
                     <br><br>
 
@@ -528,8 +541,6 @@
                 <div class="preguntasCategoria">
                     <p>9.2.8 Deberá haber facilidades de acceso al uso del equipo y manuales, horarios amplios y flexibles para atender la demanda, así como personal capacitado de soporte.  El equipo deberá contar con buen mantenimiento y planes de adecuación a cambios tecnológicos
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-                    <br><br>
 
                     <p >Describir la documentación para los sistemas de hardware y software disponibles para los estudiantes y profesores Explicar cómo los estudiantes y profesores tienen acceso adecuado a la documentación, así como el horario en que está disponible.
                     </p>
@@ -548,20 +559,12 @@
                 <div class="preguntasCategoria">
                     <p >9.2.9 Los Servicios de Cómputo deben ser funcionales y contar con un programa de mantenimiento adecuado.
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-                    <br><br>
 
                     <p >Deben garantizarse los servicios de cómputo al menos en aquellos espacios destinados como apoyo para estudiantes y facilitadores o profesores
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-
-                    <br><br>
 
                     <p >Los horarios de servicio en que se prestan los servicios de cómputo son los siguientes:
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-
-                    <br><br>
 
                     <p >Si hay personal de apoyo indicar en cada caso la cantidad, horarios y funciones que tienen.
                     </p>
@@ -586,19 +589,27 @@
                 <div class="preguntasCategoria">
                     <p >9.2.10 Los Servicios de Cómputo deben contar con reglamentos que garanticen su buen funcionamiento y que estén a disponibilidad de los usuarios.
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-                    <br><br>
 
                     <p >¿Existe un reglamento de los servicios de cómputo?
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-
+                    <div class="opcMult">
+                        <select name="select" id="seleccion" onchange="mostrarInput(this)">
+                            <option disabled selected>Selecciona una opción</option>
+                            <option value="si">Sí</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
                     <br><br>
 
                     <p >En caso afirmativo, ¿se encuentra a disponibilidad de los usuarios?
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-
+                    <div class="opcMult">
+                        <select name="select" id="seleccion" onchange="mostrarInput(this)">
+                            <option disabled selected>Selecciona una opción</option>
+                            <option value="si">Sí</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <div class="Listo">
@@ -613,8 +624,6 @@
                 <div class="preguntasCategoria">
                     <p >9.2.11 Los profesores del programa deben contar con equipo de cómputo que les permita desempeñar adecuadamente su función. En el caso de los profesores de tiempo completo, estos deberán contar con una computadora para su uso exclusivo.
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-                    <br><br>
 
                     <p >Describir las facilidades de cómputo disponibles para los profesores del programa. Incluir los recursos de este tipo disponibles para las oficinas del personal académico.
                     </p>
@@ -635,8 +644,6 @@
                 <div class="preguntasCategoria">
                     <p >9.2.12 Los Servicios de Cómputo deben contar con el soporte técnico adecuado.
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-                    <br><br>
 
                     <p >¿Existen técnicos de administración de sistemas de tiempo completo? ¿Participan estudiantes en el apoyo a las actividades de soporte técnico?
                     </p>
@@ -680,13 +687,16 @@
 
                     <p >¿Existen registros de usuarios de los servicios de cómputo?
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-
-                    <br><br>
 
                     <p >En caso afirmativo indicar el número de usuarios en promedio diario atendidos en los tres últimos períodos escolares
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <div class="opcMult">
+                        <select name="select" id="seleccion" onchange="mostrarInput(this)">
+                            <option disabled selected>Selecciona una opción</option>
+                            <option value="si">Sí</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
 
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -702,8 +712,13 @@
                 <div class="preguntasCategoria">
                     <p >9.2.14 Específicamente, el personal técnico, es suficiente y cuenta con el perfil adecuado para dar soporte, no solo a la infraestructura de telecomunicaciones y redes, sino también para el desarrollo de aplicaciones, incorporación de tecnologías emergentes, administración y hospedaje, desarrollo web, minería de datos, soluciones inteligentes, reingeniería de procesos mediante el uso de las TIC y la administración de la propia plataforma tecnológica y de aprendizaje que soporta el modelo educativo, ya sea a distancia o presencial.
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
-                    <br><br>
+                    <div class="opcMult">
+                        <select name="select" id="seleccion" onchange="mostrarInput(this)">
+                            <option disabled selected>Selecciona una opción</option>
+                            <option value="si">Sí</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
 
                     <p >En cualquier caso, explique brevemente:
                     </p>
@@ -721,7 +736,19 @@
                     <div class="btnListo"><button>Guardar</button></div>
                 </div>
 
-            
+                
+                <script>
+                    function mostrarInput(select) {
+                        var inputContainer = document.getElementById("inputContainer");
+                        var seleccion = select.value.toLowerCase(); // Convierte el valor a minúsculas para ser insensible a mayúsculas y minúsculas
+                        if (seleccion === "si") {
+                            inputContainer.style.display = "block";
+                        } else {
+                            inputContainer.style.display = "none";
+                        }
+                    }
+                    </script>
 </body>
+
 
 </html>
