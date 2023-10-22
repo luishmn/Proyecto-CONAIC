@@ -1,20 +1,14 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "conaic";
-$correo = "luis55@hotmail.com";
 
-// Conectar nuevamente a la base de datos
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
+include "../conexionDB/conexion.php";
+            conecta();
+        
+if ($conexion->connect_error) {
+        die("Conexión fallida: " . $conexion->connect_error);
 }
-
 // Obtener los datos del registro seleccionado
-$sql_usuario = "SELECT * FROM usuario WHERE correo = '$correo'";
-$result_usuario = $conn->query($sql_usuario);
+$sql_usuario = "SELECT * FROM Usuario WHERE correo = '$correo'";
+$result_usuario = $conexion->query($sql_usuario);
 
 if ($result_usuario->num_rows > 0) {
     $row = $result_usuario->fetch_assoc();
@@ -129,5 +123,5 @@ if ($result_usuario->num_rows > 0) {
     echo "No se encontraron registros para el correo seleccionado.";
 }
 
-$conn->close();
+$conexion->close();
 ?>

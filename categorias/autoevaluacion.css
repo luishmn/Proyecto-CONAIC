@@ -123,14 +123,15 @@ lablCat{
 }
 
 .cuadroCate{
-    max-height: 80%; /* Define la altura máxima que deseas antes de que aparezca la barra de desplazamiento */
+    max-height: 70%; /* Define la altura máxima que deseas antes de que aparezca la barra de desplazamiento */
     overflow-y: auto; /* Habilita la barra de desplazamiento vertical cuando sea necesario */
     left: 35%;
+    top: 20%;
     margin-left: 50%;
     position: absolute;
     margin: 0 auto;
     background: #ACD3D9;
-    width: 50%;
+    width: 60%;
     height: auto;
     box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.39);
     padding: 5px;
@@ -148,8 +149,17 @@ lablCat{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.parrafo1{
+    text-align: justify;
+    width: 80%;
+    padding: 5px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .titulo_categoria{
-    padding: 3px;
+    padding: 5px;
     font-size: 24px;
     border-radius: 10px;
     text-align: center;
@@ -170,6 +180,7 @@ lablCat{
 }
 
 .preguntasCategoria input{
+    margin: 5px;
     padding: 5px;
     border: 0;
     width: 80%;
@@ -233,7 +244,7 @@ lablCat{
     background-color: #004AAD;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     border-radius: 15px;
     padding: 5px;
     transition: transform 0.2s;
@@ -257,4 +268,13 @@ lablCat{
     padding: 5px;
     border-radius: 20px;
     border-color: #145070;
+}
+
+.checkB {
+    margin: 7px;
+}
+
+.checkB input{
+    margin: 5px;
+    width: 10%;
 }

@@ -156,7 +156,7 @@
                     $usuario = mysqli_real_escape_string($conexion, $usuario);
                     $contra = mysqli_real_escape_string($conexion, $contra);
 
-                    $consulta = "SELECT nombre, correo, apellidoPat, contrasena, tipo from usuario where correo = '$usuario'";
+                    $consulta = "SELECT nombre, correo, apellidoPat, contrasena, tipo from Usuario where correo = '$usuario'";
                     $resultado = mysqli_query($conexion, $consulta);
 
                     if(!$resultado){
@@ -167,6 +167,7 @@
                             $contraseña_bd = $fila['contrasena'];
                             $nombreUsuario_bd = $fila['nombre'];
                             $tipo_bd = $fila['tipo'];
+                            $correo_bd = $fila['correo'];
 
                             if($contra != $contraseña_bd){
                                 echo "<script>showErrorModal('La contraseña es incorrecta. Vuelva a intentarlo.');</script>";
@@ -174,12 +175,13 @@
                                 
                                 $_SESSION['loggedin'] = true; // Variable de sesión para indicar que el usuario ha iniciado sesión
                                 $_SESSION['username'] = $nombreUsuario_bd; // Almacena el nombre de usuario en la sesión para mandarlo a los principales
+                                $_SESSION['email'] = $correo_bd;
                                 //princpial de jefe o admin
                                 if($tipo_bd == 1) {
-                                    echo '<script>window.location.href = "/Principal Administrador/index.php";</script>';
+                                    echo '<script>window.location.href = "/PrincipalAdministrador/index.php";</script>';
                                     exit;
                                 } else{
-                                    echo '<script>window.location.href = "/Principal usuario/index.php";</script>';
+                                    echo '<script>window.location.href = "/PrincipalUsuario/index.php";</script>';
                                 }
 
                             }
