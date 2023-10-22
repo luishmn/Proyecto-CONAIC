@@ -68,30 +68,36 @@ body{
 }
 
 
-.rectangulo_categorias {
-    width:90%;
-    height: 62px;
-    flex-shrink: 0;
-    font-family: Arial, sans-serif;
-    padding:1px 0 4px 5px;  /*top, 0, bottom, left */
-    background: #73B1C1;
-    margin: 0 auto;
+/*  */
+
+.contenedor_busqueda {
+  width:90%;
+  height: 68px;
+  flex-shrink: 0;
+  font-family: Arial, sans-serif;
+  padding:20px 0 0px 5px;  /*top, 0, bottom, left */
+  background: #73B1C1;
+  margin: 0 auto;
+  border-radius: 40px;
+}
+.rectangulo_busqueda{
+  width: 320px;
+  height: 48px;
+  flex-shrink: 0;
+
+  border-radius: 40px;
+  background: linear-gradient(0deg, #FEFFFF 0%, #FEFFFF 100%), #FEFFFF;
+
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial,sans-serif;
 }
 
-.selected-option {
-  width:89%;
-  height: 40px;
-  flex-shrink: 0;
-  display: block;
-  padding: 10px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  cursor: pointer;
+.input_busqueda{
+  margin-left: 20px;
+  border: none;
+  outline: none;
   font-family: Arial, sans-serif;
-  font-size: 140%;
-  background: #73B1C1;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  margin: 0 auto;
 }
 
 .options {
@@ -106,21 +112,47 @@ body{
   overflow-y: auto;
 }
 
+.selected-value {
+  font-family: Arial, sans-serif;
+}
+
+.selected-option {
+  width:8%;
+  height: 40px;
+  flex-shrink: 0;
+  display: block;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 140%;
+  background: #73B1C1;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+}
+
 .options li {
   padding: 10px;
   cursor: pointer;
   font-family: Arial, sans-serif;
-
 }
 
 .options li:hover {
   background-color: #f0f0f0;
   font-family: Arial, sans-serif;
-
 }
 
-.selected-value {
-  font-family: Arial, sans-serif;
+
+/*  */
+.rectangulo_categorias {
+    width:90%;
+    height: 62px;
+    flex-shrink: 0;
+    font-family: Arial, sans-serif;
+    padding:1px 0 4px 5px;  /*top, 0, bottom, left */
+    background: #73B1C1;
+    margin: 0 auto;
 }
 
 .categoria{
