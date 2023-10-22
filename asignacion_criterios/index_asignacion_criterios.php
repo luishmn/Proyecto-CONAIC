@@ -130,6 +130,9 @@ while ($row = $result->fetch_assoc()) {
         <div class="rectangulo_busqueda">
             <input type="text" id="busqueda" class="input_busqueda"  placeholder="Buscar usuarios">             
         </div>
+        <div class="buscar_icono_fondo">
+            <button class="buscar_icono"></button>
+        </div>
 
         <!-- <div class="rectangulo_usuario"> -->
         <!-- <span class="buscador_usuario">Busca un Usuario</span> -->
