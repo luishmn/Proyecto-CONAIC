@@ -1,6 +1,7 @@
+
 <?php
-    session_set_cookie_params(0); // Vida útil de la sesión indefinida
-    session_start();
+session_set_cookie_params(0); // Vida útil de la sesión indefinida
+session_start(); //Inicia una nueva sesión
 ?>
 
 
@@ -129,8 +130,11 @@
 
     </script>
     
-    
+
+        
+
 <?php
+    
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $usuario = trim($_POST["usuario"]);
         $contra = $_POST["pass"];
@@ -198,6 +202,7 @@
                 }
             }
         }
+ 
     ?>
     
 </body>
@@ -214,4 +219,5 @@
         document.getElementById("formularioContainer").style.display = "none";
     });
 </script>
+
 </html>
