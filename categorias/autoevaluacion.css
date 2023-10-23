@@ -11,6 +11,7 @@ body{
 
 
 .barra-superior{
+    z-index: 100000000000;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #145070; 
     height: 1%;
@@ -24,20 +25,96 @@ body{
 
 }
 
+.fa-home {
+    font-size: 200%; /* Cambia el valor según el tamaño deseado */
+    position: relative;
+    top: -220%;
+}
 
-.L1{
+.fa-home:hover {
+    transform: scale(0.90);
     
-    font-size: 40px;
-    position:absolute;
+}
+
+.enlace-inicio { 
+    text-decoration: none; color: white;
+}
+
+
+
+
+
+.barra-superior .menu_estilo_usuario{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.2s;
+    position: fixed;
+    top: 1%;
+    right: 10%;
+    
+}
+.barra-superior .menu_estilo_usuario img{
+  width: 120px;
+  height: auto;
+  display: block;
+}
+
+.barra-superior .menu_estilo_usuario:hover{
+    transform: scale(0.90);
+}
+
+.barra-superior .menu_estilo_usuario img{
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
+
+
+
+
+
+
+
+.barra-superior .menu_usuario:hover .contenido_del_menu_usuarios {
+    display: block;
+}
+
+.barra-superior .contenido_del_menu_usuarios a:hover {
+    background-color: lightblue;
+}
+
+.texto{
+    font-size: 14px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    text-align: center;
+    width: 90%;
+    position: absolute;
+    top: 47%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: black;
+    
+}
+
+
+
+
+.L1 {
+    font-size: 1.5vw;
+    position: absolute;
     background-color: white;
     color: black;
-    align-items: center;
-    left: 40vw;
+    left: 50%; /* Establece la posición horizontal al centro */
+    transform: translateX(-50%); /* Ajusta la posición para que el centro esté alineado */
     top: 18%;
     padding: 10px;
     border-radius: 80px;
-
+    font-family: Arial, sans-serif;
 }
+
 
 .usu_B{
     padding: 5px;
@@ -47,8 +124,9 @@ body{
     align-items: center;
     left: 80vw;
     top: 30%;
-    font-size: 2vw;
+    font-size: 1.5vw;
     border-radius:30px 30px 30px 30px;
+    font-family: Arial, sans-serif;
 
 }
 .usu_B a{
@@ -85,32 +163,37 @@ body{
     display: flex;
 }
 
-.cuadro2{
-    background-color:#89C7D0 ;
+.cuadro2 {
+    padding: 2px;
+    background-color: #89C7D0;
     margin-left: 2%;
     margin-right: 10%;
     box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.39);
-    border-radius:30px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 30px; /* Borde inferior derecho cero */
+    border-bottom-left-radius: 30px; /* Borde inferior izquierdo cero */
     width: 20%;
     height: auto;
-    
 }
-.cuadro2 label{
+
+
+
+.lablCat {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-left: 2%;
+    margin-right: 10%;
     font-weight: bolder;
     padding: 2px;
-    font-size: 20px;
+    font-size: 120%;
     background-color: #6EA8B7;
-    border-radius:30px 30px 30px 30px;
-    width: 100%;
-    height: 8%;
+    border-radius: 30px 30px 0 0;
+    width: 20%;
+    height: 5%;
     font-family: Arial, Helvetica, sans-serif;
-    text-align:center;
 }
-
-lablCat{
-    margin-bottom: 10px;
-}
-
 
 
 
@@ -123,7 +206,7 @@ lablCat{
 }
 
 .cuadroCate{
-    max-height: 80%; /* Define la altura máxima que deseas antes de que aparezca la barra de desplazamiento */
+    max-height: 75%; /* Define la altura máxima que deseas antes de que aparezca la barra de desplazamiento */
     overflow-y: auto; /* Habilita la barra de desplazamiento vertical cuando sea necesario */
     left: 35%;
     top: 20%;
@@ -131,13 +214,26 @@ lablCat{
     position: absolute;
     margin: 0 auto;
     background: #ACD3D9;
-    width: 50%;
+    width: 60%;
     height: auto;
-    box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.39);
+    box-shadow: 10px 10px 30px 0px rgba(0.39, 0.39, 0, 0);
     padding: 5px;
     border-radius: 30px;
+    overflow-x: hidden;
     
-    
+}
+
+.cuadroCate::-webkit-scrollbar {
+    width: 12px; 
+}
+
+.cuadroCate::-webkit-scrollbar-thumb {
+    background-color: #145070; 
+    border-radius: 6px; 
+}
+
+.cuadroCate::-webkit-scrollbar-track {
+    background-color: #D4E1E3; 
 }
 
 .parrafo{
@@ -149,7 +245,45 @@ lablCat{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.parrafo1 {
+    text-align: left;
+    width: 80%;
+    padding: 5px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.parrafo1:hover{
+    transform: scale(1.1);
+}
+
+.elemetosMenuLateral a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces dentro de .parrafo1 */
+    color: black; /* Cambia el color de los enlaces a tu elección */
+}
+
+
+.fa-arrow-right {
+    font-size: 100%;
+    background-color: rgb(240, 232, 232); 
+    border-radius: 100%; 
+    padding: 5px;
+    color: #145070;
+    float: right;
+    
+}
+
+.fa-arrow-right:hover {
+    transform: scale(1.2);
+    background-color: white;
+}
+
+
 .titulo_categoria{
+    position: relative;
+    left: -2%;
+    width: 102%;
     padding: 5px;
     font-size: 24px;
     border-radius: 10px;
@@ -175,6 +309,16 @@ lablCat{
     padding: 5px;
     border: 0;
     width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+.preguntasCategoria textarea{
+    margin: 5px;
+    padding: 5px;
+    border: 0;
+    width: 96.6%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     border-radius: 20px;
@@ -259,4 +403,13 @@ lablCat{
     padding: 5px;
     border-radius: 20px;
     border-color: #145070;
+}
+
+.checkB {
+    margin: 7px;
+}
+
+.checkB input{
+    margin: 5px;
+    width: 10%;
 }

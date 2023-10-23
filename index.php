@@ -176,13 +176,16 @@
                                 $_SESSION['loggedin'] = true; // Variable de sesión para indicar que el usuario ha iniciado sesión
                                 $_SESSION['username'] = $nombreUsuario_bd; // Almacena el nombre de usuario en la sesión para mandarlo a los principales
                                 $_SESSION['email'] = $correo_bd;
+                                $_SESSION['tipo'] = $tipo_bd;
                                 //princpial de jefe o admin
+                                
                                 if($tipo_bd == 1) {
                                     echo '<script>window.location.href = "/PrincipalAdministrador/index.php";</script>';
                                     exit;
                                 } else{
                                     echo '<script>window.location.href = "/PrincipalUsuario/index.php";</script>';
                                 }
+                                
 
                             }
                             /*si el usuario no está verificado no entrar al sistema*/

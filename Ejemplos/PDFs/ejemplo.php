@@ -24,9 +24,11 @@
         /* Estilo para el botón de cierre */
         .close {
             position: absolute;
-            top: 10px;
-            right: 10px;
+            top: 1px;
+            right: 1px;
             cursor: pointer;
+            font-size: 60px; /* Tamaño de fuente más grande */
+            padding: 5px; /* Espaciado alrededor del botón */
         }
         /* Estilo para la miniatura de PDF */
         .pdf-thumbnail {
@@ -57,9 +59,6 @@
     // Ruta de la carpeta que contiene los archivos PDF
     $pdfFolder = 'pdfs';
 
-    // Ruta de la carpeta para las miniaturas
-    $thumbnailFolder = 'thumbnails';
-
     // Consulta para obtener los nombres de los PDFs
     $sql = "SELECT clavePDF FROM subcriteriospdf";
     $resultado = $conexion->query($sql);
@@ -68,37 +67,14 @@
         while ($fila = $resultado->fetch_assoc()) {
             $nombre_pdf = $fila["clavePDF"];
             $pdfPath = "$pdfFolder/$nombre_pdf";
-            $thumbnailPath = "$thumbnailFolder/$nombre_pdf.jpg";
             
-            // Genera una miniatura si aún no existe
-            if (!file_exists($thumbnailPath)) {
-                generateThumbnail($pdfPath, $thumbnailPath);
-            }
-
-            echo "<div class='pdf-thumbnail' onclick='openModal(\"$pdfPath\");'><img src='$thumbnailPath' alt='$nombre_pdf'></div>";
+            echo "<div class='pdf-thumbnail' onclick='openModal(\"$pdfPath\");'><iframe src='$pdfPath'></iframe></div>";
         }
     } else {
         echo "No se encontraron PDFs en la base de datos.";
     }
 
     $conexion->close();
-
-    // Función para generar una miniatura de PDF utilizando Imagick
-    function generateThumbnail($pdfPath, $thumbnailPath) {
-        if (extension_loaded('imagick')) {
-            try {
-                $imagick = new Imagick();
-                $imagick->readImage("$pdfPath[0]");  // Lee solo la primera página del PDF
-
-                $imagick->setImageFormat('jpg');
-                $imagick->writeImage($thumbnailPath);
-                $imagick->clear();
-                $imagick->destroy();
-            } catch (Exception $e) {
-                echo 'Error al generar miniatura: ' . $e->getMessage();
-            }
-        }
-    }
     ?>
 
     <!-- Ventana modal para previsualizar PDF -->

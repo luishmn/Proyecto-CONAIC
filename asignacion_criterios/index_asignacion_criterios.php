@@ -126,26 +126,36 @@ while ($row = $result->fetch_assoc()) {
         </a>
     </nav>
 
-    <div class="rectangulo_usuario">
-    <span class="selected-option">Selecciona un Usuario</span>
-    <ul class="options">
-        <?php
-      
-        $query = "SELECT nombre, apellidoPat, cargo FROM Usuario";
-        $result = $conexion->query($query);
+    <div class="contenedor_busqueda">
+        <div class="rectangulo_busqueda">
+            <input type="text" id="busqueda" class="input_busqueda"  placeholder="Buscar usuarios">             
+        </div>
+        <div class="buscar_icono_fondo">
+            <button class="buscar_icono"></button>
+        </div>
 
-        if ($result->num_rows > 0) {
-            while ($row = $result->fetch_assoc()) {
-                $nombreUsuario = $row['nombre'];
-                $apellidoPatUsuario = $row['apellidoPat'];
-                $cargoUsuario = $row['cargo'];
-                echo '<li data-nombre="' . $nombreUsuario . '" data-apellidoPat="' . $apellidoPatUsuario . '" data-cargo="' . $cargoUsuario . '">' . $nombreUsuario . ' ' . $apellidoPatUsuario . ' (' . $cargoUsuario . ')</li>';
-            }
-        }
-        ?>
-    </ul>
-    <div class="selected-value"></div>
-</div>
+        <!-- <div class="rectangulo_usuario"> -->
+        <!-- <span class="buscador_usuario">Busca un Usuario</span> -->
+        <ul class="options" id="options">
+            <?php
+            
+                $query = "SELECT nombre, apellidoPat, cargo FROM Usuario";
+                $result = $conexion->query($query);
+
+                if ($result->num_rows > 0) {
+                    while ($row = $result->fetch_assoc()) {
+                        $nombreUsuario = $row['nombre'];
+                        $apellidoPatUsuario = $row['apellidoPat'];
+                        $cargoUsuario = $row['cargo'];
+                        echo '<li id="lista" data-nombre="' . $nombreUsuario . '" data-apellidoPat="' . $apellidoPatUsuario . '" data-cargo="' . $cargoUsuario . '">' . $nombreUsuario . ' ' . $apellidoPatUsuario . ' (' . $cargoUsuario . ')</li>';
+                    }
+                }
+            ?>
+        </ul>
+            <div class="selected-value"></div>
+        <!-- </div> -->
+    </div>
+
 
 
 
