@@ -48,7 +48,7 @@
                 </button>
                 <div class="contenido_del_menu_usuarios">
                     <a href="pagina_emergente.html">Configuración</a>
-                    <a href="pagina_emergente.html">Salir de la cuenta</a>
+                    <a href="/PrincipalUsuario/deslogear.php">Salir de la cuenta</a>
                 </div>
             </div>
 

@@ -37,6 +37,7 @@
                 <div class="contenido_del_menu_usuarios">
                     <a href="xxxxxx.html">Perfil</a>
                     <a href="xxxxxx.html">Ajustes</a>
+                    <a href="deslogear.php">Salir de la cuenta</a>
                 </div>
             </div>
 
