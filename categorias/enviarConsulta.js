@@ -3,7 +3,12 @@ document.addEventListener('DOMContentLoaded', function() {
     consultarAsignadas();
 
     function consultarAsignadas() {
-        //var correo = "oscar92623@gmail.com";
+        var enlaceInicio = document.getElementById("enviarInicio");
+        var cuadroCate = document.querySelector(".cuadroCate");
+
+        if (tipoUsuario === "0"){
+            var nuevoEnlace = "../PrincipalUsuario/index.php"; // Cambia esto a tu URL deseada
+            enlaceInicio.href = nuevoEnlace;
         var correo = correoUsuario;
 
         // Realiza la solicitud AJAX.
@@ -24,9 +29,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (xhr.status === 200) {
                     asignadas = xhr.responseText;
                     console.log(asignadas);
+
                     longitud =asignadas.length;
+                    
                 
                     listaIDsAMostrar=[];
+
 
                     var idCad =""
                     for (var i=0; i < longitud; i++){
@@ -34,6 +42,33 @@ document.addEventListener('DOMContentLoaded', function() {
                             console.log("corchete");
                         }
                         else if (asignadas[i]===","){
+
+                            
+                            if (idCad === "subanexo1"){
+                                idCad = "11.1.1";
+                            }
+                            if (idCad === "subanexo2"){
+                                idCad = "11.2.1";
+                            }
+                            if (idCad === "subanexo3"){
+                                idCad = "11.3.1";
+                            }
+                            if (idCad === "i"){
+                                idCad = "1.10.1";
+                            }
+                            if (idCad === "ii"){
+                                idCad = "1.10.2";
+                            }
+                            if (idCad === "iii"){
+                                idCad = "1.10.3";
+                            }
+                            if (idCad === "iv"){
+                                idCad = "1.10.4";
+                            }
+                            if (idCad === "v"){
+                                idCad = "1.10.5";
+                            }
+
                             listaIDsAMostrar.push(idCad);
                             idCad ="";
                         }
@@ -41,10 +76,42 @@ document.addEventListener('DOMContentLoaded', function() {
                             idCad = idCad + asignadas[i];
                         }
                     }
+
+                    if (idCad === "subanexo1"){
+                        idCad = "11.1.1";
+                    }
+                    if (idCad === "subanexo2"){
+                        idCad = "11.2.1";
+                    }
+                    if (idCad === "subanexo3"){
+                        idCad = "11.3.1";
+                    }
+                    if (idCad === "i"){
+                        idCad = "1.10.1";
+                    }
+                    if (idCad === "ii"){
+                        idCad = "1.10.2";
+                    }
+                    if (idCad === "iii"){
+                        idCad = "1.10.3";
+                    }
+                    if (idCad === "iv"){
+                        idCad = "1.10.4";
+                    }
+                    if (idCad === "v"){
+                        idCad = "1.10.5";
+                    }
+
                     listaIDsAMostrar.push(idCad);
                     idCad ="";
 
                     console.log(listaIDsAMostrar);
+
+                    listaID_SC=[]
+                    for (var i=0; i < listaIDsAMostrar.length; i++){
+                        listaID_SC.push("SC_"+listaIDsAMostrar[i]);
+                    }
+                    console.log(listaID_SC);
 
 
 
@@ -79,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                         var id = elemento.id;
                         //alert (lista);
-                        if (listaIDsAMostrar.includes(id)) {
+                        if (listaID_SC.includes(id)) {
                             elemento.style.display = "block"; // Muestra el elemento
                         } else {
                             elemento.style.display = "none"; // Oculta el elemento
@@ -135,6 +202,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         var elementosAMostrar = ["4.1.1"];
 
-    
+    }
+    else{
+        var nuevoEnlace = "../PrincipalAdministrador/index.php"; // Cambia esto a tu URL deseada
+            enlaceInicio.href = nuevoEnlace;
+            cuadroCate.style.maxHeight = "100%";
+    }
     }
 });
