@@ -135,11 +135,6 @@
                 <br>
             </div>
         </div>
-
-<<<<<<< HEAD
-=======
-
->>>>>>> e5f7f96d54a1dc0e9c8f867e9a5a77df0b734e01
         <div class="cuadroCate">
         
             <div class="titulo_categoria">Categoría 8: </div>
@@ -183,13 +178,10 @@
 
             <div class="preguntasCategoria" id="SC_8.1.3">
                 <p>8.1.3 Líderes vinculados a las líneas de investigación que posean los grados académicos pertinentes.</p>
-<<<<<<< HEAD
                 <p>Haga una relación de los líderes de proyectos vinculados a las líneas de investigación, e indique el nivel de los grados académicos que tiene cada uno (maestría, doctorado)</p>
                 <input type="text" placeholder="Escribe tu respuesta aquí...">
                 <p>En caso afirmativo proporcione una copia de los documentos</p>
-=======
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
->>>>>>> e5f7f96d54a1dc0e9c8f867e9a5a77df0b734e01
+
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
                     <button>Seleccionar archivos</button>
@@ -208,11 +200,6 @@
 
             <div class="preguntasCategoria" id="SC_8.2.1">
                 <p>8.2.1 ¿Se asignan recursos presupuestales para la investigación y/o el desarrollo?</p>
-<<<<<<< HEAD
-                
-=======
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
->>>>>>> e5f7f96d54a1dc0e9c8f867e9a5a77df0b734e01
                 <div class="opcMult"°>
                     <select name="select" id="seleccion">
                         <option disabled selected>Selecciona una opción</option>
@@ -235,15 +222,7 @@
                 <p>8.2.2 Es recomendable que la institución cuente con un programa de vinculación con el sector productivo o de servicios e investigación, con las siguientes características:  Un grupo de personal académico de carrera, integrado para desarrollar actividades de vinculación e investigación, constituido por un mínimo de dos personas con posgrado en el área de la especialidad del programa, preferentemente con el grado de doctor, y al menos tres profesores, profesionistas o estudiantes. </p>
                 <p>Una infraestructura suficiente y pertinente en cuanto a espacios y equipos para el desarrollo de la vinculación con el sector productivo o de servicios y la investigación.</p>
                 <p>Incluya una relación de los espacios físicos y equipos exclusivamente para la investigación. Indique cuántos investigadores utilizan esta infraestructura.</p>
-=======
-                <div class="btnListo"><button>Guardar</button></div>
-            </div>
-
-            <div class="preguntasCategoria" id="SC_8.2.2">
-                <p>8.2.2 Es recomendable que la institución cuente con un programa de vinculación con el sector productivo o de servicios e investigación, con las siguientes características:  Un grupo de personal académico de carrera, integrado para desarrollar actividades de vinculación e investigación, constituido por un mínimo de dos personas con posgrado en el área de la especialidad del programa, preferentemente con el grado de doctor, y al menos tres profesores, profesionistas o estudiantes.<br>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
-                <p>Una infraestructura suficiente y pertinente en cuanto a espacios y equipos para el desarrollo de la vinculación con el sector productivo o de servicios y la investigación.</p>
->>>>>>> e5f7f96d54a1dc0e9c8f867e9a5a77df0b734e01
+                
                 <input type="text" placeholder="Escribe tu respuesta aquí...">
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
