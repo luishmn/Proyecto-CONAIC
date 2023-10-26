@@ -137,7 +137,7 @@
         </div>
 
         <div class="cuadroCate">
-            <div class="titulo_categoria">Categoría 4: Ealuación del aprendizaje</div>  
+            <div class="titulo_categoria">Categoría 4: Evaluación del aprendizaje</div>  
             <div>
                 <div class="parrafo" id="4.1">
                     <p>
