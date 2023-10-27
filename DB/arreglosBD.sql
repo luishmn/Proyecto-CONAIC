@@ -1,6 +1,6 @@
-USE CONAIC
-
 UPDATE `subcriterio` SET `nombre` = 'Deben existir procedimientos que garanticen la calidad de los trabajos de titulación en el que participen las academias o algún grupo colegiado designado para tal fin y con participación externa.' WHERE `subcriterio`.`claveSubCriterio` = '2.5.3';
+
+DELETE FROM `subcriterio` WHERE `subcriterio`.`claveSubCriterio` = '3.7.4';
 
 INSERT INTO `subcriterio` (`nombre`, `claveSubCriterio`) VALUES ('Debe existir un procedimiento permanente de evaluación curricular.', '3.7.4');
 
