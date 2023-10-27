@@ -680,6 +680,20 @@
                 </div> 
                 <p>Describa cómo se tiene acceso a la información de los programas:</p>
                 <input type="text" placeholder="Escribe tu respuesta aquí...">
+
+                <div class="Listo">
+                    <img src="/imagenes/pdf.png" alt="">
+                    <button>Seleccionar archivos</button>
+                </div>
+                <div class="btnListo"><button>Guardar</button></div>
+                </div>
+            </div>
+
+            <div class="preguntasCategoria" id="SC_3.8.3">
+                <p>3.8.3 Deben existir mecanismos para la promoción externa 
+                    (visitas a planteles de nivel medio superior, trípticos, difusión 
+                    en medios masivos de comunicación, etc.) del programa.</p>
+
                 <p>¿Existen mecanismos para la promoción externa del programa?</p>
                 <div class="opcMult"°>
                     <select name="select" id="seleccion">
@@ -688,6 +702,15 @@
                         <option value="No">No</option>
                     </select>
                 </div> 
+
+                <p>En caso afirmativo indique cuales son:</p>
+                <input type="text" placeholder="Escribe tu respuesta aquí...">
+
+                <p>En caso afirmativo proporcione una copia o copias de los 
+                    documentos (puedes subir más de un archivo).
+                </p>
+
+
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
                     <button>Seleccionar archivos</button>
