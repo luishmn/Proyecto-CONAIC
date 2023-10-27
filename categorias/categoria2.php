@@ -41,7 +41,7 @@
         $(document).ready(function() {
             $.ajax({
                 type: "GET",
-                url: "recuperar_respuestas.php",
+                url: "recuperar_respuestas2.php",
                 success: function(data) {
                     var respuestas = JSON.parse(data); // Parsea el JSON como una matriz
 
@@ -632,13 +632,109 @@
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                
+
+                <div class="btn-modal1">Subir PDDs</div>
+                <!--Fin de Boton-->
+
+                
+                <!--Ventana Modal-->
+                <input type="checkbox" id="btn-modal1">
+                    <div class="container-modal1">
+                        <div class="content-modal1">
+                            <h2>Subir tu PDF</h2>
+                            <form method="POST" action="subir_pdf.php" enctype="multipart/form-data">
+                                <input type="hidden" name="claveSubCriterio" value="1.1.1"> <!-- Clave fija -->
+                                <label for="archivo">Selecciona un archivo PDF:</label>
+                                <input type="file" name="archivo" accept=".pdf">
+                                <input type="submit" value="Cargar PDF">
+                                <label for="btn-modal1">Cerrar</label>
+                            </form>                            
+                        </div>
+                    </div>
+                    <label class="boton_cerrar1" for="btn-modal1" class="cerrar-modal1"></label>
+                    </div>
+                    <!--Fin de Ventana Modal-->
+
+                    <!-- Botón -->
+                    <div class="boton-modal2">
+                        <label for="btn-modal2">Mostrar PDFs</label>
+                    </div>
+
+                    <!-- Ventana Modal -->
+                    <input type="checkbox" id="btn-modal2">
+                    <div class="container-modal2">
+                        <div class="content-modal2">
+                            <div class="Cuadro">
+                            <table>
+                            <thead>
+                                <tr>
+                                    <th>Nombre del PDF</th>
+                                    <th>clavePDF</th>
+                                    <th>Acción</th>
+                                </tr>
+                            
+                        
+                            </thead>
+                            <tbody>
+                            <?php
+                                // Conexión a la base de datos (reemplaza con tus credenciales)
+                                $servername = "localhost";
+                                $username = "root";
+                                $password = "";
+                                $dbname = "fabiola";
+
+                                $conexion = new mysqli($servername, $username, $password, $dbname);
+
+                                if ($conexion->connect_error) {
+                                    die("Error de conexión: " . $conexion->connect_error);
+                                }
+
+                                // Consulta para obtener los PDFs desde la base de datos
+                                $sql = "SELECT id, nombrePDF, clavePDF FROM subcriteriospdf WHERE claveSubCriterio='1.1.1'";
+                                $resultado = $conexion->query($sql);
+
+                                if ($resultado->num_rows > 0) {
+                                    while ($fila = $resultado->fetch_assoc()) {
+                                        $pdfName = $fila["nombrePDF"];
+                                        $pdfId = $fila["id"];
+                                        $pdfClave=$fila["clavePDF"];
+                                        echo "<tr>";
+                                        echo "<td>$pdfName</td>";
+                                        echo "<td>$pdfClave</td>";
+                                        echo "<td>";
+                                        echo "<a href='abrir_pdf.php?clavePDF=$pdfClave' target='_blank'>Abrir PDF</a>";
+                                        echo " | ";
+                                        echo "<a href='eliminar_pdf.php?clavePDF=$pdfClave'>Eliminar PDF</a>";
+                                        echo "</td>";
+                                        echo "</tr>";
+                                    }
+                                } else {
+                                    echo "<tr><td colspan='2'>No se encontraron PDFs en la base de datos.</td></tr>";
+                                }
+
+                                $conexion->close();
+                                ?>
+                            </tbody>
+                            </table>
+
+                            </div>
+                            <label class="boton_cerrar" for="btn-modal2">Cerrar</label>
+                        </div>
+                        <label for="btn-modal2" class="cerrar-modal2"></label>
                     </div>
                     <div class="btnListo"><button id="guardarRespuesta1">Guardar</button></div>
                 </div>
                 
+
+
+
+
+
+
+
+
             <div>
                 <div class="parrafo" id="2.2">
                     <p>
@@ -661,11 +757,101 @@
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                
+
+                <div class="btn-modal1">Subir PDDs</div>
+                <!--Fin de Boton-->
+
+                
+                <!--Ventana Modal-->
+                <input type="checkbox" id="btn-modal1">
+                    <div class="container-modal1">
+                        <div class="content-modal1">
+                            <h2>Subir tu PDF</h2>
+                            <form method="POST" action="subir_pdf.php" enctype="multipart/form-data">
+                                <input type="hidden" name="claveSubCriterio" value="1.1.1"> <!-- Clave fija -->
+                                <label for="archivo">Selecciona un archivo PDF:</label>
+                                <input type="file" name="archivo" accept=".pdf">
+                                <input type="submit" value="Cargar PDF">
+                                <label for="btn-modal1">Cerrar</label>
+                            </form>                            
+                        </div>
+                    </div>
+                    <label class="boton_cerrar1" for="btn-modal1" class="cerrar-modal1"></label>
+                    </div>
+                    <!--Fin de Ventana Modal-->
+
+                    <!-- Botón -->
+                    <div class="boton-modal2">
+                        <label for="btn-modal2">Mostrar PDFs</label>
+                    </div>
+
+                    <!-- Ventana Modal -->
+                    <input type="checkbox" id="btn-modal2">
+                    <div class="container-modal2">
+                        <div class="content-modal2">
+                            <div class="Cuadro">
+                            <table>
+                            <thead>
+                                <tr>
+                                    <th>Nombre del PDF</th>
+                                    <th>clavePDF</th>
+                                    <th>Acción</th>
+                                </tr>
+                            
+                        
+                            </thead>
+                            <tbody>
+                            <?php
+                                // Conexión a la base de datos (reemplaza con tus credenciales)
+                                $servername = "localhost";
+                                $username = "root";
+                                $password = "";
+                                $dbname = "fabiola";
+
+                                $conexion = new mysqli($servername, $username, $password, $dbname);
+
+                                if ($conexion->connect_error) {
+                                    die("Error de conexión: " . $conexion->connect_error);
+                                }
+
+                                // Consulta para obtener los PDFs desde la base de datos
+                                $sql = "SELECT id, nombrePDF, clavePDF FROM subcriteriospdf WHERE claveSubCriterio='1.1.1'";
+                                $resultado = $conexion->query($sql);
+
+                                if ($resultado->num_rows > 0) {
+                                    while ($fila = $resultado->fetch_assoc()) {
+                                        $pdfName = $fila["nombrePDF"];
+                                        $pdfId = $fila["id"];
+                                        $pdfClave=$fila["clavePDF"];
+                                        echo "<tr>";
+                                        echo "<td>$pdfName</td>";
+                                        echo "<td>$pdfClave</td>";
+                                        echo "<td>";
+                                        echo "<a href='abrir_pdf.php?clavePDF=$pdfClave' target='_blank'>Abrir PDF</a>";
+                                        echo " | ";
+                                        echo "<a href='eliminar_pdf.php?clavePDF=$pdfClave'>Eliminar PDF</a>";
+                                        echo "</td>";
+                                        echo "</tr>";
+                                    }
+                                } else {
+                                    echo "<tr><td colspan='2'>No se encontraron PDFs en la base de datos.</td></tr>";
+                                }
+
+                                $conexion->close();
+                                ?>
+                            </tbody>
+                            </table>
+
+                            </div>
+                            <label class="boton_cerrar" for="btn-modal2">Cerrar</label>
+                        </div>
+                        <label for="btn-modal2" class="cerrar-modal2"></label>
                     </div>
                     <div class="btnListo"><button id="guardarRespuesta2">Guardar</button></div>
+
+
                 </div>
 
 
@@ -684,11 +870,102 @@
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                
+
+                <div class="btn-modal1">Subir PDDs</div>
+                <!--Fin de Boton-->
+
+                
+                <!--Ventana Modal-->
+                <input type="checkbox" id="btn-modal1">
+                    <div class="container-modal1">
+                        <div class="content-modal1">
+                            <h2>Subir tu PDF</h2>
+                            <form method="POST" action="subir_pdf.php" enctype="multipart/form-data">
+                                <input type="hidden" name="claveSubCriterio" value="1.1.1"> <!-- Clave fija -->
+                                <label for="archivo">Selecciona un archivo PDF:</label>
+                                <input type="file" name="archivo" accept=".pdf">
+                                <input type="submit" value="Cargar PDF">
+                                <label for="btn-modal1">Cerrar</label>
+                            </form>                            
+                        </div>
+                    </div>
+                    <label class="boton_cerrar1" for="btn-modal1" class="cerrar-modal1"></label>
+                    </div>
+                    <!--Fin de Ventana Modal-->
+
+                    <!-- Botón -->
+                    <div class="boton-modal2">
+                        <label for="btn-modal2">Mostrar PDFs</label>
+                    </div>
+
+                    <!-- Ventana Modal -->
+                    <input type="checkbox" id="btn-modal2">
+                    <div class="container-modal2">
+                        <div class="content-modal2">
+                            <div class="Cuadro">
+                            <table>
+                            <thead>
+                                <tr>
+                                    <th>Nombre del PDF</th>
+                                    <th>clavePDF</th>
+                                    <th>Acción</th>
+                                </tr>
+                            
+                        
+                            </thead>
+                            <tbody>
+                            <?php
+                                // Conexión a la base de datos (reemplaza con tus credenciales)
+                                $servername = "localhost";
+                                $username = "root";
+                                $password = "";
+                                $dbname = "fabiola";
+
+                                $conexion = new mysqli($servername, $username, $password, $dbname);
+
+                                if ($conexion->connect_error) {
+                                    die("Error de conexión: " . $conexion->connect_error);
+                                }
+
+                                // Consulta para obtener los PDFs desde la base de datos
+                                $sql = "SELECT id, nombrePDF, clavePDF FROM subcriteriospdf WHERE claveSubCriterio='1.1.1'";
+                                $resultado = $conexion->query($sql);
+
+                                if ($resultado->num_rows > 0) {
+                                    while ($fila = $resultado->fetch_assoc()) {
+                                        $pdfName = $fila["nombrePDF"];
+                                        $pdfId = $fila["id"];
+                                        $pdfClave=$fila["clavePDF"];
+                                        echo "<tr>";
+                                        echo "<td>$pdfName</td>";
+                                        echo "<td>$pdfClave</td>";
+                                        echo "<td>";
+                                        echo "<a href='abrir_pdf.php?clavePDF=$pdfClave' target='_blank'>Abrir PDF</a>";
+                                        echo " | ";
+                                        echo "<a href='eliminar_pdf.php?clavePDF=$pdfClave'>Eliminar PDF</a>";
+                                        echo "</td>";
+                                        echo "</tr>";
+                                    }
+                                } else {
+                                    echo "<tr><td colspan='2'>No se encontraron PDFs en la base de datos.</td></tr>";
+                                }
+
+                                $conexion->close();
+                                ?>
+                            </tbody>
+                            </table>
+
+                            </div>
+                            <label class="boton_cerrar" for="btn-modal2">Cerrar</label>
+                        </div>
+                        <label for="btn-modal2" class="cerrar-modal2"></label>
                     </div>
                     <div class="btnListo"><button id="guardarRespuesta3">Guardar</button></div>
+
+
+
                 </div>
 
                 <div class="preguntasCategoria" id="SC_2.2.3">

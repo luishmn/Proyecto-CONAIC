@@ -29,32 +29,32 @@
     <header>
         <div class="barra-superior">
 
-            <div class="menu_usuario">
+            <<div class="menu_usuario">
                 <button class="menu_estilo_usuario">
-                    <img src="usuario.png" alt="Usuario"> 
-                    <div class="texto"> <?php echo $nombreUsuario; ?></div>
+                    <img src="Usuario.png" alt="Usuario"> 
+                    <div class="texto"> <?php echo $nombre; ?> </div>
                 </button>
                 <div class="contenido_del_menu_usuarios">
-                    <a href="xxxxxx.html">Perfil</a>
-                    <a href="xxxxxx.html">Ajustes</a>
-                    <a href="deslogear.php">Salir de la cuenta</a>
+                    <a>Salir de la cuenta</a>
                 </div>
             </div>
-
 
         </div>
     </header>
 
     <div class="container">
-    <div class="logo">
-      <img src="logo_CONAIC_letras.png" alt="Logo">
+        <div class="logo">
+            <img src="logo_CONAIC_letras.png" alt="Logo">
+        </div>
     </div>
-  </div>
-  <div class="buttons">
-    <button><img class="button-image small" src="seguimiento.png" alt="Botón 1"></button>
-    <button><img class="button-image large" src="autoevaluacion.png" alt="Botón 2"></button>
-  </div>
-  </div>
-  <img class="img1" src="logo_Fondo.png" alt="logo">
+    <div class="buttons">
+    <a href="xxxxxx.html">
+        <button><img class="button-image small" src="seguimiento.png" alt="Botón 1"></button>
+    </a>
+    <a href="xxxxxx.html">
+        <button><img class="button-image large" src="autoevaluacion.png" alt="Botón 2"></button>
+    </a>
+</div>
+    <img class="img1" src="logo_Fondo.png" alt="logo">
 </body>
 </html>
