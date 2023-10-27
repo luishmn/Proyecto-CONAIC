@@ -1,21 +1,19 @@
 <?php
 // Conectar a la base de datos
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "conaic";
+// Conectar a la base de datos
+include "../conexionDB/conexion.php";
+    conecta();
 
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-    die("Error de conexión: " . $conn->connect_error);
-}
+    // Verifica la conexión
+    if ($conexion->connect_error) {
+        die("Error de conexión: " . $conexion->connect_error);
+    }
 
 // Obtener el arreglo serializado y deserializarlo
 $arreglo_serializado = $_POST["arre"];
 $arreglo = json_decode($arreglo_serializado, true);
 
 $tamano = count($arreglo);
-
 
 for ($i = 0; $i < $tamano; $i += 2) {
     // Mostrar en la consola el par de elementos (claveRespuesta y respuesta)
@@ -27,15 +25,16 @@ for ($i = 0; $i < $tamano; $i += 2) {
     VALUES ('$respuesta', 1, '$claveRespuesta')
     ON DUPLICATE KEY UPDATE respuesta = VALUES(respuesta)";
     
-    if ($conn->query($sql) === TRUE) {
+    if ($conexion->query($sql) === TRUE) {
         echo "Respuesta guardada con éxito para Clave: $claveRespuesta, Respuesta: $respuesta<br>";
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        echo "Error: " . $sql . "<br>" . $conexion->error;
     }
 }
 
 // Cerrar la conexión a la base de datos
-$conn->close();
+$conexion->close();
 
 echo "Respuestas guardadas con éxito";
 ?>
+
