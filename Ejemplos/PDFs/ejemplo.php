@@ -12,14 +12,16 @@
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.7);
+        
         }
         .modal-content {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: white;
+            background-color: #ACD3D9;
             padding: 20px;
+            border-radius:30px;
         }
         /* Estilo para el botón de cierre */
         .close {

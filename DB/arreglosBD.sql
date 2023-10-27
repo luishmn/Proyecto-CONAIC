@@ -47,3 +47,5 @@ INSERT INTO `criteriossubcriterio` (`claveCriterio`, `claveSubCriterio`) VALUES 
 
 INSERT INTO `subcriterio` (`nombre`, `claveSubCriterio`) VALUES ('Tabla de cumplimiento de competencias transversales. Considerar la definición y justificación\r\ncompetencias iniciales, de desarrollo y de evaluación.  Rellenar tabla competencias transversales. Etapa\r\nde planificación del modelo de competencias.\r\n', '3.9.1'), ('Tabla de cumplimiento de competencias específicas. Considerar la definición y justificación\r\ncompetencias iniciales, de desarrollo y de evaluación. Rellenar tabla competencias específicas. Etapa de\r\nplanificación del modelo de competencias.\r\n', '3.9.2');
 INSERT INTO `criteriossubcriterio` (`claveCriterio`, `claveSubCriterio`) VALUES ('3.9', '3.9.1'), ('3.9', '3.9.2');
+
+ALTER TABLE `subcriteriospdf` ADD `nombrePDF` TEXT NOT NULL AFTER `clavePDF`;

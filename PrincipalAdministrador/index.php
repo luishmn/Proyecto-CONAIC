@@ -36,7 +36,7 @@
                 </button>
                 <div class="contenido_del_menu">
                     <a href="../visualizacion_usuario/index_visual_usu.php">Usuarios</a>
-                    <a href="pagina_emergente.html">Asignar criterios</a>
+                    <a href="../asignacion_criterios/index_asignacion_criterios.php">Asignar criterios</a>
                 </div>
             </div>
 
@@ -44,10 +44,9 @@
             <div class="menu_usuario">
                 <button class="menu_estilo_usuario">
                     <img src="imagenes/boton_usuario.png" alt="Usuario"> 
-                    <div class="texto"> <?php echo $nombreUsuario; ?> </div>
+                    <div class="texto"> <?php echo $nombre; ?> </div>
                 </button>
                 <div class="contenido_del_menu_usuarios">
-                    <a href="pagina_emergente.html">Configuración</a>
                     <a href="/PrincipalUsuario/deslogear.php">Salir de la cuenta</a>
                 </div>
             </div>
