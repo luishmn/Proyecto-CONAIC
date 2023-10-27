@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="autoevaluacion.css">
     <script src="enviarConsulta.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
     <script>
@@ -408,8 +409,14 @@
                         arre: JSON.stringify(arreglo) // Debe coincidir con el nombre del índice esperado en el servidor
                     },
                     success: function(response) {
-                        alert("Respuestas guardadas con éxito");
-                        console.log(response);
+                        Swal.fire({
+                            title: 'Guardado correctamente',
+                            icon: 'success',
+                            confirmButtonText: 'Cerrar',
+                            confirmButtonColor: '#197B7A' 
+                        })
+                        // alert("Respuestas guardadas con éxito");
+                        // console.log(response);
                     }
                 });
 
