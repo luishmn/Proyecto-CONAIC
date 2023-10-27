@@ -16,6 +16,7 @@ $arreglo = json_decode($arreglo_serializado, true);
 
 $tamano = count($arreglo);
 
+
 for ($i = 0; $i < $tamano; $i += 2) {
     // Mostrar en la consola el par de elementos (claveRespuesta y respuesta)
     $claveRespuesta = $arreglo[$i];

@@ -25,6 +25,7 @@ foreach ($claves as $clave) {
     
     // Ejecutar la consulta
     $result = $conn->query($sql);
+    
 
     if ($result === false) {
         die("Error en la consulta: " . $conn->error);

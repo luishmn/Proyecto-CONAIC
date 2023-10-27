@@ -15,6 +15,7 @@
 
     $nombre = substr($nombreUsuario, 0, 10);
     
+    
 
 ?>
 

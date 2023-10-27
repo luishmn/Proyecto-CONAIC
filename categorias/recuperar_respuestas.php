@@ -49,6 +49,7 @@ foreach ($claves as $clave) {
         $respuesta = strtolower(trim($row['respuesta']));
     }
 
+    
     // Agregar la respuesta al array de respuestas
     $respuestas[] = $clave;
     $respuestas[] = $respuesta;
