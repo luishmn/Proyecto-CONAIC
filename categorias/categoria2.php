@@ -14,6 +14,16 @@
     }
 
     $nombre = substr($nombreUsuario, 0, 10);
+
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "conaic";
+
+    $conexion = new mysqli($servername, $username, $password, $dbname);
+    if ($conexion->connect_error) {
+        die("Error de conexión: " . $conexion->connect_error);
+    }
     
 
 ?>
@@ -34,6 +44,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
 
     <script>
 
@@ -581,7 +592,6 @@
 
                     <p>El aspirante al programa debe presentar examen de admisión?
 
-                    
                     </p>
                     <div class="opcMult" °>
                         <select name="select" id="RS2-1-1A3">
@@ -680,19 +690,7 @@
                             </thead>
                             <tbody>
                             <?php
-                                // Conexión a la base de datos (reemplaza con tus credenciales)
-                                $servername = "localhost";
-                                $username = "root";
-                                $password = "";
-                                $dbname = "fabiola";
 
-                                $conexion = new mysqli($servername, $username, $password, $dbname);
-
-                                if ($conexion->connect_error) {
-                                    die("Error de conexión: " . $conexion->connect_error);
-                                }
-
-                                // Consulta para obtener los PDFs desde la base de datos
                                 $sql = "SELECT id, nombrePDF, clavePDF FROM subcriteriospdf WHERE claveSubCriterio='1.1.1'";
                                 $resultado = $conexion->query($sql);
 
@@ -715,7 +713,8 @@
                                     echo "<tr><td colspan='2'>No se encontraron PDFs en la base de datos.</td></tr>";
                                 }
 
-                                $conexion->close();
+
+                               
                                 ?>
                             </tbody>
                             </table>
@@ -805,17 +804,6 @@
                             </thead>
                             <tbody>
                             <?php
-                                // Conexión a la base de datos (reemplaza con tus credenciales)
-                                $servername = "localhost";
-                                $username = "root";
-                                $password = "";
-                                $dbname = "fabiola";
-
-                                $conexion = new mysqli($servername, $username, $password, $dbname);
-
-                                if ($conexion->connect_error) {
-                                    die("Error de conexión: " . $conexion->connect_error);
-                                }
 
                                 // Consulta para obtener los PDFs desde la base de datos
                                 $sql = "SELECT id, nombrePDF, clavePDF FROM subcriteriospdf WHERE claveSubCriterio='1.1.1'";
@@ -840,7 +828,6 @@
                                     echo "<tr><td colspan='2'>No se encontraron PDFs en la base de datos.</td></tr>";
                                 }
 
-                                $conexion->close();
                                 ?>
                             </tbody>
                             </table>
@@ -919,20 +906,7 @@
                             <tbody>
                             <?php
                                 // Conexión a la base de datos (reemplaza con tus credenciales)
-                                $servername = "localhost";
-                                $username = "root";
-                                $password = "";
-                                $dbname = "fabiola";
 
-                                $conexion = new mysqli($servername, $username, $password, $dbname);
-
-                                if ($conexion->connect_error) {
-                                    die("Error de conexión: " . $conexion->connect_error);
-                                }
-
-                                // Consulta para obtener los PDFs desde la base de datos
-                                $sql = "SELECT id, nombrePDF, clavePDF FROM subcriteriospdf WHERE claveSubCriterio='1.1.1'";
-                                $resultado = $conexion->query($sql);
 
                                 if ($resultado->num_rows > 0) {
                                     while ($fila = $resultado->fetch_assoc()) {
@@ -953,7 +927,7 @@
                                     echo "<tr><td colspan='2'>No se encontraron PDFs en la base de datos.</td></tr>";
                                 }
 
-                                $conexion->close();
+
                                 ?>
                             </tbody>
                             </table>
@@ -1555,3 +1529,24 @@
 </body>
 
 </html>
+<script>
+        const fileInput = document.getElementById('file-input');
+        const selectedFiles = document.getElementById('selected-files');
+
+        fileInput.addEventListener('change', function() {
+            selectedFiles.innerHTML = ''; // Limpiar la lista de archivos seleccionados
+
+            const files = fileInput.files;
+            for (let i = 0; i < files.length; i++) {
+                const fileName = files[i].name;
+                const fileItem = document.createElement('div');
+                fileItem.textContent = fileName;
+                selectedFiles.appendChild(fileItem);
+            }
+        });
+    </script>
+
+
+<?php
+$conexion->close();
+?>
