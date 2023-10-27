@@ -156,24 +156,23 @@
             <div class="preguntasCategoria" id="SC_1.1.1">
                 <p>1.1.1 ¿Existe un proceso formal de reclutamiento del personal académico?</p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS1-1-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
 
                 <p>En caso afirmativo describa de forma resumida los aspectos más importantes del proceso.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
-
+                <textarea id="R1-1-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <p>¿Hay un reglamento de reclutamiento del personal académico?</p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS1-1-1A2">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -203,23 +202,22 @@
             <div class="preguntasCategoria" id="SC_1.2.1">
                 <p>1.2.1 ¿Existe un proceso formal de ingreso del personal académico?</p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS1-2-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
 
                 <p>En caso afirmativo describa de forma resumida los aspectos más importantes del proceso.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
-
+                <textarea id="R1-2-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>¿Hay un reglamento de ingreso del personal académico?</p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS1-2-1A2">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -251,23 +249,23 @@
             <div class="preguntasCategoria" id="SC_1.3.1">
                 <p>1.3.1 ¿Existe un proceso formal de contratación del personal académico?</p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS1-3-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
 
                 <p>En caso afirmativo describa de forma resumida los aspectos más importantes del proceso.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-3-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <p>¿Hay un reglamento de contratación del personal académico?</p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS1-3-1A2">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -304,16 +302,16 @@
                     la institución?</p>
                 
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS1-4-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
 
                 <p>En caso afirmativo proporcione la siguiente información</p>
-                <input type="text" placeholder="Tabla...">
+                <textarea id="R1-4-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <br>
                 <br>
 
@@ -334,16 +332,16 @@
                     para la actualización y superación del personal académico?</p>
 
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS1-4-2A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
 
                 <p>En caso afirmativo proporcionar la siguiente información para los tres últimos años:</p>
-                <input type="text" placeholder="Tabla...">
+                <textarea id="R1-4-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <br>
                 <br>
 
@@ -352,16 +350,16 @@
                 <p>¿Existe alguna otra modalidad de apoyo al personal 
                     académico para su actualización y superación?</p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS1-4-2A2">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
 
                 <p>En caso afirmativo descríbala brevemente:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-4-2A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <br>
                 
                 <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -386,10 +384,10 @@
 
                 <p>Existe algún programa para la formación de profesores:</p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS1-4-3A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -397,7 +395,7 @@
                 <p>En caso afirmativo:</p>
                 <p>a.- Señale a qué nivel de responsabilidad se tiene:</p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS-1-4-3A2">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="Institución">Institución</option>
                         <option value="Unidad Académica">Unidad Académica</option>
@@ -407,11 +405,11 @@
                 <br>
 
                 <p>b.- Describa brevemente en qué consiste:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-4-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <br>
 
                 <p>c.- Mencione algunos de los resultados obtenidos:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-4-3A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <br>
 
 
@@ -449,10 +447,10 @@
                 <p>1.5.1 Estimar el porcentaje de profesores que integran 
                     la planta docente que tienen un perfil académico que 
                     corresponde al área de conocimiento a la que están asignados.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-5-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <p>Explicar de qué manera se realizó dicha estimación.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-5-1A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <!-- <img src="" alt=""><button>Guardar</button> -->
                 <br><br>
                 <div class="Listo">
@@ -497,10 +495,10 @@
                     impartido por profesores de tiempo completo, (no es 
                     permisible que el titular de la materia envíe a ayudantes 
                     a impartir sus clases para esta estimación).</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-5-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <p>Explicar de qué manera se realizó dicha estimación.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-5-3A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <!-- <img src="" alt=""><button>Guardar</button> -->
                 <br><br>
                 <div class="Listo">
@@ -524,10 +522,10 @@
                     con maestría, doctorado, o mínimo licenciatura y cinco años 
                     de experiencia profesional comprobables y que estén actualizados 
                     en el área.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-5-4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <p>Explicar de qué manera se realizó dicha estimación.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-5-4A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <!-- <img src="" alt=""><button>Guardar</button> -->
                 <br><br>
                 <div class="Listo">
@@ -547,10 +545,10 @@
                 <p>Estimar el porcentaje del total de profesores de tiempo completo 
                     que tienen estudios de posgrado o el equivalente de desarrollo y 
                     prestigio profesional en el área de su especialidad.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-5-5" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <p>Explicar de qué manera se realizó dicha estimación.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-5-5A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <!-- <img src="" alt=""><button>Guardar</button> -->
                 <br><br>
                 <div class="Listo">
@@ -571,10 +569,10 @@
                     tiempo completo, que tienen estudios de posgrado o el 
                     equivalente de desarrollo y prestigio profesional en el área 
                     de su especialidad.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-5-6" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <p>Explicar de qué manera se realizó dicha estimación.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-5-6A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <!-- <img src="" alt=""><button>Guardar</button> -->
                 <br><br>
                 <div class="Listo">
@@ -590,7 +588,7 @@
                     recién contratados y profesores con experiencia docente.</p>
 
                 <p>Proporcionar la siguiente información para los últimos tres períodos.</p>
-                <input type="text" placeholder="Tabla...">
+                <textarea id="R1-5-7" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <!-- <img src="" alt=""><button>Guardar</button> -->
                 <br><br>
                 <div class="Listo">
@@ -608,7 +606,7 @@
                 <p>Proporcionar la siguiente información para los últimos tres períodos:</p>
 
                 <p>Número de profesores adscritos al programa con grados de otras instituciones.</p>
-                <input type="text" placeholder="Tabla...">
+                <textarea id="R1-5-8" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <!-- <img src="" alt=""><button>Guardar</button> -->
                 <br><br>
                 <div class="Listo">
@@ -626,16 +624,16 @@
                     manejo de plataformas tecnológicas?</p>
                 
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS1-5-9A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
 
                 <p>En cualquier caso, explique brevemente:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-5-9" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <p>Proporcione los curriculums de los profesores, facilitadores, 
                     tutores y asesores, que evidencien la experiencia y 
@@ -678,7 +676,7 @@
                     en consideración la definición de Profesores adscritos al 
                     programa en el criterio 1.5.2) y una estimación del tiempo 
                     que dedican a las actividades señaladas.</p>
-                <input type="text" placeholder="Tabla...">
+                <textarea id="R1-6-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <!-- <img src="" alt=""><button>Guardar</button> -->
                 <br><br>
                 <div class="Listo">
@@ -701,10 +699,10 @@
                     o desarrollo tecnológico en el área, o con un proyecto de 
                     informática o computación para el sector productivo y/ o de 
                     servicios.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-6-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <p>Explicar de qué manera se realizó dicha estimación.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-6-2A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <!-- <img src="" alt=""><button>Guardar</button> -->
                 <br><br>
@@ -732,10 +730,10 @@
             <div class="preguntasCategoria" id="SC_1.7.1">
                 <p>1.7.1 ¿Los estudiantes realizan evaluaciones?</p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS1-7-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -743,7 +741,7 @@
                 <p>En caso afirmativo, describa la manera como se divulgan 
                     los resultados de las evaluaciones y las acciones que se 
                     toman para mejorarlas.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-7-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <!-- <img src="" alt=""><button>Guardar</button> -->
                 <br><br>
@@ -765,10 +763,10 @@
                     docente y de investigación del profesorado?</p>
                 
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS1-7-2A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -776,10 +774,10 @@
                 <p>¿Está reglamentado?</p>
 
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS-1-7-2A2">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -787,7 +785,7 @@
                 <p>Haga un breve resumen del proceso indicando quienes 
                     participan en él, así como las responsabilidades que tienen.
                 </p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-7-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
 
 
@@ -812,7 +810,7 @@
                     indique por quiénes se realiza.</p>
                 
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS1-7-3A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="Grupos Colegiados">Grupos Colegiados</option>
                         <option value="Estudiantes">Estudiantes</option>
@@ -822,7 +820,7 @@
                 <br>
 
                 <p>(indicar cuáles)</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-7-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
 
 
@@ -831,7 +829,7 @@
                     ser formas o reportes. Señale de forma abreviada, la forma y 
                     periodicidad en que se realizan.</p>
                 
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-7-3A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <p>En caso afirmativo proporcione una copia o copias de los 
                     documentos (puedes subir mas de un archivo).
@@ -849,7 +847,7 @@
 
                 <p>¿Se lleva a cabo difusión de los resultados del proceso?</p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS1-7-3A2">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="No">No</option>
@@ -861,14 +859,14 @@
                     y proporcione los resultados de los últimos
                     períodos escolares (de preferencia los tres últimos años).
                     </p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-7-3A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
 
 
                 <p>Indique para qué se utiliza la información de la evaluación, 
                     si se entregan resultados a los profesores, y qué acciones 
                     se toman como consecuencia de los resultados de las evaluaciones.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-7-3A3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <!-- <img src="" alt=""><button>Guardar</button> -->
                 
@@ -884,26 +882,26 @@
                     la productividad y la eficiencia del desempeño académico 
                     de los profesores?</p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS1-7-4A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
 
                 <p>En caso afirmativo resumir los criterios principales.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-7-4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
 
                 <p>¿Existe un programa de estímulos o incentivos para 
                     los profesores que cubren dichos criterios?
                 </p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS1-7-4A2">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -931,20 +929,20 @@
             <div class="preguntasCategoria" id="SC_1.8.1">
                 <p>1.8.1 ¿Existe un proceso formal para la promoción del personal académico?</p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS1-8-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
 
                 <p>¿Hay un reglamento para dicho proceso?</p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS1-8-1A2">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -952,15 +950,15 @@
                 <p>Haga un breve resumen del proceso indicando quienes 
                     participan en él, así como las responsabilidades que tienen.
                 </p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-8-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
 
                 <p>¿Se lleva a cabo difusión de los resultados del proceso?</p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS1-8-1A3">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -968,7 +966,7 @@
                 <p>En caso afirmativo describa el tipo de difusión que se le 
                     da y proporcione los resultados de los últimos tres años.
                 </p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-8-1A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
 
 
@@ -991,23 +989,23 @@
             </div>
 
             <div class="preguntasCategoria" id="SC_1.9.1">
-                <p>¿Existe un proceso formal para la movilidad internacional 
+                <p>1.9.1 ¿Existe un proceso formal para la movilidad internacional 
                     de profesores (tanto de envío como de recepción)?</p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS1-9-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
 
                 <p>¿Hay un reglamento para dicho proceso?</p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS1-9-1A2">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -1015,7 +1013,7 @@
                 <p>Haga un breve resumen del proceso indicando quienes 
                     participan en él, así como las responsabilidades que tienen.
                 </p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-9-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
 
 
@@ -1032,7 +1030,7 @@
             <div class="preguntasCategoria" id="SC_1.9.1">
                 <p>1.9.1 Indicar las movilidades en envío y recepción de los 
                     profesores en los últimos cinco años.</p>
-                <input type="text" placeholder="Tabla...">
+                <textarea id="R1-9-1A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <!-- <img src="" alt=""><button>Guardar</button> -->
                 <br><br>
@@ -1048,7 +1046,7 @@
                 <p>1.9.2 Indicar los productos y resultados obtenidos de estas 
                     movilidades en envío y recepción de los profesores en los 
                     últimos cinco años.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R1-9-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <p>En caso afirmativo proporcione una copia o copias de los 
                     documentos (puedes subir mas de un archivo).
@@ -1084,13 +1082,13 @@
                     que se ofrece en el mercado laboral para
                     las áreas de TIC. Profesores de tiempo completo:
                 </p>
-                <input type="text" placeholder="Tabla...">
+                <textarea id="RA1-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <p>Profesores de Medio Tiempo.</p>
-                <input type="text" placeholder="Tabla...">
+                <textarea id="RA1-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <p>Profesores por horas (de asignatura) / clase.</p>
-                <input type="text" placeholder="Tabla...">
+                <textarea id="RA1-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <!-- <img src="" alt=""><button>Guardar</button> -->
                 <br><br>
@@ -1113,10 +1111,10 @@
                     normen la vinculación del personal académico con 
                     el sector productivo?</p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RSA2-1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -1126,10 +1124,10 @@
                     externos que los profesores pueden obtener como 
                     consecuencia de la relación en dicho reglamento?</p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RSA2-2">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -1137,7 +1135,7 @@
                 <p>Si la respuesta a la pregunta anterior fue afirmativa, 
                     resumir los puntos principales.
                 </p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="RA2-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
 
 
@@ -1159,7 +1157,7 @@
                 <p>Indique el material didáctico, de divulgación y 
                     los libros de texto desarrollados por los profesores 
                     adscritos al programa en los últimos 4 años.</p>
-                <input type="text" placeholder="Tabla...">
+                <textarea id="RA3-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
 
                 <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -1186,16 +1184,16 @@
                     asignaturas que lo forman para poder dar la orientación 
                     adecuada a la asignatura que imparten?</p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RSA4-1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
 
                 <p>En cualquier caso, explique brevemente:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="RA4-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 
                 
@@ -1220,16 +1218,16 @@
 
                 <p>¿Existe esta estrategia?</p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RSA5-1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
 
                 <p>Describir en qué consisten la o las estrategias institucionales:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="RA5-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
 
 
@@ -1242,19 +1240,6 @@
                 </div>
                 <div class="btnListo"><button>Guardar</button></div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
