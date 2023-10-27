@@ -6,6 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categoria 2</title>
     <link rel="stylesheet" href="autoevaluacion.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#guardarRespuesta").click(function() {
+                var respuestaSelect = $("#RS2-2-1").val(); 
+                var respuestaInput = $("#R2-2-1").val(); 
+                $.ajax({
+                    type: "POST", 
+                    url: "guardar_respuesta.php",
+                    data: {
+                        respuestaSelect: respuestaSelect,
+                        respuestaInput: respuestaInput
+                    },
+                    success: function(response) {
+                        alert("Respuesta guardada con éxito");
+                    }
+                });
+            });
+        });
+    </script>
 </head>
 
 <body
@@ -169,7 +189,7 @@
                     <p>2.2.1  ¿Se toman en cuenta los resultados del examen nacional previo a la licenciatura?
                     </p>
                     <div class="opcMult" °>
-                        <select name="select" id="RS2-2-1">
+                        <select name="select" id="RS2.2.1">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
                             <option value="No">No</option>
@@ -184,7 +204,7 @@
                         <button>Seleccionar archivos</button>
                         <!-- <button>Cargar</button>  -->
                     </div>
-                    <div class="btnListo"><button>Guardar</button></div>
+                    <div class="btnListo"><button id="guardarRespuesta">Guardar</button></div>
                 </div>
 
 
