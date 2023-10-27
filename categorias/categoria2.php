@@ -690,17 +690,7 @@
                             </thead>
                             <tbody>
                             <?php
-                                // Conexión a la base de datos (reemplaza con tus credenciales)
-                                $servername = "localhost";
-                                $username = "root";
-                                $password = "";
-                                $dbname = "fabiola";
 
-                                $conexion = new mysqli($servername, $username, $password, $dbname);
-
-                                if ($conexion->connect_error) {
-                                    die("Error de conexión: " . $conexion->connect_error);
-                                }
 
                                 // Consulta para obtener los PDFs desde la base de datos
                                 $sql = "SELECT id, nombrePDF, clavePDF FROM subcriteriospdf WHERE claveSubCriterio='1.1.1'";
