@@ -36,6 +36,9 @@ body {
     justify-content: center;
     margin-top: 30px; /* Ajusta la separación entre el logo y los botones */
   }
+  .buttons-hover{
+    transform: scale(0.90);
+}
   
   .buttons button {
     padding: 0; /* Ajusta el padding a 0 para que no afecte a la imagen */
@@ -70,6 +73,82 @@ body {
       max-width: 80%; /* Ajusta el tamaño del logo en dispositivos móviles */
     }
   }
+
+  
+  .barra-superior .menu_estilo_usuario{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.2s;
+    position: fixed;
+    top: 1%;
+    right: 10%;
+    
+}
+
+.barra-superior .menu_estilo_usuario:hover{
+    transform: scale(0.90);
+}
+
+.barra-superior .menu_estilo_usuario img{
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
+
+/*Estilo para el contenedor del menu */
+.barra-superior .menu_usuario {
+    position: relative;
+    display: inline-block;
+}
+
+/*Estilo para el contenido desplegable */
+.barra-superior .contenido_del_menu_usuarios{
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    position: fixed;
+    top: 7%;
+    right: 7.5%;
+}
+
+
+/*Estilo para las opciones del contenido desplegable*/
+.barra-superior .contenido_del_menu_usuarios a {
+    font-family: Arial;
+    font-size: 12;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/*Mostrar el menu desplegable*/
+.barra-superior .menu_usuario:hover .contenido_del_menu_usuarios {
+    display: block;
+}
+
+/*Color de las opciones del menu desplegable*/
+.barra-superior .contenido_del_menu_usuarios a:hover {
+    background-color: lightblue;
+}
+
+.texto{
+    position: absolute;
+    top: 47%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 14px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    text-align: left;
+    font-family: Arial;
+    width: 90%;
+}
   
   
   
