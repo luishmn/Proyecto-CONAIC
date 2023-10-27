@@ -581,6 +581,7 @@
 
                     <p>El aspirante al programa debe presentar examen de admisión?
 
+                    
                     </p>
                     <div class="opcMult" °>
                         <select name="select" id="RS2-1-1A3">
