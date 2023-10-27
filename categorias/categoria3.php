@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="autoevaluacion.css">
     <script src="enviarConsulta.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 
@@ -136,7 +137,6 @@
             </div>
         </div>
 
-
         <div class="cuadroCate">
         
             <div class="titulo_categoria">Categoría 3: Plan de estudios</div>
@@ -172,15 +172,120 @@
                 <p>¿Qué demanda específica satisface el programa?</p>
                 <input type="text" placeholder="Escribe tu respuesta aquí...">
                 <div class="Listo">
-                    <img src="/imagenes/pdf.png" alt="">
-                    <button>Seleccionar archivos</button>
-                </div>
+
+                    <div class="botonesPDFSgroup">
+                        <!--Boton-->
+                        <div class="boton-modal1">
+                            <label for="btn-modal1">
+                                Subir PDF
+                            </label>
+                        </div>
+                        <!--Fin de Boton-->
+                        <!--Ventana Modal-->
+                        <input type="checkbox" id="btn-modal1">
+                            <div class="container-modal1">
+                                <div class="content-modal1">
+                                    <h2>Subir tu PDF</h2>
+                                    <form method="POST" action="subir_pdf.php" enctype="multipart/form-data">
+                                        <input type="hidden" name="claveSubCriterio" value="3.1.1"> <!-- Clave fija -->
+                                        <label for="archivo">Selecciona un archivo PDF:</label>
+                                        <br>
+                                        <br>
+
+                                        <label class="custom-file-label">
+                                            <input type="file" name="archivo" accept=".pdf" class="custom-file-input" id="file-input" multiple>
+                                            <span class="icon"><i class="fa fa-file-pdf-o"></i></span> Seleccionar PDF
+                                        </label>
+                                        <div class="selected-files" id="selected-files"></div>
+                                        <br>
+
+                                        <input type="submit" value="Cargar PDF" class="submitPDF">
+                                        <br><br>
+                                        <label for="btn-modal1" class="cerrar1">Cerrar</label>
+                                    </form>                            
+                                </div>
+                            </div>
+                            </div>
+                            <!--Fin de Ventana Modal-->
+                    
+                        
+
+
+                            <!-- Botón -->
+                            <div class="boton-modal2">
+                                <label for="btn-modal2">Ver PDF</label>
+                            </div>
+
+                            <!-- Ventana Modal -->
+                            <input type="checkbox" id="btn-modal2">
+                            <div class="container-modal2">
+                                <div class="content-modal2">
+                                    <div class="Cuadro">
+                                    <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Nombre del PDF</th>
+                                            <th>Acción</th>
+                                        </tr>
+                                    
+                                
+                                    </thead>
+                                    <tbody>
+                                    <?php
+                                        include "../conexionDB/conexion.php";
+                                        conecta();
+                                    
+                                        // Verifica la conexión
+                                        if ($conexion->connect_error) {
+                                            die("Error de conexión: " . $conexion->connect_error);
+                                        }
+
+                                        // Consulta para obtener los PDFs desde la base de datos
+                                        $sql = "SELECT id, nombrePDF, clavePDF FROM subcriteriospdf WHERE claveSubCriterio='3.1.1'";
+                                        $resultado = $conexion->query($sql);
+
+                                        if ($resultado->num_rows > 0) {
+                                            while ($fila = $resultado->fetch_assoc()) {
+                                                $pdfName = $fila["nombrePDF"];
+                                                $pdfId = $fila["id"];
+                                                $pdfClave=$fila["clavePDF"];
+                                                echo "<tr>";
+                                                echo "<td>$pdfName</td>";
+                                                echo "<td>";
+                                                echo "<a href='abrir_pdf.php?clavePDF=$pdfClave' target='_blank'>Abrir PDF</a>";
+                                                echo " | ";
+                                                echo "<a href='eliminar_pdf.php?clavePDF=$pdfClave'>Eliminar PDF</a>";
+                                                echo "</td>";
+                                                echo "</tr>";
+                                            }
+                                        } else {
+                                            echo "<tr><td colspan='2'>No se encontraron PDFs en la base de datos.</td></tr>";
+                                        }
+
+                                        $conexion->close();
+                                        ?>
+                                    </tbody>
+                                    </table>
+
+                                    </div>
+                                    
+                                    <label class="boton_cerrar" for="btn-modal2">Cerrar</label>
+                                </div>
+                                <label for="btn-modal2" class="cerrar-modal2"></label>
+                            </div>
+                        </div>
+
+
                 <div class="btnListo"><button>Guardar</button></div>
-            </div>
+           
+                </div>
+
+           
+
+
 
             <div class="preguntasCategoria" id="SC_3.1.2">
                 <p>3.1.2 Es importante que exista congruencia con la misión, visión y objetivos institucionales, los objetivos del plan nacional de desarrollo (vigente) y educativo del país, así como con el objetivo de la educación superior.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
                 <p>¿Está publicada la misión, visión y objetivos institucionales?</p>
                 <div class="opcMult"°>
                     <select name="select" id="seleccion">
@@ -367,25 +472,54 @@
             </div>
 
 
-            <div class="preguntasCategoria" id="SC_3.5.3">
-                <p>3.5.3. El plan de estudios debe considerar la elaboración de trabajo en equipo e interdisciplinario.</p>
-                <p>Indique en qué asignaturas del programa se elabora trabajo en equipo e interdisciplinario.</p>
-                <input type="text" placeholder="Tabla...">
-        
-                <div class="btnListo"><button>Guardar</button></div>
-                
-            </div>
 
+            <div class="preguntasCategoria" id="SC_3.5.3">
+                <p>3.5.3 El plan de estudios debe considerar la elaboración de trabajo en equipo e interdisciplinario.</p>
+                <p>Indique en qué asignaturas se elabora trabajo en equipo e interdisciplinario.</p>
+                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <div class="Listo">
+                    <img src="/imagenes/pdf.png" alt="">
+                    <button>Seleccionar archivos</button>
+                </div>
+                <div class="btnListo"><button>Guardar</button></div>
+                </div>
+            </div>
 
 
 
             <div>
             <div class="parrafo" id="3.6">
-                <p>3.6 Evaluación y actualización. El plan de estudios debe de ser revisado y actualizado periódicamente y deben existir los procedimientos oficiales permanentes para realizarlos, mismos que deben indicar a cuerpos colegiados, asesores, egresados e investigadores reconocidos.
-                </p>
+                <p>3.6 Flexibilidad Curricular. El plan de estudios debe ser revisado y actualizado en su caso, al menos cada
+                    cinco años y debe existir un procedimiento oficial para su revisión y actualización, en los que deben
+                    participar cuerpos colegiados, asesores externos representantes del sector productivo, egresados en
+                    activo e investigadores reconocidos. También debe existir un proceso permanente de evaluación
+                    curricular</p>
             </div>
             <div class="preguntasCategoria" id="SC_3.6.1">
-                <p>3.6.1 El plan de estudios debe ser revisado y actualizado en su caso, al menos cada cinco años.</p>
+                <p>Indique las materias optativas ofrecidas en los últimos tres años.
+                    Las unidades de la asignatura y las áreas debe considerarse en términos de la clasificación indicada en las
+                    respuestas 3.1 y 3.2.</p>
+                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <div class="Listo">
+                    <img src="/imagenes/pdf.png" alt="">
+                    <button>Seleccionar archivos</button>
+                </div>
+                <div class="btnListo"><button>Guardar</button></div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div>
+            <div class="parrafo" id="3.7">
+                <p>3.7 Evaluación y actualización. El plan de estudios debe de ser revisado y actualizado periódicamente y deben existir los procedimientos oficiales permanentes para realizarlos, mismos que deben indicar a cuerpos colegiados, asesores, egresados e investigadores reconocidos.
+                </p>
+            </div>
+            <div class="preguntasCategoria" id="SC_3.7.1">
+                <p>3.7.1 El plan de estudios debe ser revisado y actualizado en su caso, al menos cada cinco años.</p>
                 <input type="text" placeholder="Escribe tu respuesta aquí...">
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
@@ -395,8 +529,8 @@
             </div>
 
 
-            <div class="preguntasCategoria" id="SC_3.6.2">
-                <p>3.6.2 Debe existir un procedimiento oficial y funcional,  para la revisión y actualización del plan de estudios. </p>
+            <div class="preguntasCategoria" id="SC_3.7.2">
+                <p>3.7.2 Debe existir un procedimiento oficial y funcional,  para la revisión y actualización del plan de estudios. </p>
                 <input type="text" placeholder="Escribe tu respuesta aquí...">
                 <p>¿Existe un procedimiento oficial  para la revisión del plan de estudios?</p>
                 <input type="text" placeholder="Escribe tu respuesta aquí...">
@@ -407,8 +541,8 @@
                 <div class="btnListo"><button>Guardar</button></div>
             </div>
 
-            <div class="preguntasCategoria" id="SC_3.6.3">
-                <p>3.6.3 En los procesos de revisión y actualización deben participar los cuerpos colegiados, así como un grupo de asesores externos representantes del sector productivo, egresados en activo e  investigadores reconocidos.</p>
+            <div class="preguntasCategoria" id="SC_3.7.3">
+                <p>3.7.3 En los procesos de revisión y actualización deben participar los cuerpos colegiados, así como un grupo de asesores externos representantes del sector productivo, egresados en activo e  investigadores reconocidos.</p>
                 <div class="opcMult"°>
                     <select name="select" id="seleccion">
                         <option disabled selected>Selecciona una opción</option>
@@ -444,8 +578,8 @@
             </div>
 
 
-            <div class="preguntasCategoria" id="SC_3.6.4">
-                <p>3.6.4 Debe existir un procedimiento permanente de evaluación curricular.</p>
+            <div class="preguntasCategoria" id="SC_3.7.4">
+                <p>3.7.4 Debe existir un procedimiento permanente de evaluación curricular.</p>
                 <div class="opcMult"°>
                     <select name="select" id="seleccion">
                         <option disabled selected>Selecciona una opción</option>
@@ -464,11 +598,11 @@
             </div>
 
             <div>
-            <div class="parrafo" id="3.7">
-                <p>3.7 Difusión. Como parte fundamental del proceso enseñanza-aprendizaje, los programas actualizados de todas y cada una de las asignaturas que forman parte del plan de estudios, deben estar a disposición para su consulta por: profesores, estudiantes y el público en general.</p>
+            <div class="parrafo" id="3.8">
+                <p>3.8 Difusión. Como parte fundamental del proceso enseñanza-aprendizaje, los programas actualizados de todas y cada una de las asignaturas que forman parte del plan de estudios, deben estar a disposición para su consulta por: profesores, estudiantes y el público en general.</p>
             </div>
-            <div class="preguntasCategoria" id="SC_3.7.1">
-                <p>3.7.1 ¿Los programas actualizados de todas las asignaturas del plan de estudios están a disposición para su consulta por parte de profesores, estudiantes y el público en general?</p>
+            <div class="preguntasCategoria" id="SC_3.8.1">
+                <p>3.8.1 ¿Los programas actualizados de todas las asignaturas del plan de estudios están a disposición para su consulta por parte de profesores, estudiantes y el público en general?</p>
                 <div class="opcMult"°>
                     <select name="select" id="seleccion">
                         <option disabled selected>Selecciona una opción</option>
@@ -484,8 +618,8 @@
             </div>
 
 
-            <div class="preguntasCategoria" id="SC_3.7.2">
-                <p>3.7.2 Indique cuáles de los siguientes aspectos se le da conocer al estudiante.</p>
+            <div class="preguntasCategoria" id="SC_3.8.2">
+                <p>3.8.2 Indique cuáles de los siguientes aspectos se le da conocer al estudiante.</p>
                 <p>Estructura del plan de estudios.</p>
                 <input type="text" placeholder="Escribe tu respuesta aquí...">
                 <p>Objetivo.</p>
@@ -562,100 +696,14 @@
                 </div>
             </div>
 
-
-            <div class="preguntasCategoria" id="SC_3.7.3">
-                <p>3.7.3 En los procesos de revisión y actualización deben participar los 
-                    cuerpos colegiados, así como un grupo de asesores externos representantes 
-                    del sector productivo, egresados en activo e  investigadores reconocidos. </p>
-                
-                <p>¿En  la revisión y actualización del plan de estudios  
-                    participan cuerpos colegiados?</p>
-
-                <div class="opcMult"°>
-                    <select name="select" id="seleccion">
-                        <option disabled selected>Selecciona una opción</option>
-                        <option value="si">Sí</option>
-                        <option value="No">No</option>
-                    </select>
-                </div> 
-
-                <p>¿De qué manera?</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
-
-                <p>¿En la revisión y actualización del plan de estudios participan 
-                    asesores externos y representantes del sector productivo?</p>
-                <div class="opcMult"°>
-                    <select name="select" id="seleccion">
-                        <option disabled selected>Selecciona una opción</option>
-                        <option value="si">Sí</option>
-                        <option value="No">No</option>
-                    </select>
-                </div> 
-
-                <p>¿De qué manera?</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
-
-                <p>¿En la revisión y actualización del plan de estudios 
-                    participan egresados del programa?
-                </p>
-                <div class="opcMult"°>
-                    <select name="select" id="seleccion">
-                        <option disabled selected>Selecciona una opción</option>
-                        <option value="si">Sí</option>
-                        <option value="No">No</option>
-                    </select>
-                </div> 
-
-                <p>¿De qué manera?</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
-
-                <p>¿En la revisión y actualización del plan de estudios 
-                    participan investigadores reconocidos?
-                </p>
-                <div class="opcMult"°>
-                    <select name="select" id="seleccion">
-                        <option disabled selected>Selecciona una opción</option>
-                        <option value="si">Sí</option>
-                        <option value="No">No</option>
-                    </select>
-                </div> 
-
-                <p>¿De qué manera?</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
-
-                <div class="btnListo"><button>Guardar</button></div>
-            </div>
-
-
-            <div class="preguntasCategoria" id="SC_3.7.4">
-                <p>3.7.4 Debe existir un procedimiento permanente de evaluación curricular.</p>
-                <p>¿Existe un procedimiento permanente de evaluación curricular?</p>
-                <div class="opcMult"°>
-                    <select name="select" id="seleccion">
-                        <option disabled selected>Selecciona una opción</option>
-                        <option value="si">Sí</option>
-                        <option value="No">No</option>
-                    </select>
-                </div> 
-
-                <p>Describa en qué consiste este procedimiento:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
-
-                <div class="btnListo"><button>Guardar</button></div>
-            </div>
-
-
-
-
-
-
+        
             <div>
-            <div class="parrafo" id="3.8">
-                <p>3.8 Justificación de las Competencias. Se deben analizar las competencias del programa a evaluar, considerando las competencias definidas por la ANIEI en su versión más actualizada, justificando el perfil A, B, C o D del modelo a través de una matriz.</p>
+            <div class="parrafo" id="3.9">
+                <p>3.9 Justificación de las Competencias. Se deben analizar las competencias del programa a evaluar, considerando las competencias definidas por la ANIEI en su versión más actualizada, justificando el perfil A, B, C o D del modelo a través de una matriz.</p>
             </div>
             
-            <div class="preguntasCategoria" id="SC_3.8.1">
-                <p>3.8.1 Tabla de cumplimiento de competencias transversales. Considerar la definición y justificación competencias iniciales, de desarrollo y de evaluación.  Rellenar tabla competencias transversales. Etapa de planificación del modelo de competencias</p>
+            <div class="preguntasCategoria" id="SC_3.9.1">
+                <p>3.9.1 Tabla de cumplimiento de competencias transversales. Considerar la definición y justificación competencias iniciales, de desarrollo y de evaluación.  Rellenar tabla competencias transversales. Etapa de planificación del modelo de competencias</p>
                 <input type="text" placeholder="Escribe tu respuesta aquí...">
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
@@ -664,8 +712,8 @@
                 <div class="btnListo"><button>Guardar</button></div>
                 </div>
 
-                <div class="preguntasCategoria" id="SC_3.8.2">
-                    <p>3.8.2. Tabla de cumplimiento de competencias específicas. Considerar la definición y justificación competencias iniciales, de desarrollo y de evaluación. Rellenar tabla competencias específicas. Etapa de planificación del modelo de competencias.</p>
+                <div class="preguntasCategoria" id="SC_3.9.2">
+                    <p>3.9.2. Tabla de cumplimiento de competencias específicas. Considerar la definición y justificación competencias iniciales, de desarrollo y de evaluación. Rellenar tabla competencias específicas. Etapa de planificación del modelo de competencias.</p>
                     <input type="text" placeholder="Escribe tu respuesta aquí...">
                     <div class="Listo">
                         <img src="/imagenes/pdf.png" alt="">
@@ -678,9 +726,73 @@
             
         </div>
     </div>
-    
-
-
 </body>
-
 </html>
+<script>
+        const fileInput = document.getElementById('file-input');
+        const selectedFiles = document.getElementById('selected-files');
+
+        fileInput.addEventListener('change', function() {
+            selectedFiles.innerHTML = ''; // Limpiar la lista de archivos seleccionados
+
+            const files = fileInput.files;
+            for (let i = 0; i < files.length; i++) {
+                const fileName = files[i].name;
+                const fileItem = document.createElement('div');
+                fileItem.textContent = fileName;
+                selectedFiles.appendChild(fileItem);
+            }
+        });
+    </script>
+
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    var button = document.querySelector(".cargar-pdf");
+    var form = document.getElementById("uploadForm");
+
+    button.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        var id = this.getAttribute("data-id");
+        var fileInput = form.querySelector("input[type='file']");
+        var files = fileInput.files;
+
+        if (files.length === 0) {
+            alert("Selecciona al menos un archivo PDF para cargar.");
+            return;
+        }
+
+        var formData = new FormData();
+
+        for (var i = 0; i < files.length; i++) {
+            formData.append("archivo[]", files[i]);
+        }
+
+        formData.append("id", id);
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "subir_pdf.php", true);
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    alert(xhr.responseText);
+                } else {
+                    alert("Error al cargar los archivos.");
+                }
+            }
+        };
+
+        xhr.send(formData);
+    });
+});
+
+</script>
+<script>
+document.getElementById("boton_cerrar1").addEventListener("click", function() {
+    window.location.reload(false); // El valor "false" evita que se limpie la caché
+});
+</script>
