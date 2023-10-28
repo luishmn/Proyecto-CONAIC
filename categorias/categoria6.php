@@ -151,7 +151,7 @@
             <div class="preguntasCategoria" id="SC_6.1.1">
                 <p>6.1.1 ¿ Las tutorías a los estudiantes se ofrecen de manera constante y organizada?</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS6-1-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
@@ -169,7 +169,8 @@
                 <p>6.1.2 En el caso de que se ofrezca este servicio y de que se lleve un registro, 
                     proporcionar la información sobre el número de estudiantes atendidos en los tres 
                     últimos períodos escolares y el tiempo total del profesorado dedicado a esta actividad</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-1-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>Tabla con periodo escolar, mecanismos de apoyo, no. De estudiantes, tiempo del profesorado</p>               
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
@@ -183,7 +184,7 @@
                 <p>6.1.3 ¿Se cuenta con mecanismos e instrumentos que permitan evaluar el Programa de Tutorías así como su impacto?</p>
                 <p>Describa brevemente en qué consiste el mecanismo y el impacto de las mismas.</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS6-1-3A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
@@ -210,7 +211,7 @@
                 <p>6.2.1 Los profesores del programa proporcionan permanentemente 
                 asesorías académicas a los estudiantes:</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS6-2-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
@@ -232,7 +233,7 @@
                 los índices de reprobación?</p>
                 <p>Describa brevemente en qué consiste el mecanismo y el impacto de las mismas.</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS6-2-2A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
@@ -269,7 +270,7 @@
                 pero lo que si, es que deben garantizar el servicio de acceso a 
                 la información, como lo establece este criterio.</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS6-3-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
@@ -279,61 +280,75 @@
                 indique a qué distancia se encuentra la biblioteca de las áreas 
                 académicas donde se desarrolla el programa. Y para el caso de 
                 bibliotecas virtuales, describa como garantiza el servicio.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-3-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>Los servicios bibliotecarios de que dispone el programa son de carácter:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                
+                <textarea id="R6-3-1A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>Institucional:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                
+                <textarea id="R6-3-1A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>Con un acervo de cuantos ejemplares:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                
+                <textarea id="R6-3-1A3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>Con capacidad para atender a cuantos usuarios simultáneamente:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                
+                <textarea id="R6-3-1A4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>Con sistemas de estantería abierta en el caso de una biblioteca física:</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS6-3-1A2">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
                     </select>
                 </div>
                 <p>Con servicios de:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-3-1A5" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>De la Unidad Académica:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-3-1A6" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>Con un acervo de cuantos ejemplares:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-3-1A7" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>Con un acervo de cuantos ejemplares:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-3-1A8" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>Con capacidad para atender a cuantos usuarios simultaneamente:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-3-1A9" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>Con sistemas de estantería abierta:</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS6-3-1A3">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
                     </select>
                 </div>
                 <p></p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-3-1A10" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>Con servicios de:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                
+                <textarea id="R6-3-1A11" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>Del Programa</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                
+                <textarea id="R6-3-1A12" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>Con un acervo de cuantos ejemplares</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                
+                <textarea id="R6-3-1A13" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>Con capacidad para atender a cuantos usuarios simultáneamente:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                
+                <textarea id="R6-3-1A14" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>Con sistemas de estantería abierta:</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS6-3-1A4">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
                     </select>
                 </div>
                 <p>Con servicios de:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-3-1A15" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>¿Qué otros servicios presta la biblioteca en que se apoya 
                 el programa a la comunidad estudiantil? (para el caso de bibliotecas 
                 con instalaciones físicas describa si cuenta con material audiovisual, 
@@ -342,7 +357,7 @@
                 vía Internet, salas de exposiciones, lugar para exposiciones, hemeroteca, 
                 videoteca, etc.; en el caso de bibliotecas virtuales como proporciona 
                 estos servicios).</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-3-1A16" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
@@ -361,7 +376,7 @@
                     Asociación de Bibliotecarios de Instituciones de Enseñanza Superior 
                     y de Investigación (ABIESI) en sus puntos fundamentales?</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS6-3-2A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
@@ -383,14 +398,15 @@
                     de referencia usados en las asignaturas del programa, para 
                     al menos el 10% de los estudiantes inscritos en éstas, cuando 
                     es en formato físico y en digital para el 100%.</p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R6-3-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <p>El material bibliográfico existente en la biblioteca en que 
                     se apoya el programa dispone de:</p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R6-3-3A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                    
                     <p>Textos de referencia señalados en las asignaturas de los planes de estudio</p>
                     <div class="opcMult"°>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS6-3-3A1">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
                             <option value="no">No</option>
@@ -398,7 +414,7 @@
                     </div>
                     <p>Títulos diferentes por cada asignatura que se imparte en el programa</p>
                     <div class="opcMult"°>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS6-3-3A2">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
                             <option value="no">No</option>
@@ -406,11 +422,12 @@
                     </div>
                     <p>Porcentaje de estudiantes que pueden hacer uso simultáneo de los textos 
                     de referencia Disponibles</p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R6-3-3A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                    
                     <p>¿Se tienen suscripciones a publicaciones periódicas del área 
                     de especialidad y de Ciencias Básicas?</p>
                     <div class="opcMult"°>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS6-3-3A3">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
                             <option value="no">No</option>
@@ -428,12 +445,14 @@
             <div class="preguntasCategoria" id="SC_6.3.4">
                 <p>6.3.4 Se debe contar con infraestructura para acceso a acervos digitales 
                 por medio de Internet.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-3-4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>La biblioteca dispone de:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-3-4A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>Infraestructura para acceso a acervos digitales por medio de Internet:</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS6-3-4A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
@@ -452,14 +471,16 @@
                 <p>6.3.5 La biblioteca deberá poder proporcionar el acceso 
                     a publicaciones y revistas periódicas relevantes en el 
                     área de informática y computación.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-3-5" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>El material bibliográfico existente en la biblioteca en que 
                 se apoya el programa dispone de:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-3-5A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>Acceso a publicaciones y revistas periódicas relevantes en el 
                 área de informática y computación</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS6-3-5A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
@@ -479,12 +500,13 @@
                     de consulta que incluyan manuales técnicos, enciclopedias
                     generales y especiales, diccionarios, estadísticas, etcétera; 
                     que apoyen al programa.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-3-6" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>El material bibliográfico existente en la biblioteca en que se 
                     apoya el programa dispone de:</p>
                 <p>Manuales técnicos del área</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS6-3-6A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
@@ -493,7 +515,7 @@
                 <p>Colecciones de consulta como diccionarios y enciclopedias generales 
                     y especiales:</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS6-3-6A2">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
@@ -501,7 +523,7 @@
                 </div>
                 <p>Publicaciones Estadísticas:</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS6-3-6A3">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
@@ -521,7 +543,7 @@
                      revistas deberán estar sujetos a renovación permanente.</p>
                 <p>¿Existe renovación permanente del acervo bibliográfico y las suscripciones a las revistas?</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS6-3-7A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
@@ -529,7 +551,7 @@
                 </div>
                 <p>¿Cómo se efectúa la renovación del acervo bibliográfico y las 
                     suscripciones a publicaciones periódicas?</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-3-7" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
@@ -544,13 +566,15 @@
             <div class="preguntasCategoria" id="SC_6.3.8">
                 <p>6.3.8 Se debe contar con medios electrónicos que permitan
                      la consulta automatizada del acervo bibliográfico.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-3-8" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>La biblioteca dispone de:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-3-8A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>Medios electrónicos que permitan la consulta automatizada del 
                     acervo bibliográfico</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS6-3-8A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
@@ -574,7 +598,7 @@
                     actualizados de los servicios bibliotecarios prestados en los
                      últimos períodos escolares:</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS6-3-9A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
@@ -592,12 +616,15 @@
             <div class="preguntasCategoria" id="SC_6.3.10">
                 <p>6.3.10 El personal académico debe participar en el 
                     proceso de selección de material bibliográfico.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-3-10" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>Describa brevemente el proceso de selección de material 
                     bibliográfico, y quiénes participan en él.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                
+                <textarea id="R6-3-10A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>¿De qué manera?</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                
+                <textarea id="R6-3-10A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
@@ -611,10 +638,11 @@
                 <p>6.3.11 Debe existir un mecanismo eficiente de adquisición
                      de material bibliográfico que satisfaga las necesidades
                       del programa.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-3-11" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>Describa brevemente el mecanismo de adquisición de material 
                     bibliográfico, y la manera como éste satisface las necesidades del programa.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-3-11A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
@@ -653,14 +681,15 @@
                 que utiliza para la administración de contenidos de su programa 
                 educativo:</p>
                 <p>Mencionar cual:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-4-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <div class="checkB">
                     <input type="checkbox" id="cbox1" value="opcion1"><label>Software libre u Open Source 
                         (Ejemplo: ATutor, Dokeos, Claroline, 
                         dotLRN, Moodle, o desarrollos institucionales, etc).</label><br>
                 </div>
                 <p>Mencionar cual y si es desarrollo institucional describirlo:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-4-1A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="checkB">
                     <input type="checkbox" id="cbox1" value="opcion1"><label>Cómputo 
                         en la nube pública o privada para Educación Superior, 
@@ -670,7 +699,7 @@
                         o desarrollos institucionales, etc.)</label><br>
                 </div>                
                 <p>Mencionar cual y si es institucional describirlo:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-4-1A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>Proporcione evidencia, ya sea de licencia, desarrollo o uso, según sea el caso.</p>
 
                 <div class="Listo">
@@ -685,10 +714,12 @@
                 <p>6.4.2 Seleccione de la lista de abajo, las características 
                     que posee su entorno de aprendizaje que utiliza para su 
                     programa educativo:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-4-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>Detalle de las características del entorno de aprendizaje:</p>
                 <p>Descripción, Proporcione evidencias de su uso y copia de los documentos</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                
+                <textarea id="R6-4-2A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>1) Interactividad. Se refiere a todas las herramientas de 
                     comunicación síncrona y asíncronas, como las de cooperación, 
                     colaboración, compartición y generación  de contenidos (como
@@ -698,18 +729,21 @@
                     entrega de actividades y mail dentro de la herramienta de 
                     aprendizaje, entre tantas otras que existen y que siguen 
                     creándose para comunicarse e interactuar).</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-4-2A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>2) Flexibilidad. Se refiere al grado de adaptabilidad tanto 
                     tecnológica, como pedagógica, que tenga la herramienta para 
                     favorecer el aprendizaje;</p>
                 <p>Descripción, Proporcione evidencias de su uso y copia de los documentos</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                
+                <textarea id="R6-4-2A3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>3) Escalabilidad. Se refiere a la proyección a futuro, es decir 
                     tener control y poder dar seguimiento para que se pueda transformar 
                     y adaptar con facilidad el entorno educativo a los recursos existentes 
                     o venideros;</p>
                 <p>Descripción, Proporcione evidencias de su uso y copia de los documentos</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-4-2A4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>4) Usabilidad. Se refiere a la facilidad de uso de la plataforma 
                     por parte de los actores del aprendizaje-profesores o 
                     facilitadores, tutores, estudiantes, administradores, tiene 
@@ -717,7 +751,8 @@
                     navegación, programación, administración, diseño e imagen del 
                     entorno de aprendizaje;</p>
                 <p>Descripción, Proporcione evidencias de su uso y copia de los documentos</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-4-2A5" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>5) Ubicuidad. Es la capacidad del entorno de aprendizaje de 
                     poder ser utilizado en todas partes simultáneamente y que 
                     sea transparente para el estudiante haciéndole sentir, de 
@@ -729,13 +764,15 @@
                     integración con otros sistemas autónomos externos a la 
                     misma (como las redes sociales sitios, etc.);</p>
                     <p>Descripción, Proporcione evidencias de su uso y copia de los documentos</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-4-2A6" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>6) Funcionabilidad. Se refiere al nivel de eficiencia, 
                     efectividad, portabilidad y facilidad de instalación. 
                     Es decir la conjunción de requerimientos tecnológicos, 
                     infraestructura y recursos del servidor;</p>
                 <p>Descripción, Proporcione evidencias de su uso y copia de los documentos</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-4-2A7" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>7) Estandarización. Se refiere a la aceptabilidad de estándares
                      como SCORM o a la facilidad para importar o insertar otros 
                      recursos o contenidos al entorno de aprendizaje.</p>
@@ -752,7 +789,7 @@
                 </div>
                 
                      <p>Descripción, Proporcione evidencias de su uso y copia de los documentos</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-4-2A8" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
@@ -772,7 +809,7 @@
                 <p>Descripción Proporcione evidencia de su uso a través de manuales 
                     impresos o en línea, así como el equipo de cómputo y software 
                     que se utiliza. Copia de los documentos</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-4-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
@@ -803,7 +840,7 @@
                     es decir, considera un diseño integral y holístico para ser 
                     utilizado por el estudiante y favorecer su aprendizaje autónomo?</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS6-5-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
@@ -811,7 +848,7 @@
                 </div>
                 <p>Explique, Presentar evidencia de material didáctico  
                 desarrollado y copia de los documentos</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-5-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
@@ -858,14 +895,15 @@
                     comunicólogos, profesores, facilitadores, tutores o 
                     asesores y estudiantes)</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS6-5-3A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
                     </select>
                 </div>
                 <p>Describa brevemente sus elementos:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-5-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>Proporcione como evidencia: ejemplo de cursos diseñados 
                     de esta manera y que se estén utilizando. En la visita 
                     proporcione acceso a los evaluadores a su plataforma. 
@@ -888,14 +926,14 @@
                     medios, otros materiales didácticos, hipertextos, 
                     hipervínculo, hipermedia.</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS6-5-4A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
                     </select>
                 </div>
                 <p>Describa brevemente sus elementos:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-5-4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>Proporcione como evidencia: ejemplo de cursos diseñados 
                     de esta manera y que se estén utilizando. En la visita 
                     proporcione acceso a los evaluadores a su plataforma. 
@@ -917,14 +955,14 @@
                     buen manejo e integralidad de multimedios. Así como la 
                     transmisión y recepción de señal.</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS6-5-5A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
                     </select>
                 </div>
                 <p>Explique brevemente:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-5-5" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>Proporcione como evidencia: ejemplo de cursos diseñados 
                     de esta manera y que se estén utilizando. En la visita 
                     proporcione acceso a los evaluadores a su plataforma. 
@@ -947,12 +985,13 @@
                     profesores, facilitadores, tutores y personal 
                     administrativo, para compartir experiencias y ampliar 
                     horizontes de aprendizaje?.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-5-6" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>Explique brevemente:</p>
                 <p>Proporcionar minutas oficiales de las reuniones que 
                     evidencien las mismas y sus resultados. Copia de 
-                    los ducumentos</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    los documentos</p>
+                <textarea id="R6-5-6A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
@@ -983,14 +1022,14 @@
                     facilitadores, tutores y personal administrativo, 
                     para compartir experiencias y ampliar horizontes de aprendizaje?</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS6-6-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
                         <option value="no">No</option>
                     </select>
                 </div>
                 <p>Explique brevemente:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R6-6-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>Descripción y Proporcionar minutas oficiales de las reuniones 
                     que evidencien las mismas y sus resultados. Copia de los 
                     documentos</p>
