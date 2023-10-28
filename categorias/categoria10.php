@@ -148,16 +148,16 @@
                 <div class="preguntasCategoria" id="SC_10.1.1">
                     <p>10.1.1. ¿Se cuenta con un Programa de Desarrollo Institucional (PDI) y con programas a mediano y corto plazo derivados del PDI? </p>
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS10-1-1A1">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
 
                     <p>En caso afirmativo mencione los puntos principales.                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R10-1-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <div class="Listo">
@@ -167,21 +167,22 @@
                     </div>
                     <div class="btnListo"><button>Guardar</button></div>
                 </div>
+
                 <div class="preguntasCategoria" id="SC_10.1.2">
                     <p>10.1.2.   La planeación del programa debe ser realizada por el personal académico.</p>
                     <p>¿La planeación del programa (incluyendo el plan presupuestal) es realizada por su personal académico?</p>
                     
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS10-1-2A1">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
 
                     <p>En caso afirmativo, describa cómo se realiza:                    </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R10-1-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <p>Evaluación</p>
                     
                     <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -197,16 +198,16 @@
                 <div class="preguntasCategoria" id="SC_10.1.3">
                     <p>10.1.3.  ¿Se efectúan sistemáticamente evaluaciones integrales para conocer el grado de cumplimiento de las metas de los programas a largo, mediano y corto plazo que permitan la toma de decisiones?</p>
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS10-1-3A1">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
 
                     <p>En caso afirmativo, describa cómo se realiza:                    </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R10-1-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     
                     <p>Organización</p>
                     
@@ -223,10 +224,10 @@
                 <div class="preguntasCategoria" id="SC_10.1.4">
                     <p>10.1.4  ¿La institución tiene establecida una normatividad clara y precisa que relacione las actividades administrativas con las académicas y se encuentra operacionalizada a través de reglamentos y manuales (de organización y procedimientos)?</p>
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS10-1-4A1">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
@@ -253,16 +254,16 @@
                 <div class="preguntasCategoria" id="SC_10.2.1">
                     <p>10.2.1 ¿Tiene establecida la Institución una normatividad que defina los requisitos para quienes ejercen funciones académico-administrativas?4.2.1 ¿Hay programa de becas para estudiantes?</p>
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS10-2-1A1">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
                     
                     <p>En caso afirmativo explique en qué consisten</p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R10-2-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
@@ -278,16 +279,16 @@
                     
                     <p>En la práctica, ¿hay actividades académicas subordinadas a procesos administrativos?</p>
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS10-2-2A1">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
 
                     <p>En caso afirmativo, mencione las más importantes:</p>                    
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R10-2-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <div class="Listo">
@@ -309,28 +310,28 @@
                     <p>10.3.1 Cuando en la institución exista una política definida para la asignación del presupuesto, el programa debe hacer un análisis de ella y ver si es congruente con sus necesidades. En caso de que no lo sea, debe elaborar un modelo adecuado de sus necesidades que considere, entre otras cosas, salarios, mejorar al personal académico, gastos de operación, inversiones, compra de nuevos equipos y sustitución de los existentes, así como ampliaciones a la planta física.</p>
                     <p>La institución tiene claramente definidas las políticas y criterios para la asignación del presupuesto del programa.</p>
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS10-3-1A1">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
 
                     <p>En caso afirmativo describa brevemente cuáles son:</p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R10-3-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <p>¿Se han realizado análisis de las mismas para ver si son congruentes con las necesidades de la institución?</p>
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS10-3-1A2">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
 
                     <p>En caso afirmativo mencione las principales decisiones que se han tomado con relación a las políticas de
                         asignación presupuestal:</p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R10-3-1A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <div class="Listo">
@@ -345,10 +346,10 @@
                     <p>10.3.2 El programa debe tener de manera explícita un plan presupuestal acorde con sus necesidades de operación y planes de desarrollo.</p>
                     <p>El programa cuenta con un plan presupuestal acorde con sus necesidades y planes de desarrollo:</p>
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS10-3-2A1">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
 
@@ -367,15 +368,15 @@
                 <div class="preguntasCategoria" id="SC_10.3.3">
                     <p>10.3.3 ¿El programa cuenta con criterios claramente establecidos para la determinación de gastos de mantenimiento y operación de laboratorios y talleres?</p>
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS10-3-3A1">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
 
                     <p>En caso afirmativo mencione los más importantes</p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R10-3-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <div class="Listo">
@@ -389,7 +390,7 @@
                 <div class="preguntasCategoria" id="SC_10.3.4">
                     <p>10.3.4 El programa debe tener definidos claramente sus costos globales de operación, a través de los gastos en sueldos y salarios del personal que participe, así como sus gastos de operación y las inversiones para la compra de nuevos equipos y sustitución de éstos.</p>
                     <p>Será muy conveniente que presente un análisis de los costos de operación del programa (sueldos y salarios, gastos de operación y mantenimiento, depreciación del equipo, gasto estimado por renta de las instalaciones, etc.) y lo relacione con los beneficios obtenidos (No. de estudiantes atendidos, servicios brindados, etc.). Aunque este análisis no es fácil de realizar, ni se puede hacer en forma exacta pues algunas estimaciones son subjetivas, se debe procurar obtener aproximaciones muy útiles para la distribución o redistribución de los recursos.</p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R10-3-4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <div class="Listo">
