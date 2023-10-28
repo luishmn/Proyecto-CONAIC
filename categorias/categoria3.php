@@ -153,24 +153,24 @@
 
             <div class="preguntasCategoria" id="SC_3.1.1">
                 <p>3.1.1 Justificación del programa</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-1-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>¿Existe un documento que justifique la creación?</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS3-1-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
 
                 <p>Los motivos por los cuales fue establecido el programa (porque y para que)</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-1-1A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>Las razones a las cuales obedece actualmente el programa:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-1-1A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>¿A qué demanda específica pretende satisfacer el programa?</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-1-1A3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>¿Qué demanda específica satisface el programa?</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-1-1A4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
 
 
@@ -186,14 +186,14 @@
                 <p>3.1.2 Es importante que exista congruencia con la misión, visión y objetivos institucionales, los objetivos del plan nacional de desarrollo (vigente) y educativo del país, así como con el objetivo de la educación superior.</p>
                 <p>¿Está publicada la misión, visión y objetivos institucionales?</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS3-1-2A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <p>En un párrafo justifique la congruencia entre la misión, visión y objetivos institucionales con el objetivo del programa y el objetivo de la educación superior.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-1-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
                     <button>Seleccionar archivos</button>
@@ -214,26 +214,26 @@
                 <p>3.2.1 Debe existir una definición del objetivo general del programa y perfil del egresado.</p>
                 <p>¿Está publicado el plan de estudios del programa?</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS3-2-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <p>¿En la documentación del programa se describe el perfil del egresado?</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS3-2-1A2">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <p>¿En la documentación del programa se describen los objetivos del programa?</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS3-2-1A3">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>  
                 <div class="btnListo"><button>Guardar</button></div>
@@ -242,7 +242,7 @@
 
             <div class="preguntasCategoria" id="SC_3.2.2">
                 <p>3.2.2 Es importante que exista congruencia entre el perfil del egresado y el objetivo.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-2-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
                     <button>Seleccionar archivos</button>
@@ -253,7 +253,7 @@
 
             <div class="preguntasCategoria" id="SC_3.2.3">
                 <p>3.2.3 El objetivo debe ser congruente con los desarrollos presentes y futuros del área de conocimiento.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-2-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
                     <button>Seleccionar archivos</button>
@@ -272,10 +272,10 @@
             <div class="preguntasCategoria" id="SC_3.3.1">
                 <p>3.3.1 ¿Existe la normativa que señale claramente los requisitos de permanencia, egreso, equivalencia y revalidación del programa académico y si se difunde entre la comunidad estudiantil?</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS3-3-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div> 
                 <div class="Listo">
@@ -293,7 +293,7 @@
             </div>
             <div class="preguntasCategoria" id="SC_3.4.1">
                 <p>3.4.1 Para poder comparar el contenido curricular de distintos programas, se hace referencia a Unidades de cada curso. Para efectos de equivalencia, una Unidad  equivale a 1 hora de Teoría frente a grupo, o bien a 3 horas de Práctica frente a grupo para Licenciatura y para el caso de Técnico Superior Universitario, la equivalencia es 2 horas de práctica frente a grupo.  El Comité reconoce que existen nuevos modelos pedagógicos donde los estudiantes realizan actividades de auto-estudio; en estos casos, la institución que busca la acreditación deberá de justificar la equivalencia utilizada para el número de Unidades.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-4-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
                     <button>Seleccionar archivos</button>
@@ -310,42 +310,45 @@
             <div class="preguntasCategoria" id="SC_3.5.1">
                 <p>3.5.1 Asignaturas del programa</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS3-5-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div> 
                 <p>¿Se entrega esta información al estudiante?</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS3-5-1A2">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div> 
                 <p>¿Se cuenta con los programas sinópticos (condensados) de todas las asignaturas?</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS3-5-1A3">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div> 
                 <p>En que porcentaje</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-5-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>¿Se cuenta con los programas analíticos (detallados) de todas las asignaturas?</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS3-5-1A4">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div> 
+
                 <p>En que porcentaje</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-5-1A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>Con base en el total de los programas analíticos de las asignaturas del programa, indicar qué porcentaje de ellos mencionan expresamente:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-5-1A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
                     <button>Seleccionar archivos</button>
@@ -356,11 +359,11 @@
 
             <div class="preguntasCategoria" id="SC_3.5.2">
                 <p>3.5.2 En las asignaturas correspondientes a la especialidad están incluidos proyectos dirigidos a desarrollar la habilidad del estudiante para resolver problemas reales acordes a las necesidades tecnológicas del propio programa.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-5-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>Indique en qué asignaturas del programa se elaboran proyectos dirigidos a desarrollar la habilidad del estudiante para resolver problemas reales acordes a las necesidades tecnológicas  del propio programa.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-5-2A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>Indique las materias optativas ofrecidas en los últimos tres años. Las unidades de la asignatura y las áreas debe considerarse en términos de la clasificación indicada en las respuestas 3.1 y 3.2.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-5-2A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
                     <button>Seleccionar archivos</button>
@@ -374,7 +377,7 @@
             <div class="preguntasCategoria" id="SC_3.5.3">
                 <p>3.5.3 El plan de estudios debe considerar la elaboración de trabajo en equipo e interdisciplinario.</p>
                 <p>Indique en qué asignaturas se elabora trabajo en equipo e interdisciplinario.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-5-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
                     <button>Seleccionar archivos</button>
@@ -397,7 +400,8 @@
                 <p>Indique las materias optativas ofrecidas en los últimos tres años.
                     Las unidades de la asignatura y las áreas debe considerarse en términos de la clasificación indicada en las
                     respuestas 3.1 y 3.2.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-6-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
                     <button>Seleccionar archivos</button>
@@ -418,7 +422,7 @@
             </div>
             <div class="preguntasCategoria" id="SC_3.7.1">
                 <p>3.7.1 El plan de estudios debe ser revisado y actualizado en su caso, al menos cada cinco años.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-7-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
                     <button>Seleccionar archivos</button>
@@ -429,9 +433,11 @@
 
             <div class="preguntasCategoria" id="SC_3.7.2">
                 <p>3.7.2 Debe existir un procedimiento oficial y funcional,  para la revisión y actualización del plan de estudios. </p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-7-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>¿Existe un procedimiento oficial  para la revisión del plan de estudios?</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-7-2A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
                     <button>Seleccionar archivos</button>
@@ -442,30 +448,32 @@
             <div class="preguntasCategoria" id="SC_3.7.3">
                 <p>3.7.3 En los procesos de revisión y actualización deben participar los cuerpos colegiados, así como un grupo de asesores externos representantes del sector productivo, egresados en activo e  investigadores reconocidos.</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS3-7-3A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div> 
                 <p>¿De qué manera?</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-7-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>¿En la revisión y actualización del plan de estudios participan asesores externos y representantes del sector productivo?</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS3-7-3A2">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div> 
                 <p>¿De qué manera?</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-7-3A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+               
                 <p>¿En la revisión y actualización del plan de estudios participan egresados del programa?</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS3-7-3A3">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div> 
                 <div class="Listo">
@@ -479,14 +487,15 @@
             <div class="preguntasCategoria" id="SC_3.7.4">
                 <p>3.7.4 Debe existir un procedimiento permanente de evaluación curricular.</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS3-7-4A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div> 
                 <p>Describa en qué consiste este procedimiento:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-7-4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
                     <button>Seleccionar archivos</button>
@@ -502,10 +511,10 @@
             <div class="preguntasCategoria" id="SC_3.8.1">
                 <p>3.8.1 ¿Los programas actualizados de todas las asignaturas del plan de estudios están a disposición para su consulta por parte de profesores, estudiantes y el público en general?</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS3-8-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div> 
                 <div class="Listo">
@@ -519,65 +528,66 @@
             <div class="preguntasCategoria" id="SC_3.8.2">
                 <p>3.8.2 Indique cuáles de los siguientes aspectos se le da conocer al estudiante.</p>
                 <p>Estructura del plan de estudios.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-8-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>Objetivo.</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS3-8-2A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div> 
                 <p>Perfil</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS3-8-2A2">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div> 
                 <p>Asignaturas</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS3-8-2A3">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div> 
                 <p>Horas</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS3-8-2A4">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div> 
                 <p>Duración</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS3-8-2A5">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div> 
                 <p>Seriación</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS3-8-2A6">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div> 
                 <p>Especialidad(es)</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS3-8-2A7">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div> 
                 <p>Describa cómo se tiene acceso a la información de los programas:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-8-2A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
@@ -594,15 +604,15 @@
 
                 <p>¿Existen mecanismos para la promoción externa del programa?</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS3-8-3A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div> 
 
                 <p>En caso afirmativo indique cuales son:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-8-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <p>En caso afirmativo proporcione una copia o copias de los 
                     documentos (puedes subir más de un archivo).
@@ -625,7 +635,8 @@
             
             <div class="preguntasCategoria" id="SC_3.9.1">
                 <p>3.9.1 Tabla de cumplimiento de competencias transversales. Considerar la definición y justificación competencias iniciales, de desarrollo y de evaluación.  Rellenar tabla competencias transversales. Etapa de planificación del modelo de competencias</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R3-9-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
                     <button>Seleccionar archivos</button>
@@ -635,7 +646,7 @@
 
                 <div class="preguntasCategoria" id="SC_3.9.2">
                     <p>3.9.2. Tabla de cumplimiento de competencias específicas. Considerar la definición y justificación competencias iniciales, de desarrollo y de evaluación. Rellenar tabla competencias específicas. Etapa de planificación del modelo de competencias.</p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R3-9-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <div class="Listo">
                         <img src="/imagenes/pdf.png" alt="">
                         <button>Seleccionar archivos</button>
