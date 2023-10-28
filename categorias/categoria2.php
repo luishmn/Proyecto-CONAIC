@@ -43,8 +43,11 @@
     <script src="enviarConsulta.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    
 
     <script>
 
@@ -641,95 +644,130 @@
                     <input type="text" id="R2-1-1A7" placeholder="Escribe tu respuesta aquí...">
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
+                    
+
+
+ 
+
+
+
+
+
+                    <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
                         <!--Boton-->
                 
-
-                <div class="btn-modal1">Subir PDDs</div>
-                <!--Fin de Boton-->
-
+                    <div class="botonesPDFSgroup">
                 
-                <!--Ventana Modal-->
-                <input type="checkbox" id="btn-modal1">
-                    <div class="container-modal1">
-                        <div class="content-modal1">
-                            <h2>Subir tu PDF</h2>
-                            <form method="POST" action="subir_pdf.php" enctype="multipart/form-data">
-                                <input type="hidden" name="claveSubCriterio" value="1.1.1"> <!-- Clave fija -->
-                                <label for="archivo">Selecciona un archivo PDF:</label>
-                                <input type="file" name="archivo" accept=".pdf">
-                                <input type="submit" value="Cargar PDF">
-                                <label for="btn-modal1">Cerrar</label>
-                            </form>                            
-                        </div>
+                    <div class="boton-modal1">
+                        <label for="btn-modal1">
+                            <i class="fas fa-upload"></i> Subir PDF
+                        </label>
                     </div>
-                    <label class="boton_cerrar1" for="btn-modal1" class="cerrar-modal1"></label>
-                    </div>
-                    <!--Fin de Ventana Modal-->
+                    <!--Fin de Boton-->
 
-                    <!-- Botón -->
-                    <div class="boton-modal2">
-                        <label for="btn-modal2">Mostrar PDFs</label>
-                    </div>
+                    
+                    <!--Ventana Modal-->
+                    <input type="checkbox" id="btn-modal1">
+                        <div class="container-modal1">
+                            <div class="content-modal1">
+                                <h2>Subir tu PDF</h2>
+                                <form method="POST" action="subir_pdf.php" enctype="multipart/form-data">
+                                    <label class="custom-file-label">
+                                        <input type="file" name="archivo" accept=".pdf" class="custom-file-input" id="file-input" multiple>
+                                        <span class="icon"><i class="fa fa-file-pdf-o"></i></span> Seleccionar PDF
+                                        <input type="hidden" name="claveSubCriterio" value="2.1.1">
+                                    </label>
+                                    <div class="selected-files" id="selected-files"></div>
+                                    <br>
 
-                    <!-- Ventana Modal -->
-                    <input type="checkbox" id="btn-modal2">
-                    <div class="container-modal2">
-                        <div class="content-modal2">
-                            <div class="Cuadro">
-                            <table>
-                            <thead>
-                                <tr>
-                                    <th>Nombre del PDF</th>
-                                    <th>clavePDF</th>
-                                    <th>Acción</th>
-                                </tr>
-                            
-                        
-                            </thead>
-                            <tbody>
-                            <?php
-
-
-                                // Consulta para obtener los PDFs desde la base de datos
-                                $sql = "SELECT id, nombrePDF, clavePDF FROM subcriteriospdf WHERE claveSubCriterio='1.1.1'";
-                                $resultado = $conexion->query($sql);
-
-                                if ($resultado->num_rows > 0) {
-                                    while ($fila = $resultado->fetch_assoc()) {
-                                        $pdfName = $fila["nombrePDF"];
-                                        $pdfId = $fila["id"];
-                                        $pdfClave=$fila["clavePDF"];
-                                        echo "<tr>";
-                                        echo "<td>$pdfName</td>";
-                                        echo "<td>$pdfClave</td>";
-                                        echo "<td>";
-                                        echo "<a href='abrir_pdf.php?clavePDF=$pdfClave' target='_blank'>Abrir PDF</a>";
-                                        echo " | ";
-                                        echo "<a href='eliminar_pdf.php?clavePDF=$pdfClave'>Eliminar PDF</a>";
-                                        echo "</td>";
-                                        echo "</tr>";
-                                    }
-                                } else {
-                                    echo "<tr><td colspan='2'>No se encontraron PDFs en la base de datos.</td></tr>";
-                                }
-
-
-                               
-                                ?>
-                            </tbody>
-                            </table>
-
+                                    <input type="submit" value="Cargar PDF" class="submitPDF">
+                                    <br><br>
+                                    <label for="btn-modal1" class="cerrar1">Cerrar</label>
+                                    <input type="hidden" name="claveSubCriterio" value="2.1.1"> <!-- Clave fija -->
+                
+                                </form>                            
                             </div>
-                            <label class="boton_cerrar" for="btn-modal2">Cerrar</label>
                         </div>
-                        <label for="btn-modal2" class="cerrar-modal2"></label>
+                        </div>
+                        <!--Fin de Ventana Modal-->
+
+                        <!-- Botón -->
+                        <div class="boton-modal2">
+                            <label for="btn-modal2">
+                                <i class="fas fa-eye"></i> Mostrar PDFs
+                            </label>
+                        </div>
+
+
+                        <!-- Ventana Modal -->
+                        <input type="checkbox" id="btn-modal2">
+                        <div class="container-modal2">
+                            <div class="content-modal2">
+                                <div class="Cuadro">
+                                <table>
+                                <thead>
+                                    <tr>
+                                        <th>Nombre del PDF</th>
+                                        <th>clavePDF</th>
+                                        <th>Acción</th>
+                                    </tr>
+                                
+                            
+                                </thead>
+                                <tbody>
+                                <?php
+
+
+                                    // Consulta para obtener los PDFs desde la base de datos
+                                    $sql = "SELECT id, nombrePDF, clavePDF FROM subcriteriospdf WHERE claveSubCriterio='2.1.1'";
+                                    $resultado = $conexion->query($sql);
+
+                                    if ($resultado->num_rows > 0) {
+                                        while ($fila = $resultado->fetch_assoc()) {
+                                            $pdfName = $fila["nombrePDF"];
+                                            $pdfId = $fila["id"];
+                                            $pdfClave=$fila["clavePDF"];
+                                            echo "<tr>";
+                                            echo "<td>$pdfName</td>";
+                                            echo "<td>$pdfClave</td>";
+                                            echo "<td>";
+                                            echo "<a href='abrir_pdf.php?clavePDF=$pdfClave' target='_blank'>Abrir PDF</a>";
+                                            echo " | ";
+                                            echo "<a href='eliminar_pdf.php?clavePDF=$pdfClave'>Eliminar PDF</a>";
+                                            echo "</td>";
+                                            echo "</tr>";
+                                        }
+                                    } else {
+                                        echo "<tr><td colspan='2'>No se encontraron PDFs en la base de datos.</td></tr>";
+                                    }
+
+
+                                
+                                    ?>
+                                </tbody>
+                                </table>
+
+                                </div>
+                                <label class="boton_cerrar" for="btn-modal2">Cerrar</label>
+                            </div>
+                            <label for="btn-modal2" class="cerrar-modal2"></label>
+                        </div>
                     </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
+
                     <div class="btnListo"><button id="guardarRespuesta1">Guardar</button></div>
                 </div>
                 
-
 
 
 
@@ -757,92 +795,133 @@
                     <br>
                     <input type="text" id="R2-2-1" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
+                    
+
+
+
+
+
+                    <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
                         <!--Boton-->
                 
-
-                <div class="btn-modal1">Subir PDDs</div>
-                <!--Fin de Boton-->
-
+                    <div class="botonesPDFSgroup">
                 
-                <!--Ventana Modal-->
-                <input type="checkbox" id="btn-modal1">
-                    <div class="container-modal1">
-                        <div class="content-modal1">
-                            <h2>Subir tu PDF</h2>
-                            <form method="POST" action="subir_pdf.php" enctype="multipart/form-data">
-                                <input type="hidden" name="claveSubCriterio" value="1.1.1"> <!-- Clave fija -->
-                                <label for="archivo">Selecciona un archivo PDF:</label>
-                                <input type="file" name="archivo" accept=".pdf">
-                                <input type="submit" value="Cargar PDF">
-                                <label for="btn-modal1">Cerrar</label>
-                            </form>                            
-                        </div>
+                    <div class="boton-modal1">
+                        <label for="btn-modal1">
+                            <i class="fas fa-upload"></i> Subir PDF
+                        </label>
                     </div>
-                    <label class="boton_cerrar1" for="btn-modal1" class="cerrar-modal1"></label>
-                    </div>
-                    <!--Fin de Ventana Modal-->
+                    <!--Fin de Boton-->
 
-                    <!-- Botón -->
-                    <div class="boton-modal2">
-                        <label for="btn-modal2">Mostrar PDFs</label>
-                    </div>
+                    
+                    <!--Ventana Modal-->
+                    <input type="checkbox" id="btn-modal1">
+                        <div class="container-modal1">
+                            <div class="content-modal1">
+                                <h2>Subir tu PDF</h2>
+                                <form method="POST" action="subir_pdf.php" enctype="multipart/form-data">
+                                    <label class="custom-file-label">
+                                        <input type="file" name="archivo" accept=".pdf" class="custom-file-input" id="file-input" multiple>
+                                        <span class="icon"><i class="fa fa-file-pdf-o"></i></span> Seleccionar PDF
+                                        <input type="hidden" name="claveSubCriterio" value="2.2.1">
+                                    </label>
+                                    <div class="selected-files" id="selected-files"></div>
+                                    <br>
 
-                    <!-- Ventana Modal -->
-                    <input type="checkbox" id="btn-modal2">
-                    <div class="container-modal2">
-                        <div class="content-modal2">
-                            <div class="Cuadro">
-                            <table>
-                            <thead>
-                                <tr>
-                                    <th>Nombre del PDF</th>
-                                    <th>clavePDF</th>
-                                    <th>Acción</th>
-                                </tr>
-                            
-                        
-                            </thead>
-                            <tbody>
-                            <?php
-
-                                // Consulta para obtener los PDFs desde la base de datos
-                                $sql = "SELECT id, nombrePDF, clavePDF FROM subcriteriospdf WHERE claveSubCriterio='1.1.1'";
-                                $resultado = $conexion->query($sql);
-
-                                if ($resultado->num_rows > 0) {
-                                    while ($fila = $resultado->fetch_assoc()) {
-                                        $pdfName = $fila["nombrePDF"];
-                                        $pdfId = $fila["id"];
-                                        $pdfClave=$fila["clavePDF"];
-                                        echo "<tr>";
-                                        echo "<td>$pdfName</td>";
-                                        echo "<td>$pdfClave</td>";
-                                        echo "<td>";
-                                        echo "<a href='abrir_pdf.php?clavePDF=$pdfClave' target='_blank'>Abrir PDF</a>";
-                                        echo " | ";
-                                        echo "<a href='eliminar_pdf.php?clavePDF=$pdfClave'>Eliminar PDF</a>";
-                                        echo "</td>";
-                                        echo "</tr>";
-                                    }
-                                } else {
-                                    echo "<tr><td colspan='2'>No se encontraron PDFs en la base de datos.</td></tr>";
-                                }
-
-                                ?>
-                            </tbody>
-                            </table>
-
+                                    <input type="submit" value="Cargar PDF" class="submitPDF">
+                                    <br><br>
+                                    <label for="btn-modal1" class="cerrar1">Cerrar</label>
+                                    <input type="hidden" name="claveSubCriterio" value="2.2.1"> <!-- Clave fija -->
+                
+                                </form>                            
                             </div>
-                            <label class="boton_cerrar" for="btn-modal2">Cerrar</label>
                         </div>
-                        <label for="btn-modal2" class="cerrar-modal2"></label>
+                        </div>
+                        <!--Fin de Ventana Modal-->
+
+                        <!-- Botón -->
+                        <div class="boton-modal2">
+                            <label for="btn-modal2">
+                                <i class="fas fa-eye"></i> Mostrar PDFs
+                            </label>
+                        </div>
+
+
+                        <!-- Ventana Modal -->
+                        <input type="checkbox" id="btn-modal2">
+                        <div class="container-modal2">
+                            <div class="content-modal2">
+                                <div class="Cuadro">
+                                <table>
+                                <thead>
+                                    <tr>
+                                        <th>Nombre del PDF</th>
+                                        <th>clavePDF</th>
+                                        <th>Acción</th>
+                                    </tr>
+                                
+                            
+                                </thead>
+                                <tbody>
+                                <?php
+
+
+                                    // Consulta para obtener los PDFs desde la base de datos
+                                    $sql = "SELECT id, nombrePDF, clavePDF FROM subcriteriospdf WHERE claveSubCriterio='2.2.1'";
+                                    $resultado = $conexion->query($sql);
+
+                                    if ($resultado->num_rows > 0) {
+                                        while ($fila = $resultado->fetch_assoc()) {
+                                            $pdfName = $fila["nombrePDF"];
+                                            $pdfId = $fila["id"];
+                                            $pdfClave=$fila["clavePDF"];
+                                            echo "<tr>";
+                                            echo "<td>$pdfName</td>";
+                                            echo "<td>$pdfClave</td>";
+                                            echo "<td>";
+                                            echo "<a href='abrir_pdf.php?clavePDF=$pdfClave' target='_blank'>Abrir PDF</a>";
+                                            echo " | ";
+                                            echo "<a href='eliminar_pdf.php?clavePDF=$pdfClave'>Eliminar PDF</a>";
+                                            echo "</td>";
+                                            echo "</tr>";
+                                        }
+                                    } else {
+                                        echo "<tr><td colspan='2'>No se encontraron PDFs en la base de datos.</td></tr>";
+                                    }
+
+
+                                
+                                    ?>
+                                </tbody>
+                                </table>
+
+                                </div>
+                                <label class="boton_cerrar" for="btn-modal2">Cerrar</label>
+                            </div>
+                            <label for="btn-modal2" class="cerrar-modal2"></label>
+                        </div>
                     </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
+                    
+
                     <div class="btnListo"><button id="guardarRespuesta2">Guardar</button></div>
-
-
                 </div>
+
+
+
+
+
+
 
 
                 <div class="preguntasCategoria" id="SC_2.2.2">
@@ -858,87 +937,124 @@
                     <br>
                     <input type="text" id="R2-2-2" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
+                    
+                    
+                    
+                    
+                    
+                    <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
                         <!--Boton-->
                 
-
-                <div class="btn-modal1">Subir PDDs</div>
-                <!--Fin de Boton-->
-
+                    <div class="botonesPDFSgroup">
                 
-                <!--Ventana Modal-->
-                <input type="checkbox" id="btn-modal1">
-                    <div class="container-modal1">
-                        <div class="content-modal1">
-                            <h2>Subir tu PDF</h2>
-                            <form method="POST" action="subir_pdf.php" enctype="multipart/form-data">
-                                <input type="hidden" name="claveSubCriterio" value="1.1.1"> <!-- Clave fija -->
-                                <label for="archivo">Selecciona un archivo PDF:</label>
-                                <input type="file" name="archivo" accept=".pdf">
-                                <input type="submit" value="Cargar PDF">
-                                <label for="btn-modal1">Cerrar</label>
-                            </form>                            
-                        </div>
+                    <div class="boton-modal1">
+                        <label for="btn-modal1">
+                            <i class="fas fa-upload"></i> Subir PDF
+                        </label>
                     </div>
-                    <label class="boton_cerrar1" for="btn-modal1" class="cerrar-modal1"></label>
-                    </div>
-                    <!--Fin de Ventana Modal-->
+                    <!--Fin de Boton-->
 
-                    <!-- Botón -->
-                    <div class="boton-modal2">
-                        <label for="btn-modal2">Mostrar PDFs</label>
-                    </div>
+                    
+                    <!--Ventana Modal-->
+                    <input type="checkbox" id="btn-modal1">
+                        <div class="container-modal1">
+                            <div class="content-modal1">
+                                <h2>Subir tu PDF</h2>
+                                <form method="POST" action="subir_pdf.php" enctype="multipart/form-data">
+                                    <label class="custom-file-label">
+                                        <input type="file" name="archivo" accept=".pdf" class="custom-file-input" id="file-input" multiple>
+                                        <span class="icon"><i class="fa fa-file-pdf-o"></i></span> Seleccionar PDF
+                                        <input type="hidden" name="claveSubCriterio" value="2.2.2">
+                                    </label>
+                                    <div class="selected-files" id="selected-files"></div>
+                                    <br>
 
-                    <!-- Ventana Modal -->
-                    <input type="checkbox" id="btn-modal2">
-                    <div class="container-modal2">
-                        <div class="content-modal2">
-                            <div class="Cuadro">
-                            <table>
-                            <thead>
-                                <tr>
-                                    <th>Nombre del PDF</th>
-                                    <th>clavePDF</th>
-                                    <th>Acción</th>
-                                </tr>
-                            
-                        
-                            </thead>
-                            <tbody>
-                            <?php
-                                // Conexión a la base de datos (reemplaza con tus credenciales)
-
-
-                                if ($resultado->num_rows > 0) {
-                                    while ($fila = $resultado->fetch_assoc()) {
-                                        $pdfName = $fila["nombrePDF"];
-                                        $pdfId = $fila["id"];
-                                        $pdfClave=$fila["clavePDF"];
-                                        echo "<tr>";
-                                        echo "<td>$pdfName</td>";
-                                        echo "<td>$pdfClave</td>";
-                                        echo "<td>";
-                                        echo "<a href='abrir_pdf.php?clavePDF=$pdfClave' target='_blank'>Abrir PDF</a>";
-                                        echo " | ";
-                                        echo "<a href='eliminar_pdf.php?clavePDF=$pdfClave'>Eliminar PDF</a>";
-                                        echo "</td>";
-                                        echo "</tr>";
-                                    }
-                                } else {
-                                    echo "<tr><td colspan='2'>No se encontraron PDFs en la base de datos.</td></tr>";
-                                }
-
-
-                                ?>
-                            </tbody>
-                            </table>
-
+                                    <input type="submit" value="Cargar PDF" class="submitPDF">
+                                    <br><br>
+                                    <label for="btn-modal1" class="cerrar1">Cerrar</label>
+                                    <input type="hidden" name="claveSubCriterio" value="2.2.2"> <!-- Clave fija -->
+                
+                                </form>                            
                             </div>
-                            <label class="boton_cerrar" for="btn-modal2">Cerrar</label>
                         </div>
-                        <label for="btn-modal2" class="cerrar-modal2"></label>
+                        </div>
+                        <!--Fin de Ventana Modal-->
+
+                        <!-- Botón -->
+                        <div class="boton-modal2">
+                            <label for="btn-modal2">
+                                <i class="fas fa-eye"></i> Mostrar PDFs
+                            </label>
+                        </div>
+
+
+                        <!-- Ventana Modal -->
+                        <input type="checkbox" id="btn-modal2">
+                        <div class="container-modal2">
+                            <div class="content-modal2">
+                                <div class="Cuadro">
+                                <table>
+                                <thead>
+                                    <tr>
+                                        <th>Nombre del PDF</th>
+                                        <th>clavePDF</th>
+                                        <th>Acción</th>
+                                    </tr>
+                                
+                            
+                                </thead>
+                                <tbody>
+                                <?php
+
+
+                                    // Consulta para obtener los PDFs desde la base de datos
+                                    $sql = "SELECT id, nombrePDF, clavePDF FROM subcriteriospdf WHERE claveSubCriterio='2.2.2'";
+                                    $resultado = $conexion->query($sql);
+
+                                    if ($resultado->num_rows > 0) {
+                                        while ($fila = $resultado->fetch_assoc()) {
+                                            $pdfName = $fila["nombrePDF"];
+                                            $pdfId = $fila["id"];
+                                            $pdfClave=$fila["clavePDF"];
+                                            echo "<tr>";
+                                            echo "<td>$pdfName</td>";
+                                            echo "<td>$pdfClave</td>";
+                                            echo "<td>";
+                                            echo "<a href='abrir_pdf.php?clavePDF=$pdfClave' target='_blank'>Abrir PDF</a>";
+                                            echo " | ";
+                                            echo "<a href='eliminar_pdf.php?clavePDF=$pdfClave'>Eliminar PDF</a>";
+                                            echo "</td>";
+                                            echo "</tr>";
+                                        }
+                                    } else {
+                                        echo "<tr><td colspan='2'>No se encontraron PDFs en la base de datos.</td></tr>";
+                                    }
+
+
+                                
+                                    ?>
+                                </tbody>
+                                </table>
+
+                                </div>
+                                <label class="boton_cerrar" for="btn-modal2">Cerrar</label>
+                            </div>
+                            <label for="btn-modal2" class="cerrar-modal2"></label>
+                        </div>
                     </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
+
+
                     <div class="btnListo"><button id="guardarRespuesta3">Guardar</button></div>
 
 

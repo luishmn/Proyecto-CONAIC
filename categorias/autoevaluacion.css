@@ -338,15 +338,37 @@ body{
 .preguntasCategoria button:hover{
     transform: scale(0.95);
 }
+.pdfs-options {
+    border-radius: 30px;
+    background-color: #73B1C1;
+    display: flex;
+    width: 60%;
+    margin: 0 auto; /* Centra horizontalmente */
+    margin-bottom: 3vw;
+}
 
+.imgpdfs{
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    font-size: 6vw;
+    color: white;
+}
 
 .Listo {
-    display: flex;
-    align-items: center;
+    display: block;
+
     padding: 5px;
-    justify-content: center;
-    margin-bottom: 20px;
+
+ 
+    width: 70%;
+
+
+    
+
 }
+
+
 
 .Listo img{
     width: 10%;
@@ -403,7 +425,7 @@ body{
     margin:5px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #73B1C1;
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     padding: 5px;
     border-radius: 20px;
@@ -423,13 +445,21 @@ body{
 
 /*----------------------------  VENTANA PARA SUBIR LOS PDFs     --------------------------*/
         /*:::Boton-Modal:::*/
+       
+        
+        
+        
+
         .boton-modal1{
-            padding: 40px;
+            padding: 10px;
             color: #fff;
             cursor: pointer;
             transition: all 300ms ease;
         }
         .boton-modal1 label{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             padding: 10px 15px;
             background-color: #5488a3;
             color: #fff;
@@ -437,6 +467,9 @@ body{
             cursor: pointer;
             transition: all 300ms ease;
             font-family: Arial, Helvetica, sans-serif;
+        }
+        .boton-modal1 label i {
+            margin-right: 5px; /* Añade un espacio entre el icono y el texto */
         }
         .boton-modal1 label:hover{
             background-color: #185E83;
@@ -562,11 +595,17 @@ body{
         /* Botón Modal */
                /*:::Boton-Modal:::*/
         .boton-modal2{
-            padding: 40px;
+            /*display: flex;*/
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
             color: #fff;
             cursor: pointer;
             transition: all 300ms ease;
             align-items: center;
+        }
+        .boton-modal2 label i {
+            margin-right: 5px; /* Añade un espacio entre el icono y el texto */
         }
         .boton-modal2 label{
             padding: 10px 15px;
@@ -582,12 +621,15 @@ body{
         }
 
 
+        
+
 
 
         .botonesPDFSgroup{
             display: flex;
             align-items: center;
         }
+
 
 
 

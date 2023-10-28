@@ -34,6 +34,96 @@
     <script src="enviarConsulta.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+
+
+        $(document).ready(function() {
+            $.ajax({
+                type: "GET",
+                url: "recuperar_respuestas4.php",
+                success: function(data) {
+                    var respuestas = JSON.parse(data); // Parsea el JSON como una matriz
+
+                    const tamAry=respuestas.length;
+                    var respuesta1 = respuestas[0]; // Accede a la primera respuesta
+                    var respuesta2 = respuestas[1]; // Accede a la segunda respuesta
+
+
+                    for (let i = 0; i <tamAry; i += 2) {
+                        var localizacion="#"+respuestas[i]
+                        if (localizacion.startsWith("#RS")){
+                            var resp = respuestas[i+1];
+                            verificar(localizacion,resp)
+                        }
+                        else{
+                            //incerta en input
+                            $(localizacion).val(respuestas[i+1]);
+                            console.log(localizacion)
+
+                        }
+
+                    }
+                    // Llamamos a la función verificar y pasamos respuesta1 como argumento
+                                 
+        }
+            });
+
+            function verificar(loc,respuesta1) {
+                        console.log(loc)
+                        if (respuesta1 === "si") {
+                            $(loc+" option[value='si']").prop("selected", true);
+                        }
+                        if (respuesta1 === "no") {
+                            $(loc+" option[value='no']").prop("selected", true);
+                        }
+                        if (respuesta1 === " ") {
+                            $(loc+" option").prop("selected", false);
+                        }
+                    }
+
+            
+        
+            $(document).ready(function() {
+                $("#guardarRespuesta1").click(function() {
+                    var id1 = "RS4-1-1";
+                    var respuesta1 = $("#RS4-1-1").val();
+
+                    var arreglo = [id1,respuesta1];
+                    console.log(arreglo)
+                    
+                    BDatos(arreglo)
+                    
+                    
+                });
+
+
+            function BDatos(arreglo){
+                $.ajax({
+                    type: "POST", 
+                    url: "guardar_respuesta.php",
+                    data: {
+                        arre: JSON.stringify(arreglo) // Debe coincidir con el nombre del índice esperado en el servidor
+                    },
+                    success: function(response) {
+                        Swal.fire({
+                            title: 'Guardado correctamente',
+                            icon: 'success',
+                            confirmButtonText: 'Cerrar',
+                            confirmButtonColor: '#197B7A' 
+                        })
+                        // alert("Respuestas guardadas con éxito");
+                        // console.log(response);
+                    }
+                });
+
+            }
+
+            });
+        });
+
+    </script>
 </head>
 
 <body>
@@ -166,10 +256,10 @@
                         estudiantes?</p>
 
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS4-1-1">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
@@ -184,7 +274,7 @@
                         <button>Seleccionar archivos</button>
                         <!-- <button>Cargar</button>  -->
                     </div>
-                    <div class="btnListo"><button>Guardar</button></div>
+                    <div class="btnListo"><button id="guardarRespuesta1">Guardar</button></div>
                 </div>
 
                 <div class="preguntasCategoria" id="SC_4.1.2">
@@ -193,10 +283,10 @@
                     <p>¿Se cuenta con datos estadísticos que muestren el porcentaje que se cubre de cada asignatura con
                         respecto a lo que señala el programa?</p>
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS4-1-1A1" >
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
@@ -222,10 +312,10 @@
                         diferentes al tradicional de exposición oral del profesor? (apoyos audiovisuales, multimedios,
                         aulas interactivas, desarrollo de proyectos, prácticas de laboratorio, etc.):</p>
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS4-1-1A2">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
@@ -279,7 +369,7 @@
                         así como los apoyos institucionales que existen para ello (cursos de redacción, etc.):
                     </p>
 
-                    <textarea name="R-4.1.4" id="R-4.1.4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea name="R-4.1.4" id="R4-1-1A3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <div class="Listo">
@@ -298,17 +388,17 @@
 
                     <p>¿Los estudiantes realizan evaluaciones de los cursos?</p>
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS4-1-1A4">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
                     <p>En caso afirmativo, describa la manera como se divulgan los resultados de las evaluaciones de los
                         cursos
                         y las acciones que se toman para mejorarlas:</p>
-                    <textarea name="R-4.1.5" id="R-4.1.5" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea name="R-4.1.5" id="R4-1-1A5" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <div class="Listo">
@@ -324,21 +414,21 @@
                     <p>¿El plan de estudios marca como un requisito, que los estudiantes tengan o adquieran un cierto
                         grado de dominio de un idioma extranjero?</p>
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS4-1-1A6">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
                     <p>En caso afirmativo describa brevemente en qué consiste este requisito:
                     </p>
-                    <textarea name="R-4.1.6" id="R-4.1.6" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea name="R4-1-1A7" id="R4-1-1A7" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>¿Qué mecanismos / estrategias se utilizan para que los estudiantes adquieran un cierto grado de
                         dominio de
                         un idioma extranjero?</p>
-                        <textarea name="R-4.1.6" id="R-4.1.6" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                        <textarea name="R4-1-1A8" id="R4-1-1A8" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <div class="Listo">
@@ -355,17 +445,17 @@
                         competencias bajo normas nacionales o internacionales según el perfil de TIC a evaluar para
                         Licenciatura y TSU reflejados en los modelos curriculares actualizados 2014 de ANIEI-CONAIC.</p>
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS4-1-1A9">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
 
                     <p>En caso afirmativo, describa el mecanismo de medición:</p>
 
-                    <textarea name="R-4.1.7" id="R-4.1.7" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea name="R4-1-1A10" id="R4-1-1A10" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <div class="Listo">
@@ -392,10 +482,10 @@
                 <div class="preguntasCategoria" id="SC_4.2.1">
                     <p>4.2.1 ¿Hay programa de becas para estudiantes?</p>
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS4-1-1A11">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
@@ -404,11 +494,11 @@
                         becas que se
                         otorgan a los estudiantes:
                     </p>
-                    <textarea name="R-4.2.1" id="R-4.2.1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea name="R4-1-1A12" id="R4-1-1A12" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>Describa para los últimos tres períodos escolares, los montos de becas y becas préstamo, así como
                         el número de estudiantes beneficiados:</p>
-                    <textarea name="R-4.2.1" id="R-4.2.1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea name="R4-1-1A13" id="R4-1-1A13" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <div class="Listo">
@@ -424,17 +514,17 @@
                     </p>
 
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS4-1-1A14">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
 
                     <p>Enumerarlos, indicando si se otorgan a nivel institución (I), Unidad Académica (A), Programa (P).
                     </p>
-                    <textarea name="R-4.2.2" id="R-4.2.2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea name="R4-1-1A15" id="R4-1-1A15" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
@@ -459,10 +549,10 @@
                         la evaluación de atributos de egreso, que garanticen el logro de éstos en los egresados?</p>
 
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS4-1-1A16">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
@@ -472,7 +562,7 @@
                         base la tabla Tabla 1. Atributos del egresado Competencias de graduación planificadas SEUOL
                         ACCORD /
                         CONAIC). Explicar brevemente el método o método de evaluación empleados.</p>
-                    <textarea name="R-4.3.1" id="R-4.3.1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea name="R4-1-1A17" id="R4-1-1A17" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <div class="Listo">
@@ -489,6 +579,7 @@
     </div>
     <br><br><br>
 </body>
+
 
 
 
