@@ -152,10 +152,10 @@
                             de Desarrollo de Emprendedores, cursos, talleres, incubadoras de empresas o similares? </p>
 
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS5-1-1A1">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
@@ -163,7 +163,7 @@
                     <p>Si la respuesta es afirmativa, describa brevemente en qué programas y proyectos participan los
                         estudiantes y profesores:
                     </p>
-                    <textarea name="R-5.1.1" id="R-5.1.1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea id="R5-1-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <p>Para tal efecto, se requiere conocer:</p>
@@ -195,7 +195,7 @@
                     <p>5.2.1  Haga una relación de las instalaciones para actividades culturales para el fomento de la vida
                             académica, indicando a cuantos usuarios brindan simultáneamente en cada caso.</p>
 
-                    <textarea name="R-5.2.1" id="R-5.2.1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea id="R5-2-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <br><br>
                     <div class="Listo">
@@ -217,7 +217,7 @@
                     </p>
 
 
-                    <textarea name="R-5.2.2" id="R-5.2.2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea id="R5-2-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
@@ -247,7 +247,7 @@
                         académica, indicando a cuantos usuarios brindan simultáneamente en cada caso.
                     </p>
 
-                    <textarea name="R-5.3.1" id="R-5.3.1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea id="R5-3-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <div class="Listo">
@@ -267,7 +267,7 @@
                         educativo.
                     </p>
 
-                    <textarea name="R-5.3.2" id="R-5.3.2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea id="R5-3-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo).
@@ -283,7 +283,7 @@
 
             <div>
                 <div class="parrafo" id="5.4">
-                    <p> 5.4  Orientación profesional. La institución debe contar con programas específicos de desarrollo
+                    <p> 5.4 Orientación profesional. La institución debe contar con programas específicos de desarrollo
                             tecnológico en la disciplina del programa educativo, en los que participen profesores y estudiantes de
                             licenciatura, así como de eventos científicos y tecnológicos que apoyen el curriculum de la carrera y la
                             inserción adecuada de los estudiantes por egresar al mercado laboral.
@@ -296,10 +296,10 @@
                     </p>
 
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS5-4-1A1">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
@@ -308,7 +308,7 @@
                         estudiantes:
                     </p>
 
-                    <textarea name="R-5.4.1" id="R-5.4.1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea id="R5-4-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <div class="Listo">
@@ -326,15 +326,15 @@
                     </p>
 
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS5-4-2A1">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
 
-                    <textarea name="R-5.4.2" id="R-5.4.2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea id="R5-4-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <div class="Listo">
@@ -352,10 +352,10 @@
                     </p>
 
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS5-4-3A1">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
@@ -364,7 +364,7 @@
                         el número de eventos y estudiantes que asistieron en los tres últimos períodos escolares.
                     </p>
 
-                    <textarea name="R-5.4.3" id="R-5.4.3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea id="R5-4-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <div class="Listo">
@@ -392,10 +392,10 @@
                     </p>
 
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS5-5-1A1">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
@@ -404,7 +404,7 @@
                         estudiantes:
                     </p>
 
-                    <textarea name="R-5.5.1" id="R-5.5.1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea id="R5-5-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <div class="Listo">
@@ -423,10 +423,10 @@
                     </p>
 
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS5-5-2A1">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
@@ -434,7 +434,7 @@
                     <p> Si la respuesta es afirmativa, describa brevemente en qué consisten los programas.
                     </p>
 
-                    <textarea name="R-5.5.2" id="R-5.5.2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea id="R5-5-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <div class="Listo">
@@ -463,10 +463,10 @@
                     </p>
 
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS5-6-1A1">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
@@ -474,24 +474,24 @@
                     <p> En caso afirmativo,  descríbalo brevemente
                     </p>
 
-                    <textarea name="R-5.6.1.a" id="R-5.6.1.a" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea id="R5-6-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br>
                     <p> ¿Este servicio es accesible al personal académico, administrativo y estudiantes?
                     </p>
 
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS5-6-1A2">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
                     <p> En caso afirmativo sustente su respuesta.
                     </p>
 
-                    <textarea name="R-5.6.1.a" id="R-5.6.1.a" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea id="R5-6-1A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
 
                     <br><br>
@@ -519,10 +519,10 @@
                     </p>
 
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS5-7-1A1">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
@@ -530,26 +530,26 @@
                     <p> Si la respuesta es afirmativa, describa brevemente en qué consisten estos canales de comunicación.
                     </p>
 
-                    <textarea name="R-5.7.1.a" id="R-5.7.1.a" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea id="R5-7-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br>
 
                     <p> Actividades de inducción a fin de que los padres conozcan a la institución.  
                     </p>
 
-                    <textarea name="R-5.7.1.b" id="R-5.7.1.b" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea id="R5-7-1A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
 
                     <p> Cursos de orientación a los padres 
                     </p>
 
-                    <textarea name="R-5.7.1.c" id="R-5.7.1.c" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea id="R5-7-1A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
 
                     <p> Otros 
                     </p>
 
-                    <textarea name="R-5.7.1.d" id="R-5.7.1.d" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea id="R5-7-1A3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     
                     <p> En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo).
