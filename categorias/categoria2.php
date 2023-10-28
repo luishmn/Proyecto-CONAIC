@@ -703,7 +703,7 @@
                         <!-- Botón -->
                         <div class="boton-modal2">
                             <label for="btn-modal2">
-                                <i class="fas fa-eye"></i> Mostrar PDFs
+                                <i class="fas fa-eye"></i> Mostrar PDF
                             </label>
                         </div>
 
@@ -717,7 +717,7 @@
                                 <thead>
                                     <tr>
                                         <th>Nombre del PDF</th>
-                                        <th>clavePDF</th>
+                                        <th>clave PDF</th>
                                         <th>Acción</th>
                                     </tr>
                                 
@@ -747,7 +747,7 @@
                                             echo "</tr>";
                                         }
                                     } else {
-                                        echo "<tr><td colspan='2'>No se encontraron PDFs en la base de datos.</td></tr>";
+                                        echo "<tr><td colspan='2'>No se encontraron PDF en la base de datos.</td></tr>";
                                     }
 
 
@@ -851,7 +851,7 @@
                         <!-- Botón -->
                         <div class="boton-modal2">
                             <label for="btn-modal2">
-                                <i class="fas fa-eye"></i> Mostrar PDFs
+                                <i class="fas fa-eye"></i> Mostrar PDF
                             </label>
                         </div>
 
@@ -865,7 +865,7 @@
                                 <thead>
                                     <tr>
                                         <th>Nombre del PDF</th>
-                                        <th>clavePDF</th>
+                                        <th>clave PDF</th>
                                         <th>Acción</th>
                                     </tr>
                                 
@@ -895,7 +895,7 @@
                                             echo "</tr>";
                                         }
                                     } else {
-                                        echo "<tr><td colspan='2'>No se encontraron PDFs en la base de datos.</td></tr>";
+                                        echo "<tr><td colspan='2'>No se encontraron PDF en la base de datos.</td></tr>";
                                     }
 
 
@@ -992,7 +992,7 @@
                         <!-- Botón -->
                         <div class="boton-modal2">
                             <label for="btn-modal2">
-                                <i class="fas fa-eye"></i> Mostrar PDFs
+                                <i class="fas fa-eye"></i> Mostrar PDF
                             </label>
                         </div>
 
@@ -1006,7 +1006,7 @@
                                 <thead>
                                     <tr>
                                         <th>Nombre del PDF</th>
-                                        <th>clavePDF</th>
+                                        <th>clave PDF</th>
                                         <th>Acción</th>
                                     </tr>
                                 
@@ -1036,7 +1036,7 @@
                                             echo "</tr>";
                                         }
                                     } else {
-                                        echo "<tr><td colspan='2'>No se encontraron PDFs en la base de datos.</td></tr>";
+                                        echo "<tr><td colspan='2'>No se encontraron PDF en la base de datos.</td></tr>";
                                     }
 
 
