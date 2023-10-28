@@ -397,9 +397,9 @@
                 <div class="opcMult" °>
                     <select name="select" id="RS-1-4-3A2">
                         <option disabled selected>Selecciona una opción</option>
-                        <option value="Institución">Institución</option>
-                        <option value="Unidad Académica">Unidad Académica</option>
-                        <option value="Programa">Programa</option>
+                        <option value="institucion">Institución</option>
+                        <option value="unidadacademica">Unidad Académica</option>
+                        <option value="programa">Programa</option>
                     </select>
                 </div>
                 <br>
@@ -812,9 +812,9 @@
                 <div class="opcMult" °>
                     <select name="select" id="RS1-7-3A1">
                         <option disabled selected>Selecciona una opción</option>
-                        <option value="Grupos Colegiados">Grupos Colegiados</option>
-                        <option value="Estudiantes">Estudiantes</option>
-                        <option value="Otras instancias">Otras instancias</option>
+                        <option value="gruposcolegiados">Grupos Colegiados</option>
+                        <option value="estudiantes">Estudiantes</option>
+                        <option value="otrasinstancias">Otras instancias</option>
                     </select>
                 </div>
                 <br>
@@ -850,7 +850,7 @@
                     <select name="select" id="RS1-7-3A2">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -1244,9 +1244,7 @@
 
 
         </div>
-        
-
-
+     
 
     </div>
 </body>

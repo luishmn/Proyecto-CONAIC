@@ -157,10 +157,10 @@
             
             <div class="preguntasCategoria" id="SC_7.1.1">
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS7-1-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -168,7 +168,7 @@
                 <p>7.1.1 En caso afirmativo, indique el tipo de seguimiento 
                     y la valoración de los resultados correspondientes.
                 </p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R7-1-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="btnListo"><button>Guardar</button></div>
 
             </div>
@@ -181,10 +181,10 @@
                 <p>¿Existen convenios de colaboración en operación?</p>
 
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS7-2-2A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -192,7 +192,7 @@
                 <p>En caso afirmativo, descríbalos brevemente e 
                     indique qué resultados tangibles se tienen.
                 </p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R7-1-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="btnListo"><button>Guardar</button></div>
 
             </div>
@@ -204,16 +204,16 @@
                 </p>
 
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS7-1-3A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
 
                 <p>En caso afirmativo, descríbalos brevemente</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R7-1-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="btnListo"><button>Guardar</button></div>
             </div>
 
@@ -227,10 +227,10 @@
                 </p>
 
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS7-1-4A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -238,7 +238,7 @@
                 <p>En caso afirmativo, descríbalos brevemente e 
                     indique qué resultados tangibles se tienen.
                 </p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R7-1-4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="btnListo"><button>Guardar</button></div>
                 
             </div>
@@ -251,10 +251,10 @@
                 </p>
 
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS7-1-5A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -262,7 +262,7 @@
                 <p>En caso afirmativo, descríbalos brevemente e 
                     indique qué resultados tangibles se tienen.
                 </p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R7-1-5" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <p>En caso afirmativo proporcione una copia o copias de los 
                     documentos (puedes subir más de un archivo).
@@ -301,10 +301,10 @@
                 </p>
 
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS7-2-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -312,7 +312,7 @@
                 <p>En caso afirmativo describa brevemente en qué 
                     consiste y algunos de los resultados obtenidos.
                 </p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R7-2-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="btnListo"><button>Guardar</button></div>
 
 
@@ -324,10 +324,10 @@
                 </p>
 
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS7-2-2A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -342,10 +342,10 @@
                 </p>
 
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS7-2-3A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -353,7 +353,7 @@
                 <p>En caso afirmativo describa brevemente algunos 
                     de los resultados obtenidos.
                 </p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R7-2-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
 
                 <p>En caso afirmativo proporcione una copia o copias de los 
@@ -391,10 +391,10 @@
                 </p>
 
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS7-3-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -402,12 +402,12 @@
                 <p>En caso afirmativo describa brevemente en qué consisten 
                     estos convenios  y presente evidencias de operación de los mismos.
                 </p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R7-3-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <p>Presente la lista de estudiantes y profesores del programa 
                     educativo que han participado en movilidad académica.
                 </p>
-                <input type="text" placeholder="Tabla...">
+                <textarea id="R7-3-1A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <p>En caso afirmativo proporcione una copia o copias de los 
                     documentos (puedes subir más de un archivo).
@@ -429,7 +429,7 @@
                     en la mejora del programa educativo?
                     Enumérelos:
                 </p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R7-3-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="btnListo"><button>Guardar</button></div>
 
             </div>
@@ -451,10 +451,10 @@
                     social de los estudiantes?
                 </p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS7-4-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -463,17 +463,17 @@
                     y la manera como la institución se asegura de
                     observar los lineamientos constitucionales correspondientes.
                 </p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R7-4-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <p>¿Se tiene conocimiento sobre el tipo de actividades 
                     que realizan los estudiantes para cubrir el requisito
                     de servicio social?
                 </p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS7-4-1A2">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -482,7 +482,7 @@
                     actividades que guardan relación con el área del
                     programa educativo:
                 </p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R7-4-1A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="btnListo"><button>Guardar</button></div>
 
             </div>
@@ -503,10 +503,10 @@
                     bolsa de trabajo?
                 </p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS7-5-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -515,16 +515,16 @@
                     ¿Es adecuada?
                 </p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS7-5-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
 
                 <p>¿Por qué?</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R7-5-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="btnListo"><button>Guardar</button></div>
             </div>
 
@@ -550,7 +550,7 @@
                     publicaciones periódicas, libros de texto, conferencias, 
                     exposiciones, etc.?
                 </p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R7-6-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="btnListo"><button>Guardar</button></div>
 
             </div>
@@ -564,10 +564,10 @@
                     para diferentes sectores?
                 </p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS7-6-2A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -575,7 +575,7 @@
                 <p>En caso afirmativo proporcione la siguiente información 
                     para los últimos 3 períodos.
                 </p>
-                <input type="text" placeholder="Tabla...">
+                <textarea id="R7-6-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="btnListo"><button>Guardar</button></div>
 
             </div>
@@ -591,10 +591,10 @@
                     con actividades de actualización profesional:
                 </p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS7-6-3A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -602,7 +602,7 @@
                 <p>Describa brevemente en qué consisten, 
                     así como resultados obtenidos.
                 </p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R7-6-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="btnListo"><button>Guardar</button></div>
 
             </div>
@@ -613,10 +613,10 @@
                     público, que permitan obtener recursos económicos adicionales.
                 </p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS7-6-4A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -624,7 +624,7 @@
                 <p>Describa brevemente en qué consisten, 
                     así como resultados obtenidos.
                 </p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R7-6-4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="btnListo"><button>Guardar</button></div>
 
             </div>
@@ -634,10 +634,10 @@
                     en materia de lenguas extranjeras?
                 </p>
                 <div class="opcMult" °>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS7-6-5A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div>
                 <br>
@@ -645,7 +645,7 @@
                 <p>Describa brevemente en qué consiste, 
                     así como resultados obtenidos:
                 </p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R7-6-5" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <p>En caso afirmativo proporcione una copia o copias 
                     de los documentos (puedes subir más de un archivo).
