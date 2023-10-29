@@ -148,14 +148,15 @@
             <div class="preguntasCategoria" id="SC_8.1.1">
                 <p>8.1.1 ¿Existe una política institucional que fije claramente las líneas de investigación con su respectiva normatividad?  </p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS8-1-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div> 
                 <p>En caso afirmativo describa brevemente en qué consiste esta politica:</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R8-1-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
                     <button>Seleccionar archivos</button>
@@ -167,7 +168,8 @@
             <div class="preguntasCategoria" id="SC_8.1.2">
                 <p>8.1.2 Líneas de investigación definidas, las cuales agrupen proyectos con un responsable asignado.
                     Si el programa cuenta con líneas de investigación definidas, enumérelas y descríbalas en forma sintética.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R8-1-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
                     <button>Seleccionar archivos</button>
@@ -179,7 +181,8 @@
             <div class="preguntasCategoria" id="SC_8.1.3">
                 <p>8.1.3 Líderes vinculados a las líneas de investigación que posean los grados académicos pertinentes.</p>
                 <p>Haga una relación de los líderes de proyectos vinculados a las líneas de investigación, e indique el nivel de los grados académicos que tiene cada uno (maestría, doctorado)</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R8-1-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <p>En caso afirmativo proporcione una copia de los documentos</p>
 
                 <div class="Listo">
@@ -201,10 +204,10 @@
             <div class="preguntasCategoria" id="SC_8.2.1">
                 <p>8.2.1 ¿Se asignan recursos presupuestales para la investigación y/o el desarrollo?</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS8-2-1A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div> 
                 
@@ -223,7 +226,7 @@
                 <p>Una infraestructura suficiente y pertinente en cuanto a espacios y equipos para el desarrollo de la vinculación con el sector productivo o de servicios y la investigación.</p>
                 <p>Incluya una relación de los espacios físicos y equipos exclusivamente para la investigación. Indique cuántos investigadores utilizan esta infraestructura.</p>
 
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R8-2-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
                     <button>Seleccionar archivos</button>
@@ -236,14 +239,15 @@
                 <p>8.2.3 Normatividad expresa y aprobada para el desarrollo de la investigación.<br>
                 <p>¿En la institución está explícita y debidamente aprobada la normatividad relativa a las tareas de investigación?</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS8-2-3A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div> 
                 <p>En caso afirmativo, exponga los puntos más importantes.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R8-2-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
                     <button>Seleccionar archivos</button>
@@ -256,14 +260,15 @@
                 <p>8.2.4 Personal de apoyo suficiente (técnicos de investigación, profesores titulares, profesores asociados, etc.), en función del tamaño e importancia de cada proyecto.<br>
                 <p>¿Cuenta con el personal de apoyo suficiente para el desarrollo de la investigación?</p>
                 <div class="opcMult"°>
-                    <select name="select" id="seleccion">
+                    <select name="select" id="RS8-2-4A1">
                         <option disabled selected>Selecciona una opción</option>
                         <option value="si">Sí</option>
-                        <option value="No">No</option>
+                        <option value="no">No</option>
                     </select>
                 </div> 
                 <p>En caso afirmativo, exponga los puntos más importantes.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R8-2-4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
                     <button>Seleccionar archivos</button>
@@ -281,7 +286,8 @@
     
                 <div class="preguntasCategoria" id="SC_8.3.1">
                     <p>8.3.1 ¿Qué medios brinda la institución y a qué nivel (general, de la dirección, de la jefatura, del programa, etc.) para la difusión de la investigación del área académica?  Artículos, reportes de investigación, publicaciones periódicas, libros, capítulos de libros, conferencias, exposiciones, etc.</p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R8-3-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                    
                     <div class="Listo">
                         <img src="/imagenes/pdf.png" alt="">
                         <button>Seleccionar archivos</button>
@@ -304,7 +310,7 @@
                     - Tabla de proyecto<br>
                     - Cronograma por trimestres<br>
                     - Relación de proyectos de investigación terminados en los últimos cinco años</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R8-4-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
                     <button>Seleccionar archivos</button>
@@ -314,7 +320,7 @@
 
             <div class="preguntasCategoria" id="SC_8.4.2">
                 <p>8.4.2 Mecanismos para la incorporación a la práctica docente de los resultados de investigación, que representen innovación en materia educativa.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                <textarea id="R8-4-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <div class="Listo">
                     <img src="/imagenes/pdf.png" alt="">
                     <button>Seleccionar archivos</button>
