@@ -1,13 +1,15 @@
 <?php
 // Conectar a la base de datos
 include "../conexionDB/conexion.php";
-    conecta();
+conecta();
 
-    // Verifica la conexión
-    if ($conexion->connect_error) {
-        die("Error de conexión: " . $conexion->connect_error);
-    }
+// Verifica la conexión
+if ($conexion->connect_error) {
+    die("Error de conexión: " . $conexion->connect_error);
+}
 
+// Configura la codificación de caracteres en la conexión
+$conexion->set_charset("utf8mb4");
 // Claves a recuperar
 $claves = ["R2-1-1", "RS2-1-1A1", "R2-1-1A1","RS2-1-1A2","R2-1-1A2","RS2-1-1A3","R2-1-1A3",
 "R2-1-1A4","RS2-1-1A5","R2-1-1A5","RS2-1-1A6","R2-1-1A6","R2-1-1A7",
@@ -21,13 +23,16 @@ $claves = ["R2-1-1", "RS2-1-1A1", "R2-1-1A1","RS2-1-1A2","R2-1-1A2","RS2-1-1A3",
 "RS2-5-4","R2-5-4","RS2-6-1","R2-6-1","RS2-7A1","R2-7A1","RS2-7A2","R2-7A2",
 "R2-7-1","R2-7-2"];
 
+
 // Inicializar un array para las respuestas
 $respuestas = [];
 
 // Consulta SQL para obtener las respuestas correspondientes a las claves
 foreach ($claves as $clave) {
+    $clave = $conexion->real_escape_string($clave); // Escapar la clave
+
     $sql = "SELECT respuesta FROM respuestas WHERE claveRespuesta = '$clave'";
-    
+
     // Ejecutar la consulta
     $result = $conexion->query($sql);
 
@@ -40,19 +45,19 @@ foreach ($claves as $clave) {
 
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
-        // Convertir la respuesta a minúsculas y eliminar espacios en blanco
-        $respuesta = strtolower(trim($row['respuesta']));
+        // La respuesta ya está en la codificación correcta
+        $respuesta = $row['respuesta'];
     }
 
-    
     // Agregar la respuesta al array de respuestas
-    $respuestas[] = $clave;
+    $respuestas[] = $clave; // Agregar la clave escapada
     $respuestas[] = $respuesta;
 }
 
 // Devolver las respuestas como JSON
-echo json_encode($respuestas);
+echo json_encode($respuestas, JSON_UNESCAPED_UNICODE);
 
 // Cerrar la conexión a la base de datos
 $conexion->close();
 ?>
+
