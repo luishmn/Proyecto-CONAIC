@@ -900,7 +900,7 @@ body{
 .from-login {
     width: 60%;
     height: 50%;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -911,6 +911,7 @@ body{
     z-index: 1000;
     overflow-y: auto;
 }
+
 .from-login::-webkit-scrollbar {
     width: 12px; 
 }
@@ -1010,7 +1011,7 @@ body{
     text-align: center;
     width: 20%;
     height: 40%;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -1023,13 +1024,14 @@ body{
     overflow-y: auto;
 }
 
+
 .titulosArchs{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
 }
 
 .from-login1::-webkit-scrollbar {
-    width: 12px; 
+    width: 6px; 
 }
 
 .from-login1::-webkit-scrollbar-thumb {
