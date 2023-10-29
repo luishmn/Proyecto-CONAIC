@@ -1391,6 +1391,14 @@
 
 
 
+
+
+
+
+    <!-- Ventanas emergentes de los PDF Copiar -->
+
+
+
     <div id="subirarchivos" class="oculto">
             <br>
             <form class="from-login1" action="../funcion_guardarpdf/upload.php" method="post" enctype="multipart/form-data" id="uploadForm">
@@ -1420,6 +1428,8 @@
     </div>
     
     <div id="fondoOscuro" class="oculto"></div>
+
+    <!-- Hasta aquí -->
 
 
 </body>
