@@ -781,7 +781,7 @@
                 <div id="selected-files1" class="titulosArchs">
                 </div>
                 <br>
-                <button id="botonSubirChido" class="cargar-pdf" data-id="2.1.1">
+                <button id="botonSubirChido" class="cargar-pdf" data-id="5.1.1">
                     <i class="fas fa-upload"></i> Subir PDF
                 </button>
 
