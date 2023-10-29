@@ -239,13 +239,14 @@
                     },
                     success: function(response) {
                         Swal.fire({
-                            title: 'Guardado correctamente',
-                            icon: 'success',
-                            confirmButtonText: 'Cerrar',
-                            confirmButtonColor: '#197B7A' 
-                        })
-                        // alert("Respuestas guardadas con éxito");
-                        // console.log(response);
+                            backdrop: false,
+                            text: 'Guardado correctamente',
+                            confirmButtonColor: '#197B7A',
+                            timer: 5000,
+                            timerProgressBar: true,
+                            position: "bottom-end",
+                            showConfirmButton: false
+                        });
                     }
                 });
 
