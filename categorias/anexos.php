@@ -34,7 +34,9 @@
     <link rel="stylesheet" href="autoevaluacion.css">
     <script src="enviarConsulta.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
     <script>
@@ -261,12 +263,28 @@
                      </p>
                     <input type="text" id="RA1" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
+                    <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-11.1.1"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-11.1.1"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                     <div class="btnListo"><button id="guardarRespuesta1">Guardar</button></div>
                 </div>
 
@@ -281,12 +299,28 @@
                     </p>
                     <input type="text" id="RA2" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
+                    <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-11.2.1"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-11.2.1"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                     <div class="btnListo"><button id="guardarRespuesta2">Guardar</button></div>
             
             </div>
@@ -308,12 +342,28 @@
                     </p>
                     <input type="text" id="RA3-A3" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
+                    <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-11.3.1"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-11.3.1"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                     <div class="btnListo"><button id="guardarRespuesta3">Guardar</button></div>
                 </div>
             </div>
@@ -321,6 +371,229 @@
 
         </div>
     </div>
+    </div>
+
+
+
+    <!-- Ventanas emergentes de los PDF Copiar -->
+
+    <div id="subirarchivos" class="oculto">
+            <br>
+            <form class="from-login1" action="../funcion_guardarpdf/upload.php" method="post" enctype="multipart/form-data" id="uploadForm">
+            <h2>Subir PDF</h2>
+                <label class="custom-file-label">
+                    <input type="file" name="archivo[]" accept=".pdf" class="custom-file-input" id="file-input1" multiple>
+                    <span class="icon"><i class="fa fa-file-pdf-o"></i></span> Seleccionar PDF
+                </label>
+                <div id="selected-files1" class="titulosArchs">
+                </div>
+                <br>
+                <button id="botonSubirChido" class="cargar-pdf" data-id="11.1.1">
+                    <i class="fas fa-upload"></i> Subir PDF
+                </button>
+
+                <br><br>
+            </form>
+    </div>
+
+    <div id="tablaConPDF-subcriterio" class="oculto">
+        <form class="from-login" action="recuperarcontra/recuperarcontra.php" id="formularioEditar" method="post">
+            <h1>Archivos PDF</h1>
+            <table id="tablaPDFs" class="tablaspdf">
+                
+            </table>
+        </form>
+    </div>
+    
+    <div id="fondoOscuro" class="oculto"></div>
+
+    <!-- Hasta aquí -->
+
+
 </body>
 
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    document.addEventListener("visibilitychange", function() {
+    if (document.hidden) {
+        // El usuario cambió a otra pestaña o aplicación
+        document.getElementById("fondoOscuro").style.display = "none";
+        document.getElementById("tablaConPDF-subcriterio").style.display = "none";
+        document.getElementById("subirarchivos").style.display = "none";
+    } else {
+        // El usuario volvió a esta pestaña
+        console.log("El usuario volvió a esta pestaña");
+        }
+    });
+
+</script>
+
+<script>
+    function actualizartablas(idtabla) {
+        const tablaPDFs = document.getElementById('tablaPDFs');
+        const claveSubcriterio = idtabla; 
+
+        // Realizar una solicitud AJAX para obtener los datos de la tabla
+        fetch(`tablas.php?claveSubcriterio=${claveSubcriterio}`)
+            .then(response => response.text())  // Cambia "text" a "json" si generas JSON
+            .then(data => {
+                // Actualizar el contenido de la tabla con los datos obtenidos
+                tablaPDFs.innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error al obtener los datos de la tabla:', error);
+            });
+        
+    };
+    
+    
+</script>
+
+<script> // Script para aparecer y desaparecer tabla con los PDF, no modificar
+    document.addEventListener("DOMContentLoaded", function() {
+        const botonesMostrarPDF = document.querySelectorAll(".botonesMostrarPDF");
+        
+        function mostrarPDF() {
+            // Mostrar el fondo oscuro y la tabla
+            const idBoton = event.target.id;
+            var idbuscar = idBoton.replace(/^subcriterio-/, '');
+            document.getElementById("fondoOscuro").style.display = "block";
+            document.getElementById("tablaConPDF-subcriterio").style.display = "block";
+            actualizartablas(idbuscar);
+        
+
+
+            
+            //alert ("Se presionó el botón con id: " + idBoton);
+            document.getElementById("fondoOscuro").addEventListener("click", function() {
+            // Ocultar el fondo oscuro y el formulario cuando se hace clic fuera del formulario
+            document.getElementById("fondoOscuro").style.display = "none";
+            document.getElementById("tablaConPDF-subcriterio").style.display = "none";
+        });
+        }
+        botonesMostrarPDF.forEach(function(boton) {
+            boton.addEventListener("click", mostrarPDF);
+        });
+    });
+
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var button = document.querySelector(".cargar-pdf");
+        var form = document.getElementById("uploadForm");
+
+        button.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            var id = this.getAttribute("data-id");
+            var fileInput = form.querySelector("input[type='file']");
+            var files = fileInput.files;
+
+            if (files.length === 0) {
+                Swal.fire({
+                    title: 'Selecciona al menos un archivo.',
+                    icon: 'error',
+                    confirmButtonColor: '#145070'
+                });
+
+                return;
+            }
+
+            var formData = new FormData();
+
+            for (var i = 0; i < files.length; i++) {
+                formData.append("archivo[]", files[i]);
+            }
+
+            formData.append("id", id);
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "../funcion_guardarpdf/upload.php", true);
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        function limpiarSeleccion() {
+                            const selectedFiles = document.getElementById('selected-files1');
+                            const fileItem = document.createElement('div');
+                            selectedFiles.innerHTML = ''; // Limpiar la lista de archivos seleccionados
+                            fileItem.textContent = "";
+                            selectedFiles.appendChild(fileItem);           
+                            
+                        };
+                        limpiarSeleccion();
+                        Swal.fire({
+                            title: 'Archivos subidos correctamente.',
+                            icon: 'success',
+                            confirmButtonColor: '#145070'
+                        });
+                    } else {
+                        Swal.fire({
+                            title: 'Error de carga.',
+                            icon: 'error',
+                            confirmButtonColor: '#145070'
+                        });
+                    }
+                }
+            };
+
+            xhr.send(formData);
+        });
+    });
+</script>
+
+<script>
+        const fileInput = document.getElementById('file-input1');
+        const selectedFiles = document.getElementById('selected-files1');
+
+        fileInput.addEventListener('change', function() {
+            selectedFiles.innerHTML = ''; // Limpiar la lista de archivos seleccionados
+
+            const files = fileInput.files;
+            for (let i = 0; i < files.length; i++) {
+                const fileName = files[i].name;
+                const fileItem = document.createElement('div');
+                fileItem.textContent = fileName;
+                selectedFiles.appendChild(fileItem);
+            }
+        });
+</script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const botonesSubir = document.querySelectorAll(".botonSubirPDF");
+        const botonChido = document.getElementById("botonSubirChido");
+
+        
+        function subirPDF() {
+            // Mostrar el fondo oscuro y la tabla
+            const idBoton1 = event.target.id;
+            var idbuscar1 = idBoton1.replace(/^botonSubir-/, '');
+            document.getElementById("fondoOscuro").style.display = "block";
+            document.getElementById("subirarchivos").style.display = "block";
+            botonChido.dataset.id = idbuscar1;
+            
+        
+
+
+            
+            //alert ("Se presionó el botón con id: " + idBoton);
+            document.getElementById("fondoOscuro").addEventListener("click", function() {
+            // Ocultar el fondo oscuro y el formulario cuando se hace clic fuera del formulario
+            document.getElementById("fondoOscuro").style.display = "none";
+            document.getElementById("subirarchivos").style.display = "none";
+        });
+        }
+        botonesSubir.forEach(function(boton) {
+            boton.addEventListener("click", subirPDF);
+        });
+    });
+</script>
+
+

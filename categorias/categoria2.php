@@ -15,15 +15,6 @@
 
     $nombre = substr($nombreUsuario, 0, 10);
 
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "conaic";
-
-    $conexion = new mysqli($servername, $username, $password, $dbname);
-    if ($conexion->connect_error) {
-        die("Error de conexión: " . $conexion->connect_error);
-    }
     
 
 ?>
@@ -645,14 +636,6 @@
                     <input type="text" id="R2-1-1A7" placeholder="Escribe tu respuesta aquí...">
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
-                    
-
-
- 
-
-
-
-
 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
@@ -768,9 +751,6 @@
                     
                     
                     
-                    
-                    
-                    
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
                     <div class="pdfs-options">
@@ -794,11 +774,6 @@
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
 
-
-
-                    
-
-
                     <div class="btnListo"><button id="guardarRespuesta3">Guardar</button></div>
 
 
@@ -818,12 +793,28 @@
                     <br>
                     <input type="text" id="R2-2-3" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
-                    <br><br>
+                        <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                        <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-2.2.3"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-2.2.3"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                     <div class="btnListo"><button id="guardarRespuesta4">Guardar</button></div>
                 </div>
 
@@ -842,12 +833,28 @@
                     <br>
                     <input type="text" id="R2-2-4" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
-                    <br><br>
+                        <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                        <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-2.2.4"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-2.2.4"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                     <div class="btnListo"><button id="guardarRespuesta5">Guardar</button></div>
                 </div>
 
@@ -865,12 +872,28 @@
                     <br>
                     <input type="text" id="R2-2-5" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
-                    <br><br>
+                        <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                        <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-2.2.5"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-2.2.5"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                     <div class="btnListo"><button id="guardarRespuesta6">Guardar</button></div>
                 </div>
 
@@ -888,12 +911,28 @@
                     <br>
                     <input type="text" id="R2-2-6" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
-                    <br><br>
+                        <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                        <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-2.2.6"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-2.2.6"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                     <div class="btnListo"><button id="guardarRespuesta7">Guardar</button></div>
                 </div>
 
@@ -911,12 +950,28 @@
                     <br>
                     <input type="text" id="R2-2-7" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
-                    <br><br>
+                        <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                        <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-2.2.7"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-2.2.7"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                     <div class="btnListo"><button id="guardarRespuesta8">Guardar</button></div>
                 </div>
 
@@ -934,12 +989,28 @@
                     <br>
                     <input type="text" id="R2-2-8" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
-                    <br><br>
+                        <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                        <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-2.2.8"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-2.2.8"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                     <div class="btnListo"><button id="guardarRespuesta9">Guardar</button></div>
                 </div>
 
@@ -973,12 +1044,28 @@
                         de los documentos (puedes subir mas de un archivo).
                     </p>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
-                    <br><br>
+                        <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                        <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-2.3.1"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-2.3.1"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                     <div class="btnListo"><button id="guardarRespuesta10">Guardar</button></div>
                 </div>
 
@@ -1001,12 +1088,28 @@
                     </p>
                     <input type="text" id="R2-3-2A1" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
-                    <br><br>
+                        <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                        <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-2.3.2"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-2.3.2"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                     <div class="btnListo"><button id="guardarRespuesta11">Guardar</button></div>
                 </div>  
 
@@ -1025,12 +1128,28 @@
                     <br>
                     <input type="text" id="R2-3-3" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
-                    <br><br>
+                        <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                        <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-2.3.3"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-2.3.3"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                     <div class="btnListo"><button id="guardarRespuesta12">Guardar</button></div>
                 </div>
 
@@ -1052,12 +1171,28 @@
                     </p>
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
-                    <br><br>
+                        <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                        <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-2.3.4"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-2.3.4"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                     <div class="btnListo"><button id="guardarRespuesta13">Guardar</button></div>
                 </div>
             </div>
@@ -1085,12 +1220,28 @@
                     </p>
                     <input type="text" id="R2-4-1A3" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
-                    <br><br>
+                        <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                        <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-2.4.1"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-2.4.1"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                     <div class="btnListo"><button id="guardarRespuesta14">Guardar</button></div>
                 </div>  
                 
@@ -1196,12 +1347,28 @@
                     </p>
                     <input type="text" id="R2-5-1A13" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
-                    <br><br>
+                        <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                        <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-2.5.1"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-2.5.1"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                     <div class="btnListo"><button id="guardarRespuesta15">Guardar</button></div>
                 </div>  
 
@@ -1222,12 +1389,28 @@
                     <input type="text" id="R2-5-2A1" placeholder="Escribe tu respuesta aquí...">
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
-                    <br><br>
+                        <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                        <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-2.5.2"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-2.5.2"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                     <div class="btnListo"><button id="guardarRespuesta16">Guardar</button></div>
                 </div>
 
@@ -1249,12 +1432,28 @@
                     <input type="text" id="R2-5-3A1" placeholder="Escribe tu respuesta aquí...">
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
-                    <br><br>
+                        <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                        <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-2.5.3"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-2.5.3"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                     <div class="btnListo"><button id="guardarRespuesta17">Guardar</button></div>
                 </div>
 
@@ -1271,12 +1470,28 @@
                     <br>
                     <input type="text" id="R2-5-4" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
-                    <br><br>
+                        <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                        <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-2.5.4"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-2.5.4"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                     <div class="btnListo"><button  id="guardarRespuesta18">Guardar</button></div>
                 </div>
 
@@ -1302,12 +1517,28 @@
                     <input type="text" id="R2-6-1" placeholder="Escribe tu respuesta aquí...">
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
-                    <br><br>
+                        <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                        <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-2.6.1"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-2.6.1"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                     <div class="btnListo"><button id="guardarRespuesta19">Guardar</button></div>
                 </div>
             </div>
@@ -1342,12 +1573,28 @@
                     <input type="text" id="R2-7A2" placeholder="Escribe tu respuesta aquí...">
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
-                    <br><br>
+                        <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                        <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-2.7.1"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-2.7.1"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                     <div class="btnListo"><button id="guardarRespuesta20">Guardar</button></div>
                 </div>
                 
@@ -1356,12 +1603,28 @@
                     </p>
                     <input type="text" id="R2-7-1" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
-                    <br><br>
+                        <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                        <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-2.7.1"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-2.7.1"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                     <div class="btnListo"><button id="guardarRespuesta21">Guardar</button></div>
                 </div>
 
@@ -1370,12 +1633,28 @@
                     </p>
                     <input type="text" id="R2-7-2" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
-                    <br><br>
+                        <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                        <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
-                        <!-- <button>Cargar</button>  -->
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-2.7.2"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-2.7.2"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                     <div class="btnListo"><button id="guardarRespuesta22">Guardar</button></div>
                 </div>
 
@@ -1619,6 +1898,3 @@
 </script>
 
 
-<?php
-$conexion->close();
-?>
