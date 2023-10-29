@@ -150,7 +150,7 @@
                 <div class="preguntasCategoria" id="SC_9.1.1">
                     <p >9.1.1 Mencionar las condiciones de trabajo, seguridad e higiene de los servicios de cómputo, (dimensión de áreas de trabajo, ventilación, iluminación, aire acondicionado, extinguidores, salidas de emergencia, depósitos, etc.).
                         </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-1-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
@@ -164,7 +164,7 @@
 
                 <div class="preguntasCategoria" class="preguntasCategoria" id="SC_9.1.2">
                     <p>9.1.2 Exceptuando a los programas que correspondan al perfil de Licenciado en Informática, todos los programas deberán disponer de al menos un laboratorio de electrónica acondicionado que los soporte.</p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-1-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
@@ -178,7 +178,7 @@
 
                 <div class="preguntasCategoria" class="preguntasCategoria" id="SC_9.1.3">
                     <p >9.1.3 El programa debe disponer de los servicios de cómputo necesarios para cursos y actividades especializadas, relacionadas con el mismo.</p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-1-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
@@ -192,7 +192,7 @@
 
                 <div class="preguntasCategoria" class="preguntasCategoria" id="SC_9.1.4">
                     <p >9.1.4 Los responsables de los servicios de cómputo deben ser personal con experiencia y perfil relacionado con el área.</p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-1-4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
@@ -210,17 +210,17 @@
 
                     <p >¿Se toma en cuenta la opinión de los profesores que participan en el programa para el diseño, equipamiento y operación de los servicios de cómputo?</p>
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS9-1-5A1">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
 
                     <br><br>
 
                     <p >¿De qué manera?</p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-1-5" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
@@ -237,10 +237,10 @@
                         </p>
 
                     <p >Información sobre aulas según dimensiones y capacidades.</p>
-                <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-1-6" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
-                <!-- <img src="" alt=""><button>Guardar</button> -->
-                <br><br>
+                    <!-- <img src="" alt=""><button>Guardar</button> -->
+                    <br><br>
                     <div class="Listo">
                         <img src="/imagenes/pdf.png" alt="">
                         <button>Seleccionar archivos</button>
@@ -252,7 +252,7 @@
                 <div class="preguntasCategoria" class="preguntasCategoria" id="SC_9.1.7">
                     <p >9.1.7 El número de aulas habrá de ser suficiente para atender la impartición de cursos que se programen en cada periodo escolar.
                         </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-1-7" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
@@ -270,13 +270,13 @@
 
                     <p >Número de aulas con equipo de cómputo
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-1-8" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <br><br>
 
                     <p >Número de aulas con equipo audiovisual
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-1-8A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <br><br>
                                         <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -295,13 +295,13 @@
 
                     <p >¿Qué tipo de profesores cuenta con cubículos?
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-1-9" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <br><br>
 
                     <p >¿Qué otro tipo de lugar existe para trabajo del resto de los profesores? 
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-1-9A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
@@ -319,7 +319,7 @@
 
                     <p >¿Existen espacios para asesorías a estudiantes? En caso afirmativo, descríbalos:
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-1-10" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
@@ -334,7 +334,7 @@
                 <div class="preguntasCategoria" class="preguntasCategoria" id="SC_9.1.11">
                     <p >9.1.11 El programa debe disponer de auditorios y/o salas debidamente acondicionados para actividades académicas, investigación, y de preservación y difusión de la cultura.
                         </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-1-11" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
@@ -353,13 +353,13 @@
 
                     <p >De los espacios mencionados anteriormente mencionar:
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-1-12" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <br><br>
 
                     <p >Número de lugares disponibles
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-1-12A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     
                     <br><br>
@@ -367,10 +367,10 @@
                     <p >Ofrece condiciones adecuadas de higiene.
                     </p>
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS9-1-1A1">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     
@@ -379,10 +379,10 @@
                     <p >Ofrece condiciones adecuadas de seguridad.
                     </p>
                     <div class="opcMult" °>
-                        <select name="select" id="seleccion">
+                        <select name="select" id="RS9-1-1A2">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
 
@@ -401,15 +401,15 @@
                     <br><br>
                     <p>¿Considera las facilidades sanitarias adecuadas?</p>
                     <div class="opcMult">
-                        <select name="select" id="seleccion" onchange="mostrarInput(this)">
+                        <select name="select" id="RS9-1-13A1" onchange="mostrarInput(this)">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
                     <p>En caso afirmativo sustente su respuesta.</p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-1-13" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <br><br>
 
                     <div class="Listo">
@@ -430,7 +430,7 @@
                 <div class="preguntasCategoria" class="preguntasCategoria" id="SC_9.2.1">
                     <p>9.2.1 Para cada asignatura mencionar el software que se utiliza y si está disponible dentro de la institución.
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-2-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <div class="Listo">
@@ -448,7 +448,7 @@
 
                     <p >Describir los siguientes elementos de la infraestructura de software, incluyendo versiones y número de licencias:
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-2-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
@@ -466,12 +466,12 @@
 
                     <p >Número de estudiantes inscritos en el programa
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-2-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <br><br>
 
                     <p>Explique de qué manera se garantiza que el equipo de cómputo requerido esté disponible para la realización de las prácticas en las asignaturas del programa que así lo requieran:
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-2-3A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <div class="Listo">
@@ -491,11 +491,11 @@
                     </p>
 
                     <p >Horas requeridas por el plan de estudiosen un período</p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-2-4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <p >Horas disponibles de infraestructura de cómputo
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-2-4A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
@@ -513,7 +513,7 @@
 
                     <p >Describir los tipos de plataformas de cómputo disponibles para los estudiantes y  el personal docente del programa:
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-2-5" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
@@ -531,7 +531,7 @@
 
                     <p >El programa académico debe garantizar el servicio de impresión en aquellos espacios físicos que la institución haya dispuesto para apoyo al estudiante.
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-2-6" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
@@ -553,16 +553,16 @@
                     <p >El equipo de cómputo de la Institución ¿está conectado en red? .
                     </p>
                     <div class="opcMult">
-                        <select name="select" id="seleccion" onchange="mostrarInput(this)">
+                        <select name="select" id="RS9-2-7A1" onchange="mostrarInput(this)">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                         <p>En caso afirmativo, diga:</p>
                         <p >a) Qué equipo de cómputo (servidores y clientes) soporta la red y cuáles son sus características?
                         </p>
-                        <input type="text" placeholder="Escribe tu respuesta aquí...">
+                        <textarea id="R9-2-7" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <br><br>
 
 
@@ -570,10 +570,10 @@
                     <p >b)¿Hay acceso a Internet a través de la red?
                     </p>
                     <div class="opcMult">
-                        <select name="select" id="seleccion" onchange="mostrarInput(this)">
+                        <select name="select" id="RS9-2-7A2" onchange="mostrarInput(this)">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
 
@@ -582,10 +582,10 @@
                     <p >Para profesores
                     </p>
                     <div class="opcMult">
-                        <select name="select" id="seleccion" onchange="mostrarInput(this)">
+                        <select name="select" id="RS9-2-7A3" onchange="mostrarInput(this)">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
 
@@ -594,10 +594,10 @@
                     <p >Para estudiantes
                     </p>
                     <div class="opcMult">
-                        <select name="select" id="seleccion" onchange="mostrarInput(this)">
+                        <select name="select" id="RS9-2-7A4" onchange="mostrarInput(this)">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
 
@@ -605,13 +605,13 @@
 
                     <p >c) En caso afirmativo a la pregunta anterior ¿cuál es el tiempo promedio disponible para cada estudiante a Internet por semana?
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-2-7A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <br><br>
 
                     <p >d) ¿Con qué paquetes de software se cuenta en la red académica de la institución para apoyo del programa que se evalúa?
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-2-7A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -631,7 +631,7 @@
 
                     <p >Describir la documentación para los sistemas de hardware y software disponibles para los estudiantes y profesores Explicar cómo los estudiantes y profesores tienen acceso adecuado a la documentación, así como el horario en que está disponible.
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-2-8" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
@@ -652,17 +652,17 @@
 
                     <p >Los horarios de servicio en que se prestan los servicios de cómputo son los siguientes:
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-2-9" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <p >Si hay personal de apoyo indicar en cada caso la cantidad, horarios y funciones que tienen.
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-2-9A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <br><br>
 
                     <p >¿Qué tipo de personal está disponible para instalar, mantener y administrar el hardware, software y redes de la institución?
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-2-9A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
@@ -681,10 +681,10 @@
                     <p >¿Existe un reglamento de los servicios de cómputo?
                     </p>
                     <div class="opcMult">
-                        <select name="select" id="seleccion" onchange="mostrarInput(this)">
+                        <select name="select" id="RS9-2-10A1" onchange="mostrarInput(this)">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br><br>
@@ -692,10 +692,10 @@
                     <p >En caso afirmativo, ¿se encuentra a disponibilidad de los usuarios?
                     </p>
                     <div class="opcMult">
-                        <select name="select" id="seleccion" onchange="mostrarInput(this)">
+                        <select name="select" id="RS9-2-10A2" onchange="mostrarInput(this)">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
 
@@ -717,7 +717,7 @@
 
                     <p >Describir las facilidades de cómputo disponibles para los profesores del programa. Incluir los recursos de este tipo disponibles para las oficinas del personal académico.
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-2-11" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -737,25 +737,25 @@
 
                     <p >¿Existen técnicos de administración de sistemas de tiempo completo? ¿Participan estudiantes en el apoyo a las actividades de soporte técnico?
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-2-12" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <br><br>
 
                     <p >¿Es este nivel de soporte adecuado?
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-2-12A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <br><br>
 
                     <p >Justifique su respuesta:
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-2-12A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <br><br>
 
                     <p >Sí la respuesta es no, describir las limitantes existentes:
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-2-12A3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -777,17 +777,17 @@
                     <p >¿Existen registros de usuarios de los servicios de cómputo?
                     </p>
                     <div class="opcMult">
-                        <select name="select" id="seleccion" onchange="mostrarInput(this)">
+                        <select name="select" id="RS9-2-13A1" onchange="mostrarInput(this)">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <br>
 
                     <p >En caso afirmativo indicar el número de usuarios en promedio diario atendidos en los tres últimos períodos escolares
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-2-13" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     
 
 
@@ -805,16 +805,16 @@
                     <p >9.2.14 Específicamente, el personal técnico, es suficiente y cuenta con el perfil adecuado para dar soporte, no solo a la infraestructura de telecomunicaciones y redes, sino también para el desarrollo de aplicaciones, incorporación de tecnologías emergentes, administración y hospedaje, desarrollo web, minería de datos, soluciones inteligentes, reingeniería de procesos mediante el uso de las TIC y la administración de la propia plataforma tecnológica y de aprendizaje que soporta el modelo educativo, ya sea a distancia o presencial.
                     </p>
                     <div class="opcMult">
-                        <select name="select" id="seleccion" onchange="mostrarInput(this)">
+                        <select name="select" id="RS9-2-14A1" onchange="mostrarInput(this)">
                             <option disabled selected>Selecciona una opción</option>
                             <option value="si">Sí</option>
-                            <option value="No">No</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
 
                     <p >En cualquier caso, explique brevemente:
                     </p>
-                    <input type="text" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R9-2-14" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
 
 
