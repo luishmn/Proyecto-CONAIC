@@ -34,6 +34,311 @@
     <script src="enviarConsulta.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    
+
+    $(document).ready(function() {
+        $.ajax({
+            type: "GET",
+            url: "recuperar_respuestas5.php",
+            success: function(data) {
+                
+                var respuestas = JSON.parse(data); // Parsea el JSON como una matriz
+
+                const tamAry=respuestas.length;
+                var respuesta1 = respuestas[0]; // Accede a la primera respuesta
+                var respuesta2 = respuestas[1]; // Accede a la segunda respuesta
+
+
+
+                for (let i = 0; i <tamAry; i += 2) {
+                    var localizacion="#"+respuestas[i]
+                    if (localizacion.startsWith("#RS")){
+                        var resp = respuestas[i+1];
+                        verificar(localizacion,resp)
+                    }
+                    else{
+                        //incerta en input
+                        $(localizacion).val(respuestas[i+1]);
+                        console.log(localizacion)
+
+                    }
+
+                }
+                // Llamamos a la función verificar y pasamos respuesta1 como argumento
+                             
+    }
+        });
+
+        function verificar(loc,respuesta1) {
+                    console.log(loc)
+                    if (respuesta1 === "si") {
+                        $(loc+" option[value='si']").prop("selected", true);
+                    }
+                    if (respuesta1 === "no") {
+                        $(loc+" option[value='no']").prop("selected", true);
+                    }
+                    if (respuesta1 === " ") {
+                        $(loc+" option").prop("selected", false);
+                    }
+                }
+
+        
+    
+        $(document).ready(function() {
+            $("#guardarRespuesta1").click(function() {
+                var id1 = "RS7-1-1A1";
+                var respuesta1 = $("#RS7-1-1A1").val();
+
+                var id2 = "R7-1-1";
+                var respuesta2 = $("#R7-1-1").val();
+
+                var arreglo = [id1,respuesta1,id2,respuesta2];
+                console.log(arreglo)
+                
+                BDatos(arreglo)
+            });
+
+            $("#guardarRespuesta2").click(function() {
+                var id1 = "RS7-2-2A1";
+                var respuesta1 = $("#RS7-2-2A1").val();
+
+                var id2 = "R7-1-2";
+                var respuesta2 = $("#R7-1-2").val();
+
+                var arreglo = [id1,respuesta1,id2,respuesta2];
+                console.log(arreglo)
+                
+                BDatos(arreglo)
+            });
+
+            $("#guardarRespuesta3").click(function() {
+                var id1 = "RS7-1-3A1";
+                var respuesta1 = $("#RS7-1-3A1").val();
+
+                var id2 = "R7-1-3";
+                var respuesta2 = $("#R7-1-3").val();
+
+                var arreglo = [id1,respuesta1,id2,respuesta2];
+                console.log(arreglo)
+                
+                BDatos(arreglo)
+            });
+
+            $("#guardarRespuesta4").click(function() {
+                var id1 = "RS7-1-4A1";
+                var respuesta1 = $("#RS7-1-4A1").val();
+
+                var id2 = "R7-1-4";
+                var respuesta2 = $("#R7-1-4").val();
+
+                var arreglo = [id1,respuesta1,id2,respuesta2];
+                console.log(arreglo)
+                
+                BDatos(arreglo)
+            });
+
+            $("#guardarRespuesta5").click(function() {
+                var id1 = "RS7-1-5A1";
+                var respuesta1 = $("#RS7-1-5A1").val();
+
+                var id2 = "R7-1-5";
+                var respuesta2 = $("#R7-1-5").val();
+
+                var arreglo = [id1,respuesta1,id2,respuesta2];
+                console.log(arreglo)
+                
+                BDatos(arreglo)
+            });
+
+            $("#guardarRespuesta6").click(function() {
+                var id1 = "RS7-2-1A1";
+                var respuesta1 = $("#RS7-2-1A1").val();
+
+                var id2 = "R7-2-1";
+                var respuesta2 = $("#R7-2-1").val();
+
+                var arreglo = [id1,respuesta1,id2,respuesta2];
+                console.log(arreglo)
+                
+                BDatos(arreglo)
+            });
+
+            $("#guardarRespuesta7").click(function() {
+                var id1 = "RS7-2-2A1";
+                var respuesta1 = $("#RS7-2-2A1").val();
+
+                var arreglo = [id1,respuesta1];
+                console.log(arreglo)
+                
+                BDatos(arreglo)
+            });
+
+            $("#guardarRespuesta8").click(function() {
+                var id1 = "RS7-2-3A1";
+                var respuesta1 = $("#RS7-2-3A1").val();
+
+                var id2 = "R7-2-3";
+                var respuesta2 = $("#R7-2-3").val();
+
+                var arreglo = [id1,respuesta1,id2,respuesta2];
+                console.log(arreglo)
+                
+                BDatos(arreglo)
+            });
+
+            $("#guardarRespuesta9").click(function() {
+                var id1 = "RS7-3-1A1";
+                var respuesta1 = $("#RS7-3-1A1").val();
+
+                var id2 = "R7-3-1";
+                var respuesta2 = $("#R7-3-1").val();
+                
+                var id3 = "R7-3-1A1";
+                var respuesta3 = $("#R7-3-1A1").val();
+
+                var arreglo = [id1,respuesta1,id2,respuesta2,id3,respuesta3];
+                console.log(arreglo)
+                
+                BDatos(arreglo)
+            });
+
+            $("#guardarRespuesta10").click(function() {
+                var id1 = "R7-3-2";
+                var respuesta1 = $("#R7-3-2").val();
+
+                var arreglo = [id1,respuesta1];
+                console.log(arreglo)
+                
+                BDatos(arreglo)
+            });
+
+            $("#guardarRespuesta11").click(function() {
+                var id1 = "RS7-4-1A1";
+                var respuesta1 = $("#RS7-4-1A1").val();
+
+                var id2 = "R7-4-1";
+                var respuesta2 = $("#R7-4-1").val();
+
+                var id3 = "RS7-4-1A2";
+                var respuesta3 = $("#RS7-4-1A2").val();
+
+                var id4 = "R7-4-1A1";
+                var respuesta4 = $("#R7-4-1A1").val();
+
+                var arreglo = [id1,respuesta1,id2,respuesta2,id3,respuesta3,id4,respuesta4];
+                console.log(arreglo)
+                
+                BDatos(arreglo)
+            });
+
+            $("#guardarRespuesta12").click(function() {
+                var id1 = "RS7-5-1A1";
+                var respuesta1 = $("#RS7-5-1A1").val();
+
+                var id2 = "RS7-5-1A1";
+                var respuesta2 = $("#RS7-5-1A1").val();
+
+                var id3 = "R7-5-1";
+                var respuesta3 = $("#R7-5-1").val();
+
+                var arreglo = [id1,respuesta1,id2,respuesta2,id3,respuesta3];
+                console.log(arreglo)
+                
+                BDatos(arreglo)
+            });
+
+            $("#guardarRespuesta13").click(function() {
+                var id1 = "R7-6-1";
+                var respuesta1 = $("#R7-6-1").val();
+
+                var arreglo = [id1,respuesta1];
+                console.log(arreglo)
+                
+                BDatos(arreglo)
+            });
+            
+            $("#guardarRespuesta14").click(function() {
+                var id1 = "RS7-6-2A1";
+                var respuesta1 = $("#RS7-6-2A1").val();
+
+                var id2 = "R7-6-2";
+                var respuesta2 = $("#R7-6-2").val();
+
+                var arreglo = [id1,respuesta1,id2,respuesta2];
+                console.log(arreglo)
+                
+                BDatos(arreglo)
+            });
+
+            $("#guardarRespuesta15").click(function() {
+                var id1 = "RS7-6-3A1";
+                var respuesta1 = $("#RS7-6-3A1").val();
+
+                var id2 = "R7-6-3";
+                var respuesta2 = $("#R7-6-3").val();
+
+                var arreglo = [id1,respuesta1,id2,respuesta2];
+                console.log(arreglo)
+                
+                BDatos(arreglo)
+            });
+
+            $("#guardarRespuesta16").click(function() {
+                var id1 = "RS7-6-4A1";
+                var respuesta1 = $("#RS7-6-4A1").val();
+
+                var id2 = "R7-6-4";
+                var respuesta2 = $("#R7-6-4").val();
+
+                var arreglo = [id1,respuesta1,id2,respuesta2];
+                console.log(arreglo)
+                
+                BDatos(arreglo)
+            });
+
+            $("#guardarRespuesta17").click(function() {
+                var id1 = "RS7-6-5A1";
+                var respuesta1 = $("#RS7-6-5A1").val();
+
+                var id2 = "R7-6-5";
+                var respuesta2 = $("#R7-6-5").val();
+
+                var arreglo = [id1,respuesta1,id2,respuesta2];
+                console.log(arreglo)
+                
+                BDatos(arreglo)
+            });
+
+        function BDatos(arreglo){
+            $.ajax({
+                type: "POST", 
+                url: "guardar_respuesta.php",
+                data: {
+                    arre: JSON.stringify(arreglo) // Debe coincidir con el nombre del índice esperado en el servidor
+                },
+                success: function(response) {
+                    Swal.fire({
+                        backdrop: false,
+                        text: 'Guardado correctamente',
+                        confirmButtonColor: '#197B7A',
+                        timer: 5000,
+                        timerProgressBar: true,
+                        position: "bottom-end",
+                        showConfirmButton: false
+                    });
+                }
+            });
+
+        }
+
+        });
+    });
+
+</script>
+
 </head>
 
 <body>
@@ -169,7 +474,7 @@
                     y la valoración de los resultados correspondientes.
                 </p>
                 <textarea id="R7-1-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta1">Guardar</button></div>
 
             </div>
 
@@ -193,7 +498,7 @@
                     indique qué resultados tangibles se tienen.
                 </p>
                 <textarea id="R7-1-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta2">Guardar</button></div>
 
             </div>
 
@@ -214,7 +519,7 @@
 
                 <p>En caso afirmativo, descríbalos brevemente</p>
                 <textarea id="R7-1-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta3">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_7.1.4">
@@ -239,7 +544,7 @@
                     indique qué resultados tangibles se tienen.
                 </p>
                 <textarea id="R7-1-4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta4">Guardar</button></div>
                 
             </div>
 
@@ -274,7 +579,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div> 
+                <div class="btnListo"><button id="guardarRespuesta5">Guardar</button></div> 
             </div>
 
 
@@ -313,7 +618,7 @@
                     consiste y algunos de los resultados obtenidos.
                 </p>
                 <textarea id="R7-2-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta6">Guardar</button></div>
 
 
             </div>
@@ -331,7 +636,7 @@
                     </select>
                 </div>
                 <br>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta7">Guardar</button></div>
             </div>
 
 
@@ -366,7 +671,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta8">Guardar</button></div>
 
             </div>
 
@@ -419,7 +724,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta9">Guardar</button></div>
                 
             </div>
 
@@ -430,7 +735,7 @@
                     Enumérelos:
                 </p>
                 <textarea id="R7-3-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta10">Guardar</button></div>
 
             </div>
 
@@ -483,7 +788,7 @@
                     programa educativo:
                 </p>
                 <textarea id="R7-4-1A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta11">Guardar</button></div>
 
             </div>
 
@@ -525,7 +830,7 @@
 
                 <p>¿Por qué?</p>
                 <textarea id="R7-5-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta12">Guardar</button></div>
             </div>
 
             <div>
@@ -551,7 +856,7 @@
                     exposiciones, etc.?
                 </p>
                 <textarea id="R7-6-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta13">Guardar</button></div>
 
             </div>
 
@@ -576,7 +881,7 @@
                     para los últimos 3 períodos.
                 </p>
                 <textarea id="R7-6-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta14">Guardar</button></div>
 
             </div>
 
@@ -603,7 +908,7 @@
                     así como resultados obtenidos.
                 </p>
                 <textarea id="R7-6-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta15">Guardar</button></div>
 
             </div>
 
@@ -625,7 +930,7 @@
                     así como resultados obtenidos.
                 </p>
                 <textarea id="R7-6-4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta16">Guardar</button></div>
 
             </div>
 
@@ -657,7 +962,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta17">Guardar</button></div>
 
 
             </div>

@@ -98,7 +98,6 @@
                         BDatos(arreglo)
                     });
 
-                
                     $("#guardarRespuesta2").click(function() {
                         var id1 = "RS1-2-1A1";
                         var respuesta1 = $("#RS1-2-1A1").val();
@@ -684,7 +683,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta1">Guardar</button></div>
             </div>
 
             <div>
@@ -730,7 +729,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta2">Guardar</button></div>
             </div>
 
             <div>
@@ -778,7 +777,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta3">Guardar</button></div>
             </div>
 
             <div>
@@ -820,7 +819,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta4">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.4.2">
@@ -868,7 +867,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta5">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.4.3">
@@ -923,7 +922,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta6">Guardar</button></div>
             </div>
 
             <div>
@@ -957,7 +956,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta7">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.5.2">
@@ -980,7 +979,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta8">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.5.3">
@@ -1005,7 +1004,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta9">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.5.4">
@@ -1032,7 +1031,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta10">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.5.5">
@@ -1055,7 +1054,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta11">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.5.6">
@@ -1079,7 +1078,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta12">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.5.7">
@@ -1095,7 +1094,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta13">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.5.8">
@@ -1113,7 +1112,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta14">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.5.9">
@@ -1148,7 +1147,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta15">Guardar</button></div>
             </div>
 
             <div>
@@ -1183,7 +1182,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta16">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.6.2">
@@ -1210,7 +1209,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta17">Guardar</button></div>
             </div>
 
             <div>
@@ -1249,7 +1248,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta18">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.7.2">
@@ -1295,7 +1294,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta19">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.7.3">
@@ -1340,7 +1339,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta20">Guardar</button></div>
 
 
 
@@ -1412,7 +1411,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta21">Guardar</button></div>
             </div>
 
             <div>
@@ -1476,7 +1475,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta22">Guardar</button></div>
             </div>
 
             <div>
@@ -1523,7 +1522,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta23">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.9.1">
@@ -1538,7 +1537,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta24">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.9.2">
@@ -1558,7 +1557,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta25">Guardar</button></div>
             </div>
 
             <div>
@@ -1596,7 +1595,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta26">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.10.2">
@@ -1645,7 +1644,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta27">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.10.3">
@@ -1666,7 +1665,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta28">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.10.4">
@@ -1704,7 +1703,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta29">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.10.5">
@@ -1737,7 +1736,7 @@
                     <button>Seleccionar archivos</button>
                     <!-- <button>Cargar</button>  -->
                 </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta30">Guardar</button></div>
             </div>
 
 
