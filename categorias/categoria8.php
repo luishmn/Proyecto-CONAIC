@@ -33,7 +33,207 @@
     <link rel="stylesheet" href="autoevaluacion.css">
     <script src="enviarConsulta.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                type: "GET",
+                url: "recuperar_respuestas8.php",
+                success: function(data) {
+                    
+                    var respuestas = JSON.parse(data); // Parsea el JSON como una matriz
+
+                    const tamAry=respuestas.length;
+                    var respuesta1 = respuestas[0]; // Accede a la primera respuesta
+                    var respuesta2 = respuestas[1]; // Accede a la segunda respuesta
+
+
+
+                    for (let i = 0; i <tamAry; i += 2) {
+                        var localizacion="#"+respuestas[i]
+                        if (localizacion.startsWith("#RS")){
+                            var resp = respuestas[i+1];
+                            verificar(localizacion,resp)
+                        }
+                        else{
+                            //incerta en input
+                            $(localizacion).val(respuestas[i+1]);
+                            console.log(localizacion)
+
+                        }
+
+                    }
+                    // Llamamos a la función verificar y pasamos respuesta1 como argumento
+                                 
+        }
+            });
+
+            function verificar(loc,respuesta1) {
+                        console.log(loc)
+                        if (respuesta1 === "si") {
+                            $(loc+" option[value='si']").prop("selected", true);
+                        }
+                        if (respuesta1 === "no") {
+                            $(loc+" option[value='no']").prop("selected", true);
+                        }
+                        if (respuesta1 === " ") {
+                            $(loc+" option").prop("selected", false);
+                        }
+                    }
+
+            
+        
+            $(document).ready(function() {
+                $("#guardarRespuesta1").click(function() {
+                    var id1 = "RS8-1-1A1";
+                    var respuesta1 = $("#RS8-1-1A1").val();
+
+                    var id2 = "R8-1-1";
+                    var respuesta2 = $("#R8-1-1").val();
+
+                    var arreglo = [id1,respuesta1, id2,respuesta2];
+                    console.log(arreglo)
+                    
+                    BDatos(arreglo)
+                });
+
+                $("#guardarRespuesta2").click(function() {
+                    var id3 = "R8-1-2";
+                    var respuesta3 = $("#R8-1-2").val();
+                    
+                    var arreglo = [id3,respuesta3];
+                    console.log(arreglo)
+                    
+                    BDatos(arreglo)
+                });
+
+                $("#guardarRespuesta3").click(function() {
+                    var id4 = "R8-1-3";
+                    var respuesta4 = $("#R8-1-3").val();
+                    
+                    var arreglo = [id4,respuesta4];
+                    console.log(arreglo)
+                    
+                    BDatos(arreglo)
+
+                });
+
+                $("#guardarRespuesta4").click(function() {
+                    var id5 = "RS8-2-1A1";
+                    var respuesta5 = $("#RS8-2-1A1").val();
+                    
+                    var arreglo = [id5,respuesta5];
+                    console.log(arreglo)
+                    
+                    BDatos(arreglo)
+                });
+
+                $("#guardarRespuesta5").click(function() {
+                    var id6 = "R8-2-2";
+                    var respuesta6 = $("#R8-2-2").val();
+                    
+                    var arreglo = [id6,respuesta6];
+                    console.log(arreglo)
+                    
+                    BDatos(arreglo)
+                });
+
+                $("#guardarRespuesta6").click(function() {
+                    var id7 = "RS8-2-3A1";
+                    var respuesta7 = $("#RS8-2-3A1").val();
+
+                    var id8 = "R8-2-3";
+                    var respuesta8 = $("#R8-2-3").val();
+                    
+                    var arreglo = [id7,respuesta7,id8,respuesta8];
+                    console.log(arreglo)
+                    
+                    BDatos(arreglo)
+                });
+
+                $("#guardarRespuesta7").click(function() {
+                    var id9 = "RS8-2-4A1";
+                    var respuesta9 = $("#RS8-2-4A1").val();
+
+                    var id10 = "R8-2-4";
+                    var respuesta10 = $("#R8-2-4").val();
+                    
+                    var arreglo = [id9,respuesta9,id10,respuesta10];
+                    console.log(arreglo)
+                    
+                    BDatos(arreglo)
+                });
+
+                $("#guardarRespuesta8").click(function() {
+                    var id11 = "R8-3-1";
+                    var respuesta11 = $("#R8-3-1").val();
+                    
+                    var arreglo = [id11,respuesta11];
+                    console.log(arreglo)
+                    
+                    BDatos(arreglo)
+                });
+
+                $("#guardarRespuesta9").click(function() {
+                    var id12 = "R8-4-1";
+                    var respuesta12 = $("#R8-4-1").val();
+                    
+                    var arreglo = [id12,respuesta12];
+                    console.log(arreglo)
+                    
+                    BDatos(arreglo)
+                });
+
+                $("#guardarRespuesta10").click(function() {
+                    var id13 = "R8-4-2";
+                    var respuesta13 = $("#R8-4-2").val();
+                
+
+                    var arreglo = [id13,respuesta13];
+                    console.log(arreglo)
+                    
+                    BDatos(arreglo)
+                });
+
+
+               
+
+
+                
+
+
+            function BDatos(arreglo){
+                $.ajax({
+                    type: "POST", 
+                    url: "guardar_respuesta.php",
+                    data: {
+                        arre: JSON.stringify(arreglo) // Debe coincidir con el nombre del índice esperado en el servidor
+                    },
+                    success: function(response) {
+                        Swal.fire({
+                            backdrop: false,
+                            text: 'Guardado correctamente',
+                            confirmButtonColor: '#197B7A',
+                            timer: 5000,
+                            timerProgressBar: true,
+                            position: "bottom-end",
+                            showConfirmButton: false
+                        });
+                    }
+                });
+
+            }
+
+            });
+        });
+
+    </script>
 </head>
 
 <body>
@@ -157,11 +357,29 @@
                 <p>En caso afirmativo describa brevemente en qué consiste esta politica:</p>
                 <textarea id="R8-1-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
-                <div class="Listo">
-                    <img src="/imagenes/pdf.png" alt="">
-                    <button>Seleccionar archivos</button>
-                </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                    <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                    <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
+                    <div class="Listo">
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-8.1.1"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-8.1.1"><i class="fas fa-eye"></i>Mostrar PDF</button>
+                    </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
+                <div class="btnListo"><button id="guardarRespuesta1">Guardar</button></div>
             </div>
 
 
@@ -170,11 +388,29 @@
                     Si el programa cuenta con líneas de investigación definidas, enumérelas y descríbalas en forma sintética.</p>
                 <textarea id="R8-1-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
-                <div class="Listo">
-                    <img src="/imagenes/pdf.png" alt="">
-                    <button>Seleccionar archivos</button>
-                </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                    <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                    <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
+                    <div class="Listo">
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-8.1.2"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-8.1.2"><i class="fas fa-eye"></i>Mostrar PDF</button>
+                    </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
+                <div class="btnListo"><button id="guardarRespuesta2">Guardar</button></div>
             </div>
 
 
@@ -185,11 +421,29 @@
                 
                 <p>En caso afirmativo proporcione una copia de los documentos</p>
 
-                <div class="Listo">
-                    <img src="/imagenes/pdf.png" alt="">
-                    <button>Seleccionar archivos</button>
-                </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                    <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                    <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
+                    <div class="Listo">
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-8.1.3"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-8.1.3"><i class="fas fa-eye"></i>Mostrar PDF</button>
+                    </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
+                <div class="btnListo"><button id="guardarRespuesta3">Guardar</button></div>
             </div>
 
 
@@ -212,12 +466,29 @@
                 </div> 
                 
                 <p>En caso afirmativo proporcione evidencias</p>
-
-                <div class="Listo">
-                    <img src="/imagenes/pdf.png" alt="">
-                    <button>Seleccionar archivos</button>
-                </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                    <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                    <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
+                    <div class="Listo">
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-8.2.1"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-8.2.1"><i class="fas fa-eye"></i>Mostrar PDF</button>
+                    </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
+                <div class="btnListo"><button id="guardarRespuesta4">Guardar</button></div>
 
             </div>
 
@@ -227,11 +498,29 @@
                 <p>Incluya una relación de los espacios físicos y equipos exclusivamente para la investigación. Indique cuántos investigadores utilizan esta infraestructura.</p>
 
                 <textarea id="R8-2-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
-                <div class="Listo">
-                    <img src="/imagenes/pdf.png" alt="">
-                    <button>Seleccionar archivos</button>
-                </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                    <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                    <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
+                    <div class="Listo">
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-8.2.2"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-8.2.2"><i class="fas fa-eye"></i>Mostrar PDF</button>
+                    </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
+                <div class="btnListo"><button id="guardarRespuesta5">Guardar</button></div>
             </div>
 
             
@@ -248,11 +537,29 @@
                 <p>En caso afirmativo, exponga los puntos más importantes.</p>
                 <textarea id="R8-2-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
-                <div class="Listo">
-                    <img src="/imagenes/pdf.png" alt="">
-                    <button>Seleccionar archivos</button>
-                </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                    <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                    <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
+                    <div class="Listo">
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-8.2.3"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-8.2.3"><i class="fas fa-eye"></i>Mostrar PDF</button>
+                    </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
+                <div class="btnListo"><button id="guardarRespuesta6">Guardar</button></div>
             </div>
 
 
@@ -269,11 +576,29 @@
                 <p>En caso afirmativo, exponga los puntos más importantes.</p>
                 <textarea id="R8-2-4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
-                <div class="Listo">
-                    <img src="/imagenes/pdf.png" alt="">
-                    <button>Seleccionar archivos</button>
-                </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                    <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                    <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
+                    <div class="Listo">
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-8.2.4"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-8.2.4"><i class="fas fa-eye"></i>Mostrar PDF</button>
+                    </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
+                <div class="btnListo"><button id="guardarRespuesta7">Guardar</button></div>
             </div>
 
 
@@ -288,11 +613,29 @@
                     <p>8.3.1 ¿Qué medios brinda la institución y a qué nivel (general, de la dirección, de la jefatura, del programa, etc.) para la difusión de la investigación del área académica?  Artículos, reportes de investigación, publicaciones periódicas, libros, capítulos de libros, conferencias, exposiciones, etc.</p>
                     <textarea id="R8-3-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     
+                    <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                    <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
                     <div class="Listo">
-                        <img src="/imagenes/pdf.png" alt="">
-                        <button>Seleccionar archivos</button>
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-8.3.1"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-8.3.1"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
-                    <div class="btnListo"><button>Guardar</button></div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
+                    <div class="btnListo"><button id="guardarRespuesta8">Guardar</button></div>
             </div>
 
 
@@ -311,27 +654,287 @@
                     - Cronograma por trimestres<br>
                     - Relación de proyectos de investigación terminados en los últimos cinco años</p>
                 <textarea id="R8-4-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
-                <div class="Listo">
-                    <img src="/imagenes/pdf.png" alt="">
-                    <button>Seleccionar archivos</button>
-                </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                    <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                    <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
+                    <div class="Listo">
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-8.4.1"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-8.4.1"><i class="fas fa-eye"></i>Mostrar PDF</button>
+                    </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
+                <div class="btnListo"><button id="guardarRespuesta9">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_8.4.2">
                 <p>8.4.2 Mecanismos para la incorporación a la práctica docente de los resultados de investigación, que representen innovación en materia educativa.</p>
                 <textarea id="R8-4-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
-                <div class="Listo">
-                    <img src="/imagenes/pdf.png" alt="">
-                    <button>Seleccionar archivos</button>
-                </div>
-                <div class="btnListo"><button>Guardar</button></div>
+                    <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                    <br><br>
+                    <div class="pdfs-options">
+                        <div class="imgpdfs">
+                            <label >
+                                <i class="fas fa-file-pdf"></i> 
+                            </label>
+                        </div>
+                    
+                    <div class="Listo">
+                        <!--Boton-->
+                    <div class="botonesPDFSgroup">
+                
+                    <div class="boton-modal1">
+                        <button class="botonSubirPDF" id="botonSubir-8.4.2"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <br><br>
+                        <button class ="botonesMostrarPDF" id="subcriterio-8.4.2"><i class="fas fa-eye"></i>Mostrar PDF</button>
+                    </div>
+                    </div>   
+                    </div>
+                    </div>
+                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
+                <div class="btnListo" id="guardarRespuesta10"><button>Guardar</button></div>
             </div>
+            
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+<!-- Ventanas emergentes de los PDF Copiar -->
+
+
+
+<div id="subirarchivos" class="oculto">
+            <br>
+            <form class="from-login1" action="../funcion_guardarpdf/upload.php" method="post" enctype="multipart/form-data" id="uploadForm">
+            <h2>Subir PDF</h2>
+                <label class="custom-file-label">
+                    <input type="file" name="archivo[]" accept=".pdf" class="custom-file-input" id="file-input1" multiple>
+                    <span class="icon"><i class="fa fa-file-pdf-o"></i></span> Seleccionar PDF
+                </label>
+                <div id="selected-files1" class="titulosArchs">
+                </div>
+                <br>
+                <button id="botonSubirChido" class="cargar-pdf" data-id="8.1.1">
+                    <i class="fas fa-upload"></i> Subir PDF
+                </button>
+
+                <br><br>
+            </form>
+    </div>
+
+    <div id="tablaConPDF-subcriterio" class="oculto">
+        <form class="from-login" action="recuperarcontra/recuperarcontra.php" id="formularioEditar" method="post">
+            <h1>Archivos PDF</h1>
+            <table id="tablaPDFs" class="tablaspdf">
+                
+            </table>
+        </form>
+    </div>
+    
+    <div id="fondoOscuro" class="oculto"></div>
+
+    <!-- Hasta aquí -->
+
+
+</body>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    document.addEventListener("visibilitychange", function() {
+    if (document.hidden) {
+        // El usuario cambió a otra pestaña o aplicación
+        document.getElementById("fondoOscuro").style.display = "none";
+        document.getElementById("tablaConPDF-subcriterio").style.display = "none";
+        document.getElementById("subirarchivos").style.display = "none";
+    } else {
+        // El usuario volvió a esta pestaña
+        console.log("El usuario volvió a esta pestaña");
+        }
+    });
+
+</script>
+
+<script>
+    function actualizartablas(idtabla) {
+        const tablaPDFs = document.getElementById('tablaPDFs');
+        const claveSubcriterio = idtabla; 
+
+        // Realizar una solicitud AJAX para obtener los datos de la tabla
+        fetch(`tablas.php?claveSubcriterio=${claveSubcriterio}`)
+            .then(response => response.text())  // Cambia "text" a "json" si generas JSON
+            .then(data => {
+                // Actualizar el contenido de la tabla con los datos obtenidos
+                tablaPDFs.innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error al obtener los datos de la tabla:', error);
+            });
+        
+    };
+    
+    
+</script>
+
+<script> // Script para aparecer y desaparecer tabla con los PDF, no modificar
+    document.addEventListener("DOMContentLoaded", function() {
+        const botonesMostrarPDF = document.querySelectorAll(".botonesMostrarPDF");
+        
+        function mostrarPDF() {
+            // Mostrar el fondo oscuro y la tabla
+            const idBoton = event.target.id;
+            var idbuscar = idBoton.replace(/^subcriterio-/, '');
+            document.getElementById("fondoOscuro").style.display = "block";
+            document.getElementById("tablaConPDF-subcriterio").style.display = "block";
+            actualizartablas(idbuscar);
+        
 
 
             
-        </div>
-    </div>
-</body>
-</html>
+            //alert ("Se presionó el botón con id: " + idBoton);
+            document.getElementById("fondoOscuro").addEventListener("click", function() {
+            // Ocultar el fondo oscuro y el formulario cuando se hace clic fuera del formulario
+            document.getElementById("fondoOscuro").style.display = "none";
+            document.getElementById("tablaConPDF-subcriterio").style.display = "none";
+        });
+        }
+        botonesMostrarPDF.forEach(function(boton) {
+            boton.addEventListener("click", mostrarPDF);
+        });
+    });
+
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var button = document.querySelector(".cargar-pdf");
+        var form = document.getElementById("uploadForm");
+
+        button.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            var id = this.getAttribute("data-id");
+            var fileInput = form.querySelector("input[type='file']");
+            var files = fileInput.files;
+
+            if (files.length === 0) {
+                Swal.fire({
+                    title: 'Selecciona al menos un archivo.',
+                    icon: 'error',
+                    confirmButtonColor: '#145070'
+                });
+
+                return;
+            }
+
+            var formData = new FormData();
+
+            for (var i = 0; i < files.length; i++) {
+                formData.append("archivo[]", files[i]);
+            }
+
+            formData.append("id", id);
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "../funcion_guardarpdf/upload.php", true);
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        function limpiarSeleccion() {
+                            const selectedFiles = document.getElementById('selected-files1');
+                            const fileItem = document.createElement('div');
+                            selectedFiles.innerHTML = ''; // Limpiar la lista de archivos seleccionados
+                            fileItem.textContent = "";
+                            selectedFiles.appendChild(fileItem);           
+                            
+                        };
+                        limpiarSeleccion();
+                        Swal.fire({
+                            title: 'Archivos subidos correctamente.',
+                            icon: 'success',
+                            confirmButtonColor: '#145070'
+                        });
+                    } else {
+                        Swal.fire({
+                            title: 'Error de carga.',
+                            icon: 'error',
+                            confirmButtonColor: '#145070'
+                        });
+                    }
+                }
+            };
+
+            xhr.send(formData);
+        });
+    });
+</script>
+
+<script>
+        const fileInput = document.getElementById('file-input1');
+        const selectedFiles = document.getElementById('selected-files1');
+
+        fileInput.addEventListener('change', function() {
+            selectedFiles.innerHTML = ''; // Limpiar la lista de archivos seleccionados
+
+            const files = fileInput.files;
+            for (let i = 0; i < files.length; i++) {
+                const fileName = files[i].name;
+                const fileItem = document.createElement('div');
+                fileItem.textContent = fileName;
+                selectedFiles.appendChild(fileItem);
+            }
+        });
+</script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const botonesSubir = document.querySelectorAll(".botonSubirPDF");
+        const botonChido = document.getElementById("botonSubirChido");
+
+        
+        function subirPDF() {
+            // Mostrar el fondo oscuro y la tabla
+            const idBoton1 = event.target.id;
+            var idbuscar1 = idBoton1.replace(/^botonSubir-/, '');
+            document.getElementById("fondoOscuro").style.display = "block";
+            document.getElementById("subirarchivos").style.display = "block";
+            botonChido.dataset.id = idbuscar1;
+            
+        
+
+
+            
+            //alert ("Se presionó el botón con id: " + idBoton);
+            document.getElementById("fondoOscuro").addEventListener("click", function() {
+            // Ocultar el fondo oscuro y el formulario cuando se hace clic fuera del formulario
+            document.getElementById("fondoOscuro").style.display = "none";
+            document.getElementById("subirarchivos").style.display = "none";
+        });
+        }
+        botonesSubir.forEach(function(boton) {
+            boton.addEventListener("click", subirPDF);
+        });
+    });
+</script>
+
 

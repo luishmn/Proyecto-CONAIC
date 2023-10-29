@@ -133,7 +133,7 @@ session_start(); //Inicia una nueva sesión
 
         
 
-<?php
+    <?php
     
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $usuario = trim($_POST["usuario"]);

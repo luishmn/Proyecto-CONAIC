@@ -11,7 +11,7 @@ body{
 
 
 .barra-superior{
-    z-index: 100000000000;
+    z-index: 100;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #145070; 
     height: 1%;
@@ -324,6 +324,8 @@ body{
     border-radius: 20px;
 }
 
+
+
 .preguntasCategoria button{
     border: 0;
     background-color: #004AAD;
@@ -378,14 +380,17 @@ body{
     border: 0;
     margin-left: 5%;
     margin-right: 5%;
-    background-color: #004AAD;
+    background-color: #5488a3;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 5px;
     transition: transform 0.2s;
+    width: 15vw;
 }
+
+
 
 .Listo button:hover{
     transform: scale(0.95);
@@ -758,3 +763,303 @@ body{
             cursor: pointer;
             transition: all 300ms ease;
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        #btn-modal4 {
+            display: none;
+        }
+        
+        .container-modal4 {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(144, 148, 150, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #btn-modal4:checked ~ .container-modal4 {
+            display: flex;
+        }
+        
+        .content-modal4 {
+            position: relative;
+            width: 100%; /* Cambiado el ancho a 80% para mayor adaptabilidad */
+            max-width: 700px;
+            height: 400px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 4px;
+            background: #ACD3D9;
+            border-radius: 30px;
+        }
+        
+        .content-modal4 h2 {
+            margin-bottom: 15px;
+        }
+        
+        .content-modal4 p {
+            padding: 15px 0px;
+            border-top: 1px solid #dbdbdb;
+            border-bottom: 1px solid #dbdbdb;
+        }
+        
+        .content-modal4 .btn-cerrar2{
+            width: 100%;
+            margin-top: 15px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .content-modal4 .btn-cerrar4 label{
+            padding: 7px 10px;
+            background-color: #5488a3;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 300ms ease;
+        }
+        .content-modal4 .btn-cerrar4 label:hover{
+            background-color:#185E83;
+        }
+        .cerrar-modal4{
+            width:100%;
+            height: 100vh;
+            position: absolute;
+            top:0; left: 0;
+            z-index: -1;
+        }
+        @media screen and (max-width:800px) {
+            .content-modal4{
+                width: 90%;
+            }
+        }
+        
+        .content-modal4 .Cuadro {
+            position: relative;
+            width: 100%;
+            height: 350px; /* Tamaño fijo del Cuadro en píxeles */
+            overflow: hidden; /* Recorta el contenido que desborde */
+            overflow-y:auto;
+            background: #D4E1E3;
+            border-radius: 30px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+.oculto {
+    display: none;
+}
+
+#fondoOscuro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    z-index: 999; /* Asegura que esté encima de otros elementos */
+}
+
+.from-login {
+    width: 60%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #89C7D0;
+    box-shadow: 7px 13px 20px #3b3939;
+    padding: 20px 30px;
+    border-radius: 30px;
+    z-index: 1000;
+    overflow-y: auto;
+}
+.from-login::-webkit-scrollbar {
+    width: 12px; 
+}
+
+.from-login::-webkit-scrollbar-thumb {
+    background-color: #145070; 
+    border-radius: 6px; 
+}
+
+.from-login::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.0); 
+}
+
+.from-login h1{
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.tablaspdf {
+    font-family: Arial, sans-serif;
+
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #dddddd;
+    border-radius: 100px; /* Radio de borde para la tabla */
+
+    border-collapse: collapse;
+   
+    margin: 0 auto; /* Centrar la tabla horizontalmente */
+    border-radius: 20px; /* Borde redondeado de la tabla */
+    overflow: hidden;
+    
+}
+
+
+
+.tablaspdf th, .tablaspdf td {
+    text-align: left;
+    padding: 8px;
+}
+
+.tablaspdf th {
+    font-weight: bold;
+    background-color: #145070;
+}
+
+.tablaspdf tr:nth-child(even) {
+    background-color: #D4E1E3;
+}
+
+.tablaspdf tr:nth-child(odd) {
+    background-color: #D4E1E3;
+}
+
+.tablaspdf tr:hover{
+    background-color: #ffffff;
+}
+
+
+.tablaspdf th, .tablaspdf td {
+    border: 1px solid #D4E1E3;
+    border-radius: 0; /* Restablece el radio de borde en las celdas */
+}
+
+.contenidoIcons {
+    text-align: center; /* Alinea el texto al centro horizontalmente */
+    
+}
+
+.tablaspdf th, .tablaspdf td{
+    text-align: center;
+}
+
+
+.contenidoIcons a {
+    display: inline-block; /* Hace que los enlaces sean elementos en línea y no ocupen toda la línea */
+    margin: 0 10px; /* Añade un margen horizontal entre los enlaces para espaciarlos */
+    color: #145070; /* O el color que desees */
+    text-decoration: none; /* Elimina el subrayado si lo hay */
+}
+.contenidoIcons a:hover{
+    color: #00aeff;
+}
+.fa-trash:hover{
+    color: red;
+}
+
+.contenidoIcons a:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+.from-login1 {
+    text-align: center;
+    width: 20%;
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #89C7D0;
+    box-shadow: 7px 13px 20px #3b3939;
+    padding: 20px 30px;
+    border-radius: 30px;
+    z-index: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: auto;
+}
+
+.titulosArchs{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.from-login1::-webkit-scrollbar {
+    width: 12px; 
+}
+
+.from-login1::-webkit-scrollbar-thumb {
+    background-color: #145070; 
+    border-radius: 6px; 
+}
+
+.from-login1::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.0); 
+}
+
+.cargar-pdf{
+    border: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #5488a3;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 5px;
+    transition: transform 0.2s;
+    width: 15vw;
+}
+.cargar-pdf:hover{
+    transform: scale(0.9);
+}
+.fa-upload{
+    margin-right: 1vw;
+}
+.fa-eye{
+    margin-right: 1vw;
+}
