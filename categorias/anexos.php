@@ -277,9 +277,9 @@
                     <div class="botonesPDFSgroup">
                 
                     <div class="boton-modal1">
-                        <button class="botonSubirPDF" id="botonSubir-11.1.1"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <button class="botonSubirPDF" id="botonSubir-subanexo1"><i class="fas fa-upload"></i> Subir PDF</button>
                         <br><br>
-                        <button class ="botonesMostrarPDF" id="subcriterio-11.1.1"><i class="fas fa-eye"></i>Mostrar PDF</button>
+                        <button class ="botonesMostrarPDF" id="subcriterio-subanexo1"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
                     </div>   
                     </div>
@@ -313,9 +313,9 @@
                     <div class="botonesPDFSgroup">
                 
                     <div class="boton-modal1">
-                        <button class="botonSubirPDF" id="botonSubir-11.2.1"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <button class="botonSubirPDF" id="botonSubir-subanexo2"><i class="fas fa-upload"></i> Subir PDF</button>
                         <br><br>
-                        <button class ="botonesMostrarPDF" id="subcriterio-11.2.1"><i class="fas fa-eye"></i>Mostrar PDF</button>
+                        <button class ="botonesMostrarPDF" id="subcriterio-subanexo2"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
                     </div>   
                     </div>
@@ -356,9 +356,9 @@
                     <div class="botonesPDFSgroup">
                 
                     <div class="boton-modal1">
-                        <button class="botonSubirPDF" id="botonSubir-11.3.1"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <button class="botonSubirPDF" id="botonSubir-subanexo3"><i class="fas fa-upload"></i> Subir PDF</button>
                         <br><br>
-                        <button class ="botonesMostrarPDF" id="subcriterio-11.3.1"><i class="fas fa-eye"></i>Mostrar PDF</button>
+                        <button class ="botonesMostrarPDF" id="subcriterio-subanexo3"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
                     </div>   
                     </div>
@@ -388,7 +388,7 @@
                 <div id="selected-files1" class="titulosArchs">
                 </div>
                 <br>
-                <button id="botonSubirChido" class="cargar-pdf" data-id="11.1.1">
+                <button id="botonSubirChido" class="cargar-pdf" data-id="subanexos">
                     <i class="fas fa-upload"></i> Subir PDF
                 </button>
 
