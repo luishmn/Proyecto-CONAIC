@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $carpeta_destino = "pdfs/";
+    $carpeta_destino = "../categorias/pdfs/";
     $id = $_POST["id"];
     $archivos = $_FILES["archivo"];
 
@@ -16,18 +16,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $nombre_temporal = $archivos["tmp_name"][$key];
             $nombre_archivo = $archivos["name"][$key];
             $extension = pathinfo($nombre_archivo, PATHINFO_EXTENSION);
+            $clavePDF = uniqid("pdf_") . ".pdf";
 
             if ($extension === "pdf") {
-                $nuevo_nombre = "pdf" . $id . "-" . $key . ".pdf"; // Utiliza un identificador único para cada archivo
+                $nuevo_nombre = $clavePDF; // Utiliza un identificador único para cada archivo
                 $ruta_destino = $carpeta_destino . $nuevo_nombre;
 
                 if (move_uploaded_file($nombre_temporal, $ruta_destino)) {
                     // Realiza la inserción en la base de datos
                     $claveSubCriterio = $id; // Utiliza el valor de $id como claveSubCriterio
-                    $clavePDF = $nuevo_nombre; // Utiliza el nombre del archivo como clavePDF
+                    //$clavePDF = $nuevo_nombre; // Utiliza el nombre del archivo como clavePDF
+                   
 
                     // Consulta SQL para insertar datos en la tabla "subcriteriospdf"
-                    $sql = "INSERT INTO SubCriteriosPDF (claveSubCriterio, clavePDF) VALUES ('$claveSubCriterio', '$clavePDF')";
+                    $sql = "INSERT INTO SubCriteriosPDF (claveSubCriterio, clavePDF, nombrePDF) VALUES ('$claveSubCriterio', '$clavePDF', '$nombre_archivo')";
 
                     if ($conexion->query($sql) === TRUE) {
                         echo "Datos insertados en la tabla subcriteriospdf correctamente para el archivo '$clavePDF'.<br>";

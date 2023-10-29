@@ -7,14 +7,14 @@
 <body>
     <form action="upload.php" method="post" enctype="multipart/form-data" id="uploadForm">
         <input type="file" name="archivo[]" accept=".pdf" multiple>
-        <button class="cargar-pdf" data-id="1.1.1">Subir</button>
+        <button class="cargar-pdf" data-id="1.2.1">Subir</button>
     </form>
+    
 </body>
 </html>
 
 
 <script>
-
 document.addEventListener("DOMContentLoaded", function () {
     var button = document.querySelector(".cargar-pdf");
     var form = document.getElementById("uploadForm");

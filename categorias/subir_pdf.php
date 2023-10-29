@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <?php
 if (isset($mensaje_alerta)) {
-    echo "<script>alert('$mensaje_alerta'); window.location = 'categoria3.php';</script>";
+    echo "<script>alert('$mensaje_alerta'); window.history.back();;</script>";
 }
 ?>
 
