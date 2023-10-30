@@ -35,7 +35,7 @@
                     <div class="texto"> <?php echo $nombre; ?> </div>
                 </button>
                 <div class="contenido_del_menu_usuarios">
-                    <a>Salir de la cuenta</a>
+                    <a href="/PrincipalUsuario/deslogear.php">Salir de la cuenta</a>
                 </div>
             </div>
 

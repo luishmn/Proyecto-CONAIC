@@ -1768,7 +1768,8 @@
                     <li>Un sistema de evaluación previa, formativa y final acorde a los objetivos, contenidos y competencias</li>
                     <li>Referencias bibliográficas</li>
                 </ul>
-                
+
+                <textarea id="R6-5-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
