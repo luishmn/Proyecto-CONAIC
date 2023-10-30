@@ -47,7 +47,7 @@
     $(document).ready(function() {
         $.ajax({
             type: "GET",
-            url: "recuperar_respuestas5.php",
+            url: "recuperar_respuestas7.php",
             success: function(data) {
                 
                 var respuestas = JSON.parse(data); // Parsea el JSON como una matriz
