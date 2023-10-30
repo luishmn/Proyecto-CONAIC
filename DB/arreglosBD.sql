@@ -49,3 +49,8 @@ INSERT INTO `subcriterio` (`nombre`, `claveSubCriterio`) VALUES ('Tabla de cumpl
 INSERT INTO `criteriossubcriterio` (`claveCriterio`, `claveSubCriterio`) VALUES ('3.9', '3.9.1'), ('3.9', '3.9.2');
 
 ALTER TABLE `subcriteriospdf` ADD `nombrePDF` TEXT NOT NULL AFTER `clavePDF`;
+
+UPDATE `criterio` SET `nombre` = 'Proceso de selección ' WHERE `criterio`.`claveCriterio` = '2.1';
+UPDATE `criterio` SET `nombre` = 'Plataforma tecnológica y de aprendizaje\r\n\r\n' WHERE `criterio`.`claveCriterio` = '6.4';
+UPDATE `criterio` SET `nombre` = 'Material y recursos de aprendizaje utilizando tecnología educativa\r\n\r\n' WHERE `criterio`.`claveCriterio` = '6.5';
+UPDATE `criterio` SET `nombre` = 'Integración de los actores del aprendizaje' WHERE `criterio`.`claveCriterio` = '6.6';

@@ -47,7 +47,7 @@
     $(document).ready(function() {
         $.ajax({
             type: "GET",
-            url: "recuperar_respuestas5.php",
+            url: "recuperar_respuestas7.php",
             success: function(data) {
                 
                 var respuestas = JSON.parse(data); // Parsea el JSON como una matriz
@@ -329,7 +329,7 @@
                         backdrop: false,
                         text: 'Guardado correctamente',
                         confirmButtonColor: '#197B7A',
-                        timer: 5000,
+                        timer: 1000,
                         timerProgressBar: true,
                         position: "bottom-end",
                         showConfirmButton: false

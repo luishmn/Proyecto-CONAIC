@@ -39,6 +39,221 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <script>
+        $(document).ready(function() {
+            $.ajax({
+                type: "GET",
+                url: "recuperar_respuestas10.php",
+                success: function(data) {
+                    
+                    var respuestas = JSON.parse(data); // Parsea el JSON como una matriz
+
+                    const tamAry=respuestas.length;
+                    var respuesta1 = respuestas[0]; // Accede a la primera respuesta
+                    var respuesta2 = respuestas[1]; // Accede a la segunda respuesta
+
+
+
+                    for (let i = 0; i <tamAry; i += 2) {
+                        var localizacion="#"+respuestas[i]
+                        if (localizacion.startsWith("#RS")){
+                            var resp = respuestas[i+1];
+                            verificar(localizacion,resp)
+                        }
+                        else{
+                            //incerta en input
+                            $(localizacion).val(respuestas[i+1]);
+                            console.log(localizacion)
+
+                        }
+
+                    }
+                    // Llamamos a la función verificar y pasamos respuesta1 como argumento
+                                 
+        }
+            });
+
+            function verificar(loc,respuesta1) {
+                        console.log(loc)
+                        if (respuesta1 === "si") {
+                            $(loc+" option[value='si']").prop("selected", true);
+                        }
+                        if (respuesta1 === "no") {
+                            $(loc+" option[value='no']").prop("selected", true);
+                        }
+                        if (respuesta1 === " ") {
+                            $(loc+" option").prop("selected", false);
+                        }
+                    }
+
+            
+        
+            $(document).ready(function() {
+                $("#guardarRespuesta1").click(function() {
+                    var id1 = "RS10-1-1A1";
+                    var respuesta1 = $("#RS10-1-1A1").val();
+
+                    var id2 = "R10-1-1";
+                    var respuesta2 = $("#R10-1-1").val();
+
+                    var arreglo = [id1,respuesta1, id2,respuesta2];
+                    console.log(arreglo)
+                    
+                    BDatos(arreglo)
+                });
+
+                $("#guardarRespuesta2").click(function() {
+
+                    var id3 = "RS10-1-2A1";
+                    var respuesta3 = $("#RS10-1-2A1").val();
+
+                    var id4 = "R10-1-2";
+                    var respuesta4 = $("#R10-1-2").val();
+
+                    var arreglo = [id3,respuesta3, id4,respuesta4];
+                    console.log(arreglo)
+                    
+                    BDatos(arreglo)
+                });
+
+                $("#guardarRespuesta3").click(function() {
+
+                    var id5 = "RS10-1-3A1";
+                    var respuesta5 = $("#RS10-1-3A1").val();
+
+                    var id6 = "R10-1-3";
+                    var respuesta6 = $("#R10-1-3").val();
+
+                    var arreglo = [id5,respuesta5, id6,respuesta6];
+                    console.log(arreglo)
+                    
+                    BDatos(arreglo)
+                });
+
+                $("#guardarRespuesta4").click(function() {
+
+                    var id7 = "RS10-1-4A1";
+                    var respuesta7 = $("#RS10-1-4A1").val();
+
+                    var arreglo = [id7,respuesta7];
+                    console.log(arreglo)
+                    
+                    BDatos(arreglo)
+                });
+
+                $("#guardarRespuesta5").click(function() {
+
+                    var id8 = "RS10-2-1A1";
+                    var respuesta8 = $("#RS10-2-1A1").val();
+
+                    var id9 = "R10-2-1";
+                    var respuesta9 = $("#R10-2-1").val();
+
+                    var arreglo = [id8,respuesta8, id9,respuesta9];
+                    console.log(arreglo)
+                    
+                    BDatos(arreglo)
+                });
+
+                $("#guardarRespuesta6").click(function() {
+
+                    var id10 = "RS10-2-2A1";
+                    var respuesta10 = $("#RS10-2-2A1").val();
+
+                    var id11 = "R10-2-2";
+                    var respuesta11 = $("#R10-2-2").val();
+
+                    var arreglo = [id10,respuesta10, id11,respuesta11];
+                    console.log(arreglo)
+                    
+                    BDatos(arreglo)
+                });
+
+                $("#guardarRespuesta7").click(function() {
+
+                    var id12 = "RS10-3-1A1";
+                    var respuesta12 = $("#RS10-3-1A1").val();
+
+                    var id13 = "R10-3-1";
+                    var respuesta13 = $("#R10-3-1").val();
+
+                    var id14 = "RS10-3-1A2";
+                    var respuesta14 = $("#RS10-3-1A2").val();
+
+                    var id15 = "R10-3-1A1";
+                    var respuesta15 = $("#R10-3-1A1").val();
+
+                    var arreglo = [id12,respuesta12, id13,respuesta13, id14,respuesta14, id15,respuesta15];
+                    console.log(arreglo)
+                    
+                    BDatos(arreglo)
+                });
+
+                $("#guardarRespuesta8").click(function() {
+
+                    var id16 = "RS10-3-2A1";
+                    var respuesta16 = $("#RS10-3-2A1").val();
+
+                    var arreglo = [id16,respuesta16];
+                    console.log(arreglo)
+                    
+                    BDatos(arreglo)
+                });
+
+                $("#guardarRespuesta9").click(function() {
+
+                    var id17 = "RS10-3-3A1";
+                    var respuesta17 = $("#RS10-3-3A1").val();
+
+                    var id18 = "R10-3-3";
+                    var respuesta18 = $("#R10-3-3").val();
+
+                    var arreglo = [id17,respuesta17, id18,respuesta18];
+                    console.log(arreglo)
+                    
+                    BDatos(arreglo)
+                });
+
+                $("#guardarRespuesta10").click(function() {
+
+                    var id19 = "R10-3-4";
+                    var respuesta19 = $("#R10-3-4").val();
+
+                    var arreglo = [id19,respuesta19];
+                    console.log(arreglo)
+                    
+                    BDatos(arreglo)
+                });
+                
+
+
+            function BDatos(arreglo){
+                $.ajax({
+                    type: "POST", 
+                    url: "guardar_respuesta.php",
+                    data: {
+                        arre: JSON.stringify(arreglo) // Debe coincidir con el nombre del índice esperado en el servidor
+                    },
+                    success: function(response) {
+                        Swal.fire({
+                            backdrop: false,
+                            text: 'Guardado correctamente',
+                            confirmButtonColor: '#197B7A',
+                            timer: 1000,
+                            timerProgressBar: true,
+                            position: "bottom-end",
+                            showConfirmButton: false
+                        });
+                    }
+                });
+
+            }
+
+            });
+        });
+
+    </script>
 </head>
 
 <body>
@@ -186,7 +401,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                    <div class="btnListo"><button>Guardar</button></div>
+                    <div class="btnListo"><button id="guardarRespuesta1">Guardar</button></div>
                 </div>
 
                 <div class="preguntasCategoria" id="SC_10.1.2">
@@ -229,7 +444,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                    <div class="btnListo"><button>Guardar</button></div>
+                    <div class="btnListo"><button id="guardarRespuesta2">Guardar</button></div>
                 </div>
 
                 <div class="preguntasCategoria" id="SC_10.1.3">
@@ -270,7 +485,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                    <div class="btnListo"><button>Guardar</button></div>
+                    <div class="btnListo"><button id="guardarRespuesta3">Guardar</button></div>
                 </div>
 
                 <div class="preguntasCategoria" id="SC_10.1.4">
@@ -309,7 +524,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                    <div class="btnListo"><button>Guardar</button></div>
+                    <div class="btnListo"><button id="guardarRespuesta4">Guardar</button></div>
                 </div>
             </div>
 
@@ -356,7 +571,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                    <div class="btnListo"><button>Guardar</button></div>
+                    <div class="btnListo"><button id="guardarRespuesta5">Guardar</button></div>
                 </div>
                 <div class="preguntasCategoria" id="SC_10.2.">
                     <p>10.2.2 Las actividades académicas no deben estar subordinadas a los procesos administrativos.</p>
@@ -396,7 +611,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                    <div class="btnListo"><button>Guardar</button></div>
+                    <div class="btnListo"><button id="guardarRespuesta6">Guardar</button></div>
                 </div>
             </div>
 
@@ -454,7 +669,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                    <div class="btnListo"><button>Guardar</button></div>
+                    <div class="btnListo"><button id="guardarRespuesta7">Guardar</button></div>
                 </div>
 
                 <div class="preguntasCategoria" id="SC_10.3.2">
@@ -492,7 +707,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                    <div class="btnListo"><button>Guardar</button></div>
+                    <div class="btnListo"><button id="guardarRespuesta8">Guardar</button></div>
                 </div>
 
                 <div class="preguntasCategoria" id="SC_10.3.3">
@@ -530,7 +745,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                    <div class="btnListo"><button>Guardar</button></div>
+                    <div class="btnListo"><button id="guardarRespuesta9">Guardar</button></div>
                 </div>
 
                 <div class="preguntasCategoria" id="SC_10.3.4">
@@ -560,7 +775,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                    <div class="btnListo"><button>Guardar</button></div>
+                    <div class="btnListo"><button id="guardarRespuesta10">Guardar</button></div>
                 </div>
             </div>
 

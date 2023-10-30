@@ -130,8 +130,15 @@
                         arre: JSON.stringify(arreglo) // Debe coincidir con el nombre del índice esperado en el servidor
                     },
                     success: function(response) {
-                        alert("Respuestas guardadas con éxito");
-                        console.log(response);
+                        Swal.fire({
+                                backdrop: false,
+                                text: 'Guardado correctamente',
+                                confirmButtonColor: '#197B7A',
+                                timer: 1000,
+                                timerProgressBar: true,
+                                position: "bottom-end",
+                                showConfirmButton: false
+                            });
                     }
                 });
 

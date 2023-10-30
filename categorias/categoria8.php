@@ -220,7 +220,7 @@
                             backdrop: false,
                             text: 'Guardado correctamente',
                             confirmButtonColor: '#197B7A',
-                            timer: 5000,
+                            timer: 1000,
                             timerProgressBar: true,
                             position: "bottom-end",
                             showConfirmButton: false

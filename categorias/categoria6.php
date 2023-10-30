@@ -580,7 +580,7 @@
                             backdrop: false,
                             text: 'Guardado correctamente',
                             confirmButtonColor: '#197B7A',
-                            timer: 5000,
+                            timer: 1000,
                             timerProgressBar: true,
                             position: "bottom-end",
                             showConfirmButton: false
@@ -1514,21 +1514,21 @@
                 <p>Mencionar cual:</p>
                 <textarea id="R6-4-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
-                <div class="checkB">
-                    <input type="checkbox" id="cbox1" value="opcion1"><label>Software libre u Open Source 
+                    <br>
+                    <p>Software libre u Open Source 
                         (Ejemplo: ATutor, Dokeos, Claroline, 
-                        dotLRN, Moodle, o desarrollos institucionales, etc).</label><br>
-                </div>
+                        dotLRN, Moodle, o desarrollos institucionales, etc).</p>
+                
                 <p>Mencionar cual y si es desarrollo institucional describirlo:</p>
                 <textarea id="R6-4-1A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
-                <div class="checkB">
-                    <input type="checkbox" id="cbox1" value="opcion1"><label>Cómputo 
+                    <br>
+                    <p>Cómputo 
                         en la nube pública o privada para Educación Superior, 
                         aunque no es propiamente una plataforma, sirven de apoyo a la 
                         modalidad escolarizada o presencial e incluso a la modalidad a 
                         distancia o virtual (Ejemplo: Udacity, Coursera, Udemy, Wiziq, 
-                        o desarrollos institucionales, etc.)</label><br>
-                </div>                
+                        o desarrollos institucionales, etc.)</p>
+                                
                 <p>Mencionar cual y si es institucional describirlo:</p>
                 <textarea id="R6-4-1A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>Proporcione evidencia, ya sea de licencia, desarrollo o uso, según sea el caso.</p>
@@ -1623,17 +1623,19 @@
                 <p>7) Estandarización. Se refiere a la aceptabilidad de estándares
                      como SCORM o a la facilidad para importar o insertar otros 
                      recursos o contenidos al entorno de aprendizaje.</p>
+
+                     <ul>
+                        <li>Interactividad</li>
+                        <li>Flexibilidad</li>
+                        <li>Escalabilidad</li>
+                        <li>Usabilidad</li>
+                        <li>Ubicuidad</li>
+                        <li>Funcionabilidad</li>
+                        <li>Estandarización</li>
+                        <li>Soporte</li>
+                     </ul>
                 
-                <div class="checkB">
-                    <input type="checkbox" id="cbox1" value="opcion1"><label>Interactividad</label><br>
-                    <input type="checkbox" id="cbox2" value="opcion2"><label>Flexibilidad</label><br>
-                    <input type="checkbox" id="cbox3" value="opcion3"><label>Escalabilidad</label><br>
-                    <input type="checkbox" id="cbox4" value="opcion4"><label>Usabilidad</label><br>
-                    <input type="checkbox" id="cbox5" value="opcion5"><label>Ubicuidad</label><br>
-                    <input type="checkbox" id="cbox6" value="opcion6"><label>Funcionabilidad</label><br>
-                    <input type="checkbox" id="cbox7" value="opcion7"><label>Estandarización</label><br>
-                    <input type="checkbox" id="cbox8" value="opcion8"><label>Soporte</label><br>
-                </div>
+                
                 
                      <p>Descripción, Proporcione evidencias de su uso y copia de los documentos</p>
                 <textarea id="R6-4-2A8" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
@@ -1759,15 +1761,14 @@
             <div class="preguntasCategoria" id="SC_6.5.2">
                 <p>6.5.2 La organización o estructura didáctica del material de aprendizaje incluye algunos o todos los elementos siguientes:</p>
                 
-                <div class="checkB">
-                    <input type="checkbox" id="cbox5.5.2-1" value="cbox5.5.2-1"><label>Objetivos de aprendizaje</label><br>
-                    <input type="checkbox" id="cbox5.5.2-2" value="cbox5.5.2-2"><label>Contenidos y temáticas del curso o asignatura</label><br>
-                    <input type="checkbox" id="cbox5.5.2-3" value="cbox5.5.2-3"><label>Actividades de aprendizaje para adquisición de competencias 
-                        acorde al perfil del egresado</label><br>
-                    <input type="checkbox" id="cbox5.5.2-4" value="cbox5.5.2-4"><label>Un sistema de evaluación previa, formativa y final acorde 
-                        a los objetivos, contenidos y competencias</label><br>
-                    <input type="checkbox" id="cbox5.5.2-5" value="cbox5.5.2-5"><label>Referencias bibliográficas</label><br>
-                </div>
+                <ul>
+                    <li>Objetivos de aprendizaje</li>
+                    <li>Contenidos y temáticas del curso o asignatura</li>
+                    <li>Actividades de aprendizaje para adquisición de competencias acorde al perfil del egresado</li>
+                    <li>Un sistema de evaluación previa, formativa y final acorde a los objetivos, contenidos y competencias</li>
+                    <li>Referencias bibliográficas</li>
+                </ul>
+                
 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
