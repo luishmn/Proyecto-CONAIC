@@ -48,11 +48,11 @@
         </div>
     </div>
     <div class="buttons">
-    <a href="xxxxxx.html">
-        <button><img class="button-image small" src="seguimiento.png" alt="Botón 1"></button>
+    <a href="/PrincipalUsuario/verificaCriterios.php">
+        <button><img class="button-image small" src="autoevaluacion.png" alt="Botón 1"></button>
     
-    <a href="/PrincipalUsuario/verificaCriterios.php" >
-        <button><img class="button-image large" src="autoevaluacion.png" id="autoeval" alt="Botón 2"></button>
+    <a  href="xxxxxx.html">
+        <button><img class="button-image large" src="seguimiento.png" id="autoeval" alt="Botón 2"></button>
     
 </div>
     <img class="img1" src="logo_Fondo.png" alt="logo">
