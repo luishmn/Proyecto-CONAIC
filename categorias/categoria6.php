@@ -610,7 +610,7 @@
 
             <button class="menu_estilo_usuario">
                 <img src="../PrincipalUsuario/usuario.png" alt="Usuario"> 
-                <div class="texto"> <?php echo $nombreUsuario; ?></div>
+                <div class="texto"> <?php echo $nombre; ?></div>
             </button>
 
             
