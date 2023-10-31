@@ -560,8 +560,6 @@
                     </p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo).
 
                     <p>
-                    <input type="text" id="R2-1-1A1" placeholder="Escribe tu respuesta aquí...">
-                    <textarea id="R3-1-1A4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>Se ha fijado un promedio mínimo para ser admitido al programa?
                     </p>
@@ -574,9 +572,7 @@
                     </div>
                     <br>
                     <p>En caso afirmativo, es de</p>
-
-                    <input type="text" id="R2-1-1A2" placeholder="Escribe tu respuesta aquí...">
-                    <textarea id="R3-1-1A4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea id="R2-1-1A2" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>El aspirante al programa debe presentar examen de admisión?
 
@@ -594,8 +590,7 @@
 
 
                     </p>
-                    <input type="text" id="R2-1-1A4" placeholder="Escribe tu respuesta aquí...">
-                    <textarea id="R3-1-1A4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <textarea id="R2-1-1A4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>¿Se proporciona información por escrito al aspirante a ingresar de las calificaciones obtenidas en su examen de admisión?
 
@@ -959,7 +954,7 @@
                     </p>En cualquier caso, explique brevemente.
                     <p>
                     <br>
-                    <input type="text" id="R2-2-7" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-2-7" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                         <br><br>
@@ -1000,7 +995,7 @@
                     </p>En cualquier caso, explique brevemente.
                     <p>
                     <br>
-                    <input type="text" id="R2-2-8" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-2-8" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>
                     En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo). 
@@ -1114,7 +1109,7 @@
                     </div>
                     <p>En caso afirmativo proporcione y justifique los indicadores correspondientes.
                     </p>
-                    <input type="text" id="R2-3-2A1" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-3-2A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                         <br><br>
@@ -1154,7 +1149,7 @@
                     </div>
                     <p>En caso afirmativo proporcione y justifique los indicadores correspondientes.</p>
                     <br>
-                    <input type="text" id="R2-3-3" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-3-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo).</p>
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -1194,18 +1189,18 @@
                 <div class="preguntasCategoria" id="SC_2.4.1">
                     <p>2.4.1 Proporcionar el tamaño promedio de los grupos de los últimos dos años:
                     </p>
-                    <input type="text" id="R2-4-1" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-4-1" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <p>¿Cuántos grupos en los últimos dos años tuvieron más de 60 estudiantes? 
                     </p>
-                    <input type="text" id="R2-4-1A1" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-4-1A1" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <p>¿Cuántos grupos en los últimos dos años tuvieron más de 45 estudiantes?
 
                     </p>
-                    <input type="text"  id="R2-4-1A2"placeholder="Escribe tu respuesta aquí...">
+                    <textarea  id="R2-4-1A2" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <p>Describir cómo se garantiza la atención a los estudiantes en grupos con más de 45 estudiantes
 
                     </p>
-                    <input type="text" id="R2-4-1A3" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-4-1A3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                         <br><br>
@@ -1261,38 +1256,38 @@
                     </div>
                     <p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo).</p>
                     <br>
-                    <input type="text" id="R2-5-1A1" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-5-1A1" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <p>Número límite de oportunidades para acreditar una materia ya sea por haberla cursado, por haber presentado exámenes a título de suficiencia, o por algún otro mecanismo:
                     </p>
-                    <input type="text" id="R2-5-1A2" placeholder="Escribe tu respuesta aquí...">
+                    <textareaid="R2-5-1A2" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>Número máximo de exámenes extraordinarios, a título o similares a lo largo de la carrera, de una misma asignatura: 
                     </p>
-                    <input type="text" id="R2-5-1A3" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-5-1A3" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>Número máximo de exámenes extraordinarios, a título o similares a lo largo de la carrera, de todas las asignaturas cursadas : 
                     </p>
-                    <input type="text" id="R2-5-1A4" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-5-1A4" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>Número máximo de años, semestre o períodos escolares en que el estudiante pueda terminar de cubrir los créditos del Programa diferenciando si es estudiante de tiempo completo (TC) o de tiempo parcial (TP).
                     </p>
-                    <input type="text" id="R2-5-1A5" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-5-1A5" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>TC:
                     </p>
-                    <input type="text" id="R2-5-1A6" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-5-1A6" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>TP:  
                     </p>
-                    <input type="text"  id="R2-5-1A7" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-5-1A7" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>Principales motivos para dar de baja automática a un estudiante:
                     </p>
-                    <input type="text"id="R2-5-1A8" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-5-1A8" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>¿Cómo y cuándo se entera el estudiante del contenido del reglamento de estudiantes (en caso de que exista)?
                     </p>
-                    <input type="text" id="R2-5-1A9" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-5-1A9"  rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>¿El estudiante puede participar en los cuerpos colegiados de la institución?
                     </p>
@@ -1329,7 +1324,7 @@
 
                     <p>indique brevemente los requisitos para ello:
                     </p>
-                    <input type="text" id="R2-5-1A13" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-5-1A13" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                         <br><br>
@@ -1412,7 +1407,7 @@
                     </div>
                     <br>
                     <p>En caso afirmativo indique en qué consiste y quiénes participan en el mismo:</p>
-                    <input type="text" id="R2-5-3A1" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-5-3A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -1553,7 +1548,7 @@
 que tienen.</p>
 
                     <br>
-                    <input type="text" id="R2-7A2" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-7A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -1608,7 +1603,7 @@ que tienen.</p>
                 <div class="preguntasCategoria" id="SC_2.7.2">
                     <p>2.7.2. Indicar los productos y resultados obtenidos de estas movilidades en envío y recepción de los estudiantes en los últimos cinco años.
                     </p>
-                    <input type="text" id="R2-7-2" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-7-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                         <br><br>
@@ -1661,6 +1656,7 @@ que tienen.</p>
             <h2>Subir PDF</h2>
                 <label class="custom-file-label">
                     <input type="file" name="archivo[]" accept=".pdf" class="custom-file-input" id="file-input1" multiple>
+                    
                     <span class="icon"><i class="fa fa-file-pdf-o"></i></span> Seleccionar PDF
                 </label>
                 <div id="selected-files1" class="titulosArchs">
