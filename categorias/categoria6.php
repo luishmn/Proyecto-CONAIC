@@ -610,7 +610,7 @@
 
             <button class="menu_estilo_usuario">
                 <img src="../PrincipalUsuario/usuario.png" alt="Usuario"> 
-                <div class="texto"> <?php echo $nombreUsuario; ?></div>
+                <div class="texto"> <?php echo $nombre; ?></div>
             </button>
 
             
@@ -1768,7 +1768,8 @@
                     <li>Un sistema de evaluación previa, formativa y final acorde a los objetivos, contenidos y competencias</li>
                     <li>Referencias bibliográficas</li>
                 </ul>
-                
+
+                <textarea id="R6-5-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>

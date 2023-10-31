@@ -28,17 +28,93 @@ body{
   z-index: -1;
 }
 
-.barra-superior {
-  z-index: 100000000000;
-  background-color: #145070; /* Color de fondo azul */
-  height: 10%;
-  border-radius: 30px; /* Bordes redondeados */
-  padding: 40px; /* Espacio interno para el contenido */
-  color: white; /* Color del texto en la barra */
-  position: fixed; /* Fija la barra en la parte superior de la ventana */
-  top: -10%; /* Coloca la barra a la mitad de la pantalla verticalmente */
-  left: 0; /* Ajusta el inicio de la barra en la parte izquierda */
-  right: 0; /* Ajusta el final de la barra en la parte derecha */
+.barra-superior{
+  z-index: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #145070; 
+  height: 1%;
+  padding: 40px; 
+  color: white; 
+  position: fixed; 
+  top: 0%;
+  border-radius:0px 0px 30px 30px;
+  left: 0; 
+  right:0;
+
+}
+.barra-superior .menu_estilo_usuario{
+border: none;
+background-color: transparent;
+cursor: pointer;
+padding: 10px;
+transition: transform 0.2s;
+position: fixed;
+top: 1%;
+right: 10%;
+
+}
+.barra-superior .menu_estilo_usuario img{
+width: 120px;
+height: auto;
+display: block;
+}
+
+.barra-superior .menu_estilo_usuario:hover{
+transform: scale(0.90);
+}
+
+.barra-superior .menu_estilo_usuario img{
+width: 120px;
+height: auto;
+display: block;
+}
+
+.barra-superior .menu_usuario:hover .contenido_del_menu_usuarios {
+display: block;
+}
+
+.barra-superior .contenido_del_menu_usuarios a:hover {
+background-color: lightblue;
+}
+
+.L1 {
+font-size: 1.5vw;
+position: absolute;
+background-color: white;
+color: black;
+left: 50%; /* Establece la posición horizontal al centro */
+transform: translateX(-50%); /* Ajusta la posición para que el centro esté alineado */
+top: 18%;
+padding: 10px;
+border-radius: 80px;
+font-family: Arial, sans-serif;
+}
+
+.texto{
+font-size: 14px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+text-align: center;
+width: 90%;
+position: absolute;
+top: 47%;
+left: 55%;
+transform: translate(-50%, -50%);
+color: black;
+
+}
+
+.enlace-inicio { 
+text-decoration: none; color: white;
+}
+
+.fa-home {
+font-size: 200%; /* Cambia el valor según el tamaño deseado */
+position: relative;
+top: -220%;
+}
+
+.fa-home:hover {
+transform: scale(0.90); 
 }
 
 .tituloPag{

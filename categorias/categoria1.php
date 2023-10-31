@@ -552,7 +552,7 @@
 
             <button class="menu_estilo_usuario">
                 <img src="../PrincipalUsuario/usuario.png" alt="Usuario"> 
-                <div class="texto"> <?php echo $nombreUsuario; ?></div>
+                <div class="texto"> <?php echo $nombre; ?></div>
             </button>
 
             
@@ -1101,7 +1101,6 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta8">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.5.3">
@@ -1142,7 +1141,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta9">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta8">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.5.4">
@@ -1185,7 +1184,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta10">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta9">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.5.5">
@@ -1224,7 +1223,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta11">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta10">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.5.6">
@@ -1264,7 +1263,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta12">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta11">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.5.7">
@@ -1296,7 +1295,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta13">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta12">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.5.8">
@@ -1330,7 +1329,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta14">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta13">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.5.9">
@@ -1381,7 +1380,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta15">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta14">Guardar</button></div>
             </div>
 
             <div>
@@ -1432,7 +1431,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta16">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta15">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.6.2">
@@ -1475,7 +1474,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta17">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta16">Guardar</button></div>
             </div>
 
             <div>
@@ -1530,7 +1529,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta18">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta17">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.7.2">
@@ -1592,7 +1591,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta19">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta18">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.7.3">
@@ -1608,9 +1607,8 @@
                 <div class="opcMult" °>
                     <select name="select" id="RS1-7-3A1">
                         <option disabled selected>Selecciona una opción</option>
-                        <option value="gruposcolegiados">Grupos Colegiados</option>
-                        <option value="estudiantes">Estudiantes</option>
-                        <option value="otrasinstancias">Otras instancias</option>
+                        <option value="si">Grupos Colegiados</option>
+                        <option value="no">Estudiantes</option>
                     </select>
                 </div>
                 <br>
@@ -1631,8 +1629,33 @@
                     documentos (puedes subir mas de un archivo).
                 </p>
 
-                    <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
-                    <br><br>
+                    
+
+
+
+                <p>¿Se lleva a cabo difusión de los resultados del proceso?</p>
+                <div class="opcMult" °>
+                    <select name="select" id="RS1-7-3A2">
+                        <option disabled selected>Selecciona una opción</option>
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <br>
+
+                <p>En caso afirmativo describa el tipo de difusión que se le da 
+                    y proporcione los resultados de los últimos
+                    períodos escolares (de preferencia los tres últimos años).
+                    </p>
+                <textarea id="R1-7-3A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+
+                <p>Indique para qué se utiliza la información de la evaluación, 
+                    si se entregan resultados a los profesores, y qué acciones 
+                    se toman como consecuencia de los resultados de las evaluaciones.</p>
+                <textarea id="R1-7-3A3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>   
+                
+                <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                <br><br>
                     <div class="pdfs-options">
                         <div class="imgpdfs">
                             <label >
@@ -1653,32 +1676,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta20">Guardar</button></div>
-
-
-
-                <p>¿Se lleva a cabo difusión de los resultados del proceso?</p>
-                <div class="opcMult" °>
-                    <select name="select" id="RS1-7-3A2">
-                        <option disabled selected>Selecciona una opción</option>
-                        <option value="si">Sí</option>
-                        <option value="no">No</option>
-                    </select>
-                </div>
-                <br>
-
-                <p>En caso afirmativo describa el tipo de difusión que se le da 
-                    y proporcione los resultados de los últimos
-                    períodos escolares (de preferencia los tres últimos años).
-                    </p>
-                <textarea id="R1-7-3A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
-
-
-
-                <p>Indique para qué se utiliza la información de la evaluación, 
-                    si se entregan resultados a los profesores, y qué acciones 
-                    se toman como consecuencia de los resultados de las evaluaciones.</p>
-                <textarea id="R1-7-3A3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                <div class="btnListo"><button id="guardarRespuesta19">Guardar</button></div>
 
                 <!-- <img src="" alt=""><button>Guardar</button> -->
                 
@@ -1741,7 +1739,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta21">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta20">Guardar</button></div>
             </div>
 
             <div>
@@ -1820,7 +1818,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta22">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta21">Guardar</button></div>
             </div>
 
             <div>
@@ -1883,7 +1881,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta23">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta22">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.9.1">
@@ -1914,7 +1912,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta24">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta23">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.9.2">
@@ -1950,7 +1948,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta25">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta24">Guardar</button></div>
             </div>
 
             <div>
@@ -2004,7 +2002,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta26">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta25">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.10.2">
@@ -2069,7 +2067,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta27">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta26">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.10.3">
@@ -2106,7 +2104,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta28">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta27">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.10.4">
@@ -2160,7 +2158,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta29">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta28">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_1.10.5">
@@ -2209,7 +2207,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta30">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta29">Guardar</button></div>
             </div>
 
 
