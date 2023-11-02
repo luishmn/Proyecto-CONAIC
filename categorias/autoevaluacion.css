@@ -1065,3 +1065,17 @@ body{
 .fa-eye{
     margin-right: 1vw;
 }
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.loading-gif {
+    width: 3vw;
+    height: 3vw;
+}
+
+

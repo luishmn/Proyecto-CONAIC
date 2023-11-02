@@ -1693,6 +1693,11 @@
                     <i class="fas fa-upload"></i> Subir PDF
                 </button>
 
+                <!-- Esta es la imagen de carga -->
+                <img id="imgcarga" class="oculto" src="../imagenes/cargando.webp" alt="Cargando..." />
+                <!-- ----------->
+                
+
                 <br><br>
             </form>
     </div>
@@ -1785,6 +1790,7 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
+        var imagenCargando = document.getElementById("imgcarga");
         var button = document.querySelector(".cargar-pdf");
         var form = document.getElementById("uploadForm");
 
@@ -1814,6 +1820,16 @@
             formData.append("id", id);
 
             var xhr = new XMLHttpRequest();
+            
+
+            
+            //ESTO ES PARA LA ANIMACION DE CARGA DE SUBIR ARCHIVOS
+            button.className = "oculto";
+            imagenCargando.classList.remove("oculto");
+            imagenCargando.classList.add("loading-gif");
+            //HASTA AQUÍ
+            
+
             xhr.open("POST", "../funcion_guardarpdf/upload.php", true);
 
             xhr.onreadystatechange = function () {
@@ -1827,13 +1843,29 @@
                             selectedFiles.appendChild(fileItem);           
                             
                         };
+                        
                         limpiarSeleccion();
+
+                        //ESTO ES PARA LA ANIMACION DE CARGA DE SUBIR ARCHIVOS
+                        button.className = "cargar-pdf";
+                        imagenCargando.classList.remove("loading-gif");
+                        imagenCargando.classList.add("oculto");
+                        //HASTA AQUÍ
+
                         Swal.fire({
                             title: 'Archivos subidos correctamente.',
                             icon: 'success',
                             confirmButtonColor: '#145070'
                         });
                     } else {
+                        
+                        //ESTO ES PARA LA ANIMACION DE CARGA DE SUBIR ARCHIVOS
+                        button.className = "cargar-pdf";
+                        imagenCargando.classList.remove("loading-gif");
+                        imagenCargando.classList.add("oculto");
+                        //HASTA AQUÍ
+
+
                         Swal.fire({
                             title: 'Error de carga.',
                             icon: 'error',

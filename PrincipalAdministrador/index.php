@@ -57,7 +57,7 @@
 
     <div class="contenedor-botones">
         <button class="btn1">
-            <a href="pagina_emergente.html">
+            <a href="../categorias/categoria1.php">
                 <img src="imagenes/autoevaluacion.png" alt="Autoevaluación">
             </a>
         </button>
