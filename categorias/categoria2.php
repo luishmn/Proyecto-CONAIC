@@ -89,9 +89,6 @@
     
             $(document).ready(function() {
                 $("#guardarRespuesta1").click(function() {
-                    var id1 = "R2-1-1";
-                    var respuesta1 = $("#R2-1-1").val();
-
                     var id2 ="RS2-1-1A1";
                     var respuesta2 = $("#RS2-1-1A1").val();
                     var id3 ="R2-1-1A1";
@@ -104,28 +101,19 @@
 
                     var id6 ="RS2-1-1A3";
                     var respuesta6 = $("#RS2-1-1A3").val();
-                    var id7 ="R2-1-1A3";
-                    var respuesta7 = $("#R2-1-1A3").val();
 
                     var id8 ="R2-1-1A4";
                     var respuesta8 = $("#R2-1-1A4").val();
 
                     var id9 ="RS2-1-1A5";
                     var respuesta9 = $("#RS2-1-1A5").val();
-                    var id10 ="R2-1-1A5";
-                    var respuesta10 = $("#R2-1-1A5").val();
 
                     var id11 ="RS2-1-1A6";
                     var respuesta11 = $("#RS2-1-1A6").val();
-                    var id12 ="R2-1-1A6";
-                    var respuesta12 = $("#R2-1-1A6").val();
-
-                    var id13 ="R2-1-1A7";
-                    var respuesta13 = $("#R2-1-1A7").val();
 
 
 
-                    var arreglo = [id1,respuesta1,id2,respuesta2,id3,respuesta3,id4,respuesta4,id5,respuesta5,id6,respuesta6,id7,respuesta7,id8,respuesta8,id9,respuesta9,id10,respuesta10,id11,respuesta11,id12,respuesta12,id13,respuesta13];
+                    var arreglo = [id2,respuesta2,id3,respuesta3,id4,respuesta4,id5,respuesta5,id6,respuesta6,id8,respuesta8,id9,respuesta9,id11,respuesta11];
                     
                     BDatos(arreglo)
                     
@@ -557,7 +545,6 @@
                         Estar establecido que los aspirantes presenten un examen de admisión institucional, que permita que sólo sean aceptados quienes cumplan con el mínimo de conocimientos y habilidades requeridas.
                         De los puntos anteriores debe existir información escrita en forma de guía o manual para los aspirantes."
                         </p>
-                    <input type="text" id="R2-1-1" placeholder="Escribe tu respuesta aquí...">
 
                     <p>Existe publicado un perfil del aspirante a ingresar al programa?
 
@@ -570,7 +557,9 @@
                         </select>
                     </div>
                     <br>
-                    <input type="text" id="R2-1-1A1" placeholder="Escribe tu respuesta aquí...">
+                    </p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo).
+
+                    <p>
 
                     <p>Se ha fijado un promedio mínimo para ser admitido al programa?
                     </p>
@@ -582,8 +571,8 @@
                         </select>
                     </div>
                     <br>
-
-                    <input type="text" id="R2-1-1A2" placeholder="Escribe tu respuesta aquí...">
+                    <p>En caso afirmativo, es de</p>
+                    <textarea id="R2-1-1A2" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>El aspirante al programa debe presentar examen de admisión?
 
@@ -596,13 +585,12 @@
                         </select>
                     </div>
                     <br>
-                    <input type="text" id="R2-1-1A3" placeholder="Escribe tu respuesta aquí...">
 
                     <p>Explique brevemente en qué consisten:
 
 
                     </p>
-                    <input type="text" id="R2-1-1A4" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-1-1A4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>¿Se proporciona información por escrito al aspirante a ingresar de las calificaciones obtenidas en su examen de admisión?
 
@@ -615,7 +603,6 @@
                         </select>
                     </div>
                     <br>
-                    <input type="text" id="R2-1-1A5" placeholder="Escribe tu respuesta aquí...">
 
                     <p>¿El programa cuenta con datos estadísticos de los aspirantes a ingresar así como de los admitidos?
 
@@ -628,12 +615,16 @@
                         </select>
                     </div>
                     <br>
-                    <input type="text" id="R2-1-1A6" placeholder="Escribe tu respuesta aquí...">
-
-                    <p>En caso afirmativo proporcione la siguiente información:
+                    <p>
+                    En caso afirmativo proporcione la siguiente información:
+                        <p>
+                    <p>En caso de que los espacios no sean suficientes, anexar la tabla según sea el caso y subirlo en un
+                        archivo pdf con la información completa; y subirlo en cualquier parte de este apartado donde se
+                        puedan subir archivos, al final verificarlo en su menú de autoevaluación en historial de archivos
+                        de autoevaluacion, para su conocimiento los evaluadores verán todos sus archivos subidos por
+                        apartado nombrándolos adecuadamente.
 
                     </p>
-                    <input type="text" id="R2-1-1A7" placeholder="Escribe tu respuesta aquí...">
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
 
@@ -689,8 +680,10 @@
                             <option value="no">No</option>
                         </select>
                     </div>
+                    <p>
+                    En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo). 
+                    </p>
                     <br>
-                    <input type="text" id="R2-2-1" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     
 
@@ -745,8 +738,10 @@
                             <option value="no">No</option>
                         </select>
                     </div>
+                    <p>
+                    En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo). 
+                    </p>
                     <br>
-                    <input type="text" id="R2-2-2" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     
                     
@@ -790,8 +785,10 @@
                             <option value="no">No</option>
                         </select>
                     </div>
+                    <p>
+                    En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo). 
+                    </p>
                     <br>
-                    <input type="text" id="R2-2-3" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                         <br><br>
@@ -830,8 +827,10 @@
                             <option value="no">No</option>
                         </select>
                     </div>
+                    <p>
+                    En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo). 
+                    </p>
                     <br>
-                    <input type="text" id="R2-2-4" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                         <br><br>
@@ -869,8 +868,10 @@
                             <option value="no">No</option>
                         </select>
                     </div>
+                    <p>
+                    En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo). 
+                    </p>
                     <br>
-                    <input type="text" id="R2-2-5" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                         <br><br>
@@ -908,8 +909,11 @@
                             <option value="no">No</option>
                         </select>
                     </div>
+                    
+                    <p>
+                    En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo). 
+                    </p>
                     <br>
-                    <input type="text" id="R2-2-6" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                         <br><br>
@@ -947,8 +951,10 @@
                             <option value="no">No</option>
                         </select>
                     </div>
+                    </p>En cualquier caso, explique brevemente.
+                    <p>
                     <br>
-                    <input type="text" id="R2-2-7" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-2-7" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                         <br><br>
@@ -986,8 +992,14 @@
                             <option value="no">No</option>
                         </select>
                     </div>
+                    </p>En cualquier caso, explique brevemente.
+                    <p>
                     <br>
-                    <input type="text" id="R2-2-8" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-2-8" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+
+                    <p>
+                    En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo). 
+                    </p>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                         <br><br>
@@ -1039,9 +1051,24 @@
                         </select>
                     </div>
                     <br>
-
                     <p>En caso afirmativo proporcione una copia o copias 
                         de los documentos (puedes subir mas de un archivo).
+                    </p>
+
+                    <p>¿El estudiante recibe retroalimentación para 
+                        mejorar su estancia en el programa de estudios?
+                    </p>
+                    <div class="opcMult" °>
+                        <select name="select" id="RS2-3-2">
+                            <option disabled selected>Selecciona una opción</option>
+                            <option value="si">Sí</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <br>
+                    
+                    <p>En caso afirmativo, describa cómo recibe el 
+                        estudiante la retroalimentación sobre su desempeño:
                     </p>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -1071,8 +1098,7 @@
 
                 <div class="preguntasCategoria" id="SC_2.3.2">
 
-                    <p>2.3.2 ¿El estudiante recibe retroalimentación para 
-                        mejorar su estancia en el programa de estudios?
+                    <p>2.3.2 ¿Existe una tendencia clara de disminución de los índices de reprobación?
                     </p>
                     <div class="opcMult" °>
                         <select name="select" id="RS2-3-2">
@@ -1081,12 +1107,9 @@
                             <option value="no">No</option>
                         </select>
                     </div>
-                    <br>
-                    
-                    <p>En caso afirmativo, describa cómo recibe el 
-                        estudiante la retroalimentación sobre su desempeño:
+                    <p>En caso afirmativo proporcione y justifique los indicadores correspondientes.
                     </p>
-                    <input type="text" id="R2-3-2A1" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-3-2A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                         <br><br>
@@ -1115,8 +1138,7 @@
 
                 
                 <div class="preguntasCategoria" id="SC_2.3.3">
-                    <p>2.3.3 ¿Existe una tendencia clara de disminución de los índices de reprobación?
-
+                    <p>2.3.3 ¿Existe una tendencia clara de disminución de los índices de deserción?
                     </p>
                     <div class="opcMult" °>
                         <select name="select" id="RS2-3-3">
@@ -1125,8 +1147,11 @@
                             <option value="no">No</option>
                         </select>
                     </div>
+                    <p>En caso afirmativo proporcione y justifique los indicadores correspondientes.</p>
                     <br>
-                    <input type="text" id="R2-3-3" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-3-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo).</p>
+
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                         <br><br>
@@ -1152,49 +1177,6 @@
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                     <div class="btnListo"><button id="guardarRespuesta12">Guardar</button></div>
                 </div>
-
-                <div class="preguntasCategoria" id="SC_2.3.4">
-                    <p>2.3.4 ¿Existe una tendencia clara de disminución de los índices de deserción?
-
-                    </p>
-                    <div class="opcMult" °>
-                        <select name="select" id="RS2-3-4">
-                            <option disabled selected>Selecciona una opción</option>
-                            <option value="si">Sí</option>
-                            <option value="no">No</option>
-                        </select>
-                    </div>
-                    <br>
-                    
-                    <p>En caso afirmativo proporcione una copia o copias 
-                        de los documentos (puedes subir mas de un archivo).
-                    </p>
-
-                    <!-- <img src="" alt=""><button>Guardar</button> -->
-                        <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
-                        <br><br>
-                    <div class="pdfs-options">
-                        <div class="imgpdfs">
-                            <label >
-                                <i class="fas fa-file-pdf"></i> 
-                            </label>
-                        </div>
-                    
-                    <div class="Listo">
-                        <!--Boton-->
-                    <div class="botonesPDFSgroup">
-                
-                    <div class="boton-modal1">
-                        <button class="botonSubirPDF" id="botonSubir-2.3.4"><i class="fas fa-upload"></i> Subir PDF</button>
-                        <br><br>
-                        <button class ="botonesMostrarPDF" id="subcriterio-2.3.4"><i class="fas fa-eye"></i>Mostrar PDF</button>
-                    </div>
-                    </div>   
-                    </div>
-                    </div>
-                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                    <div class="btnListo"><button id="guardarRespuesta13">Guardar</button></div>
-                </div>
             </div>
 
             <div>
@@ -1207,18 +1189,18 @@
                 <div class="preguntasCategoria" id="SC_2.4.1">
                     <p>2.4.1 Proporcionar el tamaño promedio de los grupos de los últimos dos años:
                     </p>
-                    <input type="text" id="R2-4-1" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-4-1" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <p>¿Cuántos grupos en los últimos dos años tuvieron más de 60 estudiantes? 
                     </p>
-                    <input type="text" id="R2-4-1A1" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-4-1A1" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <p>¿Cuántos grupos en los últimos dos años tuvieron más de 45 estudiantes?
 
                     </p>
-                    <input type="text"  id="R2-4-1A2"placeholder="Escribe tu respuesta aquí...">
+                    <textarea  id="R2-4-1A2" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <p>Describir cómo se garantiza la atención a los estudiantes en grupos con más de 45 estudiantes
 
                     </p>
-                    <input type="text" id="R2-4-1A3" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-4-1A3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                         <br><br>
@@ -1263,7 +1245,6 @@
                         Derechos y obligaciones del estudiante
                         Mecanismos de Titulación.
                     </p>
-                    <input type="text" id="R2-5-1"  placeholder="Escribe tu respuesta aquí...">
                     <p>¿Se cuenta con un reglamento de estudiantes?
                     </p>
                     <div class="opcMult" °>
@@ -1273,39 +1254,40 @@
                             <option value="no">No</option>
                         </select>
                     </div>
+                    <p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo).</p>
                     <br>
-                    <input type="text" id="R2-5-1A1" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-5-1A1" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <p>Número límite de oportunidades para acreditar una materia ya sea por haberla cursado, por haber presentado exámenes a título de suficiencia, o por algún otro mecanismo:
                     </p>
-                    <input type="text" id="R2-5-1A2" placeholder="Escribe tu respuesta aquí...">
+                    <textareaid="R2-5-1A2" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>Número máximo de exámenes extraordinarios, a título o similares a lo largo de la carrera, de una misma asignatura: 
                     </p>
-                    <input type="text" id="R2-5-1A3" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-5-1A3" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>Número máximo de exámenes extraordinarios, a título o similares a lo largo de la carrera, de todas las asignaturas cursadas : 
                     </p>
-                    <input type="text" id="R2-5-1A4" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-5-1A4" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>Número máximo de años, semestre o períodos escolares en que el estudiante pueda terminar de cubrir los créditos del Programa diferenciando si es estudiante de tiempo completo (TC) o de tiempo parcial (TP).
                     </p>
-                    <input type="text" id="R2-5-1A5" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-5-1A5" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>TC:
                     </p>
-                    <input type="text" id="R2-5-1A6" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-5-1A6" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>TP:  
                     </p>
-                    <input type="text"  id="R2-5-1A7" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-5-1A7" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>Principales motivos para dar de baja automática a un estudiante:
                     </p>
-                    <input type="text"id="R2-5-1A8" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-5-1A8" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>¿Cómo y cuándo se entera el estudiante del contenido del reglamento de estudiantes (en caso de que exista)?
                     </p>
-                    <input type="text" id="R2-5-1A9" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-5-1A9"  rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>¿El estudiante puede participar en los cuerpos colegiados de la institución?
                     </p>
@@ -1317,7 +1299,6 @@
                         </select>
                     </div>
                     <br>
-                    <input type="text" id="R2-5-1A10" placeholder="Escribe tu respuesta aquí...">
 
                     <p>con voz
                     </p>
@@ -1329,7 +1310,6 @@
                         </select>
                     </div>
                     <br>
-                    <input type="text" id="R2-5-1A11" placeholder="Escribe tu respuesta aquí...">
 
                     <p>con voto
                     </p>
@@ -1341,11 +1321,10 @@
                         </select>
                     </div>
                     <br>
-                    <input type="text" id="R2-5-1A12" placeholder="Escribe uuuuuuuuuuuutu respuesta aquí...">
 
                     <p>indique brevemente los requisitos para ello:
                     </p>
-                    <input type="text" id="R2-5-1A13" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-5-1A13" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                         <br><br>
@@ -1375,7 +1354,6 @@
                 <div class="preguntasCategoria" id="SC_2.5.2">
                     <p>2.5.2 La institución debe tener reglamentadas las opciones de titulación, tanto en requisitos como en procedimiento.
                     </p>
-                    <input type="text" id="R2-5-2" placeholder="Escribe tu respuesta aquí...">
                     <p>¿Existe un reglamento que indique las opciones de titulación, tanto en requisitos como en procedimiento?
                     </p>
                     <div class="opcMult" °>
@@ -1385,8 +1363,8 @@
                             <option value="no">No</option>
                         </select>
                     </div>
+                    <p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo).</p>
                     <br>
-                    <input type="text" id="R2-5-2A1" placeholder="Escribe tu respuesta aquí...">
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -1418,7 +1396,6 @@
                 <div class="preguntasCategoria" id="SC_2.5.3">
                     <p>2.5.3 Deben existir procedimientos que garanticen la calidad de los trabajos de titulación en el que participen las academias o algún grupo colegiado designado para tal fin y con participación externa.
                     </p>
-                    <input type="text" id="R2-5-3" placeholder="Escribe tu respuesta aquí...">
                     <p>¿Existe un procedimiento para garantizar la calidad de los trabajos de titulación?
                     </p>
                     <div class="opcMult" °>
@@ -1429,7 +1406,8 @@
                         </select>
                     </div>
                     <br>
-                    <input type="text" id="R2-5-3A1" placeholder="Escribe tu respuesta aquí...">
+                    <p>En caso afirmativo indique en qué consiste y quiénes participan en el mismo:</p>
+                    <textarea id="R2-5-3A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -1468,7 +1446,6 @@
                         </select>
                     </div>
                     <br>
-                    <input type="text" id="R2-5-4" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                         <br><br>
@@ -1514,7 +1491,6 @@
                         </select>
                     </div>
                     <br>
-                    <input type="text" id="R2-6-1" placeholder="Escribe tu respuesta aquí...">
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -1550,7 +1526,7 @@
                     </p>
                 </div>
                 <div class="preguntasCategoria" id="SC_2.7.1">
-                    <p>2.7.1 ¿Existe un proceso formal para la movilidad internacional de estudiantes (tanto de envío como de recepción)?
+                    <p>¿Existe un proceso formal para la movilidad internacional de estudiantes (tanto de envío como de recepción)?
                     </p>
                     <div class="opcMult" °>
                         <select name="select" id="RS2-7A1">
@@ -1560,7 +1536,6 @@
                         </select>
                     </div>
                     <br>
-                    <input type="text" id="R2-7A1" placeholder="Escribe tu respuesta aquí...">
                     <p>¿Hay un reglamento para dicho proceso?<p>
                     <div class="opcMult" °>
                         <select name="select" id="RS2-7A2">
@@ -1569,8 +1544,11 @@
                             <option value="no">No</option>
                         </select>
                     </div>
+                    <p>Haga un breve resumen del proceso indicando quienes participan en él, así como las responsabilidades
+que tienen.</p>
+
                     <br>
-                    <input type="text" id="R2-7A2" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-7A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -1601,7 +1579,6 @@
                 <div class="preguntasCategoria" id="SC_2.7.1">
                     <p>2.7.1 Indicar las movilidades en envío y recepción de los estudiantes en los últimos cinco años.
                     </p>
-                    <input type="text" id="R2-7-1" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                         <br><br>
@@ -1616,11 +1593,6 @@
                         <!--Boton-->
                     <div class="botonesPDFSgroup">
                 
-                    <div class="boton-modal1">
-                        <button class="botonSubirPDF" id="botonSubir-2.7.1"><i class="fas fa-upload"></i> Subir PDF</button>
-                        <br><br>
-                        <button class ="botonesMostrarPDF" id="subcriterio-2.7.1"><i class="fas fa-eye"></i>Mostrar PDF</button>
-                    </div>
                     </div>   
                     </div>
                     </div>
@@ -1631,7 +1603,7 @@
                 <div class="preguntasCategoria" id="SC_2.7.2">
                     <p>2.7.2. Indicar los productos y resultados obtenidos de estas movilidades en envío y recepción de los estudiantes en los últimos cinco años.
                     </p>
-                    <input type="text" id="R2-7-2" placeholder="Escribe tu respuesta aquí...">
+                    <textarea id="R2-7-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                         <br><br>
@@ -1684,6 +1656,7 @@
             <h2>Subir PDF</h2>
                 <label class="custom-file-label">
                     <input type="file" name="archivo[]" accept=".pdf" class="custom-file-input" id="file-input1" multiple>
+                    
                     <span class="icon"><i class="fa fa-file-pdf-o"></i></span> Seleccionar PDF
                 </label>
                 <div id="selected-files1" class="titulosArchs">
