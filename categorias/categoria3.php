@@ -29,7 +29,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categoria 3</title>
+    <title>Categoría 3</title>
     <link rel="stylesheet" href="autoevaluacion.css">
     <script src="enviarConsulta.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -517,16 +517,17 @@
             <div>
             <div class="parrafo" id="3.1">
                 <p>
-                    3.1 Fundamentación. Debe existir la documentación oficial que respalde<br>
-                    la creación, permanencia y/o actualización del programa.<br>
-                    Se debe contar con estudios que permitan apreciar la pertinancia del plan<br>
+                    3.1 Fundamentación. Debe existir la documentación oficial que respalde <br>
+                    la creación, permanencia y/o actualización del programa. <br>
+                    Se debe contar con estudios que permitan apreciar la pertinencia del plan<br>
                     de estudios en función de las demandas de la sociedad y del mercado laboral;
-                    así como del avance cientiico-tecnologico(marco de referencia perfiles ANIEI-CONAIC).
+                    así como del avance científico-tecnológico (marco de referencia perfiles ANIEI-CONAIC).
+
                 </p>
             </div>
 
             <div class="preguntasCategoria" id="SC_3.1.1">
-                <p>3.1.1 Justificación del programa</p>
+                <p>3.1.1 Justificación del programa.</p>
                 <textarea id="R3-1-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>¿Existe un documento que justifique la creación?</p>
                 <div class="opcMult"°>
@@ -537,7 +538,7 @@
                     </select>
                 </div>
 
-                <p>Los motivos por los cuales fue establecido el programa (porque y para que)</p>
+                <p>Los motivos por los cuales fue establecido el programa (por qué y para qué)</p>
                 <textarea id="R3-1-1A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>Las razones a las cuales obedece actualmente el programa:</p>
                 <textarea id="R3-1-1A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
@@ -616,7 +617,7 @@
             
             <div>
             <div class="parrafo" id="3.2">
-                <p>3.2 Perfiles de ingreso y egreso. Debe existir una definición y congruencia del<br>
+                <p>3.2 Perfiles de ingreso y egreso. Debe existir una definición y congruencia del<br>
                     objetivo general del programa y perfil del egresado; así como congruencia con <br>
                     los desarrollos del área de conocimiento.
                 </p>
@@ -734,7 +735,7 @@
 
             <div>
             <div class="parrafo" id="3.3">
-                <p>3.3 Normativa para la permanencia, egreso y revalidación. Debe existir la <br>
+                <p>3.3 Normativa para la permanencia, egreso y revalidación. Debe existir la <br>
                     normativa que señale claramente los requisitos de permanencia, egreso,<br>
                     equivalencia y revalidación del programa académico y si se difunde entre la comunidad estudiantil.
                 </p>
@@ -777,11 +778,10 @@
             
             <div>
             <div class="parrafo" id="3.4">
-                <p>3.4 Programas de asignaturas. Se deben calcular unidades de tiempo dedicadas a cada área del conocimiento del programa, atendiendo a dos clasificaciones: Una que es genérica y contempla 4 áreas: 1) Informática y Computación, 2) Matemáticas y Ciencias Básicas, 3) Ciencias Sociales, Humanidades y 4) Otras; y la otra que es específica del área de conocimiento de Informática y Computación y que contempla 8 áreas: 1) Interacción-Hombre-Máquina, 2) Tratamiento de Información, 3) Programación e Ingeniería de Software, 4) Software de Base, 5) Redes, 6) Arquitectura de Computadoras y 7) Entorno Social 8) Matemáticas.</p>
+                <p>3.4 Programas de asignaturas. Se deben calcular unidades de tiempo dedicadas a cada área del conocimiento del programa, atendiendo a dos clasificaciones: Una que es genérica y contempla 4 áreas: 1) Informática y Computación, 2) Matemáticas y Ciencias Básicas, 3) Ciencias Sociales, Humanidades y 4) Otras; y la otra que es específica del área de conocimiento de Informática y Computación y que contempla 8 áreas: 1) Interacción-Hombre-Máquina, 2) Tratamiento de Información, 3) Programación e Ingeniería de Software, 4) Software de Base, 5) Redes, 6) Arquitectura de Computadoras y 7) Entorno Social 8) Matemáticas.</p>
             </div>
             <div class="preguntasCategoria" id="SC_3.4.1">
-                <p>3.4.1 Para poder comparar el contenido curricular de distintos programas, se hace referencia a Unidades de cada curso. Para efectos de equivalencia, una Unidad  equivale a 1 hora de Teoría frente a grupo, o bien a 3 horas de Práctica frente a grupo para Licenciatura y para el caso de Técnico Superior Universitario, la equivalencia es 2 horas de práctica frente a grupo.  El Comité reconoce que existen nuevos modelos pedagógicos donde los estudiantes realizan actividades de auto-estudio; en estos casos, la institución que busca la acreditación deberá de justificar la equivalencia utilizada para el número de Unidades.</p>
-                <textarea id="R3-4-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+            <p>3.4.1 Para poder comparar el contenido curricular de distintos programas, se hace referencia a Unidades de cada curso. Para efectos de equivalencia, una Unidad equivale a 1 hora de Teoría frente a grupo, o bien a 3 horas de Práctica frente a grupo para Licenciatura y para el caso de Técnico Superior Universitario, la equivalencia es 2 horas de práctica frente a grupo. El Comité reconoce que existen nuevos modelos pedagógicos donde los estudiantes realizan actividades de autoestudio; en estos casos, la institución que busca la acreditación deberá de justificar la equivalencia utilizada para el número de Unidades. </p>                <textarea id="R3-4-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
                     <div class="pdfs-options">
@@ -811,7 +811,7 @@
 
             <div>
             <div class="parrafo" id="3.5">
-                <p>3.5 Contenidos. Cada programa de asignatura debe contener la ubicación dentro del plan de estudios, el objetivo general, los objetivos de cada sección del curso, los temas por sección, las prácticas (en su caso), la bibliografía básica, los recursos necesarios, las horas de utilización de infraestructura de cómputo, la forma de evaluación, las horas de teoría y/o práctica y el equivalente en unidades, así como el perfil deseable del profesor (Posgrado y experiencia en la materia) para efecto de validar las respuestas 3.1 y 3.2.</p>
+                <p>3.5 Contenidos. Cada programa de asignatura debe contener la ubicación dentro del plan de estudios, el objetivo general, los objetivos de cada sección del curso, los temas por sección, las prácticas (en su caso), la bibliografía básica, los recursos necesarios, las horas de utilización de infraestructura de cómputo, la forma de evaluación, las horas de teoría y/o práctica y el equivalente en unidades, así como el perfil deseable del profesor (Posgrado y experiencia en la materia) para efecto de validar las respuestas 3.1 y 3.2.</p>
             </div>
             <div class="preguntasCategoria" id="SC_3.5.1">
                 <p>3.5.1 Asignaturas del programa</p>
@@ -838,7 +838,7 @@
                         <option value="no">No</option>
                     </select>
                 </div> 
-                <p>En que porcentaje</p>
+                <p>En qué porcentaje</p>
                 <textarea id="R3-5-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
                 <p>¿Se cuenta con los programas analíticos (detallados) de todas las asignaturas?</p>
@@ -850,7 +850,7 @@
                     </select>
                 </div> 
 
-                <p>En que porcentaje</p>
+                <p>En qué porcentaje</p>
                 <textarea id="R3-5-1A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
                 <p>Con base en el total de los programas analíticos de las asignaturas del programa, indicar qué porcentaje de ellos mencionan expresamente:</p>
@@ -884,9 +884,9 @@
             <div class="preguntasCategoria" id="SC_3.5.2">
                 <p>3.5.2 En las asignaturas correspondientes a la especialidad están incluidos proyectos dirigidos a desarrollar la habilidad del estudiante para resolver problemas reales acordes a las necesidades tecnológicas del propio programa.</p>
                 <textarea id="R3-5-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
-                <p>Indique en qué asignaturas del programa se elaboran proyectos dirigidos a desarrollar la habilidad del estudiante para resolver problemas reales acordes a las necesidades tecnológicas  del propio programa.</p>
+                <p>Indique en qué asignaturas del programa se elaboran proyectos dirigidos a desarrollar la habilidad del estudiante para resolver problemas reales acordes a las necesidades tecnológicas del propio programa.</p>
                 <textarea id="R3-5-2A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
-                <p>Indique las materias optativas ofrecidas en los últimos tres años. Las unidades de la asignatura y las áreas debe considerarse en términos de la clasificación indicada en las respuestas 3.1 y 3.2.</p>
+                <p>Indique las materias optativas ofrecidas en los últimos tres años. Las unidades de la asignatura y las áreas deben considerarse en términos de la clasificación indicada en las respuestas 3.1 y 3.2.</p>
                 <textarea id="R3-5-2A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
@@ -954,12 +954,13 @@
                     cinco años y debe existir un procedimiento oficial para su revisión y actualización, en los que deben
                     participar cuerpos colegiados, asesores externos representantes del sector productivo, egresados en
                     activo e investigadores reconocidos. También debe existir un proceso permanente de evaluación
-                    curricular</p>
+                    curricular.</p>
             </div>
             <div class="preguntasCategoria" id="SC_3.6.1">
                 <p>Indique las materias optativas ofrecidas en los últimos tres años.
-                    Las unidades de la asignatura y las áreas debe considerarse en términos de la clasificación indicada en las
-                    respuestas 3.1 y 3.2.</p>
+                    Las unidades de la asignatura y las áreas deben considerarse en términos de la clasificación indicada en las
+                    respuestas 3.1 y 3.2.
+                </p>
                 <textarea id="R3-6-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -995,7 +996,7 @@
 
             <div>
             <div class="parrafo" id="3.7">
-                <p>3.7 Evaluación y actualización. El plan de estudios debe de ser revisado y actualizado periódicamente y deben existir los procedimientos oficiales permanentes para realizarlos, mismos que deben indicar a cuerpos colegiados, asesores, egresados e investigadores reconocidos.
+                <p>3.7 Evaluación y actualización. El plan de estudios debe de ser revisado y actualizado periódicamente y deben existir los procedimientos oficiales permanentes para realizarlos, mismos que deben indicar a cuerpos colegiados, asesores, egresados e investigadores reconocidos.
                 </p>
             </div>
             <div class="preguntasCategoria" id="SC_3.7.1">
@@ -1028,10 +1029,10 @@
 
 
             <div class="preguntasCategoria" id="SC_3.7.2">
-                <p>3.7.2 Debe existir un procedimiento oficial y funcional,  para la revisión y actualización del plan de estudios. </p>
+                <p>3.7.2 Debe existir un procedimiento oficial y funcional, para la revisión y actualización del plan de estudios.</p>
                 <textarea id="R3-7-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
-                <p>¿Existe un procedimiento oficial  para la revisión del plan de estudios?</p>
+                <p>¿Existe un procedimiento oficial para la revisión del plan de estudios?</p>
                 <textarea id="R3-7-2A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -1060,7 +1061,7 @@
             </div>
 
             <div class="preguntasCategoria" id="SC_3.7.3">
-                <p>3.7.3 En los procesos de revisión y actualización deben participar los cuerpos colegiados, así como un grupo de asesores externos representantes del sector productivo, egresados en activo e  investigadores reconocidos.</p>
+                <p>3.7.3 En los procesos de revisión y actualización deben participar los cuerpos colegiados, así como un grupo de asesores externos representantes del sector productivo, egresados en activo e investigadores reconocidos.</p>
                 <div class="opcMult"°>
                     <select name="select" id="RS3-7-3A1">
                         <option disabled selected>Selecciona una opción</option>
@@ -1156,7 +1157,7 @@
 
             <div>
             <div class="parrafo" id="3.8">
-                <p>3.8 Difusión. Como parte fundamental del proceso enseñanza-aprendizaje, los programas actualizados de todas y cada una de las asignaturas que forman parte del plan de estudios, deben estar a disposición para su consulta por: profesores, estudiantes y el público en general.</p>
+                <p>3.8 Difusión. Como parte fundamental del proceso enseñanza-aprendizaje, los programas actualizados de todas y cada una de las asignaturas que forman parte del plan de estudios, deben estar a disposición para su consulta por: profesores, estudiantes y el público en general.</p>
             </div>
             <div class="preguntasCategoria" id="SC_3.8.1">
                 <p>3.8.1 ¿Los programas actualizados de todas las asignaturas del plan de estudios están a disposición para su consulta por parte de profesores, estudiantes y el público en general?</p>
@@ -1286,7 +1287,8 @@
             <div class="preguntasCategoria" id="SC_3.8.3">
                 <p>3.8.3 Deben existir mecanismos para la promoción externa 
                     (visitas a planteles de nivel medio superior, trípticos, difusión 
-                    en medios masivos de comunicación, etc.) del programa.</p>
+                    en medios de comunicación masiva, etc.) del programa.
+                </p>
 
                 <p>¿Existen mecanismos para la promoción externa del programa?</p>
                 <div class="opcMult"°>
@@ -1334,11 +1336,11 @@
         
             <div>
             <div class="parrafo" id="3.9">
-                <p>3.9 Justificación de las Competencias. Se deben analizar las competencias del programa a evaluar, considerando las competencias definidas por la ANIEI en su versión más actualizada, justificando el perfil A, B, C o D del modelo a través de una matriz.</p>
+                <p>3.9 Justificación de las Competencias. Se deben analizar las competencias del programa a evaluar, considerando las competencias definidas por la ANIEI en su versión más actualizada, justificando el perfil A, B, C o D del modelo a través de una matriz.</p>
             </div>
             
             <div class="preguntasCategoria" id="SC_3.9.1">
-                <p>3.9.1 Tabla de cumplimiento de competencias transversales. Considerar la definición y justificación competencias iniciales, de desarrollo y de evaluación.  Rellenar tabla competencias transversales. Etapa de planificación del modelo de competencias</p>
+                <p>3.9.1 Tabla de cumplimiento de competencias transversales. Considerar la definición y justificación competencias iniciales, de desarrollo y de evaluación. Rellenar tabla competencias transversales. Etapa de planificación del modelo de competencias.</p>
                 <textarea id="R3-9-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
