@@ -30,7 +30,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categoria 1</title>
+    <title>Categoría 1</title>
     <link rel="stylesheet" href="autoevaluacion.css">
     <script src="enviarConsulta.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -680,7 +680,7 @@
                 </div>
                 <br>
 
-                <p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo).</p>
+                <p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir más de un archivo).</p>
                 <!-- <img src="" alt=""><button>Guardar</button> -->
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
@@ -696,7 +696,7 @@
                     <div class="botonesPDFSgroup">
                 
                     <div class="boton-modal1">
-                        <button class="botonSubirPDF" id="botonSubir-1.1.1"><i class="fas fa-upload"></i> Subir PDF</button>
+                        <button class="botonSubirPDF" id="botonSubir-1.1.1"><i class="fas fa-upload"></i>Subir PDF</button>
                         <br><br>
                         <button class ="botonesMostrarPDF" id="subcriterio-1.1.1"><i class="fas fa-eye"></i>Mostrar PDF</button>
                     </div>
@@ -741,7 +741,7 @@
                 </div>
                 <br>
 
-                <p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo).</p>
+                <p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir más de un archivo).</p>
 
                 <!-- <img src="" alt=""><button>Guardar</button> -->
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -805,7 +805,7 @@
                 </div>
                 <br>
 
-                <p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo).</p>
+                <p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir más de un archivo).</p>
 
                 <!-- <img src="" alt=""><button>Guardar</button> -->
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -892,6 +892,7 @@
                 <p>1.4.2 Contar con un plan de actualización / capacitación que 
                     permita la rápida respuesta a temas emergentes en el área, 
                     así como mantener al personal académico actualizado.</p>
+                
                 <p>¿Hay en la institución, unidad académica o carrera, programas 
                     para la actualización y superación del personal académico?</p>
 
@@ -1076,7 +1077,7 @@
     
 
                 <p>Anexar una muestra representativa de los CV actualizados de 
-                    profesores (en la visita en sitio contar con todos los curriculums 
+                    profesores (en la visita en sitio contar con todos los currículums 
                     de los profesores).</p>
                 <!-- <img src="" alt=""><button>Guardar</button> -->
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -1350,13 +1351,13 @@
                 <p>En cualquier caso, explique brevemente:</p>
                 <textarea id="R1-5-9" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
-                <p>Proporcione los curriculums de los profesores, facilitadores, 
+                <p>Proporcione los currículums de los profesores, facilitadores, 
                     tutores y asesores, que evidencien la experiencia y 
                     conocimiento de lo aquí declarado.</p>
                 
 
                 <p>En caso afirmativo proporcione una copia o copias de 
-                    los documentos (puedes subir mas de un archivo).</p>
+                    los documentos (puedes subir más de un archivo).</p>
                 <!-- <img src="" alt=""><button>Guardar</button> -->
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
@@ -1439,7 +1440,7 @@
                     completo debe estar vinculado a un proyecto de investigación 
                     o desarrollo tecnológico en el área, o con un proyecto del 
                     área del programa educativo para el sector productivo y/ o 
-                    de servicios</p>
+                    de servicios.</p>
 
                 <p>Estimar el porcentaje de la planta docente de tiempo 
                     completo que está vinculado a un proyecto de investigación 
@@ -1607,13 +1608,13 @@
                 <div class="opcMult" °>
                     <select name="select" id="RS1-7-3A1">
                         <option disabled selected>Selecciona una opción</option>
-                        <option value="si">Grupos Colegiados</option>
-                        <option value="no">Estudiantes</option>
+                        <option value="gruposcolegiados">Grupos Colegiados</option>
+                        <option value="estudiantes">Estudiantes</option>
                     </select>
                 </div>
                 <br>
 
-                <p>(indicar cuáles)</p>
+                <p>(Indicar cuáles)</p>
                 <textarea id="R1-7-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
 
@@ -1626,7 +1627,8 @@
                 <textarea id="R1-7-3A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <p>En caso afirmativo proporcione una copia o copias de los 
-                    documentos (puedes subir mas de un archivo).
+                    documentos (puedes subir más de un archivo).
+
                 </p>
 
                     
@@ -1684,7 +1686,7 @@
 
             <div class="preguntasCategoria" id="SC_1.7.4">
                 <p>1.7.4 Debe existir un programa de estímulos o 
-                    incentivos bien definido fundamentado en criterios 
+                    incentivos bien definido, fundamentado en criterios 
                     académicos principalmente y de acuerdo con el 
                     desempeño docente.</p>
 
@@ -1922,7 +1924,8 @@
                 <textarea id="R1-9-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <p>En caso afirmativo proporcione una copia o copias de los 
-                    documentos (puedes subir mas de un archivo).
+                    documentos (puedes subir más de un archivo).
+
                 </p>
 
                 <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -1954,7 +1957,7 @@
             <div>
                 <div class="parrafo" id="1.10">
                     <p>
-                        A Criterios específicos del personal académico de programas en TIC.
+                        A. Criterios específicos del personal académico de programas en TIC.
                     </p>
                 </div>
             </div>
@@ -1967,13 +1970,14 @@
                     académica. Asimismo, los honorarios de los profesores de tiempo 
                     parcial deben ser atractivos para este tipo de actividad.</p>
                 
-                <p>Es necesario que los sueldos sean competitivos en relación a lo 
+                <p>Es necesario que los sueldos sean competitivos en relación con lo 
                     que se ofrece en el mercado laboral para
                     las áreas de TIC. Profesores de tiempo completo:
+
                 </p>
                 <textarea id="RA1-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
-                <p>Profesores de Medio Tiempo.</p>
+                <p>Profesores de medio tiempo.</p>
                 <textarea id="RA1-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                 <p>Profesores por horas (de asignatura) / clase.</p>
