@@ -29,7 +29,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categoria 2</title>
+    <title>Categoría 2</title>
     <link rel="stylesheet" href="autoevaluacion.css">
     <script src="enviarConsulta.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -533,7 +533,7 @@
             <div>
                 <div class="parrafo" id ="2.1">
                     <p>
-                        2.1 Selección. Es necesario que exista claridad en la selección de aspirantes al programa educativo, por lo que debe existir de forma explícita, los criterios de admisión que indique el mínimo de condiciones que los estudiantes de nuevo ingreso deben cumplir para ser admitidos al programa.
+                        2.1 Selección. Es necesario que exista claridad en la selección de aspirantes al programa educativo, por lo que debe existir de forma explícita, los criterios de admisión que indique el mínimo de condiciones que los estudiantes de nuevo ingreso deben cumplir para ser admitidos al programa.
 
                     </p>
                 </div>
@@ -543,10 +543,10 @@
                         Existencia de un perfil del aspirante a ingresar al programa.
                         
                         Estar establecido que los aspirantes presenten un examen de admisión institucional, que permita que sólo sean aceptados quienes cumplan con el mínimo de conocimientos y habilidades requeridas.
-                        De los puntos anteriores debe existir información escrita en forma de guía o manual para los aspirantes."
+                        De los puntos anteriores debe existir información escrita en forma de guía o manual para los aspirantes.
                         </p>
 
-                    <p>Existe publicado un perfil del aspirante a ingresar al programa?
+                    <p>¿Existe publicado un perfil del aspirante a ingresar al programa?
 
                         </p>
                     <div class="opcMult" °>
@@ -557,11 +557,11 @@
                         </select>
                     </div>
                     <br>
-                    </p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo).
+                    </p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir más de un archivo).
 
                     <p>
 
-                    <p>Se ha fijado un promedio mínimo para ser admitido al programa?
+                    <p>¿Se ha fijado un promedio mínimo para ser admitido al programa?
                     </p>
                     <div class="opcMult" °>
                         <select name="select" id="RS2-1-1A2">
@@ -574,7 +574,7 @@
                     <p>En caso afirmativo, es de</p>
                     <textarea id="R2-1-1A2" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
 
-                    <p>El aspirante al programa debe presentar examen de admisión?
+                    <p>¿El aspirante al programa debe presentar examen de admisión?
 
                     </p>
                     <div class="opcMult" °>
@@ -604,7 +604,7 @@
                     </div>
                     <br>
 
-                    <p>¿El programa cuenta con datos estadísticos de los aspirantes a ingresar así como de los admitidos?
+                    <p>¿El programa cuenta con datos estadísticos de los aspirantes a ingresar, así como de los admitidos?
 
                     </p>
                     <div class="opcMult" °>
@@ -619,10 +619,11 @@
                     En caso afirmativo proporcione la siguiente información:
                         <p>
                     <p>En caso de que los espacios no sean suficientes, anexar la tabla según sea el caso y subirlo en un
-                        archivo pdf con la información completa; y subirlo en cualquier parte de este apartado donde se
+                        archivo PDF con la información completa, subirlo en cualquier parte de este apartado donde se
                         puedan subir archivos, al final verificarlo en su menú de autoevaluación en historial de archivos
-                        de autoevaluacion, para su conocimiento los evaluadores verán todos sus archivos subidos por
+                        de autoevaluación, para su conocimiento los evaluadores verán todos sus archivos subidos por
                         apartado nombrándolos adecuadamente.
+
 
                     </p>
 
@@ -666,12 +667,11 @@
             <div>
                 <div class="parrafo" id="2.2">
                     <p>
-                        2.2 Ingreso (estudiantes de nuevo ingreso).  Se requiere conocer las características de  los estudiantes de nuevo ingreso para canalizarlos a programas de apoyo, con el fin de prevenir situaciones de riesgo (reprobación y deserción).
-
+                    2.2 Ingreso (estudiantes de nuevo ingreso).  Se requiere conocer las características de los estudiantes de nuevo ingreso para canalizarlos a programas de apoyo, con el fin de prevenir situaciones de riesgo (reprobación y deserción).
                     </p>
                 </div>
                 <div class="preguntasCategoria" id="SC_2.2.1">
-                    <p>2.2.1  ¿Se toman en cuenta los resultados del examen nacional previo a la licenciatura?
+                    <p>2.2.1 ¿Se toman en cuenta los resultados del examen nacional previo a la licenciatura?
                     </p>
                     <div class="opcMult" °>
                         <select name="select" id="RS2-2-1">
@@ -681,7 +681,7 @@
                         </select>
                     </div>
                     <p>
-                    En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo). 
+                    En caso afirmativo proporcione una copia o copias de los documentos (puedes subir más de un archivo). 
                     </p>
                     <br>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -729,7 +729,7 @@
 
 
                 <div class="preguntasCategoria" id="SC_2.2.2">
-                    <p>2.2.2 ¿Se tiene en cuenta el rendimiento académico en el nivel precedente para canalizar a los estudiantes a programas de apoyo?
+                    <p>2.2.2 ¿Se tiene en cuenta el rendimiento académico en el nivel precedente para canalizar a los estudiantes a programas de apoyo?
                     </p>
                     <div class="opcMult" °>
                         <select name="select" id="RS2-2-2">
@@ -739,7 +739,7 @@
                         </select>
                     </div>
                     <p>
-                    En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo). 
+                    En caso afirmativo proporcione una copia o copias de los documentos (puedes subir más de un archivo).
                     </p>
                     <br>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -776,7 +776,7 @@
                 </div>
 
                 <div class="preguntasCategoria" id="SC_2.2.3">
-                    <p>2.2.3 ¿Se efectúan entrevistas y/ o encuestas a los estudiantes de nuevo ingreso?
+                    <p>2.2.3 ¿Se efectúan entrevistas y/ o encuestas a los estudiantes de nuevo ingreso?
                     </p>
                     <div class="opcMult" °>
                         <select name="select" id="RS2-2-3">
@@ -786,7 +786,7 @@
                         </select>
                     </div>
                     <p>
-                    En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo). 
+                    En caso afirmativo proporcione una copia o copias de los documentos (puedes subir más de un archivo). 
                     </p>
                     <br>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -817,7 +817,7 @@
 
 
                 <div class="preguntasCategoria" id="SC_2.2.4">
-                    <p>2.2.4 ¿Se aplica un instrumento para obtener datos socioeconómicos de los estudiantes de nuevo ingreso?
+                    <p>2.2.4 ¿Se aplica un instrumento para obtener datos socioeconómicos de los estudiantes de nuevo ingreso?
 
                     </p>
                     <div class="opcMult" °>
@@ -828,7 +828,7 @@
                         </select>
                     </div>
                     <p>
-                    En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo). 
+                    En caso afirmativo proporcione una copia o copias de los documentos (puedes subir más de un archivo).
                     </p>
                     <br>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -858,7 +858,7 @@
                 </div>
 
                 <div class="preguntasCategoria" id="SC_2.2.5">
-                    <p>2.2.5 ¿Se efectúan análisis e investigación educativa a partir de los resultados de las características de los estudiantes de nuevo ingreso, para implementar programas de apoyo?
+                    <p>2.2.5 ¿Se efectúan análisis e investigación educativa a partir de los resultados de las características de los estudiantes de nuevo ingreso, para implementar programas de apoyo?
 
                     </p>
                     <div class="opcMult" °>
@@ -869,7 +869,7 @@
                         </select>
                     </div>
                     <p>
-                    En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo). 
+                    En caso afirmativo proporcione una copia o copias de los documentos (puedes subir más de un archivo). 
                     </p>
                     <br>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -899,7 +899,7 @@
                 </div>
 
                 <div class="preguntasCategoria" id="SC_2.2.6">
-                    <p>2.2.6 ¿Existe un programa de inducción para estudiantes de nuevo ingreso?
+                    <p>2.2.6 ¿Existe un programa de inducción para estudiantes de nuevo ingreso?
 
                     </p>
                     <div class="opcMult" °>
@@ -911,7 +911,7 @@
                     </div>
                     
                     <p>
-                    En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo). 
+                    En caso afirmativo proporcione una copia o copias de los documentos (puedes subir más de un archivo).
                     </p>
                     <br>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -941,7 +941,7 @@
                 </div>
 
                 <div class="preguntasCategoria" id="SC_2.2.7">
-                    <p>2.2.7 ¿En particular, los estudiantes reciben la inducción necesaria para el manejo del entorno de aprendizaje cuando se utilizan contenidos de los cursos del plan de estudios, con apoyo de plataformas de aprendizaje ?
+                    <p>2.2.7 ¿En particular, los estudiantes reciben la inducción necesaria para el manejo del entorno de aprendizaje cuando se utilizan contenidos de los cursos del plan de estudios, con apoyo de plataformas de aprendizaje?
 
                     </p>
                     <div class="opcMult" °>
@@ -998,7 +998,7 @@
                     <textarea id="R2-2-8" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
 
                     <p>
-                    En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo). 
+                    En caso afirmativo proporcione una copia o copias de los documentos (puedes subir más de un archivo).
                     </p>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -1036,7 +1036,7 @@
             <div>
                 <div class="parrafo" id="2.3">
                     <p>
-                        2.3 Trayectoria Escolar. Los estudiantes deben contar con un plan de seguimiento de su desempeño durante su estancia en el programa de estudios, así como recibir la retroalimentación correspondiente para mejorarla. Tendencia comprobada de disminución de índices de reprobación y deserción.
+                        2.3 Trayectoria Escolar. Los estudiantes deben contar con un plan de seguimiento de su desempeño durante su estancia en el programa de estudios, así como recibir la retroalimentación correspondiente para mejorarla. Tendencia comprobada de disminución de índices de reprobación y deserción.
 
                     </p>
                 </div>
@@ -1052,7 +1052,8 @@
                     </div>
                     <br>
                     <p>En caso afirmativo proporcione una copia o copias 
-                        de los documentos (puedes subir mas de un archivo).
+                        de los documentos (puedes subir más de un archivo).
+
                     </p>
 
                     <p>¿El estudiante recibe retroalimentación para 
@@ -1150,7 +1151,7 @@
                     <p>En caso afirmativo proporcione y justifique los indicadores correspondientes.</p>
                     <br>
                     <textarea id="R2-3-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
-                    <p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo).</p>
+                    <p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir más de un archivo).</p>
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -1182,7 +1183,7 @@
             <div>
                 <div class="parrafo" id="2.4">
                     <p>
-                        2.4 Tamaño de los grupos. El tamaño de los grupos no debe ser en ningún caso mayor de 60 estudiantes, y preferentemente debe ser como máximo de 45 estudiantes. Si no se cumple esta condición, se debe garantizar la atención a los estudiantes.
+                        2.4 Tamaño de los grupos. El tamaño de los grupos no debe ser en ningún caso mayor de 60 estudiantes, y preferentemente debe ser como máximo de 45 estudiantes. Si no se cumple esta condición, se debe garantizar la atención a los estudiantes.
 
                     </p>
                 </div>
@@ -1190,14 +1191,14 @@
                     <p>2.4.1 Proporcionar el tamaño promedio de los grupos de los últimos dos años:
                     </p>
                     <textarea id="R2-4-1" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
-                    <p>¿Cuántos grupos en los últimos dos años tuvieron más de 60 estudiantes? 
+                    <p>¿Cuántos grupos en los últimos dos años tuvieron más de 60 estudiantes?
                     </p>
                     <textarea id="R2-4-1A1" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <p>¿Cuántos grupos en los últimos dos años tuvieron más de 45 estudiantes?
 
                     </p>
                     <textarea  id="R2-4-1A2" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
-                    <p>Describir cómo se garantiza la atención a los estudiantes en grupos con más de 45 estudiantes
+                    <p>Describir cómo se garantiza la atención a los estudiantes en grupos con más de 45 estudiantes.
 
                     </p>
                     <textarea id="R2-4-1A3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
@@ -1234,7 +1235,7 @@
             <div>
                 <div class="parrafo" id="2.5">
                     <p>
-                        2.5 Titulación. Debe existir uno o varios reglamentos de estudiantes, que consideren los siguientes aspectos: Mecanismos de acreditación y evaluación de materias, Derechos y obligaciones del estudiante y Mecanismos de Titulación. También deben tener reglamentadas las opciones de titulación y un procedimiento que garantice la calidad de los trabajos de titulación. En los requisitos de titulación el puntaje obtenido en la prueba TOEFL o equivalente sea de por lo menos 500 puntos o equivalente en otros medios de evaluación formal.
+                        2.5 Titulación. Debe existir uno o varios reglamentos de estudiantes, que consideren los siguientes aspectos: Mecanismos de acreditación y evaluación de materias, Derechos y obligaciones del estudiante y Mecanismos de Titulación. También deben tener reglamentadas las opciones de titulación y un procedimiento que garantice la calidad de los trabajos de titulación. En los requisitos de titulación el puntaje obtenido en la prueba TOEFL o equivalente sea de por lo menos 500 puntos o equivalente en otros medios de evaluación formal.
 
 
                     </p>
@@ -1254,18 +1255,18 @@
                             <option value="no">No</option>
                         </select>
                     </div>
-                    <p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo).</p>
+                    <p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir más de un archivo).</p>
                     <br>
                     <textarea id="R2-5-1A1" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <p>Número límite de oportunidades para acreditar una materia ya sea por haberla cursado, por haber presentado exámenes a título de suficiencia, o por algún otro mecanismo:
                     </p>
                     <textareaid="R2-5-1A2" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
 
-                    <p>Número máximo de exámenes extraordinarios, a título o similares a lo largo de la carrera, de una misma asignatura: 
+                    <p>Número máximo de exámenes extraordinarios, a título o similares a lo largo de la carrera, de una misma asignatura:
                     </p>
                     <textarea id="R2-5-1A3" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
 
-                    <p>Número máximo de exámenes extraordinarios, a título o similares a lo largo de la carrera, de todas las asignaturas cursadas : 
+                    <p>Número máximo de exámenes extraordinarios, a título o similares a lo largo de la carrera, de todas las asignaturas cursadas:
                     </p>
                     <textarea id="R2-5-1A4" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
 
@@ -1277,7 +1278,7 @@
                     </p>
                     <textarea id="R2-5-1A6" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
 
-                    <p>TP:  
+                    <p>TP:
                     </p>
                     <textarea id="R2-5-1A7" rows="2" placeholder="Escribe tu respuesta aquí..."></textarea>
 
@@ -1300,7 +1301,7 @@
                     </div>
                     <br>
 
-                    <p>con voz
+                    <p>Con voz
                     </p>
                     <div class="opcMult" °>
                         <select name="select" id="RS2-5-1A11">
@@ -1311,7 +1312,7 @@
                     </div>
                     <br>
 
-                    <p>con voto
+                    <p>Con voto
                     </p>
                     <div class="opcMult" °>
                         <select name="select" id="RS2-5-1A12">
@@ -1322,7 +1323,7 @@
                     </div>
                     <br>
 
-                    <p>indique brevemente los requisitos para ello:
+                    <p>Indique brevemente los requisitos para ello:
                     </p>
                     <textarea id="R2-5-1A13" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -1363,7 +1364,7 @@
                             <option value="no">No</option>
                         </select>
                     </div>
-                    <p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo).</p>
+                    <p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir más de un archivo).</p>
                     <br>
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -1477,7 +1478,7 @@
             <div>
                 <div class="parrafo" id="2.6">
                     <p>
-                        2.6 Índices de rendimiento escolar por cohorte generacional. El índice de deserción deberá manifestar una tendencia al decremento, y deberán existir estadísticas confiables para observarla. Nunca menor del 20 % de eficiencia terminal.
+                        2.6 Índices de rendimiento escolar por cohorte generacional. El índice de deserción deberá manifestar una tendencia al decremento, y deberán existir estadísticas confiables para observarla. Nunca menor del 20 % de eficiencia terminal.
                     </p>
                 </div>
                 <div class="preguntasCategoria" id="SC_2.6.1">
@@ -1544,8 +1545,7 @@
                             <option value="no">No</option>
                         </select>
                     </div>
-                    <p>Haga un breve resumen del proceso indicando quienes participan en él, así como las responsabilidades
-que tienen.</p>
+                    <p>Haga un breve resumen del proceso indicando quienes participan en él, así como las responsabilidades que tienen.</p>
 
                     <br>
                     <textarea id="R2-7A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
