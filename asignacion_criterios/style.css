@@ -2,6 +2,20 @@ body{
     background: #d4e1e3;
 }
 
+::-webkit-scrollbar {
+  width: 6px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #145070; 
+  border-radius: 6px; 
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.0); 
+}
+
+
 
 #logoFondo{
   position: relative;
@@ -213,6 +227,7 @@ transform: scale(0.90);
   background-color: #fff;
   font-family: Arial, sans-serif;
   overflow-y: auto;
+  z-index: 2;
 }
 
 .selected-value {
