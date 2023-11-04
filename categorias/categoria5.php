@@ -29,7 +29,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categoria 5</title>
+    <title>Categoría 5</title>
     <link rel="stylesheet" href="autoevaluacion.css">
     <script src="enviarConsulta.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -382,7 +382,7 @@
         </div>
 
         <div class="cuadroCate">
-            <div class="titulo_categoria">Categoría 5: Formación Integral</div>  
+            <div class="titulo_categoria">Categoría 5: Formación integral</div>  
             <div>
                 <div class="parrafo" id="5.1">
                     <p>
@@ -445,7 +445,7 @@
 
                 <div class="parrafo" id="5.2">
                     <p>
-                        5.2 Actividades culturales. La institución debe contar con instalaciones para el fomento de  actividades
+                            5.2 Actividades culturales. La institución debe contar con instalaciones para el fomento de actividades
                             culturales y un programa formal para el desarrollo de éstas en las que participen estudiantes del
                             programa educativo. El programa debe garantizar las actividades culturales y deportivas a través de
                             instalaciones propias, en convenio, etc., debe describir las mismas.
@@ -453,8 +453,9 @@
                 </div>
 
                 <div class="preguntasCategoria" id="SC_5.2.1">
-                    <p>5.2.1  Haga una relación de las instalaciones para actividades culturales para el fomento de la vida
-                            académica, indicando a cuantos usuarios brindan simultáneamente en cada caso.</p>
+                    <p>5.2.1 Haga una relación de las instalaciones para actividades culturales para el fomento de la vida
+                            académica, indicando a cuantos usuarios brindan simultáneamente en cada caso.
+                    </p>
 
                     <textarea id="R5-2-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
@@ -484,13 +485,15 @@
                 </div>
 
                 <div class="preguntasCategoria" id="SC_5.2.2">
-                    <p>5.2.2  La institución debe contar un programa formal para el desarrollo de actividades culturales en las
+                    <p>5.2.2 La institución debe contar un programa formal para el desarrollo de actividades culturales en las
                             que participen estudiantes del programa educativo.
+
                     </p>
                     <p>
                             Haga una descripción el mismo y una relación de las actividades culturales en las que participan
                             estudiantes del programa educativo, así como el porcentaje en relación a la matrícula del programa
-                            educativo
+                            educativo.
+
                     </p>
 
 
@@ -526,10 +529,11 @@
             <div>
                 <div class="parrafo" id="5.3">
                     <p>
-                        5.3 Actividades deportivas. La institución debe contar con instalaciones para el fomento de  actividades
+                            5.3 Actividades deportivas. La institución debe contar con instalaciones para el fomento de actividades
                             deportivas, así como con un programa formal para el desarrollo de éstas en la que participen estudiantes
                             del programa educativo.
                     </p>
+
                     <p> El programa debe garantizar las actividades culturales y deportivas a través de instalaciones propias, en
                         convenio, etc., debe describir las mismas.
                     </p>                
@@ -567,7 +571,7 @@
                 </div>
 
                 <div class="preguntasCategoria" id="SC_5.3.2">
-                    <p>5.3.2  La institución debe contar un programa formal para el desarrollo de actividades  deportivas en la
+                    <p>5.3.2 La institución debe contar un programa formal para el desarrollo de actividades deportivas en la
                             que participen estudiantes del programa educativo.
                     </p>
                     <p>Haga una descripción el mismo y una relación de las actividades   deportivas en las que participan
@@ -578,7 +582,7 @@
                     <textarea id="R5-3-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
-                    <p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo).
+                    <p>En caso afirmativo proporcione una copia o copias de los documentos (puedes subir más de un archivo).
                     </p>
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <div class="pdfs-options">
@@ -609,7 +613,7 @@
                 <div class="parrafo" id="5.4">
                     <p> 5.4 Orientación profesional. La institución debe contar con programas específicos de desarrollo
                             tecnológico en la disciplina del programa educativo, en los que participen profesores y estudiantes de
-                            licenciatura, así como de eventos científicos y tecnológicos que apoyen el curriculum de la carrera y la
+                            licenciatura, así como de eventos científicos y tecnológicos que apoyen el currículum de la carrera y la
                             inserción adecuada de los estudiantes por egresar al mercado laboral.
                     </p>
                 </div>
@@ -660,8 +664,8 @@
                 </div>
 
                 <div class="preguntasCategoria" id="SC_5.4.2">
-                    <p>5.4.2  ¿Para la orientación profesional se realizan eventos académico-científicos (seminarios, congresos,
-                            foros, conferencias y cursos co-curriculares, entre otros)  que apoyan el currículo del programa
+                    <p>5.4.2 ¿Para la orientación profesional se realizan eventos académico-científicos (seminarios, congresos,
+                            foros, conferencias y cursos co-curriculares, entre otros) que apoyan el currículo del programa
                             académico?
                     </p>
 
@@ -702,7 +706,7 @@
                 </div>
 
                 <div class="preguntasCategoria" id="SC_5.4.3">
-                    <p>5.4.3  ¿Opera un programa de orientación profesional que permita a los estudiantes por egresar,
+                    <p>5.4.3 ¿Opera un programa de orientación profesional que permita a los estudiantes por egresar,
                             insertarse de manera adecuada en el mercado laboral (cursos y conferencias impartidos por expertos del
                             mercado laboral).
                     </p>
@@ -750,10 +754,10 @@
 
             <div>
                 <div class="parrafo" id="5.5">
-                    <p> 5.5  Orientación psicológica. Existe un programa Institucional de Orientación Psicológica para prevención
+                    <p> 5.5 Orientación psicológica. Existe un programa Institucional de Orientación Psicológica para prevención
                             de actitudes de riesgo (adicciones, contra la violencia, educación sexual, entre otros aspectos) o bien para
                             apoyar a los estudiantes cuando soliciten asesoría psicológica, como un programa institucional de
-                            orientación vocacional, y de orientación psicológica
+                            orientación vocacional, y de orientación psicológica.
                     </p>
                 </div>
 
@@ -804,7 +808,7 @@
                 </div>
 
                 <div class="preguntasCategoria" id="SC_5.5.2">
-                    <p>5.5.2  ¿Existe un programa Institucional de Orientación vocacional y de orientación psicopedagógica? 
+                    <p>5.5.2 ¿Existe un programa Institucional de Orientación vocacional y de orientación psicopedagógica? 
                     </p>
 
                     <p> Si la respuesta es afirmativa, describa brevemente en qué consisten los programas.
@@ -852,17 +856,17 @@
 
             <div>
                 <div class="parrafo" id="5.6">
-                    <p> 5.6  Servicios médicos. Debe existir un lugar apropiado que cuente con medicamentos y material
+                    <p> 5.6 Servicios médicos. Debe existir un lugar apropiado que cuente con medicamentos y material
                             requerido para primeros auxilios, que estén al servicio y alcance del personal académico, administrativo y
                             estudiantes.
                     </p>
                 </div>
 
                 <div class="preguntasCategoria" id="SC_5.6.1">
-                    <p> Para el caso de los programas semi-presenciales o no presenciales, los servicios médicos deben
+                    <p> Para el caso de los programas semipresenciales o no presenciales, los servicios médicos deben
                         garantizarse a través de estrategias que la propia institución defina y deben describirse y presentar
-                        evidencias de las mismas.    
-                        ¿Existe un servicio médico o material para primeros auxilios?   
+                        evidencias de estas.    
+                        ¿Existe un servicio médico o material para primeros auxilios?  
                     </p>
 
                     <div class="opcMult" °>
@@ -874,7 +878,7 @@
                     </div>
                     <br>
 
-                    <p> En caso afirmativo,  descríbalo brevemente
+                    <p> En caso afirmativo, descríbalo brevemente:
                     </p>
 
                     <textarea id="R5-6-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
@@ -925,15 +929,16 @@
 
             <div>
                 <div class="parrafo" id="5.7">
-                    <p> 5.7  Enlace escuela – familia. Con el propósito de apoyar la formación integral de los estudiantes es
-                            conveniente tener comunicación con los padres de familia, por lo que es conveniente definir canales de
-                            comunicación adecuados, actividades de inducción y cursos de orientación a los padres, entre otros
-                            mecanismos.
+                    <p> 5.7 Enlace escuela – familia. Con el propósito de apoyar la formación integral de los estudiantes es
+                        conveniente tener comunicación con los padres de familia, por lo que es conveniente definir canales de
+                        comunicación adecuados, actividades de inducción y cursos de orientación a los padres, entre otros
+                        mecanismos.
+
                     </p>
                 </div>
 
                 <div class="preguntasCategoria" id="SC_5.7.1">
-                    <p> 5.7.1 ¿Existe  comunicación con los padres de familia?    
+                    <p> 5.7.1 ¿Existe comunicación con los padres de familia?   
                     </p>
 
                     <div class="opcMult" °>
@@ -970,7 +975,7 @@
                     <textarea id="R5-7-1A3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     
-                    <p> En caso afirmativo proporcione una copia o copias de los documentos (puedes subir mas de un archivo).
+                    <p> En caso afirmativo proporcione una copia o copias de los documentos (puedes subir más de un archivo).
                     </p>
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
