@@ -62,9 +62,9 @@
     <br><br><br>
     <!--logo superior-->
     <nav class="nav">
-        <a href="../Principal%20Administrador/index.php">
+        
         <img src="../imagenes/logo_CONAIC_letras.png" alt="Conaic ITSZaS" class="logo_letras" width="336" height="198" >
-        </a>
+        
     </nav>
 
     <!--barra de busqueda-->

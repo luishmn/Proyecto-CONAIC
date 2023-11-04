@@ -9,6 +9,19 @@ body{
     
 }
 
+::-webkit-scrollbar {
+    width: 6px; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #145070; 
+    border-radius: 6px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.0); 
+  }
+
 
 .barra-superior{
     z-index: 100;

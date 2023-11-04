@@ -43,7 +43,7 @@
 
             <div class="menu_usuario">
                 <button class="menu_estilo_usuario">
-                    <img src="imagenes/boton_usuario.png" alt="Usuario"> 
+                    <img src="../PrincipalUsuario/Usuario.png" alt="Usuario"> 
                     <div class="texto"> <?php echo $nombre; ?> </div>
                 </button>
                 <div class="contenido_del_menu_usuarios">

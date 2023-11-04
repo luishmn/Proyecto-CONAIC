@@ -38,7 +38,11 @@ body {
   }
   .buttons-hover{
     transform: scale(0.90);
-}
+  }
+
+  .imagenOPS:hover{
+    transform: scale(0.9);
+  }
   
   .buttons button {
     padding: 0; /* Ajusta el padding a 0 para que no afecte a la imagen */
@@ -302,6 +306,7 @@ body {
   
      
   }
+  
     
     
   .modal {
