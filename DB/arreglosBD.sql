@@ -55,7 +55,7 @@ UPDATE `criterio` SET `nombre` = 'Plataforma tecnológica y de aprendizaje\r\n\r
 UPDATE `criterio` SET `nombre` = 'Material y recursos de aprendizaje utilizando tecnología educativa\r\n\r\n' WHERE `criterio`.`claveCriterio` = '6.5';
 UPDATE `criterio` SET `nombre` = 'Integración de los actores del aprendizaje' WHERE `criterio`.`claveCriterio` = '6.6';
 
-DELETE FROM criteriossubcriterio WHERE `criteriossubcriterio`.`claveCriterio` = '2.3' AND `criteriossubcriterio`.`claveSubCriterio` = '2.3.4';
+DELETE FROM `criteriossubcriterio` WHERE `criteriossubcriterio`.`claveCriterio` = '2.3' AND `criteriossubcriterio`.`claveSubCriterio` = '2.3.4';
 DELETE FROM `subcriterio` WHERE `subcriterio`.`claveSubCriterio` = '2.3.4';
 
 
