@@ -412,6 +412,9 @@
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <br><br>
                     <p>Para tal efecto, se requiere conocer:</p>
+                    <p>
+                    <a href="../Documentos/CATEGORIA5/5.1.1.docx" class="etiquetaDescarga">Descargar formato</a>
+                    </p> 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
@@ -724,7 +727,10 @@
                         el número de eventos y estudiantes que asistieron en los tres últimos períodos escolares.
                     </p>
 
-                    <textarea id="R5-4-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                    <textarea id="R5-4-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>  
+                    <p>
+                    <a href="../Documentos/CATEGORIA5/5.4.3.docx" class="etiquetaDescarga">Descargar formato</a>
+                    </p>             
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>

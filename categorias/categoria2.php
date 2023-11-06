@@ -545,6 +545,7 @@
                         Estar establecido que los aspirantes presenten un examen de admisión institucional, que permita que sólo sean aceptados quienes cumplan con el mínimo de conocimientos y habilidades requeridas.
                         De los puntos anteriores debe existir información escrita en forma de guía o manual para los aspirantes.
                         </p>
+                        
 
                     <p>¿Existe publicado un perfil del aspirante a ingresar al programa?
 
@@ -587,6 +588,9 @@
                     <br>
 
                     <p>Explique brevemente en qué consisten:
+                    <p>
+                            <a href="../Documentos/CATEGORIA2/2.1.1_1.docx" class="etiquetaDescarga">Descargar formato</a>
+                    </p>
 
 
                     </p>
@@ -625,6 +629,9 @@
                         apartado nombrándolos adecuadamente.
 
 
+                    </p>
+                    <p>
+                            <a href="../Documentos/CATEGORIA2/2.1.1_2.docx" class="etiquetaDescarga">Descargar formato</a>
                     </p>
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -1578,6 +1585,9 @@
                 
                 <div class="preguntasCategoria" id="SC_2.7.1">
                     <p>2.7.1 Indicar las movilidades en envío y recepción de los estudiantes en los últimos cinco años.
+                    </p>
+                    <p>
+                            <a href="../Documentos/CATEGORIA2/2.7.1.docx" class="etiquetaDescarga">Descargar formato</a>
                     </p>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->

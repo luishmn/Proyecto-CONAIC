@@ -417,29 +417,29 @@
                     var id8 = "R6-4-2A7";
                     var respuesta8 = $("#R6-4-2A7").val();
 
-                    var id9 = "cbox1";
-                    var respuesta9 = $("#cbox1").val();
+                    var id9 = "RS6-4-2A1";
+                    var respuesta9 = $("#RS6-4-2A1").val();
 
-                    var id10 = "cbox2";
-                    var respuesta10 = $("#cbox2").val();
+                    var id10 = "RS6-4-2A2";
+                    var respuesta10 = $("#RS6-4-2A2").val();
 
-                    var id11 = "cbox3";
-                    var respuesta11 = $("#cbox3").val();
+                    var id11 = "RS6-4-2A3";
+                    var respuesta11 = $("#RS6-4-2A3").val();
 
-                    var id12 = "cbox4";
-                    var respuesta12 = $("#cbox4").val();
+                    var id12 = "RS6-4-2A4";
+                    var respuesta12 = $("#RS6-4-2A4").val();
 
-                    var id13 = "cbox5";
-                    var respuesta13 = $("#cbox5").val();
+                    var id13 = "RS6-4-2A5";
+                    var respuesta13 = $("#RS6-4-2A5").val();
 
-                    var id14 = "cbox6";
-                    var respuesta14 = $("#cbox6").val();
+                    var id14 = "RS6-4-2A6";
+                    var respuesta14 = $("#RS6-4-2A6").val();
 
-                    var id15 = "cbox7";
-                    var respuesta15 = $("#cbox7").val();
+                    var id15 = "RS6-4-2A7";
+                    var respuesta15 = $("#RS6-4-2A7").val();
 
-                    var id16 = "cbox8";
-                    var respuesta16 = $("#cbox8").val();
+                    var id16 = "RS6-4-2A8";
+                    var respuesta16 = $("#RS6-4-2A8").val();
 
                     var id17 = "R6-4-2A8";
                     var respuesta17 = $("#R6-4-2A8").val();
@@ -476,22 +476,10 @@
                 });
 
                 $("#guardarRespuesta21").click(function() {
-                    var id1 = "cbox5.5.2-1";
-                    var respuesta1 = $("#cbox5.5.2-1").val();
+                    var id1 = "R6-5-2";
+                    var respuesta1 = $("#R6-5-2").val();
 
-                    var id2 = "cbox5.5.2-2";
-                    var respuesta2 = $("#cbox5.5.2-2").val();
-
-                    var id3 = "cbox5.5.2-3";
-                    var respuesta3 = $("#cbox5.5.2-3").val();
-
-                    var id4 = "cbox5.5.2-4";
-                    var respuesta4 = $("#cbox5.5.2-4").val();
-
-                    var id5 = "cbox5.5.2-5";
-                    var respuesta5 = $("#cbox5.5.2-5").val();
-
-                    var arreglo = [id1,respuesta1,id2,respuesta2,id3,respuesta3,id4,respuesta4,id5,respuesta5];
+                    var arreglo = [id1,respuesta1];
                     console.log(arreglo)
                     
                     BDatos(arreglo)
@@ -750,7 +738,9 @@
                 </p>
                 <textarea id="R6-1-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
-                <p>Tabla con periodo escolar, mecanismos de apoyo, no. de estudiantes, tiempo del profesorado.</p>               
+                <p>
+                    <a href="../Documentos/CATEGORIA6/6.1.2.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p>          
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
                     <div class="pdfs-options">
@@ -830,9 +820,9 @@
                         <option value="no">No</option>
                     </select>
                 </div>
-                <p>Tabla con periodo escolar, mecanismos de apoyo, no. de estudiantes, 
-                tiempo del profesorado.
-                </p>
+                <p>
+                    <a href="../Documentos/CATEGORIA6/6.2.1.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p> 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
                     <div class="pdfs-options">
@@ -1394,6 +1384,10 @@
                     </select>
                 </div>
 
+                <p>
+                    <a href="../Documentos/CATEGORIA6/6.3.9.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p> 
+
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
                     <div class="pdfs-options">
@@ -1641,15 +1635,88 @@
                      recursos o contenidos al entorno de aprendizaje.</p>
 
                      <ul>
-                        <li>Interactividad</li>
-                        <li>Flexibilidad</li>
-                        <li>Escalabilidad</li>
-                        <li>Usabilidad</li>
-                        <li>Ubicuidad</li>
-                        <li>Funcionabilidad</li>
-                        <li>Estandarización</li>
-                        <li>Soporte</li>
+                        <li>Interactividad
+                            <br>
+                            <div class="opcMult"°>
+                                <select name="select" id="RS6-4-2A1">
+                                    <option disabled selected>Selecciona una opción</option>
+                                    <option value="si">Sí</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                        </li>
+                        <br>
+                        <li>Flexibilidad
+                            <div class="opcMult"°>
+                                <select name="select" id="RS6-4-2A2">
+                                    <option disabled selected>Selecciona una opción</option>
+                                    <option value="si">Sí</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                        </li>
+                        <br>
+                        <li>Escalabilidad
+                        <div class="opcMult"°>
+                                <select name="select" id="RS6-4-2A3">
+                                    <option disabled selected>Selecciona una opción</option>
+                                    <option value="si">Sí</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                        </li>
+                        <br>
+                        <li>Usabilidad
+                        <div class="opcMult"°>
+                                <select name="select" id="RS6-4-2A4">
+                                    <option disabled selected>Selecciona una opción</option>
+                                    <option value="si">Sí</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                        </li>
+                        <br>
+                        <li>Ubicuidad
+                        <div class="opcMult"°>
+                                <select name="select" id="RS6-4-2A5">
+                                    <option disabled selected>Selecciona una opción</option>
+                                    <option value="si">Sí</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                        </li>
+                        <br>
+                        <li>Funcionabilidad
+                        <div class="opcMult"°>
+                                <select name="select" id="RS6-4-2A6">
+                                    <option disabled selected>Selecciona una opción</option>
+                                    <option value="si">Sí</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                        </li>
+                        <br>
+                        <li>Estandarización
+                        <div class="opcMult"°>
+                                <select name="select" id="RS6-4-2A7">
+                                    <option disabled selected>Selecciona una opción</option>
+                                    <option value="si">Sí</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                        </li>
+                        <br>
+                        <li>Soporte
+                        <div class="opcMult"°>
+                                <select name="select" id="RS6-4-2A8">
+                                    <option disabled selected>Selecciona una opción</option>
+                                    <option value="si">Sí</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                        </li>
                      </ul>
+
                 
                 
                 
