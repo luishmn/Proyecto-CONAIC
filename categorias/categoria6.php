@@ -750,7 +750,9 @@
                 </p>
                 <textarea id="R6-1-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
-                <p>Tabla con periodo escolar, mecanismos de apoyo, no. de estudiantes, tiempo del profesorado.</p>               
+                <p>
+                    <a href="../Documentos/CATEGORIA6/6.1.2.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p>          
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
                     <div class="pdfs-options">
@@ -830,9 +832,9 @@
                         <option value="no">No</option>
                     </select>
                 </div>
-                <p>Tabla con periodo escolar, mecanismos de apoyo, no. de estudiantes, 
-                tiempo del profesorado.
-                </p>
+                <p>
+                    <a href="../Documentos/CATEGORIA6/6.2.1.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p> 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
                     <div class="pdfs-options">
@@ -1393,6 +1395,10 @@
                         <option value="no">No</option>
                     </select>
                 </div>
+
+                <p>
+                    <a href="../Documentos/CATEGORIA6/6.3.9.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p> 
 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
