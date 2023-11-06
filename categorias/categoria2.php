@@ -545,6 +545,9 @@
                         Estar establecido que los aspirantes presenten un examen de admisión institucional, que permita que sólo sean aceptados quienes cumplan con el mínimo de conocimientos y habilidades requeridas.
                         De los puntos anteriores debe existir información escrita en forma de guía o manual para los aspirantes."
                         </p>
+                        <p>
+                            <a href="../Documentos/CATEGORIA2/2.1.1_1.docx" class="etiquetaDescarga">DESCARGAR FORMATO</a>
+                        </p>
 
                     <p>Existe publicado un perfil del aspirante a ingresar al programa?
 
