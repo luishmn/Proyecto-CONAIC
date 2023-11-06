@@ -1,12 +1,33 @@
+<?php
+    session_start();
+    //$_SESSION['loggedin']= false;
+    // Verifica si el usuario ha iniciado sesión
+    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+        // Accede al nombre de usuario almacenado en la sesión
+        $nombreUsuario = $_SESSION['username'];
+        $correoUsuario = $_SESSION['email'];
+    } else {
+        // Si no ha iniciado sesión, redirige al usuario a la página de inicio de sesión
+        header('Location: ../index.php');
+        exit;
+    }
+
+    $nombre = substr($nombreUsuario, 0, 10);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asiganción de Criterios</title>
+    <title>Asignación de Criterios</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="style.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -108,12 +129,22 @@ while ($row = $result->fetch_assoc()) {
     <div id="logoFondo"> <!-- ESTE ES EL DIV QUE TIENE EL LOGO QUE APARECE AL FONDO, CUBRE TODA LA PANTALLA ASI QUE POR ESO DENTRO DE EL SE PONEN OTROS ELEMENTOS -->
        
 
+    <header>
         <div class="barra-superior"><!-- ESTE ES EL DIV DE LA BARRA SUPERIOR -->
+        <a href="/PrincipalAdministrador/index.php" class="enlace-inicio" ><i class="fas fa-home"></i></a>
+
+     
+        
+            <label class="L1">Usuarios</label>
+
+            <button class="menu_estilo_usuario">
+                <img src="../PrincipalUsuario/usuario.png" alt="Usuario"> 
+                <div class="texto"> <?php echo $nombre; ?></div>
+            </button>
+
             
-            <div class ="tituloPag">
-                <p id="textoTituloPag">Asignar Criterios</p>
-            </div>
         </div>
+    </header>   
 
 
 

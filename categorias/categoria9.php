@@ -29,7 +29,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categoria 9</title>
+    <title>Categoría 9</title>
     <link rel="stylesheet" href="autoevaluacion.css">
     <script src="enviarConsulta.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -513,7 +513,7 @@
 
             <button class="menu_estilo_usuario">
                 <img src="../PrincipalUsuario/usuario.png" alt="Usuario"> 
-                <div class="texto"> <?php echo $nombreUsuario; ?></div>
+                <div class="texto"> <?php echo $nombre; ?></div>
             </button>
 
             
@@ -606,13 +606,30 @@
             <div>
                 <div class="parrafo" id="9.1">
                     <p >
-                        En el área de TIC’s el equipamiento e infraestructura es fundamental para el desarrollo del plan de estudios. La profesión está fuertemente sostenida por Redes de telecomunicaciones, equipo de cómputo, software de diferente naturaleza por mencionar algunos aspectos.</p>
+                        En el área de TIC’s el equipamiento e infraestructura es fundamental para 
+                        el desarrollo del plan de estudios. La profesión está fuertemente sostenida 
+                        por Redes de telecomunicaciones, equipo de cómputo, software de diferente 
+                        naturaleza por mencionar algunos aspectos.</p>
+
                         <p >9.1 Infraestructura.</p>
-                        <p >Los espacios físicos donde se ofrezcan los servicios de cómputo deben tener condiciones adecuadas de trabajo, seguridad e higiene; exceptuando el perfil de Licenciado en Informática, los demás perfiles deberán disponer de laboratorios de electrónica; deberán contar con servicios de cómputo para cursos especializados y personal con experiencia y perfil adecuado; debe tomarse en cuenta la opinión de los profesores para su diseño, actualización y operación de los servicios de cómputo; las aulas deben ser funcionales y suficientes; deben contar con cubículos para profesores, y para asesorías a estudiantes; deben disponer de auditorios o espacios adecuados y suficientes para las distintas actividades académicas, de investigación y difusión de la cultura y los sanitarios para los estudiantes y profesores deben ser adecuados y suficientes.
-                    </p>
+
+                        <p >Los espacios físicos donde se ofrezcan los servicios de cómputo deben 
+                            tener condiciones adecuadas de trabajo, seguridad e higiene; exceptuando 
+                            el perfil de Licenciado en Informática, los demás perfiles deberán disponer 
+                            de laboratorios de electrónica; deberán contar con servicios de cómputo para 
+                            cursos especializados y personal con experiencia y perfil adecuado; debe tomarse 
+                            en cuenta la opinión de los profesores para su diseño, actualización y operación 
+                            de los servicios de cómputo; las aulas deben ser funcionales y suficientes; deben 
+                            contar con cubículos para profesores, y para asesorías a estudiantes; deben disponer 
+                            de auditorios o espacios adecuados y suficientes para las distintas actividades académicas, 
+                            de investigación y difusión de la cultura y los sanitarios para los estudiantes y profesores 
+                            deben ser adecuados y suficientes.
+                        </p>
                 </div>
                 <div class="preguntasCategoria" id="SC_9.1.1">
-                    <p >9.1.1 Mencionar las condiciones de trabajo, seguridad e higiene de los servicios de cómputo, (dimensión de áreas de trabajo, ventilación, iluminación, aire acondicionado, extinguidores, salidas de emergencia, depósitos, etc.).
+                    <p >9.1.1 Mencionar las condiciones de trabajo, seguridad e higiene de los servicios 
+                        de cómputo, (dimensión de áreas de trabajo, ventilación, iluminación, aire 
+                        acondicionado, extinguidores, salidas de emergencia, depósitos, etc.).
                         </p>
                     <textarea id="R9-1-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
@@ -642,7 +659,9 @@
                 </div>
 
                 <div class="preguntasCategoria" class="preguntasCategoria" id="SC_9.1.2">
-                    <p>9.1.2 Exceptuando a los programas que correspondan al perfil de Licenciado en Informática, todos los programas deberán disponer de al menos un laboratorio de electrónica acondicionado que los soporte.</p>
+                    <p>9.1.2 Exceptuando a los programas que correspondan al perfil de Licenciado en 
+                        Informática, todos los programas deberán disponer de al menos un laboratorio 
+                        de electrónica acondicionado que los soporte.</p>
                     <textarea id="R9-1-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -672,7 +691,8 @@
                 </div>
 
                 <div class="preguntasCategoria" class="preguntasCategoria" id="SC_9.1.3">
-                    <p >9.1.3 El programa debe disponer de los servicios de cómputo necesarios para cursos y actividades especializadas, relacionadas con el mismo.</p>
+                    <p >9.1.3 El programa debe disponer de los servicios de cómputo necesarios para 
+                        cursos y actividades especializadas, relacionadas con el mismo.</p>
                     <textarea id="R9-1-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -701,7 +721,8 @@
                 </div>
 
                 <div class="preguntasCategoria" class="preguntasCategoria" id="SC_9.1.4">
-                    <p >9.1.4 Los responsables de los servicios de cómputo deben ser personal con experiencia y perfil relacionado con el área.</p>
+                    <p >9.1.4 Los responsables de los servicios de cómputo deben ser personal con 
+                        experiencia y perfil relacionado con el área.</p>
                     <textarea id="R9-1-4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -730,10 +751,12 @@
                 </div>
 
                 <div class="preguntasCategoria" class="preguntasCategoria" id="SC_9.1.5">
-                    <p >9.1.5 El diseño, equipamiento y operación de los servicios de cómputo debe tomar en cuenta la opinión de los profesores que  participan en el programa.</p>
+                    <p >9.1.5 El diseño, equipamiento y operación de los servicios de cómputo debe 
+                        tomar en cuenta la opinión de los profesores que participan en el programa.</p>
 
 
-                    <p >¿Se toma en cuenta la opinión de los profesores que participan en el programa para el diseño, equipamiento y operación de los servicios de cómputo?</p>
+                    <p >¿Se toma en cuenta la opinión de los profesores que participan en el programa 
+                        para el diseño, equipamiento y operación de los servicios de cómputo?</p>
                     <div class="opcMult" °>
                         <select name="select" id="RS9-1-5A1">
                             <option disabled selected>Selecciona una opción</option>
@@ -774,8 +797,10 @@
                 </div>
 
                 <div class="preguntasCategoria" class="preguntasCategoria" id="SC_9.1.6">
-                    <p>9.1.6 Las aulas deben ser funcionales, disponer de espacio suficiente para cada estudiante y tener las condiciones adecuadas de higiene, seguridad, iluminación, ventilación, temperatura, aislamiento del ruido y mobiliario.
-                        </p>
+                    <p>9.1.6 Las aulas deben ser funcionales, disponer de espacio suficiente para cada 
+                        estudiante y tener las condiciones adecuadas de higiene, seguridad, iluminación, 
+                        ventilación, temperatura, aislamiento del ruido y mobiliario.
+                    </p>
 
                     <p >Información sobre aulas según dimensiones y capacidades.</p>
                     <textarea id="R9-1-6" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
@@ -807,8 +832,9 @@
                 </div>
 
                 <div class="preguntasCategoria" class="preguntasCategoria" id="SC_9.1.7">
-                    <p >9.1.7 El número de aulas habrá de ser suficiente para atender la impartición de cursos que se programen en cada periodo escolar.
-                        </p>
+                    <p >9.1.7 El número de aulas habrá de ser suficiente para atender la impartición 
+                        de cursos que se programen en cada periodo escolar.
+                    </p>
                     <textarea id="R9-1-7" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -838,16 +864,18 @@
                 </div>
 
                 <div class="preguntasCategoria" class="preguntasCategoria" id="SC_9.1.8">
-                    <p >9.1.8 El programa debe disponer de al menos una aula con equipo de cómputo y audiovisual permanentemente instalado que podrá ser utilizada para cursos normales y especializados.
-                        </p>
+                    <p >9.1.8 El programa debe disponer de al menos un aula con equipo de cómputo 
+                        y audiovisual permanentemente instalado que podrá ser utilizada para cursos normales 
+                        y especializados.
+                    </p>
 
-                    <p >Número de aulas con equipo de cómputo
+                    <p >Número de aulas con equipo de cómputo.
                     </p>
                     <textarea id="R9-1-8" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <br><br>
 
-                    <p >Número de aulas con equipo audiovisual
+                    <p >Número de aulas con equipo audiovisual.
                     </p>
                     <textarea id="R9-1-8A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
@@ -877,8 +905,10 @@
                 </div>
 
                 <div class="preguntasCategoria" class="preguntasCategoria" id="SC_9.1.9">
-                    <p >9.1.9 Los profesores de tiempo completo, tres cuartos y medio tiempo deben contar con cubículos. El resto de los profesores deben contar con lugares adecuados para su trabajo.
-                        </p>
+                    <p >9.1.9 Los profesores de tiempo completo, tres cuartos y medio tiempo deben 
+                        contar con cubículos. El resto de los profesores deben contar con lugares 
+                        adecuados para su trabajo.
+                    </p>
 
 
                     <p >¿Qué tipo de profesores cuenta con cubículos?
@@ -918,7 +948,7 @@
 
                 <div class="preguntasCategoria" class="preguntasCategoria" id="SC_9.1.10">
                     <p >9.1.10 Deben existir espacios para asesorías a estudiantes.
-                        </p>
+                    </p>
 
                     <p >¿Existen espacios para asesorías a estudiantes? En caso afirmativo, descríbalos:
                     </p>
@@ -950,8 +980,10 @@
                 </div>
 
                 <div class="preguntasCategoria" class="preguntasCategoria" id="SC_9.1.11">
-                    <p >9.1.11 El programa debe disponer de auditorios y/o salas debidamente acondicionados para actividades académicas, investigación, y de preservación y difusión de la cultura.
-                        </p>
+                    <p >9.1.11 El programa debe disponer de auditorios y/o salas debidamente 
+                        acondicionados para actividades académicas, investigación, y de preservación 
+                        y difusión de la cultura.
+                    </p>
                     <textarea id="R9-1-11" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -981,8 +1013,10 @@
                 </div>
 
                 <div class="preguntasCategoria" class="preguntasCategoria" id="SC_9.1.12">
-                    <p >9.1.12 En los espacios mencionados en el criterio anterior, se debe tener un lugar cómodo por cada diez estudiantes inscritos en el programa, ofreciendo las condiciones adecuadas de higiene y seguridad.
-                        </p>
+                    <p >9.1.12 En los espacios mencionados en el criterio anterior, se debe tener 
+                        un lugar cómodo por cada diez estudiantes inscritos en el programa, 
+                        ofreciendo las condiciones adecuadas de higiene y seguridad.
+                    </p>
 
 
                     <p >De los espacios mencionados anteriormente mencionar:
@@ -991,7 +1025,7 @@
 
                     <br><br>
 
-                    <p >Número de lugares disponibles
+                    <p >Número de lugares disponibles.
                     </p>
                     <textarea id="R9-1-12A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
@@ -1046,7 +1080,8 @@
                 </div>
 
                 <div class="preguntasCategoria" class="preguntasCategoria" id="SC_9.1.13">
-                    <p>9.1.13 Las facilidades sanitarias para los estudiantes y profesores del programa deben ser adecuadas.</p>
+                    <p>9.1.13 Las facilidades sanitarias para los estudiantes y profesores del programa 
+                        deben ser adecuadas.</p>
                     <br><br>
                     <p>¿Considera las facilidades sanitarias adecuadas?</p>
                     <div class="opcMult">
@@ -1089,11 +1124,13 @@
                 
                 <div class="parrafo" id="9.2">
                     <p >
-                        9.2 Equipamiento. El Software recomendado para cada una de las asignaturas debe existir y estar disponible para el uso de los estudiantes y personal docente.
+                        9.2 Equipamiento. El Software recomendado para cada una de las asignaturas 
+                        debe existir y estar disponible para el uso de los estudiantes y personal docente.
                     </p>
                 </div>
                 <div class="preguntasCategoria" class="preguntasCategoria" id="SC_9.2.1">
-                    <p>9.2.1 Para cada asignatura mencionar el software que se utiliza y si está disponible dentro de la institución.
+                    <p>9.2.1 Para cada asignatura mencionar el software que se utiliza y si está disponible 
+                        dentro de la institución.
                     </p>
                     <textarea id="R9-2-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -1124,10 +1161,13 @@
 
 
                 <div class="preguntasCategoria" id="SC_9.2.2">
-                    <p >9.2.2 Todo programa debe contar como mínimo con el siguiente software: Lenguajes de programación, herramientas CASE, manejadores de base de datos y paquetería en general.
+                    <p >9.2.2 Todo programa debe contar como mínimo con el siguiente software: 
+                        Lenguajes de programación, herramientas CASE, manejadores de base de 
+                        datos y paquetería en general.
                     </p>
 
-                    <p >Describir los siguientes elementos de la infraestructura de software, incluyendo versiones y número de licencias:
+                    <p >Describir los siguientes elementos de la infraestructura de software, 
+                        incluyendo versiones y número de licencias:
                     </p>
                     <textarea id="R9-2-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
@@ -1157,15 +1197,19 @@
                 </div>
 
                 <div class="preguntasCategoria" id="SC_9.2.3">
-                    <p >9.2.3 El programa debe tener a su disposición dentro de la institución, el equipo de cómputo indispensable para las prácticas de las materias que lo requieran.
+                    <p >9.2.3 El programa debe tener a su disposición dentro de la institución, 
+                        el equipo de cómputo indispensable para las prácticas de las materias 
+                        que lo requieran.
                     </p>
 
-                    <p >Número de estudiantes inscritos en el programa
+                    <p >Número de estudiantes inscritos en el programa.
                     </p>
                     <textarea id="R9-2-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <br><br>
 
-                    <p>Explique de qué manera se garantiza que el equipo de cómputo requerido esté disponible para la realización de las prácticas en las asignaturas del programa que así lo requieran:
+                    <p>Explique de qué manera se garantiza que el equipo de cómputo requerido 
+                        esté disponible para la realización de las prácticas en las asignaturas del 
+                        programa que así lo requieran:
                     </p>
                     <textarea id="R9-2-3A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- <img src="" alt=""><button>Guardar</button> -->
@@ -1196,16 +1240,19 @@
 
 
                 <div class="preguntasCategoria" id="SC_9.2.4">
-                    <p >9.2.4 Se  debe contar con un número suficiente de computadoras que estén disponibles y accesibles para los estudiantes del programa en función el número de horas de infraestructura de cómputo requeridas por el Plan de Estudios.
+                    <p >9.2.4 Se debe contar con un número suficiente de computadoras 
+                        que estén disponibles y accesibles para los estudiantes del programa 
+                        en función el número de horas de infraestructura de cómputo requeridas 
+                        por el Plan de Estudios.
                     </p>
 
-                    <p >Proporcionar la siguiente información
+                    <p >Proporcionar la siguiente información:
                     </p>
 
-                    <p >Horas requeridas por el plan de estudiosen un período</p>
+                    <p >Horas requeridas por el plan de estudios en un período.</p>
                     <textarea id="R9-2-4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
-                    <p >Horas disponibles de infraestructura de cómputo
+                    <p >Horas disponibles de infraestructura de cómputo.
                     </p>
                     <textarea id="R9-2-4A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
@@ -1236,10 +1283,13 @@
                 </div>
 
                 <div class="preguntasCategoria" id="SC_9.2.5">
-                    <p >9.2.5 Se debe contar con al menos tres plataformas de cómputo diferentes que estén disponibles y accesibles para los estudiantes y el personal docente del programa.
+                    <p >9.2.5 Se debe contar con al menos tres plataformas de cómputo diferentes 
+                        que estén disponibles y accesibles para los estudiantes y el personal 
+                        docente del programa.
                     </p>
 
-                    <p >Describir los tipos de plataformas de cómputo disponibles para los estudiantes y  el personal docente del programa:
+                    <p >Describir los tipos de plataformas de cómputo disponibles para los estudiantes
+                         y el personal docente del programa:
                     </p>
                     <textarea id="R9-2-5" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
@@ -1269,10 +1319,13 @@
                 </div>
 
                 <div class="preguntasCategoria" id="SC_9.2.6">
-                    <p >9.2.6 Se debe contar con capacidades de impresión adecuadas para los estudiantes y profesores del programa.
+                    <p >9.2.6 Se debe contar con capacidades de impresión adecuadas para los 
+                        estudiantes y profesores del programa.
                     </p>
 
-                    <p >El programa académico debe garantizar el servicio de impresión en aquellos espacios físicos que la institución haya dispuesto para apoyo al estudiante.
+                    <p >El programa académico debe garantizar el servicio de impresión en 
+                        aquellos espacios físicos que la institución haya dispuesto para apoyo 
+                        al estudiante.
                     </p>
                     <textarea id="R9-2-6" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
@@ -1303,13 +1356,15 @@
                 </div>
 
                 <div class="preguntasCategoria" id="SC_9.2.7">
-                    <p >9.2.7 Debe contarse con al menos una red de área local y una amplia, con  software adecuado para las aplicaciones más comunes del programa.
+                    <p >9.2.7 Debe contarse con al menos una red de área local y una amplia, 
+                        con software adecuado para las aplicaciones más comunes del programa.
                     </p>
 
-                    <p >El programa académico debe garantizar el servicio de red en aquellos espacios físicos que la institución haya dispuesto para apoyo al estudiante.
+                    <p >El programa académico debe garantizar el servicio de red en aquellos 
+                        espacios físicos que la institución haya dispuesto para apoyo al estudiante.
                     </p>
 
-                    <p >El equipo de cómputo de la Institución ¿está conectado en red? .
+                    <p >El equipo de cómputo de la Institución ¿está conectado en red?
                     </p>
                     <div class="opcMult">
                         <select name="select" id="RS9-2-7A1" onchange="mostrarInput(this)">
@@ -1319,14 +1374,15 @@
                         </select>
                     </div>
                         <p>En caso afirmativo, diga:</p>
-                        <p >a) Qué equipo de cómputo (servidores y clientes) soporta la red y cuáles son sus características?
+                        <p >a) Qué equipo de cómputo (servidores y clientes) soporta la red y cuáles 
+                            son sus características?
                         </p>
                         <textarea id="R9-2-7" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <br><br>
 
 
 
-                    <p >b)¿Hay acceso a Internet a través de la red?
+                    <p >b) ¿Hay acceso a Internet a través de la red?
                     </p>
                     <div class="opcMult">
                         <select name="select" id="RS9-2-7A2" onchange="mostrarInput(this)">
@@ -1338,7 +1394,7 @@
 
                     <br><br>
 
-                    <p >Para profesores
+                    <p >Para profesores.
                     </p>
                     <div class="opcMult">
                         <select name="select" id="RS9-2-7A3" onchange="mostrarInput(this)">
@@ -1350,7 +1406,7 @@
 
                     <br><br>
 
-                    <p >Para estudiantes
+                    <p >Para estudiantes.
                     </p>
                     <div class="opcMult">
                         <select name="select" id="RS9-2-7A4" onchange="mostrarInput(this)">
@@ -1362,13 +1418,15 @@
 
                     <br><br>
 
-                    <p >c) En caso afirmativo a la pregunta anterior ¿cuál es el tiempo promedio disponible para cada estudiante a Internet por semana?
+                    <p >c) En caso afirmativo a la pregunta anterior ¿cuál es el tiempo promedio 
+                        disponible para cada estudiante a Internet por semana?
                     </p>
                     <textarea id="R9-2-7A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <br><br>
 
-                    <p >d) ¿Con qué paquetes de software se cuenta en la red académica de la institución para apoyo del programa que se evalúa?
+                    <p >d) ¿Con qué paquetes de software se cuenta en la red académica de la 
+                        institución para apoyo del programa que se evalúa?
                     </p>
                     <textarea id="R9-2-7A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
@@ -1400,10 +1458,17 @@
 
 
                 <div class="preguntasCategoria" id="SC_9.2.8">
-                    <p>9.2.8 Deberá haber facilidades de acceso al uso del equipo y manuales, horarios amplios y flexibles para atender la demanda, así como personal capacitado de soporte.  El equipo deberá contar con buen mantenimiento y planes de adecuación a cambios tecnológicos
+                    <p>9.2.8 Deberá haber facilidades de acceso al uso del equipo y manuales, 
+                        horarios amplios y flexibles para atender la demanda, así como personal 
+                        capacitado de soporte. El equipo deberá contar con buen mantenimiento 
+                        y planes de adecuación a cambios tecnológicos.
+
                     </p>
 
-                    <p >Describir la documentación para los sistemas de hardware y software disponibles para los estudiantes y profesores Explicar cómo los estudiantes y profesores tienen acceso adecuado a la documentación, así como el horario en que está disponible.
+                    <p >Describir la documentación para los sistemas de hardware y software 
+                        disponibles para los estudiantes y profesores Explicar cómo los estudiantes 
+                        y profesores tienen acceso adecuado a la documentación, así como el horario 
+                        en que está disponible.
                     </p>
                     <textarea id="R9-2-8" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
@@ -1434,10 +1499,12 @@
                 </div>
 
                 <div class="preguntasCategoria" id="SC_9.2.9">
-                    <p >9.2.9 Los Servicios de Cómputo deben ser funcionales y contar con un programa de mantenimiento adecuado.
+                    <p >9.2.9 Los Servicios de Cómputo deben ser funcionales y contar 
+                        con un programa de mantenimiento adecuado.
                     </p>
 
-                    <p >Deben garantizarse los servicios de cómputo al menos en aquellos espacios destinados como apoyo para estudiantes y facilitadores o profesores
+                    <p >Deben garantizarse los servicios de cómputo al menos en aquellos 
+                        espacios destinados como apoyo para estudiantes y facilitadores o profesores.
                     </p>
 
                     <p >Los horarios de servicio en que se prestan los servicios de cómputo son los siguientes:
@@ -1450,7 +1517,8 @@
 
                     <br><br>
 
-                    <p >¿Qué tipo de personal está disponible para instalar, mantener y administrar el hardware, software y redes de la institución?
+                    <p >¿Qué tipo de personal está disponible para instalar, mantener y administrar el 
+                        hardware, software y redes de la institución?
                     </p>
                     <textarea id="R9-2-9A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
@@ -1481,7 +1549,9 @@
                 </div>
 
                 <div class="preguntasCategoria" id="SC_9.2.10">
-                    <p >9.2.10 Los Servicios de Cómputo deben contar con reglamentos que garanticen su buen funcionamiento y que estén a disponibilidad de los usuarios.
+                    <p >9.2.10 Los Servicios de Cómputo deben contar con reglamentos que 
+                        garanticen su buen funcionamiento y que estén a disponibilidad de 
+                        los usuarios.
                     </p>
 
                     <p >¿Existe un reglamento de los servicios de cómputo?
@@ -1505,7 +1575,7 @@
                         </select>
                     </div>
 
-                    <p>Favor de proporcionar una copia del mismo.</p>
+                    <p>Favor de proporcionar una copia de este.</p>
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
@@ -1534,10 +1604,15 @@
 
 
                 <div class="preguntasCategoria" id="SC_9.2.11">
-                    <p >9.2.11 Los profesores del programa deben contar con equipo de cómputo que les permita desempeñar adecuadamente su función. En el caso de los profesores de tiempo completo, estos deberán contar con una computadora para su uso exclusivo.
+                    <p >9.2.11 Los profesores del programa deben contar con equipo 
+                        de cómputo que les permita desempeñar adecuadamente su función. 
+                        En el caso de los profesores de tiempo completo, estos deberán contar 
+                        con una computadora para su uso exclusivo.
                     </p>
 
-                    <p >Describir las facilidades de cómputo disponibles para los profesores del programa. Incluir los recursos de este tipo disponibles para las oficinas del personal académico.
+                    <p >Describir las facilidades de cómputo disponibles para los profesores 
+                        del programa. Incluir los recursos de este tipo disponibles para las 
+                        oficinas del personal académico.
                     </p>
                     <textarea id="R9-2-11" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
@@ -1569,10 +1644,12 @@
 
                 
                 <div class="preguntasCategoria" id="SC_9.2.12">
-                    <p >9.2.12 Los Servicios de Cómputo deben contar con el soporte técnico adecuado.
+                    <p >9.2.12 Los Servicios de Cómputo deben contar con el 
+                        soporte técnico adecuado.
                     </p>
 
-                    <p >¿Existen técnicos de administración de sistemas de tiempo completo? ¿Participan estudiantes en el apoyo a las actividades de soporte técnico?
+                    <p >¿Existen técnicos de administración de sistemas de tiempo completo? 
+                        ¿Participan estudiantes en el apoyo a las actividades de soporte técnico?
                     </p>
                     <textarea id="R9-2-12" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
@@ -1623,7 +1700,9 @@
 
 
                 <div class="preguntasCategoria" id="SC_9.2.13">
-                    <p >9.2.13 Es necesario que existan registros y estadísticas referentes al uso del equipo de cómputo, para determinar índices de utilización e indicadores sobre la calidad del servicio.
+                    <p >9.2.13 Es necesario que existan registros y estadísticas referentes al 
+                        uso del equipo de cómputo, para determinar índices de utilización 
+                        e indicadores sobre la calidad del servicio.
                     </p>
                   
 
@@ -1638,7 +1717,8 @@
                     </div>
                     <br>
 
-                    <p >En caso afirmativo indicar el número de usuarios en promedio diario atendidos en los tres últimos períodos escolares
+                    <p >En caso afirmativo indicar el número de usuarios en promedio diario 
+                        atendidos en los tres últimos períodos escolares.
                     </p>
                     <textarea id="R9-2-13" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     
@@ -1671,7 +1751,14 @@
                 </div>
 
                 <div class="preguntasCategoria" id="SC_9.2.14">
-                    <p >9.2.14 Específicamente, el personal técnico, es suficiente y cuenta con el perfil adecuado para dar soporte, no solo a la infraestructura de telecomunicaciones y redes, sino también para el desarrollo de aplicaciones, incorporación de tecnologías emergentes, administración y hospedaje, desarrollo web, minería de datos, soluciones inteligentes, reingeniería de procesos mediante el uso de las TIC y la administración de la propia plataforma tecnológica y de aprendizaje que soporta el modelo educativo, ya sea a distancia o presencial.
+                    <p >9.2.14 Específicamente, el personal técnico, es suficiente y cuenta con 
+                        el perfil adecuado para dar soporte, no solo a la infraestructura de 
+                        telecomunicaciones y redes, sino también para el desarrollo de aplicaciones, 
+                        incorporación de tecnologías emergentes, administración y hospedaje, 
+                        desarrollo web, minería de datos, soluciones inteligentes, reingeniería de 
+                        procesos mediante el uso de las TIC y la administración de la propia 
+                        plataforma tecnológica y de aprendizaje que soporta el modelo educativo, 
+                        ya sea a distancia o presencial.
                     </p>
                     <div class="opcMult">
                         <select name="select" id="RS9-2-14A1" onchange="mostrarInput(this)">
@@ -1731,16 +1818,17 @@
                     </script>
 
 
-<!-- Ventanas emergentes de los PDF Copiar -->
+ <!-- Ventanas emergentes de los PDF Copiar -->
 
 
 
-<div id="subirarchivos" class="oculto">
+ <div id="subirarchivos" class="oculto">
             <br>
             <form class="from-login1" action="../funcion_guardarpdf/upload.php" method="post" enctype="multipart/form-data" id="uploadForm">
             <h2>Subir PDF</h2>
                 <label class="custom-file-label">
                     <input type="file" name="archivo[]" accept=".pdf" class="custom-file-input" id="file-input1" multiple>
+                    
                     <span class="icon"><i class="fa fa-file-pdf-o"></i></span> Seleccionar PDF
                 </label>
                 <div id="selected-files1" class="titulosArchs">
@@ -1749,6 +1837,11 @@
                 <button id="botonSubirChido" class="cargar-pdf" data-id="9.1.1">
                     <i class="fas fa-upload"></i> Subir PDF
                 </button>
+
+                <!-- Esta es la imagen de carga -->
+                <img id="imgcarga" class="oculto" src="../imagenes/cargando.webp" alt="Cargando..." />
+                <!-- ----------->
+                
 
                 <br><br>
             </form>
@@ -1842,6 +1935,7 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
+        var imagenCargando = document.getElementById("imgcarga");
         var button = document.querySelector(".cargar-pdf");
         var form = document.getElementById("uploadForm");
 
@@ -1871,6 +1965,16 @@
             formData.append("id", id);
 
             var xhr = new XMLHttpRequest();
+            
+
+            
+            //ESTO ES PARA LA ANIMACION DE CARGA DE SUBIR ARCHIVOS
+            button.className = "oculto";
+            imagenCargando.classList.remove("oculto");
+            imagenCargando.classList.add("loading-gif");
+            //HASTA AQUÍ
+            
+
             xhr.open("POST", "../funcion_guardarpdf/upload.php", true);
 
             xhr.onreadystatechange = function () {
@@ -1884,13 +1988,29 @@
                             selectedFiles.appendChild(fileItem);           
                             
                         };
+                        
                         limpiarSeleccion();
+
+                        //ESTO ES PARA LA ANIMACION DE CARGA DE SUBIR ARCHIVOS
+                        button.className = "cargar-pdf";
+                        imagenCargando.classList.remove("loading-gif");
+                        imagenCargando.classList.add("oculto");
+                        //HASTA AQUÍ
+
                         Swal.fire({
                             title: 'Archivos subidos correctamente.',
                             icon: 'success',
                             confirmButtonColor: '#145070'
                         });
                     } else {
+                        
+                        //ESTO ES PARA LA ANIMACION DE CARGA DE SUBIR ARCHIVOS
+                        button.className = "cargar-pdf";
+                        imagenCargando.classList.remove("loading-gif");
+                        imagenCargando.classList.add("oculto");
+                        //HASTA AQUÍ
+
+
                         Swal.fire({
                             title: 'Error de carga.',
                             icon: 'error',
@@ -1953,5 +2073,4 @@
         });
     });
 </script>
-
 

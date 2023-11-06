@@ -43,7 +43,7 @@
 
             <div class="menu_usuario">
                 <button class="menu_estilo_usuario">
-                    <img src="imagenes/boton_usuario.png" alt="Usuario"> 
+                    <img src="../PrincipalUsuario/Usuario.png" alt="Usuario"> 
                     <div class="texto"> <?php echo $nombre; ?> </div>
                 </button>
                 <div class="contenido_del_menu_usuarios">
@@ -57,7 +57,7 @@
 
     <div class="contenedor-botones">
         <button class="btn1">
-            <a href="pagina_emergente.html">
+            <a href="../categorias/categoria1.php">
                 <img src="imagenes/autoevaluacion.png" alt="Autoevaluación">
             </a>
         </button>

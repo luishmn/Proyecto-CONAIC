@@ -268,7 +268,6 @@
                 <div class="preguntasCategoria" id="SC_11.1.1">
                     <p>Estudiantes que aprobaron el EGEL-CENEVAL
                      </p>
-                    <input type="text" id="RA1" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
@@ -292,7 +291,6 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                    <div class="btnListo"><button id="guardarRespuesta1">Guardar</button></div>
                 </div>
 
             <div>
@@ -304,7 +302,6 @@
                 <div class="preguntasCategoria" id="SC_11.2.1">
                     <p>Estructura Financiera de la Facultad, Escuela, División o Departamento
                     </p>
-                    <input type="text" id="RA2" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
@@ -328,7 +325,6 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                    <div class="btnListo"><button id="guardarRespuesta2">Guardar</button></div>
             
             </div>
 
@@ -340,14 +336,10 @@
                 </div>
                 <div class="preguntasCategoria" id="SC_11.3.1">
                     <p>Nota: Llenar sólo en caso de re-acreditación.                    </p>
-                    <input type="text" id="RA3" placeholder="Escribe tu respuesta aquí...">
                     <p>Seguimiento de Recomendaciones</p>
-                    <input type="text"  id="RA3-A1" placeholder="Escribe tu respuesta aquí...">
                     <p>Recomendaciones al programa académico</p>
-                    <input type="text" id="RA3-A2" placeholder="Escribe tu respuesta aquí...">
                     <p>El anexo 3 relativo a las recomendaciones es para el instrumento que se utilice en la visita de campo.
                     </p>
-                    <input type="text" id="RA3-A3" placeholder="Escribe tu respuesta aquí...">
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
@@ -371,7 +363,6 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                    <div class="btnListo"><button id="guardarRespuesta3">Guardar</button></div>
                 </div>
             </div>
 
@@ -382,22 +373,30 @@
 
 
 
-    <!-- Ventanas emergentes de los PDF Copiar -->
+     <!-- Ventanas emergentes de los PDF Copiar -->
 
-    <div id="subirarchivos" class="oculto">
+
+
+     <div id="subirarchivos" class="oculto">
             <br>
             <form class="from-login1" action="../funcion_guardarpdf/upload.php" method="post" enctype="multipart/form-data" id="uploadForm">
             <h2>Subir PDF</h2>
                 <label class="custom-file-label">
                     <input type="file" name="archivo[]" accept=".pdf" class="custom-file-input" id="file-input1" multiple>
+                    
                     <span class="icon"><i class="fa fa-file-pdf-o"></i></span> Seleccionar PDF
                 </label>
                 <div id="selected-files1" class="titulosArchs">
                 </div>
                 <br>
-                <button id="botonSubirChido" class="cargar-pdf" data-id="subanexos">
+                <button id="botonSubirChido" class="cargar-pdf" data-id="anexo1">
                     <i class="fas fa-upload"></i> Subir PDF
                 </button>
+
+                <!-- Esta es la imagen de carga -->
+                <img id="imgcarga" class="oculto" src="../imagenes/cargando.webp" alt="Cargando..." />
+                <!-- ----------->
+                
 
                 <br><br>
             </form>
@@ -491,6 +490,7 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
+        var imagenCargando = document.getElementById("imgcarga");
         var button = document.querySelector(".cargar-pdf");
         var form = document.getElementById("uploadForm");
 
@@ -520,6 +520,16 @@
             formData.append("id", id);
 
             var xhr = new XMLHttpRequest();
+            
+
+            
+            //ESTO ES PARA LA ANIMACION DE CARGA DE SUBIR ARCHIVOS
+            button.className = "oculto";
+            imagenCargando.classList.remove("oculto");
+            imagenCargando.classList.add("loading-gif");
+            //HASTA AQUÍ
+            
+
             xhr.open("POST", "../funcion_guardarpdf/upload.php", true);
 
             xhr.onreadystatechange = function () {
@@ -533,13 +543,29 @@
                             selectedFiles.appendChild(fileItem);           
                             
                         };
+                        
                         limpiarSeleccion();
+
+                        //ESTO ES PARA LA ANIMACION DE CARGA DE SUBIR ARCHIVOS
+                        button.className = "cargar-pdf";
+                        imagenCargando.classList.remove("loading-gif");
+                        imagenCargando.classList.add("oculto");
+                        //HASTA AQUÍ
+
                         Swal.fire({
                             title: 'Archivos subidos correctamente.',
                             icon: 'success',
                             confirmButtonColor: '#145070'
                         });
                     } else {
+                        
+                        //ESTO ES PARA LA ANIMACION DE CARGA DE SUBIR ARCHIVOS
+                        button.className = "cargar-pdf";
+                        imagenCargando.classList.remove("loading-gif");
+                        imagenCargando.classList.add("oculto");
+                        //HASTA AQUÍ
+
+
                         Swal.fire({
                             title: 'Error de carga.',
                             icon: 'error',
@@ -602,5 +628,4 @@
         });
     });
 </script>
-
 

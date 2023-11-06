@@ -1,3 +1,21 @@
+<?php
+    session_start();
+    //$_SESSION['loggedin']= false;
+    // Verifica si el usuario ha iniciado sesión
+    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+        // Accede al nombre de usuario almacenado en la sesión
+        $nombreUsuario = $_SESSION['username'];
+        $correoUsuario = $_SESSION['email'];
+    } else {
+        // Si no ha iniciado sesión, redirige al usuario a la página de inicio de sesión
+        header('Location: ../index.php');
+        exit;
+    }
+
+    $nombre = substr($nombreUsuario, 0, 10);
+
+?>
+
 <meta charset="UTF-8">
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -15,15 +33,28 @@
 
 </head>
 <body>
+    
+     
     <div id="logoFondo"> <!-- ESTE ES EL DIV QUE TIENE EL LOGO QUE APARECE AL FONDO, CUBRE TODA LA PANTALLA ASI QUE POR ESO DENTRO DE EL SE PONEN OTROS ELEMENTOS -->
        
+    
 
+    <header>
         <div class="barra-superior"><!-- ESTE ES EL DIV DE LA BARRA SUPERIOR -->
+        <a href="/PrincipalAdministrador/index.php" class="enlace-inicio" ><i class="fas fa-home"></i></a>
+
+     
+        
+            <label class="L1">Usuarios</label>
+
+            <button class="menu_estilo_usuario">
+                <img src="../PrincipalUsuario/usuario.png" alt="Usuario"> 
+                <div class="texto"> <?php echo $nombre; ?></div>
+            </button>
+
             
-            <div class ="tituloPag">
-                <p id="textoTituloPag">Usuarios</p>
-            </div>
         </div>
+    </header>
 
 
 
@@ -31,9 +62,9 @@
     <br><br><br>
     <!--logo superior-->
     <nav class="nav">
-        <a href="../Principal%20Administrador/index.php">
+        
         <img src="../imagenes/logo_CONAIC_letras.png" alt="Conaic ITSZaS" class="logo_letras" width="336" height="198" >
-        </a>
+        
     </nav>
 
     <!--barra de busqueda-->

@@ -29,7 +29,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categoria 7</title>
+    <title>Categoría 7</title>
     <link rel="stylesheet" href="autoevaluacion.css">
     <script src="enviarConsulta.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -359,7 +359,7 @@
 
             <button class="menu_estilo_usuario">
                 <img src="../PrincipalUsuario/usuario.png" alt="Usuario"> 
-                <div class="texto"> <?php echo $nombreUsuario; ?></div>
+                <div class="texto"> <?php echo $nombre; ?></div>
             </button>
 
             
@@ -448,7 +448,7 @@
 
 
         <div class="cuadroCate">
-            <div class="titulo_categoria">Categoría 7: Vinculación - Extensión
+            <div class="titulo_categoria">Categoría 7: Vinculación – Extensión
 
             </div>
 
@@ -598,9 +598,10 @@
                 <p>7.1.4 Existen programas de formación de estudiantes mediante 
                     becas otorgadas por las empresas para realizar actividades técnicas 
                     en proyectos específicos o bien para que sean capacitados en temas
-                    disciplinarios emergentes  propios de la disciplina del programa y/o 
+                    disciplinarios emergentes propios de la disciplina del programa y/o 
                     tengan acceso a equipos especializados con tecnología de punta; 
                     elementos que facilitan su inserción en el mercado laboral.
+
                 </p>
 
                 <div class="opcMult" °>
@@ -712,7 +713,8 @@
                     propios egresados para conocer su opinión sobre el plan 
                     de estudios que cursaron; así como mecanismos para que 
                     los resultados de las encuestas se tomen en consideración 
-                    para la reestructuración del plan de estudios ?
+                    para la reestructuración del plan de estudios?
+
                 </p>
 
                 <div class="opcMult" °>
@@ -773,9 +775,10 @@
 
 
             <div class="preguntasCategoria" id="SC_7.2.3">
-                <p>7.2.3 ¿ Se efectúan encuestas periódicas a los egresados para  
-                    conocer su  situación laboral y el grado de
-                    satisfacción respecto a la pertinencia del  programa?
+                <p>7.2.3 ¿Se efectúan encuestas periódicas a los egresados para  
+                    conocer su situación laboral y el grado de
+                    satisfacción respecto a la pertinencia del programa?
+
                 </p>
 
                 <div class="opcMult" °>
@@ -852,7 +855,8 @@
                 <br>
 
                 <p>En caso afirmativo describa brevemente en qué consisten 
-                    estos convenios  y presente evidencias de operación de los mismos.
+                    estos convenios y presente evidencias de operación de los mismos.
+
                 </p>
                 <textarea id="R7-3-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
@@ -1207,9 +1211,10 @@
             </div>
 
             <div class="preguntasCategoria" id="SC_7.6.4">
-                <p>7.6.4  El programa debe contar con un servicio externo 
+                <p>7.6.4 El programa debe contar con un servicio externo 
                     (asesorías, consultorías) a empresas e instituciones del sector 
                     público, que permitan obtener recursos económicos adicionales.
+
                 </p>
                 <div class="opcMult" °>
                     <select name="select" id="RS7-6-4A1">
@@ -1303,16 +1308,17 @@
         </div>
 
 
-<!-- Ventanas emergentes de los PDF Copiar -->
+ <!-- Ventanas emergentes de los PDF Copiar -->
 
 
 
-<div id="subirarchivos" class="oculto">
+ <div id="subirarchivos" class="oculto">
             <br>
             <form class="from-login1" action="../funcion_guardarpdf/upload.php" method="post" enctype="multipart/form-data" id="uploadForm">
             <h2>Subir PDF</h2>
                 <label class="custom-file-label">
                     <input type="file" name="archivo[]" accept=".pdf" class="custom-file-input" id="file-input1" multiple>
+                    
                     <span class="icon"><i class="fa fa-file-pdf-o"></i></span> Seleccionar PDF
                 </label>
                 <div id="selected-files1" class="titulosArchs">
@@ -1321,6 +1327,11 @@
                 <button id="botonSubirChido" class="cargar-pdf" data-id="7.1.1">
                     <i class="fas fa-upload"></i> Subir PDF
                 </button>
+
+                <!-- Esta es la imagen de carga -->
+                <img id="imgcarga" class="oculto" src="../imagenes/cargando.webp" alt="Cargando..." />
+                <!-- ----------->
+                
 
                 <br><br>
             </form>
@@ -1414,6 +1425,7 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
+        var imagenCargando = document.getElementById("imgcarga");
         var button = document.querySelector(".cargar-pdf");
         var form = document.getElementById("uploadForm");
 
@@ -1443,6 +1455,16 @@
             formData.append("id", id);
 
             var xhr = new XMLHttpRequest();
+            
+
+            
+            //ESTO ES PARA LA ANIMACION DE CARGA DE SUBIR ARCHIVOS
+            button.className = "oculto";
+            imagenCargando.classList.remove("oculto");
+            imagenCargando.classList.add("loading-gif");
+            //HASTA AQUÍ
+            
+
             xhr.open("POST", "../funcion_guardarpdf/upload.php", true);
 
             xhr.onreadystatechange = function () {
@@ -1456,13 +1478,29 @@
                             selectedFiles.appendChild(fileItem);           
                             
                         };
+                        
                         limpiarSeleccion();
+
+                        //ESTO ES PARA LA ANIMACION DE CARGA DE SUBIR ARCHIVOS
+                        button.className = "cargar-pdf";
+                        imagenCargando.classList.remove("loading-gif");
+                        imagenCargando.classList.add("oculto");
+                        //HASTA AQUÍ
+
                         Swal.fire({
                             title: 'Archivos subidos correctamente.',
                             icon: 'success',
                             confirmButtonColor: '#145070'
                         });
                     } else {
+                        
+                        //ESTO ES PARA LA ANIMACION DE CARGA DE SUBIR ARCHIVOS
+                        button.className = "cargar-pdf";
+                        imagenCargando.classList.remove("loading-gif");
+                        imagenCargando.classList.add("oculto");
+                        //HASTA AQUÍ
+
+
                         Swal.fire({
                             title: 'Error de carga.',
                             icon: 'error',
@@ -1525,3 +1563,4 @@
         });
     });
 </script>
+
