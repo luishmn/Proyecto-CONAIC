@@ -29,7 +29,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categoria 7</title>
+    <title>Categoría 7</title>
     <link rel="stylesheet" href="autoevaluacion.css">
     <script src="enviarConsulta.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -448,7 +448,7 @@
 
 
         <div class="cuadroCate">
-            <div class="titulo_categoria">Categoría 7: Vinculación - Extensión
+            <div class="titulo_categoria">Categoría 7: Vinculación – Extensión
 
             </div>
 
@@ -598,9 +598,10 @@
                 <p>7.1.4 Existen programas de formación de estudiantes mediante 
                     becas otorgadas por las empresas para realizar actividades técnicas 
                     en proyectos específicos o bien para que sean capacitados en temas
-                    disciplinarios emergentes  propios de la disciplina del programa y/o 
+                    disciplinarios emergentes propios de la disciplina del programa y/o 
                     tengan acceso a equipos especializados con tecnología de punta; 
                     elementos que facilitan su inserción en el mercado laboral.
+
                 </p>
 
                 <div class="opcMult" °>
@@ -712,7 +713,8 @@
                     propios egresados para conocer su opinión sobre el plan 
                     de estudios que cursaron; así como mecanismos para que 
                     los resultados de las encuestas se tomen en consideración 
-                    para la reestructuración del plan de estudios ?
+                    para la reestructuración del plan de estudios?
+
                 </p>
 
                 <div class="opcMult" °>
@@ -773,9 +775,10 @@
 
 
             <div class="preguntasCategoria" id="SC_7.2.3">
-                <p>7.2.3 ¿ Se efectúan encuestas periódicas a los egresados para  
-                    conocer su  situación laboral y el grado de
-                    satisfacción respecto a la pertinencia del  programa?
+                <p>7.2.3 ¿Se efectúan encuestas periódicas a los egresados para  
+                    conocer su situación laboral y el grado de
+                    satisfacción respecto a la pertinencia del programa?
+
                 </p>
 
                 <div class="opcMult" °>
@@ -852,7 +855,8 @@
                 <br>
 
                 <p>En caso afirmativo describa brevemente en qué consisten 
-                    estos convenios  y presente evidencias de operación de los mismos.
+                    estos convenios y presente evidencias de operación de los mismos.
+
                 </p>
                 <textarea id="R7-3-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
@@ -1207,9 +1211,10 @@
             </div>
 
             <div class="preguntasCategoria" id="SC_7.6.4">
-                <p>7.6.4  El programa debe contar con un servicio externo 
+                <p>7.6.4 El programa debe contar con un servicio externo 
                     (asesorías, consultorías) a empresas e instituciones del sector 
                     público, que permitan obtener recursos económicos adicionales.
+
                 </p>
                 <div class="opcMult" °>
                     <select name="select" id="RS7-6-4A1">

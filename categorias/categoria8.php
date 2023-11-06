@@ -29,7 +29,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categoria 8</title>
+    <title>Categoría 8</title>
     <link rel="stylesheet" href="autoevaluacion.css">
     <script src="enviarConsulta.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -341,12 +341,12 @@
             <div>
             <div class="parrafo" id="8.1">
                 <p>
-                   8.1 Líneas y proyectos de investigación.Debe existir una política institucional que fije claramente las líneas de investigación y la normatividad; las líneas de investigación deben agrupar proyectos con un responsable; y los líderes vinculados a las líneas de investigación deben contar con grados académicos pertinentes.
+                    8.1 Líneas y proyectos de investigación. Debe existir una política institucional que fije claramente las líneas de investigación y la normatividad; las líneas de investigación deben agrupar proyectos con un responsable; y los líderes vinculados a las líneas de investigación deben contar con grados académicos pertinentes.
                 </p>
             </div>
 
             <div class="preguntasCategoria" id="SC_8.1.1">
-                <p>8.1.1 ¿Existe una política institucional que fije claramente las líneas de investigación con su respectiva normatividad?  </p>
+                <p>8.1.1 ¿Existe una política institucional que fije claramente las líneas de investigación con su respectiva normatividad?</p>
                 <div class="opcMult"°>
                     <select name="select" id="RS8-1-1A1">
                         <option disabled selected>Selecciona una opción</option>
@@ -354,7 +354,7 @@
                         <option value="no">No</option>
                     </select>
                 </div> 
-                <p>En caso afirmativo describa brevemente en qué consiste esta politica:</p>
+                <p>En caso afirmativo describa brevemente en qué consiste esta política:</p>
                 <textarea id="R8-1-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -419,7 +419,7 @@
                 <p>Haga una relación de los líderes de proyectos vinculados a las líneas de investigación, e indique el nivel de los grados académicos que tiene cada uno (maestría, doctorado)</p>
                 <textarea id="R8-1-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
-                <p>En caso afirmativo proporcione una copia de los documentos</p>
+                <p>En caso afirmativo proporcione una copia de los documentos.</p>
 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
@@ -451,7 +451,14 @@
             
             <div>
             <div class="parrafo" id="8.2">
-                <p>8.2 Recursos para la investigación.Es necesario que se asignen recursos presupuestales para la investigación y/o desarrollo tecnológico que permitan al personal docente de la carrera cumplir con estas funciones sustantivas; debe contar con personal académico de carrera que desarrolle actividades de vinculación e investigación, así como con la infraestructura suficiente y pertinente para el desarrollo de los proyectos; debe existir la normatividad para el desarrollo de investigación y personal de apoyo suficiente de acuerdo al tamaño e importancia de los proyectos.
+                <p> 8.2 Recursos para la investigación. Es necesario que se asignen recursos presupuestales 
+                    para la investigación y/o desarrollo tecnológico que permitan al personal docente de 
+                    la carrera cumplir con estas funciones sustantivas; debe contar con personal académico 
+                    de carrera que desarrolle actividades de vinculación e investigación, así como con la 
+                    infraestructura suficiente y pertinente para el desarrollo de los proyectos; debe existir la 
+                    normatividad para el desarrollo de investigación y personal de apoyo suficiente de acuerdo 
+                    al tamaño e importancia de los proyectos.
+
                 </p>
             </div>
 
@@ -465,7 +472,7 @@
                     </select>
                 </div> 
                 
-                <p>En caso afirmativo proporcione evidencias</p>
+                <p>En caso afirmativo proporcione evidencias.</p>
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
                     <div class="pdfs-options">
@@ -493,9 +500,18 @@
             </div>
 
             <div class="preguntasCategoria" id="SC_8.2.2">
-                <p>8.2.2 Es recomendable que la institución cuente con un programa de vinculación con el sector productivo o de servicios e investigación, con las siguientes características:  Un grupo de personal académico de carrera, integrado para desarrollar actividades de vinculación e investigación, constituido por un mínimo de dos personas con posgrado en el área de la especialidad del programa, preferentemente con el grado de doctor, y al menos tres profesores, profesionistas o estudiantes. </p>
-                <p>Una infraestructura suficiente y pertinente en cuanto a espacios y equipos para el desarrollo de la vinculación con el sector productivo o de servicios y la investigación.</p>
-                <p>Incluya una relación de los espacios físicos y equipos exclusivamente para la investigación. Indique cuántos investigadores utilizan esta infraestructura.</p>
+                <p>8.2.2 Es recomendable que la institución cuente con un programa de vinculación 
+                    con el sector productivo o de servicios e investigación, con las siguientes características:  
+                    Un grupo de personal académico de carrera, integrado para desarrollar actividades de 
+                    vinculación e investigación, constituido por un mínimo de dos personas con posgrado 
+                    en el área de la especialidad del programa, preferentemente con el grado de doctor, y 
+                    al menos tres profesores, profesionistas o estudiantes. </p>
+
+                <p>Una infraestructura suficiente y pertinente en cuanto a espacios y equipos para el desarrollo 
+                    de la vinculación con el sector productivo o de servicios y la investigación.</p>
+
+                <p>Incluya una relación de los espacios físicos y equipos exclusivamente para la investigación. 
+                    Indique cuántos investigadores utilizan esta infraestructura.</p>
 
                 <textarea id="R8-2-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -526,7 +542,8 @@
             
             <div class="preguntasCategoria" id="SC_8.2.3">
                 <p>8.2.3 Normatividad expresa y aprobada para el desarrollo de la investigación.<br>
-                <p>¿En la institución está explícita y debidamente aprobada la normatividad relativa a las tareas de investigación?</p>
+                <p>¿En la institución está explícita y debidamente aprobada la normatividad relativa 
+                    a las tareas de investigación?</p>
                 <div class="opcMult"°>
                     <select name="select" id="RS8-2-3A1">
                         <option disabled selected>Selecciona una opción</option>
@@ -564,7 +581,8 @@
 
 
             <div class="preguntasCategoria" id="SC_8.2.4">
-                <p>8.2.4 Personal de apoyo suficiente (técnicos de investigación, profesores titulares, profesores asociados, etc.), en función del tamaño e importancia de cada proyecto.<br>
+                <p>8.2.4 Personal de apoyo suficiente (técnicos de investigación, profesores titulares, profesores asociados, etc.), 
+                    en función del tamaño e importancia de cada proyecto.<br>
                 <p>¿Cuenta con el personal de apoyo suficiente para el desarrollo de la investigación?</p>
                 <div class="opcMult"°>
                     <select name="select" id="RS8-2-4A1">
@@ -606,11 +624,16 @@
 
             <div>
                 <div class="parrafo" id="8.3">
-                    <p>8.3 Difusión de la investigación. Deben existir mecanismos de difusión de la investigación generada  del área académica del programa educativo.</p>                
+                    <p>8.3 Difusión de la investigación. Deben existir mecanismos de difusión de la investigación 
+                        generada del área académica del programa educativo.
+                    </p>                
                 </div>
     
                 <div class="preguntasCategoria" id="SC_8.3.1">
-                    <p>8.3.1 ¿Qué medios brinda la institución y a qué nivel (general, de la dirección, de la jefatura, del programa, etc.) para la difusión de la investigación del área académica?  Artículos, reportes de investigación, publicaciones periódicas, libros, capítulos de libros, conferencias, exposiciones, etc.</p>
+                    <p>8.3.1 ¿Qué medios brinda la institución y a qué nivel (general, de la dirección, de la 
+                        jefatura, del programa, etc.) para la difusión de la investigación del área académica?  
+                        Artículos, reportes de investigación, publicaciones periódicas, libros, capítulos de libros, 
+                        conferencias, exposiciones, etc.</p>
                     <textarea id="R8-3-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -643,12 +666,20 @@
 
             <div>
                 <div class="parrafo" id="8.4">
-                    <p>8.4 Impacto de la investigación
+                    <p>8.4 Impacto de la investigación.
 
-                        El programa educativo debe mostrar los resultados de la investigación que sea congruente con la docencia, así como la transferencia de los resultados de la investigación para el avance tecnológico y el mejoramiento del entorno social, por ello, la institución debe proporcionar los proyectos de investigación vinculados con el programa, que incluya: Tabla de proyecto, cronograma por trimestres y relación de proyectos de investigación terminados en los últimos cinco años, el financiamiento por proyecto y la producción relacionada.</p>
+                        El programa educativo debe mostrar los resultados de la investigación que sea 
+                        congruente con la docencia, así como la transferencia de los resultados de la 
+                        investigación para el avance tecnológico y el mejoramiento del entorno social, 
+                        por ello, la institución debe proporcionar los proyectos de investigación vinculados 
+                        con el programa, que incluya: Tabla de proyecto, cronograma por trimestres y relación 
+                        de proyectos de investigación terminados en los últimos cinco años, el financiamiento 
+                        por proyecto y la producción relacionada.
+                    </p>
                 </div>
             <div class="preguntasCategoria" id="SC_8.4.1">
-                <p>8.4.1 Proporcionar los proyectos de investigación vinculados con el programa en las siguientes formas:<br>
+                <p>8.4.1 Proporcionar los proyectos de investigación vinculados con el programa 
+                    en las siguientes formas:<br>
                     <br>
                     - Tabla de proyecto<br>
                     - Cronograma por trimestres<br>
@@ -680,7 +711,8 @@
             </div>
 
             <div class="preguntasCategoria" id="SC_8.4.2">
-                <p>8.4.2 Mecanismos para la incorporación a la práctica docente de los resultados de investigación, que representen innovación en materia educativa.</p>
+                <p>8.4.2 Mecanismos para la incorporación a la práctica docente de los 
+                    resultados de investigación, que representen innovación en materia educativa.</p>
                 <textarea id="R8-4-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>

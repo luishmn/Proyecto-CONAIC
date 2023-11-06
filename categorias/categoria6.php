@@ -29,7 +29,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categoria 6</title>
+    <title>Categoría 6</title>
     <link rel="stylesheet" href="autoevaluacion.css">
     <script src="enviarConsulta.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -710,7 +710,7 @@
             </div>
             
             <div class="preguntasCategoria" id="SC_6.1.1">
-                <p>6.1.1 ¿ Las tutorías a los estudiantes se ofrecen de manera constante y organizada?</p>
+                <p>6.1.1 ¿Las tutorías a los estudiantes se ofrecen de manera constante y organizada?</p>
                 <div class="opcMult"°>
                     <select name="select" id="RS6-1-1A1">
                         <option disabled selected>Selecciona una opción</option>
@@ -746,10 +746,11 @@
             <div class="preguntasCategoria" id="SC_6.1.2">
                 <p>6.1.2 En el caso de que se ofrezca este servicio y de que se lleve un registro, 
                     proporcionar la información sobre el número de estudiantes atendidos en los tres 
-                    últimos períodos escolares y el tiempo total del profesorado dedicado a esta actividad</p>
+                    últimos períodos escolares y el tiempo total del profesorado dedicado a esta actividad.
+                </p>
                 <textarea id="R6-1-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
-                <p>Tabla con periodo escolar, mecanismos de apoyo, no. De estudiantes, tiempo del profesorado</p>               
+                <p>Tabla con periodo escolar, mecanismos de apoyo, no. de estudiantes, tiempo del profesorado.</p>               
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
                     <div class="pdfs-options">
@@ -776,8 +777,8 @@
             </div>
 
             <div class="preguntasCategoria" id="SC_6.1.3">
-                <p>6.1.3 ¿Se cuenta con mecanismos e instrumentos que permitan evaluar el Programa de Tutorías así como su impacto?</p>
-                <p>Describa brevemente en qué consiste el mecanismo y el impacto de las mismas.</p>
+                <p>6.1.3 ¿Se cuenta con mecanismos e instrumentos que permitan evaluar el Programa de Tutorías, así como su impacto?</p>
+                <p>Describa brevemente en qué consiste el mecanismo y el impacto de estas.</p>
                 <div class="opcMult"°>
                     <select name="select" id="RS6-1-3A1">
                         <option disabled selected>Selecciona una opción</option>
@@ -829,8 +830,9 @@
                         <option value="no">No</option>
                     </select>
                 </div>
-                <p>Tabla con periodo escolar, mecanismos de apoyo, no. De estudiantes, 
-                tiempo del profesorado</p>
+                <p>Tabla con periodo escolar, mecanismos de apoyo, no. de estudiantes, 
+                tiempo del profesorado.
+                </p>
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
                     <div class="pdfs-options">
@@ -860,7 +862,7 @@
                 <p>6.2.2 ¿Se cuenta con mecanismos e instrumentos que permitan evaluar
                 el Programa de asesorías, así como su impacto para la disminución de 
                 los índices de reprobación?</p>
-                <p>Describa brevemente en qué consiste el mecanismo y el impacto de las mismas.</p>
+                <p>Describa brevemente en qué consiste el mecanismo y el impacto de estas.</p>
                 <div class="opcMult"°>
                     <select name="select" id="RS6-2-2A1">
                         <option disabled selected>Selecciona una opción</option>
@@ -899,10 +901,11 @@
                     con instalaciones apropiadas para biblioteca, ubicadas lo 
                     más cerca posible de aquellas donde se realizan las actividades 
                     académicas y con espacios suficientes para proporcionar servicio 
-                    simultáneamente, como mínimo al 10% del estudiantes, así como 
+                    simultáneamente, como mínimo al 10% de los estudiantes, así como 
                     con lugares adecuados para la prestación de otros servicios 
                     como: cubículos para grupos de estudio, lugar para exposiciones, 
                     hemeroteca, videoteca, etc.
+
                 </p>
             </div>
 
@@ -913,8 +916,9 @@
                 el acceso de la población estudiantil del programa para sus actividades 
                 académicas?</p>
                 <p>Los programas pueden o no contar con una biblioteca física, 
-                pero lo que si, es que deben garantizar el servicio de acceso a 
-                la información, como lo establece este criterio.</p>
+                pero lo que sí, es que deben garantizar el servicio de acceso a 
+                la información, como lo establece este criterio.
+                </p>
                 <div class="opcMult"°>
                     <select name="select" id="RS6-3-1A1">
                         <option disabled selected>Selecciona una opción</option>
@@ -959,7 +963,7 @@
                 <p>Con un acervo de cuantos ejemplares:</p>
                 <textarea id="R6-3-1A8" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
-                <p>Con capacidad para atender a cuantos usuarios simultaneamente:</p>
+                <p>Con capacidad para atender a cuantos usuarios simultáneamente:</p>
                 <textarea id="R6-3-1A9" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
                 <p>Con sistemas de estantería abierta:</p>
@@ -975,10 +979,10 @@
                 <p>Con servicios de:</p>
                 
                 <textarea id="R6-3-1A11" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
-                <p>Del Programa</p>
+                <p>Del Programa:</p>
                 
                 <textarea id="R6-3-1A12" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
-                <p>Con un acervo de cuantos ejemplares</p>
+                <p>Con un acervo de cuantos ejemplares:</p>
                 
                 <textarea id="R6-3-1A13" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>Con capacidad para atender a cuantos usuarios simultáneamente:</p>
@@ -995,14 +999,15 @@
                 <p>Con servicios de:</p>
                 <textarea id="R6-3-1A15" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
-                <p>¿Qué otros servicios presta la biblioteca en que se apoya 
+                <p>¿Qué otros servicios prestan la biblioteca en que se apoya 
                 el programa a la comunidad estudiantil? (para el caso de bibliotecas 
                 con instalaciones físicas describa si cuenta con material audiovisual, 
                 salas de proyección, cubículos para grupos de estudio, equipos de 
                 mecanografía e impresión, equipos de cómputo para consulta, consulta 
                 vía Internet, salas de exposiciones, lugar para exposiciones, hemeroteca, 
                 videoteca, etc.; en el caso de bibliotecas virtuales como proporciona 
-                estos servicios).</p>
+                estos servicios).
+                </p>
                 <textarea id="R6-3-1A16" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -1084,7 +1089,7 @@
                     se apoya el programa dispone de:</p>
                     <textarea id="R6-3-3A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     
-                    <p>Textos de referencia señalados en las asignaturas de los planes de estudio</p>
+                    <p>Textos de referencia señalados en las asignaturas de los planes de estudio.</p>
                     <div class="opcMult"°>
                         <select name="select" id="RS6-3-3A1">
                             <option disabled selected>Selecciona una opción</option>
@@ -1092,7 +1097,7 @@
                             <option value="no">No</option>
                         </select>
                     </div>
-                    <p>Títulos diferentes por cada asignatura que se imparte en el programa</p>
+                    <p>Títulos diferentes por cada asignatura que se imparte en el programa.</p>
                     <div class="opcMult"°>
                         <select name="select" id="RS6-3-3A2">
                             <option disabled selected>Selecciona una opción</option>
@@ -1101,7 +1106,8 @@
                         </select>
                     </div>
                     <p>Porcentaje de estudiantes que pueden hacer uso simultáneo de los textos 
-                    de referencia Disponibles</p>
+                    de referencia disponibles.
+                    </p>
                     <textarea id="R6-3-3A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     
                     <p>¿Se tienen suscripciones a publicaciones periódicas del área 
@@ -1192,7 +1198,8 @@
                 <textarea id="R6-3-5A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
                 <p>Acceso a publicaciones y revistas periódicas relevantes en el 
-                área de informática y computación</p>
+                área de informática y computación.
+                </p>
                 <div class="opcMult"°>
                     <select name="select" id="RS6-3-5A1">
                         <option disabled selected>Selecciona una opción</option>
@@ -1235,7 +1242,7 @@
                 
                 <p>El material bibliográfico existente en la biblioteca en que se 
                     apoya el programa dispone de:</p>
-                <p>Manuales técnicos del área</p>
+                <p>Manuales técnicos del área.</p>
                 <div class="opcMult"°>
                     <select name="select" id="RS6-3-6A1">
                         <option disabled selected>Selecciona una opción</option>
@@ -1336,7 +1343,8 @@
                 <textarea id="R6-3-8A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
                 <p>Medios electrónicos que permitan la consulta automatizada del 
-                    acervo bibliográfico</p>
+                    acervo bibliográfico.
+                </p>
                 <div class="opcMult"°>
                     <select name="select" id="RS6-3-8A1">
                         <option disabled selected>Selecciona una opción</option>
@@ -1373,7 +1381,8 @@
                 <p>6.3.9 Se deben llevar registros y estadísticas actualizados 
                     de los servicios prestados, entre ellos el número de usuarios 
                     y el tipo de servicio que prestan. Esta información debe 
-                    procesarse de manera automatizada</p>
+                    procesarse de manera automatizada.
+                </p>
                 <p>La biblioteca en que se apoya el programa dispone de registros 
                     actualizados de los servicios bibliotecarios prestados en los
                      últimos períodos escolares:</p>
@@ -1499,12 +1508,13 @@
                     los estudiantes la metodología plasmada en la organización o 
                     estructura didáctica de los materiales, tareas, foros, chat 
                     (entre otros) creada por un grupo de profesores para fomentar 
-                    el aprendizaje en una área determinada. Entre las funciones de 
-                    estos entornos de aprendizaje,  están  gestionar usuarios, recursos, 
+                    el aprendizaje en un área determinada. Entre las funciones de 
+                    estos entornos de aprendizaje están gestionar usuarios, recursos, 
                     actividades de formación y contenidos; administrar el acceso; controlar 
                     y hacer seguimiento del proceso de aprendizaje; realizar evaluaciones; 
                     generar informes; gestionar servicios de comunicación como foros de 
-                    discusión, videoconferencias; entre otros.</p>
+                    discusión, videoconferencias; entre otros.
+                </p>
             </div>
 
             <div class="preguntasCategoria" id="SC_6.4.1">
@@ -1564,31 +1574,34 @@
                 <textarea id="R6-4-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
                 <p>Detalle de las características del entorno de aprendizaje:</p>
-                <p>Descripción, Proporcione evidencias de su uso y copia de los documentos</p>
+                <p>Descripción, Proporcione evidencias de su uso y copia de los documentos.</p>
                 
                 <textarea id="R6-4-2A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>1) Interactividad. Se refiere a todas las herramientas de 
                     comunicación síncrona y asíncronas, como las de cooperación, 
-                    colaboración, compartición y generación  de contenidos (como
+                    colaboración, compartición y generación de contenidos (como
                     el chat, foros, wikis, colaboración en la nube u otro sistema
                     similar, conformación de grupos de trabajo, creación de 
                     encuestas, test de evaluación, videoconferencia, espacios de 
                     entrega de actividades y mail dentro de la herramienta de 
                     aprendizaje, entre tantas otras que existen y que siguen 
-                    creándose para comunicarse e interactuar).</p>
+                    creándose para comunicarse e interactuar).
+                </p>
                 <textarea id="R6-4-2A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
                 <p>2) Flexibilidad. Se refiere al grado de adaptabilidad tanto 
                     tecnológica, como pedagógica, que tenga la herramienta para 
-                    favorecer el aprendizaje;</p>
-                <p>Descripción, Proporcione evidencias de su uso y copia de los documentos</p>
+                    favorecer el aprendizaje.
+                </p>
+                <p>Descripción, Proporcione evidencias de su uso y copia de los documentos.</p>
                 
                 <textarea id="R6-4-2A3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>3) Escalabilidad. Se refiere a la proyección a futuro, es decir 
                     tener control y poder dar seguimiento para que se pueda transformar 
                     y adaptar con facilidad el entorno educativo a los recursos existentes 
-                    o venideros;</p>
-                <p>Descripción, Proporcione evidencias de su uso y copia de los documentos</p>
+                    o venideros.
+                </p>
+                <p>Descripción, Proporcione evidencias de su uso y copia de los documentos.</p>
                 <textarea id="R6-4-2A4" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
                 <p>4) Usabilidad. Se refiere a la facilidad de uso de la plataforma 
@@ -1596,8 +1609,9 @@
                     facilitadores, tutores, estudiantes, administradores, tiene 
                     que ver con la integración de las características de accesibilidad, 
                     navegación, programación, administración, diseño e imagen del 
-                    entorno de aprendizaje;</p>
-                <p>Descripción, Proporcione evidencias de su uso y copia de los documentos</p>
+                    entorno de aprendizaje.
+                </p>
+                <p>Descripción, Proporcione evidencias de su uso y copia de los documentos.</p>
                 <textarea id="R6-4-2A5" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
                 <p>5) Ubicuidad. Es la capacidad del entorno de aprendizaje de 
@@ -1606,18 +1620,20 @@
                     que todo lo que necesita para su aprendizaje se encuentra 
                     en ese entorno, al mismo tiempo para el resto de los actores 
                     del aprendizaje, que les permita ser, estar, crear y 
-                    modificar los entornos del estudiante. Es decir es el grado 
+                    modificar los entornos del estudiante. Es decir, es el grado 
                     de presencia que brinda la plataforma y su capacidad de 
                     integración con otros sistemas autónomos externos a la 
-                    misma (como las redes sociales sitios, etc.);</p>
-                    <p>Descripción, Proporcione evidencias de su uso y copia de los documentos</p>
+                    misma (como las redes sociales sitios, etc.).
+                </p>
+                    <p>Descripción, Proporcione evidencias de su uso y copia de los documentos.</p>
                 <textarea id="R6-4-2A6" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
                 <p>6) Funcionabilidad. Se refiere al nivel de eficiencia, 
                     efectividad, portabilidad y facilidad de instalación. 
-                    Es decir la conjunción de requerimientos tecnológicos, 
-                    infraestructura y recursos del servidor;</p>
-                <p>Descripción, Proporcione evidencias de su uso y copia de los documentos</p>
+                    Es decir, la conjunción de requerimientos tecnológicos, 
+                    infraestructura y recursos del servidor.
+                </p>
+                <p>Descripción, Proporcione evidencias de su uso y copia de los documentos.</p>
                 <textarea id="R6-4-2A7" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
                 <p>7) Estandarización. Se refiere a la aceptabilidad de estándares
@@ -1637,7 +1653,7 @@
                 
                 
                 
-                     <p>Descripción, Proporcione evidencias de su uso y copia de los documentos</p>
+                     <p>Descripción, Proporcione evidencias de su uso y copia de los documentos.</p>
                 <textarea id="R6-4-2A8" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -1674,7 +1690,8 @@
                     materiales multimedia, etc.</p>
                 <p>Descripción Proporcione evidencia de su uso a través de manuales 
                     impresos o en línea, así como el equipo de cómputo y software 
-                    que se utiliza. Copia de los documentos</p>
+                    que se utiliza. Copia de los documentos.
+                </p>
                 <textarea id="R6-4-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -1719,9 +1736,10 @@
                 <p>6.5.1 ¿El material didáctico o de aprendizaje de sus distintas 
                     asignaturas del programa académico considera contenidos 
                     altamente flexibles a los diferentes estilos de aprendizaje de 
-                    los estudiantes, adecuados al nivel de los mismos (autosuficiente); 
+                    los estudiantes, adecuados al nivel de estos (autosuficiente); 
                     es decir, considera un diseño integral y holístico para ser 
-                    utilizado por el estudiante y favorecer su aprendizaje autónomo?</p>
+                    utilizado por el estudiante y favorecer su aprendizaje autónomo?
+                </p>
                 <div class="opcMult"°>
                     <select name="select" id="RS6-5-1A1">
                         <option disabled selected>Selecciona una opción</option>
@@ -1730,7 +1748,8 @@
                     </select>
                 </div>
                 <p>Explique, Presentar evidencia de material didáctico  
-                desarrollado y copia de los documentos</p>
+                desarrollado y copia de los documentos.
+                </p>
                 <textarea id="R6-5-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -1803,14 +1822,15 @@
                     menos los siguientes aspectos: motivación en los 
                     estudiantes para su uso; actualidad de la información 
                     que presenta; vigencia temporal y espacial; calidad 
-                    en la  presentación del contenido (en cuanto a redacción, 
+                    en la presentación del contenido (en cuanto a redacción, 
                     ortografía, tipografía, diseño gráfico, color, 
                     originalidad; etc. Además de indicar quienes participan 
                     en la evaluación del material didáctico (expertos en 
-                    contenido, pedagogos,  psicólogos educativos, técnicos 
+                    contenido, pedagogos, psicólogos educativos, técnicos 
                     en audio, video, e informáticos, diseñadores gráficos, 
                     comunicólogos, profesores, facilitadores, tutores o 
-                    asesores y estudiantes)</p>
+                    asesores y estudiantes)
+                </p>
                 <div class="opcMult"°>
                     <select name="select" id="RS6-5-3A1">
                         <option disabled selected>Selecciona una opción</option>
@@ -1824,7 +1844,8 @@
                 <p>Proporcione como evidencia: ejemplo de cursos diseñados 
                     de esta manera y que se estén utilizando. En la visita 
                     proporcione acceso a los evaluadores a su plataforma. 
-                    Copia de los documentos</p>
+                    Copia de los documentos.
+                </p>
 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
@@ -1871,7 +1892,8 @@
                 <p>Proporcione como evidencia: ejemplo de cursos diseñados 
                     de esta manera y que se estén utilizando. En la visita 
                     proporcione acceso a los evaluadores a su plataforma. 
-                    Copia de los documentos</p>
+                    Copia de los documentos.
+                </p>
 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
@@ -1917,7 +1939,8 @@
                 <p>Proporcione como evidencia: ejemplo de cursos diseñados 
                     de esta manera y que se estén utilizando. En la visita 
                     proporcione acceso a los evaluadores a su plataforma. 
-                    Copia de los documentos</p>
+                    Copia de los documentos.
+                </p>
 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
@@ -1952,13 +1975,14 @@
                     parte de la comunidad de aprendizaje: estudiantes, 
                     profesores, facilitadores, tutores y personal 
                     administrativo, para compartir experiencias y ampliar 
-                    horizontes de aprendizaje?.</p>
+                    horizontes de aprendizaje?</p>
                 <textarea id="R6-5-6" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
                 <p>Explique brevemente:</p>
                 <p>Proporcionar minutas oficiales de las reuniones que 
                     evidencien las mismas y sus resultados. Copia de 
-                    los documentos</p>
+                    los documentos.
+                </p>
                 <textarea id="R6-5-6A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
@@ -1989,22 +2013,24 @@
                 <p>6.6 INTEGRACIÓN DE LOS ACTORES DEL APRENDIZAJE
                 Estos representan a todos los involucrados en el proceso 
                 de enseñanza aprendizaje y a aquellos que son de apoyo 
-                para la administración de  la plataforma tecnológica y 
+                para la administración de la plataforma tecnológica y 
                 de aprendizaje, así, se han considerado a profesores o 
                 facilitadores del aprendizaje, tutores o asesores, 
                 estudiantes y administradores de la plataforma de aprendizaje, 
-                de soporte técnico y desarrollo.</p>
+                de soporte técnico y desarrollo.
+                </p>
             </div>
 
             <div class="preguntasCategoria" id="SC_6.6.1">
                 <p>6.6.1 ¿Cómo parte del modelo educativo, para el caso de 
-                    los programas no presenciales o semi-presenciales, 
+                    los programas no presenciales o semipresenciales, 
                     realizan reuniones presenciales en distintas sedes para 
                     fortalecer la interacción -en un tiempo definido y un 
                     espacio físico- entre todos los miembros que forman parte 
                     de la comunidad de aprendizaje: estudiantes, profesores, 
                     facilitadores, tutores y personal administrativo, 
-                    para compartir experiencias y ampliar horizontes de aprendizaje?</p>
+                    para compartir experiencias y ampliar horizontes de aprendizaje?
+                </p>
                 <div class="opcMult"°>
                     <select name="select" id="RS6-6-1A1">
                         <option disabled selected>Selecciona una opción</option>
@@ -2016,7 +2042,8 @@
                 <textarea id="R6-6-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>Descripción y Proporcionar minutas oficiales de las reuniones 
                     que evidencien las mismas y sus resultados. Copia de los 
-                    documentos</p>
+                    documentos.
+                </p>
 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
