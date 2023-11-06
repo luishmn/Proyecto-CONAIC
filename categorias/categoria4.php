@@ -30,7 +30,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categoria 4</title>
+    <title>Categoría 4</title>
     <link rel="stylesheet" href="autoevaluacion.css">
     <script src="enviarConsulta.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -376,13 +376,15 @@
                         un
                         idioma extranjero; así como contar con mecanismos de medición de las competencias de los
                         estudiantes
-                        al finalizar su trayectoria escolar de acuerdo a su perfil de egreso.
+                        al finalizar su trayectoria escolar de acuerdo con su perfil de egreso.
+
                     </p>
                 </div>
 
                 <div class="preguntasCategoria" id="SC_4.1.1">
                     <p>4.1.1 Debe incluirse el uso de la computadora durante el proceso de enseñanza aprendizaje, en los
-                        cursos que por su naturaleza así lo requieran. </p>
+                        cursos que por su naturaleza así lo requieran.</p>
+
                     <p>¿El programa cuenta con estadísticas del uso de las herramientas de cómputo por parte de los
                         estudiantes?</p>
 
@@ -582,7 +584,7 @@
                     <p>4.1.5 Se debe contar con mecanismos de retroalimentación que permitan, a partir de las
                         evaluaciones de los estudiantes, llevar a cabo acciones encaminadas a mejorar el proceso
                         enseñanza-aprendizaje. Certificación de competencias bajo normas nacionales o internacionales
-                        según el perfil de TIC a evaluar (A,B, C o D).</p>
+                        según el perfil de TIC a evaluar (A, B, C o D).</p>
 
                     <p>¿Los estudiantes realizan evaluaciones de los cursos?</p>
                     <div class="opcMult" °>
@@ -824,7 +826,7 @@
                 <div class="parrafo" id="4.3">
                     <p>
                         4.3 Evaluación de atributos de egreso. Describir el método de evaluación de los atributos de
-                        egreso con la evidencia correspondiente, para asegurar el logro de los mismos.
+                        egreso con la evidencia correspondiente, para asegurar el logro de estos.
                     </p>
                 </div>
                 <div class="preguntasCategoria" id="SC_4.3.1">
@@ -842,7 +844,7 @@
 
                     <p>En caso afirmativo llenar la Tabla 1. Evaluación de atributos de egreso y su cumplimiento
                         (tomando como
-                        base la tabla Tabla 1. Atributos del egresado Competencias de graduación planificadas SEUOL
+                        base la tabla 1. Atributos del egresado Competencias de graduación planificadas SEUOL
                         ACCORD /
                         CONAIC). Explicar brevemente el método o método de evaluación empleados.</p>
                     <textarea name="R4-1-1A17" id="R4-1-1A17" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
@@ -890,6 +892,7 @@
             <h2>Subir PDF</h2>
                 <label class="custom-file-label">
                     <input type="file" name="archivo[]" accept=".pdf" class="custom-file-input" id="file-input1" multiple>
+                    
                     <span class="icon"><i class="fa fa-file-pdf-o"></i></span> Seleccionar PDF
                 </label>
                 <div id="selected-files1" class="titulosArchs">
@@ -898,6 +901,11 @@
                 <button id="botonSubirChido" class="cargar-pdf" data-id="4.1.1">
                     <i class="fas fa-upload"></i> Subir PDF
                 </button>
+
+                <!-- Esta es la imagen de carga -->
+                <img id="imgcarga" class="oculto" src="../imagenes/cargando.webp" alt="Cargando..." />
+                <!-- ----------->
+                
 
                 <br><br>
             </form>
@@ -991,6 +999,7 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
+        var imagenCargando = document.getElementById("imgcarga");
         var button = document.querySelector(".cargar-pdf");
         var form = document.getElementById("uploadForm");
 
@@ -1020,6 +1029,16 @@
             formData.append("id", id);
 
             var xhr = new XMLHttpRequest();
+            
+
+            
+            //ESTO ES PARA LA ANIMACION DE CARGA DE SUBIR ARCHIVOS
+            button.className = "oculto";
+            imagenCargando.classList.remove("oculto");
+            imagenCargando.classList.add("loading-gif");
+            //HASTA AQUÍ
+            
+
             xhr.open("POST", "../funcion_guardarpdf/upload.php", true);
 
             xhr.onreadystatechange = function () {
@@ -1033,13 +1052,29 @@
                             selectedFiles.appendChild(fileItem);           
                             
                         };
+                        
                         limpiarSeleccion();
+
+                        //ESTO ES PARA LA ANIMACION DE CARGA DE SUBIR ARCHIVOS
+                        button.className = "cargar-pdf";
+                        imagenCargando.classList.remove("loading-gif");
+                        imagenCargando.classList.add("oculto");
+                        //HASTA AQUÍ
+
                         Swal.fire({
                             title: 'Archivos subidos correctamente.',
                             icon: 'success',
                             confirmButtonColor: '#145070'
                         });
                     } else {
+                        
+                        //ESTO ES PARA LA ANIMACION DE CARGA DE SUBIR ARCHIVOS
+                        button.className = "cargar-pdf";
+                        imagenCargando.classList.remove("loading-gif");
+                        imagenCargando.classList.add("oculto");
+                        //HASTA AQUÍ
+
+
                         Swal.fire({
                             title: 'Error de carga.',
                             icon: 'error',
@@ -1102,5 +1137,4 @@
         });
     });
 </script>
-
 
