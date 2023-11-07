@@ -1,3 +1,22 @@
+<?php
+    session_start();
+    //$_SESSION['loggedin']= false;
+    // Verifica si el usuario ha iniciado sesión
+    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+        // Accede al nombre de usuario almacenado en la sesión
+        $nombreUsuario = $_SESSION['username'];
+        $correoUsuario = $_SESSION['email'];
+    } else {
+        // Si no ha iniciado sesión, redirige al usuario a la página de inicio de sesión
+        header('Location: ../index.php');
+        exit;
+    }
+
+    $nombre = substr($nombreUsuario, 0, 10);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -68,6 +87,7 @@
 
 <?php
     session_start();
+    $_SESSION['loggedin'] = true;
     //$_SESSION['loggedin']= false;
     // Verifica si el usuario ha iniciado sesión
     if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
@@ -78,12 +98,11 @@
         //echo $nombreUsuario."<br>";
         //echo $correoUsuario;
 
-        global $conexion;
-
-        $conexion= new mysqli("localhost", "root", "", "conaic")or die ("Could not connect to mysql".mysqli_error($conexion));
-
-        if(!$conexion){
-            echo "<script>alert('Ocurrió un error al conectar con la Base de Datos. Vuelva a intentarlo.');</script>";
+        include "../conexionDB/conexion.php";
+        conecta();
+        if (!$conexion) {
+            echo json_encode(array('success' => false, 'message' => 'Error al conectar con la Base de Datos. Vuelva a iniciar sesión.'));
+           
         }
         else{
             
