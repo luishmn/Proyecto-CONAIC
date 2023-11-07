@@ -662,7 +662,10 @@
                     <p>9.1.2 Exceptuando a los programas que correspondan al perfil de Licenciado en 
                         Informática, todos los programas deberán disponer de al menos un laboratorio 
                         de electrónica acondicionado que los soporte.</p>
-                    <textarea id="R9-1-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                    <textarea id="R9-1-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>   
+                    <p>
+                    <a href="../Documentos/CATEGORIA9/9.1.2.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p>             
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -803,8 +806,11 @@
                     </p>
 
                     <p >Información sobre aulas según dimensiones y capacidades.</p>
-                    <textarea id="R9-1-6" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
-
+                    <textarea id="R9-1-6" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>  
+                    <p>
+                    <a href="../Documentos/CATEGORIA9/9.1.6.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p>              
+            
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
@@ -835,7 +841,10 @@
                     <p >9.1.7 El número de aulas habrá de ser suficiente para atender la impartición 
                         de cursos que se programen en cada periodo escolar.
                     </p>
-                    <textarea id="R9-1-7" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                    <textarea id="R9-1-7" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>  
+                    <p>
+                    <a href="../Documentos/CATEGORIA9/9.1.7.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p>              
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -1132,7 +1141,10 @@
                     <p>9.2.1 Para cada asignatura mencionar el software que se utiliza y si está disponible 
                         dentro de la institución.
                     </p>
-                    <textarea id="R9-2-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                    <textarea id="R9-2-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>   
+                    <p>
+                    <a href="../Documentos/CATEGORIA9/9.2.1.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p>             
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
@@ -1169,7 +1181,10 @@
                     <p >Describir los siguientes elementos de la infraestructura de software, 
                         incluyendo versiones y número de licencias:
                     </p>
-                    <textarea id="R9-2-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                    <textarea id="R9-2-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>  
+                    <p>
+                    <a href="../Documentos/CATEGORIA9/9.2.2.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p>              
 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
@@ -1211,7 +1226,10 @@
                         esté disponible para la realización de las prácticas en las asignaturas del 
                         programa que así lo requieran:
                     </p>
-                    <textarea id="R9-2-3A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                    <textarea id="R9-2-3A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>   
+                    <p>
+                    <a href="../Documentos/CATEGORIA9/9.2.3.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p>             
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
@@ -1509,7 +1527,10 @@
 
                     <p >Los horarios de servicio en que se prestan los servicios de cómputo son los siguientes:
                     </p>
-                    <textarea id="R9-2-9" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                    <textarea id="R9-2-9" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>  
+                    <p>
+                    <a href="../Documentos/CATEGORIA9/9.2.9.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p>              
 
                     <p >Si hay personal de apoyo indicar en cada caso la cantidad, horarios y funciones que tienen.
                     </p>
@@ -1720,7 +1741,10 @@
                     <p >En caso afirmativo indicar el número de usuarios en promedio diario 
                         atendidos en los tres últimos períodos escolares.
                     </p>
-                    <textarea id="R9-2-13" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                    <textarea id="R9-2-13" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>   
+                    <p>
+                    <a href="../Documentos/CATEGORIA9/9.2.13.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p>             
                     
 
 

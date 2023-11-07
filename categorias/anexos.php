@@ -268,6 +268,12 @@
                 <div class="preguntasCategoria" id="SC_11.1.1">
                     <p>Estudiantes que aprobaron el EGEL-CENEVAL
                      </p>
+                    <p>
+                    <a href="../Documentos/CATEGORIA11/1_1.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p> 
+                <p>
+                    <a href="../Documentos/CATEGORIA11/1_2.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p> 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
@@ -302,6 +308,9 @@
                 <div class="preguntasCategoria" id="SC_11.2.1">
                     <p>Estructura Financiera de la Facultad, Escuela, División o Departamento
                     </p>
+                    <p>
+                    <a href="../Documentos/CATEGORIA11/2.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p> 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
@@ -340,6 +349,12 @@
                     <p>Recomendaciones al programa académico</p>
                     <p>El anexo 3 relativo a las recomendaciones es para el instrumento que se utilice en la visita de campo.
                     </p>
+                    <p>
+                    <a href="../Documentos/CATEGORIA11/3_1.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p> 
+                <p>
+                    <a href="../Documentos/CATEGORIA11/3_2.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p> 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
