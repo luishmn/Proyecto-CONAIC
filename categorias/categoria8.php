@@ -682,7 +682,9 @@
                     en las siguientes formas:<br>
                     <br>
                     - Tabla de proyecto<br>
+                    <a href="/Documentos//Tiempo dedicado.docx">Tabla de proyectos (Descargar)</a>
                     - Cronograma por trimestres<br>
+                    <a href="/Documentos//Proyectos de investigación vinculados.docx">Proyectos vinculados (Descargar)</a>
                     - Relación de proyectos de investigación terminados en los últimos cinco años</p>
                 <textarea id="R8-4-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->

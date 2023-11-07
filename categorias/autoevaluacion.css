@@ -9,6 +9,10 @@ body{
     
 }
 
+a{
+    margin: 7px;
+}
+
 ::-webkit-scrollbar {
     width: 6px; 
   }

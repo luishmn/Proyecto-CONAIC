@@ -780,6 +780,7 @@
             <div class="parrafo" id="3.4">
                 <p>3.4 Programas de asignaturas. Se deben calcular unidades de tiempo dedicadas a cada área del conocimiento del programa, atendiendo a dos clasificaciones: Una que es genérica y contempla 4 áreas: 1) Informática y Computación, 2) Matemáticas y Ciencias Básicas, 3) Ciencias Sociales, Humanidades y 4) Otras; y la otra que es específica del área de conocimiento de Informática y Computación y que contempla 8 áreas: 1) Interacción-Hombre-Máquina, 2) Tratamiento de Información, 3) Programación e Ingeniería de Software, 4) Software de Base, 5) Redes, 6) Arquitectura de Computadoras y 7) Entorno Social 8) Matemáticas.</p>
             </div>
+            <a href="/Documentos/Tiempo dedicado.docx">Formato - Tiempo Dedicado (Descargar)</a><br>
             <div class="preguntasCategoria" id="SC_3.4.1">
             <p>3.4.1 Para poder comparar el contenido curricular de distintos programas, se hace referencia a Unidades de cada curso. Para efectos de equivalencia, una Unidad equivale a 1 hora de Teoría frente a grupo, o bien a 3 horas de Práctica frente a grupo para Licenciatura y para el caso de Técnico Superior Universitario, la equivalencia es 2 horas de práctica frente a grupo. El Comité reconoce que existen nuevos modelos pedagógicos donde los estudiantes realizan actividades de autoestudio; en estos casos, la institución que busca la acreditación deberá de justificar la equivalencia utilizada para el número de Unidades. </p>                <textarea id="R3-4-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -1370,6 +1371,11 @@
 
                 <div class="preguntasCategoria" id="SC_3.9.2">
                     <p>3.9.2. Tabla de cumplimiento de competencias específicas. Considerar la definición y justificación competencias iniciales, de desarrollo y de evaluación. Rellenar tabla competencias específicas. Etapa de planificación del modelo de competencias.</p>
+                    <a href="/Documentos/7BIS COMPETENCIAS DE PERFILES DE INFORMATICA Y COMPUTACION-UV2018 (6).pdf">Tabla de ejemplo (Descargar)</a>
+                    <br>
+                    <p>Llenar el excel</p>
+                    <a href="/Documentos//ANEXO. COMPETENCIAS conaic 2018.xlsx">ANEXO COMPETENCIAS (Descargar)</a>
+                    <br>
                     <textarea id="R3-9-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
