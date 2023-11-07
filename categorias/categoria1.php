@@ -1082,6 +1082,8 @@
                     sobresalientes en cuanto a grados académicos obtenidos, 
                     experiencia profesional y docente, publicaciones, pertenencia 
                     a sociedades científicas y/ o profesionales, premios y distinciones, etc.</p>
+
+                <a href="/Documentos/CV-CONAIC.docx">CV-CONAIC (Descargar)</a>
     
 
                 <p>Anexar una muestra representativa de los CV actualizados de 
