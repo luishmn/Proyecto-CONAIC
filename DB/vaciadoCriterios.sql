@@ -143,5 +143,5 @@ INSERT INTO `SubCriterio` (`nombre`, `claveSubCriterio`) VALUES ('Para poder com
 
 INSERT INTO `CriteriosSubCriterio` (`claveCriterio`, `claveSubCriterio`) VALUES ('1.8', '1.8.1'), ('2.4', '2.4.1'), ('2.6', '2.6.1'), ('3.4', '3.4.1');
 
-INSERT INTO `subcriterio` (`nombre`, `claveSubCriterio`) VALUES ('¿Existe un servicio médico o material para primeros auxilios?     ', '5.6.1');
-INSERT INTO `criteriossubcriterio` (`claveCriterio`, `claveSubCriterio`) VALUES ('5.6', '5.6.1');
+INSERT INTO `SubCriterio` (`nombre`, `claveSubCriterio`) VALUES ('¿Existe un servicio médico o material para primeros auxilios?     ', '5.6.1');
+INSERT INTO `CriteriosSubCriterio` (`claveCriterio`, `claveSubCriterio`) VALUES ('5.6', '5.6.1');

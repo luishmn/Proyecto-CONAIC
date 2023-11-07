@@ -148,7 +148,7 @@ while ($row = $result->fetch_assoc()) {
 
 
 
-    
+
     <br><br><br>
     <!--logo superior-->
     <nav class="nav">
