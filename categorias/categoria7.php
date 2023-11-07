@@ -868,6 +868,12 @@
                 <p>En caso afirmativo proporcione una copia o copias de los 
                     documentos (puedes subir más de un archivo).
                 </p>
+                <p>
+                    <a href="../Documentos/CATEGORIA7/7.3.1_1.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p> 
+                <p>
+                    <a href="../Documentos/CATEGORIA7/7.3.1_2.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p> 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
                     <div class="pdfs-options">
@@ -1135,6 +1141,9 @@
                     para los últimos 3 períodos.
                 </p>
                 <textarea id="R7-6-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                <p>
+                    <a href="../Documentos/CATEGORIA7/7.6.2.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p> 
                                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                                     <br><br>
                     <div class="pdfs-options">

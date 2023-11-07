@@ -855,7 +855,10 @@
                 <textarea id="R3-5-1A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
                 <p>Con base en el total de los programas analíticos de las asignaturas del programa, indicar qué porcentaje de ellos mencionan expresamente:</p>
-                <textarea id="R3-5-1A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                <textarea id="R3-5-1A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>  
+                <p>
+                    <a href="../Documentos/CATEGORIA3/3.5.1.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p>             
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
                     <div class="pdfs-options">
@@ -888,7 +891,10 @@
                 <p>Indique en qué asignaturas del programa se elaboran proyectos dirigidos a desarrollar la habilidad del estudiante para resolver problemas reales acordes a las necesidades tecnológicas del propio programa.</p>
                 <textarea id="R3-5-2A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <p>Indique las materias optativas ofrecidas en los últimos tres años. Las unidades de la asignatura y las áreas deben considerarse en términos de la clasificación indicada en las respuestas 3.1 y 3.2.</p>
-                <textarea id="R3-5-2A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                <textarea id="R3-5-2A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>   
+                <p>
+                    <a href="../Documentos/CATEGORIA3/3.5.2.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p>             
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
                     <div class="pdfs-options">
@@ -920,7 +926,10 @@
             <div class="preguntasCategoria" id="SC_3.5.3">
                 <p>3.5.3 El plan de estudios debe considerar la elaboración de trabajo en equipo e interdisciplinario.</p>
                 <p>Indique en qué asignaturas se elabora trabajo en equipo e interdisciplinario.</p>
-                <textarea id="R3-5-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                <textarea id="R3-5-3" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>  
+                <p>
+                    <a href="../Documentos/CATEGORIA3/3.5.3.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p>              
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
                     <div class="pdfs-options">
@@ -962,6 +971,9 @@
                     Las unidades de la asignatura y las áreas deben considerarse en términos de la clasificación indicada en las
                     respuestas 3.1 y 3.2.
                 </p>
+                <p>
+                    <a href="../Documentos/CATEGORIA3/3.6.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p> 
                 <textarea id="R3-6-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -1002,7 +1014,10 @@
             </div>
             <div class="preguntasCategoria" id="SC_3.7.1">
                 <p>3.7.1 El plan de estudios debe ser revisado y actualizado en su caso, al menos cada cinco años.</p>
-                <textarea id="R3-7-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                <textarea id="R3-7-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea> 
+                <p>
+                    <a href="../Documentos/CATEGORIA3/3.7.1.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p>               
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
                     <div class="pdfs-options">

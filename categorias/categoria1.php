@@ -860,10 +860,15 @@
                     </select>
                 </div>
                 <br>
+                
+
 
                 <p>En caso afirmativo proporcione la siguiente información</p>
                 <textarea id="R1-4-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                <p>
+                    <a href="../Documentos/CATEGORIA1/1.4.1.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p>
                     <br><br>
                     <div class="pdfs-options">
                         <div class="imgpdfs">
@@ -908,6 +913,9 @@
                 <p>En caso afirmativo proporcionar la siguiente información para los tres últimos años:</p>
                 <textarea id="R1-4-2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <br>
+                <p>
+                    <a href="../Documentos/CATEGORIA1/1.4.2.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p>
                 <br>
 
                 
@@ -1277,6 +1285,9 @@
                 <textarea id="R1-5-7" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <!-- <img src="" alt=""><button>Guardar</button> -->
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
+                    <p>
+                    <a href="../Documentos/CATEGORIA1/1.5.7.docx" class="etiquetaDescarga">Descargar formato</a>
+                    </p>
                     <br><br>
                     <div class="pdfs-options">
                         <div class="imgpdfs">
@@ -1308,6 +1319,9 @@
                 <p>Proporcionar la siguiente información para los últimos tres períodos:</p>
 
                 <p>Número de profesores adscritos al programa con grados de otras instituciones.</p>
+                <p>
+                    <a href="../Documentos/CATEGORIA1/1.5.8.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p>
                 <textarea id="R1-5-8" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                 <!-- <img src="" alt=""><button>Guardar</button> -->
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -1410,7 +1424,10 @@
                     en consideración la definición de Profesores adscritos al 
                     programa en el criterio 1.5.2) y una estimación del tiempo 
                     que dedican a las actividades señaladas.</p>
-                <textarea id="R1-6-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                <textarea id="R1-6-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>     
+                <p>
+                    <a href="../Documentos/CATEGORIA1/1.6.1.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p>          
                 <!-- <img src="" alt=""><button>Guardar</button> -->
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
@@ -1891,7 +1908,10 @@
             <div class="preguntasCategoria" id="SC_1.9.1">
                 <p>1.9.1 Indicar las movilidades en envío y recepción de los 
                     profesores en los últimos cinco años.</p>
-                <textarea id="R1-9-1A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+                <textarea id="R1-9-1A1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>   
+                <p>
+                    <a href="../Documentos/CATEGORIA1/1.9.1.docx" class="etiquetaDescarga">Descargar formato</a>
+                </p>            
 
                 <!-- <img src="" alt=""><button>Guardar</button> -->
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -1928,6 +1948,9 @@
                 <p>En caso afirmativo proporcione una copia o copias de los 
                     documentos (puedes subir más de un archivo).
 
+                </p>
+                <p>
+                    <a href="../Documentos/CATEGORIA1/1.9.2.docx" class="etiquetaDescarga">Descargar formato</a>
                 </p>
 
                 <!-- <img src="" alt=""><button>Guardar</button> -->

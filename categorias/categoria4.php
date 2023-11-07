@@ -400,6 +400,9 @@
                     <p>En caso afirmativo, proporcione la siguiente información para los últimos cuatro períodos
                         escolares:
                     </p>
+                    <p>
+                    <a href="../Documentos/CATEGORIA4/4.1.1.docx" class="etiquetaDescarga">Descargar formato</a>
+                    </p> 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -441,6 +444,9 @@
                     </div>
                     <br>
                     <p>En caso afirmativo, incluir los resultados en la siguiente tabla</p>
+                    <p>
+                    <a href="../Documentos/CATEGORIA4/4.1.2.docx" class="etiquetaDescarga">Descargar formato</a>
+                    </p> 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -487,6 +493,9 @@
                     </div>
                     <br>
                     <p>En caso afirmativo indique:</p>
+                    <p>
+                    <a href="../Documentos/CATEGORIA4/4.1.3.docx" class="etiquetaDescarga">Descargar formato</a>
+                    </p> 
 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
@@ -750,6 +759,9 @@
                     <p>Describa para los últimos tres períodos escolares, los montos de becas y becas préstamo, así como
                         el número de estudiantes beneficiados:</p>
                     <textarea name="R4-1-1A13" id="R4-1-1A13" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <p>
+                    <a href="../Documentos/CATEGORIA4/4.2.1.docx" class="etiquetaDescarga">Descargar formato</a>
+                    </p> 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
 
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -793,6 +805,9 @@
                     <p>Enumerarlos, indicando si se otorgan a nivel institución (I), Unidad Académica (A), Programa (P).
                     </p>
                     <textarea name="R4-1-1A15" id="R4-1-1A15" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <p>
+                    <a href="../Documentos/CATEGORIA4/4.2.2.docx" class="etiquetaDescarga">Descargar formato</a>
+                    </p> 
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
 
