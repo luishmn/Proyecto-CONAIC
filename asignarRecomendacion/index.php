@@ -27,11 +27,30 @@
                             // Consulta para obtener las opciones desde la base de datos
                             $sql = "SELECT claveSubCriterio, nombre FROM subcriterio";
                             $result = $conexion->query($sql);
+                            $categorias = array(); // Para almacenar todas las categorías
+                            $categorias10 = array(); // Para almacenar categorías del 1 al 10
                             if ($result->num_rows > 0) {
                                 while ($row = $result->fetch_assoc()) {
                                     $nombre = strlen($row['nombre']) > 50 ? substr($row['nombre'], 0, 50) . "..." : $row['nombre'];
-                                    echo "<option value='" . $row['claveSubCriterio'] . "'>" . $row['claveSubCriterio'] . '-' . $nombre . "</option>";
+                                    $opcion = "<option value='" . $row['claveSubCriterio'] . "'>" . $row['claveSubCriterio'] . '-' . $nombre . "</option>";
+                                    if (preg_match("/^(10|[1-9])\./", $row['claveSubCriterio'])) {
+                                        // Categorías del 1 al 10
+                                        $categorias10[] = $opcion;
+                                    } else {
+                                        // Cualquier otra categoría
+                                        $categorias[] = $opcion;
+                                    }
                                 }
+
+                                // Ordenar las categorías del 1 al 10 alfanuméricamente
+                                usort($categorias10, 'strnatcmp');
+                                // Ordenar el resto de categorías alfanuméricamente
+                                usort($categorias, 'strnatcmp');
+
+                                // Imprimir las categorías del 1 al 10
+                                echo implode('', $categorias10);
+                                // Imprimir las demás categorías
+                                echo implode('', $categorias);
                             }
                             $conexion->close();
                             ?>
@@ -39,7 +58,7 @@
                     </div>
                 </div>
             </div>
-            <label for="recomendacion" class="form_label">Recomendación:</label><br><br>
+            <label for "recomendacion" class="form_label">Recomendación:</label><br><br>
             <textarea name="recomendacion" id="recomendacion" cols="30" rows="10" class="form-textarea"></textarea>
             <div class="form_c10_1">
                 <button type="submit" id="registrar">Asignar recomendación</button>
@@ -47,15 +66,6 @@
         </form>
     </div>
     
-    <script>
-        var elements = document.body.children;
-        var reversedElements = [];
-        for (var i = elements.length - 1; i >= 0; i--) {
-            reversedElements.push(elements[i]);
-        }
-        for (var i = 0; i < reversedElements.length; i++) {
-            document.body.appendChild(reversedElements[i]);
-        }
-    </script>
+
 </body>
 </html>
