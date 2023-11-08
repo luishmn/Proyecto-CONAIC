@@ -155,268 +155,13 @@ display: block;
     font-family: Arial, sans-serif;
     
   }
-  .buscar_icono {
-    width: 41px;
-    height: 33px;
-    flex-shrink: 0;
-    background: url(../imagenes/imagen_buscar.png) no-repeat center/contain, transparent;
-    border: none;
-}
 
-.buscar_icono_fondo {
-    width: 48px;
-    height: 48px;
-    flex-shrink: 0;
-    border-radius: 40px;
-    background: #197B9A;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto; /* Empuja el elemento hacia la derecha */
-    
-}
-
-
-.rectangulo_busqueda{
-  width: 320px;
-  height: 48px;
-  flex-shrink: 0;
-
-  border-radius: 40px;
-  background: linear-gradient(0deg, #FEFFFF 0%, #FEFFFF 100%), #FEFFFF;
-
-  display: flex;
-  justify-content: space-between; 
-  align-items: space; /* Centra verticalmente en el medio */
-    
-
-
-}
-
-.input_busqueda{
-    margin-left: 20px;
-    border: none;
-    outline: none;
-    font-family: Arial, sans-serif;
-}
-
-.buscar_usuario{
-  display: flex;
-  justify-content: space-between; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  font-family: Arial, sans-serif;
-  margin-left: 65px;
-  width: 95%;
-
-    
-}
-
-.nombres_columnas{
-
-height: 62px;
-flex-shrink: 0;
-background: #89C7D0;
-margin: 0 auto ;
-width: 90%;
-font-family: Arial, sans-serif;
-
-}
+   
 
 
 
-
-.nombres_columnas table {
-    width: 100%;
-    table-layout: fixed;
-    border-collapse: collapse;
-    text-align: center;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
+   
  
-}
-
-.nombres_columnas th {
-    padding: 10px; /* Ajusta el espacio entre encabezados y contenido */
-    background-color: #89C7D0;
-    color: black;
-    padding: 18px;
-    font-family: Arial, sans-serif;
-}
-
-
-.nombres_columnas td {
-    padding: 10px; /* Ajusta el espacio entre celdas de datos */
-    border: 1px solid #89C7D0; /* Agrega un borde a las celdas */
-    font-family: Arial, sans-serif;
-}
-
-.nombres_columnas tr:first-child {
-    background-color: #89C7D0;
-    color: black;
-    font-family: Arial, sans-serif;
-}
-
-
-
-
-
-
-
-/* AQUÍ COMIENZA EL CSS PARA EL FORMULARIO DE REGISTRO*/
-
-.contenido {
-   
-    flex-shrink: 0;
-    background: #F3FAFA;
-    margin: 0 auto;
-    width: 90%;
-    height: 45%;
-    font-family: Arial, sans-serif;
-    margin-bottom: 20px; /* Ajusta el valor según sea necesario */
-}
-
-.tabla {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #ccc;
-    margin-bottom: 20px; /* Ajusta el valor según sea necesario */
-
-}
-
-.fila {
-    display: flex;
-    align-items: center;
-    border-bottom: 0px solid #ccc;
-    cursor: pointer;
-    margin-bottom: 10px; /* Ajusta el valor según sea necesario */
-    min-height: 50px; /* Por ejemplo */
-}
-
-
-.fila:hover {
-    background-color: #D4E1E3;
-    .celda{
-        border: 1px solid #D4E1E3;
-    }
-}
-.tabla-container {
-  height: 100%; /* Ajusta la altura máxima según sea necesario */
-  overflow-y: auto; /* Agrega una barra de desplazamiento vertical cuando sea necesario */
-}
-.tabla-container::-webkit-scrollbar {
-  width: 6px; 
-}
-
-.tabla-container::-webkit-scrollbar-thumb {
-  background-color: #145070; 
-  border-radius: 6px; 
-}
-
-.tabla-container::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0.0); 
-}
-.encabezado {
-    display: flex;
-    background-color: white;
-    color: black;
-    padding: 18px;
-    font-family: Arial, sans-serif;
-}
-
-.celda {
-    flex: 1; /* Que las celdas ocupen todo el espacio disponible */
-    padding: 10px;
-    border: 1px solid white;
-    text-align: center; /* Centra el texto horizontalmente */
-    font-family: Arial, sans-serif;
-}
-
-
-
-.botones{
-    display: flex;
-    justify-content: flex-end; /* Alinea el contenido a la derecha */
-    margin-right: 10%; /* Establece un margen derecho del 10% */
-    
-}
-
-    
-.boton_eliminar {
-  display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%); /* Centra horizontalmente */
-
-  width: 12%;
-  height: 6%;
-  border-radius: 40px;
-  background: #f70000;
-  border: none;
-  
-
-  color: #fcfcfc;
-  text-align: center;
-  font-family: Arial;
-  font-size: 100%;
-}
-.boton_eliminar i {
-  margin-right: 5px; /* Agrega un margen a la derecha del ícono */
-  font-size: 14px; /* Cambia el tamaño del ícono */
-}
-
-
-   
-
-
-.boton_eliminar:hover{
-  background: #3a0000;
-} 
-
-.boton_registrar{
-  width: 144px;
-  height: 48px;
-  flex-shrink: 0;
-  border-radius: 40px;
-  background: #197B9A;
-  border: none;
-
-  color: #000;
-  text-align: center;
-  font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-left: 10px; /* Ajusta el valor del margen según tu preferencia */
-
-}   
-.boton_registrar:hover{
-    transform: scale(0.95);
-  } 
-   
-.boton_editar{
-    width: 144px;
-    height: 48px;
-    flex-shrink: 0;
-    border-radius: 40px;
-    background: #197B9A;
-    border: none;
-
-    color: #000;
-text-align: center;
-font-family: Inter;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-left: 10px; /* Ajusta el valor del margen según tu preferencia */
-
-
-
-}   
 #logoFondo{
     position: relative;
     width: 100%;
@@ -464,7 +209,7 @@ margin-left: 10px; /* Ajusta el valor del margen según tu preferencia */
 
 #formularioContainer {
     width: 50%;
-    height: 70%;
+    height: 31vw; /*si el tamaño no funciona cambiar esto a 70% */
     position: fixed;
     top: 50%;
     left: 50%;
@@ -482,41 +227,15 @@ margin-left: 10px; /* Ajusta el valor del margen según tu preferencia */
 .centrar {
   text-align: center;
   font-family: Arial;
+  font-size: 2.5vw;
 }
 
 label {
   display: block;
   margin-bottom: 1%;
   font-family: Arial;
+  font-size: 1.1vw;
 }
-
-#nombre, #apellidoP, #apellidoM, #cargo{
-  padding-left: 10%;
-  border: 1px solid #ccc;
-  border-radius: 30px;
-  font-family: Arial;
-}
-
-#correo {
-  padding-left: 3%;
-  border: 1px solid #ccc;
-  border-radius: 30px;
-  font-family: Arial;
-}
-#cargo{
-  padding-left: 3%;
-  border: 1px solid #ccc;
-  border-radius: 30px;
-  font-family: Arial;
-}
-
-#contrasena, #contrasenaV{
-  padding-left: 7%;
-  border: 1px solid #ccc;
-  border-radius: 30px;
-  font-family: Arial;
-}
-
 
 
 .from-login{
@@ -540,22 +259,22 @@ label {
 
 
 
+
 .form_c10_1{
   display: flex;
-  position:absolute;
- left: 36.5%;
- text-align: center;
-
-  
+  position:relative;
+  text-align: center;  
 }
 
 .form_c10_1 button{
+  margin-left: auto;
+  margin-right: auto;
   border: none;
   outline: none;
-  font-size: 100%;
+  font-size: 1vw;
   text-align: center;
-  width: 150%;
-  height: 45px;
+  width: 35%;
+  height: 3vw;
   border-radius: 40px;
   background: #197B7A;
   flex-shrink: 0;
@@ -594,229 +313,24 @@ label {
 }
 
 /* Estilos para el cuadro de diálogo personalizado */
-#cuadroDialogo {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
-  border-radius: 30px;
-  display: none;
-  
-  
-  width: 50%;
-  height: 50%;
-  background-color: #F3FAFA;
-  z-index: 1;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  border: 1px solid rgb(199, 77, 77); /* Agrega un borde rojo */
-
-}
-
-#tituloError{
-  text-align: center;
-  font-family: Arial;
-  
-}
-
-#descripcionError{
-  text-align: center;
-  font-family: Arial;
-  font-size: medium;
-
-}
-
-#botonError{
-  text-align: center;
-  font-family: Arial;
-  font-size: medium;
-
-  display: block; /* Convierte el botón en un elemento de bloque */
-  margin: 0 auto; /* Centra horizontalmente */
-  padding: 10px 20px; /* Espaciado interior del botón */
-  border-radius: 10px; /* Bordes redondeados */
-  background-color: #0097B2; /* Cambia el color de fondo */
-  color: #fff; /* Cambia el color del texto */
-  border: none; /* Elimina el borde */
-  cursor: pointer;
-}
-
-#botonError:hover {
-  background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
-}
-
-
-.cerrar {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer;
-  color: red;
-  font-size: 300%;
-}
-
-
-/* EMPIEZA EL CSS PARA EL FORMULARIO DE EDITAR USUARIO */
-#formularioContainerEditar {
-  width: 50%;
-  height: 70%;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  z-index: 1000; /* Asegura que esté encima del fondo oscuro */
- 
-  margin: auto;
-  
-  
-  border-radius:40px;
-}
-
-
-
-
-#nombreEdit, #apellidoPEdit, #apellidoMEdit, #cargoEdit{
-padding-left: 10%;
-border: 1px solid #ccc;
-border-radius: 30px;
-font-family: Arial;
-}
-
-#correoEdit {
-padding-left: 3%;
-border: 1px solid #ccc;
-border-radius: 30px;
-font-family: Arial;
-}
-#cargoEdit{
-padding-left: 3%;
-border: 1px solid #ccc;
-border-radius: 30px;
-font-family: Arial;
-}
-
-#contrasenaEdit, #contrasenaVEdit{
-padding-left: 7%;
-border: 1px solid #ccc;
-border-radius: 30px;
-font-family: Arial;
-}
-
-
-
-
-
-#tipoUsuarioEdit{
-border-radius: 30px;
-
-}
-
-
-
-#verpasswordEdit{
-width: 60%;
-border: none;
-background: none;
-cursor: pointer;
-outline: none; /* Elimina el contorno gris al quitar el foco del botón */
-
-transition: opacity 0.9s; /* Agrega una transición suave de opacidad */
-}
-
-/* Cambia la opacidad al pasar el ratón por encima */
-#verpasswordEdit img:hover {
-opacity: 0.8; /* Cambia la opacidad al 70% cuando el cursor está sobre la imagen */
-}
-
-#ojoEdit{
-width: 100%;
-height: 100%;
-opacity: 0.2;
-
-}
-
-/* Animación para el formulario emergente */
-@keyframes aparecer {
-  from {
-      transform: translate(-50%, -60%);
-      opacity: 0;
-  }
-  to {
-      transform: translate(-50%, -50%);
-      opacity: 1;
-  }
-}
-
-/* Estilos para el formulario emergente */
-#formularioContainerEditar {
-  /* Tus estilos existentes aquí */
-
-  /* Aplicar la animación */
-  animation: aparecer 0.3s ease-in-out;
-}
-
-/* Estilos para el cuadro de diálogo personalizado */
-#cuadroDialogoEdit {
-position: fixed;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-
-border-radius: 30px;
-display: none;
-
-
-width: 50%;
-height: 50%;
-background-color: #F3FAFA;
-z-index: 1010;
-justify-content: center; /* Centra horizontalmente */
-align-items: center; /* Centra verticalmente */
-border: 1px solid rgb(199, 77, 77); /* Agrega un borde rojo */
-
-}
-
-#tituloErrorEdit{
-text-align: center;
-font-family: Arial;
-
-}
-
-#descripcionErrorEdit{
-text-align: center;
-font-family: Arial;
-font-size: medium;
-
-}
-
-#botonErrorEdit{
-text-align: center;
-font-family: Arial;
-font-size: medium;
-
-display: block; /* Convierte el botón en un elemento de bloque */
-margin: 0 auto; /* Centra horizontalmente */
-padding: 10px 20px; /* Espaciado interior del botón */
-border-radius: 10px; /* Bordes redondeados */
-background-color: #0097B2; /* Cambia el color de fondo */
-color: #fff; /* Cambia el color del texto */
-border: none; /* Elimina el borde */
-cursor: pointer;
-}
-
-#botonErrorEdit:hover {
-background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
-}
-
 
 
 
 
 #subcriterioSelect{
     border-radius: 30px;
-    width: 90%;
+    width: 99%;
     height: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 1vw;
+    font-size: 1.1vw;
 
+}
+
+#recomendacion{
+  border-radius: 20px;
+  width: 95%;
+  padding: 1vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1vw;
 }

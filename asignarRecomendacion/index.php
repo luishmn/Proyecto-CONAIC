@@ -58,10 +58,14 @@
                     </div>
                 </div>
             </div>
-            <label for "recomendacion" class="form_label">Recomendación:</label><br><br>
+
+            <br>
+            <label for "recomendacion" class="form_label">Recomendación:</label>
             <textarea name="recomendacion" id="recomendacion" cols="30" rows="10" class="form-textarea"></textarea>
+            
+            <br><br>
             <div class="form_c10_1">
-                <button type="submit" id="registrar">Asignar recomendación</button>
+                <button type="submit" id="asignar">Asignar recomendación</button>
             </div>
         </form>
     </div>
