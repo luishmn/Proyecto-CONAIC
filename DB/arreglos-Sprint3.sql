@@ -23,3 +23,8 @@ CREATE TABLE recomendaciones (
     fechaTermino DATE,
     archivo text 
 );
+
+ALTER TABLE Recomendaciones
+ADD CONSTRAINT FK_recs_subsc
+FOREIGN KEY(claveRecomendacion)
+REFERENCES SubCriterio(claveSubCriterio);
