@@ -11,6 +11,8 @@ FOREIGN KEY(claveRecomendacion)
 REFERENCES SubCriterio(claveSubCriterio);
 
 
+
+---------------------------------
 DROP TABLE recomendaciones;
 
 CREATE TABLE recomendaciones (
