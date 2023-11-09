@@ -46,7 +46,7 @@ if ($stmt) {
         echo $descripcion;
     } else {
         // Si no se encuentra ninguna descripción, puedes devolver un mensaje o un valor predeterminado
-        echo "No se encontró ninguna descripción para el subcriterio seleccionado.";
+        echo "";
     }
 } else {
     // Si hay un error en la preparación de la consulta
