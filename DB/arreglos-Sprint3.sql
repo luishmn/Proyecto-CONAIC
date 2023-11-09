@@ -2,26 +2,16 @@ use conaic;
 
 DROP TABLE subcriteriosrecomendaciones;
 DROP TABLE criteriosrecomendaciones;
-ALTER TABLE `Recomendaciones` ADD `archivo` TEXT AFTER `claveRecomendacion`;
 
+DROP TABLE Recomendaciones;
 
-ALTER TABLE Recomendaciones
-ADD CONSTRAINT FK_recs_subsc
-FOREIGN KEY(claveRecomendacion)
-REFERENCES SubCriterio(claveSubCriterio);
-
-
-
----------------------------------
-DROP TABLE recomendaciones;
-
-CREATE TABLE recomendaciones (
-    claveRecomendacion varchar(10) PRIMARY KEY,
-    descripcion TEXT, 
-    respuesta TEXT, 
-    fechaInicio DATE,
-    fechaTermino DATE,
-    archivo text 
+CREATE TABLE Recomendaciones(
+claveRecomendacion varchar(10) NOT NULL,
+descripcion text,
+respuesta text,
+fechaInicio date,
+fechaTermino date,
+archivo TEXT
 );
 
 ALTER TABLE Recomendaciones
