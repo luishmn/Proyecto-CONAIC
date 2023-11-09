@@ -1,25 +1,21 @@
 
 <?php
     // Datos de conexión a la base de datos
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "conaic";
+    include "../conexionDB/conexion.php";
+    conecta();
+
+    // Verifica la conexión
+    if ($conexion->connect_error) {
+        die("Error de conexión: " . $conexion->connect_error);
+    }
+
 
     // Variable que deseas buscar
     $claveRecomendacion = "1.4.2";
 
-    // Establecer conexión a la base de datos
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-    // Verificar la conexión
-    if ($conn->connect_error) {
-        die("Error de conexión: " . $conn->connect_error);
-    }
-
     // Consulta SQL para buscar la información
     $query = "SELECT descripcion FROM recomendaciones WHERE ClaveRecomendacion = '$claveRecomendacion'";
-    $result = $conn->query($query);
+    $result = $conexion->query($query);
 
     // Verificar si se encontraron resultados
     if ($result->num_rows > 0) {
@@ -32,7 +28,7 @@
     
 
     // Cerrar la conexión a la base de datos
-    $conn->close();
+    $conexion->close();
 ?>
 
 
@@ -66,6 +62,7 @@
                 var $desc = "<?php echo $descripcion; ?>";
                 var $clave = "<?php echo $claveRecomendacion; ?>";
             </script>
+
                 <textarea name="respuesta" id="respuesta_text" rows="5" placeholder="Escriba su respuesta aqui..."></textarea>
             </div>
 
