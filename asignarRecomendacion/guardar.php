@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Insertar recomendación en la base de datos
         $sql = "INSERT INTO recomendaciones (descripcion, respuesta, fechaInicio, fechaTermino, claveRecomendacion, archivo)
-                VALUES ('$recomendacion', '', NOW(), NOW(), '$claveSubCriterio', '')";
+                VALUES ('$recomendacion', '', '', '', '$claveSubCriterio', '')";
 
         if ($conexion->query($sql) === TRUE) {
             echo "Recomendación asignada correctamente.";
