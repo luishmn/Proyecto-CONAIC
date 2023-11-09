@@ -96,11 +96,11 @@
     <div class="nombres_columnas">
     <table>
         <tr>
+            <th>Subcriterio</th>
             <th>Descripción</th>
             <th>Respuesta</th>
             <th>Fecha inicio</th>
             <th>Fecha término</th>
-            <th>Clave recomendación</th>
             <th>Archivo</th>
         </tr>
     </table>
@@ -115,11 +115,11 @@
             while ($row = $result->fetch_assoc()) {
                 // Modificar el código HTML para agregar el contenido de la columna archivo
                 echo "<div class='fila' data-busqueda='" . $row["descripcion"] . " " . $row["respuesta"] . " " . $row["fechaInicio"] . " " . $row["fechaTermino"] . " " . $row["claveRecomendacion"] . " " . $row["archivo"] . "'>";
+                echo "<div class='celda'>" . $row["claveRecomendacion"] . "</div>";
                 echo "<div class='celda'>" . $row["descripcion"] . "</div>";
                 echo "<div class='celda'>" . $row["respuesta"] . "</div>";
                 echo "<div class='celda'>" . $row["fechaInicio"] . "</div>";
                 echo "<div class='celda'>" . $row["fechaTermino"] . "</div>";
-                echo "<div class='celda'>" . $row["claveRecomendacion"] . "</div>";
                 echo "<div class='celda'>" . $row["archivo"] . "</div>";
                 echo "</div>";
             }

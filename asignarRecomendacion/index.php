@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 <body>
     <div id="formularioContainer" class="">
-        <form class="from-login" action="registrarUsuarioBD.php" id="formularioRegistro" method="post">
+        <form class="from-login" action="guardar.php"  id="formularioRegistro" method="post">
             <h1 class="centrar">Asignar recomendación</h1>
             <br>
             <div class="contenedor">
@@ -42,14 +43,9 @@
                                     }
                                 }
 
-                                // Ordenar las categorías del 1 al 10 alfanuméricamente
                                 usort($categorias10, 'strnatcmp');
-                                // Ordenar el resto de categorías alfanuméricamente
                                 usort($categorias, 'strnatcmp');
-
-                                // Imprimir las categorías del 1 al 10
                                 echo implode('', $categorias10);
-                                // Imprimir las demás categorías
                                 echo implode('', $categorias);
                             }
                             $conexion->close();
@@ -65,11 +61,35 @@
             
             <br><br>
             <div class="form_c10_1">
-                <button type="submit" id="asignar">Asignar recomendación</button>
+                <button type="button" id="asignar">Asignar recomendación</button>
             </div>
         </form>
-    </div>
-    
 
+        <script>
+            $(document).ready(function(){
+                $('#subcriterioSelect').change(function(){
+                    var subcriterioSeleccionado = $(this).val();
+
+                    // Realizar la solicitud AJAX para obtener la descripción
+                    $.ajax({
+                        type: 'POST',
+                        url: 'obtener_descripcion.php', // Reemplaza con la ruta correcta a tu archivo PHP
+                        data: { subcriterio: subcriterioSeleccionado },
+                        success: function(response){
+                            // Llenar el textarea con la descripción obtenida
+                            $('#recomendacion').val(response);
+                        },
+                        error: function(error){
+                            console.log(error);
+                        }
+                    });
+                });
+
+                $('#asignar').click(function(){
+                    $('#formularioRegistro').submit();
+                });
+            });
+        </script>
+    </div>
 </body>
 </html>
