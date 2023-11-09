@@ -11,14 +11,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $claveSubCriterio = $_POST['subcriterioSelect'];
         $recomendacion = $_POST['recomendacion'];
 
-        // Insertar recomendación en la base de datos
-        $sql = "INSERT INTO recomendaciones (descripcion, respuesta, fechaInicio, fechaTermino, claveRecomendacion, archivo)
-                VALUES ('$recomendacion', '', '', '', '$claveSubCriterio', '')";
+        // Verificar si ya existe una fila con la clave de recomendación
+        $existingRow = $conexion->query("SELECT * FROM recomendaciones WHERE claveRecomendacion = '$claveSubCriterio'");
 
-        if ($conexion->query($sql) === TRUE) {
-            echo "Recomendación asignada correctamente.";
+        if ($existingRow->num_rows > 0) {
+            // Si ya existe, actualizar la recomendación
+            $updateSql = "UPDATE recomendaciones SET descripcion = '$recomendacion' WHERE claveRecomendacion = '$claveSubCriterio'";
+            if ($conexion->query($updateSql) === TRUE) {
+                echo "Recomendación actualizada correctamente.";
+            } else {
+                echo "Error al actualizar la recomendación: " . $conexion->error;
+            }
         } else {
-            echo "Error al asignar la recomendación: " . $conexion->error;
+            // Si no existe, insertar una nueva recomendación
+            $insertSql = "INSERT INTO recomendaciones (claveRecomendacion, descripcion, respuesta, fechaInicio, fechaTermino, archivo)
+                          VALUES ('$claveSubCriterio', '$recomendacion', '', '', '', '')";
+
+            if ($conexion->query($insertSql) === TRUE) {
+                echo "Recomendación asignada correctamente.";
+            } else {
+                echo "Error al asignar la recomendación: " . $conexion->error;
+            }
         }
 
         // Cerrar la conexión a la base de datos
