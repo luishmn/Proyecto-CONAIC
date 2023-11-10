@@ -150,30 +150,62 @@ document.addEventListener('DOMContentLoaded', function() {
         
         var band=0
         if (respuesta.trim() === '') {
-            alert("Por favor, Responda el apartado ");
+            Swal.fire({
+                    title: 'Por favor, responda el apartado',
+                    icon: 'error',
+                    confirmButtonText: 'Cerrar',
+                    confirmButtonColor: '#197B7A' 
+                })
         } else if (inicio.trim() === '') {
-            alert("Por favor, seleccione fecha de inicio");
+            Swal.fire({
+                    title: 'Por favor, seleccione fecha de inicio',
+                    icon: 'error',
+                    confirmButtonText: 'Cerrar',
+                    confirmButtonColor: '#197B7A' 
+                })
         } else if (fin.trim() === ''){
-            alert("Por favor, seleccione fecha de fin");
+            Swal.fire({
+                    title: 'Por favor, seleccione fecha de fin',
+                    icon: 'error',
+                    confirmButtonText: 'Cerrar',
+                    confirmButtonColor: '#197B7A' 
+                })
         }
         else {
 
             // Verificar si la fecha de inicio es mayor que la fecha final
             var band = 0;
             if (fechaInicio > fechaFin) {
-                alert("La fecha de inicio no puede ser mayor a la fecha final");
+                Swal.fire({
+                    title: 'Por favor, seleccione fecha valida',
+                    text: 'La fecha de inicio no puede ser mayor a la fecha final',
+                    icon: 'error',
+                    confirmButtonText: 'Cerrar',
+                    confirmButtonColor: '#197B7A' 
+                })
                 band = 1;
             }
 
             // Verificar si la diferencia de años es mayor a 5
             if (diferenciaAnios > 5) {
-                alert("La diferencia entre la fecha de inicio y la fecha final no puede ser mayor a 5 años");
+                Swal.fire({
+                    title: 'Por favor, seleccione fecha valida',
+                    text: 'La diferencia entre la fecha de inicio y la fecha final no puede ser mayor a 5 años',
+                    icon: 'error',
+                    confirmButtonText: 'Cerrar',
+                    confirmButtonColor: '#197B7A' 
+                })
                 band = 1;
             }
 
             if (band == 0) {
                 aGuardar(respuesta, inicio, fin);
-                alert("Guardado correctamente");
+                Swal.fire({
+                    title: 'Guardado correctamente',
+                    icon: 'success',
+                    confirmButtonText: 'Cerrar',
+                    confirmButtonColor: '#197B7A' 
+                })
             }
         }
 
