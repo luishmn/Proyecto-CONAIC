@@ -14,7 +14,7 @@
     $claveRecomendacion = "1.4.2";
 
     // Consulta SQL para buscar la información
-    $query = "SELECT descripcion FROM recomendaciones WHERE ClaveRecomendacion = '$claveRecomendacion'";
+    $query = "SELECT descripcion, respuesta, fechaInicio, fechaTermino FROM recomendaciones WHERE ClaveRecomendacion = '$claveRecomendacion'";
     $result = $conexion->query($query);
 
     // Verificar si se encontraron resultados
@@ -22,6 +22,10 @@
         // Recuperar el resultado
         $row = $result->fetch_assoc();
         $descripcion = $row["descripcion"];
+        $Ress = $row["respuesta"];
+        $inic1= $row["fechaInicio"];
+        $final1= $row["fechaTermino"];
+
     } else {
         $descripcion = "No se encontraron resultados para la clave de recomendación: " . $claveRecomendacion;
     }
@@ -61,20 +65,21 @@
             <script>
                 var $desc = "<?php echo $descripcion; ?>";
                 var $clave = "<?php echo $claveRecomendacion; ?>";
+
             </script>
 
-                <textarea name="respuesta" id="respuesta_text" rows="5" placeholder="Escriba su respuesta aqui..."></textarea>
+                <textarea name="respuesta" id="respuesta_text" rows="5" placeholder="Escriba su respuesta aqui..."><?php echo $Ress; ?></textarea>
             </div>
 
             <br>
             <div class="fechas">
                 <div class="inicio">
                     <p>Fecha de inicio</p>
-                    <input type="date" class="form-control" id="inicio1">
+                    <input type="date" class="form-control" id="inicio1" value="<?php echo $inic1; ?>">
                 </div>
                 <div class="fin">
                     <p>Fecha de fin</p>
-                    <input type="date" class="form-control" id="fin2">
+                    <input type="date" class="form-control" id="fin2" value="<?php echo $final1; ?>">
                 </div>
             </div>
             
