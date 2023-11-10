@@ -11,7 +11,7 @@
 
 
     // Variable que deseas buscar
-    $claveRecomendacion = "1.4.2";
+    $claveRecomendacion = "1.5.3";
 
     // Consulta SQL para buscar la información
     $query = "SELECT descripcion, respuesta, fechaInicio, fechaTermino FROM recomendaciones WHERE ClaveRecomendacion = '$claveRecomendacion'";
@@ -147,22 +147,34 @@ document.addEventListener('DOMContentLoaded', function() {
         var diferenciaAnios = fechaFin.getFullYear() - fechaInicio.getFullYear();
 
         // Verificar si la fecha de inicio es mayor que la fecha final
+        
         var band=0
-        if (fechaInicio > fechaFin) {
-            alert("La fecha de inicio no puede ser mayor a la fecha final");
-            band=1
+        if (respuesta.trim() === '') {
+            alert("Por favor, Responda el apartado ");
+        } else if (inicio.trim() === '') {
+            alert("Por favor, seleccione fecha de inicio");
+        } else if (fin.trim() === ''){
+            alert("Por favor, seleccione fecha de fin");
         }
+        else {
 
-        // Verificar si la diferencia de años es mayor a 5
-        if (diferenciaAnios > 5) {
-            alert("La diferencia entre la fecha de inicio y la fecha final no puede ser mayor a 5 años");
-            band=1
-        }
+            // Verificar si la fecha de inicio es mayor que la fecha final
+            var band = 0;
+            if (fechaInicio > fechaFin) {
+                alert("La fecha de inicio no puede ser mayor a la fecha final");
+                band = 1;
+            }
 
-        if (band==0){
-            aGuardar(respuesta, inicio, fin)
-            alert("Guardado correctamente");
+            // Verificar si la diferencia de años es mayor a 5
+            if (diferenciaAnios > 5) {
+                alert("La diferencia entre la fecha de inicio y la fecha final no puede ser mayor a 5 años");
+                band = 1;
+            }
 
+            if (band == 0) {
+                aGuardar(respuesta, inicio, fin);
+                alert("Guardado correctamente");
+            }
         }
 
 
