@@ -23,7 +23,10 @@ session_start(); //Inicia una nueva sesión
             <img class="imagen_persona" src="/imagenes/img_login/usuario.png" alt="user_img">
             
             <form method="post" action="">
-                <div>
+                <div class="div-fotoUsu">
+                <img class="foto-usu-input" src="/imagenes/img_login/usuario2.png" alt="">
+                </div>
+                <div>                
                     <input class="usuario-input" name="usuario" type="text" placeholder="Correo"><br>
                     <input class="pass-input" name="pass" type="password" placeholder="Contraseña"><br>
                     <button type="submit">Iniciar sesión</button>
