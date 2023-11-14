@@ -70,12 +70,30 @@ body{
     margin: 10px;
 }
 
+.div-fotoUsu{
+    position: absolute;
+    top: 22.5%;
+    left: 51%;
+}
+
+.foto-usu-input{
+    display: flex;
+    margin: 0 auto;
+    position: absolute;
+    width: 45px;
+    height: auto;
+    
+
+}
+
 .usuario-input{
     background-image: url('/imagenes/img_login/usuario2.png');
     background-size: 45px;
     background-position: 5px center;
     background-repeat: no-repeat;
+    backface-visibility: visible;
 }
+
 .pass-input{
     background-image: url('/imagenes/img_login/candado2.png');
     background-size: 45px;
