@@ -3,13 +3,13 @@ include "../conexionDB/conexion.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Verificar que se haya seleccionado un subcriterio
-    if (isset($_POST['subcriterioSelect'])) {
+    if (isset($_POST['subcriterioSelect1'])) {
         // Conectar a la base de datos
         conecta();
 
         // Recuperar los valores del formulario
-        $claveSubCriterio = $_POST['subcriterioSelect'];
-        $recomendacion = $_POST['recomendacion'];
+        $claveSubCriterio = $_POST['subcriterioSelect1'];
+        $recomendacion = $_POST['recomendacion1'];
 
         // Verificar si ya existe una fila con la clave de recomendación
         $existingRow = $conexion->query("SELECT * FROM recomendaciones WHERE claveRecomendacion = '$claveSubCriterio'");

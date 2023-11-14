@@ -63,7 +63,7 @@
         </button>
     
         <button class="btn2">
-            <a href="pagina_emergente.html">
+            <a href="../ver_recomendaciones/index_ver_recomendaciones.php">
                 <img src="imagenes/seguimiento.png" alt="Seguimiento">
             </a>
         </button>

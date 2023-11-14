@@ -8,11 +8,6 @@ body{
     /*background-position: 950px 220px;*/
     
 }
-
-a{
-    margin: 7px;
-}
-
 ::-webkit-scrollbar {
     width: 6px; 
   }
@@ -25,8 +20,7 @@ a{
   ::-webkit-scrollbar-track {
     background-color: rgba(0, 0, 0, 0.0); 
   }
-
-
+  
 .barra-superior{
     z-index: 100;
     font-family: Arial, Helvetica, sans-serif;
@@ -39,28 +33,19 @@ a{
     border-radius:0px 0px 30px 30px;
     left: 0; 
     right:0;
-
 }
-
 .fa-home {
     font-size: 200%; /* Cambia el valor según el tamaño deseado */
     position: relative;
     top: -220%;
 }
-
 .fa-home:hover {
     transform: scale(0.90);
     
 }
-
 .enlace-inicio { 
     text-decoration: none; color: white;
 }
-
-
-
-
-
 .barra-superior .menu_estilo_usuario{
     border: none;
     background-color: transparent;
@@ -77,32 +62,20 @@ a{
   height: auto;
   display: block;
 }
-
 .barra-superior .menu_estilo_usuario:hover{
     transform: scale(0.90);
 }
-
 .barra-superior .menu_estilo_usuario img{
     width: 120px;
     height: auto;
     display: block;
 }
-
-
-
-
-
-
-
-
 .barra-superior .menu_usuario:hover .contenido_del_menu_usuarios {
     display: block;
 }
-
 .barra-superior .contenido_del_menu_usuarios a:hover {
     background-color: lightblue;
 }
-
 .texto{
     font-size: 14px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
@@ -115,10 +88,6 @@ a{
     color: black;
     
 }
-
-
-
-
 .L1 {
     font-size: 1.5vw;
     position: absolute;
@@ -131,8 +100,6 @@ a{
     border-radius: 80px;
     font-family: Arial, sans-serif;
 }
-
-
 .usu_B{
     padding: 5px;
     position:absolute;
@@ -144,42 +111,33 @@ a{
     font-size: 1.5vw;
     border-radius:30px 30px 30px 30px;
     font-family: Arial, sans-serif;
-
 }
 .usu_B a{
     font-size: 12px;
 }
-
-
 .logoArriba{
     margin-top: 4%;
     width: 20%;
     height: auto;
 }
-
 .logoLetras img{
     height: auto;
     width: 20vw;
     min-width:150px ;
     
 }
-
 .logoFondo{
     position:absolute;
     left: 70%;
     top: 38%;
-
 }
-
 .logoFondo img{
     height: auto;
     width: 30vw;
 }
-
 .todo{
     display: flex;
 }
-
 .cuadro2 {
     padding: 2px;
     background-color: #89C7D0;
@@ -193,9 +151,6 @@ a{
     width: 20%;
     height: auto;
 }
-
-
-
 .lablCat {
     display: flex;
     justify-content: center; /* Centra horizontalmente */
@@ -211,9 +166,6 @@ a{
     height: 5%;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
 .cuadro2 p{
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
@@ -221,7 +173,6 @@ a{
     font-size: 16px;
     
 }
-
 .cuadroCate{
     max-height: 75%; /* Define la altura máxima que deseas antes de que aparezca la barra de desplazamiento */
     overflow-y: auto; /* Habilita la barra de desplazamiento vertical cuando sea necesario */
@@ -239,20 +190,16 @@ a{
     overflow-x: hidden;
     
 }
-
 .cuadroCate::-webkit-scrollbar {
     width: 12px; 
 }
-
 .cuadroCate::-webkit-scrollbar-thumb {
     background-color: #145070; 
     border-radius: 6px; 
 }
-
 .cuadroCate::-webkit-scrollbar-track {
     background-color: #D4E1E3; 
 }
-
 .parrafo{
     text-align: justify;
     width: 80%;
@@ -261,7 +208,6 @@ a{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .parrafo1 {
     text-align: left;
     width: 80%;
@@ -274,13 +220,10 @@ a{
 .parrafo1:hover{
     transform: scale(1.1);
 }
-
 .elemetosMenuLateral a {
     text-decoration: none; /* Elimina el subrayado de los enlaces dentro de .parrafo1 */
     color: black; /* Cambia el color de los enlaces a tu elección */
 }
-
-
 .fa-arrow-right {
     font-size: 100%;
     background-color: rgb(240, 232, 232); 
@@ -290,13 +233,10 @@ a{
     float: right;
     
 }
-
 .fa-arrow-right:hover {
     transform: scale(1.2);
     background-color: white;
 }
-
-
 .titulo_categoria{
     position: relative;
     left: -2%;
@@ -308,7 +248,6 @@ a{
     font-family: Arial, Helvetica, sans-serif;
     background: #73B1C1;
 }
-
 .preguntasCategoria{
     font-size: 16px;
     padding: 5px;
@@ -320,7 +259,6 @@ a{
     margin-bottom: 10px;
     text-align: justify;
 }
-
 .preguntasCategoria input{
     margin: 5px;
     padding: 5px;
@@ -330,7 +268,6 @@ a{
     font-size: 14px;
     border-radius: 20px;
 }
-
 .preguntasCategoria textarea{
     margin: 5px;
     padding: 5px;
@@ -340,9 +277,6 @@ a{
     font-size: 14px;
     border-radius: 20px;
 }
-
-
-
 .preguntasCategoria button{
     border: 0;
     background-color: #004AAD;
@@ -353,7 +287,6 @@ a{
     padding: 5px;
     transition: transform 0.2s;
 }
-
 .preguntasCategoria button:hover{
     transform: scale(0.95);
 }
@@ -365,7 +298,6 @@ a{
     margin: 0 auto; /* Centra horizontalmente */
     margin-bottom: 3vw;
 }
-
 .imgpdfs{
     width: 30%;
     padding: 10px;
@@ -373,26 +305,16 @@ a{
     font-size: 6vw;
     color: white;
 }
-
 .Listo {
     display: block;
-
     padding: 5px;
-
  
     width: 70%;
-
-
     
-
 }
-
-
-
 .Listo img{
     width: 10%;
 }
-
 .Listo button{
     border: 0;
     margin-left: 5%;
@@ -406,17 +328,12 @@ a{
     transition: transform 0.2s;
     width: 15vw;
 }
-
-
-
 .Listo button:hover{
     transform: scale(0.95);
 }
-
 .btnListo {
     text-align: center;
 }
-
 .btnListo button {
     border: 0;
     background-color: #004AAD;
@@ -430,19 +347,13 @@ a{
     cursor: pointer;
     margin-bottom: 1vw;
 }
-
 .btnListo button:hover {
     transform: scale(0.95);
     background-color: #1b61bb;
 }
-
-
-
 .opcMult{
     align-content: center;
-
 }
-
 .opcMult select{
     margin:5px;
     font-family: Arial, Helvetica, sans-serif;
@@ -453,25 +364,19 @@ a{
     border-radius: 20px;
     border-color: #145070;
 }
-
 .checkB {
     margin: 7px;
 }
-
 .checkB input{
     margin: 5px;
     width: 10%;
 }
-
-
-
 /*----------------------------  VENTANA PARA SUBIR LOS PDFs     --------------------------*/
         /*:::Boton-Modal:::*/
        
         
         
         
-
         .boton-modal1{
             padding: 10px;
             color: #fff;
@@ -568,7 +473,6 @@ a{
                 width: 90%;
             }
         }
-
         .cerrar1{
            color: rgb(255, 0, 0);
            cursor: pointer;
@@ -585,11 +489,9 @@ a{
         .submitPDF:hover{
             background-color: #6593cf;
         }
-
         .custom-file-input {
             display: none;
         }
-
         .custom-file-label {
             display: inline-block;
             padding: 5px 10px;
@@ -598,17 +500,13 @@ a{
             border-radius: 15px;
             cursor: pointer;
         }
-
         .custom-file-label .icon {
             margin-right: 10px;
         }
-
         .selected-files {
             margin-top: 10px;
             font-size: 12px;
         }
-
-
         /*:::Fin Ventana Modal:::*/
         
         
@@ -641,20 +539,11 @@ a{
         .boton-modal2 label:hover{
             background-color: #185E83;
         }
-
-
         
-
-
-
         .botonesPDFSgroup{
             display: flex;
             align-items: center;
         }
-
-
-
-
         /*:::Fin Boton-Modal:::*/
         /* Ventana Modal */
         #btn-modal2 {
@@ -780,33 +669,6 @@ a{
             cursor: pointer;
             transition: all 300ms ease;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         #btn-modal4 {
             display: none;
         }
@@ -888,22 +750,9 @@ a{
             background: #D4E1E3;
             border-radius: 30px;
         }
-
-
-
-
-
-
-
-
-
-
-
-
 .oculto {
     display: none;
 }
-
 #fondoOscuro {
     position: fixed;
     top: 0;
@@ -913,7 +762,6 @@ a{
     background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
     z-index: 999; /* Asegura que esté encima de otros elementos */
 }
-
 .from-login {
     width: 60%;
     height: 50%;
@@ -928,33 +776,26 @@ a{
     z-index: 1000;
     overflow-y: auto;
 }
-
 .from-login::-webkit-scrollbar {
     width: 12px; 
 }
-
 .from-login::-webkit-scrollbar-thumb {
     background-color: #145070; 
     border-radius: 6px; 
 }
-
 .from-login::-webkit-scrollbar-track {
     background-color: rgba(0, 0, 0, 0.0); 
 }
-
 .from-login h1{
     font-family: Arial, sans-serif;
     text-align: center;
 }
-
 .tablaspdf {
     font-family: Arial, sans-serif;
-
     border-spacing: 0;
     width: 100%;
     border: 1px solid #dddddd;
     border-radius: 100px; /* Radio de borde para la tabla */
-
     border-collapse: collapse;
    
     margin: 0 auto; /* Centrar la tabla horizontalmente */
@@ -962,47 +803,34 @@ a{
     overflow: hidden;
     
 }
-
-
-
 .tablaspdf th, .tablaspdf td {
     text-align: left;
     padding: 8px;
 }
-
 .tablaspdf th {
     font-weight: bold;
     background-color: #145070;
 }
-
 .tablaspdf tr:nth-child(even) {
     background-color: #D4E1E3;
 }
-
 .tablaspdf tr:nth-child(odd) {
     background-color: #D4E1E3;
 }
-
 .tablaspdf tr:hover{
     background-color: #ffffff;
 }
-
-
 .tablaspdf th, .tablaspdf td {
     border: 1px solid #D4E1E3;
     border-radius: 0; /* Restablece el radio de borde en las celdas */
 }
-
 .contenidoIcons {
     text-align: center; /* Alinea el texto al centro horizontalmente */
     
 }
-
 .tablaspdf th, .tablaspdf td{
     text-align: center;
 }
-
-
 .contenidoIcons a {
     display: inline-block; /* Hace que los enlaces sean elementos en línea y no ocupen toda la línea */
     margin: 0 10px; /* Añade un margen horizontal entre los enlaces para espaciarlos */
@@ -1015,15 +843,9 @@ a{
 .fa-trash:hover{
     color: red;
 }
-
 .contenidoIcons a:hover {
     transform: scale(1.1);
 }
-
-
-
-
-
 .from-login1 {
     text-align: center;
     width: 20%;
@@ -1040,26 +862,20 @@ a{
     font-family: Arial, Helvetica, sans-serif;
     overflow-y: auto;
 }
-
-
 .titulosArchs{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
 }
-
 .from-login1::-webkit-scrollbar {
     width: 6px; 
 }
-
 .from-login1::-webkit-scrollbar-thumb {
     background-color: #145070; 
     border-radius: 6px; 
 }
-
 .from-login1::-webkit-scrollbar-track {
     background-color: rgba(0, 0, 0, 0.0); 
 }
-
 .cargar-pdf{
     border: 0;
     margin-left: 5%;
@@ -1083,6 +899,7 @@ a{
     margin-right: 1vw;
 }
 
+
 .loading-container {
     display: flex;
     justify-content: center;
@@ -1094,5 +911,3 @@ a{
     width: 3vw;
     height: 3vw;
 }
-
-

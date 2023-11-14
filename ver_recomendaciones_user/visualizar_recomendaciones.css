@@ -1,0 +1,928 @@
+body{
+  background:  #D4E1E3;
+}
+
+::-webkit-scrollbar {
+width: 6px; 
+}
+
+::-webkit-scrollbar-thumb {
+background-color: #145070; 
+border-radius: 6px; 
+}
+
+::-webkit-scrollbar-track {
+background-color: rgba(0, 0, 0, 0.0); 
+}
+
+
+#logoFondo{
+  position: relative;
+  width: 100%;
+  height: 150px;
+  flex-shrink: 0;
+  
+}
+
+#imgLogoFondo{
+  position: absolute; 
+  bottom: 0; 
+  right: 0;
+  width: 30%;
+  height: 60%;
+}
+
+.barra-superior{
+  z-index: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #145070; 
+  height: 1%;
+  padding: 40px; 
+  color: white; 
+  position: fixed; 
+  top: 0%;
+  border-radius:0px 0px 30px 30px;
+  left: 0; 
+  right:0;
+
+}
+.barra-superior .menu_estilo_usuario{
+border: none;
+background-color: transparent;
+cursor: pointer;
+padding: 10px;
+transition: transform 0.2s;
+position: fixed;
+top: 1%;
+right: 10%;
+
+}
+.barra-superior .menu_estilo_usuario img{
+width: 120px;
+height: auto;
+display: block;
+}
+
+.barra-superior .menu_estilo_usuario:hover{
+transform: scale(0.90);
+}
+
+.barra-superior .menu_estilo_usuario img{
+width: 120px;
+height: auto;
+display: block;
+}
+
+.barra-superior .menu_usuario:hover .contenido_del_menu_usuarios {
+display: block;
+}
+
+.barra-superior .contenido_del_menu_usuarios a:hover {
+background-color: lightblue;
+}
+
+.L1 {
+font-size: 1.5vw;
+position: absolute;
+background-color: white;
+color: black;
+left: 50%; /* Establece la posición horizontal al centro */
+transform: translateX(-50%); /* Ajusta la posición para que el centro esté alineado */
+top: 18%;
+padding: 10px;
+border-radius: 80px;
+font-family: Arial, sans-serif;
+}
+
+.texto{
+font-size: 14px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+text-align: center;
+width: 90%;
+position: absolute;
+top: 47%;
+left: 55%;
+transform: translate(-50%, -50%);
+color: black;
+
+}
+
+.enlace-inicio { 
+text-decoration: none; color: white;
+}
+
+.fa-home {
+font-size: 200%; /* Cambia el valor según el tamaño deseado */
+position: relative;
+top: -220%;
+}
+
+.fa-home:hover {
+transform: scale(0.90); 
+}
+
+.tituloPag{
+  background-color: #ffffff;
+  height: 4%;
+  width: 15%;
+  border-radius: 30px; /* Bordes redondeados */
+  padding: 10px; /* Espacio interno para el contenido */
+  color: rgb(0, 0, 0); /* Color del texto en la barra */
+  position: fixed; /* Fija la barra en la parte superior de la ventana */
+  top: 3%; /* Coloca la barra a la mitad de la pantalla verticalmente */
+  left: 0; /* Ajusta el inicio de la barra en la parte izquierda */
+  right: 0; /* Ajusta el final de la barra en la parte derecha */
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, sans-serif;
+ 
+}
+
+#textoTituloPag{
+  position: relative;
+  top: -85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-family: Arial;
+  font-size: 140%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: Arial, sans-serif;
+  
+}
+.buscar_icono {
+  width: 41px;
+  height: 33px;
+  flex-shrink: 0;
+  background: url(../imagenes/imagen_buscar.png) no-repeat center/contain, transparent;
+  border: none;
+}
+
+.buscar_icono_fondo {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  background: #197B9A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto; /* Empuja el elemento hacia la derecha */
+  
+}
+
+
+.rectangulo_busqueda{
+width: 320px;
+height: 48px;
+flex-shrink: 0;
+
+border-radius: 40px;
+background: linear-gradient(0deg, #FEFFFF 0%, #FEFFFF 100%), #FEFFFF;
+
+display: flex;
+justify-content: space-between; 
+align-items: space; /* Centra verticalmente en el medio */
+  
+
+
+}
+
+.input_busqueda{
+  margin-left: 20px;
+  border: none;
+  outline: none;
+  font-family: Arial, sans-serif;
+}
+
+.buscar_usuario{
+display: flex;
+justify-content: space-between; /* Centra horizontalmente */
+align-items: center; /* Centra verticalmente */
+font-family: Arial, sans-serif;
+margin-left: 65px;
+width: 95%;
+
+  
+}
+
+.nombres_columnas{
+
+height: 62px;
+flex-shrink: 0;
+background: #89C7D0;
+margin: 0 auto ;
+width: 90%;
+font-family: Arial, sans-serif;
+
+}
+
+
+
+
+.nombres_columnas table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  text-align: center;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+
+}
+
+.nombres_columnas th {
+  padding: 10px; /* Ajusta el espacio entre encabezados y contenido */
+  background-color: #89C7D0;
+  color: black;
+  padding: 18px;
+  font-family: Arial, sans-serif;
+}
+
+
+.nombres_columnas td {
+  padding: 10px; /* Ajusta el espacio entre celdas de datos */
+  border: 1px solid #89C7D0; /* Agrega un borde a las celdas */
+  font-family: Arial, sans-serif;
+}
+
+.nombres_columnas tr:first-child {
+  background-color: #89C7D0;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+
+
+
+
+
+
+/* AQUÍ COMIENZA EL CSS PARA EL FORMULARIO DE REGISTRO*/
+
+.contenido {
+ 
+  flex-shrink: 0;
+  background: #F3FAFA;
+  margin: 0 auto;
+  width: 90%;
+  height: 45%;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px; /* Ajusta el valor según sea necesario */
+}
+
+.tabla {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  margin-bottom: 20px; /* Ajusta el valor según sea necesario */
+
+}
+
+.fila {
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  cursor: pointer;
+  
+  min-height: 50px; /* Por ejemplo */
+  border-color: #ffffff;
+ 
+}
+
+
+.fila:hover {
+  background-color: #D4E1E3;
+  .celda{
+      border: 1px solid #D4E1E3;
+  }
+}
+.tabla-container {
+height: 100%; /* Ajusta la altura máxima según sea necesario */
+overflow-y: auto; /* Agrega una barra de desplazamiento vertical cuando sea necesario */
+}
+.tabla-container::-webkit-scrollbar {
+width: 6px; 
+}
+
+.tabla-container::-webkit-scrollbar-thumb {
+background-color: #145070; 
+border-radius: 6px; 
+}
+
+.tabla-container::-webkit-scrollbar-track {
+background-color: rgba(0, 0, 0, 0.0); 
+}
+.encabezado {
+  display: flex;
+  background-color: white;
+  color: black;
+  padding: 18px;
+  font-family: Arial, sans-serif;
+}
+
+.celda {
+  flex: 1; /* Que las celdas ocupen todo el espacio disponible */
+  padding: 10px;
+  
+  text-align: center; /* Centra el texto horizontalmente */
+  font-family: Arial, sans-serif;
+  max-height: 5vw;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.celda::-webkit-scrollbar {
+width: 0px; 
+}
+
+
+
+
+.botones{
+  display: flex;
+  justify-content: flex-end; /* Alinea el contenido a la derecha */
+  margin-right: 10%; /* Establece un margen derecho del 10% */
+  
+}
+
+
+.boton_registrar{
+width: 15vw;
+height: 48px;
+flex-shrink: 0;
+border-radius: 40px;
+background: #197B9A;
+border: none;
+
+color: #000;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 10px; /* Ajusta el valor del margen según tu preferencia */
+
+}   
+.boton_registrar:hover{
+  transform: scale(0.95);
+  
+  cursor: pointer;
+} 
+ 
+
+#logoFondo{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  flex-shrink: 0;
+}
+
+
+#imgLogoFondo {
+  position: fixed; /* Cambia "absolute" a "fixed" */
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  height: 60%;
+  z-index: -1;
+}
+
+
+#imgLogoLetrasFondo{
+  position: absolute; 
+  top: -20%;
+  left: 0%;
+  width: 25%;
+  height: 30%;
+  z-index: -1;
+}
+
+
+
+
+/* EMPIEZA EL CSS PARA EL FORMULARIO DE REGISTRO */
+.oculto {
+  display: none;
+}
+
+#fondoOscuro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  z-index: 999; /* Asegura que esté encima de otros elementos */
+}
+
+.L1 {
+font-size: 1.5vw;
+position: absolute;
+background-color: white;
+color: black;
+left: 50%; /* Establece la posición horizontal al centro */
+transform: translateX(-50%); /* Ajusta la posición para que el centro esté alineado */
+top: 18%;
+padding: 10px;
+border-radius: 80px;
+font-family: Arial, sans-serif;
+}
+
+.texto{
+font-size: 14px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+text-align: center;
+width: 90%;
+position: absolute;
+top: 47%;
+left: 55%;
+transform: translate(-50%, -50%);
+color: black;
+
+}
+
+.enlace-inicio { 
+text-decoration: none; color: white;
+}
+
+.fa-home {
+font-size: 200%; /* Cambia el valor según el tamaño deseado */
+position: relative;
+top: -220%;
+}
+
+.fa-home:hover {
+transform: scale(0.90); 
+}
+
+.tituloPag{
+  background-color: #ffffff;
+  height: 4%;
+  width: 15%;
+  border-radius: 30px; /* Bordes redondeados */
+  padding: 10px; /* Espacio interno para el contenido */
+  color: rgb(0, 0, 0); /* Color del texto en la barra */
+  position: fixed; /* Fija la barra en la parte superior de la ventana */
+  top: 3%; /* Coloca la barra a la mitad de la pantalla verticalmente */
+  left: 0; /* Ajusta el inicio de la barra en la parte izquierda */
+  right: 0; /* Ajusta el final de la barra en la parte derecha */
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, sans-serif;
+ 
+}
+
+#textoTituloPag{
+  position: relative;
+  top: -85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-family: Arial;
+  font-size: 140%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: Arial, sans-serif;
+  
+}
+
+ 
+
+
+
+ 
+
+#logoFondo{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  flex-shrink: 0;
+}
+
+
+#imgLogoFondo {
+  position: fixed; /* Cambia "absolute" a "fixed" */
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  height: 60%;
+  z-index: -1;
+}
+
+
+#imgLogoLetrasFondo{
+  position: absolute; 
+  top: -20%;
+  left: 0%;
+  width: 25%;
+  height: 30%;
+  z-index: -1;
+}
+
+
+
+
+/* EMPIEZA EL CSS PARA EL FORMULARIO DE REGISTRO */
+.oculto {
+  display: none;
+}
+
+#fondoOscuro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  z-index: 999; /* Asegura que esté encima de otros elementos */
+}
+
+#formularioContainer, #formularioContainer1  {
+  width: 50%;
+  height: 31vw; /*si el tamaño no funciona cambiar esto a 70% */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  z-index: 1000; /* Asegura que esté encima del fondo oscuro */
+  margin: auto;
+  border-radius:40px;
+}
+
+
+.centrar {
+text-align: center;
+font-family: Arial;
+font-size: 2.5vw;
+}
+
+label {
+display: block;
+margin-bottom: 1%;
+font-family: Arial;
+font-size: 1.1vw;
+}
+
+
+.from-login{
+position: relative;
+width: 100%;
+height: 115%;
+
+background-color:#89C7D0 ;
+margin: auto;
+margin-top: -3%;
+margin-left: -3%;
+box-shadow: 7px 13px 20px #3b3939;
+padding: 20px 30px;
+border-radius:40px;
+z-index: 2;
+overflow-y: auto;
+overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+.form_c10_1{
+margin-top: -1vw;
+display: flex;
+position:relative;
+text-align: center;  
+}
+
+.form_c10_1 button{
+margin-left: auto;
+margin-right: auto;
+border: none;
+outline: none;
+font-size: 1vw;
+text-align: center;
+width: 35%;
+height: 3vw;
+border-radius: 40px;
+background: #197B7A;
+flex-shrink: 0;
+color: white;
+box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.19);
+transition: trasform 0.2s;
+font-family: Arial;
+}
+
+.form_c10_1 button:hover{
+transform: scale(0.95);
+}
+
+
+
+
+
+/* Animación para el formulario emergente */
+@keyframes aparecer {
+  from {
+      transform: translate(-50%, -60%);
+      opacity: 0;
+  }
+  to {
+      transform: translate(-50%, -50%);
+      opacity: 1;
+  }
+}
+
+/* Estilos para el formulario emergente */
+#formularioContainer {
+  /* Tus estilos existentes aquí */
+
+  /* Aplicar la animación */
+  animation: aparecer 0.3s ease-in-out;
+}
+
+/* Estilos para el cuadro de diálogo personalizado */
+
+
+
+
+#subcriterioSelect{
+  border-radius: 30px;
+  width: 99%;
+  height: 3vw;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 1vw;
+  font-size: 1.1vw;
+
+}
+
+.form-textarea{
+border-radius: 20px;
+width: 99%;
+padding: 1vw;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1.1vw;
+}
+
+.form_group1{
+text-align: justify;
+width: 98%;
+padding: 5px;
+margin: 0 auto;
+font-size: 16px;
+font-family: Arial, Helvetica, sans-serif;
+background: #D4E1E3;
+border-radius: 20px;
+margin-bottom: 10px;
+max-height: 8vw;
+overflow: auto;
+}
+
+.form_group2{
+  text-align: justify;
+  width: 98%;
+  padding: 5px;
+  padding-top: 1vw;
+  padding-right: 1vw;
+  padding-bottom: 1vw;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #D4E1E3;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  max-height: 8vw;
+  
+  }
+
+.fechas {
+display: flex;
+text-align: justify;
+width: 99%;
+padding: 5px;
+margin: 0 auto;
+font-size: 16px;
+font-family: Arial, Helvetica, sans-serif;
+background: #D4E1E3;
+border-radius: 20px;
+margin-bottom: 10px;
+}
+
+.inicio {
+display: inline-block;
+width: 47%;
+padding-left: 5%;
+padding-bottom: 1%;
+
+}
+
+.fin {
+display: inline-block;
+width: 47%;
+padding-left: 5%;
+padding-bottom: 1%;
+}
+
+
+
+.form-control{
+  
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+.form_group{
+  text-align: justify;
+  width: 99%;
+  padding: 5px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #D4E1E3;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.form_group textarea{
+  margin: 5px;
+  padding: 5px;
+  border: 0;
+  width: 96.6%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border-radius: 20px;
+}
+
+.fechas {
+  display: flex;
+  text-align: justify;
+  width: 99%;
+  padding: 5px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #D4E1E3;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.btnListo {
+  text-align: center;
+}
+
+.btnListo button {
+  width: 15%;
+  border: 0;
+  background-color: #004AAD;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  border-radius: 8px;
+  padding: 5px;
+  transition: transform 0.2s;
+  display: inline-block; /* Añade esto para evitar que el botón ocupe todo el ancho */
+  cursor: pointer;
+  margin-bottom: 1vw;
+}
+
+.btnListo button:hover {
+  transform: scale(0.95);
+  background-color: #1b61bb;
+}
+
+
+.imgpdfs{
+  width: 30%;
+  padding: 10px;
+  text-align: center;
+  font-size: 6vw;
+  color: white;
+  margin-top: -2.5vw;
+}
+.Listo {
+  margin-top: -2.5vw;
+  display: block;
+  padding: 5px;
+  width: 70%;
+}
+.Listo label{
+  margin-bottom: 0.5vw;
+}
+
+.Listo img{
+  width: 10%;
+}
+.Listo button{
+  border: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 3%;
+  background-color: #5488a3;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 5px;
+  transition: transform 0.2s;
+  width: 15vw;
+}
+
+.Listo button:hover{
+  transform: scale(0.95);
+}
+
+.btnListo {
+  text-align: center;
+}
+
+.btnListo button {
+  border: 0;
+  background-color: #004AAD;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  border-radius: 8px;
+  padding: 5px;
+  transition: transform 0.2s;
+  display: inline-block; /* Añade esto para evitar que el botón ocupe todo el ancho */
+  cursor: pointer;
+  margin-bottom: 1vw;
+}
+
+.btnListo button:hover {
+  transform: scale(0.95);
+  background-color: #1b61bb;
+}
+
+.pdfs-options {
+  border-radius: 30px;
+  background-color: #73B1C1;
+  display: flex;
+  width: 60%;
+  height: 40%;
+  margin: 0 auto; /* Centra horizontalmente */
+  margin-bottom: 3vw;
+}
+
+.boton-modal1{
+  padding: 15%;
+  padding-left: 0%;
+  color: #fff;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.botonSubirPDF{
+  text-align: center;
+  border: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #5488a3;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 5px;
+  transition: transform 0.2s;
+  width: 14.3vw;
+}
+
+.botonSubirPDF:hover{
+  transform: scale(0.95);
+}
+
+#namedoc{
+  margin-left: 1vw;
+}
+
+.espaciador{
+  margin-top: 4vw;
+}
+
+.inicio, .fin{
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.fa-floppy-disk{
+  margin-right: 0.3vw;
+}

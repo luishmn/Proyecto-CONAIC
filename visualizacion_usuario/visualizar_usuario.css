@@ -341,39 +341,14 @@ font-family: Arial, sans-serif;
 }
 
     
-.boton_eliminar {
-  display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
 
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%); /* Centra horizontalmente */
 
-  width: 12%;
-  height: 6%;
-  border-radius: 40px;
-  background: #f70000;
-  border: none;
-  
-
-  color: #fcfcfc;
-  text-align: center;
-  font-family: Arial;
-  font-size: 100%;
-}
-.boton_eliminar i {
-  margin-right: 5px; /* Agrega un margen a la derecha del ícono */
-  font-size: 14px; /* Cambia el tamaño del ícono */
-}
 
 
    
 
 
-.boton_eliminar:hover{
-  background: #3a0000;
-} 
+
 
 .boton_registrar{
   width: 144px;
@@ -522,7 +497,7 @@ label {
 .from-login{
   position: relative;
   width: 100%;
-  height: 110%;
+  height: 35vw;
   
   background-color:#89C7D0 ;
   margin: auto;
@@ -629,21 +604,44 @@ label {
   
 }
 
-.form_c10{
-  display: flex;
-  position:absolute;
- left: 35%;
- text-align: center;
-
-  
+.form_c10 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
 }
 
-.form_c10 button{
+.form_c10 i{
+  margin-right: 0.5vw;
+}
+
+.form_c10 button {
   border: none;
   outline: none;
   font-size: 100%;
   text-align: center;
-  width: 300%;
+  width: 110%;
+  height: 45px;
+  border-radius: 40px;
+  background: #197B7A;
+  margin-bottom: 1vw;
+  color: white;
+  box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.19);
+  transition: transform 0.2s; /* Corregido: "trasform" a "transform" */
+  font-family: Arial;
+}
+
+
+.form_c10 button:hover{
+  transform: scale(0.95);
+}
+
+.form_c100 button{
+  border: none;
+  outline: none;
+  font-size: 100%;
+  text-align: center;
+  width: 30%;
   height: 45px;
   border-radius: 40px;
   background: #197B7A;
@@ -654,17 +652,23 @@ label {
   font-family: Arial;
 }
 
-.form_c10 button:hover{
+.form_c100 button:hover{
   transform: scale(0.95);
 }
 
-.form_c10_1{
+.form_c10_1 {
   display: flex;
-  position:absolute;
- left: 36.5%;
- text-align: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
 
-  
+
+.form_c10_1 i{
+  margin-right: 0.5vw;
 }
 
 .form_c10_1 button{
@@ -672,7 +676,7 @@ label {
   outline: none;
   font-size: 100%;
   text-align: center;
-  width: 150%;
+  width: 30%;
   height: 45px;
   border-radius: 40px;
   background: #197B7A;
@@ -1006,4 +1010,12 @@ background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
   font-size: 24px;
   cursor: pointer;
   color: #f50000;
+}
+
+.boton_registrar i{
+  margin-right: 0.5vw;
+}
+
+#Eliminar{
+  background-color: red;
 }
