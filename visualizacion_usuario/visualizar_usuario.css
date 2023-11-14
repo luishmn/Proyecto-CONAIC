@@ -286,10 +286,11 @@ font-family: Arial, sans-serif;
 .fila {
     display: flex;
     align-items: center;
-    border-bottom: 0px solid #ccc;
+    border: 1px solid white;
     cursor: pointer;
-    margin-bottom: 10px; /* Ajusta el valor según sea necesario */
+    
     min-height: 50px; /* Por ejemplo */
+    border: 1px solid white;
 }
 
 
@@ -326,9 +327,12 @@ font-family: Arial, sans-serif;
 .celda {
     flex: 1; /* Que las celdas ocupen todo el espacio disponible */
     padding: 10px;
-    border: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
     text-align: center; /* Centra el texto horizontalmente */
     font-family: Arial, sans-serif;
+    max-width: 13.8%;
+    overflow-x: hidden;
 }
 
 
