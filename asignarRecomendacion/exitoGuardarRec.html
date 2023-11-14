@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario registrado</title>
+
+    <style>
+        body {
+            background: #D4E1E3;
+        }
+        
+
+        #logoFondo {
+            position: relative;
+            width: 100%;
+            height: 150px;
+            flex-shrink: 0;
+
+        }
+
+        #imgLogoFondo {
+            position: relative;
+            bottom: -300;
+            right: -70%;
+            width: 30%;
+            height: 230%;
+        }
+
+        #imgLogoLetrasFondo {
+            position: absolute;
+            top: -20%;
+            left: 0%;
+            width: 25%;
+            height: 30%;
+            z-index: -1;
+        }
+        #imagenCuadroDialogo{
+            width: 10%;
+            height: 20%;
+            position: absolute;
+            right: 45%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="logoFondo">
+        <!-- ESTE ES EL DIV QUE TIENE EL LOGO QUE APARECE AL FONDO, CUBRE TODA LA PANTALLA ASI QUE POR ESO DENTRO DE EL SE PONEN OTROS ELEMENTOS -->
+
+
+
+
+        
+        <!--logo superior-->
+        <nav class="nav">
+            <a href="../Principal%20Administrador/index.php">
+                <img src="../imagenes/logo_CONAIC_letras.png" alt="Conaic ITSZaS" class="logo_letras" width="336"
+                    height="198">
+            </a>
+        </nav>
+        <br><br><br>
+
+        <img src="../imagenes/logo_Fondo.png" id="imgLogoFondo">
+
+       
+
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript">
+    Swal.fire({
+        icon: 'success',
+        title: 'Recomendación asignada correctamente',
+        text: 'La recomendación fue asignada de forma correcta',
+        confirmButtonColor: '#197B7A'
+    }).then((result) =>{
+        if (result.isConfirmed){
+            window.location.href = "../ver_recomendaciones/index_ver_recomendaciones.php";
+        }
+        else{
+            window.location.href = "../ver_recomendaciones/index_ver_recomendaciones.php";
+        }
+    })
+</script>
+
+
+
+</html>

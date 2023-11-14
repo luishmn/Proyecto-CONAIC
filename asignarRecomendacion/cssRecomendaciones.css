@@ -184,3 +184,17 @@
     background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
     z-index: 999; /* Asegura que esté encima de otros elementos */
 }
+
+.botonSubirPDF{
+    background-color: #5488a3;
+    border-radius: 10px;
+    padding: 0.3vw;
+    margin-left: 2vw;
+    cursor: pointer;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.botonSubirPDF:hover{
+    transform: scale(0.9);
+}

@@ -11,7 +11,7 @@
 
 
     // Variable que deseas buscar
-    $claveRecomendacion = "1.5.3";
+    $claveRecomendacion = "1.1.1";
 
     // Consulta SQL para buscar la información
     $query = "SELECT descripcion, respuesta, fechaInicio, fechaTermino FROM recomendaciones WHERE ClaveRecomendacion = '$claveRecomendacion'";
@@ -55,7 +55,7 @@
      <div id="formularioContainerEditar"></div>  <!--class="oculto" -->
 
         <!-- Contenido de tu formulario aquí -->
-        <form class="from-login">
+        <form class="from-login" enctype="multipart/form-data">
 
             <h1 class="centrar">Responder recomedación</h1>
             <br>
@@ -97,8 +97,14 @@
                     <div class="botonesPDFSgroup">
             
                         <div class="boton-modal1">
-                            <button class="botonSubirPDF" id="botonSubir-2.2.1"><i class="fas fa-upload"></i> Subir Docuemento</button>
+                           
+                        <label for="archivo" class="botonSubirPDF">
+                            <i class="fas fa-upload"></i> Subir Documento
+                            <input type="file" id="archivo" name="archivo" accept=".pdf" style="display: none;">
+                        </label>
+                            
                             <br><br>
+                            
                         </div>
                     </div>   
                 </div>
@@ -109,8 +115,8 @@
 
             <br>
             <div>
-    </form>
-</div>
+        </form>
+    </div>
 
 <div id="fondoOscuro" class="oculto"></div>
 
@@ -127,108 +133,109 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('guardarRespuesta20').addEventListener('click', function() {
-        event.preventDefault(); // Esto detiene la acción predeterminada del formulario
-        // Capturar los valores de los campos
-        var respuesta = document.getElementById('respuesta_text').value;
-        var inicio = document.getElementById('inicio1').value;
-        var fin = document.getElementById('fin2').value;
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('guardarRespuesta20').addEventListener('click', function() {
+            event.preventDefault(); // Detener la acción predeterminada del formulario
 
-        console.log($desc);
-        console.log(respuesta);
-        console.log(inicio);
-        console.log(fin);
-        console.log($clave);
+            // Capturar los valores de los campos
+            var respuesta = document.getElementById('respuesta_text').value;
+            var inicio = document.getElementById('inicio1').value;
+            var fin = document.getElementById('fin2').value;
+            var archivoInput = document.getElementById('archivo'); // Nuevo input para el archivo
 
-
-        var fechaInicio = new Date(inicio);
-        var fechaFin = new Date(fin);
-        var diferenciaAnios = fechaFin.getFullYear() - fechaInicio.getFullYear();
-
-        // Verificar si la fecha de inicio es mayor que la fecha final
-        
-        var band=0
-        if (respuesta.trim() === '') {
-            Swal.fire({
+            // Validaciones
+            if (respuesta.trim() === '') {
+                // Mensaje de error para respuesta vacía
+                return Swal.fire({
                     title: 'Por favor, responda el apartado',
                     icon: 'error',
                     confirmButtonText: 'Cerrar',
                     confirmButtonColor: '#197B7A' 
-                })
-        } else if (inicio.trim() === '') {
-            Swal.fire({
+                });
+            } else if (inicio.trim() === '') {
+                // Mensaje de error para fecha de inicio vacía
+                return Swal.fire({
                     title: 'Por favor, seleccione fecha de inicio',
                     icon: 'error',
                     confirmButtonText: 'Cerrar',
                     confirmButtonColor: '#197B7A' 
-                })
-        } else if (fin.trim() === ''){
-            Swal.fire({
+                });
+            } else if (fin.trim() === '') {
+                // Mensaje de error para fecha de fin vacía
+                return Swal.fire({
                     title: 'Por favor, seleccione fecha de fin',
                     icon: 'error',
                     confirmButtonText: 'Cerrar',
                     confirmButtonColor: '#197B7A' 
-                })
-        }
-        else {
+                });
+            }
 
-            // Verificar si la fecha de inicio es mayor que la fecha final
-            var band = 0;
+            // Convertir las fechas a objetos Date
+            var fechaInicio = new Date(inicio);
+            var fechaFin = new Date(fin);
+
+            // Validar fechas
             if (fechaInicio > fechaFin) {
-                Swal.fire({
-                    title: 'Por favor, seleccione fecha valida',
+                // Mensaje de error para fechas inválidas
+                return Swal.fire({
+                    title: 'Por favor, seleccione fecha válida',
                     text: 'La fecha de inicio no puede ser mayor a la fecha final',
                     icon: 'error',
                     confirmButtonText: 'Cerrar',
                     confirmButtonColor: '#197B7A' 
-                })
-                band = 1;
+                });
             }
 
-            // Verificar si la diferencia de años es mayor a 5
+            // Validar diferencia de años
+            var diferenciaAnios = fechaFin.getFullYear() - fechaInicio.getFullYear();
             if (diferenciaAnios > 5) {
-                Swal.fire({
-                    title: 'Por favor, seleccione fecha valida',
+                // Mensaje de error para diferencia de años inválida
+                return Swal.fire({
+                    title: 'Por favor, seleccione fecha válida',
                     text: 'La diferencia entre la fecha de inicio y la fecha final no puede ser mayor a 5 años',
                     icon: 'error',
                     confirmButtonText: 'Cerrar',
                     confirmButtonColor: '#197B7A' 
-                })
-                band = 1;
+                });
             }
 
-            if (band == 0) {
-                aGuardar(respuesta, inicio, fin);
-                Swal.fire({
-                    title: 'Guardado correctamente',
-                    icon: 'success',
-                    confirmButtonText: 'Cerrar',
-                    confirmButtonColor: '#197B7A' 
-                })
-            }
-        }
+            // Preparar datos para enviar al servidor
+            var formData = new FormData();
+            formData.append('respuesta', respuesta);
+            formData.append('inicio', inicio);
+            formData.append('fin', fin);
+            formData.append('idd', $clave);
+            formData.append('archivo', archivoInput.files[0]); // Agregar el archivo
 
+            // Enviar datos al servidor usando AJAX
+            $.ajax({
+                type: 'POST',
+                url: 'GuardaInfo.php',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    console.log("Datos guardados correctamente");
+    
+                    //console.log(response.mensaje); // Esto se mostrará en la consola del navegador
+    
+                },
+                error: function(error) {
+                    // Manejar errores si los hay
+                    console.log(error);
+                }
+            });
 
-    function aGuardar(respuesta, inicio, fin) {
-        $.ajax({
-            type: 'POST',
-            url: 'GuardaInfo.php',
-            data: { respuesta: respuesta, inicio: inicio, fin: fin, idd: $clave,},
-            success: function(response) {
-                console.log("si se pudooooo");
-            },
-            error: function(error) {
-                // Manejar errores si los hay
-                console.log(error);
-            }
+            // Mensaje de éxito
+            Swal.fire({
+                title: 'Guardado correctamente',
+                icon: 'success',
+                confirmButtonText: 'Cerrar',
+                confirmButtonColor: '#197B7A' 
+            });
         });
-    }
-
-
-
     });
-});
+
 </script>
 
 

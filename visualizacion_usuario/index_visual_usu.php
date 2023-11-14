@@ -81,7 +81,7 @@
             </div>
 
             <div class="botones">
-                <button id="Registrar" class="boton_registrar">Registrar</button>
+                <button id="Registrar" class="boton_registrar"><i class="fa-solid fa-user-plus"></i>Registrar</button>
             </div>
         
     </section>
@@ -183,7 +183,7 @@
                 <br><br><br><br>
 
                 <div class="form_c10_1">
-                    <button type="submit" id="registrar">Registrar usuario</button>
+                    <button type="submit" id="registrar"><i class="fa-solid fa-user-plus"></i>Registrar usuario</button>
                 </div>
 
                 <div id="cuadroDialogo" class="oculto" >
@@ -295,18 +295,14 @@
 
                 
                 <div class="form_c10">
-                    <button type="submit" id="editar">    Guardar    </button>
+                    <button type="submit" id="editar"> <i class="fa-solid fa-floppy-disk"></i>     Guardar    </button>
+                    <button type="button" id="Eliminar"><i class="fas fa-trash"></i>Eliminar</button>
                 </div>
+                <br><br>
                 <br>
-                <br>
-                <br>
-                <br>
-                <div>
-                <button id="Eliminar" type="button" class="boton_eliminar" > 
-                    <i class="fas fa-trash"></i>Eliminar   
-                </button> 
-                </div>
-
+                
+                
+                <br><br>
 
                 <div id="cuadroDialogoEdit" class="oculto">
                     <span id="cerrarDialogo" class="cerrar" onclick="cerrarDialogo1()">&times;</span>
@@ -418,9 +414,10 @@
         text: '¿Quieres eliminar al usuario con el correo ' + correoElim + '?',
         icon: 'warning',
         showCancelButton: true,
+        confirmButtonColor: '#197B7A',
+        cancelButtonColor: '#d33',
         confirmButtonText: 'Cancelar',
-        cancelButtonText: 'Aceptar',
-        confirmButtonColor: '#197B7A'
+        cancelButtonText: 'Eliminar'
       }).then((result) => {
         if (!result.isConfirmed) {
             window.location.href = '../eliminarUsuarios/eliminar_usuario.php?correo_traslado=' + correoElim;
@@ -988,19 +985,19 @@
 
         const elementos = document.querySelectorAll('.tabla');
 
-// Agrega un manejador de eventos "mouseenter" a cada elemento
-elementos.forEach(elemento => {
-    elemento.addEventListener('mouseenter', () => {
-        // El mouse está sobre este elemento
-        Swal.fire({
-                backdrop: false,
-                text: 'Para editar un usuario haga doble clic.',
-                confirmButtonColor: '#197B7A',
-                timer: 5000,
-                timerProgressBar: true,
-                position: "bottom-end",
-                showConfirmButton: false
-            });
+    // Agrega un manejador de eventos "mouseenter" a cada elemento
+    elementos.forEach(elemento => {
+        elemento.addEventListener('mouseenter', () => {
+            // El mouse está sobre este elemento
+            Swal.fire({
+                    backdrop: false,
+                    text: 'Para editar un usuario haga doble clic.',
+                    confirmButtonColor: '#197B7A',
+                    timer: 5000,
+                    timerProgressBar: true,
+                    position: "bottom-end",
+                    showConfirmButton: false
+                });
+        });
     });
-});
 </script>

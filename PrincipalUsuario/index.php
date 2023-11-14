@@ -51,7 +51,7 @@
     <a href="/PrincipalUsuario/verificaCriterios.php">
         <button class="imagenOPS"><img class="button-image small" src="autoevaluacion.png" alt="Botón 1"></button>
     
-    <a  href="xxxxxx.html">
+    <a  href="../ver_recomendaciones_user/index_ver_recomendaciones.php">
         <button class="imagenOPS"><img class="button-image large" src="seguimiento.png" id="autoeval" alt="Botón 2"></button>
     
 </div>

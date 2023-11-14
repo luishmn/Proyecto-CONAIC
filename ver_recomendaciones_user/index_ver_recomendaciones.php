@@ -41,7 +41,7 @@
 
     <header>
         <div class="barra-superior"><!-- ESTE ES EL DIV DE LA BARRA SUPERIOR -->
-        <a href="/PrincipalAdministrador/index.php" class="enlace-inicio" ><i class="fas fa-home"></i></a>
+        <a href="/PrincipalUsuario/index.php" class="enlace-inicio" ><i class="fas fa-home"></i></a>
 
      
         
@@ -75,150 +75,86 @@
 
             </div>
 
-            <div class="botones">
-                <button id="registrar_recomendacion" class="boton_registrar">Nueva recomendación</button>
-            </div>
         
     </section>
 
-    <!-- ESTE ES EL FORMULARIO PARA REGISTRAR UNA NUEVA RECOMENDACION -->
-    <div id="formularioContainer" class="oculto">
-
-            <!-- Contenido de tu formulario aquí -->
-            <form class="from-login" action="../asignarRecomendacion/guardar.php" id="formularioRegistro" method="post">
-            <h1 class="centrar">Asignar recomendación</h1>
-            <br>
-            <div class="contenedor">
-                <div class="form_c1">
-                    <div class="form_group">
-                        <label for="subcriterioSelect" class="form_label">Seleccione subcriterio:</label>
-                        <select name="subcriterioSelect" id="subcriterioSelect">
-                        <option disabled selected>Selecciona un subcriterio</option>
-                            <?php
-                            // Conecta a la base de datos (reemplaza los valores de conexión según tu configuración)
-                            include "../conexionDB/conexion.php";
-                            conecta();
-
-                            // Verifica la conexión
-                            if ($conexion->connect_error) {
-                                die("Error de conexión: " . $conexion->connect_error);
-                            }
-
-                            // Consulta para obtener las opciones desde la base de datos
-                            $sql = "SELECT claveSubCriterio, nombre FROM subcriterio";
-                            $result = $conexion->query($sql);
-                            $categorias = array(); // Para almacenar todas las categorías
-                            $categorias10 = array(); // Para almacenar categorías del 1 al 10
-
-                            if ($result->num_rows > 0) {
-                                while ($row = $result->fetch_assoc()) {
-                                    $nombre = mb_substr($row['nombre'], 0, 50, 'UTF-8') . (mb_strlen($row['nombre'], 'UTF-8') > 50 ? "..." : '');
-                                    $opcion = "<option value='" . $row['claveSubCriterio'] . "'>" . $row['claveSubCriterio'] . '-' . $nombre . "</option>";
-
-                                    if (preg_match("/^(10|[1-9])\./", $row['claveSubCriterio'])) {
-                                        // Categorías del 1 al 10
-                                        $categorias10[] = $opcion;
-                                    } else {
-                                        // Cualquier otra categoría
-                                        $categorias[] = $opcion;
-                                    }
-                                }
-
-                                usort($categorias10, 'strnatcmp');
-                                usort($categorias, 'strnatcmp');
-                                echo implode('', $categorias10);
-                                echo implode('', $categorias);
-                            }
-
-                            $conexion->close();
-                            ?>
-                        </select>
-                    </div>
-                </div>
-            </div>
-
-            <br>
-            <label for="recomendacion" class="form_label">Recomendación:</label>
-            <textarea name="recomendacion" id="recomendacion" cols="30" rows="10" class="form-textarea"></textarea>
-            
-            <br><br><br>
-            <div class="form_c10_1">
-                <button type="submit" id="asignar">Asignar recomendación</button>
-            </div>
-        </form>
-    </div>
 
     <!-- ESTE ES EL FORMULARIO EDITAR RECOMENDACIÓN -->
     <div id="formularioContainer1" class="oculto">
 
             <!-- Contenido de tu formulario aquí -->
-        <form class="from-login" action="../asignarRecomendacion/guardar2.php" id="formularioRegistro1" method="post">
+        <form class="from-login"  id="formularioRegistro1" enctype="multipart/form-data">
             <h1 class="centrar" id="titulo">Recomendación</h1>
-
             <input type="text" id="subcriterioSelect1" name = "subcriterioSelect1" class="oculto">
-            
-            <label for="recomendacion" class="form_label">Recomendación:</label>
-            <textarea name="recomendacion1" id="recomendacion1" cols="30" rows="5" class="form-textarea"></textarea>
-            
-            <br><br>
-            <label for="">Respuesta:</label>
-            <div class="form_group1">
-            <p id="respuesta1">No hay respuesta</p>
+            <div class="form_group">
+            <p id="descripcionContenido">TEXTO DE LA RECOMENDACION</p>
+            <script>
+                //var $desc = "";
+                //var $clave = "";
+
+            </script>
+
+                <textarea name="respuesta" id="respuesta_text" rows="5" placeholder="Escriba su respuesta aqui..."></textarea>
             </div>
 
-            <div id="fechas">
-            <div class="fechas" >
+
+
+            <br>
+            <div class="fechas">
                 <div class="inicio">
                     <p>Fecha de inicio</p>
-                    <p id="fechaini">DD/MM/YYYY</p>
+                    <input type="date" class="form-control" id="inicio1" value="<?php echo $inic1; ?>">
                 </div>
                 <div class="fin">
                     <p>Fecha de fin</p>
-                    <p id="fechafin">DD/MM/YYYY</p>
+                    <input type="date" class="form-control" id="fin2" value="<?php echo $final1; ?>">
                 </div>
             </div>
-            </div>
+            
 
-            <div id="brs"> <br><br><br><br><br></div>
-
+            <br>
             <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
-            <div id="contendArchs">
-            <div class="pdfs-options" id="archivosContenedor">
+            <div class="pdfs-options">
                 <div class="imgpdfs">
                     <p>
-                        <i class="fa-solid fa-file-pdf"></i>                   
+                    <i class="fa-solid fa-file-pdf"></i>                      
                     </p>
                 </div>
             
                 <div class="Listo">
                     <!--Boton-->
                     <div class="botonesPDFSgroup">
+
+                        <div class="espaciador" id="espaciador"></div>
             
                         <div class="boton-modal1">
-                            <Label id="namedoc">Nombre del documento</Label>
-                            
+                        <Label id="namedoc">No se han subido documentos</Label>
+
+                                                    
                             <button class="botonSubirPDF" id="abrirBoton" type="button"><i class="fa-solid fa-up-right-from-square"></i> Visualizar PDF</button>
                             
                             <button class="botonSubirPDF" id="descargarBoton" type="button"><i class="fas fa-download"></i> Descargar PDF</button>
+                            
+                            <button class="botonSubirPDF" id="eliminarBoton" type="button"><i class="fas fa-trash"></i> Eliminar el PDF</button>
+                             
+                           
+                        <label for="archivo" class="botonSubirPDF" id="botonSubirPDFs">
+                            <i class="fas fa-upload"></i> Selecciona PDF
+                            <input type="file" id="archivo" name="archivo" accept=".pdf" style="display: none;">
+                        </label>
+                            
+                           
                             
                         </div>
                     </div>   
                 </div>
             </div>
-            </div>
             <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
             
             
-            
-            
             <div class="form_c10_1">
-                <button type="submit" id="asignar"><i class="fa-solid fa-floppy-disk"></i>Guardar</button>
+                <button type="button" id="guardarRespuesta20"> <i class="fa-solid fa-floppy-disk"></i> Guardar</button>
             </div>
-            <br>
-            <div class="form_c10_1">
-                <button type="button" id="eliminarRec"><i class="fas fa-trash"></i>Eliminar</button>
-            </div>
-            
             
         </form>
     </div>
@@ -227,7 +163,8 @@
 
 
     <br><br><br>
-    <?php
+<?php
+    include "../conexionDB/conexion.php";
     conecta();
     
     
@@ -236,11 +173,13 @@
     }
     
     // Modificar la consulta SQL para seleccionar la columna archivo
-    $sql = "SELECT descripcion, respuesta, fechaInicio, fechaTermino, claveRecomendacion, archivo FROM recomendaciones";
+    $sql = "SELECT descripcion, respuesta, fechaInicio, fechaTermino, claveRecomendacion, archivo
+    FROM recomendaciones
+    WHERE claveRecomendacion IN (SELECT claveSubCriterio FROM asignacionSubCriterio WHERE correo = '$correoUsuario');";
     $result = $conexion->query($sql);
-    ?>
+?>
     
-    <div class="nombres_columnas">
+<div class="nombres_columnas">
     <table>
         <tr>
             <th>Subcriterio</th>
@@ -285,45 +224,7 @@
 
 
 </body>
-<script> // Script para aparecer y desaparecer el formulario de registro
-    document.getElementById("registrar_recomendacion").addEventListener("click", function() {
-    // Mostrar el fondo oscuro y el formulario
-    document.getElementById("fondoOscuro").style.display = "block";
-    document.getElementById("formularioContainer").style.display = "block";
-    });
-
-    document.getElementById("fondoOscuro").addEventListener("click", function() {
-        // Ocultar el fondo oscuro y el formulario cuando se hace clic fuera del formulario
-        document.getElementById("fondoOscuro").style.display = "none";
-        document.getElementById("formularioContainer").style.display = "none";
-    });
-</script>
-
-<script>
-    $(document).ready(function(){
-        $('#subcriterioSelect').change(function(){
-            var subcriterioSeleccionado = $(this).val();
-
-            // Realizar la solicitud AJAX para obtener la descripción
-            $.ajax({
-                type: 'POST',
-                url: '../asignarRecomendacion/obtener_descripcion.php', // Reemplaza con la ruta correcta a tu archivo PHP
-                data: { subcriterio: subcriterioSeleccionado },
-                success: function(response){
-                    // Llenar el textarea con la descripción obtenida
-                    $('#recomendacion').val(response);
-                },
-                error: function(error){
-                    console.log(error);
-                }
-            });
-        });
-
-        $('#asignar').click(function(){
-            $('#formularioRegistro').submit();
-        });
-    });
-</script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
   // Obtén todas las filas de la tabla
@@ -352,59 +253,53 @@
         var fechaIni = celdas[3].textContent ;
         var fechaFin = celdas[4].textContent ;
         var archivo = celdas[5].textContent ; 
-        var titulo = document.getElementById('titulo'); 
-        var inputSub = document.getElementById('subcriterioSelect1'); 
-        var recomendacion = document.getElementById('recomendacion1');   
-        var respuestaCont = document.getElementById('respuesta1');
-        var fechaInicio = document.getElementById('fechaini');
-        var fechaFinal = document.getElementById('fechafin');
-        var documento = document.getElementById('namedoc');
-        
-            
-      
-    
-        //alert (subcriterio + " - " + descripcion + " - " + respuesta + " - " + fechaIni + " - " + fechaFin + " - " + archivo);
-      
+        var inputSub = document.getElementById('subcriterioSelect1');
+        var titulo = document.getElementById('titulo');
+        var descripContent = document.getElementById('descripcionContenido') 
+        var resp = document.getElementById('respuesta_text');
+        var ini = document.getElementById('inicio1');
+        var fin = document.getElementById('fin2');
+        var nomArch = document.getElementById('namedoc');
 
+        var botonVer = document.getElementById('abrirBoton');
+        var botonDes = document.getElementById('descargarBoton');
+        var botonEli = document.getElementById('eliminarBoton');
+        var espaciador = document.getElementById('espaciador');
+
+
+        
         
         // Muestra el contenido de la fila en una alerta
+        titulo.textContent = 'Recomendación '+ subcriterio;
+        descripContent.textContent = descripcion;
+        resp.value= respuesta;
+        ini.value = fechaIni;
+        fin.value = fechaFin;
+        inputSub.value = subcriterio;
+
+        if (archivo != ""){
+            nomArch.textContent = archivo;
+            botonVer.style.display = "block";
+            botonDes.style.display = "block";
+            botonEli.style.display = "block";
+            espaciador.style.display = "none";
+        }
+        else{
+            nomArch.textContent = "No hay archivo";
+            botonVer.style.display = "none";
+            botonDes.style.display = "none";
+            botonEli.style.display = "none";
+            espaciador.style.display = "block";
+        }
+        
+        
+
         document.getElementById("fondoOscuro").style.display = "block";
         document.getElementById("formularioContainer1").style.display = "block";
-        titulo.textContent = 'Recomendación '+ subcriterio;
-        inputSub.value = subcriterio;
-        recomendacion.value=descripcion;
 
-        if (respuesta == ""){
-            respuestaCont.textContent = "No se ha dado respuesta a esta recomendación."
-        }
-        else{
-            respuestaCont.textContent = respuesta;
-        }
-
-        var fechadiagonales = fechaIni.replace(/_/g, ' / ').replace(/-/g, ' / ');
-        fechaInicio.textContent = fechadiagonales;
-        var fechadiagonales = fechaFin.replace(/_/g, ' / ').replace(/-/g, ' / ');
-        fechaFinal.textContent = fechadiagonales;
-
-        if (fechadiagonales == "0000 / 00 / 00"){
-            document.getElementById("fechas").style.display = "none";
-            document.getElementById("brs").style.display = "block";
-            
-        }
-        else{
-            document.getElementById("fechas").style.display = "block";
-            document.getElementById("brs").style.display = "none";
-        }
-
-
-        if (archivo == ""){
-            documento.textContent = "No se ha subido documento";
-            document.getElementById("contendArchs").style.display = "none";
-        }
-        else{
-            documento.textContent = archivo;
-            document.getElementById("contendArchs").style.display = "block";
-        }
+        
+        
+       
         
     });
 
@@ -415,6 +310,21 @@
       
     });
   }
+</script>
+
+<script>
+    // Obtener el input tipo "file" y la etiqueta <p>
+    var inputArchivo = document.getElementById('archivo');
+    var nombreDoc = document.getElementById('namedoc');
+
+    // Agregar un evento change al input
+    inputArchivo.addEventListener('change', function () {
+        // Obtener el nombre del archivo seleccionado
+        var nombreArchivo1 = inputArchivo.files[0].name;
+
+        // Actualizar el contenido de la etiqueta <p>
+        nombreDoc.textContent =nombreArchivo1;
+    });
 </script>
 
 
@@ -446,6 +356,7 @@
         });
 </script>
 
+
 <script>
         // Obtener el botón por su ID
         var abrirBoton = document.getElementById('abrirBoton');
@@ -460,20 +371,21 @@
 
             // Redirige a la nueva página
             window.open(nuevaURL, '_blank');
-            
 
         });
 </script>
 
 <script>
         // Obtener el botón por su ID
-        var abrirBoton = document.getElementById('eliminarRec');
+        var abrirBoton = document.getElementById('eliminarBoton');
 
         // Agregar un evento click al botón
         abrirBoton.addEventListener('click', function() {
+            // Crear un enlace oculto
+
             Swal.fire({
                 title: '¿Estás seguro?',
-                text: 'Esta acción eliminará la recomendación. ¿Deseas continuar?',
+                text: 'Esta acción eliminará el PDF asociado. ¿Deseas continuar?',
                 icon: 'warning',
                 showCancelButton: true,
                 confirmButtonColor: '#d33',
@@ -483,13 +395,8 @@
             }).then((result) => {
                 // Si el usuario presiona "Eliminar", ejecutar la acción
                 if (result.isConfirmed) {
-                    // Crear un enlace oculto
-                    var inputSub = document.getElementById('subcriterioSelect1');
-                    
-                    var documentoDesc = inputSub.value;
-
-                    var nuevaURL = '../asignarRecomendacion/eliminarRecomendacion.php?clave=' + documentoDesc ;
-
+                    var documentoDesc1 = document.getElementById('namedoc');
+                    var nuevaURL = '../asignarRecomendacion/eliminarPDF.php?nombreArchivo=' + documentoDesc1.textContent.trim();
                     // Redirige a la nueva página
                     nuevaVentana = window.open(nuevaURL, '_blank');
 
@@ -499,11 +406,118 @@
                     };
                 }
             });
-            
-            
 
         });
 </script>
+
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('guardarRespuesta20').addEventListener('click', function() {
+            event.preventDefault(); // Detener la acción predeterminada del formulario
+            
+
+            // Capturar los valores de los campos
+            var respuesta = document.getElementById('respuesta_text').value;
+            var inicio = document.getElementById('inicio1').value;
+            var fin = document.getElementById('fin2').value;
+            var archivoInput = document.getElementById('archivo'); // Nuevo input para el archivo
+            var inputSub = document.getElementById('subcriterioSelect1');
+
+            // Validaciones
+            if (respuesta.trim() === '') {
+                // Mensaje de error para respuesta vacía
+                return Swal.fire({
+                    title: 'Por favor, responda el apartado',
+                    icon: 'error',
+                    confirmButtonText: 'Cerrar',
+                    confirmButtonColor: '#197B7A' 
+                });
+            } else if (inicio.trim() === '') {
+                // Mensaje de error para fecha de inicio vacía
+                return Swal.fire({
+                    title: 'Por favor, seleccione fecha de inicio',
+                    icon: 'error',
+                    confirmButtonText: 'Cerrar',
+                    confirmButtonColor: '#197B7A' 
+                });
+            } else if (fin.trim() === '') {
+                // Mensaje de error para fecha de fin vacía
+                return Swal.fire({
+                    title: 'Por favor, seleccione fecha de fin',
+                    icon: 'error',
+                    confirmButtonText: 'Cerrar',
+                    confirmButtonColor: '#197B7A' 
+                });
+            }
+
+            // Convertir las fechas a objetos Date
+            var fechaInicio = new Date(inicio);
+            var fechaFin = new Date(fin);
+
+            // Validar fechas
+            if (fechaInicio > fechaFin) {
+                // Mensaje de error para fechas inválidas
+                return Swal.fire({
+                    title: 'Por favor, seleccione fecha válida',
+                    text: 'La fecha de inicio no puede ser mayor a la fecha final',
+                    icon: 'error',
+                    confirmButtonText: 'Cerrar',
+                    confirmButtonColor: '#197B7A' 
+                });
+            }
+
+            // Validar diferencia de años
+            var diferenciaAnios = fechaFin.getFullYear() - fechaInicio.getFullYear();
+            if (diferenciaAnios > 5) {
+                // Mensaje de error para diferencia de años inválida
+                return Swal.fire({
+                    title: 'Por favor, seleccione fecha válida',
+                    text: 'La diferencia entre la fecha de inicio y la fecha final no puede ser mayor a 5 años',
+                    icon: 'error',
+                    confirmButtonText: 'Cerrar',
+                    confirmButtonColor: '#197B7A' 
+                });
+            }
+
+            // Preparar datos para enviar al servidor
+            var formData = new FormData();
+            formData.append('respuesta', respuesta);
+            formData.append('inicio', inicio);
+            formData.append('fin', fin);
+            formData.append('idd', '1.1.1');
+            formData.append('archivo', archivoInput.files[0]); // Agregar el archivo
+
+            // Enviar datos al servidor usando AJAX
+            $.ajax({
+                type: 'POST',
+                url: '../asignarRecomendacion/GuardaInfo.php',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function(response) {
+                    console.log("Datos guardados correctamente");
+                    window.location.href = "../asignarRecomendacion/exitoResponder.html";
+    
+                    //console.log(response.mensaje); // Esto se mostrará en la consola del navegador
+    
+                },
+                error: function(error) {
+                    // Manejar errores si los hay
+                    console.log(error);
+                }
+            });
+
+            // Mensaje de éxito
+            
+            
+        });
+    });
+
+</script>
+
 <script>
 
         const elementos = document.querySelectorAll('.tabla');
@@ -514,7 +528,7 @@
             // El mouse está sobre este elemento
             Swal.fire({
                     backdrop: false,
-                    text: 'Para abrir una recomendación haga doble clic.',
+                    text: 'Para responder la recomendación haga doble clic.',
                     confirmButtonColor: '#197B7A',
                     timer: 5000,
                     timerProgressBar: true,
@@ -524,4 +538,5 @@
         });
     });
 </script>
+
 </html>
