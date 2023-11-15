@@ -22,9 +22,9 @@ session_start(); //Inicia una nueva sesión
         <div class="login-box">
             <img class="imagen_persona" src="/imagenes/img_login/usuario.png" alt="user_img">
             
-            <form method="post" action="">
+            <form method="post" action="" form autocomplete="off">
                 <div class="div-fotoUsu">
-                <img class="foto-usu-input" src="/imagenes/img_login/usuario2.png" alt="">
+                
                 </div>
                 <div>                
                     <input class="usuario-input" name="usuario" type="text" placeholder="Correo"><br>
@@ -222,5 +222,7 @@ session_start(); //Inicia una nueva sesión
         document.getElementById("formularioContainer").style.display = "none";
     });
 </script>
+
+
 
 </html>
