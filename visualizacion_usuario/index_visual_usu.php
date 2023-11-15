@@ -405,34 +405,29 @@
     // Obtener el botón por su ID
     var botonElim = document.getElementById('Eliminar');
 
-    botonElim.addEventListener('click', function(event) {
-        // Aquí puedes realizar alguna acción cuando se hace clic en el botón
-        var correoEliminar = document.getElementById("correoEdit");
-        var correoElim = correoEliminar.value;
-        Swal.fire({
+botonElim.addEventListener('click', function(event) {
+    // Aquí puedes realizar alguna acción cuando se hace clic en el botón
+    var correoEliminar = document.getElementById("correoEdit");
+    var correoElim = correoEliminar.value;
+    Swal.fire({
         title: '¿Estás seguro?',
         text: '¿Quieres eliminar al usuario con el correo ' + correoElim + '?',
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#197B7A',
         cancelButtonColor: '#d33',
-        confirmButtonText: 'Cancelar',
-        cancelButtonText: 'Eliminar'
-      }).then((result) => {
-        if (!result.isConfirmed) {
+        confirmButtonText: 'Eliminar',
+        cancelButtonText: 'Cancelar'
+    }).then((result) => {
+        if (result.isConfirmed) {
             window.location.href = '../eliminarUsuarios/eliminar_usuario.php?correo_traslado=' + correoElim;
-        
         }
-      });
-  
-      // Evita que el formulario se envíe automáticamente
-      return false;
-    }
-    
-        
-        
-        
-    );
+    });
+
+    // Evita que el formulario se envíe automáticamente
+    return false;
+});
+
         
 </script>
 
