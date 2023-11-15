@@ -244,7 +244,7 @@
     <table>
         <tr>
             <th>Subcriterio</th>
-            <th>Descripción</th>
+            <th>Recomendación</th>
             <th>Respuesta</th>
             <th>Fecha inicio</th>
             <th>Fecha término</th>

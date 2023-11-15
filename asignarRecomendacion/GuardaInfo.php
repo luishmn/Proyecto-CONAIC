@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Procesar el archivo cargado
     $nombreArchivo = $_FILES['archivo']['name'];
-    $rutaArchivo = 'archivos/' . $nombreArchivo; // Directorio donde se guardará el archivo
+    $rutaArchivo = 'archivos/' . $idd . "-" . $nombreArchivo; // Directorio donde se guardará el archivo
 
     // Mueve el archivo a la carpeta especificada
     move_uploaded_file($_FILES['archivo']['tmp_name'], $rutaArchivo);
@@ -70,9 +70,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "No se encontraron resultados para el idd $idd";
         }
 
-
+        $nameArch =  $idd . "-" . $nombreArchivo;
         $sql = "UPDATE recomendaciones 
-            SET respuesta = '$respuesta', fechaInicio = '$inicio', fechaTermino = '$fin', archivo = '$nombreArchivo'
+            SET respuesta = '$respuesta', fechaInicio = '$inicio', fechaTermino = '$fin', archivo = '$nameArch'
             WHERE claveRecomendacion = '$idd'";
 
         // Ejecutar la consulta

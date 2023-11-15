@@ -86,7 +86,7 @@
 
 
 <?php
-    session_start();
+    //border-right: 4px solid #D4E1E3;
     $_SESSION['loggedin'] = true;
     //$_SESSION['loggedin']= false;
     // Verifica si el usuario ha iniciado sesión

@@ -183,7 +183,7 @@
     <table>
         <tr>
             <th>Subcriterio</th>
-            <th>Descripción</th>
+            <th>Recomendación</th>
             <th>Respuesta</th>
             <th>Fecha inicio</th>
             <th>Fecha término</th>
@@ -424,7 +424,8 @@
             var inicio = document.getElementById('inicio1').value;
             var fin = document.getElementById('fin2').value;
             var archivoInput = document.getElementById('archivo'); // Nuevo input para el archivo
-            var inputSub = document.getElementById('subcriterioSelect1');
+            var inputSub = document.getElementById('subcriterioSelect1').value;
+            
 
             // Validaciones
             if (respuesta.trim() === '') {
@@ -487,7 +488,7 @@
             formData.append('respuesta', respuesta);
             formData.append('inicio', inicio);
             formData.append('fin', fin);
-            formData.append('idd', '1.1.1');
+            formData.append('idd', inputSub);
             formData.append('archivo', archivoInput.files[0]); // Agregar el archivo
 
             // Enviar datos al servidor usando AJAX
