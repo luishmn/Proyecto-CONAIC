@@ -25,12 +25,12 @@ if (isset($_GET['nombreArchivo'])) {
         $sqlUpdate = "UPDATE Recomendaciones SET archivo = '' WHERE claveRecomendacion = '$claveRecomendacion'";
     
         if ($conexion->query($sqlUpdate) === TRUE) {
-            echo "Fila actualizada correctamente.";
+            //echo "Fila actualizada correctamente.";
         } else {
-            echo "Error al actualizar la fila: " . $conexion->error;
+           //echo "Error al actualizar la fila: " . $conexion->error;
         }
     } else {
-        echo "No se encontraron filas con el archivo.";
+        //echo "No se encontraron filas con el archivo.";
     }
 
     $conexion->close();
@@ -41,7 +41,7 @@ if (isset($_GET['nombreArchivo'])) {
     if (file_exists($rutaArchivo)) {
         // Intentar eliminar el archivo
         if (unlink($rutaArchivo)) {
-            echo "El archivo '$nombreArchivo' ha sido eliminado correctamente.";
+            //echo "El archivo '$nombreArchivo' ha sido eliminado correctamente.";
             echo '<script>';
             echo 'window.close();'; // Esto cerrará la ventana actual
             echo '</script>';
@@ -49,7 +49,7 @@ if (isset($_GET['nombreArchivo'])) {
             echo "No se pudo eliminar el archivo '$nombreArchivo'.";
         }
     } else {
-        echo "El archivo '$nombreArchivo' no existe en el directorio.";
+        //echo "El archivo '$nombreArchivo' no existe en el directorio.";
         echo '<script>';
         echo 'window.close();'; // Esto cerrará la ventana actual
         echo '</script>';
