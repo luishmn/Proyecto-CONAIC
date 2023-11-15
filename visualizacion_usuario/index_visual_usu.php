@@ -414,8 +414,8 @@ botonElim.addEventListener('click', function(event) {
         text: '¿Quieres eliminar al usuario con el correo ' + correoElim + '?',
         icon: 'warning',
         showCancelButton: true,
-        confirmButtonColor: '#197B7A',
-        cancelButtonColor: '#d33',
+        confirmButtonColor: '#d33',
+        cancelButtonColor: '#197B7A',
         confirmButtonText: 'Eliminar',
         cancelButtonText: 'Cancelar'
     }).then((result) => {
