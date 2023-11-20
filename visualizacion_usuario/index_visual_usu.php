@@ -819,7 +819,7 @@
     //     icon: 'error',
     //     confirmButtonColor: '#197B7A'
     //     })
-    //   }
+    //   }r
       else if (contrasena1 != contrasenaV1) {
         Swal.fire({
         title: 'Contraseñas diferentes',
