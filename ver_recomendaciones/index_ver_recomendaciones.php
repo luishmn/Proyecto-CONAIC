@@ -76,6 +76,7 @@
             </div>
 
             <div class="botones">
+                <button id="generarreporte" class="boton_registrar" ><i class="fa-regular fa-file-excel"></i>Generar reporte</button>
                 <button id="registrar_recomendacion" class="boton_registrar">Nueva recomendación</button>
             </div>
         
@@ -85,7 +86,7 @@
     <div id="formularioContainer" class="oculto">
 
             <!-- Contenido de tu formulario aquí -->
-            <form class="from-login" action="../asignarRecomendacion/guardar.php" id="formularioRegistro" method="post">
+            <form class="from-login" action="../asignarRecomendacion/guardar.php" id="formularioRegistro" method="post" onsubmit="return validarFormulario1()">
             <h1 class="centrar">Asignar recomendación</h1>
             <br>
             <div class="contenedor">
@@ -93,7 +94,7 @@
                     <div class="form_group">
                         <label for="subcriterioSelect" class="form_label">Seleccione subcriterio:</label>
                         <select name="subcriterioSelect" id="subcriterioSelect">
-                        <option disabled selected>Selecciona un subcriterio</option>
+                        <option value="defecto" disabled selected>Selecciona un subcriterio</option>
                             <?php
                             // Conecta a la base de datos (reemplaza los valores de conexión según tu configuración)
                             include "../conexionDB/conexion.php";
@@ -152,7 +153,7 @@
     <div id="formularioContainer1" class="oculto">
 
             <!-- Contenido de tu formulario aquí -->
-        <form class="from-login" action="../asignarRecomendacion/guardar2.php" id="formularioRegistro1" method="post">
+        <form class="from-login" action="../asignarRecomendacion/guardar2.php" id="formularioRegistro1" method="post" onsubmit="return validarFormulario()">
             <h1 class="centrar" id="titulo">Recomendación</h1>
 
             <input type="text" id="subcriterioSelect1" name = "subcriterioSelect1" class="oculto">
@@ -223,6 +224,32 @@
             
         </form>
     </div>
+    
+    <!-- ESTE ES EL FORMULARIO GENERAR UN EXEL -->
+    <div id="subirarchivos" class="oculto">
+            <form class="from-login2" action="../generaExel/generar.php" method="post"  id="uploadForm">
+            <h2>Generar reporte</h2>
+            <p>Fecha de dictamen</p>
+            <div class="inicio">
+                <input type="date" class="form-control" name ="inicio1" id="inicio1">
+            </div>
+            <p>Número de reporte</p>
+            <div class="inicio">
+            <input type="number" class="form-control" name="inicio2" id="inicio2" min="1" value="1">
+
+            </div>
+            <br><br><br>
+            <div class="inicio">
+                
+            
+
+            <div class="form_c10_1">
+                <button type="submit" id="generaExel"><i class="fa-regular fa-file-excel"></i>Generar</button>
+            </div>
+            </div>
+                
+            </form>
+    </div>
 
     <div id="fondoOscuro" class="oculto"></div>
 
@@ -257,10 +284,16 @@
     <div class="tabla-container">
     <div class="tabla">
         <?php
+        
         if ($result->num_rows > 0) {
            
 
             while ($row = $result->fetch_assoc()) {
+                if ($row['fechaInicio'] == '0000-00-00') {
+                    // Establecer una variable que indicará si el elemento debe ocultarse
+                    $ocultarElemento = true;
+                }
+
                 // Modificar el código HTML para agregar el contenido de la columna archivo
                 echo "<div class='fila' data-busqueda='" . $row["descripcion"] . " " . $row["respuesta"] . " " . $row["fechaInicio"] . " " . $row["fechaTermino"] . " " . $row["claveRecomendacion"] . " " . $row["archivo"] . "'>";
                 echo "<div class='celda'>" . $row["claveRecomendacion"] . "</div>";
@@ -275,6 +308,9 @@
             echo "No se han asignado recomendaciones";
 
         }
+
+
+        
             
         
         ?>
@@ -505,6 +541,7 @@
 
         });
 </script>
+
 <script>
 
         const elementos = document.querySelectorAll('.tabla');
@@ -525,4 +562,108 @@
         });
     });
 </script>
+
+<script>
+    function validarFormulario() {
+        var recomendacionInput = document.getElementById('recomendacion1');
+
+        // Verificar si el campo recomendacion1 está vacío
+        if (recomendacionInput.value.trim() === '') {
+            Swal.fire({
+                title: 'Recomendación vacia',
+                text: 'Debes escribir una recomendación',
+                icon: 'error',
+               
+                confirmButtonColor: '#197B7A',
+                cancelButtonColor: '#197B7A',
+                confirmButtonText: 'Entendido',
+                
+            })
+            return false; // Evitar que el formulario se envíe
+        }
+
+        // Si todo está bien, el formulario se enviará
+        return true;
+    }
+</script>
+
+<script>
+    function validarFormulario1() {
+        var recomendacionInput = document.getElementById('recomendacion');
+        var recomendacionSelect = document.getElementById('subcriterioSelect');
+        
+
+        // Verificar si el campo recomendacion1 está vacío
+        if (recomendacionInput.value.trim() === '') {
+            Swal.fire({
+                title: 'Recomendación vacia',
+                text: 'Debes escribir una recomendación',
+                icon: 'error',
+               
+                confirmButtonColor: '#197B7A',
+                cancelButtonColor: '#197B7A',
+                confirmButtonText: 'Entendido',
+                
+            })
+            return false; // Evitar que el formulario se envíe
+        }
+        else if (recomendacionSelect.value.trim() === 'defecto'){
+            Swal.fire({
+                title: 'Selecciona un subcriterio',
+                text: 'Debes seleccionar para que subcriterio es esta recomendación',
+                icon: 'error',
+               
+                confirmButtonColor: '#197B7A',
+                cancelButtonColor: '#197B7A',
+                confirmButtonText: 'Entendido',
+                
+            })
+            return false; // Evitar que el formulario se envíe
+        }
+
+        // Si todo está bien, el formulario se enviará
+        return true;
+    }
+</script>
+
+<script> // Script para aparecer y desaparecer el formulario de registro
+    document.getElementById("generarreporte").addEventListener("click", function() {
+    // Mostrar el fondo oscuro y el formulario
+    document.getElementById("fondoOscuro").style.display = "block";
+    document.getElementById("subirarchivos").style.display = "block";
+    });
+
+    document.getElementById("fondoOscuro").addEventListener("click", function() {
+        // Ocultar el fondo oscuro y el formulario cuando se hace clic fuera del formulario
+        document.getElementById("fondoOscuro").style.display = "none";
+        document.getElementById("subirarchivos").style.display = "none";
+    });
+</script>
+
+<script>
+// PHP pasará el valor de $ocultarElemento a la variable de JavaScript
+var ocultarElemento = <?php echo isset($ocultarElemento) && $ocultarElemento ? 'true' : 'false'; ?>;
+
+// Si ocultarElemento es true, oculta el elemento con el ID 'miElemento'
+if (ocultarElemento) {
+    document.getElementById('generarreporte').style.display = 'none';
+}
+</script>
+
+<script>
+    // Obtén la fecha actual en formato YYYY-MM-DD
+    function obtenerFechaActual() {
+        var fecha = new Date();
+        var anio = fecha.getFullYear();
+        var mes = (fecha.getMonth() + 1).toString().padStart(2, '0');
+        var dia = fecha.getDate().toString().padStart(2, '0');
+        return anio + '-' + mes + '-' + dia;
+    }
+
+    // Establece la fecha actual como valor predeterminado para el campo inicio1
+    document.getElementById('inicio1').value = obtenerFechaActual();
+</script>
+
+
+
 </html>

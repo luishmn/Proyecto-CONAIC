@@ -27,10 +27,11 @@
                 <input class="correoInput" type="email" id="correo" >
                 </form>
             </div>
-    
+        <!-- 
             <div class="correoI">
                 <img src="..\imagenes\correo_Codigo.png" alt="logo de correo">
             </div>
+        -->
     
             <div>
                 <p class="P2">Ingresa el código que se envió a tu correo electrónico</p>

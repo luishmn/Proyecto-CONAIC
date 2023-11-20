@@ -6,6 +6,7 @@
         // Accede al nombre de usuario almacenado en la sesión
         $nombreUsuario = $_SESSION['username'];
         $correoUsuario = $_SESSION['email'];
+
     } else {
         // Si no ha iniciado sesión, redirige al usuario a la página de inicio de sesión
         header('Location: ../index.php');
@@ -29,7 +30,7 @@
     <title>Usuarios</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-
+    <script>var usuarioConectado = "<?php echo $correoUsuario; ?>";</script>
 
 </head>
 <body>
@@ -402,31 +403,45 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <script>
-    // Obtener el botón por su ID
-    var botonElim = document.getElementById('Eliminar');
+        // Obtener el botón por su ID
+        var botonElim = document.getElementById('Eliminar');
 
-botonElim.addEventListener('click', function(event) {
-    // Aquí puedes realizar alguna acción cuando se hace clic en el botón
-    var correoEliminar = document.getElementById("correoEdit");
-    var correoElim = correoEliminar.value;
-    Swal.fire({
-        title: '¿Estás seguro?',
-        text: '¿Quieres eliminar al usuario con el correo ' + correoElim + '?',
-        icon: 'warning',
-        showCancelButton: true,
-        confirmButtonColor: '#197B7A',
-        cancelButtonColor: '#d33',
-        confirmButtonText: 'Eliminar',
-        cancelButtonText: 'Cancelar'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            window.location.href = '../eliminarUsuarios/eliminar_usuario.php?correo_traslado=' + correoElim;
+    botonElim.addEventListener('click', function(event) {
+        // Aquí puedes realizar alguna acción cuando se hace clic en el botón
+        var correoEliminar = document.getElementById("correoEdit");
+        var correoElim = correoEliminar.value;
+        if (usuarioConectado == correoElim){
+            Swal.fire({
+                title: 'No puedes eliminar tu propio usuario',
+                text: 'Estas intentando eliminar tu propoio usuario, por seguridad, para poder completar esta acción debes pedirle a otro administrador que elimine tu cuenta',
+                icon: 'error',
+                
+                confirmButtonColor: '#197B7A',
+                
+                confirmButtonText: 'Entendido',
+                
+            })
         }
-    });
+        else{
+            Swal.fire({
+                title: '¿Estás seguro?',
+                text: '¿Quieres eliminar al usuario con el correo ' + correoElim + '?',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#197B7A',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Eliminar',
+                cancelButtonText: 'Cancelar'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = '../eliminarUsuarios/eliminar_usuario.php?correo_traslado=' + correoElim;
+                }
+            });
+        }
 
-    // Evita que el formulario se envíe automáticamente
-    return false;
-});
+        // Evita que el formulario se envíe automáticamente
+        return false;
+    });
 
         
 </script>
@@ -928,6 +943,8 @@ botonElim.addEventListener('click', function(event) {
         else{
             document.getElementById("tipoUsuarioEdit").selectedIndex = 0;
         }
+
+        
        
             
       
@@ -980,10 +997,12 @@ botonElim.addEventListener('click', function(event) {
 
         const elementos = document.querySelectorAll('.tabla');
 
+    
     // Agrega un manejador de eventos "mouseenter" a cada elemento
     elementos.forEach(elemento => {
         elemento.addEventListener('mouseenter', () => {
             // El mouse está sobre este elemento
+            
             Swal.fire({
                     backdrop: false,
                     text: 'Para editar un usuario haga doble clic.',

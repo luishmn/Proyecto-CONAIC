@@ -33,13 +33,13 @@ if (isset($_GET['clave'])) {
             if (file_exists($rutaArchivo)) {
                 // Intentar eliminar el archivo
                 if (unlink($rutaArchivo)) {
-                    echo "El archivo '$claveRecomendacion' ha sido eliminado correctamente.";
+                    //echo "El archivo '$claveRecomendacion' ha sido eliminado correctamente.";
                     
                 } else {
-                    echo "No se pudo eliminar el archivo '$claveRecomendacion'.";
+                    //echo "No se pudo eliminar el archivo '$claveRecomendacion'.";
                 }
             } else {
-                echo "El archivo '$claveRecomendacion' no existe en el directorio.";
+                //echo "El archivo '$claveRecomendacion' no existe en el directorio.";
                 
             }
 
@@ -47,10 +47,10 @@ if (isset($_GET['clave'])) {
 
         }
         else {
-            echo "no hay archivo asociado";
+            //echo "no hay archivo asociado";
         }
     } else {
-        echo "No se encontraron filas con el archivo.";
+        //echo "No se encontraron filas con el archivo.";
     }
 
     // Consulta SQL para eliminar la fila
@@ -58,12 +58,12 @@ if (isset($_GET['clave'])) {
 
     // Ejecutar la consulta
     if ($conexion->query($sql) === TRUE) {
-        echo "Fila eliminada correctamente.";
+        //echo "Fila eliminada correctamente.";
         echo '<script>';
         echo 'window.close();'; // Esto cerrará la ventana actual
         echo '</script>';
     } else {
-        echo "Error al eliminar la fila: " . $conexion->error;
+        //echo "Error al eliminar la fila: " . $conexion->error;
         echo '<script>';
         echo 'window.close();'; // Esto cerrará la ventana actual
         echo '</script>';
