@@ -74,7 +74,7 @@
 <script type="text/javascript">
     Swal.fire({
         icon: 'success',
-        title: 'Generando Exel',
+        title: 'Generando Excel',
         text: 'La descarga de tu documento comenzara en breve',
         confirmButtonColor: '#197B7A'
     })
