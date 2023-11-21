@@ -306,6 +306,7 @@
             }
         }else{
             echo "No se han asignado recomendaciones";
+            $ocultarElemento = true;
 
         }
 

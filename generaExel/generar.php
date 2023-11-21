@@ -41,6 +41,10 @@
             right: 45%;
 
         }
+        .oculto{
+            display: none;
+        }
+        
     </style>
 </head>
 
@@ -88,8 +92,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fechaDictamen = $_POST["inicio1"];
     $numeroReporte = $_POST["inicio2"];
 
-    echo "<div id='fec'>$fechaDictamen</div>";
-    echo "<div id='num'>$numeroReporte</div>";
+    echo "<div id='fec' class='oculto'>$fechaDictamen</div>";
+    echo "<div id='num' class='oculto'>$numeroReporte</div>";
 
 include "../conexionDB/conexion.php";
 conecta();
@@ -137,7 +141,7 @@ if ($result->num_rows > 0) {
     });
 
     // Imprimir la tabla actualizada
-    echo "<table border='1' id='tablaDatos'>
+    echo "<table border='1' id='tablaDatos' class='oculto'>
             <tr>
                 <th>Clave Recomendación</th>
                 <th>Descripción</th>
