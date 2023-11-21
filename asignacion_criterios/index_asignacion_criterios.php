@@ -135,7 +135,7 @@ while ($row = $result->fetch_assoc()) {
 
      
         
-            <label class="L1">Usuarios</label>
+            <label class="L1">Asignar criterios</label>
 
             <button class="menu_estilo_usuario">
                 <img src="../PrincipalUsuario/usuario.png" alt="Usuario"> 
