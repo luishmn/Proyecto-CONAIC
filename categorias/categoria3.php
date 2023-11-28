@@ -890,7 +890,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta8">Guardar8</button></div>
+                <div class="btnListo"><button id="guardarRespuesta8">Guardar</button></div>
             </div>
 
 
@@ -926,7 +926,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta9">Guardar9</button></div>
+                <div class="btnListo"><button id="guardarRespuesta9">Guardar</button></div>
                 </div>
             </div>
 
@@ -961,7 +961,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta10">Guardar10</button></div>
+                <div class="btnListo"><button id="guardarRespuesta10">Guardar</button></div>
                 </div>
             </div>
 
@@ -1007,7 +1007,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta11">Guardar11</button></div>
+                <div class="btnListo"><button id="guardarRespuesta11">Guardar</button></div>
                 </div>
             </div>
 
@@ -1049,7 +1049,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta12">Guardar12</button></div>
+                <div class="btnListo"><button id="guardarRespuesta12">Guardar</button></div>
             </div>
 
 
@@ -1082,7 +1082,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta13">Guardar13</button></div>
+                <div class="btnListo"><button id="guardarRespuesta13">Guardar</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_3.7.3">
@@ -1138,7 +1138,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta14">Guardar14</button></div>
+                <div class="btnListo"><button id="guardarRespuesta14">Guardar</button></div>
             </div>
 
 
@@ -1176,7 +1176,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta15">Guardar15</button></div>
+                <div class="btnListo"><button id="guardarRespuesta15">Guardar</button></div>
                 </div>
             </div>
 
@@ -1214,7 +1214,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta16">Guardar16</button></div>
+                <div class="btnListo"><button id="guardarRespuesta16">Guardar</button></div>
             </div>
 
 
@@ -1304,7 +1304,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta17">Guardar17</button></div>
+                <div class="btnListo"><button id="guardarRespuesta17">Guardar</button></div>
                 </div>
             </div>
             
@@ -1354,7 +1354,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta18">Guardar18</button></div>
+                <div class="btnListo"><button id="guardarRespuesta18">Guardar</button></div>
                 </div>
             </div>
 
@@ -1390,7 +1390,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta19">Guardar19</button></div>
+                <div class="btnListo"><button id="guardarRespuesta19">Guardar</button></div>
                 </div>
 
                 <div class="preguntasCategoria" id="SC_3.9.2">
@@ -1423,7 +1423,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                    <div class="btnListo"><button id="guardarRespuesta20">Guardar20</button></div>
+                    <div class="btnListo"><button id="guardarRespuesta20">Guardar</button></div>
                 </div>
 
 
