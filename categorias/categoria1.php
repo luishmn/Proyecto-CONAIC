@@ -127,7 +127,7 @@
                         var respuesta2 = $("#R1-3-1").val();
 
                         var id3 = "RS1-3-1A2";
-                        var respuesta3 = $("RS1-3-1A2").val();
+                        var respuesta3 = $("#RS1-3-1A2").val();
 
                         var arreglo = [id1,respuesta1,id2,respuesta2,id3,respuesta3];
                         console.log(arreglo)
@@ -156,10 +156,10 @@
                         var respuesta2 = $("#R1-4-2").val();
 
                         var id3 = "RS1-4-2A2";
-                        var respuesta3 = $("RS1-4-2A2").val();
+                        var respuesta3 = $("#RS1-4-2A2").val();
                         
                         var id4 = "R1-4-2A1";
-                        var respuesta4 = $("R1-4-2A1").val();
+                        var respuesta4 = $("#R1-4-2A1").val();
 
                         var arreglo = [id1,respuesta1,id2,respuesta2,id3,respuesta3,id4,respuesta4];
                         console.log(arreglo)
@@ -175,10 +175,10 @@
                         var respuesta2 = $("#RS1-4-3A2").val();
 
                         var id3 = "R1-4-3";
-                        var respuesta3 = $("R1-4-3").val();
+                        var respuesta3 = $("#R1-4-3").val();
                         
                         var id4 = "R1-4-3A1";
-                        var respuesta4 = $("R1-4-3A1").val();
+                        var respuesta4 = $("#R1-4-3A1").val();
 
                         var arreglo = [id1,respuesta1,id2,respuesta2,id3,respuesta3,id4,respuesta4];
                         console.log(arreglo)
@@ -328,7 +328,7 @@
                         var respuesta2 = $("#RS-1-7-2A2").val();
 
                         var id3 = "R1-7-2";
-                        var respuesta3 = $("R1-7-2").val();
+                        var respuesta3 = $("#R1-7-2").val();
 
                         var arreglo = [id1,respuesta1,id2,respuesta2,id3,respuesta3];
                         console.log(arreglo)
@@ -344,7 +344,7 @@
                         var respuesta2 = $("#R1-7-3").val();
 
                         var id3 = "R1-7-3A1";
-                        var respuesta3 = $("R1-7-3A1").val();
+                        var respuesta3 = $("#R1-7-3A1").val();
 
                         var id4 = "RS1-7-3A2";
                         var respuesta4 = $("#RS1-7-3A2").val();
@@ -353,7 +353,7 @@
                         var respuesta5 = $("#R1-7-3A2").val();
 
                         var id6 = "R1-7-3A3";
-                        var respuesta6 = $("R1-7-3A3").val();
+                        var respuesta6 = $("#R1-7-3A3").val();
 
                         var arreglo = [id1,respuesta1,id2,respuesta2,id3,respuesta3,id4,respuesta4,id5,respuesta5,id6,respuesta6];
                         console.log(arreglo)
@@ -369,7 +369,7 @@
                         var respuesta2 = $("#R1-7-4").val();
 
                         var id3 = "RS1-7-4A2";
-                        var respuesta3 = $("RS1-7-4A2").val();
+                        var respuesta3 = $("#RS1-7-4A2").val();
 
                         var arreglo = [id1,respuesta1,id2,respuesta2,id3,respuesta3];
                         console.log(arreglo)
@@ -385,7 +385,7 @@
                         var respuesta2 = $("#RS1-8-1A2").val();
 
                         var id3 = "R1-8-1";
-                        var respuesta3 = $("R1-8-1").val();
+                        var respuesta3 = $("#R1-8-1").val();
 
                         var id4 = "RS1-8-1A3";
                         var respuesta4 = $("#RS1-8-1A3").val();
@@ -407,7 +407,7 @@
                         var respuesta2 = $("#RS1-9-1A2").val();
 
                         var id3 = "R1-9-1";
-                        var respuesta3 = $("R1-9-1").val();
+                        var respuesta3 = $("#R1-9-1").val();
 
                         var arreglo = [id1,respuesta1,id2,respuesta2,id3,respuesta3];
                         console.log(arreglo)
@@ -460,7 +460,7 @@
                         var respuesta2 = $("#RSA2-2").val();
 
                         var id3 = "RA2-1";
-                        var respuesta3 = $("RA2-1").val();
+                        var respuesta3 = $("#RA2-1").val();
 
                         var arreglo = [id1,respuesta1,id2,respuesta2,id3,respuesta3];
                         console.log(arreglo)

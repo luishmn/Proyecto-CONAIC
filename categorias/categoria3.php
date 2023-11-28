@@ -151,16 +151,23 @@
                     var id1 = "R3-2-2";
                     var respuesta1 = $("#R3-2-2").val();
 
-                    var id2 = "R3-2-3";
-                    var respuesta2 = $("#R3-2-3").val();
-
-                    var arreglo = [id1,respuesta1,id2,respuesta2];
+                    var arreglo = [id1,respuesta1];
                     console.log(arreglo)
                     
                     BDatos(arreglo)
                 });
 
                 $("#guardarRespuesta5").click(function() {
+                    var id1 = "R3-2-3";
+                    var respuesta1 = $("#R3-2-3").val();
+
+                    var arreglo = [id1,respuesta1];
+                    console.log(arreglo)
+                    
+                    BDatos(arreglo)
+                });
+
+                $("#guardarRespuesta6").click(function() {
                     var id1 = "RS3-3-1A1";
                     var respuesta1 = $("#RS3-3-1A1").val();
 
@@ -170,7 +177,7 @@
                     BDatos(arreglo)
                 });
 
-                $("#guardarRespuesta6").click(function() {
+                $("#guardarRespuesta7").click(function() {
                     var id1 = "R3-4-1";
                     var respuesta1 = $("#R3-4-1").val();
 
@@ -180,7 +187,7 @@
                     BDatos(arreglo)
                 });
 
-                $("#guardarRespuesta7").click(function() {
+                $("#guardarRespuesta8").click(function() {
                     var id1 = "RS3-5-1A1";
                     var respuesta1 = $("#RS3-5-1A1").val();
 
@@ -208,7 +215,7 @@
                     BDatos(arreglo)
                 });
 
-                $("#guardarRespuesta8").click(function() {
+                $("#guardarRespuesta9").click(function() {
                     var id1 = "R3-5-2";
                     var respuesta1 = $("#R3-5-2").val();
 
@@ -224,7 +231,7 @@
                     BDatos(arreglo)
                 });
 
-                $("#guardarRespuesta9").click(function() {
+                $("#guardarRespuesta10").click(function() {
                     var id1 = "R3-5-3";
                     var respuesta1 = $("#R3-5-3").val();
 
@@ -234,7 +241,7 @@
                     BDatos(arreglo)
                 });
 
-                $("#guardarRespuesta10").click(function() {
+                $("#guardarRespuesta11").click(function() {
                     var id1 = "R3-6-1";
                     var respuesta1 = $("#R3-6-1").val();
 
@@ -244,7 +251,7 @@
                     BDatos(arreglo)
                 });
 
-                $("#guardarRespuesta11").click(function() {
+                $("#guardarRespuesta12").click(function() {
                     var id1 = "R3-7-1";
                     var respuesta1 = $("#R3-7-1").val();
 
@@ -254,7 +261,7 @@
                     BDatos(arreglo)
                 });
 
-                $("#guardarRespuesta12").click(function() {
+                $("#guardarRespuesta13").click(function() {
                     var id1 = "R3-7-2";
                     var respuesta1 = $("#R3-7-2").val();
 
@@ -267,7 +274,7 @@
                     BDatos(arreglo)
                 });
 
-                $("#guardarRespuesta13").click(function() {
+                $("#guardarRespuesta14").click(function() {
                     var id1 = "RS3-7-3A1";
                     var respuesta1 = $("#RS3-7-3A1").val();
 
@@ -289,7 +296,7 @@
                     BDatos(arreglo)
                 });
 
-                $("#guardarRespuesta14").click(function() {
+                $("#guardarRespuesta15").click(function() {
                     var id1 = "RS3-7-4A1";
                     var respuesta1 = $("#RS3-7-4A1").val();
 
@@ -302,7 +309,7 @@
                     BDatos(arreglo)
                 });
 
-                $("#guardarRespuesta15").click(function() {
+                $("#guardarRespuesta16").click(function() {
                     var id1 = "RS3-8-1A1";
                     var respuesta1 = $("#RS3-8-1A1").val();
 
@@ -312,7 +319,7 @@
                     BDatos(arreglo)
                 });
 
-                $("#guardarRespuesta16").click(function() {
+                $("#guardarRespuesta17").click(function() {
                     var id1 = "R3-8-2";
                     var respuesta1 = $("#R3-8-2").val();
 
@@ -346,7 +353,7 @@
                     BDatos(arreglo)
                 });
 
-                $("#guardarRespuesta17").click(function() {
+                $("#guardarRespuesta18").click(function() {
                     var id1 = "RS3-8-3A1";
                     var respuesta1 = $("#RS3-8-3A1").val();
 
@@ -359,7 +366,7 @@
                     BDatos(arreglo)
                 });
 
-                $("#guardarRespuesta18").click(function() {
+                $("#guardarRespuesta19").click(function() {
                     var id1 = "R3-9-1";
                     var respuesta1 = $("#R3-9-1").val();
 
@@ -369,7 +376,7 @@
                     BDatos(arreglo)
                 });
 
-                $("#guardarRespuesta19").click(function() {
+                $("#guardarRespuesta20").click(function() {
                     var id1 = "R3-9-2";
                     var respuesta1 = $("#R3-9-2").val();
 
@@ -378,6 +385,7 @@
                     
                     BDatos(arreglo)
                 });
+
 
 
  
@@ -782,7 +790,8 @@
             </div>
             <a href="/Documentos/Tiempo dedicado.docx">Formato - Tiempo Dedicado (Descargar)</a><br>
             <div class="preguntasCategoria" id="SC_3.4.1">
-            <p>3.4.1 Para poder comparar el contenido curricular de distintos programas, se hace referencia a Unidades de cada curso. Para efectos de equivalencia, una Unidad equivale a 1 hora de Teoría frente a grupo, o bien a 3 horas de Práctica frente a grupo para Licenciatura y para el caso de Técnico Superior Universitario, la equivalencia es 2 horas de práctica frente a grupo. El Comité reconoce que existen nuevos modelos pedagógicos donde los estudiantes realizan actividades de autoestudio; en estos casos, la institución que busca la acreditación deberá de justificar la equivalencia utilizada para el número de Unidades. </p>                <textarea id="R3-4-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
+            <p>3.4.1 Para poder comparar el contenido curricular de distintos programas, se hace referencia a Unidades de cada curso. Para efectos de equivalencia, una Unidad equivale a 1 hora de Teoría frente a grupo, o bien a 3 horas de Práctica frente a grupo para Licenciatura y para el caso de Técnico Superior Universitario, la equivalencia es 2 horas de práctica frente a grupo. El Comité reconoce que existen nuevos modelos pedagógicos donde los estudiantes realizan actividades de autoestudio; en estos casos, la institución que busca la acreditación deberá de justificar la equivalencia utilizada para el número de Unidades. </p>
+            <textarea id="R3-4-1" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>               
                     <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
                     <br><br>
                     <div class="pdfs-options">
@@ -881,7 +890,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta8">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta8">Guardar8</button></div>
             </div>
 
 
@@ -917,7 +926,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta9">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta9">Guardar9</button></div>
                 </div>
             </div>
 
@@ -952,7 +961,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta10">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta10">Guardar10</button></div>
                 </div>
             </div>
 
@@ -998,7 +1007,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta11">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta11">Guardar11</button></div>
                 </div>
             </div>
 
@@ -1040,7 +1049,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta12">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta12">Guardar12</button></div>
             </div>
 
 
@@ -1073,7 +1082,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta13">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta13">Guardar13</button></div>
             </div>
 
             <div class="preguntasCategoria" id="SC_3.7.3">
@@ -1129,7 +1138,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta14">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta14">Guardar14</button></div>
             </div>
 
 
@@ -1167,7 +1176,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta15">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta15">Guardar15</button></div>
                 </div>
             </div>
 
@@ -1205,7 +1214,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta16">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta16">Guardar16</button></div>
             </div>
 
 
@@ -1295,7 +1304,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta17">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta17">Guardar17</button></div>
                 </div>
             </div>
             
@@ -1345,7 +1354,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta18">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta18">Guardar18</button></div>
                 </div>
             </div>
 
@@ -1381,7 +1390,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                <div class="btnListo"><button id="guardarRespuesta19">Guardar</button></div>
+                <div class="btnListo"><button id="guardarRespuesta19">Guardar19</button></div>
                 </div>
 
                 <div class="preguntasCategoria" id="SC_3.9.2">
@@ -1414,7 +1423,7 @@
                     </div>
                     </div>
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                    <div class="btnListo"><button>Guardar</button></div>
+                    <div class="btnListo"><button id="guardarRespuesta20">Guardar20</button></div>
                 </div>
 
 

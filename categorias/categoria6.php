@@ -374,19 +374,13 @@
                     var id1 = "R6-4-1";
                     var respuesta1 = $("#R6-4-1").val();
 
-                    var id2 = "cbox1";
-                    var respuesta2 = $("#cbox1").val();
+                    var id2 = "R6-4-1A1";
+                    var respuesta2 = $("#R6-4-1A1").val();
 
-                    var id3 = "R6-4-1A1";
-                    var respuesta3 = $("#R6-4-1A1").val();
+                    var id3 = "R6-4-1A2";
+                    var respuesta3 = $("#R6-4-1A2").val();
 
-                    var id4 = "cbox1";
-                    var respuesta4 = $("#cbox1").val();
-
-                    var id5 = "R6-4-1A2";
-                    var respuesta5 = $("#R6-4-1A2").val();
-
-                    var arreglo = [id1,respuesta1,id2,respuesta2,id3,respuesta3,id4,respuesta4,id5,respuesta5];
+                    var arreglo = [id1,respuesta1,id2,respuesta2,id3,respuesta3];
                     console.log(arreglo)
                     
                     BDatos(arreglo)
