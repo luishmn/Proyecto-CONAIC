@@ -1216,6 +1216,8 @@
                     <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
                 <div class="btnListo"><button id="guardarRespuesta16">Guardar</button></div>
             </div>
+            </div>
+        
 
 
             <div class="preguntasCategoria" id="SC_3.8.2">
