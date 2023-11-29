@@ -1556,6 +1556,11 @@
 
                     <br>
                     <textarea id="R2-7A2" rows="5" placeholder="Escribe tu respuesta aquí..."></textarea>
+                    <p>2.7.1 Indicar las movilidades en envío y recepción de los estudiantes en los últimos cinco años.
+                    </p>
+                    <p>
+                            <a href="../Documentos/CATEGORIA2/2.7.1.docx" class="etiquetaDescarga">Descargar formato</a>
+                    </p>
 
                     <!-- <img src="" alt=""><button>Guardar</button> -->
                         <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
@@ -1583,32 +1588,7 @@
                     <div class="btnListo"><button id="guardarRespuesta20">Guardar</button></div>
                 </div>
                 
-                <div class="preguntasCategoria" id="SC_2.7.1">
-                    <p>2.7.1 Indicar las movilidades en envío y recepción de los estudiantes en los últimos cinco años.
-                    </p>
-                    <p>
-                            <a href="../Documentos/CATEGORIA2/2.7.1.docx" class="etiquetaDescarga">Descargar formato</a>
-                    </p>
-                    <!-- <img src="" alt=""><button>Guardar</button> -->
-                        <!-- AQUÍ COMIENZA LA PARTE DE LOS PDF -->
-                        <br><br>
-                    <div class="pdfs-options">
-                        <div class="imgpdfs">
-                            <label >
-                                <i class="fas fa-file-pdf"></i> 
-                            </label>
-                        </div>
-                    
-                    <div class="Listo">
-                        <!--Boton-->
-                    <div class="botonesPDFSgroup">
-                
-                    </div>   
-                    </div>
-                    </div>
-                    <!-- AQUI TERMINA LA PARTE DE LOS PDF -->
-                    <div class="btnListo"><button id="guardarRespuesta21">Guardar</button></div>
-                </div>
+
 
                 <div class="preguntasCategoria" id="SC_2.7.2">
                     <p>2.7.2. Indicar los productos y resultados obtenidos de estas movilidades en envío y recepción de los estudiantes en los últimos cinco años.

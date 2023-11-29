@@ -96,20 +96,21 @@
             <form class="from-login" action="registrarUsuarioBD.php" id="formularioRegistro" method="post">
 
                 <h1 class="centrar">Registrar usuario</h1>
+                <p class="idi">Los campos marcados con un * son obligatorios</p>
                 <br>
 
                 <div class="contenedor">
                     <div class="form_c1">
                         <div class="form_group">
                             <input type="text" id="nombre" class="form_input" placeholder=" " name="nombre" >
-                            <label for="nombre" class="form_label">Nombre:</label>
+                            <label for="nombre" class="form_label">Nombre: *</label>
                         </div>
                     </div>
                     <div class="form_c2">
                         <div class="form_group">
                             <input type="text" id="apellidoP" class="form_input" placeholder=" " name="apellidoP"
                                 >
-                            <label for="apellidoP" class="form_label">Apellido paterno:</label>
+                            <label for="apellidoP" class="form_label">Apellido paterno: *</label>
                         </div>
                     </div>
                     <div class="form_c3">
@@ -127,7 +128,7 @@
                     <div class="form_c4">
                         <div class="form_group">
                             <input type="text" id="cargo" class="form_input" placeholder=" " name="cargo" >
-                            <label for="cargo" class="form_label">Cargo desempeñado:</label>
+                            <label for="cargo" class="form_label">Cargo desempeñado: *</label>
                         </div>
                     </div>
 
@@ -145,7 +146,7 @@
                 <div class="form_c5">
                     <div class="form_group">
                         <input type="text" id="correo" class="form_input" placeholder=" " name="correo" >
-                        <label for="correo" class="form_label">Correo electrónico:</label>
+                        <label for="correo" class="form_label">Correo electrónico: *</label>
                     </div>
                 </div>
 
@@ -156,7 +157,7 @@
                         <div class="form_group">
                             <input type="password" id="contrasena" class="form_input" placeholder=" " name="contrasena"
                                 >
-                            <label for="contrasena" class="form_label">Contraseña:</label>
+                            <label for="contrasena" class="form_label">Contraseña: *</label>
                         </div>
                     </div>
 
@@ -164,7 +165,7 @@
                         <div class="form_group">
                             <input type="password" id="contrasenaV" class="form_input" placeholder=" "
                                 name="contrasenaV" >
-                            <label for="contrasenaV" class="form_label">Confirmar contraseña:</label>
+                            <label for="contrasenaV" class="form_label">Confirmar contraseña: *</label>
                         </div>
                     </div>
 
@@ -501,7 +502,7 @@
             }
         }
       
-      if (nombre.trim() === "" || apellidoM.trim() === "" || apellidoP.trim() ==="" || cargo.trim() ==="" || email.trim() === "" || contrasena.trim() === "" || contrasenaV.trim() ===""){
+      if (nombre.trim() === "" || apellidoP.trim() ==="" || cargo.trim() ==="" || email.trim() === "" || contrasena.trim() === "" || contrasenaV.trim() ===""){
             Swal.fire({
                 title: 'Llena todos los campos',
                 text: 'Asegúrate de llenar todos los campos',
@@ -768,7 +769,7 @@
 
       
     
-      if (nombre1.trim() === "" || apellidoM1.trim() === "" || apellidoP1.trim() ==="" || cargo1.trim() ==="" || email1.trim() === "" || contrasena1.trim() === "" || contrasenaV1.trim() ===""){
+      if (nombre1.trim() === ""|| apellidoP1.trim() ==="" || cargo1.trim() ==="" || email1.trim() === "" || contrasena1.trim() === "" || contrasenaV1.trim() ===""){
         
         Swal.fire({
             title: 'Campos vacíos',

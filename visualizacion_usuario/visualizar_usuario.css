@@ -1023,3 +1023,9 @@ background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse */
 #Eliminar{
   background-color: red;
 }
+
+.idi{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -1%;
+}
